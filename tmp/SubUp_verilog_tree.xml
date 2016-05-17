@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Class>
+
+	<ClassName>	SubUp	</ClassName>
+
+	<AllVariables>
+		<VeriableDecl>
+			<name>	arrayA	</name>
+			<type>	float	</type>
+			<variableID>	0	</variableID>
+			<parentName>	SubUp	</parentName>
+			<defType>	field	</defType>
+			<isArray>	true	</isArray>
+			<isPrimitive>	true	</isPrimitive>
+			<isFinal>	true	</isFinal>
+			<dimension>	1	</dimension>
+			<init>
+				<NewArray>
+					<type>	float	</type>
+					<elements>	7	</elements>				
+				</NewArray>
+			</init>
+		</VeriableDecl>
+
+		<VeriableDecl>
+			<name>	arrayX	</name>
+			<type>	float	</type>
+			<variableID>	1	</variableID>
+			<parentName>	SubUp	</parentName>
+			<defType>	field	</defType>
+			<isArray>	true	</isArray>
+			<isPrimitive>	true	</isPrimitive>
+			<isFinal>	true	</isFinal>
+			<dimension>	1	</dimension>
+			<init>
+				<NewArray>
+					<type>	float	</type>
+					<elements>	7	</elements>				
+				</NewArray>
+			</init>
+		</VeriableDecl>
+
+		<VeriableDecl>
+			<name>	N	</name>
+			<type>	int	</type>
+			<variableID>	2	</variableID>
+			<parentName>	SubUp	</parentName>
+			<defType>	field	</defType>
+			<isArray>	false	</isArray>
+			<isPrimitive>	true	</isPrimitive>
+			<isFinal>	false	</isFinal>
+			<dimension>	0	</dimension>
+			<init>
+				<Literal>
+					<type>	int	</type>
+					<value>	5	</value>
+				</Literal>
+			</init>
+		</VeriableDecl>
+
+		<VeriableDecl>
+			<name>	r	</name>
+			<type>	float	</type>
+			<variableID>	3	</variableID>
+			<parentName>	run	</parentName>
+			<defType>	method	</defType>
+			<isArray>	false	</isArray>
+			<isPrimitive>	true	</isPrimitive>
+			<isFinal>	false	</isFinal>
+			<dimension>	0	</dimension>
+			<init>
+				<Literal>
+					<type>	float	</type>
+					<value>	0.001	</value>
+				</Literal>
+			</init>
+		</VeriableDecl>
+
+		<VeriableDecl>
+			<name>	i	</name>
+			<type>	int	</type>
+			<variableID>	4	</variableID>
+			<parentName>	run	</parentName>
+			<defType>	method	</defType>
+			<isArray>	false	</isArray>
+			<isPrimitive>	true	</isPrimitive>
+			<isFinal>	false	</isFinal>
+			<dimension>	0	</dimension>
+			<init>
+				<Literal>
+					<type>	int	</type>
+					<value>	1	</value>
+				</Literal>
+			</init>
+		</VeriableDecl>
+
+		<VeriableDecl>
+			<name>	copy0_i	</name>
+			<type>	int	</type>
+			<variableID>	5	</variableID>
+			<parentName>	run	</parentName>
+			<defType>	method	</defType>
+			<isArray>	false	</isArray>
+			<isPrimitive>	true	</isPrimitive>
+			<isFinal>	false	</isFinal>
+			<dimension>	0	</dimension>
+			<init>
+				<Literal>
+					<type>	int	</type>
+					<value>	1	</value>
+				</Literal>
+			</init>
+		</VeriableDecl>
+
+		<VeriableDecl>
+			<name>	copy1_i	</name>
+			<type>	int	</type>
+			<variableID>	6	</variableID>
+			<parentName>	run	</parentName>
+			<defType>	method	</defType>
+			<isArray>	false	</isArray>
+			<isPrimitive>	true	</isPrimitive>
+			<isFinal>	false	</isFinal>
+			<dimension>	0	</dimension>
+			<init>
+				<Literal>
+					<type>	int	</type>
+					<value>	1	</value>
+				</Literal>
+			</init>
+		</VeriableDecl>
+
+		<VeriableDecl>
+			<name>	copy2_i	</name>
+			<type>	int	</type>
+			<variableID>	7	</variableID>
+			<parentName>	run	</parentName>
+			<defType>	method	</defType>
+			<isArray>	false	</isArray>
+			<isPrimitive>	true	</isPrimitive>
+			<isFinal>	false	</isFinal>
+			<dimension>	0	</dimension>
+			<init>
+				<Literal>
+					<type>	int	</type>
+					<value>	1	</value>
+				</Literal>
+			</init>
+		</VeriableDecl>
+
+	</AllVariables>
+
+	<METHOD>	<Phase>  1  </Phase>
+
+		<methodName>	run	</methodName>
+		<returnType>	void	</returnType>
+		<ParamList>
+
+		</ParamList>
+
+		<MethodBody>
+			<Block>	<Phase>  1  </Phase>
+
+				<StatAssemblage>	<Phase>  2  </Phase>
+					<stageNum>  1  </stageNum>
+					<totalStepNum>  1  </totalStepNum>
+					<VariableStack>
+						<VeriableDecl>			<name>	arrayA	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+						<VeriableDecl>			<name>	arrayX	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+						<VeriableDecl>			<name>	N	</name>		<variableID>	2	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+						<VeriableDecl>			<name>	r	</name>		<variableID>	3	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+					</VariableStack>
+
+					<statements>
+						<VeriableDecl>			<name>	r	</name>		<variableID>	3	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+					</statements>
+
+				</StatAssemblage>
+
+				<ForLoop>	<Phase>  3  </Phase>
+					<forInit>
+						<StatAssemblage>	<Phase>  4  </Phase>
+							<stageNum>  2  </stageNum>
+							<totalStepNum>  2  </totalStepNum>
+							<VariableStack>
+								<VeriableDecl>			<name>	arrayA	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	arrayX	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	N	</name>		<variableID>	2	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	r	</name>		<variableID>	3	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	i	</name>		<variableID>	4	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+							</VariableStack>
+
+							<statements>
+								<VeriableDecl>			<name>	i	</name>		<variableID>	4	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+							</statements>
+
+						</StatAssemblage>
+
+					</forInit>
+
+					<forCond>
+						<StatAssemblage>	<Phase>  5  </Phase>
+							<stageNum>  1  </stageNum>
+							<totalStepNum>  1  </totalStepNum>
+							<VariableStack>
+								<VeriableDecl>			<name>	arrayA	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	arrayX	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	N	</name>		<variableID>	2	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	r	</name>		<variableID>	3	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	i	</name>		<variableID>	4	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+							</VariableStack>
+
+							<statements>
+								<ExprStatement>
+									<Binary>
+										<binaryOp>	'LT'	</binaryOp>
+										<leftExpr>
+											<Ident>
+												<variableID>	4	</variableID>
+												<idName>	i	</idName>
+											</Ident>
+										</leftExpr>
+
+										<rightExpr>
+											<Ident>
+												<variableID>	2	</variableID>
+												<idName>	N	</idName>
+											</Ident>
+										</rightExpr>
+
+									</Binary>
+
+								</ExprStatement>
+
+							</statements>
+
+						</StatAssemblage>
+
+					</forCond>
+
+					<forBody>
+						<Block>	<Phase>  7  </Phase>
+
+							<StatAssemblage>	<Phase>  8  </Phase>
+								<stageNum>  1  </stageNum>
+								<totalStepNum>  266  </totalStepNum>
+								<VariableStack>
+									<VeriableDecl>			<name>	arrayA	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+									<VeriableDecl>			<name>	arrayX	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+									<VeriableDecl>			<name>	N	</name>		<variableID>	2	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+									<VeriableDecl>			<name>	r	</name>		<variableID>	3	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+									<VeriableDecl>			<name>	i	</name>		<variableID>	4	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+								</VariableStack>
+
+								<statements>
+									<ExprStatement>
+										<Assign>
+											<rightExpr>
+												<Binary>
+													<binaryOp>	'+'	</binaryOp>
+													<leftExpr>
+														<Binary>
+															<binaryOp>	'+'	</binaryOp>
+															<leftExpr>
+																<Binary>
+																	<binaryOp>	'*'	</binaryOp>
+																	<leftExpr>
+																		<ArrayAccess>
+																			<variableID>	0	</variableID>
+																			<idName>arrayA</idName>
+
+																			<index0>
+																				<Binary>
+																					<binaryOp>	'-'	</binaryOp>
+																					<leftExpr>
+																						<Ident>
+																							<variableID>	4	</variableID>
+																							<idName>	i	</idName>
+																						</Ident>
+																					</leftExpr>
+
+																					<rightExpr>
+																						<Literal>
+																							<type>	int	</type>
+																							<value>	1	</value>
+																						</Literal>
+																					</rightExpr>
+
+																				</Binary>
+
+																			</index0>
+
+																		</ArrayAccess>
+
+																	</leftExpr>
+
+																	<rightExpr>
+																		<Ident>
+																			<variableID>	3	</variableID>
+																			<idName>	r	</idName>
+																		</Ident>
+																	</rightExpr>
+
+																</Binary>
+
+															</leftExpr>
+
+															<rightExpr>
+																<Binary>
+																	<binaryOp>	'*'	</binaryOp>
+																	<leftExpr>
+																		<ArrayAccess>
+																			<variableID>	0	</variableID>
+																			<idName>arrayA</idName>
+
+																			<index0>
+																				<Ident>
+																					<variableID>	4	</variableID>
+																					<idName>	i	</idName>
+																				</Ident>
+																			</index0>
+
+																		</ArrayAccess>
+
+																	</leftExpr>
+
+																	<rightExpr>
+																		<Binary>
+																			<binaryOp>	'-'	</binaryOp>
+																			<leftExpr>
+																				<Literal>
+																					<type>	int	</type>
+																					<value>	1	</value>
+																				</Literal>
+																			</leftExpr>
+
+																			<rightExpr>
+																				<Binary>
+																					<binaryOp>	'*'	</binaryOp>
+																					<leftExpr>
+																						<Literal>
+																							<type>	int	</type>
+																							<value>	2	</value>
+																						</Literal>
+																					</leftExpr>
+
+																					<rightExpr>
+																						<Ident>
+																							<variableID>	3	</variableID>
+																							<idName>	r	</idName>
+																						</Ident>
+																					</rightExpr>
+
+																				</Binary>
+
+																			</rightExpr>
+
+																		</Binary>
+
+																	</rightExpr>
+
+																</Binary>
+
+															</rightExpr>
+
+														</Binary>
+
+													</leftExpr>
+
+													<rightExpr>
+														<Binary>
+															<binaryOp>	'*'	</binaryOp>
+															<leftExpr>
+																<ArrayAccess>
+																	<variableID>	0	</variableID>
+																	<idName>arrayA</idName>
+
+																	<index0>
+																		<Binary>
+																			<binaryOp>	'+'	</binaryOp>
+																			<leftExpr>
+																				<Ident>
+																					<variableID>	4	</variableID>
+																					<idName>	i	</idName>
+																				</Ident>
+																			</leftExpr>
+
+																			<rightExpr>
+																				<Literal>
+																					<type>	int	</type>
+																					<value>	1	</value>
+																				</Literal>
+																			</rightExpr>
+
+																		</Binary>
+
+																	</index0>
+
+																</ArrayAccess>
+
+															</leftExpr>
+
+															<rightExpr>
+																<Ident>
+																	<variableID>	3	</variableID>
+																	<idName>	r	</idName>
+																</Ident>
+															</rightExpr>
+
+														</Binary>
+
+													</rightExpr>
+
+												</Binary>
+
+											</rightExpr>
+
+											<dest>
+												<ArrayAccess>
+													<variableID>	1	</variableID>
+													<idName>arrayX</idName>
+
+													<index0>
+														<Ident>
+															<variableID>	4	</variableID>
+															<idName>	i	</idName>
+														</Ident>
+													</index0>
+
+												</ArrayAccess>
+
+											</dest>
+
+										</Assign>
+
+									</ExprStatement>
+
+								</statements>
+
+							</StatAssemblage>
+
+						</Block>
+
+					</forBody>
+				</ForLoop>
+
+			</Block>
+
+		</MethodBody>
+
+	</METHOD>
+
+
+</Class>

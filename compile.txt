@@ -1,0 +1,11 @@
+How to compile
+
+java -jar -Duser.language=en -encoding UTF-8 JRThrash.jar JavaSourceFilePath/fileName.java
+
+[all file compile]
+cd dirPath/JRThrash
+java -Duser.language=en -jar JRThrash.jar -encoding UTF-8 ./sample/*.java ./sample/subModuleTest/*.java ./sample/ThreadTest/*.java >> repo.txt
+
+
+[Japanese output]
+	add  "-jrtLang Ja"  at the back of "JRThrash.jar"

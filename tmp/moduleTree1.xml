@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="shift_jis" ?>
+
+<module>
+	<name objName = "*thisIsTopModule"    className = "P3_2dim" />
+	<subModule>
+		<module>
+			<name objName = "sub19"    className = "sub19" />
+		</module>
+	</subModule>
+	<subModule>
+		<module>
+			<name objName = "sub09"    className = "sub09" />
+		</module>
+	</subModule>
+	<subModule>
+		<module>
+			<name objName = "sub08"    className = "sub08" />
+		</module>
+	</subModule>
+	<subModule>
+		<module>
+			<name objName = "sub24"    className = "sub24" />
+		</module>
+	</subModule>
+	<subModule>
+		<module>
+			<name objName = "sub22"    className = "sub22" />
+		</module>
+	</subModule>
+	<subModule>
+		<module>
+			<name objName = "sub23"    className = "sub23" />
+		</module>
+	</subModule>
+	<subModule>
+		<module>
+			<name objName = "sub12"    className = "sub12" />
+		</module>
+	</subModule>
+	<subModule>
+		<module>
+			<name objName = "sub03"    className = "sub03" />
+		</module>
+	</subModule>
+	<subModule>
+		<module>
+			<name objName = "sub02"    className = "sub02" />
+		</module>
+	</subModule>
+	<subModule>
+		<module>
+			<name objName = "sub11"    className = "sub11" />
+		</module>
+	</subModule>
+	<subModule>
+		<module>
+			<name objName = "sub14"    className = "sub14" />
+		</module>
+	</subModule>
+	<subModule>
+		<module>
+			<name objName = "sub01"    className = "sub01" />
+		</module>
+	</subModule>
+	<subModule>
+		<module>
+			<name objName = "sub00"    className = "sub00" />
+		</module>
+	</subModule>
+	<subModule>
+		<module>
+			<name objName = "sub13"    className = "sub13" />
+		</module>
+	</subModule>
+	<subModule>
+		<module>
+			<name objName = "sub07"    className = "sub07" />
+		</module>
+	</subModule>
+	<subModule>
+		<module>
+			<name objName = "sub16"    className = "sub16" />
+		</module>
+	</subModule>
+	<subModule>
+		<module>
+			<name objName = "sub06"    className = "sub06" />
+		</module>
+	</subModule>
+	<subModule>
+		<module>
+			<name objName = "sub15"    className = "sub15" />
+		</module>
+	</subModule>
+	<subModule>
+		<module>
+			<name objName = "sub05"    className = "sub05" />
+		</module>
+	</subModule>
+	<subModule>
+		<module>
+			<name objName = "sub18"    className = "sub18" />
+		</module>
+	</subModule>
+	<subModule>
+		<module>
+			<name objName = "sub04"    className = "sub04" />
+		</module>
+	</subModule>
+	<subModule>
+		<module>
+			<name objName = "sub17"    className = "sub17" />
+		</module>
+	</subModule>
+	<subModule>
+		<module>
+			<name objName = "sub10"    className = "sub10" />
+		</module>
+	</subModule>
+	<subModule>
+		<module>
+			<name objName = "sub20"    className = "sub20" />
+		</module>
+	</subModule>
+	<subModule>
+		<module>
+			<name objName = "sub21"    className = "sub21" />
+		</module>
+	</subModule>
+</module>

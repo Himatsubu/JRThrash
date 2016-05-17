@@ -1,0 +1,4 @@
+﻿
+DFGraphViewer.html は Firefox でのみ動作します.
+また, Data Flow Graph のノードの文字が小さい場合は, DFGraphViewer.js の 40行目付近にある 
+nodeShape オブジェクトの fontSize を変更してください.

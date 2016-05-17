@@ -1,0 +1,3 @@
+./\src\net\njlab\sample\*.java
+./\src\net\njlab\sample\subModuleTest\*.java
+./\src\net\njlab\sample\ThreadTest\*.java

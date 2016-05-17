@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>DFgraphViewer</title>	
+		<LINK href="css/visual.css"          rel="stylesheet" type="text/css">
+		<LINK href="css/jquery.ui.all.css"   rel="stylesheet" type="text/css">
+		<LINK href="css/colorSelecter.css"   rel="stylesheet" type="text/css">
+		<script type="text/javascript" src="lib/jquery-2.0.3.js"></script>
+		<script type="text/javascript" src="lib/jquery.ui.core.js"></script>
+		<script type="text/javascript" src="lib/jquery.ui.widget.js"></script>
+		<script type="text/javascript" src="lib/jquery.ui.accordion.js"></script>
+		<script type="text/javascript" src="lib/jquery.ui.tabs.js"></script>
+		<script type="text/javascript" src="lib/jquery.ui.mouse.js"></script>
+		<script type="text/javascript" src="lib/jquery.ui.selectable.js"></script>
+		<script type="text/javascript" src="lib/jquery.ui.draggable.js"></script>
+		<script type="text/javascript" src="lib/jquery.ui.resizable.js"></script>
+		<script type="text/javascript" src="lib/jquery.ui.droppable.js"></script>
+		<script type="text/javascript" src="lib/jcanvas.js"></script>
+		<script type="text/javascript" src="DFGraphViewer.js"></script>		
+	</head>
+
+	<body id="main">
+
+		<span id="widthRuler" style=" white-space:nowrap; visibility:hidden;"> </span>
+
+		<div id="colorSelecter"></div>
+
+		<div style="clear: both;">
+			<form>
+				<input id="variableDepend" type="checkbox" style="margin:20px"> <span style="font-size: 15px; margin:20px">Show dependencies between variables </span>
+			</form><!--style="margin: 20px;"-->
+		</div>
+
+		<div id="parent" style="clear: both; margin-bottom:20px">
+		</div>
+
+		<ul id="descriptive" style="font-size: 15px">
+			<li style="margin-top: 10px"> Double click <span class="DFGNode" style="padding-left:5px; padding-right:5px; margin-right:5px"> Data Flow Graph Nodes </span> to select those assigned to the same hardware component</li>
+			<li style="margin-top: 10px"> Right click <span class="DFGNode" style="padding-left:5px; padding-right:5px; margin-right:5px"> Data Flow Graph Nodes </span> to see the details of the nodes</li>
+			<li style="margin-top: 10px"> <span class="DFGNode" style="padding-left:5px; padding-right:5px; margin-right:5px"> Data Flow Graph Nodes </span> are draggable</li>
+			<li style="margin-top: 10px"> Click <span class="methodName"> a method name </span> to see the expressions in the method</li>
+			<li style="margin-top: 10px"> Click <span class="stageNum"> a stage number </span> to see the expressions in the stage</li>
+			<li style="margin-top: 10px"> You can resize the windows that appear by click </li>
+		</ul>
+
+		<div id="drop">
+			drag &amp; drop ClassName_dfg.xml file
+		</div>
+		<div style="margin: 20px; font-size: 20px"> This tool can only work with Mozilla Firefox 23.0.1 or more</div>
+	</body>
+</html>

@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="shift_jis" ?>
+
+<conf>
+
+	<bitWidth>
+		<byteBitWidth>	8     </byteBitWidth>
+		<shortBitWidth>	16    </shortBitWidth>
+		<intBitWidth>	32    </intBitWidth>
+		<longBitWidth>  64    </longBitWidth>
+		<floatingIsSingle> true </floatingIsSingle>
+	</bitWidth>
+
+	<haveClockEnablePort> false </haveClockEnablePort>
+
+	<IPcore>
+		<dualPortRam>
+			<latency>          1           </latency>
+			<moduleName>       DualPortRAM </moduleName>
+			<clk0Pname>        clk         </clk0Pname>
+			<clk1Pname>        clk1        </clk1Pname>
+			<addr0Pname>       addr_0      </addr0Pname>
+			<addr1Pname>       addr_1      </addr1Pname>
+			<dataIn0Pname>     datain_0    </dataIn0Pname>
+			<dataIn1Pname>     datain_1    </dataIn1Pname>
+			<dataOut0Pname>    dataout_0   </dataOut0Pname>
+			<dataOut1Pname>    dataout_1   </dataOut1Pname>
+			<RorW0Pname>       r_w_0       </RorW0Pname>
+			<RorW1Pname>       r_w_1       </RorW1Pname>
+			<clkEnable0Pname>  ce_0        </clkEnable0Pname>
+			<clkEnable1Pname>  ce_1        </clkEnable1Pname>
+			<useGeneratedFile> true        </useGeneratedFile>
+			<commonClock>      true        </commonClock>
+		</dualPortRam>
+
+		<addInt>
+			<latency>           0            </latency>
+			<throughput>        1            </throughput>
+			<moduleName>        AddInt       </moduleName>
+			<availableNum>      1            </availableNum>
+			<useIP>             false        </useIP>
+			<clkPname>          clk          </clkPname>
+			<leftOperandPname>  a            </leftOperandPname>
+			<rightOperandPname> b            </rightOperandPname>
+			<sumPname>          s            </sumPname>
+			<addOrSubPname>     add          </addOrSubPname>
+			<newDataPname>      operation_nd </newDataPname>
+			<clockEnablePname>  ce           </clockEnablePname>
+			<leftPortBitWidth>  32           </leftPortBitWidth>
+			<rightPortBitWidth> 32           </rightPortBitWidth>
+			<sumPortBitWidth>   32           </sumPortBitWidth>
+			<haveNewDataPort>   false        </haveNewDataPort>
+		</addInt>
+
+		<multInt>
+			<latency>              1            </latency>
+			<throughput>           1            </throughput>
+			<moduleName>           MultInt      </moduleName>
+			<availableNum>         1            </availableNum>
+			<useIP>                true         </useIP>
+			<clkPname>             clk          </clkPname>
+			<multiplicandPname>    a            </multiplicandPname>
+			<multiplierPname>      b            </multiplierPname>
+			<productPname>         p            </productPname>
+			<newDataPname>         operation_nd </newDataPname>
+			<clockEnablePname>     ce           </clockEnablePname>
+			<multiplicandBitWidth> 16           </multiplicandBitWidth>
+			<multiplierBitWidth>   16           </multiplierBitWidth>
+			<productBitWidth>      32           </productBitWidth>
+			<haveNewDataPort>      false        </haveNewDataPort>
+		</multInt>
+
+		<divInt>
+			<latency>            36           </latency>
+			<throughput>         1            </throughput>
+			<moduleName>         DivInt       </moduleName>
+			<availableNum>       1            </availableNum>
+			<useIP>              true         </useIP>
+			<clkPname>           clk          </clkPname>
+			<dividendPname>      dividend     </dividendPname>
+			<divisorPname>       divisor      </divisorPname>
+			<quotientPname>      quotient     </quotientPname>
+			<fractionalPname>    fractional   </fractionalPname>
+			<newDataPname>       operation_nd </newDataPname>
+			<clockEnablePname>   ce           </clockEnablePname>
+			<dividendBitWidth>   32           </dividendBitWidth>
+			<divisorBitWidth>    32           </divisorBitWidth>
+			<quotientBitWidth>   32           </quotientBitWidth>
+			<fractionalBitWidth> 32           </fractionalBitWidth>
+			<haveNewDataPort>    false        </haveNewDataPort>
+		</divInt>
+
+		<compareIntLessThan>
+			<latency>           0            </latency>
+			<throughput>        1            </throughput>
+			<moduleName>        CompareIntLT </moduleName>
+			<availableNum>      1            </availableNum>
+			<useIP>             false        </useIP>
+			<clkPname>          clk          </clkPname>
+			<leftOperandPname>  a            </leftOperandPname>
+			<rightOperandPname> b            </rightOperandPname>
+			<resultPname>       result       </resultPname>
+			<newDataPname>      operation_nd </newDataPname>
+			<clockEnablePname>  ce           </clockEnablePname>
+			<leftPortBitWidth>  32           </leftPortBitWidth>
+			<rightPortBitWidth> 32           </rightPortBitWidth>
+			<haveNewDataPort>   false        </haveNewDataPort>
+		</compareIntLessThan>
+
+		<addFloat>
+			<latency>           5            </latency>
+			<throughput>        1            </throughput>
+			<moduleName>        AddFloat     </moduleName>
+			<availableNum>      4            </availableNum>
+			<clkPname>          clk          </clkPname>
+			<leftOperandPname>  a            </leftOperandPname>
+			<rightOperandPname> b            </rightOperandPname>
+			<sumPname>          result       </sumPname>
+			<newDataPname>      operation_nd </newDataPname>
+			<clockEnablePname>  ce           </clockEnablePname>
+			<haveNewDataPort>   false        </haveNewDataPort>
+		</addFloat>
+
+		<multFloat>
+			<latency>           5            </latency>
+			<throughput>        1            </throughput>
+			<moduleName>        MultFloat    </moduleName>
+			<availableNum>      4            </availableNum>
+			<clkPname>          clk          </clkPname>
+			<multiplicandPname> a            </multiplicandPname>
+			<multiplierPname>   b            </multiplierPname>
+			<productPname>      result       </productPname>
+			<newDataPname>      operation_nd </newDataPname>
+			<clockEnablePname>  ce           </clockEnablePname>
+			<haveNewDataPort>   false        </haveNewDataPort>
+		</multFloat>
+
+		<divFloat>
+			<latency>          57           </latency>
+			<throughput>       55           </throughput>
+			<moduleName>       DivFloat     </moduleName>
+			<availableNum>     3            </availableNum>
+			<clkPname>         clk          </clkPname>
+			<dividendPname>    a            </dividendPname>
+			<divisorPname>     b            </divisorPname>
+			<quotientPname>    result       </quotientPname>
+			<newDataPname>     operation_nd </newDataPname>
+			<clockEnablePname> ce           </clockEnablePname>
+			<haveNewDataPort>  true         </haveNewDataPort>
+		</divFloat>
+
+		<compareFloatLessThan>
+			<latency>           2              </latency>
+			<throughput>        1              </throughput>
+			<moduleName>        CompareFloatLT </moduleName>
+			<availableNum>      1              </availableNum>
+			<clkPname>          clk            </clkPname>
+			<leftOperandPname>  a              </leftOperandPname>
+			<rightOperandPname> b              </rightOperandPname>
+			<resultPname>       result         </resultPname>
+			<newDataPname>      operation_nd   </newDataPname>
+			<clockEnablePname>  ce             </clockEnablePname>
+			<haveNewDataPort>   false          </haveNewDataPort>
+		</compareFloatLessThan>
+
+		<fixedToFloat>
+			<latency>           6              </latency>
+			<throughput>        1              </throughput>
+			<moduleName>        FixedToFloat   </moduleName>
+			<availableNum>      1              </availableNum>
+			<clkPname>          clk            </clkPname>
+			<fixedPname>        a              </fixedPname>
+			<floatPname>        result         </floatPname>
+			<newDataPname>      operation_nd   </newDataPname>
+			<clockEnablePname>  ce             </clockEnablePname>
+			<fixedPortBitWidth> 32             </fixedPortBitWidth>
+			<haveNewDataPort>   false          </haveNewDataPort>
+		</fixedToFloat>
+
+		<floatToFixed>
+			<latency>           6              </latency>
+			<throughput>        1              </throughput>
+			<moduleName>        FloatToFixed   </moduleName>
+			<availableNum>      1              </availableNum>
+			<clkPname>          clk            </clkPname>
+			<floatPname>        a              </floatPname>
+			<fixedPname>        result         </fixedPname>
+			<newDataPname>      operation_nd   </newDataPname>
+			<clockEnablePname>  ce             </clockEnablePname>
+			<fixedPortBitWidth> 32             </fixedPortBitWidth>
+			<haveNewDataPort>   false          </haveNewDataPort>
+		</floatToFixed>
+	</IPcore>
+
+	<generateCode>
+		<positiveEdge>  true  </positiveEdge>
+		<negativeReset> true  </negativeReset>
+		<paramListArrayAddrBitWidth> 32 </paramListArrayAddrBitWidth>
+		<genCodeForCompressedState> true </genCodeForCompressedState>
+	</generateCode>
+
+	<registerSharing>
+		<maxIntSharingNum>   256  </maxIntSharingNum>
+		<maxFloatSharingNum> 5    </maxFloatSharingNum>
+		<maxLongSharingNum>  256  </maxLongSharingNum>
+		<maxBoolSharingNum>  256  </maxBoolSharingNum>
+	</registerSharing>
+
+	<scheduling>
+		<saveReadVariableWithWARhazard> false </saveReadVariableWithWARhazard>
+		<forwardingEnable> true </forwardingEnable>
+		<reduceConnectionConst> true </reduceConnectionConst>
+		<assignSameIPtoUnrolledNode> true </assignSameIPtoUnrolledNode>
+	</scheduling>
+
+	<chaining>
+		<addInt>       true  </addInt>
+		<multInt>      true  </multInt>
+		<divInt>       true  </divInt>
+		<addFloat>     true  </addFloat>
+		<multFloat>    true  </multFloat>
+		<divFloat>     true  </divFloat>
+		<fixedToFloat> true  </fixedToFloat>
+		<floatToFixed> true  </floatToFixed>
+		<arrayRead>    true  </arrayRead>
+		<unaryMinus>   true  </unaryMinus>
+		<bitOp>        true  </bitOp>
+		<logicalOp>    true  </logicalOp>
+		<compareOp>    true  </compareOp>
+		<shiftOp>      true  </shiftOp>
+		<conditional>  true  </conditional>
+	</chaining>
+
+</conf>

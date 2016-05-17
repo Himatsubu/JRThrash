@@ -1,0 +1,2991 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Class>
+
+	<ClassName>	Effecter	</ClassName>
+
+	<AllVariables>
+		<VeriableDecl>
+			<name>	bufferInA	</name>
+			<type>	short	</type>
+			<variableID>	0	</variableID>
+			<parentName>	Effecter	</parentName>
+			<defType>	field	</defType>
+			<isArray>	true	</isArray>
+			<isPrimitive>	true	</isPrimitive>
+			<isFinal>	true	</isFinal>
+			<dimension>	1	</dimension>
+			<init>
+				<NewArray>
+					<type>	short	</type>
+					<elements>	1024	</elements>				
+				</NewArray>
+			</init>
+		</VeriableDecl>
+
+		<VeriableDecl>
+			<name>	bufferInB	</name>
+			<type>	short	</type>
+			<variableID>	1	</variableID>
+			<parentName>	Effecter	</parentName>
+			<defType>	field	</defType>
+			<isArray>	true	</isArray>
+			<isPrimitive>	true	</isPrimitive>
+			<isFinal>	true	</isFinal>
+			<dimension>	1	</dimension>
+			<init>
+				<NewArray>
+					<type>	short	</type>
+					<elements>	1024	</elements>				
+				</NewArray>
+			</init>
+		</VeriableDecl>
+
+		<VeriableDecl>
+			<name>	bufferOutA	</name>
+			<type>	short	</type>
+			<variableID>	2	</variableID>
+			<parentName>	Effecter	</parentName>
+			<defType>	field	</defType>
+			<isArray>	true	</isArray>
+			<isPrimitive>	true	</isPrimitive>
+			<isFinal>	true	</isFinal>
+			<dimension>	1	</dimension>
+			<init>
+				<NewArray>
+					<type>	short	</type>
+					<elements>	1024	</elements>				
+				</NewArray>
+			</init>
+		</VeriableDecl>
+
+		<VeriableDecl>
+			<name>	bufferOutB	</name>
+			<type>	short	</type>
+			<variableID>	3	</variableID>
+			<parentName>	Effecter	</parentName>
+			<defType>	field	</defType>
+			<isArray>	true	</isArray>
+			<isPrimitive>	true	</isPrimitive>
+			<isFinal>	true	</isFinal>
+			<dimension>	1	</dimension>
+			<init>
+				<NewArray>
+					<type>	short	</type>
+					<elements>	1024	</elements>				
+				</NewArray>
+			</init>
+		</VeriableDecl>
+
+		<VeriableDecl>
+			<name>	phase	</name>
+			<type>	int	</type>
+			<variableID>	4	</variableID>
+			<parentName>	Effecter	</parentName>
+			<defType>	field	</defType>
+			<isArray>	false	</isArray>
+			<isPrimitive>	true	</isPrimitive>
+			<isFinal>	false	</isFinal>
+			<dimension>	0	</dimension>
+			<init>
+				<Literal>
+					<type>	int	</type>
+					<value>	0	</value>
+				</Literal>
+			</init>
+		</VeriableDecl>
+
+		<VeriableDecl>
+			<name>	bufSize	</name>
+			<type>	short	</type>
+			<variableID>	5	</variableID>
+			<parentName>	Effecter	</parentName>
+			<defType>	field	</defType>
+			<isArray>	false	</isArray>
+			<isPrimitive>	true	</isPrimitive>
+			<isFinal>	false	</isFinal>
+			<dimension>	0	</dimension>
+			<init>
+				<Literal>
+					<type>	int	</type>
+					<value>	1024	</value>
+				</Literal>
+			</init>
+		</VeriableDecl>
+
+		<VeriableDecl>
+			<name>	rateA	</name>
+			<type>	short	</type>
+			<variableID>	6	</variableID>
+			<parentName>	voiceChange	</parentName>
+			<defType>	paramList	</defType>
+			<isArray>	false	</isArray>
+			<isPrimitive>	true	</isPrimitive>
+			<isFinal>	false	</isFinal>
+			<dimension>	0	</dimension>
+			<init>
+			</init>
+		</VeriableDecl>
+
+		<VeriableDecl>
+			<name>	rateB	</name>
+			<type>	short	</type>
+			<variableID>	7	</variableID>
+			<parentName>	voiceChange	</parentName>
+			<defType>	paramList	</defType>
+			<isArray>	false	</isArray>
+			<isPrimitive>	true	</isPrimitive>
+			<isFinal>	false	</isFinal>
+			<dimension>	0	</dimension>
+			<init>
+			</init>
+		</VeriableDecl>
+
+		<VeriableDecl>
+			<name>	threshold	</name>
+			<type>	short	</type>
+			<variableID>	8	</variableID>
+			<parentName>	voiceChange	</parentName>
+			<defType>	paramList	</defType>
+			<isArray>	false	</isArray>
+			<isPrimitive>	true	</isPrimitive>
+			<isFinal>	false	</isFinal>
+			<dimension>	0	</dimension>
+			<init>
+			</init>
+		</VeriableDecl>
+
+		<VeriableDecl>
+			<name>	bufSelect	</name>
+			<type>	boolean	</type>
+			<variableID>	9	</variableID>
+			<parentName>	voiceChange	</parentName>
+			<defType>	paramList	</defType>
+			<isArray>	false	</isArray>
+			<isPrimitive>	true	</isPrimitive>
+			<isFinal>	false	</isFinal>
+			<dimension>	0	</dimension>
+			<init>
+			</init>
+		</VeriableDecl>
+
+		<VeriableDecl>
+			<name>	function	</name>
+			<type>	byte	</type>
+			<variableID>	10	</variableID>
+			<parentName>	voiceChange	</parentName>
+			<defType>	paramList	</defType>
+			<isArray>	false	</isArray>
+			<isPrimitive>	true	</isPrimitive>
+			<isFinal>	false	</isFinal>
+			<dimension>	0	</dimension>
+			<init>
+			</init>
+		</VeriableDecl>
+
+		<VeriableDecl>
+			<name>	rateA	</name>
+			<type>	short	</type>
+			<variableID>	11	</variableID>
+			<parentName>	multSine	</parentName>
+			<defType>	paramList	</defType>
+			<isArray>	false	</isArray>
+			<isPrimitive>	true	</isPrimitive>
+			<isFinal>	false	</isFinal>
+			<dimension>	0	</dimension>
+			<init>
+			</init>
+		</VeriableDecl>
+
+		<VeriableDecl>
+			<name>	rateB	</name>
+			<type>	short	</type>
+			<variableID>	12	</variableID>
+			<parentName>	multSine	</parentName>
+			<defType>	paramList	</defType>
+			<isArray>	false	</isArray>
+			<isPrimitive>	true	</isPrimitive>
+			<isFinal>	false	</isFinal>
+			<dimension>	0	</dimension>
+			<init>
+			</init>
+		</VeriableDecl>
+
+		<VeriableDecl>
+			<name>	bufferIn	</name>
+			<type>	short	</type>
+			<variableID>	13	</variableID>
+			<parentName>	multSine	</parentName>
+			<defType>	paramList	</defType>
+			<isArray>	true	</isArray>
+			<isPrimitive>	true	</isPrimitive>
+			<isFinal>	false	</isFinal>
+			<dimension>	1	</dimension>
+			<init>
+			</init>
+		</VeriableDecl>
+
+		<VeriableDecl>
+			<name>	bufferOut	</name>
+			<type>	short	</type>
+			<variableID>	14	</variableID>
+			<parentName>	multSine	</parentName>
+			<defType>	paramList	</defType>
+			<isArray>	true	</isArray>
+			<isPrimitive>	true	</isPrimitive>
+			<isFinal>	false	</isFinal>
+			<dimension>	1	</dimension>
+			<init>
+			</init>
+		</VeriableDecl>
+
+		<VeriableDecl>
+			<name>	mulWave	</name>
+			<type>	int	</type>
+			<variableID>	15	</variableID>
+			<parentName>	multSine	</parentName>
+			<defType>	method	</defType>
+			<isArray>	false	</isArray>
+			<isPrimitive>	true	</isPrimitive>
+			<isFinal>	false	</isFinal>
+			<dimension>	0	</dimension>
+			<init>
+			</init>
+		</VeriableDecl>
+
+		<VeriableDecl>
+			<name>	i	</name>
+			<type>	int	</type>
+			<variableID>	16	</variableID>
+			<parentName>	multSine	</parentName>
+			<defType>	method	</defType>
+			<isArray>	false	</isArray>
+			<isPrimitive>	true	</isPrimitive>
+			<isFinal>	false	</isFinal>
+			<dimension>	0	</dimension>
+			<init>
+				<Literal>
+					<type>	int	</type>
+					<value>	0	</value>
+				</Literal>
+			</init>
+		</VeriableDecl>
+
+		<VeriableDecl>
+			<name>	j	</name>
+			<type>	int	</type>
+			<variableID>	17	</variableID>
+			<parentName>	multSine	</parentName>
+			<defType>	method	</defType>
+			<isArray>	false	</isArray>
+			<isPrimitive>	true	</isPrimitive>
+			<isFinal>	false	</isFinal>
+			<dimension>	0	</dimension>
+			<init>
+				<Literal>
+					<type>	int	</type>
+					<value>	0	</value>
+				</Literal>
+			</init>
+		</VeriableDecl>
+
+		<VeriableDecl>
+			<name>	input	</name>
+			<type>	int	</type>
+			<variableID>	18	</variableID>
+			<parentName>	multSine	</parentName>
+			<defType>	method	</defType>
+			<isArray>	false	</isArray>
+			<isPrimitive>	true	</isPrimitive>
+			<isFinal>	false	</isFinal>
+			<dimension>	0	</dimension>
+			<init>
+				<ArrayAccess>
+					<variableID>	13	</variableID>
+					<idName>bufferIn</idName>
+
+					<index0>
+						<Ident>
+							<variableID>	16	</variableID>
+							<idName>	i	</idName>
+						</Ident>
+					</index0>
+
+				</ArrayAccess>
+
+			</init>
+		</VeriableDecl>
+
+		<VeriableDecl>
+			<name>	bufferIn	</name>
+			<type>	short	</type>
+			<variableID>	19	</variableID>
+			<parentName>	becomeHigh	</parentName>
+			<defType>	paramList	</defType>
+			<isArray>	true	</isArray>
+			<isPrimitive>	true	</isPrimitive>
+			<isFinal>	false	</isFinal>
+			<dimension>	1	</dimension>
+			<init>
+			</init>
+		</VeriableDecl>
+
+		<VeriableDecl>
+			<name>	bufferOut	</name>
+			<type>	short	</type>
+			<variableID>	20	</variableID>
+			<parentName>	becomeHigh	</parentName>
+			<defType>	paramList	</defType>
+			<isArray>	true	</isArray>
+			<isPrimitive>	true	</isPrimitive>
+			<isFinal>	false	</isFinal>
+			<dimension>	1	</dimension>
+			<init>
+			</init>
+		</VeriableDecl>
+
+		<VeriableDecl>
+			<name>	bufSizeDiv2	</name>
+			<type>	int	</type>
+			<variableID>	21	</variableID>
+			<parentName>	becomeHigh	</parentName>
+			<defType>	method	</defType>
+			<isArray>	false	</isArray>
+			<isPrimitive>	true	</isPrimitive>
+			<isFinal>	false	</isFinal>
+			<dimension>	0	</dimension>
+			<init>
+				<Binary>
+					<binaryOp>	'SR'	</binaryOp>
+					<leftExpr>
+						<Ident>
+							<variableID>	5	</variableID>
+							<idName>	bufSize	</idName>
+						</Ident>
+					</leftExpr>
+
+					<rightExpr>
+						<Literal>
+							<type>	int	</type>
+							<value>	1	</value>
+						</Literal>
+					</rightExpr>
+
+				</Binary>
+
+			</init>
+		</VeriableDecl>
+
+		<VeriableDecl>
+			<name>	tmp	</name>
+			<type>	int	</type>
+			<variableID>	22	</variableID>
+			<parentName>	becomeHigh	</parentName>
+			<defType>	method	</defType>
+			<isArray>	false	</isArray>
+			<isPrimitive>	true	</isPrimitive>
+			<isFinal>	false	</isFinal>
+			<dimension>	0	</dimension>
+			<init>
+			</init>
+		</VeriableDecl>
+
+		<VeriableDecl>
+			<name>	sinTmp	</name>
+			<type>	int	</type>
+			<variableID>	23	</variableID>
+			<parentName>	becomeHigh	</parentName>
+			<defType>	method	</defType>
+			<isArray>	false	</isArray>
+			<isPrimitive>	true	</isPrimitive>
+			<isFinal>	false	</isFinal>
+			<dimension>	0	</dimension>
+			<init>
+			</init>
+		</VeriableDecl>
+
+		<VeriableDecl>
+			<name>	i	</name>
+			<type>	int	</type>
+			<variableID>	24	</variableID>
+			<parentName>	becomeHigh	</parentName>
+			<defType>	method	</defType>
+			<isArray>	false	</isArray>
+			<isPrimitive>	true	</isPrimitive>
+			<isFinal>	false	</isFinal>
+			<dimension>	0	</dimension>
+			<init>
+				<Literal>
+					<type>	int	</type>
+					<value>	0	</value>
+				</Literal>
+			</init>
+		</VeriableDecl>
+
+		<VeriableDecl>
+			<name>	j	</name>
+			<type>	int	</type>
+			<variableID>	25	</variableID>
+			<parentName>	becomeHigh	</parentName>
+			<defType>	method	</defType>
+			<isArray>	false	</isArray>
+			<isPrimitive>	true	</isPrimitive>
+			<isFinal>	false	</isFinal>
+			<dimension>	0	</dimension>
+			<init>
+				<Literal>
+					<type>	int	</type>
+					<value>	0	</value>
+				</Literal>
+			</init>
+		</VeriableDecl>
+
+		<VeriableDecl>
+			<name>	rateA	</name>
+			<type>	short	</type>
+			<variableID>	26	</variableID>
+			<parentName>	distortion	</parentName>
+			<defType>	paramList	</defType>
+			<isArray>	false	</isArray>
+			<isPrimitive>	true	</isPrimitive>
+			<isFinal>	false	</isFinal>
+			<dimension>	0	</dimension>
+			<init>
+			</init>
+		</VeriableDecl>
+
+		<VeriableDecl>
+			<name>	bufferIn	</name>
+			<type>	short	</type>
+			<variableID>	27	</variableID>
+			<parentName>	distortion	</parentName>
+			<defType>	paramList	</defType>
+			<isArray>	true	</isArray>
+			<isPrimitive>	true	</isPrimitive>
+			<isFinal>	false	</isFinal>
+			<dimension>	1	</dimension>
+			<init>
+			</init>
+		</VeriableDecl>
+
+		<VeriableDecl>
+			<name>	bufferOut	</name>
+			<type>	short	</type>
+			<variableID>	28	</variableID>
+			<parentName>	distortion	</parentName>
+			<defType>	paramList	</defType>
+			<isArray>	true	</isArray>
+			<isPrimitive>	true	</isPrimitive>
+			<isFinal>	false	</isFinal>
+			<dimension>	1	</dimension>
+			<init>
+			</init>
+		</VeriableDecl>
+
+		<VeriableDecl>
+			<name>	bufIn	</name>
+			<type>	short	</type>
+			<variableID>	29	</variableID>
+			<parentName>	distortion	</parentName>
+			<defType>	method	</defType>
+			<isArray>	false	</isArray>
+			<isPrimitive>	true	</isPrimitive>
+			<isFinal>	false	</isFinal>
+			<dimension>	0	</dimension>
+			<init>
+			</init>
+		</VeriableDecl>
+
+		<VeriableDecl>
+			<name>	i	</name>
+			<type>	int	</type>
+			<variableID>	30	</variableID>
+			<parentName>	distortion	</parentName>
+			<defType>	method	</defType>
+			<isArray>	false	</isArray>
+			<isPrimitive>	true	</isPrimitive>
+			<isFinal>	false	</isFinal>
+			<dimension>	0	</dimension>
+			<init>
+				<Literal>
+					<type>	int	</type>
+					<value>	0	</value>
+				</Literal>
+			</init>
+		</VeriableDecl>
+
+		<VeriableDecl>
+			<name>	j	</name>
+			<type>	int	</type>
+			<variableID>	31	</variableID>
+			<parentName>	distortion	</parentName>
+			<defType>	method	</defType>
+			<isArray>	false	</isArray>
+			<isPrimitive>	true	</isPrimitive>
+			<isFinal>	false	</isFinal>
+			<dimension>	0	</dimension>
+			<init>
+				<Literal>
+					<type>	int	</type>
+					<value>	0	</value>
+				</Literal>
+			</init>
+		</VeriableDecl>
+
+		<VeriableDecl>
+			<name>	bufferIn	</name>
+			<type>	short	</type>
+			<variableID>	32	</variableID>
+			<parentName>	echo	</parentName>
+			<defType>	paramList	</defType>
+			<isArray>	true	</isArray>
+			<isPrimitive>	true	</isPrimitive>
+			<isFinal>	false	</isFinal>
+			<dimension>	1	</dimension>
+			<init>
+			</init>
+		</VeriableDecl>
+
+		<VeriableDecl>
+			<name>	bufferOut	</name>
+			<type>	short	</type>
+			<variableID>	33	</variableID>
+			<parentName>	echo	</parentName>
+			<defType>	paramList	</defType>
+			<isArray>	true	</isArray>
+			<isPrimitive>	true	</isPrimitive>
+			<isFinal>	false	</isFinal>
+			<dimension>	1	</dimension>
+			<init>
+			</init>
+		</VeriableDecl>
+
+		<VeriableDecl>
+			<name>	i	</name>
+			<type>	int	</type>
+			<variableID>	34	</variableID>
+			<parentName>	echo	</parentName>
+			<defType>	method	</defType>
+			<isArray>	false	</isArray>
+			<isPrimitive>	true	</isPrimitive>
+			<isFinal>	false	</isFinal>
+			<dimension>	0	</dimension>
+			<init>
+				<Literal>
+					<type>	int	</type>
+					<value>	0	</value>
+				</Literal>
+			</init>
+		</VeriableDecl>
+
+		<VeriableDecl>
+			<name>	j	</name>
+			<type>	int	</type>
+			<variableID>	35	</variableID>
+			<parentName>	echo	</parentName>
+			<defType>	method	</defType>
+			<isArray>	false	</isArray>
+			<isPrimitive>	true	</isPrimitive>
+			<isFinal>	false	</isFinal>
+			<dimension>	0	</dimension>
+			<init>
+				<Literal>
+					<type>	int	</type>
+					<value>	0	</value>
+				</Literal>
+			</init>
+		</VeriableDecl>
+
+		<VeriableDecl>
+			<name>	phase_in	</name>
+			<type>	short	</type>
+			<variableID>	36	</variableID>
+			<parentName>	Sin	</parentName>
+			<defType>	paramList	</defType>
+			<isArray>	false	</isArray>
+			<isPrimitive>	true	</isPrimitive>
+			<isFinal>	false	</isFinal>
+			<dimension>	0	</dimension>
+			<init>
+			</init>
+		</VeriableDecl>
+
+		<VeriableDecl>
+			<name>	copy1_input	</name>
+			<type>	int	</type>
+			<variableID>	37	</variableID>
+			<parentName>	multSine	</parentName>
+			<defType>	method	</defType>
+			<isArray>	false	</isArray>
+			<isPrimitive>	true	</isPrimitive>
+			<isFinal>	false	</isFinal>
+			<dimension>	0	</dimension>
+			<init>
+				<ArrayAccess>
+					<variableID>	13	</variableID>
+					<idName>bufferIn</idName>
+
+					<index0>
+						<Ident>
+							<variableID>	16	</variableID>
+							<idName>	i	</idName>
+						</Ident>
+					</index0>
+
+				</ArrayAccess>
+
+			</init>
+		</VeriableDecl>
+
+		<VeriableDecl>
+			<name>	copy2_input	</name>
+			<type>	int	</type>
+			<variableID>	38	</variableID>
+			<parentName>	multSine	</parentName>
+			<defType>	method	</defType>
+			<isArray>	false	</isArray>
+			<isPrimitive>	true	</isPrimitive>
+			<isFinal>	false	</isFinal>
+			<dimension>	0	</dimension>
+			<init>
+				<ArrayAccess>
+					<variableID>	13	</variableID>
+					<idName>bufferIn</idName>
+
+					<index0>
+						<Ident>
+							<variableID>	16	</variableID>
+							<idName>	i	</idName>
+						</Ident>
+					</index0>
+
+				</ArrayAccess>
+
+			</init>
+		</VeriableDecl>
+
+		<VeriableDecl>
+			<name>	copy3_input	</name>
+			<type>	int	</type>
+			<variableID>	39	</variableID>
+			<parentName>	multSine	</parentName>
+			<defType>	method	</defType>
+			<isArray>	false	</isArray>
+			<isPrimitive>	true	</isPrimitive>
+			<isFinal>	false	</isFinal>
+			<dimension>	0	</dimension>
+			<init>
+				<ArrayAccess>
+					<variableID>	13	</variableID>
+					<idName>bufferIn</idName>
+
+					<index0>
+						<Ident>
+							<variableID>	16	</variableID>
+							<idName>	i	</idName>
+						</Ident>
+					</index0>
+
+				</ArrayAccess>
+
+			</init>
+		</VeriableDecl>
+
+		<VeriableDecl>
+			<name>	copy4_input	</name>
+			<type>	int	</type>
+			<variableID>	40	</variableID>
+			<parentName>	multSine	</parentName>
+			<defType>	method	</defType>
+			<isArray>	false	</isArray>
+			<isPrimitive>	true	</isPrimitive>
+			<isFinal>	false	</isFinal>
+			<dimension>	0	</dimension>
+			<init>
+				<ArrayAccess>
+					<variableID>	13	</variableID>
+					<idName>bufferIn</idName>
+
+					<index0>
+						<Ident>
+							<variableID>	16	</variableID>
+							<idName>	i	</idName>
+						</Ident>
+					</index0>
+
+				</ArrayAccess>
+
+			</init>
+		</VeriableDecl>
+
+		<VeriableDecl>
+			<name>	copy5_input	</name>
+			<type>	int	</type>
+			<variableID>	41	</variableID>
+			<parentName>	multSine	</parentName>
+			<defType>	method	</defType>
+			<isArray>	false	</isArray>
+			<isPrimitive>	true	</isPrimitive>
+			<isFinal>	false	</isFinal>
+			<dimension>	0	</dimension>
+			<init>
+				<ArrayAccess>
+					<variableID>	13	</variableID>
+					<idName>bufferIn</idName>
+
+					<index0>
+						<Ident>
+							<variableID>	16	</variableID>
+							<idName>	i	</idName>
+						</Ident>
+					</index0>
+
+				</ArrayAccess>
+
+			</init>
+		</VeriableDecl>
+
+		<VeriableDecl>
+			<name>	copy6_input	</name>
+			<type>	int	</type>
+			<variableID>	42	</variableID>
+			<parentName>	multSine	</parentName>
+			<defType>	method	</defType>
+			<isArray>	false	</isArray>
+			<isPrimitive>	true	</isPrimitive>
+			<isFinal>	false	</isFinal>
+			<dimension>	0	</dimension>
+			<init>
+				<ArrayAccess>
+					<variableID>	13	</variableID>
+					<idName>bufferIn</idName>
+
+					<index0>
+						<Ident>
+							<variableID>	16	</variableID>
+							<idName>	i	</idName>
+						</Ident>
+					</index0>
+
+				</ArrayAccess>
+
+			</init>
+		</VeriableDecl>
+
+		<VeriableDecl>
+			<name>	copy7_input	</name>
+			<type>	int	</type>
+			<variableID>	43	</variableID>
+			<parentName>	multSine	</parentName>
+			<defType>	method	</defType>
+			<isArray>	false	</isArray>
+			<isPrimitive>	true	</isPrimitive>
+			<isFinal>	false	</isFinal>
+			<dimension>	0	</dimension>
+			<init>
+				<ArrayAccess>
+					<variableID>	13	</variableID>
+					<idName>bufferIn</idName>
+
+					<index0>
+						<Ident>
+							<variableID>	16	</variableID>
+							<idName>	i	</idName>
+						</Ident>
+					</index0>
+
+				</ArrayAccess>
+
+			</init>
+		</VeriableDecl>
+
+	</AllVariables>
+
+	<METHOD>	<Phase>  1  </Phase>
+
+		<methodName>	voiceChange	</methodName>
+		<returnType>	boolean	</returnType>
+		<ParamList>
+
+			<VeriableDecl>			<name>	rateA	</name>		<variableID>	6	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+			<VeriableDecl>			<name>	rateB	</name>		<variableID>	7	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+			<VeriableDecl>			<name>	threshold	</name>		<variableID>	8	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+			<VeriableDecl>			<name>	bufSelect	</name>		<variableID>	9	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+			<VeriableDecl>			<name>	function	</name>		<variableID>	10	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+		</ParamList>
+
+		<MethodBody>
+			<Block>	<Phase>  1  </Phase>
+
+				<If>	<Phase>  2  </Phase>
+					<ifCond>
+						<StatAssemblage>	<Phase>  3  </Phase>
+							<stageNum>  1  </stageNum>
+							<totalStepNum>  1  </totalStepNum>
+							<VariableStack>
+								<VeriableDecl>			<name>	bufferInA	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	bufferInB	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	bufferOutA	</name>		<variableID>	2	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	bufferOutB	</name>		<variableID>	3	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	phase	</name>		<variableID>	4	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	bufSize	</name>		<variableID>	5	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	rateA	</name>		<variableID>	6	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	rateB	</name>		<variableID>	7	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	threshold	</name>		<variableID>	8	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	bufSelect	</name>		<variableID>	9	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	function	</name>		<variableID>	10	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+							</VariableStack>
+
+							<statements>
+								<ExprStatement>
+									<Binary>
+										<binaryOp>	'=='	</binaryOp>
+										<leftExpr>
+											<Ident>
+												<variableID>	10	</variableID>
+												<idName>	function	</idName>
+											</Ident>
+										</leftExpr>
+
+										<rightExpr>
+											<Literal>
+												<type>	int	</type>
+												<value>	0	</value>
+											</Literal>
+										</rightExpr>
+
+									</Binary>
+
+								</ExprStatement>
+
+							</statements>
+
+						</StatAssemblage>
+
+					</ifCond>
+
+					<thenBlock>
+						<Block>	<Phase>  4  </Phase>
+
+							<If>	<Phase>  5  </Phase>
+								<ifCond>
+									<StatAssemblage>	<Phase>  6  </Phase>
+										<stageNum>  1  </stageNum>
+										<totalStepNum>  1  </totalStepNum>
+										<VariableStack>
+											<VeriableDecl>			<name>	bufferInA	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+											<VeriableDecl>			<name>	bufferInB	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+											<VeriableDecl>			<name>	bufferOutA	</name>		<variableID>	2	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+											<VeriableDecl>			<name>	bufferOutB	</name>		<variableID>	3	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+											<VeriableDecl>			<name>	phase	</name>		<variableID>	4	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+											<VeriableDecl>			<name>	bufSize	</name>		<variableID>	5	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+											<VeriableDecl>			<name>	rateA	</name>		<variableID>	6	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+											<VeriableDecl>			<name>	rateB	</name>		<variableID>	7	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+											<VeriableDecl>			<name>	threshold	</name>		<variableID>	8	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+											<VeriableDecl>			<name>	bufSelect	</name>		<variableID>	9	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+											<VeriableDecl>			<name>	function	</name>		<variableID>	10	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+										</VariableStack>
+
+										<statements>
+											<ExprStatement>
+												<Unary>
+												<unaryOP>	!</unaryOP>
+													<Ident>
+														<variableID>	9	</variableID>
+														<idName>	bufSelect	</idName>
+													</Ident>
+												</Unary>
+
+											</ExprStatement>
+
+										</statements>
+
+									</StatAssemblage>
+
+								</ifCond>
+
+								<thenBlock>
+									<Block>	<Phase>  7  </Phase>
+
+										<StatAssemblage>	<Phase>  8  </Phase>
+											<stageNum>  1  </stageNum>
+											<totalStepNum>  2  </totalStepNum>
+											<VariableStack>
+												<VeriableDecl>			<name>	bufferInA	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+												<VeriableDecl>			<name>	bufferInB	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+												<VeriableDecl>			<name>	bufferOutA	</name>		<variableID>	2	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+												<VeriableDecl>			<name>	bufferOutB	</name>		<variableID>	3	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+												<VeriableDecl>			<name>	phase	</name>		<variableID>	4	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+												<VeriableDecl>			<name>	bufSize	</name>		<variableID>	5	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+												<VeriableDecl>			<name>	rateA	</name>		<variableID>	6	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+												<VeriableDecl>			<name>	rateB	</name>		<variableID>	7	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+												<VeriableDecl>			<name>	threshold	</name>		<variableID>	8	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+												<VeriableDecl>			<name>	bufSelect	</name>		<variableID>	9	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+												<VeriableDecl>			<name>	function	</name>		<variableID>	10	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+											</VariableStack>
+
+											<statements>
+												<ExprStatement>
+													<MethodInv>
+														<defClassName>	Effecter	</defClassName>
+														<objName>	this	</objName>
+														<methodName>	multSine	</methodName>
+
+														<argment>
+															<Ident>
+																<variableID>	6	</variableID>
+																<idName>	rateA	</idName>
+															</Ident>
+															<Ident>
+																<variableID>	7	</variableID>
+																<idName>	rateB	</idName>
+															</Ident>
+															<Ident>
+																<variableID>	0	</variableID>
+																<idName>	bufferInA	</idName>
+															</Ident>
+															<Ident>
+																<variableID>	2	</variableID>
+																<idName>	bufferOutA	</idName>
+															</Ident>
+														</argment>
+													</MethodInv>
+
+												</ExprStatement>
+
+											</statements>
+
+										</StatAssemblage>
+
+									</Block>
+
+								</thenBlock>
+
+								<elseBlock>
+									<Block>	<Phase>  9  </Phase>
+
+										<StatAssemblage>	<Phase>  10  </Phase>
+											<stageNum>  1  </stageNum>
+											<totalStepNum>  2  </totalStepNum>
+											<VariableStack>
+												<VeriableDecl>			<name>	bufferInA	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+												<VeriableDecl>			<name>	bufferInB	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+												<VeriableDecl>			<name>	bufferOutA	</name>		<variableID>	2	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+												<VeriableDecl>			<name>	bufferOutB	</name>		<variableID>	3	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+												<VeriableDecl>			<name>	phase	</name>		<variableID>	4	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+												<VeriableDecl>			<name>	bufSize	</name>		<variableID>	5	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+												<VeriableDecl>			<name>	rateA	</name>		<variableID>	6	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+												<VeriableDecl>			<name>	rateB	</name>		<variableID>	7	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+												<VeriableDecl>			<name>	threshold	</name>		<variableID>	8	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+												<VeriableDecl>			<name>	bufSelect	</name>		<variableID>	9	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+												<VeriableDecl>			<name>	function	</name>		<variableID>	10	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+											</VariableStack>
+
+											<statements>
+												<ExprStatement>
+													<MethodInv>
+														<defClassName>	Effecter	</defClassName>
+														<objName>	this	</objName>
+														<methodName>	multSine	</methodName>
+
+														<argment>
+															<Ident>
+																<variableID>	6	</variableID>
+																<idName>	rateA	</idName>
+															</Ident>
+															<Ident>
+																<variableID>	7	</variableID>
+																<idName>	rateB	</idName>
+															</Ident>
+															<Ident>
+																<variableID>	1	</variableID>
+																<idName>	bufferInB	</idName>
+															</Ident>
+															<Ident>
+																<variableID>	3	</variableID>
+																<idName>	bufferOutB	</idName>
+															</Ident>
+														</argment>
+													</MethodInv>
+
+												</ExprStatement>
+
+											</statements>
+
+										</StatAssemblage>
+
+									</Block>
+
+								</elseBlock>
+
+							</If>
+
+						</Block>
+
+					</thenBlock>
+
+					<elseBlock>
+						<If>	<Phase>  11  </Phase>
+							<ifCond>
+								<StatAssemblage>	<Phase>  12  </Phase>
+									<stageNum>  1  </stageNum>
+									<totalStepNum>  1  </totalStepNum>
+									<VariableStack>
+										<VeriableDecl>			<name>	bufferInA	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+										<VeriableDecl>			<name>	bufferInB	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+										<VeriableDecl>			<name>	bufferOutA	</name>		<variableID>	2	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+										<VeriableDecl>			<name>	bufferOutB	</name>		<variableID>	3	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+										<VeriableDecl>			<name>	phase	</name>		<variableID>	4	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+										<VeriableDecl>			<name>	bufSize	</name>		<variableID>	5	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+										<VeriableDecl>			<name>	rateA	</name>		<variableID>	6	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+										<VeriableDecl>			<name>	rateB	</name>		<variableID>	7	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+										<VeriableDecl>			<name>	threshold	</name>		<variableID>	8	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+										<VeriableDecl>			<name>	bufSelect	</name>		<variableID>	9	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+										<VeriableDecl>			<name>	function	</name>		<variableID>	10	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+									</VariableStack>
+
+									<statements>
+										<ExprStatement>
+											<Binary>
+												<binaryOp>	'=='	</binaryOp>
+												<leftExpr>
+													<Ident>
+														<variableID>	10	</variableID>
+														<idName>	function	</idName>
+													</Ident>
+												</leftExpr>
+
+												<rightExpr>
+													<Literal>
+														<type>	int	</type>
+														<value>	1	</value>
+													</Literal>
+												</rightExpr>
+
+											</Binary>
+
+										</ExprStatement>
+
+									</statements>
+
+								</StatAssemblage>
+
+							</ifCond>
+
+							<thenBlock>
+								<Block>	<Phase>  13  </Phase>
+
+									<If>	<Phase>  14  </Phase>
+										<ifCond>
+											<StatAssemblage>	<Phase>  15  </Phase>
+												<stageNum>  1  </stageNum>
+												<totalStepNum>  1  </totalStepNum>
+												<VariableStack>
+													<VeriableDecl>			<name>	bufferInA	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+													<VeriableDecl>			<name>	bufferInB	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+													<VeriableDecl>			<name>	bufferOutA	</name>		<variableID>	2	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+													<VeriableDecl>			<name>	bufferOutB	</name>		<variableID>	3	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+													<VeriableDecl>			<name>	phase	</name>		<variableID>	4	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+													<VeriableDecl>			<name>	bufSize	</name>		<variableID>	5	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+													<VeriableDecl>			<name>	rateA	</name>		<variableID>	6	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+													<VeriableDecl>			<name>	rateB	</name>		<variableID>	7	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+													<VeriableDecl>			<name>	threshold	</name>		<variableID>	8	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+													<VeriableDecl>			<name>	bufSelect	</name>		<variableID>	9	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+													<VeriableDecl>			<name>	function	</name>		<variableID>	10	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+												</VariableStack>
+
+												<statements>
+													<ExprStatement>
+														<Unary>
+														<unaryOP>	!</unaryOP>
+															<Ident>
+																<variableID>	9	</variableID>
+																<idName>	bufSelect	</idName>
+															</Ident>
+														</Unary>
+
+													</ExprStatement>
+
+												</statements>
+
+											</StatAssemblage>
+
+										</ifCond>
+
+										<thenBlock>
+											<Block>	<Phase>  16  </Phase>
+
+												<StatAssemblage>	<Phase>  17  </Phase>
+													<stageNum>  1  </stageNum>
+													<totalStepNum>  2  </totalStepNum>
+													<VariableStack>
+														<VeriableDecl>			<name>	bufferInA	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+														<VeriableDecl>			<name>	bufferInB	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+														<VeriableDecl>			<name>	bufferOutA	</name>		<variableID>	2	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+														<VeriableDecl>			<name>	bufferOutB	</name>		<variableID>	3	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+														<VeriableDecl>			<name>	phase	</name>		<variableID>	4	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+														<VeriableDecl>			<name>	bufSize	</name>		<variableID>	5	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+														<VeriableDecl>			<name>	rateA	</name>		<variableID>	6	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+														<VeriableDecl>			<name>	rateB	</name>		<variableID>	7	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+														<VeriableDecl>			<name>	threshold	</name>		<variableID>	8	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+														<VeriableDecl>			<name>	bufSelect	</name>		<variableID>	9	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+														<VeriableDecl>			<name>	function	</name>		<variableID>	10	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+													</VariableStack>
+
+													<statements>
+														<ExprStatement>
+															<MethodInv>
+																<defClassName>	Effecter	</defClassName>
+																<objName>	this	</objName>
+																<methodName>	becomeHigh	</methodName>
+
+																<argment>
+																	<Ident>
+																		<variableID>	0	</variableID>
+																		<idName>	bufferInA	</idName>
+																	</Ident>
+																	<Ident>
+																		<variableID>	2	</variableID>
+																		<idName>	bufferOutA	</idName>
+																	</Ident>
+																</argment>
+															</MethodInv>
+
+														</ExprStatement>
+
+													</statements>
+
+												</StatAssemblage>
+
+											</Block>
+
+										</thenBlock>
+
+										<elseBlock>
+											<Block>	<Phase>  18  </Phase>
+
+												<StatAssemblage>	<Phase>  19  </Phase>
+													<stageNum>  1  </stageNum>
+													<totalStepNum>  2  </totalStepNum>
+													<VariableStack>
+														<VeriableDecl>			<name>	bufferInA	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+														<VeriableDecl>			<name>	bufferInB	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+														<VeriableDecl>			<name>	bufferOutA	</name>		<variableID>	2	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+														<VeriableDecl>			<name>	bufferOutB	</name>		<variableID>	3	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+														<VeriableDecl>			<name>	phase	</name>		<variableID>	4	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+														<VeriableDecl>			<name>	bufSize	</name>		<variableID>	5	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+														<VeriableDecl>			<name>	rateA	</name>		<variableID>	6	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+														<VeriableDecl>			<name>	rateB	</name>		<variableID>	7	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+														<VeriableDecl>			<name>	threshold	</name>		<variableID>	8	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+														<VeriableDecl>			<name>	bufSelect	</name>		<variableID>	9	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+														<VeriableDecl>			<name>	function	</name>		<variableID>	10	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+													</VariableStack>
+
+													<statements>
+														<ExprStatement>
+															<MethodInv>
+																<defClassName>	Effecter	</defClassName>
+																<objName>	this	</objName>
+																<methodName>	becomeHigh	</methodName>
+
+																<argment>
+																	<Ident>
+																		<variableID>	1	</variableID>
+																		<idName>	bufferInB	</idName>
+																	</Ident>
+																	<Ident>
+																		<variableID>	3	</variableID>
+																		<idName>	bufferOutB	</idName>
+																	</Ident>
+																</argment>
+															</MethodInv>
+
+														</ExprStatement>
+
+													</statements>
+
+												</StatAssemblage>
+
+											</Block>
+
+										</elseBlock>
+
+									</If>
+
+								</Block>
+
+							</thenBlock>
+
+							<elseBlock>
+								<If>	<Phase>  20  </Phase>
+									<ifCond>
+										<StatAssemblage>	<Phase>  21  </Phase>
+											<stageNum>  1  </stageNum>
+											<totalStepNum>  1  </totalStepNum>
+											<VariableStack>
+												<VeriableDecl>			<name>	bufferInA	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+												<VeriableDecl>			<name>	bufferInB	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+												<VeriableDecl>			<name>	bufferOutA	</name>		<variableID>	2	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+												<VeriableDecl>			<name>	bufferOutB	</name>		<variableID>	3	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+												<VeriableDecl>			<name>	phase	</name>		<variableID>	4	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+												<VeriableDecl>			<name>	bufSize	</name>		<variableID>	5	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+												<VeriableDecl>			<name>	rateA	</name>		<variableID>	6	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+												<VeriableDecl>			<name>	rateB	</name>		<variableID>	7	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+												<VeriableDecl>			<name>	threshold	</name>		<variableID>	8	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+												<VeriableDecl>			<name>	bufSelect	</name>		<variableID>	9	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+												<VeriableDecl>			<name>	function	</name>		<variableID>	10	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+											</VariableStack>
+
+											<statements>
+												<ExprStatement>
+													<Binary>
+														<binaryOp>	'=='	</binaryOp>
+														<leftExpr>
+															<Ident>
+																<variableID>	10	</variableID>
+																<idName>	function	</idName>
+															</Ident>
+														</leftExpr>
+
+														<rightExpr>
+															<Literal>
+																<type>	int	</type>
+																<value>	2	</value>
+															</Literal>
+														</rightExpr>
+
+													</Binary>
+
+												</ExprStatement>
+
+											</statements>
+
+										</StatAssemblage>
+
+									</ifCond>
+
+									<thenBlock>
+										<Block>	<Phase>  22  </Phase>
+
+											<If>	<Phase>  23  </Phase>
+												<ifCond>
+													<StatAssemblage>	<Phase>  24  </Phase>
+														<stageNum>  1  </stageNum>
+														<totalStepNum>  1  </totalStepNum>
+														<VariableStack>
+															<VeriableDecl>			<name>	bufferInA	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+															<VeriableDecl>			<name>	bufferInB	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+															<VeriableDecl>			<name>	bufferOutA	</name>		<variableID>	2	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+															<VeriableDecl>			<name>	bufferOutB	</name>		<variableID>	3	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+															<VeriableDecl>			<name>	phase	</name>		<variableID>	4	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+															<VeriableDecl>			<name>	bufSize	</name>		<variableID>	5	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+															<VeriableDecl>			<name>	rateA	</name>		<variableID>	6	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+															<VeriableDecl>			<name>	rateB	</name>		<variableID>	7	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+															<VeriableDecl>			<name>	threshold	</name>		<variableID>	8	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+															<VeriableDecl>			<name>	bufSelect	</name>		<variableID>	9	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+															<VeriableDecl>			<name>	function	</name>		<variableID>	10	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+														</VariableStack>
+
+														<statements>
+															<ExprStatement>
+																<Unary>
+																<unaryOP>	!</unaryOP>
+																	<Ident>
+																		<variableID>	9	</variableID>
+																		<idName>	bufSelect	</idName>
+																	</Ident>
+																</Unary>
+
+															</ExprStatement>
+
+														</statements>
+
+													</StatAssemblage>
+
+												</ifCond>
+
+												<thenBlock>
+													<Block>	<Phase>  25  </Phase>
+
+														<StatAssemblage>	<Phase>  26  </Phase>
+															<stageNum>  1  </stageNum>
+															<totalStepNum>  2  </totalStepNum>
+															<VariableStack>
+																<VeriableDecl>			<name>	bufferInA	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+																<VeriableDecl>			<name>	bufferInB	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+																<VeriableDecl>			<name>	bufferOutA	</name>		<variableID>	2	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+																<VeriableDecl>			<name>	bufferOutB	</name>		<variableID>	3	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+																<VeriableDecl>			<name>	phase	</name>		<variableID>	4	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+																<VeriableDecl>			<name>	bufSize	</name>		<variableID>	5	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+																<VeriableDecl>			<name>	rateA	</name>		<variableID>	6	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+																<VeriableDecl>			<name>	rateB	</name>		<variableID>	7	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+																<VeriableDecl>			<name>	threshold	</name>		<variableID>	8	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+																<VeriableDecl>			<name>	bufSelect	</name>		<variableID>	9	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+																<VeriableDecl>			<name>	function	</name>		<variableID>	10	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+															</VariableStack>
+
+															<statements>
+																<ExprStatement>
+																	<MethodInv>
+																		<defClassName>	Effecter	</defClassName>
+																		<objName>	this	</objName>
+																		<methodName>	distortion	</methodName>
+
+																		<argment>
+																			<Ident>
+																				<variableID>	8	</variableID>
+																				<idName>	threshold	</idName>
+																			</Ident>
+																			<Ident>
+																				<variableID>	0	</variableID>
+																				<idName>	bufferInA	</idName>
+																			</Ident>
+																			<Ident>
+																				<variableID>	2	</variableID>
+																				<idName>	bufferOutA	</idName>
+																			</Ident>
+																		</argment>
+																	</MethodInv>
+
+																</ExprStatement>
+
+															</statements>
+
+														</StatAssemblage>
+
+													</Block>
+
+												</thenBlock>
+
+												<elseBlock>
+													<Block>	<Phase>  27  </Phase>
+
+														<StatAssemblage>	<Phase>  28  </Phase>
+															<stageNum>  1  </stageNum>
+															<totalStepNum>  2  </totalStepNum>
+															<VariableStack>
+																<VeriableDecl>			<name>	bufferInA	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+																<VeriableDecl>			<name>	bufferInB	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+																<VeriableDecl>			<name>	bufferOutA	</name>		<variableID>	2	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+																<VeriableDecl>			<name>	bufferOutB	</name>		<variableID>	3	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+																<VeriableDecl>			<name>	phase	</name>		<variableID>	4	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+																<VeriableDecl>			<name>	bufSize	</name>		<variableID>	5	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+																<VeriableDecl>			<name>	rateA	</name>		<variableID>	6	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+																<VeriableDecl>			<name>	rateB	</name>		<variableID>	7	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+																<VeriableDecl>			<name>	threshold	</name>		<variableID>	8	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+																<VeriableDecl>			<name>	bufSelect	</name>		<variableID>	9	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+																<VeriableDecl>			<name>	function	</name>		<variableID>	10	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+															</VariableStack>
+
+															<statements>
+																<ExprStatement>
+																	<MethodInv>
+																		<defClassName>	Effecter	</defClassName>
+																		<objName>	this	</objName>
+																		<methodName>	distortion	</methodName>
+
+																		<argment>
+																			<Ident>
+																				<variableID>	8	</variableID>
+																				<idName>	threshold	</idName>
+																			</Ident>
+																			<Ident>
+																				<variableID>	1	</variableID>
+																				<idName>	bufferInB	</idName>
+																			</Ident>
+																			<Ident>
+																				<variableID>	3	</variableID>
+																				<idName>	bufferOutB	</idName>
+																			</Ident>
+																		</argment>
+																	</MethodInv>
+
+																</ExprStatement>
+
+															</statements>
+
+														</StatAssemblage>
+
+													</Block>
+
+												</elseBlock>
+
+											</If>
+
+										</Block>
+
+									</thenBlock>
+
+									<elseBlock>
+										<Block>	<Phase>  29  </Phase>
+
+											<If>	<Phase>  30  </Phase>
+												<ifCond>
+													<StatAssemblage>	<Phase>  31  </Phase>
+														<stageNum>  1  </stageNum>
+														<totalStepNum>  1  </totalStepNum>
+														<VariableStack>
+															<VeriableDecl>			<name>	bufferInA	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+															<VeriableDecl>			<name>	bufferInB	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+															<VeriableDecl>			<name>	bufferOutA	</name>		<variableID>	2	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+															<VeriableDecl>			<name>	bufferOutB	</name>		<variableID>	3	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+															<VeriableDecl>			<name>	phase	</name>		<variableID>	4	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+															<VeriableDecl>			<name>	bufSize	</name>		<variableID>	5	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+															<VeriableDecl>			<name>	rateA	</name>		<variableID>	6	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+															<VeriableDecl>			<name>	rateB	</name>		<variableID>	7	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+															<VeriableDecl>			<name>	threshold	</name>		<variableID>	8	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+															<VeriableDecl>			<name>	bufSelect	</name>		<variableID>	9	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+															<VeriableDecl>			<name>	function	</name>		<variableID>	10	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+														</VariableStack>
+
+														<statements>
+															<ExprStatement>
+																<Unary>
+																<unaryOP>	!</unaryOP>
+																	<Ident>
+																		<variableID>	9	</variableID>
+																		<idName>	bufSelect	</idName>
+																	</Ident>
+																</Unary>
+
+															</ExprStatement>
+
+														</statements>
+
+													</StatAssemblage>
+
+												</ifCond>
+
+												<thenBlock>
+													<Block>	<Phase>  32  </Phase>
+
+														<StatAssemblage>	<Phase>  33  </Phase>
+															<stageNum>  1  </stageNum>
+															<totalStepNum>  2  </totalStepNum>
+															<VariableStack>
+																<VeriableDecl>			<name>	bufferInA	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+																<VeriableDecl>			<name>	bufferInB	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+																<VeriableDecl>			<name>	bufferOutA	</name>		<variableID>	2	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+																<VeriableDecl>			<name>	bufferOutB	</name>		<variableID>	3	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+																<VeriableDecl>			<name>	phase	</name>		<variableID>	4	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+																<VeriableDecl>			<name>	bufSize	</name>		<variableID>	5	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+																<VeriableDecl>			<name>	rateA	</name>		<variableID>	6	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+																<VeriableDecl>			<name>	rateB	</name>		<variableID>	7	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+																<VeriableDecl>			<name>	threshold	</name>		<variableID>	8	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+																<VeriableDecl>			<name>	bufSelect	</name>		<variableID>	9	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+																<VeriableDecl>			<name>	function	</name>		<variableID>	10	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+															</VariableStack>
+
+															<statements>
+																<ExprStatement>
+																	<MethodInv>
+																		<defClassName>	Effecter	</defClassName>
+																		<objName>	this	</objName>
+																		<methodName>	echo	</methodName>
+
+																		<argment>
+																			<Ident>
+																				<variableID>	0	</variableID>
+																				<idName>	bufferInA	</idName>
+																			</Ident>
+																			<Ident>
+																				<variableID>	2	</variableID>
+																				<idName>	bufferOutA	</idName>
+																			</Ident>
+																		</argment>
+																	</MethodInv>
+
+																</ExprStatement>
+
+															</statements>
+
+														</StatAssemblage>
+
+													</Block>
+
+												</thenBlock>
+
+												<elseBlock>
+													<Block>	<Phase>  34  </Phase>
+
+														<StatAssemblage>	<Phase>  35  </Phase>
+															<stageNum>  1  </stageNum>
+															<totalStepNum>  2  </totalStepNum>
+															<VariableStack>
+																<VeriableDecl>			<name>	bufferInA	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+																<VeriableDecl>			<name>	bufferInB	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+																<VeriableDecl>			<name>	bufferOutA	</name>		<variableID>	2	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+																<VeriableDecl>			<name>	bufferOutB	</name>		<variableID>	3	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+																<VeriableDecl>			<name>	phase	</name>		<variableID>	4	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+																<VeriableDecl>			<name>	bufSize	</name>		<variableID>	5	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+																<VeriableDecl>			<name>	rateA	</name>		<variableID>	6	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+																<VeriableDecl>			<name>	rateB	</name>		<variableID>	7	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+																<VeriableDecl>			<name>	threshold	</name>		<variableID>	8	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+																<VeriableDecl>			<name>	bufSelect	</name>		<variableID>	9	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+																<VeriableDecl>			<name>	function	</name>		<variableID>	10	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+															</VariableStack>
+
+															<statements>
+																<ExprStatement>
+																	<MethodInv>
+																		<defClassName>	Effecter	</defClassName>
+																		<objName>	this	</objName>
+																		<methodName>	echo	</methodName>
+
+																		<argment>
+																			<Ident>
+																				<variableID>	1	</variableID>
+																				<idName>	bufferInB	</idName>
+																			</Ident>
+																			<Ident>
+																				<variableID>	3	</variableID>
+																				<idName>	bufferOutB	</idName>
+																			</Ident>
+																		</argment>
+																	</MethodInv>
+
+																</ExprStatement>
+
+															</statements>
+
+														</StatAssemblage>
+
+													</Block>
+
+												</elseBlock>
+
+											</If>
+
+										</Block>
+
+									</elseBlock>
+
+								</If>
+
+							</elseBlock>
+
+						</If>
+
+					</elseBlock>
+
+				</If>
+
+				<Return>	<Phase>  36  </Phase>
+
+					<StatAssemblage>	<Phase>  37  </Phase>
+						<stageNum>  1  </stageNum>
+						<totalStepNum>  1  </totalStepNum>
+						<VariableStack>
+							<VeriableDecl>			<name>	bufferInA	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+							<VeriableDecl>			<name>	bufferInB	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+							<VeriableDecl>			<name>	bufferOutA	</name>		<variableID>	2	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+							<VeriableDecl>			<name>	bufferOutB	</name>		<variableID>	3	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+							<VeriableDecl>			<name>	phase	</name>		<variableID>	4	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+							<VeriableDecl>			<name>	bufSize	</name>		<variableID>	5	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+							<VeriableDecl>			<name>	rateA	</name>		<variableID>	6	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+							<VeriableDecl>			<name>	rateB	</name>		<variableID>	7	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+							<VeriableDecl>			<name>	threshold	</name>		<variableID>	8	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+							<VeriableDecl>			<name>	bufSelect	</name>		<variableID>	9	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+							<VeriableDecl>			<name>	function	</name>		<variableID>	10	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+						</VariableStack>
+
+						<statements>
+							<ExprStatement>
+								<Ident>
+									<variableID>	9	</variableID>
+									<idName>	bufSelect	</idName>
+								</Ident>
+							</ExprStatement>
+
+						</statements>
+
+					</StatAssemblage>
+
+				</Return>
+
+			</Block>
+
+		</MethodBody>
+
+	</METHOD>
+
+
+	<METHOD>	<Phase>  1  </Phase>
+
+		<methodName>	multSine	</methodName>
+		<returnType>	void	</returnType>
+		<ParamList>
+
+			<VeriableDecl>			<name>	rateA	</name>		<variableID>	11	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+			<VeriableDecl>			<name>	rateB	</name>		<variableID>	12	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+			<VeriableDecl>			<name>	bufferIn	</name>		<variableID>	13	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+			<VeriableDecl>			<name>	bufferOut	</name>		<variableID>	14	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+		</ParamList>
+
+		<MethodBody>
+			<Block>	<Phase>  1  </Phase>
+
+				<StatAssemblage>	<Phase>  2  </Phase>
+					<stageNum>  1  </stageNum>
+					<totalStepNum>  1  </totalStepNum>
+					<VariableStack>
+						<VeriableDecl>			<name>	bufferInA	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+						<VeriableDecl>			<name>	bufferInB	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+						<VeriableDecl>			<name>	bufferOutA	</name>		<variableID>	2	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+						<VeriableDecl>			<name>	bufferOutB	</name>		<variableID>	3	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+						<VeriableDecl>			<name>	phase	</name>		<variableID>	4	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+						<VeriableDecl>			<name>	bufSize	</name>		<variableID>	5	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+						<VeriableDecl>			<name>	rateA	</name>		<variableID>	11	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+						<VeriableDecl>			<name>	rateB	</name>		<variableID>	12	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+						<VeriableDecl>			<name>	bufferIn	</name>		<variableID>	13	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+						<VeriableDecl>			<name>	bufferOut	</name>		<variableID>	14	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+						<VeriableDecl>			<name>	mulWave	</name>		<variableID>	15	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+					</VariableStack>
+
+					<statements>
+						<VeriableDecl>			<name>	mulWave	</name>		<variableID>	15	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+					</statements>
+
+				</StatAssemblage>
+
+				<ForLoop>	<Phase>  3  </Phase>
+					<forInit>
+						<StatAssemblage>	<Phase>  4  </Phase>
+							<stageNum>  1  </stageNum>
+							<totalStepNum>  1  </totalStepNum>
+							<VariableStack>
+								<VeriableDecl>			<name>	bufferInA	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	bufferInB	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	bufferOutA	</name>		<variableID>	2	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	bufferOutB	</name>		<variableID>	3	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	phase	</name>		<variableID>	4	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	bufSize	</name>		<variableID>	5	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	rateA	</name>		<variableID>	11	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	rateB	</name>		<variableID>	12	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	bufferIn	</name>		<variableID>	13	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	bufferOut	</name>		<variableID>	14	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	mulWave	</name>		<variableID>	15	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	i	</name>		<variableID>	16	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	j	</name>		<variableID>	17	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+							</VariableStack>
+
+							<statements>
+								<VeriableDecl>			<name>	i	</name>		<variableID>	16	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	j	</name>		<variableID>	17	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+							</statements>
+
+						</StatAssemblage>
+
+					</forInit>
+
+					<forCond>
+						<StatAssemblage>	<Phase>  5  </Phase>
+							<stageNum>  1  </stageNum>
+							<totalStepNum>  1  </totalStepNum>
+							<VariableStack>
+								<VeriableDecl>			<name>	bufferInA	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	bufferInB	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	bufferOutA	</name>		<variableID>	2	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	bufferOutB	</name>		<variableID>	3	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	phase	</name>		<variableID>	4	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	bufSize	</name>		<variableID>	5	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	rateA	</name>		<variableID>	11	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	rateB	</name>		<variableID>	12	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	bufferIn	</name>		<variableID>	13	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	bufferOut	</name>		<variableID>	14	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	mulWave	</name>		<variableID>	15	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	i	</name>		<variableID>	16	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	j	</name>		<variableID>	17	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+							</VariableStack>
+
+							<statements>
+								<ExprStatement>
+									<Binary>
+										<binaryOp>	'LT'	</binaryOp>
+										<leftExpr>
+											<Ident>
+												<variableID>	16	</variableID>
+												<idName>	i	</idName>
+											</Ident>
+										</leftExpr>
+
+										<rightExpr>
+											<Ident>
+												<variableID>	5	</variableID>
+												<idName>	bufSize	</idName>
+											</Ident>
+										</rightExpr>
+
+									</Binary>
+
+								</ExprStatement>
+
+							</statements>
+
+						</StatAssemblage>
+
+					</forCond>
+
+					<forBody>
+						<Block>	<Phase>  7  </Phase>
+
+							<StatAssemblage>	<Phase>  8  </Phase>
+								<stageNum>  1  </stageNum>
+								<totalStepNum>  20  </totalStepNum>
+								<VariableStack>
+									<VeriableDecl>			<name>	bufferInA	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+									<VeriableDecl>			<name>	bufferInB	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+									<VeriableDecl>			<name>	bufferOutA	</name>		<variableID>	2	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+									<VeriableDecl>			<name>	bufferOutB	</name>		<variableID>	3	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+									<VeriableDecl>			<name>	phase	</name>		<variableID>	4	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+									<VeriableDecl>			<name>	bufSize	</name>		<variableID>	5	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+									<VeriableDecl>			<name>	rateA	</name>		<variableID>	11	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+									<VeriableDecl>			<name>	rateB	</name>		<variableID>	12	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+									<VeriableDecl>			<name>	bufferIn	</name>		<variableID>	13	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+									<VeriableDecl>			<name>	bufferOut	</name>		<variableID>	14	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+									<VeriableDecl>			<name>	mulWave	</name>		<variableID>	15	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+									<VeriableDecl>			<name>	i	</name>		<variableID>	16	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+									<VeriableDecl>			<name>	j	</name>		<variableID>	17	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+									<VeriableDecl>			<name>	input	</name>		<variableID>	18	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+								</VariableStack>
+
+								<statements>
+									<VeriableDecl>			<name>	input	</name>		<variableID>	18	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+									<ExprStatement>
+										<Assign>
+											<rightExpr>
+												<Binary>
+													<binaryOp>	'*'	</binaryOp>
+													<leftExpr>
+														<Ident>
+															<variableID>	18	</variableID>
+															<idName>	input	</idName>
+														</Ident>
+													</leftExpr>
+
+													<rightExpr>
+														<Binary>
+															<binaryOp>	'+'	</binaryOp>
+															<leftExpr>
+																<MethodInv>
+																	<defClassName>	Effecter	</defClassName>
+																	<objName>	this	</objName>
+																	<methodName>	Sin	</methodName>
+
+																	<argment>
+																		<TypeCast>
+																			<castType>	short	</castType>
+
+																			<Binary>
+																				<binaryOp>	'*'	</binaryOp>
+																				<leftExpr>
+																					<Ident>
+																						<variableID>	11	</variableID>
+																						<idName>	rateA	</idName>
+																					</Ident>
+																				</leftExpr>
+
+																				<rightExpr>
+																					<Ident>
+																						<variableID>	4	</variableID>
+																						<idName>	phase	</idName>
+																					</Ident>
+																				</rightExpr>
+
+																			</Binary>
+
+																		</TypeCast>
+
+																	</argment>
+																</MethodInv>
+
+															</leftExpr>
+
+															<rightExpr>
+																<MethodInv>
+																	<defClassName>	Effecter	</defClassName>
+																	<objName>	this	</objName>
+																	<methodName>	Sin	</methodName>
+
+																	<argment>
+																		<TypeCast>
+																			<castType>	short	</castType>
+
+																			<Binary>
+																				<binaryOp>	'*'	</binaryOp>
+																				<leftExpr>
+																					<Ident>
+																						<variableID>	12	</variableID>
+																						<idName>	rateB	</idName>
+																					</Ident>
+																				</leftExpr>
+
+																				<rightExpr>
+																					<Ident>
+																						<variableID>	4	</variableID>
+																						<idName>	phase	</idName>
+																					</Ident>
+																				</rightExpr>
+
+																			</Binary>
+
+																		</TypeCast>
+
+																	</argment>
+																</MethodInv>
+
+															</rightExpr>
+
+														</Binary>
+
+													</rightExpr>
+
+												</Binary>
+
+											</rightExpr>
+
+											<dest>
+												<Ident>
+													<variableID>	15	</variableID>
+													<idName>	mulWave	</idName>
+												</Ident>
+											</dest>
+
+										</Assign>
+
+									</ExprStatement>
+
+									<ExprStatement>
+										<Assign>
+											<rightExpr>
+												<TypeCast>
+													<castType>	short	</castType>
+
+													<Binary>
+														<binaryOp>	'SR'	</binaryOp>
+														<leftExpr>
+															<Binary>
+																<binaryOp>	'+'	</binaryOp>
+																<leftExpr>
+																	<Binary>
+																		<binaryOp>	'*'	</binaryOp>
+																		<leftExpr>
+																			<Binary>
+																				<binaryOp>	'SR'	</binaryOp>
+																				<leftExpr>
+																					<Ident>
+																						<variableID>	15	</variableID>
+																						<idName>	mulWave	</idName>
+																					</Ident>
+																				</leftExpr>
+
+																				<rightExpr>
+																					<Literal>
+																						<type>	int	</type>
+																						<value>	16	</value>
+																					</Literal>
+																				</rightExpr>
+
+																			</Binary>
+
+																		</leftExpr>
+
+																		<rightExpr>
+																			<Literal>
+																				<type>	int	</type>
+																				<value>	7	</value>
+																			</Literal>
+																		</rightExpr>
+
+																	</Binary>
+
+																</leftExpr>
+
+																<rightExpr>
+																	<Ident>
+																		<variableID>	18	</variableID>
+																		<idName>	input	</idName>
+																	</Ident>
+																</rightExpr>
+
+															</Binary>
+
+														</leftExpr>
+
+														<rightExpr>
+															<Literal>
+																<type>	int	</type>
+																<value>	3	</value>
+															</Literal>
+														</rightExpr>
+
+													</Binary>
+
+												</TypeCast>
+
+											</rightExpr>
+
+											<dest>
+												<ArrayAccess>
+													<variableID>	14	</variableID>
+													<idName>bufferOut</idName>
+
+													<index0>
+														<Ident>
+															<variableID>	17	</variableID>
+															<idName>	j	</idName>
+														</Ident>
+													</index0>
+
+												</ArrayAccess>
+
+											</dest>
+
+										</Assign>
+
+									</ExprStatement>
+
+								</statements>
+
+							</StatAssemblage>
+
+						</Block>
+
+					</forBody>
+				</ForLoop>
+
+			</Block>
+
+		</MethodBody>
+
+	</METHOD>
+
+
+	<METHOD>	<Phase>  1  </Phase>
+
+		<methodName>	becomeHigh	</methodName>
+		<returnType>	void	</returnType>
+		<ParamList>
+
+			<VeriableDecl>			<name>	bufferIn	</name>		<variableID>	19	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+			<VeriableDecl>			<name>	bufferOut	</name>		<variableID>	20	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+		</ParamList>
+
+		<MethodBody>
+			<Block>	<Phase>  1  </Phase>
+
+				<StatAssemblage>	<Phase>  2  </Phase>
+					<stageNum>  1  </stageNum>
+					<totalStepNum>  1  </totalStepNum>
+					<VariableStack>
+						<VeriableDecl>			<name>	bufferInA	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+						<VeriableDecl>			<name>	bufferInB	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+						<VeriableDecl>			<name>	bufferOutA	</name>		<variableID>	2	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+						<VeriableDecl>			<name>	bufferOutB	</name>		<variableID>	3	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+						<VeriableDecl>			<name>	phase	</name>		<variableID>	4	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+						<VeriableDecl>			<name>	bufSize	</name>		<variableID>	5	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+						<VeriableDecl>			<name>	bufferIn	</name>		<variableID>	19	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+						<VeriableDecl>			<name>	bufferOut	</name>		<variableID>	20	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+						<VeriableDecl>			<name>	bufSizeDiv2	</name>		<variableID>	21	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+						<VeriableDecl>			<name>	tmp	</name>		<variableID>	22	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+						<VeriableDecl>			<name>	sinTmp	</name>		<variableID>	23	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+					</VariableStack>
+
+					<statements>
+						<VeriableDecl>			<name>	bufSizeDiv2	</name>		<variableID>	21	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+						<VeriableDecl>			<name>	tmp	</name>		<variableID>	22	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+						<VeriableDecl>			<name>	sinTmp	</name>		<variableID>	23	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+					</statements>
+
+				</StatAssemblage>
+
+				<ForLoop>	<Phase>  3  </Phase>
+					<forInit>
+						<StatAssemblage>	<Phase>  4  </Phase>
+							<stageNum>  1  </stageNum>
+							<totalStepNum>  1  </totalStepNum>
+							<VariableStack>
+								<VeriableDecl>			<name>	bufferInA	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	bufferInB	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	bufferOutA	</name>		<variableID>	2	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	bufferOutB	</name>		<variableID>	3	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	phase	</name>		<variableID>	4	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	bufSize	</name>		<variableID>	5	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	bufferIn	</name>		<variableID>	19	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	bufferOut	</name>		<variableID>	20	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	bufSizeDiv2	</name>		<variableID>	21	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	tmp	</name>		<variableID>	22	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	sinTmp	</name>		<variableID>	23	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	i	</name>		<variableID>	24	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	j	</name>		<variableID>	25	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+							</VariableStack>
+
+							<statements>
+								<VeriableDecl>			<name>	i	</name>		<variableID>	24	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	j	</name>		<variableID>	25	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+							</statements>
+
+						</StatAssemblage>
+
+					</forInit>
+
+					<forCond>
+						<StatAssemblage>	<Phase>  5  </Phase>
+							<stageNum>  1  </stageNum>
+							<totalStepNum>  1  </totalStepNum>
+							<VariableStack>
+								<VeriableDecl>			<name>	bufferInA	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	bufferInB	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	bufferOutA	</name>		<variableID>	2	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	bufferOutB	</name>		<variableID>	3	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	phase	</name>		<variableID>	4	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	bufSize	</name>		<variableID>	5	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	bufferIn	</name>		<variableID>	19	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	bufferOut	</name>		<variableID>	20	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	bufSizeDiv2	</name>		<variableID>	21	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	tmp	</name>		<variableID>	22	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	sinTmp	</name>		<variableID>	23	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	i	</name>		<variableID>	24	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	j	</name>		<variableID>	25	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+							</VariableStack>
+
+							<statements>
+								<ExprStatement>
+									<Binary>
+										<binaryOp>	'LT'	</binaryOp>
+										<leftExpr>
+											<Ident>
+												<variableID>	24	</variableID>
+												<idName>	i	</idName>
+											</Ident>
+										</leftExpr>
+
+										<rightExpr>
+											<Ident>
+												<variableID>	5	</variableID>
+												<idName>	bufSize	</idName>
+											</Ident>
+										</rightExpr>
+
+									</Binary>
+
+								</ExprStatement>
+
+							</statements>
+
+						</StatAssemblage>
+
+					</forCond>
+
+					<forBody>
+						<Block>	<Phase>  7  </Phase>
+
+							<StatAssemblage>	<Phase>  8  </Phase>
+								<stageNum>  1  </stageNum>
+								<totalStepNum>  11  </totalStepNum>
+								<VariableStack>
+									<VeriableDecl>			<name>	bufferInA	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+									<VeriableDecl>			<name>	bufferInB	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+									<VeriableDecl>			<name>	bufferOutA	</name>		<variableID>	2	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+									<VeriableDecl>			<name>	bufferOutB	</name>		<variableID>	3	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+									<VeriableDecl>			<name>	phase	</name>		<variableID>	4	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+									<VeriableDecl>			<name>	bufSize	</name>		<variableID>	5	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+									<VeriableDecl>			<name>	bufferIn	</name>		<variableID>	19	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+									<VeriableDecl>			<name>	bufferOut	</name>		<variableID>	20	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+									<VeriableDecl>			<name>	bufSizeDiv2	</name>		<variableID>	21	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+									<VeriableDecl>			<name>	tmp	</name>		<variableID>	22	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+									<VeriableDecl>			<name>	sinTmp	</name>		<variableID>	23	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+									<VeriableDecl>			<name>	i	</name>		<variableID>	24	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+									<VeriableDecl>			<name>	j	</name>		<variableID>	25	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+								</VariableStack>
+
+								<statements>
+									<ExprStatement>
+										<Assign>
+											<rightExpr>
+												<MethodInv>
+													<defClassName>	Effecter	</defClassName>
+													<objName>	this	</objName>
+													<methodName>	Sin	</methodName>
+
+													<argment>
+														<TypeCast>
+															<castType>	short	</castType>
+
+															<Binary>
+																<binaryOp>	'*'	</binaryOp>
+																<leftExpr>
+																	<Literal>
+																		<type>	int	</type>
+																		<value>	4	</value>
+																	</Literal>
+																</leftExpr>
+
+																<rightExpr>
+																	<Ident>
+																		<variableID>	24	</variableID>
+																		<idName>	i	</idName>
+																	</Ident>
+																</rightExpr>
+
+															</Binary>
+
+														</TypeCast>
+
+													</argment>
+												</MethodInv>
+
+											</rightExpr>
+
+											<dest>
+												<Ident>
+													<variableID>	23	</variableID>
+													<idName>	sinTmp	</idName>
+												</Ident>
+											</dest>
+
+										</Assign>
+
+									</ExprStatement>
+
+									<ExprStatement>
+										<Assign>
+											<rightExpr>
+												<TypeCast>
+													<castType>	short	</castType>
+
+													<Binary>
+														<binaryOp>	'SR'	</binaryOp>
+														<leftExpr>
+															<Binary>
+																<binaryOp>	'*'	</binaryOp>
+																<leftExpr>
+																	<ArrayAccess>
+																		<variableID>	19	</variableID>
+																		<idName>bufferIn</idName>
+
+																		<index0>
+																			<Ident>
+																				<variableID>	24	</variableID>
+																				<idName>	i	</idName>
+																			</Ident>
+																		</index0>
+
+																	</ArrayAccess>
+
+																</leftExpr>
+
+																<rightExpr>
+																	<Ident>
+																		<variableID>	23	</variableID>
+																		<idName>	sinTmp	</idName>
+																	</Ident>
+																</rightExpr>
+
+															</Binary>
+
+														</leftExpr>
+
+														<rightExpr>
+															<Literal>
+																<type>	int	</type>
+																<value>	16	</value>
+															</Literal>
+														</rightExpr>
+
+													</Binary>
+
+												</TypeCast>
+
+											</rightExpr>
+
+											<dest>
+												<Ident>
+													<variableID>	22	</variableID>
+													<idName>	tmp	</idName>
+												</Ident>
+											</dest>
+
+										</Assign>
+
+									</ExprStatement>
+
+									<ExprStatement>
+										<Assign>
+											<rightExpr>
+												<TypeCast>
+													<castType>	short	</castType>
+
+													<Ident>
+														<variableID>	22	</variableID>
+														<idName>	tmp	</idName>
+													</Ident>
+												</TypeCast>
+
+											</rightExpr>
+
+											<dest>
+												<ArrayAccess>
+													<variableID>	20	</variableID>
+													<idName>bufferOut</idName>
+
+													<index0>
+														<Ident>
+															<variableID>	25	</variableID>
+															<idName>	j	</idName>
+														</Ident>
+													</index0>
+
+												</ArrayAccess>
+
+											</dest>
+
+										</Assign>
+
+									</ExprStatement>
+
+									<ExprStatement>
+										<Assign>
+											<rightExpr>
+												<TypeCast>
+													<castType>	short	</castType>
+
+													<Ident>
+														<variableID>	22	</variableID>
+														<idName>	tmp	</idName>
+													</Ident>
+												</TypeCast>
+
+											</rightExpr>
+
+											<dest>
+												<ArrayAccess>
+													<variableID>	20	</variableID>
+													<idName>bufferOut</idName>
+
+													<index0>
+														<Binary>
+															<binaryOp>	'+'	</binaryOp>
+															<leftExpr>
+																<Ident>
+																	<variableID>	25	</variableID>
+																	<idName>	j	</idName>
+																</Ident>
+															</leftExpr>
+
+															<rightExpr>
+																<Ident>
+																	<variableID>	21	</variableID>
+																	<idName>	bufSizeDiv2	</idName>
+																</Ident>
+															</rightExpr>
+
+														</Binary>
+
+													</index0>
+
+												</ArrayAccess>
+
+											</dest>
+
+										</Assign>
+
+									</ExprStatement>
+
+								</statements>
+
+							</StatAssemblage>
+
+						</Block>
+
+					</forBody>
+				</ForLoop>
+
+			</Block>
+
+		</MethodBody>
+
+	</METHOD>
+
+
+	<METHOD>	<Phase>  1  </Phase>
+
+		<methodName>	distortion	</methodName>
+		<returnType>	void	</returnType>
+		<ParamList>
+
+			<VeriableDecl>			<name>	rateA	</name>		<variableID>	26	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+			<VeriableDecl>			<name>	bufferIn	</name>		<variableID>	27	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+			<VeriableDecl>			<name>	bufferOut	</name>		<variableID>	28	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+		</ParamList>
+
+		<MethodBody>
+			<Block>	<Phase>  1  </Phase>
+
+				<StatAssemblage>	<Phase>  2  </Phase>
+					<stageNum>  1  </stageNum>
+					<totalStepNum>  1  </totalStepNum>
+					<VariableStack>
+						<VeriableDecl>			<name>	bufferInA	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+						<VeriableDecl>			<name>	bufferInB	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+						<VeriableDecl>			<name>	bufferOutA	</name>		<variableID>	2	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+						<VeriableDecl>			<name>	bufferOutB	</name>		<variableID>	3	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+						<VeriableDecl>			<name>	phase	</name>		<variableID>	4	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+						<VeriableDecl>			<name>	bufSize	</name>		<variableID>	5	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+						<VeriableDecl>			<name>	rateA	</name>		<variableID>	26	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+						<VeriableDecl>			<name>	bufferIn	</name>		<variableID>	27	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+						<VeriableDecl>			<name>	bufferOut	</name>		<variableID>	28	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+						<VeriableDecl>			<name>	bufIn	</name>		<variableID>	29	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+					</VariableStack>
+
+					<statements>
+						<VeriableDecl>			<name>	bufIn	</name>		<variableID>	29	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+					</statements>
+
+				</StatAssemblage>
+
+				<ForLoop>	<Phase>  3  </Phase>
+					<forInit>
+						<StatAssemblage>	<Phase>  4  </Phase>
+							<stageNum>  1  </stageNum>
+							<totalStepNum>  1  </totalStepNum>
+							<VariableStack>
+								<VeriableDecl>			<name>	bufferInA	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	bufferInB	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	bufferOutA	</name>		<variableID>	2	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	bufferOutB	</name>		<variableID>	3	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	phase	</name>		<variableID>	4	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	bufSize	</name>		<variableID>	5	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	rateA	</name>		<variableID>	26	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	bufferIn	</name>		<variableID>	27	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	bufferOut	</name>		<variableID>	28	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	bufIn	</name>		<variableID>	29	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	i	</name>		<variableID>	30	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	j	</name>		<variableID>	31	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+							</VariableStack>
+
+							<statements>
+								<VeriableDecl>			<name>	i	</name>		<variableID>	30	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	j	</name>		<variableID>	31	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+							</statements>
+
+						</StatAssemblage>
+
+					</forInit>
+
+					<forCond>
+						<StatAssemblage>	<Phase>  5  </Phase>
+							<stageNum>  1  </stageNum>
+							<totalStepNum>  1  </totalStepNum>
+							<VariableStack>
+								<VeriableDecl>			<name>	bufferInA	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	bufferInB	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	bufferOutA	</name>		<variableID>	2	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	bufferOutB	</name>		<variableID>	3	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	phase	</name>		<variableID>	4	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	bufSize	</name>		<variableID>	5	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	rateA	</name>		<variableID>	26	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	bufferIn	</name>		<variableID>	27	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	bufferOut	</name>		<variableID>	28	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	bufIn	</name>		<variableID>	29	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	i	</name>		<variableID>	30	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	j	</name>		<variableID>	31	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+							</VariableStack>
+
+							<statements>
+								<ExprStatement>
+									<Binary>
+										<binaryOp>	'LT'	</binaryOp>
+										<leftExpr>
+											<Ident>
+												<variableID>	30	</variableID>
+												<idName>	i	</idName>
+											</Ident>
+										</leftExpr>
+
+										<rightExpr>
+											<Ident>
+												<variableID>	5	</variableID>
+												<idName>	bufSize	</idName>
+											</Ident>
+										</rightExpr>
+
+									</Binary>
+
+								</ExprStatement>
+
+							</statements>
+
+						</StatAssemblage>
+
+					</forCond>
+
+					<forUpdate>
+						<StatAssemblage>	<Phase>  6  </Phase>
+							<stageNum>  1  </stageNum>
+							<totalStepNum>  1  </totalStepNum>
+							<VariableStack>
+								<VeriableDecl>			<name>	bufferInA	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	bufferInB	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	bufferOutA	</name>		<variableID>	2	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	bufferOutB	</name>		<variableID>	3	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	phase	</name>		<variableID>	4	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	bufSize	</name>		<variableID>	5	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	rateA	</name>		<variableID>	26	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	bufferIn	</name>		<variableID>	27	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	bufferOut	</name>		<variableID>	28	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	bufIn	</name>		<variableID>	29	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	i	</name>		<variableID>	30	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	j	</name>		<variableID>	31	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+							</VariableStack>
+
+							<statements>
+								<ExprStatement>
+									<Unary>
+									<unaryOP>	++_</unaryOP>
+										<Ident>
+											<variableID>	30	</variableID>
+											<idName>	i	</idName>
+										</Ident>
+									</Unary>
+
+								</ExprStatement>
+
+								<ExprStatement>
+									<Unary>
+									<unaryOP>	++_</unaryOP>
+										<Ident>
+											<variableID>	31	</variableID>
+											<idName>	j	</idName>
+										</Ident>
+									</Unary>
+
+								</ExprStatement>
+
+							</statements>
+
+						</StatAssemblage>
+
+					</forUpdate>
+
+					<forBody>
+						<Block>	<Phase>  7  </Phase>
+
+							<StatAssemblage>	<Phase>  8  </Phase>
+								<stageNum>  1  </stageNum>
+								<totalStepNum>  3  </totalStepNum>
+								<VariableStack>
+									<VeriableDecl>			<name>	bufferInA	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+									<VeriableDecl>			<name>	bufferInB	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+									<VeriableDecl>			<name>	bufferOutA	</name>		<variableID>	2	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+									<VeriableDecl>			<name>	bufferOutB	</name>		<variableID>	3	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+									<VeriableDecl>			<name>	phase	</name>		<variableID>	4	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+									<VeriableDecl>			<name>	bufSize	</name>		<variableID>	5	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+									<VeriableDecl>			<name>	rateA	</name>		<variableID>	26	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+									<VeriableDecl>			<name>	bufferIn	</name>		<variableID>	27	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+									<VeriableDecl>			<name>	bufferOut	</name>		<variableID>	28	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+									<VeriableDecl>			<name>	bufIn	</name>		<variableID>	29	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+									<VeriableDecl>			<name>	i	</name>		<variableID>	30	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+									<VeriableDecl>			<name>	j	</name>		<variableID>	31	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+								</VariableStack>
+
+								<statements>
+									<ExprStatement>
+										<Assign>
+											<rightExpr>
+												<ArrayAccess>
+													<variableID>	27	</variableID>
+													<idName>bufferIn</idName>
+
+													<index0>
+														<Ident>
+															<variableID>	30	</variableID>
+															<idName>	i	</idName>
+														</Ident>
+													</index0>
+
+												</ArrayAccess>
+
+											</rightExpr>
+
+											<dest>
+												<Ident>
+													<variableID>	29	</variableID>
+													<idName>	bufIn	</idName>
+												</Ident>
+											</dest>
+
+										</Assign>
+
+									</ExprStatement>
+
+								</statements>
+
+							</StatAssemblage>
+
+							<If>	<Phase>  9  </Phase>
+								<ifCond>
+									<StatAssemblage>	<Phase>  10  </Phase>
+										<stageNum>  1  </stageNum>
+										<totalStepNum>  1  </totalStepNum>
+										<VariableStack>
+											<VeriableDecl>			<name>	bufferInA	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+											<VeriableDecl>			<name>	bufferInB	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+											<VeriableDecl>			<name>	bufferOutA	</name>		<variableID>	2	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+											<VeriableDecl>			<name>	bufferOutB	</name>		<variableID>	3	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+											<VeriableDecl>			<name>	phase	</name>		<variableID>	4	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+											<VeriableDecl>			<name>	bufSize	</name>		<variableID>	5	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+											<VeriableDecl>			<name>	rateA	</name>		<variableID>	26	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+											<VeriableDecl>			<name>	bufferIn	</name>		<variableID>	27	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+											<VeriableDecl>			<name>	bufferOut	</name>		<variableID>	28	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+											<VeriableDecl>			<name>	bufIn	</name>		<variableID>	29	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+											<VeriableDecl>			<name>	i	</name>		<variableID>	30	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+											<VeriableDecl>			<name>	j	</name>		<variableID>	31	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+										</VariableStack>
+
+										<statements>
+											<ExprStatement>
+												<Binary>
+													<binaryOp>	'LT'	</binaryOp>
+													<leftExpr>
+														<Ident>
+															<variableID>	29	</variableID>
+															<idName>	bufIn	</idName>
+														</Ident>
+													</leftExpr>
+
+													<rightExpr>
+														<Literal>
+															<type>	int	</type>
+															<value>	0	</value>
+														</Literal>
+													</rightExpr>
+
+												</Binary>
+
+											</ExprStatement>
+
+										</statements>
+
+									</StatAssemblage>
+
+								</ifCond>
+
+								<thenBlock>
+									<Block>	<Phase>  11  </Phase>
+
+										<StatAssemblage>	<Phase>  12  </Phase>
+											<stageNum>  1  </stageNum>
+											<totalStepNum>  1  </totalStepNum>
+											<VariableStack>
+												<VeriableDecl>			<name>	bufferInA	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+												<VeriableDecl>			<name>	bufferInB	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+												<VeriableDecl>			<name>	bufferOutA	</name>		<variableID>	2	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+												<VeriableDecl>			<name>	bufferOutB	</name>		<variableID>	3	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+												<VeriableDecl>			<name>	phase	</name>		<variableID>	4	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+												<VeriableDecl>			<name>	bufSize	</name>		<variableID>	5	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+												<VeriableDecl>			<name>	rateA	</name>		<variableID>	26	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+												<VeriableDecl>			<name>	bufferIn	</name>		<variableID>	27	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+												<VeriableDecl>			<name>	bufferOut	</name>		<variableID>	28	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+												<VeriableDecl>			<name>	bufIn	</name>		<variableID>	29	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+												<VeriableDecl>			<name>	i	</name>		<variableID>	30	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+												<VeriableDecl>			<name>	j	</name>		<variableID>	31	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+											</VariableStack>
+
+											<statements>
+												<ExprStatement>
+													<Assign>
+														<rightExpr>
+															<TypeCast>
+																<castType>	short	</castType>
+
+																<Conditional>
+																<condExpr>
+																	<Binary>
+																		<binaryOp>	'GT'	</binaryOp>
+																		<leftExpr>
+																			<Unary>
+																			<unaryOP>	-</unaryOP>
+																				<Ident>
+																					<variableID>	26	</variableID>
+																					<idName>	rateA	</idName>
+																				</Ident>
+																			</Unary>
+
+																		</leftExpr>
+
+																		<rightExpr>
+																			<Ident>
+																				<variableID>	29	</variableID>
+																				<idName>	bufIn	</idName>
+																			</Ident>
+																		</rightExpr>
+
+																	</Binary>
+
+																</condExpr>
+
+																<trueExpr>
+																	<Unary>
+																	<unaryOP>	-</unaryOP>
+																		<Ident>
+																			<variableID>	26	</variableID>
+																			<idName>	rateA	</idName>
+																		</Ident>
+																	</Unary>
+
+																</trueExpr>
+
+																<falseExpr>
+																	<Ident>
+																		<variableID>	29	</variableID>
+																		<idName>	bufIn	</idName>
+																	</Ident>
+																</falseExpr>
+
+																</Conditional>
+															</TypeCast>
+
+														</rightExpr>
+
+														<dest>
+															<ArrayAccess>
+																<variableID>	28	</variableID>
+																<idName>bufferOut</idName>
+
+																<index0>
+																	<Ident>
+																		<variableID>	31	</variableID>
+																		<idName>	j	</idName>
+																	</Ident>
+																</index0>
+
+															</ArrayAccess>
+
+														</dest>
+
+													</Assign>
+
+												</ExprStatement>
+
+											</statements>
+
+										</StatAssemblage>
+
+									</Block>
+
+								</thenBlock>
+
+								<elseBlock>
+									<Block>	<Phase>  13  </Phase>
+
+										<StatAssemblage>	<Phase>  14  </Phase>
+											<stageNum>  1  </stageNum>
+											<totalStepNum>  1  </totalStepNum>
+											<VariableStack>
+												<VeriableDecl>			<name>	bufferInA	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+												<VeriableDecl>			<name>	bufferInB	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+												<VeriableDecl>			<name>	bufferOutA	</name>		<variableID>	2	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+												<VeriableDecl>			<name>	bufferOutB	</name>		<variableID>	3	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+												<VeriableDecl>			<name>	phase	</name>		<variableID>	4	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+												<VeriableDecl>			<name>	bufSize	</name>		<variableID>	5	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+												<VeriableDecl>			<name>	rateA	</name>		<variableID>	26	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+												<VeriableDecl>			<name>	bufferIn	</name>		<variableID>	27	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+												<VeriableDecl>			<name>	bufferOut	</name>		<variableID>	28	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+												<VeriableDecl>			<name>	bufIn	</name>		<variableID>	29	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+												<VeriableDecl>			<name>	i	</name>		<variableID>	30	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+												<VeriableDecl>			<name>	j	</name>		<variableID>	31	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+											</VariableStack>
+
+											<statements>
+												<ExprStatement>
+													<Assign>
+														<rightExpr>
+															<TypeCast>
+																<castType>	short	</castType>
+
+																<Conditional>
+																<condExpr>
+																	<Binary>
+																		<binaryOp>	'GT'	</binaryOp>
+																		<leftExpr>
+																			<Ident>
+																				<variableID>	29	</variableID>
+																				<idName>	bufIn	</idName>
+																			</Ident>
+																		</leftExpr>
+
+																		<rightExpr>
+																			<Ident>
+																				<variableID>	26	</variableID>
+																				<idName>	rateA	</idName>
+																			</Ident>
+																		</rightExpr>
+
+																	</Binary>
+
+																</condExpr>
+
+																<trueExpr>
+																	<Ident>
+																		<variableID>	26	</variableID>
+																		<idName>	rateA	</idName>
+																	</Ident>
+																</trueExpr>
+
+																<falseExpr>
+																	<Ident>
+																		<variableID>	29	</variableID>
+																		<idName>	bufIn	</idName>
+																	</Ident>
+																</falseExpr>
+
+																</Conditional>
+															</TypeCast>
+
+														</rightExpr>
+
+														<dest>
+															<ArrayAccess>
+																<variableID>	28	</variableID>
+																<idName>bufferOut</idName>
+
+																<index0>
+																	<Ident>
+																		<variableID>	31	</variableID>
+																		<idName>	j	</idName>
+																	</Ident>
+																</index0>
+
+															</ArrayAccess>
+
+														</dest>
+
+													</Assign>
+
+												</ExprStatement>
+
+											</statements>
+
+										</StatAssemblage>
+
+									</Block>
+
+								</elseBlock>
+
+							</If>
+
+						</Block>
+
+					</forBody>
+				</ForLoop>
+
+			</Block>
+
+		</MethodBody>
+
+	</METHOD>
+
+
+	<METHOD>	<Phase>  1  </Phase>
+
+		<methodName>	echo	</methodName>
+		<returnType>	void	</returnType>
+		<ParamList>
+
+			<VeriableDecl>			<name>	bufferIn	</name>		<variableID>	32	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+			<VeriableDecl>			<name>	bufferOut	</name>		<variableID>	33	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+		</ParamList>
+
+		<MethodBody>
+			<Block>	<Phase>  1  </Phase>
+
+				<ForLoop>	<Phase>  2  </Phase>
+					<forInit>
+						<StatAssemblage>	<Phase>  3  </Phase>
+							<stageNum>  1  </stageNum>
+							<totalStepNum>  1  </totalStepNum>
+							<VariableStack>
+								<VeriableDecl>			<name>	bufferInA	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	bufferInB	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	bufferOutA	</name>		<variableID>	2	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	bufferOutB	</name>		<variableID>	3	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	phase	</name>		<variableID>	4	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	bufSize	</name>		<variableID>	5	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	bufferIn	</name>		<variableID>	32	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	bufferOut	</name>		<variableID>	33	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	i	</name>		<variableID>	34	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	j	</name>		<variableID>	35	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+							</VariableStack>
+
+							<statements>
+								<VeriableDecl>			<name>	i	</name>		<variableID>	34	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	j	</name>		<variableID>	35	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+							</statements>
+
+						</StatAssemblage>
+
+					</forInit>
+
+					<forCond>
+						<StatAssemblage>	<Phase>  4  </Phase>
+							<stageNum>  1  </stageNum>
+							<totalStepNum>  1  </totalStepNum>
+							<VariableStack>
+								<VeriableDecl>			<name>	bufferInA	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	bufferInB	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	bufferOutA	</name>		<variableID>	2	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	bufferOutB	</name>		<variableID>	3	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	phase	</name>		<variableID>	4	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	bufSize	</name>		<variableID>	5	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	bufferIn	</name>		<variableID>	32	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	bufferOut	</name>		<variableID>	33	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	i	</name>		<variableID>	34	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	j	</name>		<variableID>	35	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+							</VariableStack>
+
+							<statements>
+								<ExprStatement>
+									<Binary>
+										<binaryOp>	'LT'	</binaryOp>
+										<leftExpr>
+											<Ident>
+												<variableID>	34	</variableID>
+												<idName>	i	</idName>
+											</Ident>
+										</leftExpr>
+
+										<rightExpr>
+											<Ident>
+												<variableID>	5	</variableID>
+												<idName>	bufSize	</idName>
+											</Ident>
+										</rightExpr>
+
+									</Binary>
+
+								</ExprStatement>
+
+							</statements>
+
+						</StatAssemblage>
+
+					</forCond>
+
+					<forBody>
+						<Block>	<Phase>  6  </Phase>
+
+							<StatAssemblage>	<Phase>  7  </Phase>
+								<stageNum>  1  </stageNum>
+								<totalStepNum>  3  </totalStepNum>
+								<VariableStack>
+									<VeriableDecl>			<name>	bufferInA	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+									<VeriableDecl>			<name>	bufferInB	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+									<VeriableDecl>			<name>	bufferOutA	</name>		<variableID>	2	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+									<VeriableDecl>			<name>	bufferOutB	</name>		<variableID>	3	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+									<VeriableDecl>			<name>	phase	</name>		<variableID>	4	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+									<VeriableDecl>			<name>	bufSize	</name>		<variableID>	5	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+									<VeriableDecl>			<name>	bufferIn	</name>		<variableID>	32	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+									<VeriableDecl>			<name>	bufferOut	</name>		<variableID>	33	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+									<VeriableDecl>			<name>	i	</name>		<variableID>	34	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+									<VeriableDecl>			<name>	j	</name>		<variableID>	35	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+								</VariableStack>
+
+								<statements>
+									<ExprStatement>
+										<Assign>
+											<rightExpr>
+												<TypeCast>
+													<castType>	short	</castType>
+
+													<Binary>
+														<binaryOp>	'SR'	</binaryOp>
+														<leftExpr>
+															<Binary>
+																<binaryOp>	'+'	</binaryOp>
+																<leftExpr>
+																	<ArrayAccess>
+																		<variableID>	33	</variableID>
+																		<idName>bufferOut</idName>
+
+																		<index0>
+																			<Ident>
+																				<variableID>	34	</variableID>
+																				<idName>	i	</idName>
+																			</Ident>
+																		</index0>
+
+																	</ArrayAccess>
+
+																</leftExpr>
+
+																<rightExpr>
+																	<ArrayAccess>
+																		<variableID>	32	</variableID>
+																		<idName>bufferIn</idName>
+
+																		<index0>
+																			<Ident>
+																				<variableID>	34	</variableID>
+																				<idName>	i	</idName>
+																			</Ident>
+																		</index0>
+
+																	</ArrayAccess>
+
+																</rightExpr>
+
+															</Binary>
+
+														</leftExpr>
+
+														<rightExpr>
+															<Literal>
+																<type>	int	</type>
+																<value>	1	</value>
+															</Literal>
+														</rightExpr>
+
+													</Binary>
+
+												</TypeCast>
+
+											</rightExpr>
+
+											<dest>
+												<ArrayAccess>
+													<variableID>	33	</variableID>
+													<idName>bufferOut</idName>
+
+													<index0>
+														<Ident>
+															<variableID>	35	</variableID>
+															<idName>	j	</idName>
+														</Ident>
+													</index0>
+
+												</ArrayAccess>
+
+											</dest>
+
+										</Assign>
+
+									</ExprStatement>
+
+								</statements>
+
+							</StatAssemblage>
+
+						</Block>
+
+					</forBody>
+				</ForLoop>
+
+			</Block>
+
+		</MethodBody>
+
+	</METHOD>
+
+
+</Class>

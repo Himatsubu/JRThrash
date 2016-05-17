@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<CLASS>
+<className>	IntegrateIPcore	</className>
+<METHOD>
+	<methodName>	main	</methodName>
+	<totalPhaseNum>5	</totalPhaseNum>
+	<totalStageNum>1	</totalStageNum>
+	<totalStepNum>2	</totalStepNum>
+		<Phase>
+			<phaseID>	3	</phaseID>
+			<Stage>
+				<stageID>	0	</stageID>
+				<stepNum>	2	</stepNum>
+				<minCriticalPath>	1	</minCriticalPath>
+				<exprInStage>	<!--SumOfProduct((short)10,&nbsp;(short)20,&nbsp;30)&nbsp;+&nbsp;SumOfProduct((short)40,&nbsp;(short)50,&nbsp;60)<br>-->	</exprInStage>
+				<Cast>
+					<nodeID>	1297207172	</nodeID>
+					<startStep>	1	</startStep>
+					<endStep>	1	</endStep>
+					<destType>	int	</destType>
+					<destTypeIsReg>	true	</destTypeIsReg>
+					<destSignalName>	r_sys_tmp0_int	</destSignalName>
+					<priority>	0	</priority>
+					<minPathToEnd>	0	</minPathToEnd>
+					<fastestStepForAlap>	1	</fastestStepForAlap>
+					<componentID>	1297207172	</componentID>
+					<castType>	int	</castType>
+					<ipcore>	notUsed	</ipcore>
+					<srcNode>
+						<Binary>
+							<nodeID>	1084529043	</nodeID>
+							<startStep>	1	</startStep>
+							<endStep>	1	</endStep>
+							<destType>	int	</destType>
+							<destTypeIsReg>	false	</destTypeIsReg>
+							<destSignalName>	w_sys_tmp1	</destSignalName>
+							<priority>	0	</priority>
+							<minPathToEnd>	0	</minPathToEnd>
+							<fastestStepForAlap>	1	</fastestStepForAlap>
+							<componentID>	1084529043	</componentID>
+							<op>	+	</op>
+							<ipcore>	notUsed	</ipcore>
+							<leftNode>
+								<UserDefined>
+									<nodeID>	1591044672	</nodeID>
+									<startStep>	0	</startStep>
+									<endStep>	1	</endStep>
+									<destType>	int	</destType>
+									<destTypeIsReg>	false	</destTypeIsReg>
+									<destSignalName>	w_sys_tmp2	</destSignalName>
+									<priority>	1	</priority>
+									<minPathToEnd>	1	</minPathToEnd>
+									<fastestStepForAlap>	0	</fastestStepForAlap>
+									<componentID>	1985913612	</componentID>
+									<ipName>	SumOfProduct	</ipName>
+									<arg>
+										<Literal>
+											<nodeID>	1059235210	</nodeID>
+											<startStep>	0	</startStep>
+											<endStep>	0	</endStep>
+											<destType>	int	</destType>
+											<destTypeIsReg>	false	</destTypeIsReg>
+											<destSignalName>	w_sys_tmp3	</destSignalName>
+											<priority>	1	</priority>
+											<minPathToEnd>	1	</minPathToEnd>
+											<fastestStepForAlap>	0	</fastestStepForAlap>
+											<componentID>	1059235210	</componentID>
+											<type>	int	</type>
+											<value>	10	</value>
+											<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wire&nbsp;:&nbsp;w_sys_tmp3&nbsp;=&nbsp;32'sh0000000a&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+										</Literal>
+									</arg>
+									<arg>
+										<Literal>
+											<nodeID>	2074224487	</nodeID>
+											<startStep>	0	</startStep>
+											<endStep>	0	</endStep>
+											<destType>	int	</destType>
+											<destTypeIsReg>	false	</destTypeIsReg>
+											<destSignalName>	w_sys_tmp4	</destSignalName>
+											<priority>	1	</priority>
+											<minPathToEnd>	1	</minPathToEnd>
+											<fastestStepForAlap>	0	</fastestStepForAlap>
+											<componentID>	2074224487	</componentID>
+											<type>	int	</type>
+											<value>	20	</value>
+											<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wire&nbsp;:&nbsp;w_sys_tmp4&nbsp;=&nbsp;32'sh00000014&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+										</Literal>
+									</arg>
+									<arg>
+										<Literal>
+											<nodeID>	1388911258	</nodeID>
+											<startStep>	0	</startStep>
+											<endStep>	0	</endStep>
+											<destType>	int	</destType>
+											<destTypeIsReg>	false	</destTypeIsReg>
+											<destSignalName>	w_sys_tmp5	</destSignalName>
+											<priority>	1	</priority>
+											<minPathToEnd>	1	</minPathToEnd>
+											<fastestStepForAlap>	0	</fastestStepForAlap>
+											<componentID>	1388911258	</componentID>
+											<type>	int	</type>
+											<value>	30	</value>
+											<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wire&nbsp;:&nbsp;w_sys_tmp5&nbsp;=&nbsp;32'sh0000001e&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+										</Literal>
+									</arg>
+									<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IPcore&nbsp;:&nbsp;SumOfProduct_inst_0&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+								</UserDefined>
+							</leftNode>
+
+							<rightNode>
+								<UserDefined>
+									<nodeID>	221429860	</nodeID>
+									<startStep>	0	</startStep>
+									<endStep>	1	</endStep>
+									<destType>	int	</destType>
+									<destTypeIsReg>	false	</destTypeIsReg>
+									<destSignalName>	w_sys_tmp6	</destSignalName>
+									<priority>	1	</priority>
+									<minPathToEnd>	1	</minPathToEnd>
+									<fastestStepForAlap>	0	</fastestStepForAlap>
+									<componentID>	284270316	</componentID>
+									<ipName>	SumOfProduct	</ipName>
+									<arg>
+										<Literal>
+											<nodeID>	1727570084	</nodeID>
+											<startStep>	0	</startStep>
+											<endStep>	0	</endStep>
+											<destType>	int	</destType>
+											<destTypeIsReg>	false	</destTypeIsReg>
+											<destSignalName>	w_sys_tmp7	</destSignalName>
+											<priority>	1	</priority>
+											<minPathToEnd>	1	</minPathToEnd>
+											<fastestStepForAlap>	0	</fastestStepForAlap>
+											<componentID>	1727570084	</componentID>
+											<type>	int	</type>
+											<value>	40	</value>
+											<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wire&nbsp;:&nbsp;w_sys_tmp7&nbsp;=&nbsp;32'sh00000028&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+										</Literal>
+									</arg>
+									<arg>
+										<Literal>
+											<nodeID>	1291494348	</nodeID>
+											<startStep>	0	</startStep>
+											<endStep>	0	</endStep>
+											<destType>	int	</destType>
+											<destTypeIsReg>	false	</destTypeIsReg>
+											<destSignalName>	w_sys_tmp8	</destSignalName>
+											<priority>	1	</priority>
+											<minPathToEnd>	1	</minPathToEnd>
+											<fastestStepForAlap>	0	</fastestStepForAlap>
+											<componentID>	1291494348	</componentID>
+											<type>	int	</type>
+											<value>	50	</value>
+											<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wire&nbsp;:&nbsp;w_sys_tmp8&nbsp;=&nbsp;32'sh00000032&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+										</Literal>
+									</arg>
+									<arg>
+										<Literal>
+											<nodeID>	1528286607	</nodeID>
+											<startStep>	0	</startStep>
+											<endStep>	0	</endStep>
+											<destType>	int	</destType>
+											<destTypeIsReg>	false	</destTypeIsReg>
+											<destSignalName>	w_sys_tmp9	</destSignalName>
+											<priority>	1	</priority>
+											<minPathToEnd>	1	</minPathToEnd>
+											<fastestStepForAlap>	0	</fastestStepForAlap>
+											<componentID>	1528286607	</componentID>
+											<type>	int	</type>
+											<value>	60	</value>
+											<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wire&nbsp;:&nbsp;w_sys_tmp9&nbsp;=&nbsp;32'sh0000003c&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+										</Literal>
+									</arg>
+									<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IPcore&nbsp;:&nbsp;SumOfProduct_inst_1&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+								</UserDefined>
+							</rightNode>
+							<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;verilog&nbsp;operator&nbsp;:&nbsp;+&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+						</Binary>
+					</srcNode>
+					<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reg&nbsp;&nbsp;:&nbsp;r_sys_tmp0_int&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+				</Cast>
+			</Stage>
+
+		</Phase>
+
+	<exprInMethod><!--<br>int&nbsp;main()&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;SumOfProduct((short)10,&nbsp;(short)20,&nbsp;30)&nbsp;+&nbsp;SumOfProduct((short)40,&nbsp;(short)50,&nbsp;60);<br>}--></exprInMethod>
+</METHOD>
+
+	</CLASS>

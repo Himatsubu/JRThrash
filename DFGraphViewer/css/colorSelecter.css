@@ -1,0 +1,14 @@
+﻿#selectable .ui-selecting { border: thick #000000 solid;}
+#selectable .ui-selected  { border: thick #000000 solid;}
+#selectable { list-style-type:none; margin:0px; padding:0px;}
+#drop {  position:relative;
+		 width:1500px; 
+		 height:200px; 
+		 font-size: 15px; 
+		 display:table-cell; 
+		 vertical-align:middle; 
+		 text-align: center;
+	  	 border: thick #101010 solid;
+	  	 background-color: #E6E6E6;
+	  }
+li.colorSample { margin:20px; padding:0px; font-size:1.4em; float:left; border: thick #FFFFFF solid; width: 50px; height:30px; overflow-x:auto;}
