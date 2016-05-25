@@ -46,7 +46,7 @@ public class P3_2dim{
 		mx=kx+1;
 		my=ky+1;
 		dt=0.0005f;
-		nlast=1;
+		nlast=2;
 
 		dx=4f/(mx-1);
 		dy=1f/(my-1);
@@ -712,31 +712,31 @@ public class P3_2dim{
 		sub23.start();
 		sub24.start();
 		try{
-			sub00.start();
-			sub01.start();
-			sub02.start();
-			sub03.start();
-			sub04.start();
-			sub05.start();
-			sub06.start();
-			sub07.start();
-			sub08.start();
-			sub09.start();
-			sub10.start();
-			sub11.start();
-			sub12.start();
-			sub13.start();
-			sub14.start();
-			sub15.start();
-			sub16.start();
-			sub17.start();
-			sub18.start();
-			sub19.start();
-			sub20.start();
-			sub21.start();
-			sub22.start();
-			sub23.start();
-			sub24.start();
+			sub00.join();
+			sub01.join();
+			sub02.join();
+			sub03.join();
+			sub04.join();
+			sub05.join();
+			sub06.join();
+			sub07.join();
+			sub08.join();
+			sub09.join();
+			sub10.join();
+			sub11.join();
+			sub12.join();
+			sub13.join();
+			sub14.join();
+			sub15.join();
+			sub16.join();
+			sub17.join();
+			sub18.join();
+			sub19.join();
+			sub20.join();
+			sub21.join();
+			sub22.join();
+			sub23.join();
+			sub24.join();
 		}catch(Exception e){}
 		for(k=2;k<=7;k++){
 			T[62+k]=sub00.result[62+k];
