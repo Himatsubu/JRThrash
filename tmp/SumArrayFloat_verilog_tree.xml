@@ -1,0 +1,1514 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Class>
+
+	<ClassName>	SumArrayFloat	</ClassName>
+
+	<AllVariables>
+		<VeriableDecl>
+			<name>	ax	</name>
+			<type>	float	</type>
+			<variableID>	0	</variableID>
+			<parentName>	SumArrayFloat	</parentName>
+			<defType>	field	</defType>
+			<isArray>	true	</isArray>
+			<isPrimitive>	true	</isPrimitive>
+			<isFinal>	true	</isFinal>
+			<dimension>	1	</dimension>
+			<init>
+				<NewArray>
+					<type>	float	</type>
+					<elements>	1024	</elements>				
+				</NewArray>
+			</init>
+		</VeriableDecl>
+
+		<VeriableDecl>
+			<name>	tmp	</name>
+			<type>	float	</type>
+			<variableID>	1	</variableID>
+			<parentName>	SumArrayFloat	</parentName>
+			<defType>	field	</defType>
+			<isArray>	true	</isArray>
+			<isPrimitive>	true	</isPrimitive>
+			<isFinal>	true	</isFinal>
+			<dimension>	1	</dimension>
+			<init>
+				<NewArray>
+					<type>	float	</type>
+					<elements>	512	</elements>				
+				</NewArray>
+			</init>
+		</VeriableDecl>
+
+		<VeriableDecl>
+			<name>	ax	</name>
+			<type>	float	</type>
+			<variableID>	2	</variableID>
+			<parentName>	setArray	</parentName>
+			<defType>	paramList	</defType>
+			<isArray>	true	</isArray>
+			<isPrimitive>	true	</isPrimitive>
+			<isFinal>	false	</isFinal>
+			<dimension>	1	</dimension>
+			<init>
+			</init>
+		</VeriableDecl>
+
+		<VeriableDecl>
+			<name>	l	</name>
+			<type>	int	</type>
+			<variableID>	3	</variableID>
+			<parentName>	setArray	</parentName>
+			<defType>	method	</defType>
+			<isArray>	false	</isArray>
+			<isPrimitive>	true	</isPrimitive>
+			<isFinal>	false	</isFinal>
+			<dimension>	0	</dimension>
+			<init>
+				<Literal>
+					<type>	int	</type>
+					<value>	0	</value>
+				</Literal>
+			</init>
+		</VeriableDecl>
+
+		<VeriableDecl>
+			<name>	i	</name>
+			<type>	int	</type>
+			<variableID>	4	</variableID>
+			<parentName>	sumArrayFast	</parentName>
+			<defType>	method	</defType>
+			<isArray>	false	</isArray>
+			<isPrimitive>	true	</isPrimitive>
+			<isFinal>	false	</isFinal>
+			<dimension>	0	</dimension>
+			<init>
+				<Literal>
+					<type>	int	</type>
+					<value>	1024	</value>
+				</Literal>
+			</init>
+		</VeriableDecl>
+
+		<VeriableDecl>
+			<name>	ax	</name>
+			<type>	float	</type>
+			<variableID>	5	</variableID>
+			<parentName>	sumArrayFastSub	</parentName>
+			<defType>	paramList	</defType>
+			<isArray>	true	</isArray>
+			<isPrimitive>	true	</isPrimitive>
+			<isFinal>	false	</isFinal>
+			<dimension>	1	</dimension>
+			<init>
+			</init>
+		</VeriableDecl>
+
+		<VeriableDecl>
+			<name>	tmp	</name>
+			<type>	float	</type>
+			<variableID>	6	</variableID>
+			<parentName>	sumArrayFastSub	</parentName>
+			<defType>	paramList	</defType>
+			<isArray>	true	</isArray>
+			<isPrimitive>	true	</isPrimitive>
+			<isFinal>	false	</isFinal>
+			<dimension>	1	</dimension>
+			<init>
+			</init>
+		</VeriableDecl>
+
+		<VeriableDecl>
+			<name>	num	</name>
+			<type>	int	</type>
+			<variableID>	7	</variableID>
+			<parentName>	sumArrayFastSub	</parentName>
+			<defType>	paramList	</defType>
+			<isArray>	false	</isArray>
+			<isPrimitive>	true	</isPrimitive>
+			<isFinal>	false	</isFinal>
+			<dimension>	0	</dimension>
+			<init>
+			</init>
+		</VeriableDecl>
+
+		<VeriableDecl>
+			<name>	i	</name>
+			<type>	int	</type>
+			<variableID>	8	</variableID>
+			<parentName>	sumArrayFastSub	</parentName>
+			<defType>	method	</defType>
+			<isArray>	false	</isArray>
+			<isPrimitive>	true	</isPrimitive>
+			<isFinal>	false	</isFinal>
+			<dimension>	0	</dimension>
+			<init>
+				<Literal>
+					<type>	int	</type>
+					<value>	0	</value>
+				</Literal>
+			</init>
+		</VeriableDecl>
+
+		<VeriableDecl>
+			<name>	j	</name>
+			<type>	int	</type>
+			<variableID>	9	</variableID>
+			<parentName>	sumArrayFastSub	</parentName>
+			<defType>	method	</defType>
+			<isArray>	false	</isArray>
+			<isPrimitive>	true	</isPrimitive>
+			<isFinal>	false	</isFinal>
+			<dimension>	0	</dimension>
+			<init>
+				<Literal>
+					<type>	int	</type>
+					<value>	0	</value>
+				</Literal>
+			</init>
+		</VeriableDecl>
+
+		<VeriableDecl>
+			<name>	i	</name>
+			<type>	int	</type>
+			<variableID>	10	</variableID>
+			<parentName>	sumArrayFastSub	</parentName>
+			<defType>	method	</defType>
+			<isArray>	false	</isArray>
+			<isPrimitive>	true	</isPrimitive>
+			<isFinal>	false	</isFinal>
+			<dimension>	0	</dimension>
+			<init>
+				<Literal>
+					<type>	int	</type>
+					<value>	0	</value>
+				</Literal>
+			</init>
+		</VeriableDecl>
+
+		<VeriableDecl>
+			<name>	j	</name>
+			<type>	int	</type>
+			<variableID>	11	</variableID>
+			<parentName>	sumArrayFastSub	</parentName>
+			<defType>	method	</defType>
+			<isArray>	false	</isArray>
+			<isPrimitive>	true	</isPrimitive>
+			<isFinal>	false	</isFinal>
+			<dimension>	0	</dimension>
+			<init>
+				<Literal>
+					<type>	int	</type>
+					<value>	0	</value>
+				</Literal>
+			</init>
+		</VeriableDecl>
+
+		<VeriableDecl>
+			<name>	result	</name>
+			<type>	float	</type>
+			<variableID>	12	</variableID>
+			<parentName>	sumArray	</parentName>
+			<defType>	method	</defType>
+			<isArray>	false	</isArray>
+			<isPrimitive>	true	</isPrimitive>
+			<isFinal>	false	</isFinal>
+			<dimension>	0	</dimension>
+			<init>
+				<Literal>
+					<type>	int	</type>
+					<value>	0	</value>
+				</Literal>
+			</init>
+		</VeriableDecl>
+
+		<VeriableDecl>
+			<name>	n	</name>
+			<type>	int	</type>
+			<variableID>	13	</variableID>
+			<parentName>	sumArray	</parentName>
+			<defType>	method	</defType>
+			<isArray>	false	</isArray>
+			<isPrimitive>	true	</isPrimitive>
+			<isFinal>	false	</isFinal>
+			<dimension>	0	</dimension>
+			<init>
+				<Literal>
+					<type>	int	</type>
+					<value>	0	</value>
+				</Literal>
+			</init>
+		</VeriableDecl>
+
+		<VeriableDecl>
+			<name>	copy0_i	</name>
+			<type>	int	</type>
+			<variableID>	14	</variableID>
+			<parentName>	sumArrayFastSub	</parentName>
+			<defType>	method	</defType>
+			<isArray>	false	</isArray>
+			<isPrimitive>	true	</isPrimitive>
+			<isFinal>	false	</isFinal>
+			<dimension>	0	</dimension>
+			<init>
+				<Literal>
+					<type>	int	</type>
+					<value>	0	</value>
+				</Literal>
+			</init>
+		</VeriableDecl>
+
+		<VeriableDecl>
+			<name>	copy0_i	</name>
+			<type>	int	</type>
+			<variableID>	15	</variableID>
+			<parentName>	sumArrayFastSub	</parentName>
+			<defType>	method	</defType>
+			<isArray>	false	</isArray>
+			<isPrimitive>	true	</isPrimitive>
+			<isFinal>	false	</isFinal>
+			<dimension>	0	</dimension>
+			<init>
+				<Literal>
+					<type>	int	</type>
+					<value>	0	</value>
+				</Literal>
+			</init>
+		</VeriableDecl>
+
+	</AllVariables>
+
+	<METHOD>	<Phase>  1  </Phase>
+
+		<methodName>	setArray	</methodName>
+		<returnType>	void	</returnType>
+		<ParamList>
+
+			<VeriableDecl>			<name>	ax	</name>		<variableID>	2	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+		</ParamList>
+
+		<MethodBody>
+			<Block>	<Phase>  1  </Phase>
+
+				<ForLoop>	<Phase>  2  </Phase>
+					<forInit>
+						<StatAssemblage>	<Phase>  3  </Phase>
+							<stageNum>  1  </stageNum>
+							<totalStepNum>  1  </totalStepNum>
+							<VariableStack>
+								<VeriableDecl>			<name>	ax	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	tmp	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	ax	</name>		<variableID>	2	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	l	</name>		<variableID>	3	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+							</VariableStack>
+
+							<statements>
+								<VeriableDecl>			<name>	l	</name>		<variableID>	3	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+							</statements>
+
+						</StatAssemblage>
+
+					</forInit>
+
+					<forCond>
+						<StatAssemblage>	<Phase>  4  </Phase>
+							<stageNum>  1  </stageNum>
+							<totalStepNum>  1  </totalStepNum>
+							<VariableStack>
+								<VeriableDecl>			<name>	ax	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	tmp	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	ax	</name>		<variableID>	2	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	l	</name>		<variableID>	3	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+							</VariableStack>
+
+							<statements>
+								<ExprStatement>
+									<Binary>
+										<binaryOp>	'LT'	</binaryOp>
+										<leftExpr>
+											<Ident>
+												<variableID>	3	</variableID>
+												<idName>	l	</idName>
+											</Ident>
+										</leftExpr>
+
+										<rightExpr>
+											<Literal>
+												<type>	int	</type>
+												<value>	1024	</value>
+											</Literal>
+										</rightExpr>
+
+									</Binary>
+
+								</ExprStatement>
+
+							</statements>
+
+						</StatAssemblage>
+
+					</forCond>
+
+					<forUpdate>
+						<StatAssemblage>	<Phase>  5  </Phase>
+							<stageNum>  1  </stageNum>
+							<totalStepNum>  1  </totalStepNum>
+							<VariableStack>
+								<VeriableDecl>			<name>	ax	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	tmp	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	ax	</name>		<variableID>	2	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	l	</name>		<variableID>	3	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+							</VariableStack>
+
+							<statements>
+								<ExprStatement>
+									<AssignOp>
+									<asgOP>	+ </asgOP>
+										<rightExpr>
+											<Literal>
+												<type>	int	</type>
+												<value>	2	</value>
+											</Literal>
+										</rightExpr>
+
+										<dest>
+											<Ident>
+												<variableID>	3	</variableID>
+												<idName>	l	</idName>
+											</Ident>
+										</dest>
+
+									</AssignOp>
+
+								</ExprStatement>
+
+							</statements>
+
+						</StatAssemblage>
+
+					</forUpdate>
+
+					<forBody>
+						<Block>	<Phase>  6  </Phase>
+
+							<StatAssemblage>	<Phase>  7  </Phase>
+								<stageNum>  1  </stageNum>
+								<totalStepNum>  53  </totalStepNum>
+								<VariableStack>
+									<VeriableDecl>			<name>	ax	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+									<VeriableDecl>			<name>	tmp	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+									<VeriableDecl>			<name>	ax	</name>		<variableID>	2	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+									<VeriableDecl>			<name>	l	</name>		<variableID>	3	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+								</VariableStack>
+
+								<statements>
+									<ExprStatement>
+										<Assign>
+											<rightExpr>
+												<Conditional>
+												<condExpr>
+													<Binary>
+														<binaryOp>	'GT'	</binaryOp>
+														<leftExpr>
+															<Binary>
+																<binaryOp>	'%'	</binaryOp>
+																<leftExpr>
+																	<Ident>
+																		<variableID>	3	</variableID>
+																		<idName>	l	</idName>
+																	</Ident>
+																</leftExpr>
+
+																<rightExpr>
+																	<Literal>
+																		<type>	int	</type>
+																		<value>	17	</value>
+																	</Literal>
+																</rightExpr>
+
+															</Binary>
+
+														</leftExpr>
+
+														<rightExpr>
+															<Literal>
+																<type>	int	</type>
+																<value>	8	</value>
+															</Literal>
+														</rightExpr>
+
+													</Binary>
+
+												</condExpr>
+
+												<trueExpr>
+													<Binary>
+														<binaryOp>	'*'	</binaryOp>
+														<leftExpr>
+															<Ident>
+																<variableID>	3	</variableID>
+																<idName>	l	</idName>
+															</Ident>
+														</leftExpr>
+
+														<rightExpr>
+															<Literal>
+																<type>	float	</type>
+																<value>	80.12	</value>
+															</Literal>
+														</rightExpr>
+
+													</Binary>
+
+												</trueExpr>
+
+												<falseExpr>
+													<Binary>
+														<binaryOp>	'+'	</binaryOp>
+														<leftExpr>
+															<Ident>
+																<variableID>	3	</variableID>
+																<idName>	l	</idName>
+															</Ident>
+														</leftExpr>
+
+														<rightExpr>
+															<Literal>
+																<type>	float	</type>
+																<value>	2000.07	</value>
+															</Literal>
+														</rightExpr>
+
+													</Binary>
+
+												</falseExpr>
+
+												</Conditional>
+											</rightExpr>
+
+											<dest>
+												<ArrayAccess>
+													<variableID>	2	</variableID>
+													<idName>ax</idName>
+
+													<index0>
+														<Ident>
+															<variableID>	3	</variableID>
+															<idName>	l	</idName>
+														</Ident>
+													</index0>
+
+												</ArrayAccess>
+
+											</dest>
+
+										</Assign>
+
+									</ExprStatement>
+
+									<ExprStatement>
+										<Assign>
+											<rightExpr>
+												<Conditional>
+												<condExpr>
+													<Binary>
+														<binaryOp>	'GT'	</binaryOp>
+														<leftExpr>
+															<Binary>
+																<binaryOp>	'%'	</binaryOp>
+																<leftExpr>
+																	<Binary>
+																		<binaryOp>	'+'	</binaryOp>
+																		<leftExpr>
+																			<Ident>
+																				<variableID>	3	</variableID>
+																				<idName>	l	</idName>
+																			</Ident>
+																		</leftExpr>
+
+																		<rightExpr>
+																			<Literal>
+																				<type>	int	</type>
+																				<value>	1	</value>
+																			</Literal>
+																		</rightExpr>
+
+																	</Binary>
+
+																</leftExpr>
+
+																<rightExpr>
+																	<Literal>
+																		<type>	int	</type>
+																		<value>	17	</value>
+																	</Literal>
+																</rightExpr>
+
+															</Binary>
+
+														</leftExpr>
+
+														<rightExpr>
+															<Literal>
+																<type>	int	</type>
+																<value>	8	</value>
+															</Literal>
+														</rightExpr>
+
+													</Binary>
+
+												</condExpr>
+
+												<trueExpr>
+													<Binary>
+														<binaryOp>	'*'	</binaryOp>
+														<leftExpr>
+															<Binary>
+																<binaryOp>	'+'	</binaryOp>
+																<leftExpr>
+																	<Ident>
+																		<variableID>	3	</variableID>
+																		<idName>	l	</idName>
+																	</Ident>
+																</leftExpr>
+
+																<rightExpr>
+																	<Literal>
+																		<type>	int	</type>
+																		<value>	1	</value>
+																	</Literal>
+																</rightExpr>
+
+															</Binary>
+
+														</leftExpr>
+
+														<rightExpr>
+															<Literal>
+																<type>	float	</type>
+																<value>	80.12	</value>
+															</Literal>
+														</rightExpr>
+
+													</Binary>
+
+												</trueExpr>
+
+												<falseExpr>
+													<Binary>
+														<binaryOp>	'+'	</binaryOp>
+														<leftExpr>
+															<Binary>
+																<binaryOp>	'+'	</binaryOp>
+																<leftExpr>
+																	<Ident>
+																		<variableID>	3	</variableID>
+																		<idName>	l	</idName>
+																	</Ident>
+																</leftExpr>
+
+																<rightExpr>
+																	<Literal>
+																		<type>	int	</type>
+																		<value>	1	</value>
+																	</Literal>
+																</rightExpr>
+
+															</Binary>
+
+														</leftExpr>
+
+														<rightExpr>
+															<Literal>
+																<type>	float	</type>
+																<value>	2000.07	</value>
+															</Literal>
+														</rightExpr>
+
+													</Binary>
+
+												</falseExpr>
+
+												</Conditional>
+											</rightExpr>
+
+											<dest>
+												<ArrayAccess>
+													<variableID>	0	</variableID>
+													<fieldName>ax</fieldName>
+
+													<index0>
+														<Binary>
+															<binaryOp>	'+'	</binaryOp>
+															<leftExpr>
+																<Ident>
+																	<variableID>	3	</variableID>
+																	<idName>	l	</idName>
+																</Ident>
+															</leftExpr>
+
+															<rightExpr>
+																<Literal>
+																	<type>	int	</type>
+																	<value>	1	</value>
+																</Literal>
+															</rightExpr>
+
+														</Binary>
+
+													</index0>
+
+												</ArrayAccess>
+
+											</dest>
+
+										</Assign>
+
+									</ExprStatement>
+
+								</statements>
+
+							</StatAssemblage>
+
+						</Block>
+
+					</forBody>
+				</ForLoop>
+
+			</Block>
+
+		</MethodBody>
+
+	</METHOD>
+
+
+	<METHOD>	<Phase>  1  </Phase>
+
+		<methodName>	sumArrayFast	</methodName>
+		<returnType>	float	</returnType>
+		<ParamList>
+
+		</ParamList>
+
+		<MethodBody>
+			<Block>	<Phase>  1  </Phase>
+
+				<StatAssemblage>	<Phase>  2  </Phase>
+					<stageNum>  1  </stageNum>
+					<totalStepNum>  2  </totalStepNum>
+					<VariableStack>
+						<VeriableDecl>			<name>	ax	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+						<VeriableDecl>			<name>	tmp	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+					</VariableStack>
+
+					<statements>
+						<ExprStatement>
+							<MethodInv>
+								<defClassName>	SumArrayFloat	</defClassName>
+								<objName>	this	</objName>
+								<methodName>	setArray	</methodName>
+
+								<argment>
+									<Ident>
+										<variableID>	0	</variableID>
+										<idName>	ax	</idName>
+									</Ident>
+								</argment>
+							</MethodInv>
+
+						</ExprStatement>
+
+					</statements>
+
+				</StatAssemblage>
+
+				<ForLoop>	<Phase>  3  </Phase>
+					<forInit>
+						<StatAssemblage>	<Phase>  4  </Phase>
+							<stageNum>  1  </stageNum>
+							<totalStepNum>  1  </totalStepNum>
+							<VariableStack>
+								<VeriableDecl>			<name>	ax	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	tmp	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	i	</name>		<variableID>	4	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+							</VariableStack>
+
+							<statements>
+								<VeriableDecl>			<name>	i	</name>		<variableID>	4	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+							</statements>
+
+						</StatAssemblage>
+
+					</forInit>
+
+					<forCond>
+						<StatAssemblage>	<Phase>  5  </Phase>
+							<stageNum>  1  </stageNum>
+							<totalStepNum>  1  </totalStepNum>
+							<VariableStack>
+								<VeriableDecl>			<name>	ax	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	tmp	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	i	</name>		<variableID>	4	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+							</VariableStack>
+
+							<statements>
+								<ExprStatement>
+									<Binary>
+										<binaryOp>	'GT'	</binaryOp>
+										<leftExpr>
+											<Ident>
+												<variableID>	4	</variableID>
+												<idName>	i	</idName>
+											</Ident>
+										</leftExpr>
+
+										<rightExpr>
+											<Literal>
+												<type>	int	</type>
+												<value>	8	</value>
+											</Literal>
+										</rightExpr>
+
+									</Binary>
+
+								</ExprStatement>
+
+							</statements>
+
+						</StatAssemblage>
+
+					</forCond>
+
+					<forBody>
+						<Block>	<Phase>  6  </Phase>
+
+							<StatAssemblage>	<Phase>  7  </Phase>
+								<stageNum>  2  </stageNum>
+								<totalStepNum>  3  </totalStepNum>
+								<VariableStack>
+									<VeriableDecl>			<name>	ax	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+									<VeriableDecl>			<name>	tmp	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+									<VeriableDecl>			<name>	i	</name>		<variableID>	4	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+								</VariableStack>
+
+								<statements>
+									<ExprStatement>
+										<MethodInv>
+											<defClassName>	SumArrayFloat	</defClassName>
+											<objName>	this	</objName>
+											<methodName>	sumArrayFastSub	</methodName>
+
+											<argment>
+												<Ident>
+													<variableID>	0	</variableID>
+													<idName>	ax	</idName>
+												</Ident>
+												<Ident>
+													<variableID>	1	</variableID>
+													<idName>	tmp	</idName>
+												</Ident>
+												<Ident>
+													<variableID>	4	</variableID>
+													<idName>	i	</idName>
+												</Ident>
+											</argment>
+										</MethodInv>
+
+									</ExprStatement>
+
+									<ExprStatement>
+										<AssignOp>
+										<asgOP>	SR </asgOP>
+											<rightExpr>
+												<Literal>
+													<type>	int	</type>
+													<value>	2	</value>
+												</Literal>
+											</rightExpr>
+
+											<dest>
+												<Ident>
+													<variableID>	4	</variableID>
+													<idName>	i	</idName>
+												</Ident>
+											</dest>
+
+										</AssignOp>
+
+									</ExprStatement>
+
+								</statements>
+
+							</StatAssemblage>
+
+						</Block>
+
+					</forBody>
+				</ForLoop>
+
+				<Return>	<Phase>  8  </Phase>
+
+					<StatAssemblage>	<Phase>  9  </Phase>
+						<stageNum>  1  </stageNum>
+						<totalStepNum>  16  </totalStepNum>
+						<VariableStack>
+							<VeriableDecl>			<name>	ax	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+							<VeriableDecl>			<name>	tmp	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+						</VariableStack>
+
+						<statements>
+							<ExprStatement>
+								<Binary>
+									<binaryOp>	'+'	</binaryOp>
+									<leftExpr>
+										<Binary>
+											<binaryOp>	'+'	</binaryOp>
+											<leftExpr>
+												<ArrayAccess>
+													<variableID>	0	</variableID>
+													<idName>ax</idName>
+
+													<index0>
+														<Literal>
+															<type>	int	</type>
+															<value>	0	</value>
+														</Literal>
+													</index0>
+
+												</ArrayAccess>
+
+											</leftExpr>
+
+											<rightExpr>
+												<ArrayAccess>
+													<variableID>	0	</variableID>
+													<idName>ax</idName>
+
+													<index0>
+														<Literal>
+															<type>	int	</type>
+															<value>	1	</value>
+														</Literal>
+													</index0>
+
+												</ArrayAccess>
+
+											</rightExpr>
+
+										</Binary>
+
+									</leftExpr>
+
+									<rightExpr>
+										<Binary>
+											<binaryOp>	'+'	</binaryOp>
+											<leftExpr>
+												<ArrayAccess>
+													<variableID>	0	</variableID>
+													<idName>ax</idName>
+
+													<index0>
+														<Literal>
+															<type>	int	</type>
+															<value>	2	</value>
+														</Literal>
+													</index0>
+
+												</ArrayAccess>
+
+											</leftExpr>
+
+											<rightExpr>
+												<ArrayAccess>
+													<variableID>	0	</variableID>
+													<idName>ax</idName>
+
+													<index0>
+														<Literal>
+															<type>	int	</type>
+															<value>	3	</value>
+														</Literal>
+													</index0>
+
+												</ArrayAccess>
+
+											</rightExpr>
+
+										</Binary>
+
+									</rightExpr>
+
+								</Binary>
+
+							</ExprStatement>
+
+						</statements>
+
+					</StatAssemblage>
+
+				</Return>
+
+			</Block>
+
+		</MethodBody>
+
+	</METHOD>
+
+
+	<METHOD>	<Phase>  1  </Phase>
+
+		<methodName>	sumArrayFastSub	</methodName>
+		<returnType>	void	</returnType>
+		<ParamList>
+
+			<VeriableDecl>			<name>	ax	</name>		<variableID>	5	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+			<VeriableDecl>			<name>	tmp	</name>		<variableID>	6	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+			<VeriableDecl>			<name>	num	</name>		<variableID>	7	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+		</ParamList>
+
+		<MethodBody>
+			<Block>	<Phase>  1  </Phase>
+
+				<ForLoop>	<Phase>  2  </Phase>
+					<forInit>
+						<StatAssemblage>	<Phase>  3  </Phase>
+							<stageNum>  2  </stageNum>
+							<totalStepNum>  2  </totalStepNum>
+							<VariableStack>
+								<VeriableDecl>			<name>	ax	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	tmp	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	ax	</name>		<variableID>	5	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	tmp	</name>		<variableID>	6	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	num	</name>		<variableID>	7	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	i	</name>		<variableID>	8	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	j	</name>		<variableID>	9	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+							</VariableStack>
+
+							<statements>
+								<VeriableDecl>			<name>	i	</name>		<variableID>	8	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	j	</name>		<variableID>	9	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+							</statements>
+
+						</StatAssemblage>
+
+					</forInit>
+
+					<forCond>
+						<StatAssemblage>	<Phase>  4  </Phase>
+							<stageNum>  1  </stageNum>
+							<totalStepNum>  1  </totalStepNum>
+							<VariableStack>
+								<VeriableDecl>			<name>	ax	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	tmp	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	ax	</name>		<variableID>	5	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	tmp	</name>		<variableID>	6	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	num	</name>		<variableID>	7	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	i	</name>		<variableID>	8	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	j	</name>		<variableID>	9	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+							</VariableStack>
+
+							<statements>
+								<ExprStatement>
+									<Binary>
+										<binaryOp>	'LT'	</binaryOp>
+										<leftExpr>
+											<Ident>
+												<variableID>	8	</variableID>
+												<idName>	i	</idName>
+											</Ident>
+										</leftExpr>
+
+										<rightExpr>
+											<Ident>
+												<variableID>	7	</variableID>
+												<idName>	num	</idName>
+											</Ident>
+										</rightExpr>
+
+									</Binary>
+
+								</ExprStatement>
+
+							</statements>
+
+						</StatAssemblage>
+
+					</forCond>
+
+					<forBody>
+						<Block>	<Phase>  6  </Phase>
+
+							<StatAssemblage>	<Phase>  7  </Phase>
+								<stageNum>  1  </stageNum>
+								<totalStepNum>  15  </totalStepNum>
+								<VariableStack>
+									<VeriableDecl>			<name>	ax	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+									<VeriableDecl>			<name>	tmp	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+									<VeriableDecl>			<name>	ax	</name>		<variableID>	5	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+									<VeriableDecl>			<name>	tmp	</name>		<variableID>	6	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+									<VeriableDecl>			<name>	num	</name>		<variableID>	7	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+									<VeriableDecl>			<name>	i	</name>		<variableID>	8	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+									<VeriableDecl>			<name>	j	</name>		<variableID>	9	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+								</VariableStack>
+
+								<statements>
+									<ExprStatement>
+										<Assign>
+											<rightExpr>
+												<Binary>
+													<binaryOp>	'+'	</binaryOp>
+													<leftExpr>
+														<ArrayAccess>
+															<variableID>	0	</variableID>
+															<fieldName>ax</fieldName>
+
+															<index0>
+																<Ident>
+																	<variableID>	8	</variableID>
+																	<idName>	i	</idName>
+																</Ident>
+															</index0>
+
+														</ArrayAccess>
+
+													</leftExpr>
+
+													<rightExpr>
+														<ArrayAccess>
+															<variableID>	5	</variableID>
+															<idName>ax</idName>
+
+															<index0>
+																<Binary>
+																	<binaryOp>	'+'	</binaryOp>
+																	<leftExpr>
+																		<Ident>
+																			<variableID>	8	</variableID>
+																			<idName>	i	</idName>
+																		</Ident>
+																	</leftExpr>
+
+																	<rightExpr>
+																		<Literal>
+																			<type>	int	</type>
+																			<value>	1	</value>
+																		</Literal>
+																	</rightExpr>
+
+																</Binary>
+
+															</index0>
+
+														</ArrayAccess>
+
+													</rightExpr>
+
+												</Binary>
+
+											</rightExpr>
+
+											<dest>
+												<ArrayAccess>
+													<variableID>	6	</variableID>
+													<idName>tmp</idName>
+
+													<index0>
+														<Ident>
+															<variableID>	9	</variableID>
+															<idName>	j	</idName>
+														</Ident>
+													</index0>
+
+												</ArrayAccess>
+
+											</dest>
+
+										</Assign>
+
+									</ExprStatement>
+
+								</statements>
+
+							</StatAssemblage>
+
+						</Block>
+
+					</forBody>
+				</ForLoop>
+
+				<ForLoop>	<Phase>  8  </Phase>
+					<forInit>
+						<StatAssemblage>	<Phase>  9  </Phase>
+							<stageNum>  2  </stageNum>
+							<totalStepNum>  2  </totalStepNum>
+							<VariableStack>
+								<VeriableDecl>			<name>	ax	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	tmp	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	ax	</name>		<variableID>	5	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	tmp	</name>		<variableID>	6	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	num	</name>		<variableID>	7	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	i	</name>		<variableID>	10	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	j	</name>		<variableID>	11	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+							</VariableStack>
+
+							<statements>
+								<VeriableDecl>			<name>	i	</name>		<variableID>	10	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	j	</name>		<variableID>	11	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+							</statements>
+
+						</StatAssemblage>
+
+					</forInit>
+
+					<forCond>
+						<StatAssemblage>	<Phase>  10  </Phase>
+							<stageNum>  1  </stageNum>
+							<totalStepNum>  1  </totalStepNum>
+							<VariableStack>
+								<VeriableDecl>			<name>	ax	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	tmp	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	ax	</name>		<variableID>	5	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	tmp	</name>		<variableID>	6	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	num	</name>		<variableID>	7	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	i	</name>		<variableID>	10	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	j	</name>		<variableID>	11	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+							</VariableStack>
+
+							<statements>
+								<ExprStatement>
+									<Binary>
+										<binaryOp>	'LT'	</binaryOp>
+										<leftExpr>
+											<Ident>
+												<variableID>	10	</variableID>
+												<idName>	i	</idName>
+											</Ident>
+										</leftExpr>
+
+										<rightExpr>
+											<Binary>
+												<binaryOp>	'SR'	</binaryOp>
+												<leftExpr>
+													<Ident>
+														<variableID>	7	</variableID>
+														<idName>	num	</idName>
+													</Ident>
+												</leftExpr>
+
+												<rightExpr>
+													<Literal>
+														<type>	int	</type>
+														<value>	1	</value>
+													</Literal>
+												</rightExpr>
+
+											</Binary>
+
+										</rightExpr>
+
+									</Binary>
+
+								</ExprStatement>
+
+							</statements>
+
+						</StatAssemblage>
+
+					</forCond>
+
+					<forBody>
+						<Block>	<Phase>  12  </Phase>
+
+							<StatAssemblage>	<Phase>  13  </Phase>
+								<stageNum>  1  </stageNum>
+								<totalStepNum>  15  </totalStepNum>
+								<VariableStack>
+									<VeriableDecl>			<name>	ax	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+									<VeriableDecl>			<name>	tmp	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+									<VeriableDecl>			<name>	ax	</name>		<variableID>	5	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+									<VeriableDecl>			<name>	tmp	</name>		<variableID>	6	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+									<VeriableDecl>			<name>	num	</name>		<variableID>	7	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+									<VeriableDecl>			<name>	i	</name>		<variableID>	10	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+									<VeriableDecl>			<name>	j	</name>		<variableID>	11	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+								</VariableStack>
+
+								<statements>
+									<ExprStatement>
+										<Assign>
+											<rightExpr>
+												<Binary>
+													<binaryOp>	'+'	</binaryOp>
+													<leftExpr>
+														<ArrayAccess>
+															<variableID>	1	</variableID>
+															<fieldName>tmp</fieldName>
+
+															<index0>
+																<Ident>
+																	<variableID>	10	</variableID>
+																	<idName>	i	</idName>
+																</Ident>
+															</index0>
+
+														</ArrayAccess>
+
+													</leftExpr>
+
+													<rightExpr>
+														<ArrayAccess>
+															<variableID>	6	</variableID>
+															<idName>tmp</idName>
+
+															<index0>
+																<Binary>
+																	<binaryOp>	'+'	</binaryOp>
+																	<leftExpr>
+																		<Ident>
+																			<variableID>	10	</variableID>
+																			<idName>	i	</idName>
+																		</Ident>
+																	</leftExpr>
+
+																	<rightExpr>
+																		<Literal>
+																			<type>	int	</type>
+																			<value>	1	</value>
+																		</Literal>
+																	</rightExpr>
+
+																</Binary>
+
+															</index0>
+
+														</ArrayAccess>
+
+													</rightExpr>
+
+												</Binary>
+
+											</rightExpr>
+
+											<dest>
+												<ArrayAccess>
+													<variableID>	5	</variableID>
+													<idName>ax</idName>
+
+													<index0>
+														<Ident>
+															<variableID>	11	</variableID>
+															<idName>	j	</idName>
+														</Ident>
+													</index0>
+
+												</ArrayAccess>
+
+											</dest>
+
+										</Assign>
+
+									</ExprStatement>
+
+								</statements>
+
+							</StatAssemblage>
+
+						</Block>
+
+					</forBody>
+				</ForLoop>
+
+			</Block>
+
+		</MethodBody>
+
+	</METHOD>
+
+
+	<METHOD>	<Phase>  1  </Phase>
+
+		<methodName>	sumArray	</methodName>
+		<returnType>	float	</returnType>
+		<ParamList>
+
+		</ParamList>
+
+		<MethodBody>
+			<Block>	<Phase>  1  </Phase>
+
+				<StatAssemblage>	<Phase>  2  </Phase>
+					<stageNum>  2  </stageNum>
+					<totalStepNum>  3  </totalStepNum>
+					<VariableStack>
+						<VeriableDecl>			<name>	ax	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+						<VeriableDecl>			<name>	tmp	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+						<VeriableDecl>			<name>	result	</name>		<variableID>	12	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+					</VariableStack>
+
+					<statements>
+						<ExprStatement>
+							<MethodInv>
+								<defClassName>	SumArrayFloat	</defClassName>
+								<objName>	this	</objName>
+								<methodName>	setArray	</methodName>
+
+								<argment>
+									<Ident>
+										<variableID>	0	</variableID>
+										<idName>	ax	</idName>
+									</Ident>
+								</argment>
+							</MethodInv>
+
+						</ExprStatement>
+
+						<VeriableDecl>			<name>	result	</name>		<variableID>	12	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+					</statements>
+
+				</StatAssemblage>
+
+				<ForLoop>	<Phase>  3  </Phase>
+					<forInit>
+						<StatAssemblage>	<Phase>  4  </Phase>
+							<stageNum>  1  </stageNum>
+							<totalStepNum>  1  </totalStepNum>
+							<VariableStack>
+								<VeriableDecl>			<name>	ax	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	tmp	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	result	</name>		<variableID>	12	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	n	</name>		<variableID>	13	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+							</VariableStack>
+
+							<statements>
+								<VeriableDecl>			<name>	n	</name>		<variableID>	13	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+							</statements>
+
+						</StatAssemblage>
+
+					</forInit>
+
+					<forCond>
+						<StatAssemblage>	<Phase>  5  </Phase>
+							<stageNum>  1  </stageNum>
+							<totalStepNum>  1  </totalStepNum>
+							<VariableStack>
+								<VeriableDecl>			<name>	ax	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	tmp	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	result	</name>		<variableID>	12	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	n	</name>		<variableID>	13	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+							</VariableStack>
+
+							<statements>
+								<ExprStatement>
+									<Binary>
+										<binaryOp>	'LT'	</binaryOp>
+										<leftExpr>
+											<Ident>
+												<variableID>	13	</variableID>
+												<idName>	n	</idName>
+											</Ident>
+										</leftExpr>
+
+										<rightExpr>
+											<Literal>
+												<type>	int	</type>
+												<value>	1024	</value>
+											</Literal>
+										</rightExpr>
+
+									</Binary>
+
+								</ExprStatement>
+
+							</statements>
+
+						</StatAssemblage>
+
+					</forCond>
+
+					<forBody>
+						<Block>	<Phase>  7  </Phase>
+
+							<StatAssemblage>	<Phase>  8  </Phase>
+								<stageNum>  1  </stageNum>
+								<totalStepNum>  8  </totalStepNum>
+								<VariableStack>
+									<VeriableDecl>			<name>	ax	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+									<VeriableDecl>			<name>	tmp	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+									<VeriableDecl>			<name>	result	</name>		<variableID>	12	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+									<VeriableDecl>			<name>	n	</name>		<variableID>	13	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+								</VariableStack>
+
+								<statements>
+									<ExprStatement>
+										<AssignOp>
+										<asgOP>	+ </asgOP>
+											<rightExpr>
+												<ArrayAccess>
+													<variableID>	0	</variableID>
+													<idName>ax</idName>
+
+													<index0>
+														<Ident>
+															<variableID>	13	</variableID>
+															<idName>	n	</idName>
+														</Ident>
+													</index0>
+
+												</ArrayAccess>
+
+											</rightExpr>
+
+											<dest>
+												<Ident>
+													<variableID>	12	</variableID>
+													<idName>	result	</idName>
+												</Ident>
+											</dest>
+
+										</AssignOp>
+
+									</ExprStatement>
+
+								</statements>
+
+							</StatAssemblage>
+
+						</Block>
+
+					</forBody>
+				</ForLoop>
+
+				<Return>	<Phase>  9  </Phase>
+
+					<StatAssemblage>	<Phase>  10  </Phase>
+						<stageNum>  1  </stageNum>
+						<totalStepNum>  1  </totalStepNum>
+						<VariableStack>
+							<VeriableDecl>			<name>	ax	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+							<VeriableDecl>			<name>	tmp	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+							<VeriableDecl>			<name>	result	</name>		<variableID>	12	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+						</VariableStack>
+
+						<statements>
+							<ExprStatement>
+								<Ident>
+									<variableID>	12	</variableID>
+									<idName>	result	</idName>
+								</Ident>
+							</ExprStatement>
+
+						</statements>
+
+					</StatAssemblage>
+
+				</Return>
+
+			</Block>
+
+		</MethodBody>
+
+	</METHOD>
+
+
+</Class>

@@ -1,4 +1,4 @@
-sudo java -jar ../JRThrash.jar *.java
+java -jar ../JRThrash.jar *.java
 cp ../result/sub00.v ../../sim_cfd_P3_JRT
 cp ../result/sub01.v ../../sim_cfd_P3_JRT
 cp ../result/sub02.v ../../sim_cfd_P3_JRT

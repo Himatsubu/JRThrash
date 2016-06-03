@@ -73,7 +73,7 @@
 			<latency>            36           </latency>
 			<throughput>         1            </throughput>
 			<moduleName>         DivInt       </moduleName>
-			<availableNum>       5            </availableNum>
+			<availableNum>       1            </availableNum>
 			<useIP>              true         </useIP>
 			<clkPname>           clk          </clkPname>
 			<dividendPname>      dividend     </dividendPname>
@@ -93,7 +93,7 @@
 			<latency>           0            </latency>
 			<throughput>        1            </throughput>
 			<moduleName>        CompareIntLT </moduleName>
-			<availableNum>      5           </availableNum>
+			<availableNum>      1           </availableNum>
 			<useIP>             false        </useIP>
 			<clkPname>          clk          </clkPname>
 			<leftOperandPname>  a            </leftOperandPname>

@@ -26,4 +26,4 @@ cp ../result/sub23.v ../../sim_cfd_P3_JRT
 cp ../result/sub24.v ../../sim_cfd_P3_JRT
 cp ../result/P3_2dim.v ../../sim_cfd_P3_JRT
 cd ../../sim_cfd_P3_JRT
-run_partion25.sh
+./run_partion25.sh

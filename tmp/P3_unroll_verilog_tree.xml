@@ -714,7 +714,7 @@
 								<rightExpr>
 									<Literal>
 										<type>	int	</type>
-										<value>	400	</value>
+										<value>	2	</value>
 									</Literal>
 								</rightExpr>
 
@@ -1294,7 +1294,7 @@
 
 										<StatAssemblage>	<Phase>  13  </Phase>
 											<stageNum>  1  </stageNum>
-											<totalStepNum>  69  </totalStepNum>
+											<totalStepNum>  42  </totalStepNum>
 											<VariableStack>
 												<VeriableDecl>			<name>	T	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
 												<VeriableDecl>			<name>	TT	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
@@ -2238,7 +2238,7 @@
 
 										<StatAssemblage>	<Phase>  30  </Phase>
 											<stageNum>  1  </stageNum>
-											<totalStepNum>  38  </totalStepNum>
+											<totalStepNum>  20  </totalStepNum>
 											<VariableStack>
 												<VeriableDecl>			<name>	T	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
 												<VeriableDecl>			<name>	TT	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
@@ -2529,7 +2529,7 @@
 
 										<StatAssemblage>	<Phase>  36  </Phase>
 											<stageNum>  1  </stageNum>
-											<totalStepNum>  19  </totalStepNum>
+											<totalStepNum>  10  </totalStepNum>
 											<VariableStack>
 												<VeriableDecl>			<name>	T	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
 												<VeriableDecl>			<name>	TT	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
@@ -2921,7 +2921,7 @@
 
 													<StatAssemblage>	<Phase>  47  </Phase>
 														<stageNum>  1  </stageNum>
-														<totalStepNum>  237  </totalStepNum>
+														<totalStepNum>  138  </totalStepNum>
 														<VariableStack>
 															<VeriableDecl>			<name>	T	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
 															<VeriableDecl>			<name>	TT	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
@@ -4163,7 +4163,7 @@
 
 													<StatAssemblage>	<Phase>  58  </Phase>
 														<stageNum>  1  </stageNum>
-														<totalStepNum>  21  </totalStepNum>
+														<totalStepNum>  12  </totalStepNum>
 														<VariableStack>
 															<VeriableDecl>			<name>	T	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
 															<VeriableDecl>			<name>	TT	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>

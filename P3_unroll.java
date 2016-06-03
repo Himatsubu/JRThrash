@@ -7,7 +7,7 @@ public class P3_unroll{
 		private static final float U[] = new float [484];
 		private static final float V[]= new float [484];
 
-	@JRThrashUnroll(loopVariableName="j",unrollNum=19,unrollType=JRThrashUnroll.copyLoopVar)
+	@JRThrashUnroll(loopVariableName="j",unrollNum=10,unrollType=JRThrashUnroll.copyLoopVar)
 	public void run(){
 //	public static void main(String[] args){
 		int k,j,n;
@@ -21,7 +21,7 @@ public class P3_unroll{
 		mx=21;
 		my=21;
 		dt=0.0005f;
-		nlast=400;
+		nlast=2;
 
 		dx=4f/(mx-1);
 		dy=1f/(my-1);
