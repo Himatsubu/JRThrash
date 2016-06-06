@@ -1,5 +1,5 @@
 /*
-TimeStamp:	2016/6/3		8:26
+TimeStamp:	2016/6/6		15:51
 */
 
 
@@ -9,6 +9,7 @@ module addfloat(
 	input                 ce,	
 	input                 i_run_req,	
 	output                o_run_busy,	
+	output signed  [31:0] o_run_return,	
 	input          [31:0] i_run_input_a_0	
 );
 
@@ -18,17 +19,10 @@ module addfloat(
 	reg         [ 1:0] r_sys_processing_methodID;
 	wire               w_sys_boolTrue;
 	wire               w_sys_boolFalse;
-	wire               s_axis_a_tready;
-	wire               s_axis_a_tvalid;
-	wire               s_axis_b_tready;
-	wire               s_axis_b_tvalid;
-	wire               s_axis_b_tready;
-    wire               s_axis_b_tvalid;
-   	wire               s_axis_operation_tready;
-    wire               s_axis_operation_tvalid;
 	wire signed [31:0] w_sys_intOne;
 	wire signed [31:0] w_sys_intZero;
 	wire               w_sys_ce;
+	reg         [31:0] r_sys_run_return;
 	reg         [ 1:0] r_sys_run_caller;
 	reg                r_sys_run_req;
 	reg         [ 2:0] r_sys_run_phase;
@@ -42,6 +36,7 @@ module addfloat(
 	reg         [31:0] r_run_result_2;
 	wire        [31:0] w_sys_tmp1;
 	wire        [31:0] w_sys_tmp2;
+	wire        [31:0] w_sys_tmp3;
 
 	assign w_sys_boolTrue = 1'b1;
 	assign w_sys_boolFalse = 1'b0;
@@ -49,31 +44,21 @@ module addfloat(
 	assign w_sys_intZero = 32'sh0;
 	assign w_sys_ce = w_sys_boolTrue & ce;
 	assign o_run_busy = r_sys_run_busy;
+	assign o_run_return = r_sys_run_return;
 	assign w_sys_run_stage_p1 = (r_sys_run_stage + 2'h1);
 	assign w_sys_run_step_p1 = (r_sys_run_step + 3'h1);
 	assign w_sys_tmp1 = 32'h3fa66666;
-	assign w_sys_tmp2 = w_ip_AddFloat_result_0;
-	assign s_axis_a_tready=1'b1;
-	assign s_axis_a_tvalid=1'b1;
-	assign s_axis_b_tready=1'b1;
-	assign s_axis_b_tvalid=1'b1;
-	assign s_axis_operation_tread=1'b1;
-	assign s_axis_operation_tvalid=1'b1;
+	assign w_sys_tmp2 = r_run_result_2;
+	assign w_sys_tmp3 = w_ip_AddFloat_result_0;
 
 
 	AddFloat
 		AddFloat_inst_0(
 			.aclk (clock),
 			.aclken (w_sys_ce),
-			.s_axis_a_tdata (r_ip_AddFloat_portA_0),
-			.s_axis_b_tdata (r_ip_AddFloat_portB_0),
-			.s_axis_operation_tdata (w_ip_AddFloat_result_0),
-			.s_axis_a_tready(s_axis_a_tready),
-            .s_axis_a_tvalid(s_axis_a_tvalid),
-            .s_axis_b_tready(s_axis_b_tready),
-            .s_axis_b_tvalid(s_axis_b_tvalid),
-            .s_axis_operation_tready(s_axis_operation_tready),
-            .s_axis_operation_tvalid(s_axis_operation_tvalid)
+			.A_AXI_A (r_ip_AddFloat_portA_0),
+			.S_AXIS_B (r_ip_AddFloat_portB_0),
+			.S_AXIS_RESULT (w_ip_AddFloat_result_0)
 		);
 
 	always@(posedge clock)begin
@@ -84,7 +69,7 @@ module addfloat(
 				2'h1: begin
 
 					case(r_sys_run_phase) 
-						3'h2: begin
+						3'h4: begin
 
 							case(r_sys_run_stage) 
 								2'h0: begin
@@ -113,12 +98,12 @@ module addfloat(
 				2'h1: begin
 
 					case(r_sys_run_phase) 
-						3'h2: begin
+						3'h4: begin
 
 							case(r_sys_run_stage) 
 								2'h0: begin
 									if((r_sys_run_step==3'h0)) begin
-										r_ip_AddFloat_portB_0 <= w_sys_tmp1;
+										r_ip_AddFloat_portB_0 <= r_run_input_b_1;
 
 									end
 								end
@@ -151,8 +136,33 @@ module addfloat(
 				2'h1: begin
 
 					case(r_sys_run_phase) 
-						3'h4: begin
+						3'h6: begin
 							r_sys_processing_methodID <= r_sys_run_caller;
+						end
+
+					endcase
+				end
+
+			endcase
+		end
+	end
+
+
+	always@(posedge clock)begin
+
+		if(( !reset_n )) begin
+			r_sys_run_return <= 32'h0;
+
+		end
+		else
+		if(w_sys_ce) begin
+
+			case(r_sys_processing_methodID) 
+				2'h1: begin
+
+					case(r_sys_run_phase) 
+						3'h3: begin
+							r_sys_run_return <= w_sys_tmp2;
 						end
 
 					endcase
@@ -202,7 +212,7 @@ module addfloat(
 
 							case(r_sys_run_stage) 
 								2'h0: begin
-									if((r_sys_run_step==3'h5)) begin
+									if((r_sys_run_step==3'h0)) begin
 										r_sys_run_phase <= 3'h4;
 
 									end
@@ -211,7 +221,24 @@ module addfloat(
 							endcase
 						end
 
+						3'h3: begin
+							r_sys_run_phase <= 3'h6;
+						end
+
 						3'h4: begin
+
+							case(r_sys_run_stage) 
+								2'h0: begin
+									if((r_sys_run_step==3'h5)) begin
+										r_sys_run_phase <= 3'h3;
+
+									end
+								end
+
+							endcase
+						end
+
+						3'h6: begin
 							r_sys_run_phase <= 3'h0;
 						end
 
@@ -237,6 +264,19 @@ module addfloat(
 
 					case(r_sys_run_phase) 
 						3'h2: begin
+
+							case(r_sys_run_stage) 
+								2'h0: begin
+									if((r_sys_run_step==3'h0)) begin
+										r_sys_run_stage <= 2'h0;
+
+									end
+								end
+
+							endcase
+						end
+
+						3'h4: begin
 
 							case(r_sys_run_stage) 
 								2'h0: begin
@@ -271,6 +311,19 @@ module addfloat(
 
 					case(r_sys_run_phase) 
 						3'h2: begin
+
+							case(r_sys_run_stage) 
+								2'h0: begin
+									if((r_sys_run_step==3'h0)) begin
+										r_sys_run_step <= 3'h0;
+
+									end
+								end
+
+							endcase
+						end
+
+						3'h4: begin
 
 							case(r_sys_run_stage) 
 								2'h0: begin
@@ -317,7 +370,7 @@ module addfloat(
 							r_sys_run_busy <= w_sys_boolTrue;
 						end
 
-						3'h4: begin
+						3'h6: begin
 							r_sys_run_busy <= w_sys_boolFalse;
 						end
 
@@ -380,12 +433,12 @@ module addfloat(
 				2'h1: begin
 
 					case(r_sys_run_phase) 
-						3'h2: begin
+						3'h4: begin
 
 							case(r_sys_run_stage) 
 								2'h0: begin
 									if((r_sys_run_step==3'h5)) begin
-										r_run_result_2 <= w_sys_tmp2;
+										r_run_result_2 <= w_sys_tmp3;
 
 									end
 								end
