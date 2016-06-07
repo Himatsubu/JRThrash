@@ -1,6 +1,6 @@
 addint  configファイルの改変により解決　vivadoのIPコアのポート名を参照
 multint configファイルを改変により解決　vivadoのIPコアのポート名を参照
-divint
+divint 済
 compareIntLessThan
 addFloat 済
 multFloat 済
