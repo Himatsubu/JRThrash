@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Class>
+
+	<ClassName>	mulfloat_JRT	</ClassName>
+
+	<AllVariables>
+		<VeriableDecl>
+			<name>	input_a	</name>
+			<type>	float	</type>
+			<variableID>	0	</variableID>
+			<parentName>	run	</parentName>
+			<defType>	paramList	</defType>
+			<isArray>	false	</isArray>
+			<isPrimitive>	true	</isPrimitive>
+			<isFinal>	false	</isFinal>
+			<dimension>	0	</dimension>
+			<init>
+			</init>
+		</VeriableDecl>
+
+		<VeriableDecl>
+			<name>	input_b	</name>
+			<type>	float	</type>
+			<variableID>	1	</variableID>
+			<parentName>	run	</parentName>
+			<defType>	method	</defType>
+			<isArray>	false	</isArray>
+			<isPrimitive>	true	</isPrimitive>
+			<isFinal>	false	</isFinal>
+			<dimension>	0	</dimension>
+			<init>
+				<Literal>
+					<type>	float	</type>
+					<value>	1.3	</value>
+				</Literal>
+			</init>
+		</VeriableDecl>
+
+		<VeriableDecl>
+			<name>	result	</name>
+			<type>	float	</type>
+			<variableID>	2	</variableID>
+			<parentName>	run	</parentName>
+			<defType>	method	</defType>
+			<isArray>	false	</isArray>
+			<isPrimitive>	true	</isPrimitive>
+			<isFinal>	false	</isFinal>
+			<dimension>	0	</dimension>
+			<init>
+			</init>
+		</VeriableDecl>
+
+	</AllVariables>
+
+	<METHOD>	<Phase>  1  </Phase>
+
+		<methodName>	run	</methodName>
+		<returnType>	float	</returnType>
+		<ParamList>
+
+			<VeriableDecl>			<name>	input_a	</name>		<variableID>	0	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+		</ParamList>
+
+		<MethodBody>
+			<Block>	<Phase>  1  </Phase>
+
+				<StatAssemblage>	<Phase>  2  </Phase>
+					<stageNum>  1  </stageNum>
+					<totalStepNum>  1  </totalStepNum>
+					<VariableStack>
+						<VeriableDecl>			<name>	input_a	</name>		<variableID>	0	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+						<VeriableDecl>			<name>	input_b	</name>		<variableID>	1	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+						<VeriableDecl>			<name>	result	</name>		<variableID>	2	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+					</VariableStack>
+
+					<statements>
+						<VeriableDecl>			<name>	input_b	</name>		<variableID>	1	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+						<VeriableDecl>			<name>	result	</name>		<variableID>	2	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+					</statements>
+
+				</StatAssemblage>
+
+				<Return>	<Phase>  3  </Phase>
+
+					<StatAssemblage>	<Phase>  4  </Phase>
+						<stageNum>  1  </stageNum>
+						<totalStepNum>  6  </totalStepNum>
+						<VariableStack>
+							<VeriableDecl>			<name>	input_a	</name>		<variableID>	0	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+							<VeriableDecl>			<name>	input_b	</name>		<variableID>	1	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+							<VeriableDecl>			<name>	result	</name>		<variableID>	2	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+						</VariableStack>
+
+						<statements>
+							<ExprStatement>
+								<Assign>
+									<rightExpr>
+										<Binary>
+											<binaryOp>	'*'	</binaryOp>
+											<leftExpr>
+												<Ident>
+													<variableID>	0	</variableID>
+													<idName>	input_a	</idName>
+												</Ident>
+											</leftExpr>
+
+											<rightExpr>
+												<Ident>
+													<variableID>	1	</variableID>
+													<idName>	input_b	</idName>
+												</Ident>
+											</rightExpr>
+
+										</Binary>
+
+									</rightExpr>
+
+									<dest>
+										<Ident>
+											<variableID>	2	</variableID>
+											<idName>	result	</idName>
+										</Ident>
+									</dest>
+
+								</Assign>
+
+							</ExprStatement>
+
+						</statements>
+
+					</StatAssemblage>
+
+				</Return>
+
+			</Block>
+
+		</MethodBody>
+
+	</METHOD>
+
+
+</Class>

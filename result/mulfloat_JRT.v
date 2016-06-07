@@ -1,9 +1,9 @@
 /*
-TimeStamp:	2016/6/7		14:10
+TimeStamp:	2016/6/7		14:15
 */
 
 
-module addfloat(
+module mulfloat_JRT(
 	input                 clock,	
 	input                 reset_n,	
 	input                 ce,	
@@ -13,9 +13,9 @@ module addfloat(
 	input          [31:0] i_run_input_a_0	
 );
 
-	reg         [31:0] r_ip_AddFloat_portA_0;
-	reg         [31:0] r_ip_AddFloat_portB_0;
-	wire        [31:0] w_ip_AddFloat_result_0;
+	reg         [31:0] r_ip_MultFloat_multiplicand_0;
+	reg         [31:0] r_ip_MultFloat_multiplier_0;
+	wire        [31:0] w_ip_MultFloat_product_0;
 	reg         [ 1:0] r_sys_processing_methodID;
 	wire               w_sys_boolTrue;
 	wire               w_sys_boolFalse;
@@ -49,16 +49,16 @@ module addfloat(
 	assign w_sys_run_step_p1 = (r_sys_run_step + 3'h1);
 	assign w_sys_tmp1 = 32'h3fa66666;
 	assign w_sys_tmp2 = r_run_result_2;
-	assign w_sys_tmp3 = w_ip_AddFloat_result_0;
+	assign w_sys_tmp3 = w_ip_MultFloat_product_0;
 
 
-	AddFloat
-		AddFloat_inst_0(
+	MultFloat
+		MultFloat_inst_0(
 			.clk (clock),
 			.ce (w_sys_ce),
-			.a (r_ip_AddFloat_portA_0),
-			.b (r_ip_AddFloat_portB_0),
-			.result (w_ip_AddFloat_result_0)
+			.a (r_ip_MultFloat_multiplicand_0),
+			.b (r_ip_MultFloat_multiplier_0),
+			.result (w_ip_MultFloat_product_0)
 		);
 
 	always@(posedge clock)begin
@@ -74,7 +74,7 @@ module addfloat(
 							case(r_sys_run_stage) 
 								2'h0: begin
 									if((r_sys_run_step==3'h0)) begin
-										r_ip_AddFloat_portA_0 <= r_run_input_a_0;
+										r_ip_MultFloat_multiplicand_0 <= r_run_input_a_0;
 
 									end
 								end
@@ -103,7 +103,7 @@ module addfloat(
 							case(r_sys_run_stage) 
 								2'h0: begin
 									if((r_sys_run_step==3'h0)) begin
-										r_ip_AddFloat_portB_0 <= r_run_input_b_1;
+										r_ip_MultFloat_multiplier_0 <= r_run_input_b_1;
 
 									end
 								end

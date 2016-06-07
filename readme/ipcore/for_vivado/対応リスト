@@ -1,0 +1,10 @@
+addint  configファイルの改変により解決　vivadoのIPコアのポート名を参照
+multint configファイルを改変により解決　vivadoのIPコアのポート名を参照
+divint
+compareIntLessThan
+addFloat 済
+multFloat 済
+divFloat 
+compareFloatLessThan
+fixedToFloat
+floatToFixed
