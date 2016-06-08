@@ -37,7 +37,7 @@
 			<throughput>        1            </throughput>
 			<moduleName>        AddInt       </moduleName>
 			<availableNum>      1           </availableNum>
-			<useIP>             true        </useIP>
+			<useIP>             false        </useIP>
 			<clkPname>          clk          </clkPname>
 			<leftOperandPname>  a            </leftOperandPname>
 			<rightOperandPname> b            </rightOperandPname>
@@ -56,7 +56,7 @@
 			<throughput>           1            </throughput>
 			<moduleName>           Multint      </moduleName>
 			<availableNum>         1            </availableNum>
-			<useIP>                true         </useIP>
+			<useIP>                false         </useIP>
 			<clkPname>             clk          </clkPname>
 			<multiplicandPname>    a            </multiplicandPname>
 			<multiplierPname>      b            </multiplierPname>
@@ -74,7 +74,7 @@
 			<throughput>         1            </throughput>
 			<moduleName>         DivInt       </moduleName>
 			<availableNum>       1            </availableNum>
-			<useIP>              true         </useIP>
+			<useIP>              false         </useIP>
 			<clkPname>           clk          </clkPname>
 			<dividendPname>      dividend     </dividendPname>
 			<divisorPname>       divisor      </divisorPname>
@@ -94,7 +94,7 @@
 			<throughput>        1            </throughput>
 			<moduleName>        CompareIntLT </moduleName>
 			<availableNum>      1           </availableNum>
-			<useIP>             true        </useIP>
+			<useIP>             false        </useIP>
 			<clkPname>          clk          </clkPname>
 			<leftOperandPname>  a            </leftOperandPname>
 			<rightOperandPname> b            </rightOperandPname>

@@ -1,11 +1,10 @@
-addint
-multint
-divint
-compareIntLessThan
+addint  configファイルの改変により解決　vivadoのIPコアのポート名を参照
+multint configファイルを改変により解決　vivadoのIPコアのポート名を参照
+divint　　同様
+compareIntLessThan　同様
 addFloat 済
 multFloat 済
 divFloat 
 compareFloatLessThan
 fixedToFloat
 floatToFixed
-
