@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<CLASS>
+<className>	CompFloatLT_JRT	</className>
+<METHOD>
+	<methodName>	run	</methodName>
+	<totalPhaseNum>6	</totalPhaseNum>
+	<totalStageNum>2	</totalStageNum>
+	<totalStepNum>5	</totalStepNum>
+		<Phase>
+			<phaseID>	2	</phaseID>
+			<Stage>
+				<stageID>	0	</stageID>
+				<stepNum>	1	</stepNum>
+				<minCriticalPath>	1	</minCriticalPath>
+				<exprInStage>	<!--float&nbsp;input_b&nbsp;=&nbsp;1.3F<br>-->	</exprInStage>
+				<VariableAccess>
+					<nodeID>	51743391	</nodeID>
+					<startStep>	0	</startStep>
+					<endStep>	0	</endStep>
+					<destType>	float	</destType>
+					<destTypeIsReg>	false	</destTypeIsReg>
+					<destSignalName>	r_run_input_b_1	</destSignalName>
+					<priority>	1	</priority>
+					<minPathToEnd>	1	</minPathToEnd>
+					<fastestStepForAlap>	0	</fastestStepForAlap>
+					<componentID>	2067779149	</componentID>
+					<variableName>	input_b	</variableName>
+					<type>	float	</type>
+					<variableID>	1	</variableID>
+					<isRead>	false	</isRead>
+					<dependence>		</dependence>
+					<assignNode>
+						<Literal>
+							<nodeID>	436297842	</nodeID>
+							<startStep>	0	</startStep>
+							<endStep>	0	</endStep>
+							<destType>	float	</destType>
+							<destTypeIsReg>	false	</destTypeIsReg>
+							<destSignalName>	w_sys_tmp1	</destSignalName>
+							<priority>	1	</priority>
+							<minPathToEnd>	1	</minPathToEnd>
+							<fastestStepForAlap>	0	</fastestStepForAlap>
+							<componentID>	436297842	</componentID>
+							<type>	float	</type>
+							<value>	1.3	</value>
+							<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wire&nbsp;:&nbsp;w_sys_tmp1&nbsp;=&nbsp;32'h3fa66666&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+						</Literal>
+					</assignNode>
+					<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reg&nbsp;:&nbsp;r_run_input_b_1&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+				</VariableAccess>
+			</Stage>
+
+		</Phase>
+
+		<Phase>
+			<phaseID>	4	</phaseID>
+			<Stage>
+				<stageID>	0	</stageID>
+				<stepNum>	4	</stepNum>
+				<minCriticalPath>	4	</minCriticalPath>
+				<exprInStage>	<!--result&nbsp;=&nbsp;input_a&nbsp;&gt;&nbsp;input_b<br>-->	</exprInStage>
+				<Cast>
+					<nodeID>	1348659636	</nodeID>
+					<startStep>	3	</startStep>
+					<endStep>	3	</endStep>
+					<destType>	boolean	</destType>
+					<destTypeIsReg>	false	</destTypeIsReg>
+					<destSignalName>	w_sys_tmp2	</destSignalName>
+					<priority>	0	</priority>
+					<minPathToEnd>	0	</minPathToEnd>
+					<fastestStepForAlap>	4	</fastestStepForAlap>
+					<componentID>	1348659636	</componentID>
+					<castType>	boolean	</castType>
+					<ipcore>	notUsed	</ipcore>
+					<srcNode>
+						<VariableAccess>
+							<nodeID>	232608167	</nodeID>
+							<startStep>	3	</startStep>
+							<endStep>	3	</endStep>
+							<destType>	boolean	</destType>
+							<destTypeIsReg>	false	</destTypeIsReg>
+							<destSignalName>	r_run_result_2	</destSignalName>
+							<priority>	1	</priority>
+							<minPathToEnd>	1	</minPathToEnd>
+							<fastestStepForAlap>	3	</fastestStepForAlap>
+							<componentID>	1025225229	</componentID>
+							<variableName>	result	</variableName>
+							<type>	boolean	</type>
+							<variableID>	2	</variableID>
+							<isRead>	false	</isRead>
+							<dependence>		</dependence>
+							<assignNode>
+								<Binary>
+									<nodeID>	1277015006	</nodeID>
+									<startStep>	0	</startStep>
+									<endStep>	3	</endStep>
+									<destType>	boolean	</destType>
+									<destTypeIsReg>	false	</destTypeIsReg>
+									<destSignalName>	w_sys_tmp3	</destSignalName>
+									<priority>	4	</priority>
+									<minPathToEnd>	4	</minPathToEnd>
+									<fastestStepForAlap>	0	</fastestStepForAlap>
+									<componentID>	1699123922	</componentID>
+									<op>	LT	</op>
+									<ipcore>	CompareFloatLT_inst_0	</ipcore>
+									<leftNode>
+										<VariableAccess>
+											<nodeID>	2085702895	</nodeID>
+											<startStep>	0	</startStep>
+											<endStep>	0	</endStep>
+											<destType>	float	</destType>
+											<destTypeIsReg>	false	</destTypeIsReg>
+											<destSignalName>	r_run_input_b_1	</destSignalName>
+											<priority>	4	</priority>
+											<minPathToEnd>	4	</minPathToEnd>
+											<fastestStepForAlap>	0	</fastestStepForAlap>
+											<componentID>	2067779149	</componentID>
+											<variableName>	input_b	</variableName>
+											<type>	float	</type>
+											<variableID>	1	</variableID>
+											<isRead>	true	</isRead>
+											<dependence>		</dependence>
+											<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reg&nbsp;:&nbsp;r_run_input_b_1&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+										</VariableAccess>
+									</leftNode>
+
+									<rightNode>
+										<VariableAccess>
+											<nodeID>	1032986284	</nodeID>
+											<startStep>	0	</startStep>
+											<endStep>	0	</endStep>
+											<destType>	float	</destType>
+											<destTypeIsReg>	false	</destTypeIsReg>
+											<destSignalName>	r_run_input_a_0	</destSignalName>
+											<priority>	4	</priority>
+											<minPathToEnd>	4	</minPathToEnd>
+											<fastestStepForAlap>	0	</fastestStepForAlap>
+											<componentID>	1142672840	</componentID>
+											<variableName>	input_a	</variableName>
+											<type>	float	</type>
+											<variableID>	0	</variableID>
+											<isRead>	true	</isRead>
+											<dependence>		</dependence>
+											<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reg&nbsp;:&nbsp;r_run_input_a_0&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+										</VariableAccess>
+									</rightNode>
+									<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IPcore&nbsp;:&nbsp;CompareFloatLT_inst_0&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+								</Binary>
+							</assignNode>
+							<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reg&nbsp;:&nbsp;r_run_result_2&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+						</VariableAccess>
+					</srcNode>
+					<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wire&nbsp;:&nbsp;w_sys_tmp2&nbsp;=&nbsp;r_run_result_2&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+				</Cast>
+			</Stage>
+
+		</Phase>
+
+	<exprInMethod><!--<br>public&nbsp;boolean&nbsp;run(float&nbsp;input_a)&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;float&nbsp;input_b&nbsp;=&nbsp;1.3F;<br>&nbsp;&nbsp;&nbsp;&nbsp;boolean&nbsp;result;<br>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;result&nbsp;=&nbsp;input_a&nbsp;&gt;&nbsp;input_b;<br>}--></exprInMethod>
+</METHOD>
+
+	</CLASS>

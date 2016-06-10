@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="shift_jis" ?>
 
 <module>
-	<name objName = "*thisIsTopModule"    className = "fixedtofloat_JRT" />
+	<name objName = "*thisIsTopModule"    className = "floattofixed_JRT" />
 </module>

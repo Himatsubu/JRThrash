@@ -135,8 +135,8 @@
 		</multFloat>
 
 		<divFloat>
-			<latency>          57           </latency>
-			<throughput>       4            </throughput>
+			<latency>          29           </latency>
+			<throughput>       1            </throughput>
 			<moduleName>       DivFloat     </moduleName>
 			<availableNum>     6            </availableNum>
 			<clkPname>         clk          </clkPname>
@@ -145,7 +145,7 @@
 			<quotientPname>    result       </quotientPname>
 			<newDataPname>     operation_nd </newDataPname>
 			<clockEnablePname> ce           </clockEnablePname>
-			<haveNewDataPort>  true         </haveNewDataPort>
+			<haveNewDataPort>  false         </haveNewDataPort>
 		</divFloat>
 
 		<compareFloatLessThan>

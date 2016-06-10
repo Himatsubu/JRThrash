@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<CLASS>
+<className>	floattofixed_JRT	</className>
+<METHOD>
+	<methodName>	run	</methodName>
+	<totalPhaseNum>6	</totalPhaseNum>
+	<totalStageNum>2	</totalStageNum>
+	<totalStepNum>9	</totalStepNum>
+		<Phase>
+			<phaseID>	2	</phaseID>
+			<Stage>
+				<stageID>	0	</stageID>
+				<stepNum>	1	</stepNum>
+				<minCriticalPath>	0	</minCriticalPath>
+				<exprInStage>	<!---->	</exprInStage>
+			</Stage>
+
+		</Phase>
+
+		<Phase>
+			<phaseID>	4	</phaseID>
+			<Stage>
+				<stageID>	0	</stageID>
+				<stepNum>	8	</stepNum>
+				<minCriticalPath>	8	</minCriticalPath>
+				<exprInStage>	<!--result&nbsp;=&nbsp;(int)input_a<br>-->	</exprInStage>
+				<Cast>
+					<nodeID>	1244657061	</nodeID>
+					<startStep>	7	</startStep>
+					<endStep>	7	</endStep>
+					<destType>	int	</destType>
+					<destTypeIsReg>	false	</destTypeIsReg>
+					<destSignalName>	w_sys_tmp1	</destSignalName>
+					<priority>	0	</priority>
+					<minPathToEnd>	0	</minPathToEnd>
+					<fastestStepForAlap>	8	</fastestStepForAlap>
+					<componentID>	1244657061	</componentID>
+					<castType>	int	</castType>
+					<ipcore>	notUsed	</ipcore>
+					<srcNode>
+						<VariableAccess>
+							<nodeID>	313018800	</nodeID>
+							<startStep>	7	</startStep>
+							<endStep>	7	</endStep>
+							<destType>	int	</destType>
+							<destTypeIsReg>	false	</destTypeIsReg>
+							<destSignalName>	r_run_result_1	</destSignalName>
+							<priority>	1	</priority>
+							<minPathToEnd>	1	</minPathToEnd>
+							<fastestStepForAlap>	7	</fastestStepForAlap>
+							<componentID>	1719520097	</componentID>
+							<variableName>	result	</variableName>
+							<type>	int	</type>
+							<variableID>	1	</variableID>
+							<isRead>	false	</isRead>
+							<dependence>		</dependence>
+							<assignNode>
+								<Cast>
+									<nodeID>	1530646976	</nodeID>
+									<startStep>	0	</startStep>
+									<endStep>	7	</endStep>
+									<destType>	int	</destType>
+									<destTypeIsReg>	false	</destTypeIsReg>
+									<destSignalName>	w_sys_tmp2	</destSignalName>
+									<priority>	8	</priority>
+									<minPathToEnd>	8	</minPathToEnd>
+									<fastestStepForAlap>	0	</fastestStepForAlap>
+									<componentID>	1286832600	</componentID>
+									<castType>	int	</castType>
+									<ipcore>	FloatToFixed_inst_0	</ipcore>
+									<srcNode>
+										<VariableAccess>
+											<nodeID>	487699263	</nodeID>
+											<startStep>	0	</startStep>
+											<endStep>	0	</endStep>
+											<destType>	float	</destType>
+											<destTypeIsReg>	false	</destTypeIsReg>
+											<destSignalName>	r_run_input_a_0	</destSignalName>
+											<priority>	8	</priority>
+											<minPathToEnd>	8	</minPathToEnd>
+											<fastestStepForAlap>	0	</fastestStepForAlap>
+											<componentID>	1963916289	</componentID>
+											<variableName>	input_a	</variableName>
+											<type>	float	</type>
+											<variableID>	0	</variableID>
+											<isRead>	true	</isRead>
+											<dependence>		</dependence>
+											<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reg&nbsp;:&nbsp;r_run_input_a_0&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+										</VariableAccess>
+									</srcNode>
+									<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IPcore&nbsp;:&nbsp;FloatToFixed_inst_0&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+								</Cast>
+							</assignNode>
+							<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reg&nbsp;:&nbsp;r_run_result_1&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+						</VariableAccess>
+					</srcNode>
+					<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wire&nbsp;:&nbsp;w_sys_tmp1&nbsp;=&nbsp;r_run_result_1&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+				</Cast>
+			</Stage>
+
+		</Phase>
+
+	<exprInMethod><!--<br>public&nbsp;int&nbsp;run(float&nbsp;input_a)&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;int&nbsp;result;<br>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;result&nbsp;=&nbsp;(int)input_a;<br>}--></exprInMethod>
+</METHOD>
+
+	</CLASS>

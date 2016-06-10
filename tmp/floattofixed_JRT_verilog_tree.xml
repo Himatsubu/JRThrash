@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Class>
+
+	<ClassName>	floattofixed_JRT	</ClassName>
+
+	<AllVariables>
+		<VeriableDecl>
+			<name>	input_a	</name>
+			<type>	float	</type>
+			<variableID>	0	</variableID>
+			<parentName>	run	</parentName>
+			<defType>	paramList	</defType>
+			<isArray>	false	</isArray>
+			<isPrimitive>	true	</isPrimitive>
+			<isFinal>	false	</isFinal>
+			<dimension>	0	</dimension>
+			<init>
+			</init>
+		</VeriableDecl>
+
+		<VeriableDecl>
+			<name>	result	</name>
+			<type>	int	</type>
+			<variableID>	1	</variableID>
+			<parentName>	run	</parentName>
+			<defType>	method	</defType>
+			<isArray>	false	</isArray>
+			<isPrimitive>	true	</isPrimitive>
+			<isFinal>	false	</isFinal>
+			<dimension>	0	</dimension>
+			<init>
+			</init>
+		</VeriableDecl>
+
+	</AllVariables>
+
+	<METHOD>	<Phase>  1  </Phase>
+
+		<methodName>	run	</methodName>
+		<returnType>	int	</returnType>
+		<ParamList>
+
+			<VeriableDecl>			<name>	input_a	</name>		<variableID>	0	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+		</ParamList>
+
+		<MethodBody>
+			<Block>	<Phase>  1  </Phase>
+
+				<StatAssemblage>	<Phase>  2  </Phase>
+					<stageNum>  1  </stageNum>
+					<totalStepNum>  1  </totalStepNum>
+					<VariableStack>
+						<VeriableDecl>			<name>	input_a	</name>		<variableID>	0	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+						<VeriableDecl>			<name>	result	</name>		<variableID>	1	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+					</VariableStack>
+
+					<statements>
+						<VeriableDecl>			<name>	result	</name>		<variableID>	1	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+					</statements>
+
+				</StatAssemblage>
+
+				<Return>	<Phase>  3  </Phase>
+
+					<StatAssemblage>	<Phase>  4  </Phase>
+						<stageNum>  1  </stageNum>
+						<totalStepNum>  8  </totalStepNum>
+						<VariableStack>
+							<VeriableDecl>			<name>	input_a	</name>		<variableID>	0	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+							<VeriableDecl>			<name>	result	</name>		<variableID>	1	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+						</VariableStack>
+
+						<statements>
+							<ExprStatement>
+								<Assign>
+									<rightExpr>
+										<TypeCast>
+											<castType>	int	</castType>
+
+											<Ident>
+												<variableID>	0	</variableID>
+												<idName>	input_a	</idName>
+											</Ident>
+										</TypeCast>
+
+									</rightExpr>
+
+									<dest>
+										<Ident>
+											<variableID>	1	</variableID>
+											<idName>	result	</idName>
+										</Ident>
+									</dest>
+
+								</Assign>
+
+							</ExprStatement>
+
+						</statements>
+
+					</StatAssemblage>
+
+				</Return>
+
+			</Block>
+
+		</MethodBody>
+
+	</METHOD>
+
+
+</Class>
