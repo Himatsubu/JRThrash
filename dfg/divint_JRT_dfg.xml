@@ -1,50 +1,50 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
 <CLASS>
-<className>	addfloat	</className>
+<className>	divint_JRT	</className>
 <METHOD>
 	<methodName>	run	</methodName>
 	<totalPhaseNum>6	</totalPhaseNum>
 	<totalStageNum>2	</totalStageNum>
-	<totalStepNum>7	</totalStepNum>
+	<totalStepNum>39	</totalStepNum>
 		<Phase>
 			<phaseID>	2	</phaseID>
 			<Stage>
 				<stageID>	0	</stageID>
 				<stepNum>	1	</stepNum>
 				<minCriticalPath>	1	</minCriticalPath>
-				<exprInStage>	<!--float&nbsp;input_b&nbsp;=&nbsp;1.3F<br>-->	</exprInStage>
+				<exprInStage>	<!--int&nbsp;input_b&nbsp;=&nbsp;2<br>-->	</exprInStage>
 				<VariableAccess>
-					<nodeID>	2098896828	</nodeID>
+					<nodeID>	1286832600	</nodeID>
 					<startStep>	0	</startStep>
 					<endStep>	0	</endStep>
-					<destType>	float	</destType>
+					<destType>	int	</destType>
 					<destTypeIsReg>	false	</destTypeIsReg>
 					<destSignalName>	r_run_input_b_1	</destSignalName>
 					<priority>	1	</priority>
 					<minPathToEnd>	1	</minPathToEnd>
 					<fastestStepForAlap>	0	</fastestStepForAlap>
-					<componentID>	1592602574	</componentID>
+					<componentID>	487699263	</componentID>
 					<variableName>	input_b	</variableName>
-					<type>	float	</type>
+					<type>	int	</type>
 					<variableID>	1	</variableID>
 					<isRead>	false	</isRead>
 					<dependence>		</dependence>
 					<assignNode>
 						<Literal>
-							<nodeID>	635285010	</nodeID>
+							<nodeID>	1963916289	</nodeID>
 							<startStep>	0	</startStep>
 							<endStep>	0	</endStep>
-							<destType>	float	</destType>
+							<destType>	int	</destType>
 							<destTypeIsReg>	false	</destTypeIsReg>
 							<destSignalName>	w_sys_tmp1	</destSignalName>
 							<priority>	1	</priority>
 							<minPathToEnd>	1	</minPathToEnd>
 							<fastestStepForAlap>	0	</fastestStepForAlap>
-							<componentID>	635285010	</componentID>
-							<type>	float	</type>
-							<value>	1.3	</value>
-							<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wire&nbsp;:&nbsp;w_sys_tmp1&nbsp;=&nbsp;32'h3fa66666&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+							<componentID>	1963916289	</componentID>
+							<type>	int	</type>
+							<value>	2	</value>
+							<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wire&nbsp;:&nbsp;w_sys_tmp1&nbsp;=&nbsp;32'sh00000002&nbsp;&nbsp;&nbsp;&nbsp;--></component>
 						</Literal>
 					</assignNode>
 					<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reg&nbsp;:&nbsp;r_run_input_b_1&nbsp;&nbsp;&nbsp;&nbsp;--></component>
@@ -57,67 +57,67 @@
 			<phaseID>	4	</phaseID>
 			<Stage>
 				<stageID>	0	</stageID>
-				<stepNum>	6	</stepNum>
-				<minCriticalPath>	6	</minCriticalPath>
-				<exprInStage>	<!--result&nbsp;=&nbsp;input_a&nbsp;+&nbsp;input_b<br>-->	</exprInStage>
+				<stepNum>	38	</stepNum>
+				<minCriticalPath>	38	</minCriticalPath>
+				<exprInStage>	<!--result&nbsp;=&nbsp;input_a&nbsp;%&nbsp;input_b<br>-->	</exprInStage>
 				<Cast>
-					<nodeID>	2093953833	</nodeID>
-					<startStep>	5	</startStep>
-					<endStep>	5	</endStep>
-					<destType>	float	</destType>
+					<nodeID>	717414833	</nodeID>
+					<startStep>	37	</startStep>
+					<endStep>	37	</endStep>
+					<destType>	int	</destType>
 					<destTypeIsReg>	false	</destTypeIsReg>
 					<destSignalName>	w_sys_tmp2	</destSignalName>
 					<priority>	0	</priority>
 					<minPathToEnd>	0	</minPathToEnd>
-					<fastestStepForAlap>	6	</fastestStepForAlap>
-					<componentID>	2093953833	</componentID>
-					<castType>	float	</castType>
+					<fastestStepForAlap>	38	</fastestStepForAlap>
+					<componentID>	717414833	</componentID>
+					<castType>	int	</castType>
 					<ipcore>	notUsed	</ipcore>
 					<srcNode>
 						<VariableAccess>
-							<nodeID>	120064195	</nodeID>
-							<startStep>	5	</startStep>
-							<endStep>	5	</endStep>
-							<destType>	float	</destType>
+							<nodeID>	1617903973	</nodeID>
+							<startStep>	37	</startStep>
+							<endStep>	37	</endStep>
+							<destType>	int	</destType>
 							<destTypeIsReg>	false	</destTypeIsReg>
 							<destSignalName>	r_run_result_2	</destSignalName>
 							<priority>	1	</priority>
 							<minPathToEnd>	1	</minPathToEnd>
-							<fastestStepForAlap>	5	</fastestStepForAlap>
-							<componentID>	1431780832	</componentID>
+							<fastestStepForAlap>	37	</fastestStepForAlap>
+							<componentID>	674135897	</componentID>
 							<variableName>	result	</variableName>
-							<type>	float	</type>
+							<type>	int	</type>
 							<variableID>	2	</variableID>
 							<isRead>	false	</isRead>
 							<dependence>		</dependence>
 							<assignNode>
 								<Binary>
-									<nodeID>	1249619837	</nodeID>
+									<nodeID>	428575575	</nodeID>
 									<startStep>	0	</startStep>
-									<endStep>	5	</endStep>
-									<destType>	float	</destType>
+									<endStep>	37	</endStep>
+									<destType>	int	</destType>
 									<destTypeIsReg>	false	</destTypeIsReg>
 									<destSignalName>	w_sys_tmp3	</destSignalName>
-									<priority>	6	</priority>
-									<minPathToEnd>	6	</minPathToEnd>
+									<priority>	38	</priority>
+									<minPathToEnd>	38	</minPathToEnd>
 									<fastestStepForAlap>	0	</fastestStepForAlap>
-									<componentID>	1386178789	</componentID>
-									<op>	+	</op>
-									<ipcore>	AddFloat_inst_0	</ipcore>
+									<componentID>	78299307	</componentID>
+									<op>	%	</op>
+									<ipcore>	DivInt_inst_0	</ipcore>
 									<leftNode>
 										<VariableAccess>
-											<nodeID>	1604304067	</nodeID>
+											<nodeID>	1716460785	</nodeID>
 											<startStep>	0	</startStep>
 											<endStep>	0	</endStep>
-											<destType>	float	</destType>
+											<destType>	int	</destType>
 											<destTypeIsReg>	false	</destTypeIsReg>
 											<destSignalName>	r_run_input_a_0	</destSignalName>
-											<priority>	6	</priority>
-											<minPathToEnd>	6	</minPathToEnd>
+											<priority>	38	</priority>
+											<minPathToEnd>	38	</minPathToEnd>
 											<fastestStepForAlap>	0	</fastestStepForAlap>
-											<componentID>	1881265984	</componentID>
+											<componentID>	1408583344	</componentID>
 											<variableName>	input_a	</variableName>
-											<type>	float	</type>
+											<type>	int	</type>
 											<variableID>	0	</variableID>
 											<isRead>	true	</isRead>
 											<dependence>		</dependence>
@@ -127,25 +127,25 @@
 
 									<rightNode>
 										<VariableAccess>
-											<nodeID>	1035658307	</nodeID>
+											<nodeID>	200538080	</nodeID>
 											<startStep>	0	</startStep>
 											<endStep>	0	</endStep>
-											<destType>	float	</destType>
+											<destType>	int	</destType>
 											<destTypeIsReg>	false	</destTypeIsReg>
 											<destSignalName>	r_run_input_b_1	</destSignalName>
-											<priority>	6	</priority>
-											<minPathToEnd>	6	</minPathToEnd>
+											<priority>	38	</priority>
+											<minPathToEnd>	38	</minPathToEnd>
 											<fastestStepForAlap>	0	</fastestStepForAlap>
-											<componentID>	1592602574	</componentID>
+											<componentID>	487699263	</componentID>
 											<variableName>	input_b	</variableName>
-											<type>	float	</type>
+											<type>	int	</type>
 											<variableID>	1	</variableID>
 											<isRead>	true	</isRead>
 											<dependence>		</dependence>
 											<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reg&nbsp;:&nbsp;r_run_input_b_1&nbsp;&nbsp;&nbsp;&nbsp;--></component>
 										</VariableAccess>
 									</rightNode>
-									<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IPcore&nbsp;:&nbsp;AddFloat_inst_0&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+									<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IPcore&nbsp;:&nbsp;DivInt_inst_0&nbsp;&nbsp;&nbsp;&nbsp;--></component>
 								</Binary>
 							</assignNode>
 							<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reg&nbsp;:&nbsp;r_run_result_2&nbsp;&nbsp;&nbsp;&nbsp;--></component>
@@ -157,7 +157,7 @@
 
 		</Phase>
 
-	<exprInMethod><!--<br>public&nbsp;float&nbsp;run(float&nbsp;input_a)&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;float&nbsp;input_b&nbsp;=&nbsp;1.3F;<br>&nbsp;&nbsp;&nbsp;&nbsp;float&nbsp;result;<br>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;result&nbsp;=&nbsp;input_a&nbsp;+&nbsp;input_b;<br>}--></exprInMethod>
+	<exprInMethod><!--<br>public&nbsp;int&nbsp;run(int&nbsp;input_a)&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;int&nbsp;input_b&nbsp;=&nbsp;2;<br>&nbsp;&nbsp;&nbsp;&nbsp;int&nbsp;result;<br>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;result&nbsp;=&nbsp;input_a&nbsp;%&nbsp;input_b;<br>}--></exprInMethod>
 </METHOD>
 
 	</CLASS>

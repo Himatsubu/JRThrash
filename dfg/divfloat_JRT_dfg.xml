@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
 <CLASS>
-<className>	addfloat	</className>
+<className>	divfloat_JRT	</className>
 <METHOD>
 	<methodName>	run	</methodName>
 	<totalPhaseNum>6	</totalPhaseNum>
 	<totalStageNum>2	</totalStageNum>
-	<totalStepNum>7	</totalStepNum>
+	<totalStepNum>32	</totalStepNum>
 		<Phase>
 			<phaseID>	2	</phaseID>
 			<Stage>
@@ -57,33 +57,33 @@
 			<phaseID>	4	</phaseID>
 			<Stage>
 				<stageID>	0	</stageID>
-				<stepNum>	6	</stepNum>
-				<minCriticalPath>	6	</minCriticalPath>
-				<exprInStage>	<!--result&nbsp;=&nbsp;input_a&nbsp;+&nbsp;input_b<br>-->	</exprInStage>
+				<stepNum>	31	</stepNum>
+				<minCriticalPath>	31	</minCriticalPath>
+				<exprInStage>	<!--result&nbsp;=&nbsp;input_a&nbsp;/&nbsp;input_b<br>-->	</exprInStage>
 				<Cast>
 					<nodeID>	2093953833	</nodeID>
-					<startStep>	5	</startStep>
-					<endStep>	5	</endStep>
+					<startStep>	30	</startStep>
+					<endStep>	30	</endStep>
 					<destType>	float	</destType>
 					<destTypeIsReg>	false	</destTypeIsReg>
 					<destSignalName>	w_sys_tmp2	</destSignalName>
 					<priority>	0	</priority>
 					<minPathToEnd>	0	</minPathToEnd>
-					<fastestStepForAlap>	6	</fastestStepForAlap>
+					<fastestStepForAlap>	31	</fastestStepForAlap>
 					<componentID>	2093953833	</componentID>
 					<castType>	float	</castType>
 					<ipcore>	notUsed	</ipcore>
 					<srcNode>
 						<VariableAccess>
 							<nodeID>	120064195	</nodeID>
-							<startStep>	5	</startStep>
-							<endStep>	5	</endStep>
+							<startStep>	30	</startStep>
+							<endStep>	30	</endStep>
 							<destType>	float	</destType>
 							<destTypeIsReg>	false	</destTypeIsReg>
 							<destSignalName>	r_run_result_2	</destSignalName>
 							<priority>	1	</priority>
 							<minPathToEnd>	1	</minPathToEnd>
-							<fastestStepForAlap>	5	</fastestStepForAlap>
+							<fastestStepForAlap>	30	</fastestStepForAlap>
 							<componentID>	1431780832	</componentID>
 							<variableName>	result	</variableName>
 							<type>	float	</type>
@@ -94,16 +94,16 @@
 								<Binary>
 									<nodeID>	1249619837	</nodeID>
 									<startStep>	0	</startStep>
-									<endStep>	5	</endStep>
+									<endStep>	30	</endStep>
 									<destType>	float	</destType>
 									<destTypeIsReg>	false	</destTypeIsReg>
 									<destSignalName>	w_sys_tmp3	</destSignalName>
-									<priority>	6	</priority>
-									<minPathToEnd>	6	</minPathToEnd>
+									<priority>	31	</priority>
+									<minPathToEnd>	31	</minPathToEnd>
 									<fastestStepForAlap>	0	</fastestStepForAlap>
 									<componentID>	1386178789	</componentID>
-									<op>	+	</op>
-									<ipcore>	AddFloat_inst_0	</ipcore>
+									<op>	/	</op>
+									<ipcore>	DivFloat_inst_0	</ipcore>
 									<leftNode>
 										<VariableAccess>
 											<nodeID>	1604304067	</nodeID>
@@ -112,8 +112,8 @@
 											<destType>	float	</destType>
 											<destTypeIsReg>	false	</destTypeIsReg>
 											<destSignalName>	r_run_input_a_0	</destSignalName>
-											<priority>	6	</priority>
-											<minPathToEnd>	6	</minPathToEnd>
+											<priority>	31	</priority>
+											<minPathToEnd>	31	</minPathToEnd>
 											<fastestStepForAlap>	0	</fastestStepForAlap>
 											<componentID>	1881265984	</componentID>
 											<variableName>	input_a	</variableName>
@@ -133,8 +133,8 @@
 											<destType>	float	</destType>
 											<destTypeIsReg>	false	</destTypeIsReg>
 											<destSignalName>	r_run_input_b_1	</destSignalName>
-											<priority>	6	</priority>
-											<minPathToEnd>	6	</minPathToEnd>
+											<priority>	31	</priority>
+											<minPathToEnd>	31	</minPathToEnd>
 											<fastestStepForAlap>	0	</fastestStepForAlap>
 											<componentID>	1592602574	</componentID>
 											<variableName>	input_b	</variableName>
@@ -145,7 +145,7 @@
 											<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reg&nbsp;:&nbsp;r_run_input_b_1&nbsp;&nbsp;&nbsp;&nbsp;--></component>
 										</VariableAccess>
 									</rightNode>
-									<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IPcore&nbsp;:&nbsp;AddFloat_inst_0&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+									<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IPcore&nbsp;:&nbsp;DivFloat_inst_0&nbsp;&nbsp;&nbsp;&nbsp;--></component>
 								</Binary>
 							</assignNode>
 							<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reg&nbsp;:&nbsp;r_run_result_2&nbsp;&nbsp;&nbsp;&nbsp;--></component>
@@ -157,7 +157,7 @@
 
 		</Phase>
 
-	<exprInMethod><!--<br>public&nbsp;float&nbsp;run(float&nbsp;input_a)&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;float&nbsp;input_b&nbsp;=&nbsp;1.3F;<br>&nbsp;&nbsp;&nbsp;&nbsp;float&nbsp;result;<br>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;result&nbsp;=&nbsp;input_a&nbsp;+&nbsp;input_b;<br>}--></exprInMethod>
+	<exprInMethod><!--<br>public&nbsp;float&nbsp;run(float&nbsp;input_a)&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;float&nbsp;input_b&nbsp;=&nbsp;1.3F;<br>&nbsp;&nbsp;&nbsp;&nbsp;float&nbsp;result;<br>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;result&nbsp;=&nbsp;input_a&nbsp;/&nbsp;input_b;<br>}--></exprInMethod>
 </METHOD>
 
 	</CLASS>

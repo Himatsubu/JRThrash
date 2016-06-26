@@ -1,11 +1,11 @@
-package net.njlab.samplel;
+package net.njlab.sample;
 
 public class addfloat{
 	public float run(float input_a){
-		//float input_a=1.2f;
+		//input_a=1.2f;
 		float input_b=1.3f;
 		float result;
-		
+		//input_a=input_a+input_b;
 		return result = input_a+input_b;
 	}
 }
