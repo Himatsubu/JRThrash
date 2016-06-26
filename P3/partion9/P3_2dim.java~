@@ -15,14 +15,7 @@ public class P3_2dim{
 	static final sub06 sub06 = new sub06();
 	static final sub07 sub07 = new sub07();
 	static final sub08 sub08 = new sub08();
-	static final sub09 sub09 = new sub09();
-	static final sub10 sub10 = new sub10();
-	static final sub11 sub11 = new sub11();
-	static final sub12 sub12 = new sub12();
-	static final sub13 sub13 = new sub13();
-	static final sub14 sub14 = new sub14();
-	static final sub15 sub15 = new sub15();
-
+	
         @JRThrashUnroll(unrollNum=7, loopVariableName="j",unrollType=JRThrashUnroll.copyLoopVar)
 	public void run(){
 //	public static void main(String[] args){
@@ -374,104 +367,69 @@ public class P3_2dim{
 			sub14.join();
 			sub15.join();
 		}catch(Exception e){}
-
-		for(k=2;k<=6;k++)
-		{
+		for(k=2;k<=7;k++){
 			T[42+k]=sub00.result[42+k];
 			T[63+k]=sub00.result[63+k];
 			T[84+k]=sub00.result[84+k];
 			T[105+k]=sub00.result[105+k];
 			T[126+k]=sub00.result[126+k];
-
-			T[147+k]=sub01.result[147+k];
+			T[147+k]=sub00.result[147+k];
 			T[168+k]=sub01.result[168+k];
 			T[189+k]=sub01.result[189+k];
 			T[210+k]=sub01.result[210+k];
 			T[231+k]=sub01.result[231+k];
-
-			T[252+k]=sub02.result[252+k];
-			T[273+k]=sub02.result[273+k];
+			T[252+k]=sub01.result[252+k];
+			T[273+k]=sub01.result[273+k];
 			T[294+k]=sub02.result[294+k];
 			T[315+k]=sub02.result[315+k];
 			T[336+k]=sub02.result[336+k];
-
-			T[357+k]=sub03.result[357+k];
-			T[378+k]=sub03.result[378+k];
-			T[399+k]=sub03.result[399+k];
-			T[420+k]=sub03.result[420+k];
-
-			T[42+k+5]=sub04.result[42+k+5];
-			T[63+k+5]=sub04.result[63+k+5];
-			T[84+k+5]=sub04.result[84+k+5];
-			T[105+k+5]=sub04.result[105+k+5];
-			T[126+k+5]=sub04.result[126+k+5];
-
-			T[147+k+5]=sub05.result[147+k+5];
-			T[168+k+5]=sub05.result[168+k+5];
-			T[189+k+5]=sub05.result[189+k+5];
-			T[210+k+5]=sub05.result[210+k+5];
-			T[231+k+5]=sub05.result[231+k+5];
-
-			T[252+k+5]=sub06.result[252+k+5];
-			T[273+k+5]=sub06.result[273+k+5];
-			T[294+k+5]=sub06.result[294+k+5];
-			T[315+k+5]=sub06.result[315+k+5];
-			T[336+k+5]=sub06.result[336+k+5];
-
-			T[357+k+5]=sub07.result[357+k+5];
-			T[378+k+5]=sub07.result[378+k+5];
-			T[399+k+5]=sub07.result[399+k+5];
-			T[420+k+5]=sub07.result[420+k+5];
-		
-			T[42+k+10]=sub08.result[42+k+10];
-			T[63+k+10]=sub08.result[63+k+10];
-			T[84+k+10]=sub08.result[84+k+10];
-			T[105+k+10]=sub08.result[105+k+10];
-			T[126+k+10]=sub08.result[126+k+10];
-
-			T[147+k+10]=sub09.result[147+k+10];
-			T[168+k+10]=sub09.result[168+k+10];
-			T[189+k+10]=sub09.result[189+k+10];
-			T[210+k+10]=sub09.result[210+k+10];
-			T[231+k+10]=sub09.result[231+k+10];
-
-			T[252+k+10]=sub10.result[252+k+10];
-			T[273+k+10]=sub10.result[273+k+10];
-			T[294+k+10]=sub10.result[294+k+10];
-			T[315+k+10]=sub10.result[315+k+10];
-			T[336+k+10]=sub10.result[336+k+10];
-
-			T[357+k+10]=sub11.result[357+k+10];
-			T[378+k+10]=sub11.result[378+k+10];
-			T[399+k+10]=sub11.result[399+k+10];
-			T[420+k+10]=sub11.result[420+k+10];
+			T[357+k]=sub02.result[357+k];
+			T[378+k]=sub02.result[378+k];
+			T[399+k]=sub02.result[399+k];
+			T[420+k]=sub02.result[420+k];
+			T[42+k+6]=sub03.result[42+k+6];
+			T[63+k+6]=sub03.result[63+k+6];
+			T[84+k+6]=sub03.result[84+k+6];
+			T[105+k+6]=sub03.result[105+k+6];
+			T[126+k+6]=sub03.result[126+k+6];
+			T[147+k+6]=sub03.result[147+k+6];
+			T[168+k+6]=sub04.result[168+k+6];
+			T[189+k+6]=sub04.result[189+k+6];
+			T[210+k+6]=sub04.result[210+k+6];
+			T[231+k+6]=sub04.result[231+k+6];
+			T[252+k+6]=sub04.result[252+k+6];
+			T[273+k+6]=sub04.result[273+k+6];
+			T[294+k+6]=sub05.result[294+k+6];
+			T[315+k+6]=sub05.result[315+k+6];
+			T[336+k+6]=sub05.result[336+k+6];
+			T[357+k+6]=sub05.result[357+k+6];
+			T[378+k+6]=sub05.result[378+k+6];
+			T[399+k+6]=sub05.result[399+k+6];
+			T[420+k+6]=sub05.result[420+k+6];
+		}
+		for(k=14;k<=20;k++){
+			T[42+k]=sub06.result[42+k];
+			T[63+k]=sub06.result[63+k];
+			T[84+k]=sub06.result[84+k];
+			T[105+k]=sub06.result[105+k];
+			T[126+k]=sub06.result[126+k];
+			T[147+k]=sub06.result[147+k];
+			T[168+k]=sub07.result[168+k];
+			T[189+k]=sub07.result[189+k];
+			T[210+k]=sub07.result[210+k];
+			T[231+k]=sub07.result[231+k];
+			T[252+k]=sub07.result[252+k];
+			T[273+k]=sub07.result[273+k];
+			T[294+k]=sub08.result[294+k];
+			T[315+k]=sub08.result[315+k];
+			T[336+k]=sub08.result[336+k];
+			T[357+k]=sub08.result[357+k];
+			T[378+k]=sub08.result[378+k];
+			T[399+k]=sub08.result[399+k];
+			T[420+k]=sub08.result[420+k];
 		}
 
-		for(k=16;k<=21;k++)
-		{
-			T[42+k]=sub12.result[42+k];
-			T[63+k]=sub12.result[63+k];
-			T[84+k]=sub12.result[84+k];
-			T[105+k]=sub12.result[105+k];
-			T[126+k]=sub12.result[126+k];
 
-			T[147+k]=sub13.result[147+k];
-			T[168+k]=sub13.result[168+k];
-			T[189+k]=sub13.result[189+k];
-			T[210+k]=sub13.result[210+k];
-			T[231+k]=sub13.result[231+k];
-
-			T[252+k]=sub14.result[252+k];
-			T[273+k]=sub14.result[273+k];
-			T[294+k]=sub14.result[294+k];
-			T[315+k]=sub14.result[315+k];
-			T[336+k]=sub14.result[336+k];
-
-			T[357+k]=sub15.result[357+k];
-			T[378+k]=sub15.result[378+k];
-			T[399+k]=sub15.result[399+k];
-			T[420+k]=sub15.result[420+k];
-		}
 		}
 		//System.out.println(T[10*21+10]);
 }

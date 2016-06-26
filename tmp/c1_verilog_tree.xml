@@ -422,7 +422,7 @@
 								<rightExpr>
 									<Literal>
 										<type>	int	</type>
-										<value>	2	</value>
+										<value>	400	</value>
 									</Literal>
 								</rightExpr>
 

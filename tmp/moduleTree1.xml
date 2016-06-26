@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="shift_jis" ?>
 
 <module>
-<<<<<<< HEAD
-	<name objName = "*thisIsTopModule"    className = "c1" />
+	<name objName = "*thisIsTopModule"    className = "P3_2dim" />
 	<subModule>
 		<module>
 			<name objName = "sub08"    className = "sub08" />
@@ -48,7 +47,4 @@
 			<name objName = "sub04"    className = "sub04" />
 		</module>
 	</subModule>
-=======
-	<name objName = "*thisIsTopModule"    className = "floattofixed_JRT" />
->>>>>>> b72db2416ea2a260853eb907beb2bfc3e5e73a5f
 </module>

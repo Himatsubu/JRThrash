@@ -20,20 +20,20 @@ public class c1{
 	//public static void main(String[] args){
 		int k,j,n,mx,my,nlast;
 		//float dx,dy;
-		mx=21;
-		my=21;
+		mx=31;
+		my=31;
 		//dx = 0.05f;
 		//dy = 0.05f;
-		nlast=2;
+		nlast=1;
 		
 //	熱源項の定義と初期条件
 	for (k = 1; k <= my; k++)
 	{
 		for (j = 1; j<= mx; j++)
 		{
-			 //q[j*21+k] = 100f*dx*(j-1)*dy*(k-1);
-			 u[j*21+k] = 0f;
-			uu[j*21+k] = 0f;
+			 //q[j*31+k] = 100f*dx*(j-1)*dy*(k-1);
+			 u[j*31+k] = 0f;
+			uu[j*31+k] = 0f;
 		}
 	}
 	
@@ -42,10 +42,10 @@ public class c1{
 //	境界条件
 		for (j = 1; j <= my; j++)
 		{
-			u[1*21+j] = 0.5f;
+			u[1*31+j] = 0.5f;
 			u[441+j]= 0f;
-			u[j*21+1] = 1.f;
-			u[j*21+my]= 0f;
+			u[j*31+1] = 1.f;
+			u[j*31+my]= 0f;
 		}
 		
 		//クラスに配列をこぴー

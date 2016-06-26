@@ -15,14 +15,7 @@ public class P3_2dim{
 	static final sub06 sub06 = new sub06();
 	static final sub07 sub07 = new sub07();
 	static final sub08 sub08 = new sub08();
-	static final sub09 sub09 = new sub09();
-	static final sub10 sub10 = new sub10();
-	static final sub11 sub11 = new sub11();
-	static final sub12 sub12 = new sub12();
-	static final sub13 sub13 = new sub13();
-	static final sub14 sub14 = new sub14();
-	static final sub15 sub15 = new sub15();
-
+	
         @JRThrashUnroll(unrollNum=7, loopVariableName="j",unrollType=JRThrashUnroll.copyLoopVar)
 	public void run(){
 //	public static void main(String[] args){
@@ -37,7 +30,7 @@ public class P3_2dim{
 		mx=kx+1;
 		my=ky+1;
 		dt=0.0005f;
-		nlast=1;
+		nlast=400;
 
 		dx=4f/(mx-1);
 		dy=1f/(my-1);
@@ -349,13 +342,6 @@ public class P3_2dim{
 		sub06.start();
 		sub07.start();
 		sub08.start();
-		sub09.start();
-		sub10.start();
-		sub11.start();
-		sub12.start();
-		sub13.start();
-		sub14.start();
-		sub15.start();
 		try{
 			sub00.join();
 			sub01.join();
@@ -366,13 +352,6 @@ public class P3_2dim{
 			sub06.join();
 			sub07.join();
 			sub08.join();
-			sub09.join();
-			sub10.join();
-			sub11.join();
-			sub12.join();
-			sub13.join();
-			sub14.join();
-			sub15.join();
 		}catch(Exception e){}
 		for(k=2;k<=7;k++){
 			T[42+k]=sub00.result[42+k];
