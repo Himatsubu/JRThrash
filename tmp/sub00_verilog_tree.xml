@@ -18,7 +18,7 @@
 			<init>
 				<NewArray>
 					<type>	float	</type>
-					<elements>	484	</elements>				
+					<elements>	1024	</elements>				
 				</NewArray>
 			</init>
 		</VeriableDecl>
@@ -36,7 +36,7 @@
 			<init>
 				<NewArray>
 					<type>	float	</type>
-					<elements>	484	</elements>				
+					<elements>	1024	</elements>				
 				</NewArray>
 			</init>
 		</VeriableDecl>
@@ -385,7 +385,7 @@
 										<rightExpr>
 											<Literal>
 												<type>	int	</type>
-												<value>	4	</value>
+												<value>	11	</value>
 											</Literal>
 										</rightExpr>
 
@@ -510,7 +510,7 @@
 													<rightExpr>
 														<Literal>
 															<type>	int	</type>
-															<value>	4	</value>
+															<value>	11	</value>
 														</Literal>
 													</rightExpr>
 
@@ -529,7 +529,7 @@
 
 										<StatAssemblage>	<Phase>  13  </Phase>
 											<stageNum>  1  </stageNum>
-											<totalStepNum>  54  </totalStepNum>
+											<totalStepNum>  103  </totalStepNum>
 											<VariableStack>
 												<VeriableDecl>			<name>	u	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
 												<VeriableDecl>			<name>	result	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
@@ -575,7 +575,7 @@
 																										<rightExpr>
 																											<Literal>
 																												<type>	int	</type>
-																												<value>	21	</value>
+																												<value>	31	</value>
 																											</Literal>
 																										</rightExpr>
 
@@ -649,7 +649,7 @@
 																																<rightExpr>
 																																	<Literal>
 																																		<type>	int	</type>
-																																		<value>	21	</value>
+																																		<value>	31	</value>
 																																	</Literal>
 																																</rightExpr>
 
@@ -703,7 +703,7 @@
 																																		<rightExpr>
 																																			<Literal>
 																																				<type>	int	</type>
-																																				<value>	21	</value>
+																																				<value>	31	</value>
 																																			</Literal>
 																																		</rightExpr>
 
@@ -769,7 +769,7 @@
 																														<rightExpr>
 																															<Literal>
 																																<type>	int	</type>
-																																<value>	21	</value>
+																																<value>	31	</value>
 																															</Literal>
 																														</rightExpr>
 
@@ -844,7 +844,7 @@
 																																<rightExpr>
 																																	<Literal>
 																																		<type>	int	</type>
-																																		<value>	21	</value>
+																																		<value>	31	</value>
 																																	</Literal>
 																																</rightExpr>
 
@@ -909,7 +909,7 @@
 																																<rightExpr>
 																																	<Literal>
 																																		<type>	int	</type>
-																																		<value>	21	</value>
+																																		<value>	31	</value>
 																																	</Literal>
 																																</rightExpr>
 
@@ -964,7 +964,7 @@
 																														<rightExpr>
 																															<Literal>
 																																<type>	int	</type>
-																																<value>	21	</value>
+																																<value>	31	</value>
 																															</Literal>
 																														</rightExpr>
 
@@ -1140,7 +1140,7 @@
 																				<rightExpr>
 																					<Literal>
 																						<type>	int	</type>
-																						<value>	21	</value>
+																						<value>	31	</value>
 																					</Literal>
 																				</rightExpr>
 

@@ -16,6 +16,12 @@ module addfloat(
 	reg         [31:0] r_ip_AddFloat_portA_0;
 	reg         [31:0] r_ip_AddFloat_portB_0;
 	wire        [31:0] w_ip_AddFloat_result_0;
+	wire               s_axis_a_tready;
+	wire               s_axis_a_tvalid;
+	wire               s_axis_b_tready;
+    wire               s_axis_b_tvalid;
+   	wire               m_axis_result_tready;
+    wire               m_axis_result_tvalid;
 	reg         [ 1:0] r_sys_processing_methodID;
 	wire               w_sys_boolTrue;
 	wire               w_sys_boolFalse;
@@ -50,17 +56,28 @@ module addfloat(
 	assign w_sys_tmp1 = 32'h3fa66666;
 	assign w_sys_tmp2 = r_run_result_2;
 	assign w_sys_tmp3 = w_ip_AddFloat_result_0;
+	assign s_axis_a_tready=1'b1;
+    assign s_axis_a_tvalid=1'b1;
+    assign s_axis_b_tready=1'b1;
+    assign s_axis_b_tvalid=1'b1;
+    assign m_axis_result_tready=1'b1;
+    assign m_axis_result_tvalid=1'b1; 
 
 
 	AddFloat
 		AddFloat_inst_0(
 			.aclk (clock),
 			.aclken (w_sys_ce),
-			.A_AXI_A (r_ip_AddFloat_portA_0),
-			.S_AXIS_B (r_ip_AddFloat_portB_0),
-			.S_AXIS_RESULT (w_ip_AddFloat_result_0)
+			.s_axis_a_tdata (r_ip_AddFloat_portA_0),
+			.s_axis_b_tdata (r_ip_AddFloat_portB_0),
+			.m_axis_result_tdata (w_ip_AddFloat_result_0),
+			.s_axis_a_tready(s_axis_a_tready),
+            .s_axis_a_tvalid(s_axis_a_tvalid),
+            .s_axis_b_tready(s_axis_b_tready),
+            .s_axis_b_tvalid(s_axis_b_tvalid),
+            .m_axis_result_tready(m_axis_result_tready),
+            .m_axis_result_tvalid(m_axis_result_tvalid)
 		);
-
 	always@(posedge clock)begin
 
 		if(w_sys_ce) begin

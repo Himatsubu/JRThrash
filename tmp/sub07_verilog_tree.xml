@@ -18,7 +18,7 @@
 			<init>
 				<NewArray>
 					<type>	float	</type>
-					<elements>	484	</elements>				
+					<elements>	1024	</elements>				
 				</NewArray>
 			</init>
 		</VeriableDecl>
@@ -36,7 +36,7 @@
 			<init>
 				<NewArray>
 					<type>	float	</type>
-					<elements>	484	</elements>				
+					<elements>	1024	</elements>				
 				</NewArray>
 			</init>
 		</VeriableDecl>
@@ -160,23 +160,9 @@
 		</VeriableDecl>
 
 		<VeriableDecl>
-			<name>	q	</name>
-			<type>	float	</type>
-			<variableID>	9	</variableID>
-			<parentName>	run	</parentName>
-			<defType>	method	</defType>
-			<isArray>	false	</isArray>
-			<isPrimitive>	true	</isPrimitive>
-			<isFinal>	false	</isFinal>
-			<dimension>	0	</dimension>
-			<init>
-			</init>
-		</VeriableDecl>
-
-		<VeriableDecl>
 			<name>	copy0_j	</name>
 			<type>	int	</type>
-			<variableID>	10	</variableID>
+			<variableID>	9	</variableID>
 			<parentName>	run	</parentName>
 			<defType>	method	</defType>
 			<isArray>	false	</isArray>
@@ -190,7 +176,7 @@
 		<VeriableDecl>
 			<name>	copy1_j	</name>
 			<type>	int	</type>
-			<variableID>	11	</variableID>
+			<variableID>	10	</variableID>
 			<parentName>	run	</parentName>
 			<defType>	method	</defType>
 			<isArray>	false	</isArray>
@@ -204,7 +190,7 @@
 		<VeriableDecl>
 			<name>	copy2_j	</name>
 			<type>	int	</type>
-			<variableID>	12	</variableID>
+			<variableID>	11	</variableID>
 			<parentName>	run	</parentName>
 			<defType>	method	</defType>
 			<isArray>	false	</isArray>
@@ -218,7 +204,7 @@
 		<VeriableDecl>
 			<name>	copy3_j	</name>
 			<type>	int	</type>
-			<variableID>	13	</variableID>
+			<variableID>	12	</variableID>
 			<parentName>	run	</parentName>
 			<defType>	method	</defType>
 			<isArray>	false	</isArray>
@@ -232,7 +218,7 @@
 		<VeriableDecl>
 			<name>	copy4_j	</name>
 			<type>	int	</type>
-			<variableID>	14	</variableID>
+			<variableID>	13	</variableID>
 			<parentName>	run	</parentName>
 			<defType>	method	</defType>
 			<isArray>	false	</isArray>
@@ -246,7 +232,7 @@
 		<VeriableDecl>
 			<name>	copy5_j	</name>
 			<type>	int	</type>
-			<variableID>	15	</variableID>
+			<variableID>	14	</variableID>
 			<parentName>	run	</parentName>
 			<defType>	method	</defType>
 			<isArray>	false	</isArray>
@@ -260,7 +246,7 @@
 		<VeriableDecl>
 			<name>	copy6_j	</name>
 			<type>	int	</type>
-			<variableID>	16	</variableID>
+			<variableID>	15	</variableID>
 			<parentName>	run	</parentName>
 			<defType>	method	</defType>
 			<isArray>	false	</isArray>
@@ -274,7 +260,7 @@
 		<VeriableDecl>
 			<name>	copy7_j	</name>
 			<type>	int	</type>
-			<variableID>	17	</variableID>
+			<variableID>	16	</variableID>
 			<parentName>	run	</parentName>
 			<defType>	method	</defType>
 			<isArray>	false	</isArray>
@@ -311,7 +297,6 @@
 						<VeriableDecl>			<name>	dt	</name>		<variableID>	6	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 						<VeriableDecl>			<name>	dx	</name>		<variableID>	7	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 						<VeriableDecl>			<name>	dy	</name>		<variableID>	8	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-						<VeriableDecl>			<name>	q	</name>		<variableID>	9	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 					</VariableStack>
 
 					<statements>
@@ -322,7 +307,6 @@
 						<VeriableDecl>			<name>	dt	</name>		<variableID>	6	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 						<VeriableDecl>			<name>	dx	</name>		<variableID>	7	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 						<VeriableDecl>			<name>	dy	</name>		<variableID>	8	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-						<VeriableDecl>			<name>	q	</name>		<variableID>	9	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 					</statements>
 
 				</StatAssemblage>
@@ -342,7 +326,6 @@
 								<VeriableDecl>			<name>	dt	</name>		<variableID>	6	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 								<VeriableDecl>			<name>	dx	</name>		<variableID>	7	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 								<VeriableDecl>			<name>	dy	</name>		<variableID>	8	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	q	</name>		<variableID>	9	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 							</VariableStack>
 
 							<statements>
@@ -351,7 +334,7 @@
 										<rightExpr>
 											<Literal>
 												<type>	int	</type>
-												<value>	5	</value>
+												<value>	22	</value>
 											</Literal>
 										</rightExpr>
 
@@ -386,7 +369,6 @@
 								<VeriableDecl>			<name>	dt	</name>		<variableID>	6	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 								<VeriableDecl>			<name>	dx	</name>		<variableID>	7	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 								<VeriableDecl>			<name>	dy	</name>		<variableID>	8	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	q	</name>		<variableID>	9	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 							</VariableStack>
 
 							<statements>
@@ -403,7 +385,7 @@
 										<rightExpr>
 											<Literal>
 												<type>	int	</type>
-												<value>	8	</value>
+												<value>	30	</value>
 											</Literal>
 										</rightExpr>
 
@@ -431,7 +413,6 @@
 								<VeriableDecl>			<name>	dt	</name>		<variableID>	6	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 								<VeriableDecl>			<name>	dx	</name>		<variableID>	7	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 								<VeriableDecl>			<name>	dy	</name>		<variableID>	8	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	q	</name>		<variableID>	9	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 							</VariableStack>
 
 							<statements>
@@ -470,7 +451,6 @@
 											<VeriableDecl>			<name>	dt	</name>		<variableID>	6	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 											<VeriableDecl>			<name>	dx	</name>		<variableID>	7	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 											<VeriableDecl>			<name>	dy	</name>		<variableID>	8	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-											<VeriableDecl>			<name>	q	</name>		<variableID>	9	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 										</VariableStack>
 
 										<statements>
@@ -479,7 +459,7 @@
 													<rightExpr>
 														<Literal>
 															<type>	int	</type>
-															<value>	9	</value>
+															<value>	12	</value>
 														</Literal>
 													</rightExpr>
 
@@ -514,7 +494,6 @@
 											<VeriableDecl>			<name>	dt	</name>		<variableID>	6	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 											<VeriableDecl>			<name>	dx	</name>		<variableID>	7	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 											<VeriableDecl>			<name>	dy	</name>		<variableID>	8	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-											<VeriableDecl>			<name>	q	</name>		<variableID>	9	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 										</VariableStack>
 
 										<statements>
@@ -531,7 +510,7 @@
 													<rightExpr>
 														<Literal>
 															<type>	int	</type>
-															<value>	12	</value>
+															<value>	21	</value>
 														</Literal>
 													</rightExpr>
 
@@ -550,7 +529,7 @@
 
 										<StatAssemblage>	<Phase>  13  </Phase>
 											<stageNum>  1  </stageNum>
-											<totalStepNum>  61  </totalStepNum>
+											<totalStepNum>  103  </totalStepNum>
 											<VariableStack>
 												<VeriableDecl>			<name>	u	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
 												<VeriableDecl>			<name>	result	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
@@ -561,7 +540,6 @@
 												<VeriableDecl>			<name>	dt	</name>		<variableID>	6	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 												<VeriableDecl>			<name>	dx	</name>		<variableID>	7	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 												<VeriableDecl>			<name>	dy	</name>		<variableID>	8	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-												<VeriableDecl>			<name>	q	</name>		<variableID>	9	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 											</VariableStack>
 
 											<statements>
@@ -597,7 +575,7 @@
 																										<rightExpr>
 																											<Literal>
 																												<type>	int	</type>
-																												<value>	21	</value>
+																												<value>	31	</value>
 																											</Literal>
 																										</rightExpr>
 
@@ -671,7 +649,7 @@
 																																<rightExpr>
 																																	<Literal>
 																																		<type>	int	</type>
-																																		<value>	21	</value>
+																																		<value>	31	</value>
 																																	</Literal>
 																																</rightExpr>
 
@@ -725,7 +703,7 @@
 																																		<rightExpr>
 																																			<Literal>
 																																				<type>	int	</type>
-																																				<value>	21	</value>
+																																				<value>	31	</value>
 																																			</Literal>
 																																		</rightExpr>
 
@@ -791,7 +769,7 @@
 																														<rightExpr>
 																															<Literal>
 																																<type>	int	</type>
-																																<value>	21	</value>
+																																<value>	31	</value>
 																															</Literal>
 																														</rightExpr>
 
@@ -866,7 +844,7 @@
 																																<rightExpr>
 																																	<Literal>
 																																		<type>	int	</type>
-																																		<value>	21	</value>
+																																		<value>	31	</value>
 																																	</Literal>
 																																</rightExpr>
 
@@ -931,7 +909,7 @@
 																																<rightExpr>
 																																	<Literal>
 																																		<type>	int	</type>
-																																		<value>	21	</value>
+																																		<value>	31	</value>
 																																	</Literal>
 																																</rightExpr>
 
@@ -986,7 +964,7 @@
 																														<rightExpr>
 																															<Literal>
 																																<type>	int	</type>
-																																<value>	21	</value>
+																																<value>	31	</value>
 																															</Literal>
 																														</rightExpr>
 
@@ -1162,7 +1140,7 @@
 																				<rightExpr>
 																					<Literal>
 																						<type>	int	</type>
-																						<value>	21	</value>
+																						<value>	31	</value>
 																					</Literal>
 																				</rightExpr>
 

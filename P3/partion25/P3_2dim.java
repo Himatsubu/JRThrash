@@ -33,7 +33,8 @@ public class P3_2dim{
 	static final sub24 sub24 = new sub24();
 
         @JRThrashUnroll(unrollNum=7,loopVariableName="j",unrollType=JRThrashUnroll.copyLoopVar)
-	public void run(){
+	//public void run(){
+	public float run(){
 //	public static void main(String[] args){
 		int k,j,n;
 		int mx,my;
@@ -46,7 +47,7 @@ public class P3_2dim{
 		mx=kx+1;
 		my=ky+1;
 		dt=0.0005f;
-		nlast=400;
+		nlast=2;
 
 		dx=4f/(mx-1);
 		dy=1f/(my-1);
@@ -759,7 +760,7 @@ public class P3_2dim{
 
 
 		}
-		//System.out.println(T[10*21+10]);
+		return T[10*21+10];
 }
 }
 

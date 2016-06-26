@@ -15,15 +15,6 @@ cp ../result/sub12.v ../../sim_cfd_P3_JRT
 cp ../result/sub13.v ../../sim_cfd_P3_JRT
 cp ../result/sub14.v ../../sim_cfd_P3_JRT
 cp ../result/sub15.v ../../sim_cfd_P3_JRT
-cp ../result/sub16.v ../../sim_cfd_P3_JRT
-cp ../result/sub17.v ../../sim_cfd_P3_JRT
-cp ../result/sub18.v ../../sim_cfd_P3_JRT
-cp ../result/sub19.v ../../sim_cfd_P3_JRT
-cp ../result/sub20.v ../../sim_cfd_P3_JRT
-cp ../result/sub21.v ../../sim_cfd_P3_JRT
-cp ../result/sub22.v ../../sim_cfd_P3_JRT
-cp ../result/sub23.v ../../sim_cfd_P3_JRT
-cp ../result/sub24.v ../../sim_cfd_P3_JRT
 cp ../result/P3_2dim.v ../../sim_cfd_P3_JRT
 cd ../../sim_cfd_P3_JRT
-run_partion25.sh
+./run_partion16.sh
