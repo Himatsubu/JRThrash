@@ -73,7 +73,7 @@ public class c1_test02{
 			sub02.u[10*21+k]=u[10*21+k];
 			sub02.u[11*21+k]=u[11*21+k];
 		}
-		sub03.start();
+
 
 		//1-11,10-21
 		for(k=1;k<=11;k++)
@@ -102,6 +102,9 @@ public class c1_test02{
 			sub00.u[10*21+k]=u[10*21+k];
 			sub00.u[11*21+k]=u[11*21+k];
 		}
+
+		sub03.start();
+		sub02.start();
 		sub01.start();
 		sub00.start();
 

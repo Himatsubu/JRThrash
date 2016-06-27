@@ -1,0 +1,180 @@
+import net.njlab.sample.annotation.*;
+//分割数４,１重ループでのパイプライン実行
+
+public class c1{
+	private static final float[] u = new float[484];
+	//private static final float[] uu= new float[484];
+	//private static final float[] q = new float[484];
+
+	static final sub00 sub00    = new sub00();
+	static final sub01 sub01    = new sub01();
+	static final sub02 sub02    = new sub02();
+	static final sub03 sub03    = new sub03();
+
+        @JRThrashUnroll(unrollNum=7, loopVariableName="j",unrollType=JRThrashUnroll.copyLoopVar)
+	public void run(){
+	//public static void main(String[] args){
+		int k,j,n,mx,my,nlast;
+		float dx,dy;
+
+		mx=21;
+		my=21;
+		dx = 0.05f;
+		dy = 0.05f;
+		nlast=2;
+			
+//	熱源項の定義と初期条件
+	for (k = 1; k <= my; k++)
+	{
+		for (j = 1; j<= mx; j++)
+		{
+			 //q[j*21+k] = 100f*dx*(j-1)*dy*(k-1);
+			 u[j*21+k] = 0f;
+			//uu[j*21+k] = 0f;
+		}
+	}
+	
+//	計算ループ	
+	for(n=1;n<=nlast;n++){
+//	境界条件
+		for (j = 1; j <= my; j++)
+		{
+			u[1*21+j] = 0.5f;
+			u[mx*21+j]= 0f;
+			u[j*21+1] = 1.f;
+			u[j*21+my]= 0f;
+		}
+		
+
+		//10-21,10-21
+		for(k=10;k<=my;k++)
+		{
+			sub03.u[10*21+k]=u[10*21+k];
+			sub03.u[11*21+k]=u[11*21+k];
+			sub03.u[12*21+k]=u[12*21+k];
+			sub03.u[13*21+k]=u[13*21+k];
+			sub03.u[14*21+k]=u[14*21+k];
+			sub03.u[15*21+k]=u[15*21+k];
+			sub03.u[16*21+k]=u[16*21+k];
+			sub03.u[17*21+k]=u[17*21+k];
+			sub03.u[18*21+k]=u[18*21+k];
+			sub03.u[19*21+k]=u[19*21+k];
+			sub03.u[20*21+k]=u[20*21+k];
+			sub03.u[21*21+k]=u[21*21+k];
+			sub02.u[1*21+k]=u[1*21+k];
+			sub02.u[2*21+k]=u[2*21+k];
+			sub02.u[3*21+k]=u[3*21+k];
+			sub02.u[4*21+k]=u[4*21+k];
+			sub02.u[5*21+k]=u[5*21+k];
+			sub02.u[6*21+k]=u[6*21+k];
+			sub02.u[7*21+k]=u[7*21+k];
+			sub02.u[8*21+k]=u[8*21+k];
+			sub02.u[9*21+k]=u[9*21+k];
+			sub02.u[10*21+k]=u[10*21+k];
+			sub02.u[11*21+k]=u[11*21+k];
+		}
+
+
+		//1-11,10-21
+		for(k=1;k<=11;k++)
+		{
+			sub01.u[10*21+k]=u[10*21+k];
+			sub01.u[11*21+k]=u[11*21+k];
+			sub01.u[12*21+k]=u[12*21+k];
+			sub01.u[13*21+k]=u[13*21+k];
+			sub01.u[14*21+k]=u[14*21+k];
+			sub01.u[15*21+k]=u[15*21+k];
+			sub01.u[16*21+k]=u[16*21+k];
+			sub01.u[17*21+k]=u[17*21+k];
+			sub01.u[18*21+k]=u[18*21+k];
+			sub01.u[19*21+k]=u[19*21+k];
+			sub01.u[20*21+k]=u[20*21+k];
+			sub01.u[21*21+k]=u[21*21+k];
+			sub00.u[1*21+k]=u[1*21+k];
+			sub00.u[2*21+k]=u[2*21+k];
+			sub00.u[3*21+k]=u[3*21+k];
+			sub00.u[4*21+k]=u[4*21+k];
+			sub00.u[5*21+k]=u[5*21+k];
+			sub00.u[6*21+k]=u[6*21+k];
+			sub00.u[7*21+k]=u[7*21+k];
+			sub00.u[8*21+k]=u[8*21+k];
+			sub00.u[9*21+k]=u[9*21+k];
+			sub00.u[10*21+k]=u[10*21+k];
+			sub00.u[11*21+k]=u[11*21+k];
+		}
+
+		sub03.start();
+		sub02.start();
+		sub01.start();
+		sub00.start();
+
+		try{
+			sub00.join();
+			sub01.join();
+			sub02.join();
+			sub03.join();
+		}catch(Exception e){}
+
+		//2-10,2-10
+		for(k=2;k<=10;k++)
+		{
+
+				u[2*21+k]=sub00.result[j*21+k];
+				u[3*21+k]=sub00.result[j*21+k];
+				u[4*21+k]=sub00.result[j*21+k];
+				u[5*21+k]=sub00.result[j*21+k];
+				u[6*21+k]=sub00.result[j*21+k];
+				u[7*21+k]=sub00.result[j*21+k];
+				u[8*21+k]=sub00.result[j*21+k];
+				u[9*21+k]=sub00.result[j*21+k];
+				u[10*21+k]=sub00.result[j*21+k];
+
+				u[11*21+k]=sub01.result[11*21+k];
+				u[12*21+k]=sub01.result[12*21+k];
+				u[13*21+k]=sub01.result[13*21+k];
+				u[14*21+k]=sub01.result[14*21+k];
+				u[15*21+k]=sub01.result[15*21+k];
+				u[16*21+k]=sub01.result[16*21+k];
+				u[17*21+k]=sub01.result[17*21+k];
+				u[18*21+k]=sub01.result[18*21+k];
+				u[19*21+k]=sub01.result[19*21+k];
+				u[20*21+k]=sub01.result[20*21+k];
+		}	
+		//11-20,2-10
+		for(k=11;k<=20;k++)
+		{
+				u[2*21+k]=sub02.result[2*21+k];
+				u[3*21+k]=sub02.result[3*21+k];
+				u[4*21+k]=sub02.result[4*21+k];
+				u[5*21+k]=sub02.result[5*21+k];
+				u[6*21+k]=sub02.result[6*21+k];
+				u[7*21+k]=sub02.result[7*21+k];
+				u[8*21+k]=sub02.result[8*21+k];
+				u[9*21+k]=sub02.result[9*21+k];
+				u[10*21+k]=sub02.result[10*21+k];
+
+				u[11*21+k]=sub03.result[11*21+k];
+				u[12*21+k]=sub03.result[12*21+k];
+				u[13*21+k]=sub03.result[13*21+k];
+				u[14*21+k]=sub03.result[14*21+k];
+				u[15*21+k]=sub03.result[15*21+k];
+				u[16*21+k]=sub03.result[16*21+k];
+				u[17*21+k]=sub03.result[17*21+k];
+				u[18*21+k]=sub03.result[18*21+k];
+				u[19*21+k]=sub03.result[19*21+k];
+				u[20*21+k]=sub03.result[20*21+k];
+		}
+/*
+		for(k=2;k<=my-1;k++)
+		{
+			for(j=2;j<=mx-1;j++)
+			{
+				System.out.println(k+" "+j+" "+u[j*21+k]);
+			}
+		}
+*/
+			
+		}
+		//System.out.println(u[10*21+10]);
+	}
+}

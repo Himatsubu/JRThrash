@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="shift_jis" ?>
 
 <module>
-	<name objName = "*thisIsTopModule"    className = "P3_2dim" />
+	<name objName = "*thisIsTopModule"    className = "c1" />
 	<subModule>
 		<module>
 			<name objName = "sub08"    className = "sub08" />

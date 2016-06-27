@@ -1,7 +1,7 @@
 import net.njlab.sample.annotation.*;
 //分割数16
 
-public class c1_test03{
+public class c1{
 	private static final float[] u = new float[484];
 	private static final float[] uu= new float[484];
 	//private static final float[] q = new float[484];

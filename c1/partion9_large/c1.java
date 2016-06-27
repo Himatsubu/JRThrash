@@ -15,7 +15,7 @@ public class c1{
 	static final sub06 sub06    = new sub06(); //10-16,5-11
 	static final sub07 sub07    = new sub07(); //15-21,5-11
 	static final sub08 sub08    = new sub08(); //1-6,10-16
-        @JRThrashUnroll(unrollNum=7, loopVariableName="j",unrollType=JRThrashUnroll.copyLoopVar)
+        @JRThrashUnroll(unrollNum=20, loopVariableName="j",unrollType=JRThrashUnroll.copyLoopVar)
 	public void run(){
 	//public static void main(String[] args){
 		int k,j,n,mx,my,nlast;
@@ -24,7 +24,7 @@ public class c1{
 		my=31;
 		//dx = 0.05f;
 		//dy = 0.05f;
-		nlast=400;
+		nlast=2;
 		
 //	熱源項の定義と初期条件
 	for (k = 1; k <= my; k++)
@@ -157,14 +157,14 @@ public class c1{
 			sub08.u[899+k]=u[899+k];
 			sub08.u[930+k]=u[930+k];
 		}
+		sub00.start();
 		sub01.start();
 		sub02.start();
 		sub03.start();
+		sub04.start();
 		sub05.start();
 		sub06.start();
-		sub07.start();
-		sub00.start();
-		sub04.start();
+		sub07.start();		
 		sub08.start();
 
 		try{

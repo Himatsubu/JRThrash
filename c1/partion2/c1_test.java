@@ -26,7 +26,7 @@ public class c1_test{
 	{
 		for (j = 1; j<= mx; j++)
 		{
-			 q[j*21+k] = 100f*dx*(j-1)*dy*(k-1);
+			 //q[j*21+k] = 100f*dx*(j-1)*dy*(k-1);
 			 u[j*21+k] = 0f;
 			uu[j*21+k] = 0f;
 		}
