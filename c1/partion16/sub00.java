@@ -15,8 +15,8 @@ public class sub00 extends Thread{
 		float dy = 0.05f;
 		//float q;
 
-		for(k=2;k<=8;k++){
-			for(j=2;j<=8;j++){
+		for(k=2;k<=5;k++){
+			for(j=2;j<=5;j++){
 			//q=100f*dx*(j-1)*dy*(k-1);
 			result[j*31+k]= u[j*31+k]+r1*(u[(j+1)*31+k]-2.0f*u[j*31+k]+u[(j-1)*31+k])
 			+r2*(u[j*31+k+1]-2.0f*u[j*31+k]+u[j*31+k-1])+dt*100f*dx*(j-1)*dy*(k-1);		

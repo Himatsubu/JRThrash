@@ -56,107 +56,120 @@ public class c1{
 			u[j*21+my]= 0f;
 		}
 		
-		//クラスに配列をこぴー
-		//5-11,5-11 49
-		for(k=5;k<=11;k++)
-		{
-
-				sub05.u[105+k]=u[105+k];
-				sub06.u[110+k]=u[110+k];
-				sub07.u[120+k]=u[120+k];
-				sub09.u[210+k]=u[210+k];
-				sub10.u[215+k]=u[215+k];
-				sub11.u[220+k]=u[220+k];
-				sub13.u[315+k]=u[315+k];
-				sub14.u[320+k]=u[320+k];
-				sub15.u[325+k]=u[325+k];
-
-				sub05.u[126+k]=u[126+k];
-				sub06.u[131+k]=u[131+k];
-				sub07.u[136+k]=u[136+k];
-				sub09.u[231+k]=u[231+k];
-				sub10.u[236+k]=u[236+k];
-				sub11.u[241+k]=u[241+k];
-				sub13.u[336+k]=u[336+k];
-				sub14.u[341+k]=u[341+k];
-				sub15.u[346+k]=u[346+k];
-
-				sub05.u[147+k]=u[147+k];
-				sub06.u[152+k]=u[152+k];
-				sub07.u[157+k]=u[157+k];
-				sub09.u[252+k]=u[252+k];
-				sub10.u[257+k]=u[257+k];
-				sub11.u[262+k]=u[262+k];
-				sub13.u[357+k]=u[357+k];
-				sub14.u[362+k]=u[362+k];
-				sub15.u[367+k]=u[367+k];
-
-				sub05.u[168+k]=u[168+k];
-				sub06.u[173+k]=u[173+k];
-				sub07.u[178+k]=u[178+k];
-				sub09.u[273+k]=u[273+k];
-				sub10.u[278+k]=u[278+k];
-				sub11.u[283+k]=u[283+k];
-				sub13.u[378+k]=u[378+k];
-				sub14.u[383+k]=u[383+k];
-				sub15.u[388+k]=u[388+k];
-
-				sub05.u[189+k]=u[189+k];
-				sub06.u[194+k]=u[194+k];
-				sub07.u[199+k]=u[199+k];
-				sub09.u[294+k]=u[294+k];
-				sub10.u[299+k]=u[299+k];
-				sub11.u[304+k]=u[304+k];
-				sub13.u[399+k]=u[399+k];
-				sub14.u[404+k]=u[404+k];
-				sub15.u[409+k]=u[409+k];
-
-				sub05.u[210+k]=u[210+k];
-				sub06.u[215+k]=u[215+k];
-				sub07.u[220+k]=u[220+k];
-				sub09.u[315+k]=u[315+k];
-				sub10.u[320+k]=u[320+k];
-				sub11.u[325+k]=u[325+k];
-				sub13.u[420+k]=u[420+k];
-				sub14.u[425+k]=u[425+k];
-				sub15.u[430+k]=u[430+k];
-
-				sub05.u[231+k]=u[231+k];
-				sub06.u[236+k]=u[236+k];
-				sub07.u[241+k]=u[241+k];
-				sub09.u[336+k]=u[336+k];
-				sub10.u[341+k]=u[341+k];
-				sub11.u[346+k]=u[346+k];
-				sub13.u[441+k]=u[441+k];
-				sub14.u[446+k]=u[446+k];
-				sub15.u[451+k]=u[451+k];
-
-
-				sub01.u[21+k]=u[21+k];
-				sub02.u[26+k]=u[26+k];
-				sub03.u[31+k]=u[31+k];
-
-				sub01.u[42+k]=u[42+k];
-				sub02.u[47+k]=u[47+k];
-				sub03.u[52+k]=u[52+k];
-
-				sub01.u[63+k]=u[63+k];
-				sub02.u[68+k]=u[68+k];
-				sub03.u[73+k]=u[73+k];
-
-				sub01.u[84+k]=u[84+k];
-				sub02.u[89+k]=u[89+k];
-				sub03.u[94+k]=u[94+k];
-
-				sub01.u[105+k]=u[105+k];
-				sub02.u[110+k]=u[110+k];
-				sub03.u[120+k]=u[120+k];
-
-				sub01.u[126+k]=u[126+k];
-				sub02.u[131+k]=u[131+k];
-				sub03.u[136+k]=u[136+k];
-
+		for(k=1;k<=6;k++){
+			sub00.u[21+k]=u[21+k];
+			sub00.u[42+k]=u[42+k];
+			sub00.u[63+k]=u[63+k];
+			sub00.u[84+k]=u[84+k];
+			sub00.u[105+k]=u[105+k];
+			sub00.u[126+k]=u[126+k];
+			sub01.u[105+k]=u[105+k];
+			sub01.u[126+k]=u[126+k];
+			sub01.u[147+k]=u[147+k];
+			sub01.u[168+k]=u[168+k];
+			sub01.u[189+k]=u[189+k];
+			sub01.u[210+k]=u[210+k];
+			sub01.u[231+k]=u[231+k];
+			sub02.u[210+k]=u[210+k];
+			sub02.u[231+k]=u[231+k];
+			sub02.u[252+k]=u[252+k];
+			sub02.u[273+k]=u[273+k];
+			sub02.u[294+k]=u[294+k];
+			sub02.u[315+k]=u[315+k];
+			sub02.u[336+k]=u[336+k];
+			sub03.u[315+k]=u[315+k];
+			sub03.u[336+k]=u[336+k];
+			sub03.u[357+k]=u[357+k];
+			sub03.u[378+k]=u[378+k];
+			sub03.u[399+k]=u[399+k];
+			sub03.u[420+k]=u[420+k];
+			sub03.u[441+k]=u[441+k];
 		}
+		for(k=5;k<=11;k++){
+			sub04.u[21+k]=u[21+k];
+			sub04.u[42+k]=u[42+k];
+			sub04.u[63+k]=u[63+k];
+			sub04.u[84+k]=u[84+k];
+			sub04.u[105+k]=u[105+k];
+			sub04.u[126+k]=u[126+k];
+			sub05.u[105+k]=u[105+k];
+			sub05.u[126+k]=u[126+k];
+			sub05.u[147+k]=u[147+k];
+			sub05.u[168+k]=u[168+k];
+			sub05.u[189+k]=u[189+k];
+			sub05.u[210+k]=u[210+k];
+			sub05.u[231+k]=u[231+k];
+			sub06.u[210+k]=u[210+k];
+			sub06.u[231+k]=u[231+k];
+			sub06.u[252+k]=u[252+k];
+			sub06.u[273+k]=u[273+k];
+			sub06.u[294+k]=u[294+k];
+			sub06.u[315+k]=u[315+k];
+			sub06.u[336+k]=u[336+k];
+			sub07.u[315+k]=u[315+k];
+			sub07.u[336+k]=u[336+k];
+			sub07.u[357+k]=u[357+k];
+			sub07.u[378+k]=u[378+k];
+			sub07.u[399+k]=u[399+k];
+			sub07.u[420+k]=u[420+k];
+			sub07.u[441+k]=u[441+k];
+			sub08.u[21+k+5]=u[21+k+5];
+			sub08.u[42+k+5]=u[42+k+5];
+			sub08.u[63+k+5]=u[63+k+5];
+			sub08.u[84+k+5]=u[84+k+5];
+			sub08.u[105+k+5]=u[105+k+5];
+			sub08.u[126+k+5]=u[126+k+5];
+			sub09.u[105+k+5]=u[105+k+5];
+			sub09.u[126+k+5]=u[126+k+5];
+			sub09.u[147+k+5]=u[147+k+5];
+			sub09.u[168+k+5]=u[168+k+5];
+			sub09.u[189+k+5]=u[189+k+5];
+			sub09.u[210+k+5]=u[210+k+5];
+			sub09.u[231+k+5]=u[231+k+5];
+			sub10.u[210+k+5]=u[210+k+5];
+			sub10.u[231+k+5]=u[231+k+5];
+			sub10.u[252+k+5]=u[252+k+5];
+			sub10.u[273+k+5]=u[273+k+5];
+			sub10.u[294+k+5]=u[294+k+5];
+			sub10.u[315+k+5]=u[315+k+5];
+			sub10.u[336+k+5]=u[336+k+5];
+			sub11.u[315+k+5]=u[315+k+5];
+			sub11.u[336+k+5]=u[336+k+5];
+			sub11.u[357+k+5]=u[357+k+5];
+			sub11.u[378+k+5]=u[378+k+5];
+			sub11.u[399+k+5]=u[399+k+5];
+			sub11.u[420+k+5]=u[420+k+5];
+			sub11.u[441+k+5]=u[441+k+5];
+			sub12.u[21+k+10]=u[21+k+10];
+			sub12.u[42+k+10]=u[42+k+10];
+			sub12.u[63+k+10]=u[63+k+10];
+			sub12.u[84+k+10]=u[84+k+10];
+			sub12.u[105+k+10]=u[105+k+10];
+			sub12.u[126+k+10]=u[126+k+10];
+			sub13.u[105+k+10]=u[105+k+10];
+			sub13.u[126+k+10]=u[126+k+10];
+			sub13.u[147+k+10]=u[147+k+10];
+			sub13.u[168+k+10]=u[168+k+10];
+			sub13.u[189+k+10]=u[189+k+10];
+			sub13.u[210+k+10]=u[210+k+10];
+			sub13.u[231+k+10]=u[231+k+10];
+			sub14.u[210+k+10]=u[210+k+10];
+			sub14.u[231+k+10]=u[231+k+10];
+			sub14.u[252+k+10]=u[252+k+10];
+			sub14.u[273+k+10]=u[273+k+10];
+			sub14.u[294+k+10]=u[294+k+10];
+			sub14.u[315+k+10]=u[315+k+10];
+			sub14.u[336+k+10]=u[336+k+10];
+			sub15.u[315+k+10]=u[315+k+10];
+			sub15.u[336+k+10]=u[336+k+10];
+			sub15.u[357+k+10]=u[357+k+10];
+			sub15.u[378+k+10]=u[378+k+10];
+			sub15.u[399+k+10]=u[399+k+10];
+			sub15.u[420+k+10]=u[420+k+10];
+			sub15.u[441+k+10]=u[441+k+10];
+		}
+
+
 		sub01.start();
 		sub02.start();
 		sub03.start();
@@ -169,43 +182,6 @@ public class c1{
 		sub13.start();
 		sub14.start();
 		sub15.start();
-		//1-6,5-11 42
-		for(k=1;k<=6;k++)
-		{
-	
-				sub04.u[105+k]=u[105+k];
-				sub08.u[210+k]=u[210+k];
-				sub12.u[315+k]=u[315+k];
-
-				sub04.u[126+k]=u[126+k];
-				sub08.u[231+k]=u[231+k];
-				sub12.u[336+k]=u[336+k];
-
-				sub04.u[147+k]=u[147+k];
-				sub08.u[252+k]=u[252+k];
-				sub12.u[357+k]=u[357+k];
-
-				sub04.u[168+k]=u[168+k];
-				sub08.u[273+k]=u[273+k];
-				sub12.u[399+k]=u[399+k];
-
-				sub04.u[210+k]=u[210+k];
-				sub08.u[315+k]=u[315+k];
-				sub12.u[420+k]=u[420+k];
-
-				sub04.u[231+k]=u[231+k];
-				sub08.u[336+k]=u[336+k];
-				sub12.u[441+k]=u[441+k];
-
-				sub00.u[21+k]=u[21+k];
-				sub00.u[42+k]=u[42+k];
-				sub00.u[63+k]=u[63+k];
-				sub00.u[84+k]=u[84+k];
-				sub00.u[105+k]=u[105+k];
-				sub00.u[126+k]=u[126+k];
-
-		}
-
 		sub00.start();
 		sub04.start();
 		sub08.start();
@@ -228,108 +204,88 @@ public class c1{
 			sub14.join();
 			sub15.join();
 		}catch(Exception e){}
-
-		//2-5,2-5
-		for(k=2;k<=5;k++)
-		{
-				u[42+k]=sub00.result[42+k];
-				u[63+k]=sub00.result[63+k];
-				u[84+k]=sub00.result[84+k];
-				u[105+k]=sub00.result[105+k];
-
-				u[126+k]=sub04.result[126+k];
-				u[231+k]=sub08.result[231+k];
-				u[336+k]=sub12.result[336+k];
-
-				u[147+k]=sub04.result[147+k];
-				u[252+k]=sub08.result[252+k];
-				u[357+k]=sub12.result[357+k];
-
-				u[168+k]=sub04.result[168+k];
-				u[273+k]=sub08.result[273+k];
-				u[378+k]=sub12.result[378+k];
-
-				u[189+k]=sub04.result[189+k];
-				u[294+k]=sub08.result[294+k];
-				u[399+k]=sub12.result[399+k];
-
-				u[210+k]=sub04.result[210+k];
-				u[315+k]=sub08.result[315+k];
-				u[420+k]=sub12.result[420+k];
-	
+		for(k=2;k<=5;k++){
+			u[42+k]=sub00.result[42+k];
+			u[63+k]=sub00.result[63+k];
+			u[84+k]=sub00.result[84+k];
+			u[105+k]=sub00.result[105+k];
+			u[126+k]=sub01.result[126+k];
+			u[147+k]=sub01.result[147+k];
+			u[168+k]=sub01.result[168+k];
+			u[189+k]=sub01.result[189+k];
+			u[210+k]=sub01.result[210+k];
+			u[231+k]=sub02.result[231+k];
+			u[252+k]=sub02.result[252+k];
+			u[273+k]=sub02.result[273+k];
+			u[294+k]=sub02.result[294+k];
+			u[315+k]=sub02.result[315+k];
+			u[336+k]=sub03.result[336+k];
+			u[357+k]=sub03.result[357+k];
+			u[378+k]=sub03.result[378+k];
+			u[399+k]=sub03.result[399+k];
+			u[420+k]=sub03.result[420+k];
 		}
-		//6-10,2-5
-		for(k=6;k<=10;k++)
-		{
-
-
-				u[42+k]=sub01.result[42+k];
-				u[47+k]=sub02.result[47+k];
-				u[52+k]=sub03.result[52+k];
-
-				u[63+k]=sub01.result[63+k];
-				u[68+k]=sub02.result[68+k];
-				u[73+k]=sub03.result[73+k];
-
-				u[84+k]=sub01.result[84+k];
-				u[89+k]=sub02.result[89+k];
-				u[94+k]=sub03.result[94+k];
-
-				u[105+k]=sub01.result[105+k];
-				u[110+k]=sub02.result[110+k];
-				u[115+k]=sub03.result[115+k];
-			
-				u[126+k]=sub05.result[126+k];
-				u[131+k]=sub06.result[131+k];
-				u[136+k]=sub07.result[136+k];
-				u[231+k]=sub09.result[231+k];
-				u[236+k]=sub10.result[236+k];
-				u[241+k]=sub11.result[241+k];
-				u[336+k]=sub13.result[336+k];
-				u[341+k]=sub14.result[341+k];
-				u[346+k]=sub15.result[346+k];
-
-				u[147+k]=sub05.result[147+k];
-				u[152+k]=sub06.result[152+k];
-				u[157+k]=sub07.result[157+k];
-				u[252+k]=sub09.result[252+k];
-				u[257+k]=sub10.result[257+k];
-				u[262+k]=sub11.result[262+k];
-				u[357+k]=sub13.result[357+k];
-				u[362+k]=sub14.result[362+k];
-				u[367+k]=sub15.result[367+k];
-
-				u[168+k]=sub05.result[168+k];
-				u[173+k]=sub06.result[173+k];
-				u[178+k]=sub07.result[178+k];
-				u[273+k]=sub09.result[273+k];
-				u[278+k]=sub10.result[278+k];
-				u[283+k]=sub11.result[283+k];
-				u[378+k]=sub13.result[378+k];
-				u[383+k]=sub14.result[383+k];
-				u[388+k]=sub15.result[388+k];
-
-				u[189+k]=sub05.result[189+k];
-				u[194+k]=sub06.result[194+k];
-				u[199+k]=sub07.result[199+k];
-				u[294+k]=sub09.result[294+k];
-				u[299+k]=sub10.result[299+k];
-				u[304+k]=sub11.result[304+k];
-				u[399+k]=sub13.result[399+k];
-				u[404+k]=sub14.result[404+k];
-				u[409+k]=sub15.result[409+k];
-
-				u[210+k]=sub05.result[210+k];
-				u[215+k]=sub06.result[215+k];
-				u[220+k]=sub07.result[220+k];
-				u[315+k]=sub09.result[315+k];
-				u[320+k]=sub10.result[320+k];
-				u[325+k]=sub11.result[325+k];
-				u[420+k]=sub13.result[420+k];
-				u[425+k]=sub14.result[425+k];
-				u[430+k]=sub15.result[430+k];
-			
+		for(k=6;k<=10;k++){
+			u[42+k]=sub04.result[42+k];
+			u[63+k]=sub04.result[63+k];
+			u[84+k]=sub04.result[84+k];
+			u[105+k]=sub04.result[105+k];
+			u[126+k]=sub05.result[126+k];
+			u[147+k]=sub05.result[147+k];
+			u[168+k]=sub05.result[168+k];
+			u[189+k]=sub05.result[189+k];
+			u[210+k]=sub05.result[210+k];
+			u[231+k]=sub06.result[231+k];
+			u[252+k]=sub06.result[252+k];
+			u[273+k]=sub06.result[273+k];
+			u[294+k]=sub06.result[294+k];
+			u[315+k]=sub06.result[315+k];
+			u[336+k]=sub07.result[336+k];
+			u[357+k]=sub07.result[357+k];
+			u[378+k]=sub07.result[378+k];
+			u[399+k]=sub07.result[399+k];
+			u[420+k]=sub07.result[420+k];
+			u[42+k+5]=sub08.result[42+k+5];
+			u[63+k+5]=sub08.result[63+k+5];
+			u[84+k+5]=sub08.result[84+k+5];
+			u[105+k+5]=sub08.result[105+k+5];
+			u[126+k+5]=sub09.result[126+k+5];
+			u[147+k+5]=sub09.result[147+k+5];
+			u[168+k+5]=sub09.result[168+k+5];
+			u[189+k+5]=sub09.result[189+k+5];
+			u[210+k+5]=sub09.result[210+k+5];
+			u[231+k+5]=sub10.result[231+k+5];
+			u[252+k+5]=sub10.result[252+k+5];
+			u[273+k+5]=sub10.result[273+k+5];
+			u[294+k+5]=sub10.result[294+k+5];
+			u[315+k+5]=sub10.result[315+k+5];
+			u[336+k+5]=sub11.result[336+k+5];
+			u[357+k+5]=sub11.result[357+k+5];
+			u[378+k+5]=sub11.result[378+k+5];
+			u[399+k+5]=sub11.result[399+k+5];
+			u[420+k+5]=sub11.result[420+k+5];
+			u[42+k+10]=sub12.result[42+k+10];
+			u[63+k+10]=sub12.result[63+k+10];
+			u[84+k+10]=sub12.result[84+k+10];
+			u[105+k+10]=sub12.result[105+k+10];
+			u[126+k+10]=sub13.result[126+k+10];
+			u[147+k+10]=sub13.result[147+k+10];
+			u[168+k+10]=sub13.result[168+k+10];
+			u[189+k+10]=sub13.result[189+k+10];
+			u[210+k+10]=sub13.result[210+k+10];
+			u[231+k+10]=sub14.result[231+k+10];
+			u[252+k+10]=sub14.result[252+k+10];
+			u[273+k+10]=sub14.result[273+k+10];
+			u[294+k+10]=sub14.result[294+k+10];
+			u[315+k+10]=sub14.result[315+k+10];
+			u[336+k+10]=sub15.result[336+k+10];
+			u[357+k+10]=sub15.result[357+k+10];
+			u[378+k+10]=sub15.result[378+k+10];
+			u[399+k+10]=sub15.result[399+k+10];
+			u[420+k+10]=sub15.result[420+k+10];
 		}
+
+
 
 
 		
