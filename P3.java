@@ -1,14 +1,14 @@
-import net.njlab.sample.annotation.JRThrashUnroll;
-import net.njlab.sample.annotation.JRThrashForwardingInvalidate;
+//import net.njlab.sample.annotation.JRThrashUnroll;
+//import net.njlab.sample.annotation.JRThrashForwardingInvalidate;
 
 public class P3{
-		private static final float T[][] = new float [102][102];
-		private static final float TT[][]= new float [102][102];
-		private static final float U[][] = new float [102][102];
-		private static final float V[][] = new float [102][102];
-	@JRThrashUnroll(loopVariableName="j",unrollNum=10,unrollType=JRThrashUnroll.copyLoopVar)
-	public void run(){
-	//public void main(String[] args){
+		private final float T[][] = new float [102][102];
+		private final float TT[][]= new float [102][102];
+		private final float U[][] = new float [102][102];
+		private final float V[][] = new float [102][102];
+	//@JRThrashUnroll(loopVariableName="j",unrollNum=10,unrollType=JRThrashUnroll.copyLoopVar)
+//	public void run(){
+	public void main(String[] args){
 		//final float T[][] = new float [51][51];
 		//final float TT[][]= new float [51][51];
 		//final float U[][] = new float [51][51];
@@ -84,7 +84,7 @@ public class P3{
 				}
 			}
 		}
-		//System.out.println(T[10][10]);
+		System.out.println(T[10][10]);
 }
 }
 
