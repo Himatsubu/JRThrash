@@ -18,7 +18,7 @@
 			<init>
 				<NewArray>
 					<type>	float	</type>
-					<elements>	10000	</elements>				
+					<elements>	16900	</elements>				
 				</NewArray>
 			</init>
 		</VeriableDecl>
@@ -36,7 +36,7 @@
 			<init>
 				<NewArray>
 					<type>	float	</type>
-					<elements>	484	</elements>				
+					<elements>	16900	</elements>				
 				</NewArray>
 			</init>
 		</VeriableDecl>
@@ -54,7 +54,7 @@
 			<init>
 				<NewArray>
 					<type>	float	</type>
-					<elements>	484	</elements>				
+					<elements>	16900	</elements>				
 				</NewArray>
 			</init>
 		</VeriableDecl>
@@ -477,7 +477,7 @@
 								<rightExpr>
 									<Literal>
 										<type>	int	</type>
-										<value>	20	</value>
+										<value>	128	</value>
 									</Literal>
 								</rightExpr>
 
@@ -497,7 +497,7 @@
 								<rightExpr>
 									<Literal>
 										<type>	int	</type>
-										<value>	20	</value>
+										<value>	128	</value>
 									</Literal>
 								</rightExpr>
 
@@ -517,7 +517,7 @@
 								<rightExpr>
 									<Literal>
 										<type>	int	</type>
-										<value>	21	</value>
+										<value>	129	</value>
 									</Literal>
 								</rightExpr>
 
@@ -537,7 +537,7 @@
 								<rightExpr>
 									<Literal>
 										<type>	int	</type>
-										<value>	21	</value>
+										<value>	129	</value>
 									</Literal>
 								</rightExpr>
 
@@ -577,7 +577,7 @@
 								<rightExpr>
 									<Literal>
 										<type>	int	</type>
-										<value>	2	</value>
+										<value>	1	</value>
 									</Literal>
 								</rightExpr>
 
@@ -595,10 +595,38 @@
 						<ExprStatement>
 							<Assign>
 								<rightExpr>
-									<Literal>
-										<type>	float	</type>
-										<value>	0.05	</value>
-									</Literal>
+									<Binary>
+										<binaryOp>	'/'	</binaryOp>
+										<leftExpr>
+											<Literal>
+												<type>	float	</type>
+												<value>	1.0	</value>
+											</Literal>
+										</leftExpr>
+
+										<rightExpr>
+											<Binary>
+												<binaryOp>	'-'	</binaryOp>
+												<leftExpr>
+													<Ident>
+														<variableID>	6	</variableID>
+														<idName>	mx	</idName>
+													</Ident>
+												</leftExpr>
+
+												<rightExpr>
+													<Literal>
+														<type>	int	</type>
+														<value>	1	</value>
+													</Literal>
+												</rightExpr>
+
+											</Binary>
+
+										</rightExpr>
+
+									</Binary>
+
 								</rightExpr>
 
 								<dest>
@@ -615,10 +643,38 @@
 						<ExprStatement>
 							<Assign>
 								<rightExpr>
-									<Literal>
-										<type>	float	</type>
-										<value>	0.05	</value>
-									</Literal>
+									<Binary>
+										<binaryOp>	'/'	</binaryOp>
+										<leftExpr>
+											<Literal>
+												<type>	float	</type>
+												<value>	1.0	</value>
+											</Literal>
+										</leftExpr>
+
+										<rightExpr>
+											<Binary>
+												<binaryOp>	'-'	</binaryOp>
+												<leftExpr>
+													<Ident>
+														<variableID>	7	</variableID>
+														<idName>	my	</idName>
+													</Ident>
+												</leftExpr>
+
+												<rightExpr>
+													<Literal>
+														<type>	int	</type>
+														<value>	1	</value>
+													</Literal>
+												</rightExpr>
+
+											</Binary>
+
+										</rightExpr>
+
+									</Binary>
+
 								</rightExpr>
 
 								<dest>
@@ -635,10 +691,38 @@
 						<ExprStatement>
 							<Assign>
 								<rightExpr>
-									<Literal>
-										<type>	float	</type>
-										<value>	0.2	</value>
-									</Literal>
+									<Binary>
+										<binaryOp>	'/'	</binaryOp>
+										<leftExpr>
+											<Ident>
+												<variableID>	8	</variableID>
+												<idName>	dt	</idName>
+											</Ident>
+										</leftExpr>
+
+										<rightExpr>
+											<Binary>
+												<binaryOp>	'*'	</binaryOp>
+												<leftExpr>
+													<Ident>
+														<variableID>	9	</variableID>
+														<idName>	dx	</idName>
+													</Ident>
+												</leftExpr>
+
+												<rightExpr>
+													<Ident>
+														<variableID>	9	</variableID>
+														<idName>	dx	</idName>
+													</Ident>
+												</rightExpr>
+
+											</Binary>
+
+										</rightExpr>
+
+									</Binary>
+
 								</rightExpr>
 
 								<dest>
@@ -655,10 +739,38 @@
 						<ExprStatement>
 							<Assign>
 								<rightExpr>
-									<Literal>
-										<type>	float	</type>
-										<value>	0.2	</value>
-									</Literal>
+									<Binary>
+										<binaryOp>	'/'	</binaryOp>
+										<leftExpr>
+											<Ident>
+												<variableID>	8	</variableID>
+												<idName>	dt	</idName>
+											</Ident>
+										</leftExpr>
+
+										<rightExpr>
+											<Binary>
+												<binaryOp>	'*'	</binaryOp>
+												<leftExpr>
+													<Ident>
+														<variableID>	10	</variableID>
+														<idName>	dy	</idName>
+													</Ident>
+												</leftExpr>
+
+												<rightExpr>
+													<Ident>
+														<variableID>	10	</variableID>
+														<idName>	dy	</idName>
+													</Ident>
+												</rightExpr>
+
+											</Binary>
+
+										</rightExpr>
+
+									</Binary>
+
 								</rightExpr>
 
 								<dest>
@@ -1523,7 +1635,7 @@
 																				<rightExpr>
 																					<Literal>
 																						<type>	int	</type>
-																						<value>	21	</value>
+																						<value>	129	</value>
 																					</Literal>
 																				</rightExpr>
 
@@ -1580,7 +1692,7 @@
 																				<rightExpr>
 																					<Literal>
 																						<type>	int	</type>
-																						<value>	21	</value>
+																						<value>	129	</value>
 																					</Literal>
 																				</rightExpr>
 
@@ -1774,7 +1886,7 @@
 																				<rightExpr>
 																					<Literal>
 																						<type>	int	</type>
-																						<value>	21	</value>
+																						<value>	129	</value>
 																					</Literal>
 																				</rightExpr>
 
@@ -1831,7 +1943,7 @@
 																				<rightExpr>
 																					<Literal>
 																						<type>	int	</type>
-																						<value>	21	</value>
+																						<value>	129	</value>
 																					</Literal>
 																				</rightExpr>
 
@@ -2201,7 +2313,7 @@
 																													<rightExpr>
 																														<Literal>
 																															<type>	int	</type>
-																															<value>	21	</value>
+																															<value>	129	</value>
 																														</Literal>
 																													</rightExpr>
 
@@ -2275,7 +2387,7 @@
 																																			<rightExpr>
 																																				<Literal>
 																																					<type>	int	</type>
-																																					<value>	21	</value>
+																																					<value>	129	</value>
 																																				</Literal>
 																																			</rightExpr>
 
@@ -2329,7 +2441,7 @@
 																																					<rightExpr>
 																																						<Literal>
 																																							<type>	int	</type>
-																																							<value>	21	</value>
+																																							<value>	129	</value>
 																																						</Literal>
 																																					</rightExpr>
 
@@ -2395,7 +2507,7 @@
 																																	<rightExpr>
 																																		<Literal>
 																																			<type>	int	</type>
-																																			<value>	21	</value>
+																																			<value>	129	</value>
 																																		</Literal>
 																																	</rightExpr>
 
@@ -2470,7 +2582,7 @@
 																																			<rightExpr>
 																																				<Literal>
 																																					<type>	int	</type>
-																																					<value>	21	</value>
+																																					<value>	129	</value>
 																																				</Literal>
 																																			</rightExpr>
 
@@ -2535,7 +2647,7 @@
 																																			<rightExpr>
 																																				<Literal>
 																																					<type>	int	</type>
-																																					<value>	21	</value>
+																																					<value>	129	</value>
 																																				</Literal>
 																																			</rightExpr>
 
@@ -2590,7 +2702,7 @@
 																																	<rightExpr>
 																																		<Literal>
 																																			<type>	int	</type>
-																																			<value>	21	</value>
+																																			<value>	129	</value>
 																																		</Literal>
 																																	</rightExpr>
 
@@ -2667,7 +2779,7 @@
 																											<rightExpr>
 																												<Literal>
 																													<type>	int	</type>
-																													<value>	21	</value>
+																													<value>	129	</value>
 																												</Literal>
 																											</rightExpr>
 
@@ -2719,7 +2831,7 @@
 																							<rightExpr>
 																								<Literal>
 																									<type>	int	</type>
-																									<value>	21	</value>
+																									<value>	129	</value>
 																								</Literal>
 																							</rightExpr>
 
@@ -3085,7 +3197,7 @@
 																							<rightExpr>
 																								<Literal>
 																									<type>	int	</type>
-																									<value>	21	</value>
+																									<value>	129	</value>
 																								</Literal>
 																							</rightExpr>
 
@@ -3129,7 +3241,7 @@
 																							<rightExpr>
 																								<Literal>
 																									<type>	int	</type>
-																									<value>	21	</value>
+																									<value>	129	</value>
 																								</Literal>
 																							</rightExpr>
 

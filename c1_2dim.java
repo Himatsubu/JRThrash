@@ -7,9 +7,9 @@ public class c1_2dim{
 	private static final float uu[]= new float [16900];
 	private static final float q[] = new float [16900];
 
-//        @JRThrashUnroll(unrollNum=10, loopVariableName="j",unrollType=JRThrashUnroll.copyLoopVar)
-//	public void run(){
-	public static void main(String[] args){
+        @JRThrashUnroll(unrollNum=10, loopVariableName="j",unrollType=JRThrashUnroll.copyLoopVar)
+	public void run(){
+//	public static void main(String[] args){
 		int k,j,n;
 		int mx,my;
 		float dt,dx,dy,r1,r2;
@@ -20,7 +20,7 @@ public class c1_2dim{
 		mx=129;
 		my=129;
 		dt=0.0005f;
-		nlast=500000;
+		nlast=1;
 
 		dx = 1f/(mx-1);
 		dy = 1f/(my-1);
@@ -85,7 +85,7 @@ public class c1_2dim{
 		//System.out.println(uu[10*21+10]);
 
 	}
-	System.out.println(uu[10*21+10]);
+	//System.out.println(uu[10*21+10]);
 
 
 	}

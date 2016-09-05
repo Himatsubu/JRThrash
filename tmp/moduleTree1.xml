@@ -1,50 +1,5 @@
 <?xml version="1.0" encoding="shift_jis" ?>
 
 <module>
-	<name objName = "*thisIsTopModule"    className = "c1" />
-	<subModule>
-		<module>
-			<name objName = "sub08"    className = "sub08" />
-		</module>
-	</subModule>
-	<subModule>
-		<module>
-			<name objName = "sub03"    className = "sub03" />
-		</module>
-	</subModule>
-	<subModule>
-		<module>
-			<name objName = "sub02"    className = "sub02" />
-		</module>
-	</subModule>
-	<subModule>
-		<module>
-			<name objName = "sub01"    className = "sub01" />
-		</module>
-	</subModule>
-	<subModule>
-		<module>
-			<name objName = "sub00"    className = "sub00" />
-		</module>
-	</subModule>
-	<subModule>
-		<module>
-			<name objName = "sub07"    className = "sub07" />
-		</module>
-	</subModule>
-	<subModule>
-		<module>
-			<name objName = "sub06"    className = "sub06" />
-		</module>
-	</subModule>
-	<subModule>
-		<module>
-			<name objName = "sub05"    className = "sub05" />
-		</module>
-	</subModule>
-	<subModule>
-		<module>
-			<name objName = "sub04"    className = "sub04" />
-		</module>
-	</subModule>
+	<name objName = "*thisIsTopModule"    className = "c1_2dim" />
 </module>
