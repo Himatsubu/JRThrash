@@ -1,15 +1,25 @@
 <?xml version="1.0" encoding="shift_jis" ?>
 
 <module>
-	<name objName = "*thisIsTopModule"    className = "c1_test" />
+	<name objName = "*thisIsTopModule"    className = "c1" />
 	<subModule>
 		<module>
-			<name objName = "sub01"    className = "subunder" />
+			<name objName = "sub03"    className = "sub03" />
 		</module>
 	</subModule>
 	<subModule>
 		<module>
-			<name objName = "sub00"    className = "subup" />
+			<name objName = "sub02"    className = "sub02" />
+		</module>
+	</subModule>
+	<subModule>
+		<module>
+			<name objName = "sub01"    className = "sub01" />
+		</module>
+	</subModule>
+	<subModule>
+		<module>
+			<name objName = "sub00"    className = "sub00" />
 		</module>
 	</subModule>
 </module>
