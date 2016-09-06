@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="shift_jis" ?>
 
 <module>
-	<name objName = "*thisIsTopModule"    className = "c1_2dim" />
+	<name objName = "*thisIsTopModule"    className = "c1_test" />
+	<subModule>
+		<module>
+			<name objName = "sub01"    className = "subunder" />
+		</module>
+	</subModule>
+	<subModule>
+		<module>
+			<name objName = "sub00"    className = "subup" />
+		</module>
+	</subModule>
 </module>
