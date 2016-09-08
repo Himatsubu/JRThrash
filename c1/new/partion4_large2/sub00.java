@@ -19,6 +19,7 @@ public class sub00 extends Thread{
 */
 		dx=1f/(129-1);
 		dy=1f/(129-1);
+		dt=0.0005f;
 		r1=dt/(dx*dx);
 		r2=dt/(dy*dy);
 

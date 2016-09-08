@@ -22,4 +22,24 @@
 			<name objName = "sub00"    className = "sub00" />
 		</module>
 	</subModule>
+	<subModule>
+		<module>
+			<name objName = "sub07"    className = "sub07" />
+		</module>
+	</subModule>
+	<subModule>
+		<module>
+			<name objName = "sub06"    className = "sub06" />
+		</module>
+	</subModule>
+	<subModule>
+		<module>
+			<name objName = "sub05"    className = "sub05" />
+		</module>
+	</subModule>
+	<subModule>
+		<module>
+			<name objName = "sub04"    className = "sub04" />
+		</module>
+	</subModule>
 </module>

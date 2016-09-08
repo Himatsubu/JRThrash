@@ -284,7 +284,7 @@
 
 				<StatAssemblage>	<Phase>  2  </Phase>
 					<stageNum>  1  </stageNum>
-					<totalStepNum>  31  </totalStepNum>
+					<totalStepNum>  1  </totalStepNum>
 					<VariableStack>
 						<VeriableDecl>			<name>	u	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
 						<VeriableDecl>			<name>	q	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
@@ -314,24 +314,10 @@
 										</leftExpr>
 
 										<rightExpr>
-											<Binary>
-												<binaryOp>	'-'	</binaryOp>
-												<leftExpr>
-													<Literal>
-														<type>	int	</type>
-														<value>	129	</value>
-													</Literal>
-												</leftExpr>
-
-												<rightExpr>
-													<Literal>
-														<type>	int	</type>
-														<value>	1	</value>
-													</Literal>
-												</rightExpr>
-
-											</Binary>
-
+											<Literal>
+												<type>	int	</type>
+												<value>	128	</value>
+											</Literal>
 										</rightExpr>
 
 									</Binary>
@@ -362,24 +348,10 @@
 										</leftExpr>
 
 										<rightExpr>
-											<Binary>
-												<binaryOp>	'-'	</binaryOp>
-												<leftExpr>
-													<Literal>
-														<type>	int	</type>
-														<value>	129	</value>
-													</Literal>
-												</leftExpr>
-
-												<rightExpr>
-													<Literal>
-														<type>	int	</type>
-														<value>	1	</value>
-													</Literal>
-												</rightExpr>
-
-											</Binary>
-
+											<Literal>
+												<type>	int	</type>
+												<value>	128	</value>
+											</Literal>
 										</rightExpr>
 
 									</Binary>
@@ -390,6 +362,26 @@
 									<Ident>
 										<variableID>	6	</variableID>
 										<idName>	dy	</idName>
+									</Ident>
+								</dest>
+
+							</Assign>
+
+						</ExprStatement>
+
+						<ExprStatement>
+							<Assign>
+								<rightExpr>
+									<Literal>
+										<type>	float	</type>
+										<value>	5.0E-4	</value>
+									</Literal>
+								</rightExpr>
+
+								<dest>
+									<Ident>
+										<variableID>	7	</variableID>
+										<idName>	dt	</idName>
 									</Ident>
 								</dest>
 
@@ -573,7 +565,7 @@
 										<rightExpr>
 											<Literal>
 												<type>	int	</type>
-												<value>	64	</value>
+												<value>	65	</value>
 											</Literal>
 										</rightExpr>
 
@@ -701,7 +693,7 @@
 													<rightExpr>
 														<Literal>
 															<type>	int	</type>
-															<value>	64	</value>
+															<value>	33	</value>
 														</Literal>
 													</rightExpr>
 
@@ -720,7 +712,7 @@
 
 										<StatAssemblage>	<Phase>  13  </Phase>
 											<stageNum>  1  </stageNum>
-											<totalStepNum>  103  </totalStepNum>
+											<totalStepNum>  68  </totalStepNum>
 											<VariableStack>
 												<VeriableDecl>			<name>	u	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
 												<VeriableDecl>			<name>	q	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
