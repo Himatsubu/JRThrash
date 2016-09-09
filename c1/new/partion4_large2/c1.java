@@ -3,8 +3,8 @@ import net.njlab.sample.annotation.*;
 
 public class c1{
 	private static final float[] u = new float[16900];
-	private static final float[] uu= new float[16900];
-	private static final float[] q = new float[16900];
+	//private static final float[] uu= new float[16900];
+	//private static final float[] q = new float[16900];
 
 	static final sub00 sub00    = new sub00();
 	static final sub01 sub01    = new sub01();
@@ -35,7 +35,7 @@ public class c1{
 		{
 			 //q[j*21+k] = 100f*dx*(j-1)*dy*(k-1);
 			 u[j*129+k] = 0f;
-			uu[j*129+k] = 0f;
+			//uu[j*129+k] = 0f;
 		}
 	}
 	
@@ -121,6 +121,6 @@ public class c1{
 */
 			
 		}
-		//System.out.println(u[10*21+10]);
+		return u[10*21+10];
 	}
 }

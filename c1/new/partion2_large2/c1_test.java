@@ -4,8 +4,8 @@ import net.njlab.sample.annotation.*;
 public class c1_test{
 	
 	private static final float[] u = new float[16900];
-	private static final float[] uu= new float[16900];
-	private static final float[] q = new float[16900];
+	//private static final float[] uu= new float[16900];
+	//private static final float[] q = new float[16900];
 
 	static final subup sub00    = new subup();
 	static final subunder sub01 = new subunder();
@@ -32,7 +32,7 @@ public class c1_test{
 		{
 			 //q[j*21+k] = 100f*dx*(j-1)*dy*(k-1);
 			 u[j*129+k] = 0f;
-			uu[j*129+k] = 0f;
+			//uu[j*129+k] = 0f;
 		}
 	}
 	//sub00.r1=r1; sub00.r2=r2; sub00.dx=dx; sub00.dy=dy; sub00.dt=dt;

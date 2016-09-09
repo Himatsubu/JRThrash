@@ -3,7 +3,7 @@ import net.njlab.sample.annotation.*;
 
 public class sub03 extends Thread{
         final float[] u      = new float[16900];
-	final float[] q      = new float[16900];
+	//final float[] q      = new float[16900];
 	final float[] result = new float[16900];
 	float r1,r2,dt,dx,dy;
 
