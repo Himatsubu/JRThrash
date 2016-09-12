@@ -8,7 +8,7 @@ public class c1_2dim{
 	private static final float q[] = new float [16900];
 
         @JRThrashUnroll(unrollNum=10, loopVariableName="j",unrollType=JRThrashUnroll.copyLoopVar)
-	public void run(){
+	public float run(){
 //	public static void main(String[] args){
 		int k,j,n;
 		int mx,my;
@@ -85,7 +85,7 @@ public class c1_2dim{
 		//System.out.println(uu[10*21+10]);
 
 	}
-	//System.out.println(uu[10*21+10]);
+	return uu[10*21+10];
 
 
 	}

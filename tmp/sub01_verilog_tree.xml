@@ -24,7 +24,7 @@
 		</VeriableDecl>
 
 		<VeriableDecl>
-			<name>	q	</name>
+			<name>	result	</name>
 			<type>	float	</type>
 			<variableID>	1	</variableID>
 			<parentName>	sub01	</parentName>
@@ -42,55 +42,9 @@
 		</VeriableDecl>
 
 		<VeriableDecl>
-			<name>	result	</name>
-			<type>	float	</type>
-			<variableID>	2	</variableID>
-			<parentName>	sub01	</parentName>
-			<defType>	field	</defType>
-			<isArray>	true	</isArray>
-			<isPrimitive>	true	</isPrimitive>
-			<isFinal>	true	</isFinal>
-			<dimension>	1	</dimension>
-			<init>
-				<NewArray>
-					<type>	float	</type>
-					<elements>	16900	</elements>				
-				</NewArray>
-			</init>
-		</VeriableDecl>
-
-		<VeriableDecl>
-			<name>	r1	</name>
-			<type>	float	</type>
-			<variableID>	3	</variableID>
-			<parentName>	sub01	</parentName>
-			<defType>	field	</defType>
-			<isArray>	false	</isArray>
-			<isPrimitive>	true	</isPrimitive>
-			<isFinal>	false	</isFinal>
-			<dimension>	0	</dimension>
-			<init>
-			</init>
-		</VeriableDecl>
-
-		<VeriableDecl>
-			<name>	r2	</name>
-			<type>	float	</type>
-			<variableID>	4	</variableID>
-			<parentName>	sub01	</parentName>
-			<defType>	field	</defType>
-			<isArray>	false	</isArray>
-			<isPrimitive>	true	</isPrimitive>
-			<isFinal>	false	</isFinal>
-			<dimension>	0	</dimension>
-			<init>
-			</init>
-		</VeriableDecl>
-
-		<VeriableDecl>
 			<name>	dx	</name>
 			<type>	float	</type>
-			<variableID>	5	</variableID>
+			<variableID>	2	</variableID>
 			<parentName>	sub01	</parentName>
 			<defType>	field	</defType>
 			<isArray>	false	</isArray>
@@ -104,7 +58,7 @@
 		<VeriableDecl>
 			<name>	dy	</name>
 			<type>	float	</type>
-			<variableID>	6	</variableID>
+			<variableID>	3	</variableID>
 			<parentName>	sub01	</parentName>
 			<defType>	field	</defType>
 			<isArray>	false	</isArray>
@@ -118,7 +72,35 @@
 		<VeriableDecl>
 			<name>	dt	</name>
 			<type>	float	</type>
-			<variableID>	7	</variableID>
+			<variableID>	4	</variableID>
+			<parentName>	sub01	</parentName>
+			<defType>	field	</defType>
+			<isArray>	false	</isArray>
+			<isPrimitive>	true	</isPrimitive>
+			<isFinal>	false	</isFinal>
+			<dimension>	0	</dimension>
+			<init>
+			</init>
+		</VeriableDecl>
+
+		<VeriableDecl>
+			<name>	r1	</name>
+			<type>	float	</type>
+			<variableID>	5	</variableID>
+			<parentName>	sub01	</parentName>
+			<defType>	field	</defType>
+			<isArray>	false	</isArray>
+			<isPrimitive>	true	</isPrimitive>
+			<isFinal>	false	</isFinal>
+			<dimension>	0	</dimension>
+			<init>
+			</init>
+		</VeriableDecl>
+
+		<VeriableDecl>
+			<name>	r2	</name>
+			<type>	float	</type>
+			<variableID>	6	</variableID>
 			<parentName>	sub01	</parentName>
 			<defType>	field	</defType>
 			<isArray>	false	</isArray>
@@ -132,7 +114,7 @@
 		<VeriableDecl>
 			<name>	k	</name>
 			<type>	int	</type>
-			<variableID>	8	</variableID>
+			<variableID>	7	</variableID>
 			<parentName>	run	</parentName>
 			<defType>	method	</defType>
 			<isArray>	false	</isArray>
@@ -146,6 +128,20 @@
 		<VeriableDecl>
 			<name>	j	</name>
 			<type>	int	</type>
+			<variableID>	8	</variableID>
+			<parentName>	run	</parentName>
+			<defType>	method	</defType>
+			<isArray>	false	</isArray>
+			<isPrimitive>	true	</isPrimitive>
+			<isFinal>	false	</isFinal>
+			<dimension>	0	</dimension>
+			<init>
+			</init>
+		</VeriableDecl>
+
+		<VeriableDecl>
+			<name>	copy0_j	</name>
+			<type>	int	</type>
 			<variableID>	9	</variableID>
 			<parentName>	run	</parentName>
 			<defType>	method	</defType>
@@ -158,7 +154,7 @@
 		</VeriableDecl>
 
 		<VeriableDecl>
-			<name>	copy0_k	</name>
+			<name>	copy1_j	</name>
 			<type>	int	</type>
 			<variableID>	10	</variableID>
 			<parentName>	run	</parentName>
@@ -172,7 +168,7 @@
 		</VeriableDecl>
 
 		<VeriableDecl>
-			<name>	copy1_k	</name>
+			<name>	copy2_j	</name>
 			<type>	int	</type>
 			<variableID>	11	</variableID>
 			<parentName>	run	</parentName>
@@ -186,7 +182,7 @@
 		</VeriableDecl>
 
 		<VeriableDecl>
-			<name>	copy2_k	</name>
+			<name>	copy3_j	</name>
 			<type>	int	</type>
 			<variableID>	12	</variableID>
 			<parentName>	run	</parentName>
@@ -200,7 +196,7 @@
 		</VeriableDecl>
 
 		<VeriableDecl>
-			<name>	copy3_k	</name>
+			<name>	copy4_j	</name>
 			<type>	int	</type>
 			<variableID>	13	</variableID>
 			<parentName>	run	</parentName>
@@ -214,7 +210,7 @@
 		</VeriableDecl>
 
 		<VeriableDecl>
-			<name>	copy4_k	</name>
+			<name>	copy5_j	</name>
 			<type>	int	</type>
 			<variableID>	14	</variableID>
 			<parentName>	run	</parentName>
@@ -228,7 +224,7 @@
 		</VeriableDecl>
 
 		<VeriableDecl>
-			<name>	copy5_k	</name>
+			<name>	copy6_j	</name>
 			<type>	int	</type>
 			<variableID>	15	</variableID>
 			<parentName>	run	</parentName>
@@ -242,23 +238,9 @@
 		</VeriableDecl>
 
 		<VeriableDecl>
-			<name>	copy6_k	</name>
+			<name>	copy7_j	</name>
 			<type>	int	</type>
 			<variableID>	16	</variableID>
-			<parentName>	run	</parentName>
-			<defType>	method	</defType>
-			<isArray>	false	</isArray>
-			<isPrimitive>	true	</isPrimitive>
-			<isFinal>	false	</isFinal>
-			<dimension>	0	</dimension>
-			<init>
-			</init>
-		</VeriableDecl>
-
-		<VeriableDecl>
-			<name>	copy7_k	</name>
-			<type>	int	</type>
-			<variableID>	17	</variableID>
 			<parentName>	run	</parentName>
 			<defType>	method	</defType>
 			<isArray>	false	</isArray>
@@ -287,20 +269,19 @@
 					<totalStepNum>  1  </totalStepNum>
 					<VariableStack>
 						<VeriableDecl>			<name>	u	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-						<VeriableDecl>			<name>	q	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-						<VeriableDecl>			<name>	result	</name>		<variableID>	2	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-						<VeriableDecl>			<name>	r1	</name>		<variableID>	3	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-						<VeriableDecl>			<name>	r2	</name>		<variableID>	4	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-						<VeriableDecl>			<name>	dx	</name>		<variableID>	5	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-						<VeriableDecl>			<name>	dy	</name>		<variableID>	6	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-						<VeriableDecl>			<name>	dt	</name>		<variableID>	7	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-						<VeriableDecl>			<name>	k	</name>		<variableID>	8	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-						<VeriableDecl>			<name>	j	</name>		<variableID>	9	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+						<VeriableDecl>			<name>	result	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+						<VeriableDecl>			<name>	dx	</name>		<variableID>	2	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+						<VeriableDecl>			<name>	dy	</name>		<variableID>	3	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+						<VeriableDecl>			<name>	dt	</name>		<variableID>	4	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+						<VeriableDecl>			<name>	r1	</name>		<variableID>	5	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+						<VeriableDecl>			<name>	r2	</name>		<variableID>	6	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+						<VeriableDecl>			<name>	k	</name>		<variableID>	7	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+						<VeriableDecl>			<name>	j	</name>		<variableID>	8	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 					</VariableStack>
 
 					<statements>
-						<VeriableDecl>			<name>	k	</name>		<variableID>	8	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-						<VeriableDecl>			<name>	j	</name>		<variableID>	9	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+						<VeriableDecl>			<name>	k	</name>		<variableID>	7	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+						<VeriableDecl>			<name>	j	</name>		<variableID>	8	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 						<ExprStatement>
 							<Assign>
 								<rightExpr>
@@ -314,10 +295,24 @@
 										</leftExpr>
 
 										<rightExpr>
-											<Literal>
-												<type>	int	</type>
-												<value>	128	</value>
-											</Literal>
+											<Binary>
+												<binaryOp>	'-'	</binaryOp>
+												<leftExpr>
+													<Literal>
+														<type>	int	</type>
+														<value>	129	</value>
+													</Literal>
+												</leftExpr>
+
+												<rightExpr>
+													<Literal>
+														<type>	int	</type>
+														<value>	1	</value>
+													</Literal>
+												</rightExpr>
+
+											</Binary>
+
 										</rightExpr>
 
 									</Binary>
@@ -326,7 +321,7 @@
 
 								<dest>
 									<Ident>
-										<variableID>	5	</variableID>
+										<variableID>	2	</variableID>
 										<idName>	dx	</idName>
 									</Ident>
 								</dest>
@@ -348,10 +343,24 @@
 										</leftExpr>
 
 										<rightExpr>
-											<Literal>
-												<type>	int	</type>
-												<value>	128	</value>
-											</Literal>
+											<Binary>
+												<binaryOp>	'-'	</binaryOp>
+												<leftExpr>
+													<Literal>
+														<type>	int	</type>
+														<value>	129	</value>
+													</Literal>
+												</leftExpr>
+
+												<rightExpr>
+													<Literal>
+														<type>	int	</type>
+														<value>	1	</value>
+													</Literal>
+												</rightExpr>
+
+											</Binary>
+
 										</rightExpr>
 
 									</Binary>
@@ -360,7 +369,7 @@
 
 								<dest>
 									<Ident>
-										<variableID>	6	</variableID>
+										<variableID>	3	</variableID>
 										<idName>	dy	</idName>
 									</Ident>
 								</dest>
@@ -380,7 +389,7 @@
 
 								<dest>
 									<Ident>
-										<variableID>	7	</variableID>
+										<variableID>	4	</variableID>
 										<idName>	dt	</idName>
 									</Ident>
 								</dest>
@@ -396,7 +405,7 @@
 										<binaryOp>	'/'	</binaryOp>
 										<leftExpr>
 											<Ident>
-												<variableID>	7	</variableID>
+												<variableID>	4	</variableID>
 												<idName>	dt	</idName>
 											</Ident>
 										</leftExpr>
@@ -406,14 +415,14 @@
 												<binaryOp>	'*'	</binaryOp>
 												<leftExpr>
 													<Ident>
-														<variableID>	5	</variableID>
+														<variableID>	2	</variableID>
 														<idName>	dx	</idName>
 													</Ident>
 												</leftExpr>
 
 												<rightExpr>
 													<Ident>
-														<variableID>	5	</variableID>
+														<variableID>	2	</variableID>
 														<idName>	dx	</idName>
 													</Ident>
 												</rightExpr>
@@ -428,7 +437,7 @@
 
 								<dest>
 									<Ident>
-										<variableID>	3	</variableID>
+										<variableID>	5	</variableID>
 										<idName>	r1	</idName>
 									</Ident>
 								</dest>
@@ -444,7 +453,7 @@
 										<binaryOp>	'/'	</binaryOp>
 										<leftExpr>
 											<Ident>
-												<variableID>	7	</variableID>
+												<variableID>	4	</variableID>
 												<idName>	dt	</idName>
 											</Ident>
 										</leftExpr>
@@ -454,14 +463,14 @@
 												<binaryOp>	'*'	</binaryOp>
 												<leftExpr>
 													<Ident>
-														<variableID>	6	</variableID>
+														<variableID>	3	</variableID>
 														<idName>	dy	</idName>
 													</Ident>
 												</leftExpr>
 
 												<rightExpr>
 													<Ident>
-														<variableID>	6	</variableID>
+														<variableID>	3	</variableID>
 														<idName>	dy	</idName>
 													</Ident>
 												</rightExpr>
@@ -476,7 +485,7 @@
 
 								<dest>
 									<Ident>
-										<variableID>	4	</variableID>
+										<variableID>	6	</variableID>
 										<idName>	r2	</idName>
 									</Ident>
 								</dest>
@@ -496,15 +505,14 @@
 							<totalStepNum>  1  </totalStepNum>
 							<VariableStack>
 								<VeriableDecl>			<name>	u	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	q	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	result	</name>		<variableID>	2	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	r1	</name>		<variableID>	3	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	r2	</name>		<variableID>	4	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	dx	</name>		<variableID>	5	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	dy	</name>		<variableID>	6	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	dt	</name>		<variableID>	7	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	k	</name>		<variableID>	8	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	j	</name>		<variableID>	9	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	result	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	dx	</name>		<variableID>	2	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	dy	</name>		<variableID>	3	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	dt	</name>		<variableID>	4	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	r1	</name>		<variableID>	5	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	r2	</name>		<variableID>	6	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	k	</name>		<variableID>	7	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	j	</name>		<variableID>	8	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 							</VariableStack>
 
 							<statements>
@@ -519,8 +527,8 @@
 
 										<dest>
 											<Ident>
-												<variableID>	9	</variableID>
-												<idName>	j	</idName>
+												<variableID>	7	</variableID>
+												<idName>	k	</idName>
 											</Ident>
 										</dest>
 
@@ -540,15 +548,14 @@
 							<totalStepNum>  1  </totalStepNum>
 							<VariableStack>
 								<VeriableDecl>			<name>	u	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	q	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	result	</name>		<variableID>	2	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	r1	</name>		<variableID>	3	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	r2	</name>		<variableID>	4	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	dx	</name>		<variableID>	5	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	dy	</name>		<variableID>	6	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	dt	</name>		<variableID>	7	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	k	</name>		<variableID>	8	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	j	</name>		<variableID>	9	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	result	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	dx	</name>		<variableID>	2	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	dy	</name>		<variableID>	3	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	dt	</name>		<variableID>	4	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	r1	</name>		<variableID>	5	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	r2	</name>		<variableID>	6	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	k	</name>		<variableID>	7	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	j	</name>		<variableID>	8	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 							</VariableStack>
 
 							<statements>
@@ -557,8 +564,8 @@
 										<binaryOp>	'LE'	</binaryOp>
 										<leftExpr>
 											<Ident>
-												<variableID>	9	</variableID>
-												<idName>	j	</idName>
+												<variableID>	7	</variableID>
+												<idName>	k	</idName>
 											</Ident>
 										</leftExpr>
 
@@ -585,15 +592,14 @@
 							<totalStepNum>  1  </totalStepNum>
 							<VariableStack>
 								<VeriableDecl>			<name>	u	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	q	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	result	</name>		<variableID>	2	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	r1	</name>		<variableID>	3	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	r2	</name>		<variableID>	4	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	dx	</name>		<variableID>	5	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	dy	</name>		<variableID>	6	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	dt	</name>		<variableID>	7	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	k	</name>		<variableID>	8	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	j	</name>		<variableID>	9	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	result	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	dx	</name>		<variableID>	2	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	dy	</name>		<variableID>	3	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	dt	</name>		<variableID>	4	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	r1	</name>		<variableID>	5	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	r2	</name>		<variableID>	6	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	k	</name>		<variableID>	7	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	j	</name>		<variableID>	8	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 							</VariableStack>
 
 							<statements>
@@ -601,8 +607,8 @@
 									<Unary>
 									<unaryOP>	_++</unaryOP>
 										<Ident>
-											<variableID>	9	</variableID>
-											<idName>	j	</idName>
+											<variableID>	7	</variableID>
+											<idName>	k	</idName>
 										</Ident>
 									</Unary>
 
@@ -624,15 +630,14 @@
 										<totalStepNum>  2  </totalStepNum>
 										<VariableStack>
 											<VeriableDecl>			<name>	u	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-											<VeriableDecl>			<name>	q	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-											<VeriableDecl>			<name>	result	</name>		<variableID>	2	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-											<VeriableDecl>			<name>	r1	</name>		<variableID>	3	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-											<VeriableDecl>			<name>	r2	</name>		<variableID>	4	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-											<VeriableDecl>			<name>	dx	</name>		<variableID>	5	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-											<VeriableDecl>			<name>	dy	</name>		<variableID>	6	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-											<VeriableDecl>			<name>	dt	</name>		<variableID>	7	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-											<VeriableDecl>			<name>	k	</name>		<variableID>	8	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-											<VeriableDecl>			<name>	j	</name>		<variableID>	9	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+											<VeriableDecl>			<name>	result	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+											<VeriableDecl>			<name>	dx	</name>		<variableID>	2	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+											<VeriableDecl>			<name>	dy	</name>		<variableID>	3	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+											<VeriableDecl>			<name>	dt	</name>		<variableID>	4	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+											<VeriableDecl>			<name>	r1	</name>		<variableID>	5	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+											<VeriableDecl>			<name>	r2	</name>		<variableID>	6	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+											<VeriableDecl>			<name>	k	</name>		<variableID>	7	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+											<VeriableDecl>			<name>	j	</name>		<variableID>	8	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 										</VariableStack>
 
 										<statements>
@@ -641,14 +646,14 @@
 													<rightExpr>
 														<Literal>
 															<type>	int	</type>
-															<value>	33	</value>
+															<value>	65	</value>
 														</Literal>
 													</rightExpr>
 
 													<dest>
 														<Ident>
 															<variableID>	8	</variableID>
-															<idName>	k	</idName>
+															<idName>	j	</idName>
 														</Ident>
 													</dest>
 
@@ -668,15 +673,14 @@
 										<totalStepNum>  1  </totalStepNum>
 										<VariableStack>
 											<VeriableDecl>			<name>	u	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-											<VeriableDecl>			<name>	q	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-											<VeriableDecl>			<name>	result	</name>		<variableID>	2	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-											<VeriableDecl>			<name>	r1	</name>		<variableID>	3	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-											<VeriableDecl>			<name>	r2	</name>		<variableID>	4	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-											<VeriableDecl>			<name>	dx	</name>		<variableID>	5	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-											<VeriableDecl>			<name>	dy	</name>		<variableID>	6	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-											<VeriableDecl>			<name>	dt	</name>		<variableID>	7	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-											<VeriableDecl>			<name>	k	</name>		<variableID>	8	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-											<VeriableDecl>			<name>	j	</name>		<variableID>	9	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+											<VeriableDecl>			<name>	result	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+											<VeriableDecl>			<name>	dx	</name>		<variableID>	2	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+											<VeriableDecl>			<name>	dy	</name>		<variableID>	3	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+											<VeriableDecl>			<name>	dt	</name>		<variableID>	4	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+											<VeriableDecl>			<name>	r1	</name>		<variableID>	5	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+											<VeriableDecl>			<name>	r2	</name>		<variableID>	6	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+											<VeriableDecl>			<name>	k	</name>		<variableID>	7	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+											<VeriableDecl>			<name>	j	</name>		<variableID>	8	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 										</VariableStack>
 
 										<statements>
@@ -686,14 +690,14 @@
 													<leftExpr>
 														<Ident>
 															<variableID>	8	</variableID>
-															<idName>	k	</idName>
+															<idName>	j	</idName>
 														</Ident>
 													</leftExpr>
 
 													<rightExpr>
 														<Literal>
 															<type>	int	</type>
-															<value>	64	</value>
+															<value>	128	</value>
 														</Literal>
 													</rightExpr>
 
@@ -712,18 +716,17 @@
 
 										<StatAssemblage>	<Phase>  13  </Phase>
 											<stageNum>  1  </stageNum>
-											<totalStepNum>  68  </totalStepNum>
+											<totalStepNum>  103  </totalStepNum>
 											<VariableStack>
 												<VeriableDecl>			<name>	u	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-												<VeriableDecl>			<name>	q	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-												<VeriableDecl>			<name>	result	</name>		<variableID>	2	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-												<VeriableDecl>			<name>	r1	</name>		<variableID>	3	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-												<VeriableDecl>			<name>	r2	</name>		<variableID>	4	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-												<VeriableDecl>			<name>	dx	</name>		<variableID>	5	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-												<VeriableDecl>			<name>	dy	</name>		<variableID>	6	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-												<VeriableDecl>			<name>	dt	</name>		<variableID>	7	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-												<VeriableDecl>			<name>	k	</name>		<variableID>	8	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-												<VeriableDecl>			<name>	j	</name>		<variableID>	9	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+												<VeriableDecl>			<name>	result	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+												<VeriableDecl>			<name>	dx	</name>		<variableID>	2	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+												<VeriableDecl>			<name>	dy	</name>		<variableID>	3	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+												<VeriableDecl>			<name>	dt	</name>		<variableID>	4	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+												<VeriableDecl>			<name>	r1	</name>		<variableID>	5	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+												<VeriableDecl>			<name>	r2	</name>		<variableID>	6	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+												<VeriableDecl>			<name>	k	</name>		<variableID>	7	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+												<VeriableDecl>			<name>	j	</name>		<variableID>	8	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 											</VariableStack>
 
 											<statements>
@@ -745,33 +748,19 @@
 
 																						<index0>
 																							<Binary>
-																								<binaryOp>	'+'	</binaryOp>
+																								<binaryOp>	'*'	</binaryOp>
 																								<leftExpr>
-																									<Binary>
-																										<binaryOp>	'*'	</binaryOp>
-																										<leftExpr>
-																											<Ident>
-																												<variableID>	9	</variableID>
-																												<idName>	j	</idName>
-																											</Ident>
-																										</leftExpr>
-
-																										<rightExpr>
-																											<Literal>
-																												<type>	int	</type>
-																												<value>	129	</value>
-																											</Literal>
-																										</rightExpr>
-
-																									</Binary>
-
+																									<Ident>
+																										<variableID>	8	</variableID>
+																										<idName>	j	</idName>
+																									</Ident>
 																								</leftExpr>
 
 																								<rightExpr>
-																									<Ident>
-																										<variableID>	8	</variableID>
-																										<idName>	k	</idName>
-																									</Ident>
+																									<Literal>
+																										<type>	int	</type>
+																										<value>	129	</value>
+																									</Literal>
 																								</rightExpr>
 
 																							</Binary>
@@ -787,7 +776,7 @@
 																						<binaryOp>	'*'	</binaryOp>
 																						<leftExpr>
 																							<Ident>
-																								<variableID>	3	</variableID>
+																								<variableID>	5	</variableID>
 																								<idName>	r1	</idName>
 																							</Ident>
 																						</leftExpr>
@@ -805,35 +794,21 @@
 
 																												<index0>
 																													<Binary>
-																														<binaryOp>	'+'	</binaryOp>
+																														<binaryOp>	'*'	</binaryOp>
 																														<leftExpr>
 																															<Binary>
-																																<binaryOp>	'*'	</binaryOp>
+																																<binaryOp>	'+'	</binaryOp>
 																																<leftExpr>
-																																	<Binary>
-																																		<binaryOp>	'+'	</binaryOp>
-																																		<leftExpr>
-																																			<Ident>
-																																				<variableID>	9	</variableID>
-																																				<idName>	j	</idName>
-																																			</Ident>
-																																		</leftExpr>
-
-																																		<rightExpr>
-																																			<Literal>
-																																				<type>	int	</type>
-																																				<value>	1	</value>
-																																			</Literal>
-																																		</rightExpr>
-
-																																	</Binary>
-
+																																	<Ident>
+																																		<variableID>	8	</variableID>
+																																		<idName>	j	</idName>
+																																	</Ident>
 																																</leftExpr>
 
 																																<rightExpr>
 																																	<Literal>
 																																		<type>	int	</type>
-																																		<value>	129	</value>
+																																		<value>	1	</value>
 																																	</Literal>
 																																</rightExpr>
 
@@ -842,10 +817,10 @@
 																														</leftExpr>
 
 																														<rightExpr>
-																															<Ident>
-																																<variableID>	8	</variableID>
-																																<idName>	k	</idName>
-																															</Ident>
+																															<Literal>
+																																<type>	int	</type>
+																																<value>	129	</value>
+																															</Literal>
 																														</rightExpr>
 
 																													</Binary>
@@ -873,33 +848,19 @@
 
 																														<index0>
 																															<Binary>
-																																<binaryOp>	'+'	</binaryOp>
+																																<binaryOp>	'*'	</binaryOp>
 																																<leftExpr>
-																																	<Binary>
-																																		<binaryOp>	'*'	</binaryOp>
-																																		<leftExpr>
-																																			<Ident>
-																																				<variableID>	9	</variableID>
-																																				<idName>	j	</idName>
-																																			</Ident>
-																																		</leftExpr>
-
-																																		<rightExpr>
-																																			<Literal>
-																																				<type>	int	</type>
-																																				<value>	129	</value>
-																																			</Literal>
-																																		</rightExpr>
-
-																																	</Binary>
-
+																																	<Ident>
+																																		<variableID>	8	</variableID>
+																																		<idName>	j	</idName>
+																																	</Ident>
 																																</leftExpr>
 
 																																<rightExpr>
-																																	<Ident>
-																																		<variableID>	8	</variableID>
-																																		<idName>	k	</idName>
-																																	</Ident>
+																																	<Literal>
+																																		<type>	int	</type>
+																																		<value>	129	</value>
+																																	</Literal>
 																																</rightExpr>
 
 																															</Binary>
@@ -934,7 +895,7 @@
 																																<binaryOp>	'-'	</binaryOp>
 																																<leftExpr>
 																																	<Ident>
-																																		<variableID>	9	</variableID>
+																																		<variableID>	8	</variableID>
 																																		<idName>	j	</idName>
 																																	</Ident>
 																																</leftExpr>
@@ -963,7 +924,7 @@
 
 																												<rightExpr>
 																													<Ident>
-																														<variableID>	8	</variableID>
+																														<variableID>	7	</variableID>
 																														<idName>	k	</idName>
 																													</Ident>
 																												</rightExpr>
@@ -993,7 +954,7 @@
 																				<binaryOp>	'*'	</binaryOp>
 																				<leftExpr>
 																					<Ident>
-																						<variableID>	4	</variableID>
+																						<variableID>	6	</variableID>
 																						<idName>	r2	</idName>
 																					</Ident>
 																				</leftExpr>
@@ -1020,7 +981,7 @@
 																																<binaryOp>	'*'	</binaryOp>
 																																<leftExpr>
 																																	<Ident>
-																																		<variableID>	9	</variableID>
+																																		<variableID>	8	</variableID>
 																																		<idName>	j	</idName>
 																																	</Ident>
 																																</leftExpr>
@@ -1038,7 +999,7 @@
 
 																														<rightExpr>
 																															<Ident>
-																																<variableID>	8	</variableID>
+																																<variableID>	7	</variableID>
 																																<idName>	k	</idName>
 																															</Ident>
 																														</rightExpr>
@@ -1085,7 +1046,7 @@
 																																<binaryOp>	'*'	</binaryOp>
 																																<leftExpr>
 																																	<Ident>
-																																		<variableID>	9	</variableID>
+																																		<variableID>	8	</variableID>
 																																		<idName>	j	</idName>
 																																	</Ident>
 																																</leftExpr>
@@ -1103,7 +1064,7 @@
 
 																														<rightExpr>
 																															<Ident>
-																																<variableID>	8	</variableID>
+																																<variableID>	7	</variableID>
 																																<idName>	k	</idName>
 																															</Ident>
 																														</rightExpr>
@@ -1140,7 +1101,7 @@
 																														<binaryOp>	'*'	</binaryOp>
 																														<leftExpr>
 																															<Ident>
-																																<variableID>	9	</variableID>
+																																<variableID>	8	</variableID>
 																																<idName>	j	</idName>
 																															</Ident>
 																														</leftExpr>
@@ -1158,7 +1119,7 @@
 
 																												<rightExpr>
 																													<Ident>
-																														<variableID>	8	</variableID>
+																														<variableID>	7	</variableID>
 																														<idName>	k	</idName>
 																													</Ident>
 																												</rightExpr>
@@ -1211,7 +1172,7 @@
 																										<binaryOp>	'*'	</binaryOp>
 																										<leftExpr>
 																											<Ident>
-																												<variableID>	7	</variableID>
+																												<variableID>	4	</variableID>
 																												<idName>	dt	</idName>
 																											</Ident>
 																										</leftExpr>
@@ -1229,7 +1190,7 @@
 
 																								<rightExpr>
 																									<Ident>
-																										<variableID>	5	</variableID>
+																										<variableID>	2	</variableID>
 																										<idName>	dx	</idName>
 																									</Ident>
 																								</rightExpr>
@@ -1243,7 +1204,7 @@
 																								<binaryOp>	'-'	</binaryOp>
 																								<leftExpr>
 																									<Ident>
-																										<variableID>	9	</variableID>
+																										<variableID>	8	</variableID>
 																										<idName>	j	</idName>
 																									</Ident>
 																								</leftExpr>
@@ -1265,7 +1226,7 @@
 
 																				<rightExpr>
 																					<Ident>
-																						<variableID>	6	</variableID>
+																						<variableID>	3	</variableID>
 																						<idName>	dy	</idName>
 																					</Ident>
 																				</rightExpr>
@@ -1279,7 +1240,7 @@
 																				<binaryOp>	'-'	</binaryOp>
 																				<leftExpr>
 																					<Ident>
-																						<variableID>	8	</variableID>
+																						<variableID>	7	</variableID>
 																						<idName>	k	</idName>
 																					</Ident>
 																				</leftExpr>
@@ -1305,7 +1266,7 @@
 
 														<dest>
 															<ArrayAccess>
-																<variableID>	2	</variableID>
+																<variableID>	1	</variableID>
 																<idName>result</idName>
 
 																<index0>
@@ -1316,7 +1277,7 @@
 																				<binaryOp>	'*'	</binaryOp>
 																				<leftExpr>
 																					<Ident>
-																						<variableID>	9	</variableID>
+																						<variableID>	8	</variableID>
 																						<idName>	j	</idName>
 																					</Ident>
 																				</leftExpr>
@@ -1334,7 +1295,7 @@
 
 																		<rightExpr>
 																			<Ident>
-																				<variableID>	8	</variableID>
+																				<variableID>	7	</variableID>
 																				<idName>	k	</idName>
 																			</Ident>
 																		</rightExpr>
