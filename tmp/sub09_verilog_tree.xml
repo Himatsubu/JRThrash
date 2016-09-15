@@ -18,7 +18,7 @@
 			<init>
 				<NewArray>
 					<type>	float	</type>
-					<elements>	1024	</elements>				
+					<elements>	16900	</elements>				
 				</NewArray>
 			</init>
 		</VeriableDecl>
@@ -36,7 +36,7 @@
 			<init>
 				<NewArray>
 					<type>	float	</type>
-					<elements>	1024	</elements>				
+					<elements>	16900	</elements>				
 				</NewArray>
 			</init>
 		</VeriableDecl>
@@ -351,7 +351,7 @@
 										<rightExpr>
 											<Literal>
 												<type>	int	</type>
-												<value>	16	</value>
+												<value>	65	</value>
 											</Literal>
 										</rightExpr>
 
@@ -403,7 +403,7 @@
 										<rightExpr>
 											<Literal>
 												<type>	int	</type>
-												<value>	22	</value>
+												<value>	96	</value>
 											</Literal>
 										</rightExpr>
 
@@ -479,7 +479,7 @@
 													<rightExpr>
 														<Literal>
 															<type>	int	</type>
-															<value>	9	</value>
+															<value>	33	</value>
 														</Literal>
 													</rightExpr>
 
@@ -531,7 +531,7 @@
 													<rightExpr>
 														<Literal>
 															<type>	int	</type>
-															<value>	15	</value>
+															<value>	64	</value>
 														</Literal>
 													</rightExpr>
 
@@ -597,7 +597,7 @@
 																										<rightExpr>
 																											<Literal>
 																												<type>	int	</type>
-																												<value>	31	</value>
+																												<value>	129	</value>
 																											</Literal>
 																										</rightExpr>
 
@@ -671,7 +671,7 @@
 																																<rightExpr>
 																																	<Literal>
 																																		<type>	int	</type>
-																																		<value>	31	</value>
+																																		<value>	129	</value>
 																																	</Literal>
 																																</rightExpr>
 
@@ -725,7 +725,7 @@
 																																		<rightExpr>
 																																			<Literal>
 																																				<type>	int	</type>
-																																				<value>	31	</value>
+																																				<value>	129	</value>
 																																			</Literal>
 																																		</rightExpr>
 
@@ -791,7 +791,7 @@
 																														<rightExpr>
 																															<Literal>
 																																<type>	int	</type>
-																																<value>	31	</value>
+																																<value>	129	</value>
 																															</Literal>
 																														</rightExpr>
 
@@ -866,7 +866,7 @@
 																																<rightExpr>
 																																	<Literal>
 																																		<type>	int	</type>
-																																		<value>	31	</value>
+																																		<value>	129	</value>
 																																	</Literal>
 																																</rightExpr>
 
@@ -931,7 +931,7 @@
 																																<rightExpr>
 																																	<Literal>
 																																		<type>	int	</type>
-																																		<value>	31	</value>
+																																		<value>	129	</value>
 																																	</Literal>
 																																</rightExpr>
 
@@ -986,7 +986,7 @@
 																														<rightExpr>
 																															<Literal>
 																																<type>	int	</type>
-																																<value>	31	</value>
+																																<value>	129	</value>
 																															</Literal>
 																														</rightExpr>
 
@@ -1162,7 +1162,7 @@
 																				<rightExpr>
 																					<Literal>
 																						<type>	int	</type>
-																						<value>	31	</value>
+																						<value>	129	</value>
 																					</Literal>
 																				</rightExpr>
 

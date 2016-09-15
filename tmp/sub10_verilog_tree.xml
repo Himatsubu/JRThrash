@@ -18,7 +18,7 @@
 			<init>
 				<NewArray>
 					<type>	float	</type>
-					<elements>	1024	</elements>				
+					<elements>	16900	</elements>				
 				</NewArray>
 			</init>
 		</VeriableDecl>
@@ -36,7 +36,7 @@
 			<init>
 				<NewArray>
 					<type>	float	</type>
-					<elements>	1024	</elements>				
+					<elements>	16900	</elements>				
 				</NewArray>
 			</init>
 		</VeriableDecl>
@@ -160,8 +160,8 @@
 		</VeriableDecl>
 
 		<VeriableDecl>
-			<name>	copy0_j	</name>
-			<type>	int	</type>
+			<name>	q	</name>
+			<type>	float	</type>
 			<variableID>	9	</variableID>
 			<parentName>	run	</parentName>
 			<defType>	method	</defType>
@@ -174,7 +174,7 @@
 		</VeriableDecl>
 
 		<VeriableDecl>
-			<name>	copy1_j	</name>
+			<name>	copy0_j	</name>
 			<type>	int	</type>
 			<variableID>	10	</variableID>
 			<parentName>	run	</parentName>
@@ -188,7 +188,7 @@
 		</VeriableDecl>
 
 		<VeriableDecl>
-			<name>	copy2_j	</name>
+			<name>	copy1_j	</name>
 			<type>	int	</type>
 			<variableID>	11	</variableID>
 			<parentName>	run	</parentName>
@@ -202,7 +202,7 @@
 		</VeriableDecl>
 
 		<VeriableDecl>
-			<name>	copy3_j	</name>
+			<name>	copy2_j	</name>
 			<type>	int	</type>
 			<variableID>	12	</variableID>
 			<parentName>	run	</parentName>
@@ -216,7 +216,7 @@
 		</VeriableDecl>
 
 		<VeriableDecl>
-			<name>	copy4_j	</name>
+			<name>	copy3_j	</name>
 			<type>	int	</type>
 			<variableID>	13	</variableID>
 			<parentName>	run	</parentName>
@@ -230,7 +230,7 @@
 		</VeriableDecl>
 
 		<VeriableDecl>
-			<name>	copy5_j	</name>
+			<name>	copy4_j	</name>
 			<type>	int	</type>
 			<variableID>	14	</variableID>
 			<parentName>	run	</parentName>
@@ -244,7 +244,7 @@
 		</VeriableDecl>
 
 		<VeriableDecl>
-			<name>	copy6_j	</name>
+			<name>	copy5_j	</name>
 			<type>	int	</type>
 			<variableID>	15	</variableID>
 			<parentName>	run	</parentName>
@@ -258,9 +258,23 @@
 		</VeriableDecl>
 
 		<VeriableDecl>
-			<name>	copy7_j	</name>
+			<name>	copy6_j	</name>
 			<type>	int	</type>
 			<variableID>	16	</variableID>
+			<parentName>	run	</parentName>
+			<defType>	method	</defType>
+			<isArray>	false	</isArray>
+			<isPrimitive>	true	</isPrimitive>
+			<isFinal>	false	</isFinal>
+			<dimension>	0	</dimension>
+			<init>
+			</init>
+		</VeriableDecl>
+
+		<VeriableDecl>
+			<name>	copy7_j	</name>
+			<type>	int	</type>
+			<variableID>	17	</variableID>
 			<parentName>	run	</parentName>
 			<defType>	method	</defType>
 			<isArray>	false	</isArray>
@@ -297,6 +311,7 @@
 						<VeriableDecl>			<name>	dt	</name>		<variableID>	6	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 						<VeriableDecl>			<name>	dx	</name>		<variableID>	7	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 						<VeriableDecl>			<name>	dy	</name>		<variableID>	8	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+						<VeriableDecl>			<name>	q	</name>		<variableID>	9	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 					</VariableStack>
 
 					<statements>
@@ -307,6 +322,7 @@
 						<VeriableDecl>			<name>	dt	</name>		<variableID>	6	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 						<VeriableDecl>			<name>	dx	</name>		<variableID>	7	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 						<VeriableDecl>			<name>	dy	</name>		<variableID>	8	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+						<VeriableDecl>			<name>	q	</name>		<variableID>	9	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 					</statements>
 
 				</StatAssemblage>
@@ -326,6 +342,7 @@
 								<VeriableDecl>			<name>	dt	</name>		<variableID>	6	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 								<VeriableDecl>			<name>	dx	</name>		<variableID>	7	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 								<VeriableDecl>			<name>	dy	</name>		<variableID>	8	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	q	</name>		<variableID>	9	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 							</VariableStack>
 
 							<statements>
@@ -334,7 +351,7 @@
 										<rightExpr>
 											<Literal>
 												<type>	int	</type>
-												<value>	16	</value>
+												<value>	65	</value>
 											</Literal>
 										</rightExpr>
 
@@ -369,6 +386,7 @@
 								<VeriableDecl>			<name>	dt	</name>		<variableID>	6	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 								<VeriableDecl>			<name>	dx	</name>		<variableID>	7	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 								<VeriableDecl>			<name>	dy	</name>		<variableID>	8	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	q	</name>		<variableID>	9	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 							</VariableStack>
 
 							<statements>
@@ -385,7 +403,7 @@
 										<rightExpr>
 											<Literal>
 												<type>	int	</type>
-												<value>	22	</value>
+												<value>	96	</value>
 											</Literal>
 										</rightExpr>
 
@@ -413,6 +431,7 @@
 								<VeriableDecl>			<name>	dt	</name>		<variableID>	6	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 								<VeriableDecl>			<name>	dx	</name>		<variableID>	7	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 								<VeriableDecl>			<name>	dy	</name>		<variableID>	8	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	q	</name>		<variableID>	9	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 							</VariableStack>
 
 							<statements>
@@ -451,6 +470,7 @@
 											<VeriableDecl>			<name>	dt	</name>		<variableID>	6	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 											<VeriableDecl>			<name>	dx	</name>		<variableID>	7	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 											<VeriableDecl>			<name>	dy	</name>		<variableID>	8	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+											<VeriableDecl>			<name>	q	</name>		<variableID>	9	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 										</VariableStack>
 
 										<statements>
@@ -459,7 +479,7 @@
 													<rightExpr>
 														<Literal>
 															<type>	int	</type>
-															<value>	16	</value>
+															<value>	65	</value>
 														</Literal>
 													</rightExpr>
 
@@ -494,6 +514,7 @@
 											<VeriableDecl>			<name>	dt	</name>		<variableID>	6	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 											<VeriableDecl>			<name>	dx	</name>		<variableID>	7	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 											<VeriableDecl>			<name>	dy	</name>		<variableID>	8	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+											<VeriableDecl>			<name>	q	</name>		<variableID>	9	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 										</VariableStack>
 
 										<statements>
@@ -510,7 +531,7 @@
 													<rightExpr>
 														<Literal>
 															<type>	int	</type>
-															<value>	22	</value>
+															<value>	96	</value>
 														</Literal>
 													</rightExpr>
 
@@ -540,6 +561,7 @@
 												<VeriableDecl>			<name>	dt	</name>		<variableID>	6	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 												<VeriableDecl>			<name>	dx	</name>		<variableID>	7	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 												<VeriableDecl>			<name>	dy	</name>		<variableID>	8	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+												<VeriableDecl>			<name>	q	</name>		<variableID>	9	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 											</VariableStack>
 
 											<statements>
@@ -575,7 +597,7 @@
 																										<rightExpr>
 																											<Literal>
 																												<type>	int	</type>
-																												<value>	31	</value>
+																												<value>	129	</value>
 																											</Literal>
 																										</rightExpr>
 
@@ -649,7 +671,7 @@
 																																<rightExpr>
 																																	<Literal>
 																																		<type>	int	</type>
-																																		<value>	31	</value>
+																																		<value>	129	</value>
 																																	</Literal>
 																																</rightExpr>
 
@@ -703,7 +725,7 @@
 																																		<rightExpr>
 																																			<Literal>
 																																				<type>	int	</type>
-																																				<value>	31	</value>
+																																				<value>	129	</value>
 																																			</Literal>
 																																		</rightExpr>
 
@@ -769,7 +791,7 @@
 																														<rightExpr>
 																															<Literal>
 																																<type>	int	</type>
-																																<value>	31	</value>
+																																<value>	129	</value>
 																															</Literal>
 																														</rightExpr>
 
@@ -844,7 +866,7 @@
 																																<rightExpr>
 																																	<Literal>
 																																		<type>	int	</type>
-																																		<value>	31	</value>
+																																		<value>	129	</value>
 																																	</Literal>
 																																</rightExpr>
 
@@ -909,7 +931,7 @@
 																																<rightExpr>
 																																	<Literal>
 																																		<type>	int	</type>
-																																		<value>	31	</value>
+																																		<value>	129	</value>
 																																	</Literal>
 																																</rightExpr>
 
@@ -964,7 +986,7 @@
 																														<rightExpr>
 																															<Literal>
 																																<type>	int	</type>
-																																<value>	31	</value>
+																																<value>	129	</value>
 																															</Literal>
 																														</rightExpr>
 
@@ -1140,7 +1162,7 @@
 																				<rightExpr>
 																					<Literal>
 																						<type>	int	</type>
-																						<value>	31	</value>
+																						<value>	129	</value>
 																					</Literal>
 																				</rightExpr>
 

@@ -27,7 +27,7 @@ public class c1{
 		dt = 0.0005f;
 		r1=dt/(dx*dx);
 		r2=dt/(dy*dy);
-		nlast=1;
+		nlast=2;
 		
 //	熱源項の定義と初期条件
 	for (k = 1; k <= my; k++)
