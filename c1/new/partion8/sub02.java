@@ -16,11 +16,10 @@ public class sub02 extends Thread{
 		r2=dt/(dy*dy);
 
 		for(j=2;j<=64;j++){
-			for(k=65;k<=96;k++){
+			for(k=2;k<=33;k++){
 			//q=100f*dx*(j-1)*dy*(k-1);
 			result[j*129+k]= u[j*129+k]+r1*(u[(j+1)*129+k]-2.0f*u[j*129+k]+u[(j-1)*129+k])
-			+r2*(u[j*129+k+1]-2.0f*u[j*129+k]+u[j*129+k-1])+dt*100f*dx*(j-1)*dy*(k-1);		
-			
+			+r2*(u[j*129+k+1]-2.0f*u[j*129+k]+u[j*129+k-1])+dt*100f*dx*(j-1)*dy*(k+63-1);			
 			}
 		}
 /*

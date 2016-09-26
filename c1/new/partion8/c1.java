@@ -53,15 +53,15 @@ public class c1{
 /*		
 		for(k=1;k<=65;k++){
 			for(j=1;j<=33;j++)  {sub00.u[j*129+k]=u[j*129+k];}
-			for(j=32;j<=65;j++) {sub01.u[j*129+k]=u[j*129+k];}
-			for(j=64;j<=97;j++) {sub02.u[j*129+k]=u[j*129+k];}
-			for(j=96;j<=129;j++){sub03.u[j*129+k]=u[j*129+k];}
+			for(j=32;j<=65;j++) {sub01.u[(j-31)*129+k]=u[j*129+k];}
+			for(j=64;j<=97;j++) {sub02.u[(j-63)*129+k]=u[j*129+k];}
+			for(j=96;j<=129;j++){sub03.u[(j-95)*129+k]=u[j*129+k];}
 		}
 		for(k=64;k<=129;k++){
 			for(j=1;j<=33;j++)  {sub04.u[129*j+k]=u[j*129+k];}
-			for(j=32;j<=65;j++) {sub05.u[129*j+k]=u[j*129+k];}
-			for(j=64;j<=97;j++) {sub06.u[129*j+k]=u[j*129+k];}
-			for(j=96;j<=129;j++){sub07.u[129*j+k]=u[j*129+k];}	
+			for(j=32;j<=65;j++) {sub05.u[129*(j-31)+k]=u[j*129+k];}
+			for(j=64;j<=97;j++) {sub06.u[129*(j-63)+k]=u[j*129+k];}
+			for(j=96;j<=129;j++){sub07.u[129*(j-95)+k]=u[j*129+k];}	
 		}
 */
 
@@ -363,15 +363,15 @@ for(k=64;k<=129;k++){
 /*
 		for(k=2;k<=64;k++){
 			for(j=2;j<=32;j++)  {u[j*129+k]=sub00.result[j*129+k];}
-			for(j=33;j<=64;j++) {u[j*129+k]=sub01.result[j*129+k];}
-			for(j=65;j<=96;j++) {u[j*129+k]=sub02.result[j*129+k];}
-			for(j=97;j<=128;j++){u[j*129+k]=sub03.result[j*129+k];}
+			for(j=33;j<=64;j++) {u[j*129+k]=sub01.result[(j-31)*129+k];}
+			for(j=65;j<=96;j++) {u[j*129+k]=sub02.result[(j-63)*129+k];}
+			for(j=97;j<=128;j++){u[j*129+k]=sub03.result[(j-95)*129+k];}
 		}		
 		for(k=65;k<=128;k++){
 			for(j=2;j<=32;j++)  {u[j*129+k]=sub04.result[j*129+k];}
-			for(j=33;j<=64;j++) {u[j*129+k]=sub05.result[j*129+k];}
-			for(j=65;j<=96;j++) {u[j*129+k]=sub06.result[j*129+k];}
-			for(j=97;j<=128;j++){u[j*129+k]=sub07.result[j*129+k];}				
+			for(j=33;j<=64;j++) {u[j*129+k]=sub05.result[(j-31)*129+k];}
+			for(j=65;j<=96;j++) {u[j*129+k]=sub06.result[(j-63)*129+k];}
+			for(j=97;j<=128;j++){u[j*129+k]=sub07.result[(j-95)*129+k];}				
 		}
 */		
 for(k=2;k<=64;k++){
