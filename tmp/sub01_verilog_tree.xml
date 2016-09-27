@@ -18,7 +18,7 @@
 			<init>
 				<NewArray>
 					<type>	float	</type>
-					<elements>	16900	</elements>				
+					<elements>	4515	</elements>				
 				</NewArray>
 			</init>
 		</VeriableDecl>
@@ -36,7 +36,7 @@
 			<init>
 				<NewArray>
 					<type>	float	</type>
-					<elements>	16900	</elements>				
+					<elements>	4515	</elements>				
 				</NewArray>
 			</init>
 		</VeriableDecl>
@@ -174,7 +174,7 @@
 		</VeriableDecl>
 
 		<VeriableDecl>
-			<name>	copy0_k	</name>
+			<name>	copy0_j	</name>
 			<type>	int	</type>
 			<variableID>	10	</variableID>
 			<parentName>	run	</parentName>
@@ -188,7 +188,7 @@
 		</VeriableDecl>
 
 		<VeriableDecl>
-			<name>	copy1_k	</name>
+			<name>	copy1_j	</name>
 			<type>	int	</type>
 			<variableID>	11	</variableID>
 			<parentName>	run	</parentName>
@@ -202,7 +202,7 @@
 		</VeriableDecl>
 
 		<VeriableDecl>
-			<name>	copy2_k	</name>
+			<name>	copy2_j	</name>
 			<type>	int	</type>
 			<variableID>	12	</variableID>
 			<parentName>	run	</parentName>
@@ -216,7 +216,7 @@
 		</VeriableDecl>
 
 		<VeriableDecl>
-			<name>	copy3_k	</name>
+			<name>	copy3_j	</name>
 			<type>	int	</type>
 			<variableID>	13	</variableID>
 			<parentName>	run	</parentName>
@@ -230,7 +230,7 @@
 		</VeriableDecl>
 
 		<VeriableDecl>
-			<name>	copy4_k	</name>
+			<name>	copy4_j	</name>
 			<type>	int	</type>
 			<variableID>	14	</variableID>
 			<parentName>	run	</parentName>
@@ -244,7 +244,7 @@
 		</VeriableDecl>
 
 		<VeriableDecl>
-			<name>	copy5_k	</name>
+			<name>	copy5_j	</name>
 			<type>	int	</type>
 			<variableID>	15	</variableID>
 			<parentName>	run	</parentName>
@@ -258,7 +258,7 @@
 		</VeriableDecl>
 
 		<VeriableDecl>
-			<name>	copy6_k	</name>
+			<name>	copy6_j	</name>
 			<type>	int	</type>
 			<variableID>	16	</variableID>
 			<parentName>	run	</parentName>
@@ -272,7 +272,7 @@
 		</VeriableDecl>
 
 		<VeriableDecl>
-			<name>	copy7_k	</name>
+			<name>	copy7_j	</name>
 			<type>	int	</type>
 			<variableID>	17	</variableID>
 			<parentName>	run	</parentName>
@@ -357,8 +357,8 @@
 
 										<dest>
 											<Ident>
-												<variableID>	3	</variableID>
-												<idName>	j	</idName>
+												<variableID>	2	</variableID>
+												<idName>	k	</idName>
 											</Ident>
 										</dest>
 
@@ -395,8 +395,8 @@
 										<binaryOp>	'LE'	</binaryOp>
 										<leftExpr>
 											<Ident>
-												<variableID>	3	</variableID>
-												<idName>	j	</idName>
+												<variableID>	2	</variableID>
+												<idName>	k	</idName>
 											</Ident>
 										</leftExpr>
 
@@ -439,8 +439,8 @@
 									<Unary>
 									<unaryOP>	_++</unaryOP>
 										<Ident>
-											<variableID>	3	</variableID>
-											<idName>	j	</idName>
+											<variableID>	2	</variableID>
+											<idName>	k	</idName>
 										</Ident>
 									</Unary>
 
@@ -477,16 +477,30 @@
 											<ExprStatement>
 												<Assign>
 													<rightExpr>
-														<Literal>
-															<type>	int	</type>
-															<value>	33	</value>
-														</Literal>
+														<Binary>
+															<binaryOp>	'-'	</binaryOp>
+															<leftExpr>
+																<Literal>
+																	<type>	int	</type>
+																	<value>	33	</value>
+																</Literal>
+															</leftExpr>
+
+															<rightExpr>
+																<Literal>
+																	<type>	int	</type>
+																	<value>	31	</value>
+																</Literal>
+															</rightExpr>
+
+														</Binary>
+
 													</rightExpr>
 
 													<dest>
 														<Ident>
-															<variableID>	2	</variableID>
-															<idName>	k	</idName>
+															<variableID>	3	</variableID>
+															<idName>	j	</idName>
 														</Ident>
 													</dest>
 
@@ -523,16 +537,30 @@
 													<binaryOp>	'LE'	</binaryOp>
 													<leftExpr>
 														<Ident>
-															<variableID>	2	</variableID>
-															<idName>	k	</idName>
+															<variableID>	3	</variableID>
+															<idName>	j	</idName>
 														</Ident>
 													</leftExpr>
 
 													<rightExpr>
-														<Literal>
-															<type>	int	</type>
-															<value>	64	</value>
-														</Literal>
+														<Binary>
+															<binaryOp>	'-'	</binaryOp>
+															<leftExpr>
+																<Literal>
+																	<type>	int	</type>
+																	<value>	64	</value>
+																</Literal>
+															</leftExpr>
+
+															<rightExpr>
+																<Literal>
+																	<type>	int	</type>
+																	<value>	31	</value>
+																</Literal>
+															</rightExpr>
+
+														</Binary>
+
 													</rightExpr>
 
 												</Binary>
@@ -1080,10 +1108,24 @@
 																							<Binary>
 																								<binaryOp>	'-'	</binaryOp>
 																								<leftExpr>
-																									<Ident>
-																										<variableID>	3	</variableID>
-																										<idName>	j	</idName>
-																									</Ident>
+																									<Binary>
+																										<binaryOp>	'+'	</binaryOp>
+																										<leftExpr>
+																											<Ident>
+																												<variableID>	3	</variableID>
+																												<idName>	j	</idName>
+																											</Ident>
+																										</leftExpr>
+
+																										<rightExpr>
+																											<Literal>
+																												<type>	int	</type>
+																												<value>	31	</value>
+																											</Literal>
+																										</rightExpr>
+
+																									</Binary>
+
 																								</leftExpr>
 
 																								<rightExpr>

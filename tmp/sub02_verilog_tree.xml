@@ -18,7 +18,7 @@
 			<init>
 				<NewArray>
 					<type>	float	</type>
-					<elements>	16900	</elements>				
+					<elements>	4515	</elements>				
 				</NewArray>
 			</init>
 		</VeriableDecl>
@@ -36,7 +36,7 @@
 			<init>
 				<NewArray>
 					<type>	float	</type>
-					<elements>	16900	</elements>				
+					<elements>	4515	</elements>				
 				</NewArray>
 			</init>
 		</VeriableDecl>
@@ -173,118 +173,6 @@
 			</init>
 		</VeriableDecl>
 
-		<VeriableDecl>
-			<name>	copy0_k	</name>
-			<type>	int	</type>
-			<variableID>	10	</variableID>
-			<parentName>	run	</parentName>
-			<defType>	method	</defType>
-			<isArray>	false	</isArray>
-			<isPrimitive>	true	</isPrimitive>
-			<isFinal>	false	</isFinal>
-			<dimension>	0	</dimension>
-			<init>
-			</init>
-		</VeriableDecl>
-
-		<VeriableDecl>
-			<name>	copy1_k	</name>
-			<type>	int	</type>
-			<variableID>	11	</variableID>
-			<parentName>	run	</parentName>
-			<defType>	method	</defType>
-			<isArray>	false	</isArray>
-			<isPrimitive>	true	</isPrimitive>
-			<isFinal>	false	</isFinal>
-			<dimension>	0	</dimension>
-			<init>
-			</init>
-		</VeriableDecl>
-
-		<VeriableDecl>
-			<name>	copy2_k	</name>
-			<type>	int	</type>
-			<variableID>	12	</variableID>
-			<parentName>	run	</parentName>
-			<defType>	method	</defType>
-			<isArray>	false	</isArray>
-			<isPrimitive>	true	</isPrimitive>
-			<isFinal>	false	</isFinal>
-			<dimension>	0	</dimension>
-			<init>
-			</init>
-		</VeriableDecl>
-
-		<VeriableDecl>
-			<name>	copy3_k	</name>
-			<type>	int	</type>
-			<variableID>	13	</variableID>
-			<parentName>	run	</parentName>
-			<defType>	method	</defType>
-			<isArray>	false	</isArray>
-			<isPrimitive>	true	</isPrimitive>
-			<isFinal>	false	</isFinal>
-			<dimension>	0	</dimension>
-			<init>
-			</init>
-		</VeriableDecl>
-
-		<VeriableDecl>
-			<name>	copy4_k	</name>
-			<type>	int	</type>
-			<variableID>	14	</variableID>
-			<parentName>	run	</parentName>
-			<defType>	method	</defType>
-			<isArray>	false	</isArray>
-			<isPrimitive>	true	</isPrimitive>
-			<isFinal>	false	</isFinal>
-			<dimension>	0	</dimension>
-			<init>
-			</init>
-		</VeriableDecl>
-
-		<VeriableDecl>
-			<name>	copy5_k	</name>
-			<type>	int	</type>
-			<variableID>	15	</variableID>
-			<parentName>	run	</parentName>
-			<defType>	method	</defType>
-			<isArray>	false	</isArray>
-			<isPrimitive>	true	</isPrimitive>
-			<isFinal>	false	</isFinal>
-			<dimension>	0	</dimension>
-			<init>
-			</init>
-		</VeriableDecl>
-
-		<VeriableDecl>
-			<name>	copy6_k	</name>
-			<type>	int	</type>
-			<variableID>	16	</variableID>
-			<parentName>	run	</parentName>
-			<defType>	method	</defType>
-			<isArray>	false	</isArray>
-			<isPrimitive>	true	</isPrimitive>
-			<isFinal>	false	</isFinal>
-			<dimension>	0	</dimension>
-			<init>
-			</init>
-		</VeriableDecl>
-
-		<VeriableDecl>
-			<name>	copy7_k	</name>
-			<type>	int	</type>
-			<variableID>	17	</variableID>
-			<parentName>	run	</parentName>
-			<defType>	method	</defType>
-			<isArray>	false	</isArray>
-			<isPrimitive>	true	</isPrimitive>
-			<isFinal>	false	</isFinal>
-			<dimension>	0	</dimension>
-			<init>
-			</init>
-		</VeriableDecl>
-
 	</AllVariables>
 
 	<METHOD>	<Phase>  1  </Phase>
@@ -357,8 +245,8 @@
 
 										<dest>
 											<Ident>
-												<variableID>	3	</variableID>
-												<idName>	j	</idName>
+												<variableID>	2	</variableID>
+												<idName>	k	</idName>
 											</Ident>
 										</dest>
 
@@ -395,8 +283,8 @@
 										<binaryOp>	'LE'	</binaryOp>
 										<leftExpr>
 											<Ident>
-												<variableID>	3	</variableID>
-												<idName>	j	</idName>
+												<variableID>	2	</variableID>
+												<idName>	k	</idName>
 											</Ident>
 										</leftExpr>
 
@@ -439,8 +327,8 @@
 									<Unary>
 									<unaryOP>	_++</unaryOP>
 										<Ident>
-											<variableID>	3	</variableID>
-											<idName>	j	</idName>
+											<variableID>	2	</variableID>
+											<idName>	k	</idName>
 										</Ident>
 									</Unary>
 
@@ -458,8 +346,8 @@
 							<ForLoop>	<Phase>  8  </Phase>
 								<forInit>
 									<StatAssemblage>	<Phase>  9  </Phase>
-										<stageNum>  2  </stageNum>
-										<totalStepNum>  2  </totalStepNum>
+										<stageNum>  1  </stageNum>
+										<totalStepNum>  1  </totalStepNum>
 										<VariableStack>
 											<VeriableDecl>			<name>	u	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
 											<VeriableDecl>			<name>	result	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
@@ -477,16 +365,30 @@
 											<ExprStatement>
 												<Assign>
 													<rightExpr>
-														<Literal>
-															<type>	int	</type>
-															<value>	65	</value>
-														</Literal>
+														<Binary>
+															<binaryOp>	'-'	</binaryOp>
+															<leftExpr>
+																<Literal>
+																	<type>	int	</type>
+																	<value>	65	</value>
+																</Literal>
+															</leftExpr>
+
+															<rightExpr>
+																<Literal>
+																	<type>	int	</type>
+																	<value>	63	</value>
+																</Literal>
+															</rightExpr>
+
+														</Binary>
+
 													</rightExpr>
 
 													<dest>
 														<Ident>
-															<variableID>	2	</variableID>
-															<idName>	k	</idName>
+															<variableID>	3	</variableID>
+															<idName>	j	</idName>
 														</Ident>
 													</dest>
 
@@ -523,16 +425,30 @@
 													<binaryOp>	'LE'	</binaryOp>
 													<leftExpr>
 														<Ident>
-															<variableID>	2	</variableID>
-															<idName>	k	</idName>
+															<variableID>	3	</variableID>
+															<idName>	j	</idName>
 														</Ident>
 													</leftExpr>
 
 													<rightExpr>
-														<Literal>
-															<type>	int	</type>
-															<value>	96	</value>
-														</Literal>
+														<Binary>
+															<binaryOp>	'-'	</binaryOp>
+															<leftExpr>
+																<Literal>
+																	<type>	int	</type>
+																	<value>	96	</value>
+																</Literal>
+															</leftExpr>
+
+															<rightExpr>
+																<Literal>
+																	<type>	int	</type>
+																	<value>	63	</value>
+																</Literal>
+															</rightExpr>
+
+														</Binary>
+
 													</rightExpr>
 
 												</Binary>
@@ -550,7 +466,7 @@
 
 										<StatAssemblage>	<Phase>  13  </Phase>
 											<stageNum>  1  </stageNum>
-											<totalStepNum>  68  </totalStepNum>
+											<totalStepNum>  40  </totalStepNum>
 											<VariableStack>
 												<VeriableDecl>			<name>	u	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
 												<VeriableDecl>			<name>	result	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
@@ -1080,10 +996,24 @@
 																							<Binary>
 																								<binaryOp>	'-'	</binaryOp>
 																								<leftExpr>
-																									<Ident>
-																										<variableID>	3	</variableID>
-																										<idName>	j	</idName>
-																									</Ident>
+																									<Binary>
+																										<binaryOp>	'+'	</binaryOp>
+																										<leftExpr>
+																											<Ident>
+																												<variableID>	3	</variableID>
+																												<idName>	j	</idName>
+																											</Ident>
+																										</leftExpr>
+
+																										<rightExpr>
+																											<Literal>
+																												<type>	int	</type>
+																												<value>	63	</value>
+																											</Literal>
+																										</rightExpr>
+
+																									</Binary>
+
 																								</leftExpr>
 
 																								<rightExpr>

@@ -1,9 +1,9 @@
 import net.njlab.sample.annotation.*;
 
 public class sub00 extends Thread{
-        final float[] u      = new float[4161];
+        final float[] u      = new float[4515];
 	//final float[] q      = new float[484];
-	final float[] result = new float[4161];
+	final float[] result = new float[4515];
 
         @JRThrashUnroll(unrollNum=5, loopVariableName="j",unrollType=JRThrashUnroll.copyLoopVar)
         public void run(){

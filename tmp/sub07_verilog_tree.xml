@@ -18,7 +18,7 @@
 			<init>
 				<NewArray>
 					<type>	float	</type>
-					<elements>	16900	</elements>				
+					<elements>	4515	</elements>				
 				</NewArray>
 			</init>
 		</VeriableDecl>
@@ -36,7 +36,7 @@
 			<init>
 				<NewArray>
 					<type>	float	</type>
-					<elements>	16900	</elements>				
+					<elements>	4515	</elements>				
 				</NewArray>
 			</init>
 		</VeriableDecl>
@@ -457,10 +457,24 @@
 											<ExprStatement>
 												<Assign>
 													<rightExpr>
-														<Literal>
-															<type>	int	</type>
-															<value>	97	</value>
-														</Literal>
+														<Binary>
+															<binaryOp>	'-'	</binaryOp>
+															<leftExpr>
+																<Literal>
+																	<type>	int	</type>
+																	<value>	97	</value>
+																</Literal>
+															</leftExpr>
+
+															<rightExpr>
+																<Literal>
+																	<type>	int	</type>
+																	<value>	95	</value>
+																</Literal>
+															</rightExpr>
+
+														</Binary>
+
 													</rightExpr>
 
 													<dest>
@@ -508,10 +522,24 @@
 													</leftExpr>
 
 													<rightExpr>
-														<Literal>
-															<type>	int	</type>
-															<value>	128	</value>
-														</Literal>
+														<Binary>
+															<binaryOp>	'-'	</binaryOp>
+															<leftExpr>
+																<Literal>
+																	<type>	int	</type>
+																	<value>	128	</value>
+																</Literal>
+															</leftExpr>
+
+															<rightExpr>
+																<Literal>
+																	<type>	int	</type>
+																	<value>	95	</value>
+																</Literal>
+															</rightExpr>
+
+														</Binary>
+
 													</rightExpr>
 
 												</Binary>
@@ -1058,10 +1086,24 @@
 																							<Binary>
 																								<binaryOp>	'-'	</binaryOp>
 																								<leftExpr>
-																									<Ident>
-																										<variableID>	3	</variableID>
-																										<idName>	j	</idName>
-																									</Ident>
+																									<Binary>
+																										<binaryOp>	'+'	</binaryOp>
+																										<leftExpr>
+																											<Ident>
+																												<variableID>	3	</variableID>
+																												<idName>	j	</idName>
+																											</Ident>
+																										</leftExpr>
+
+																										<rightExpr>
+																											<Literal>
+																												<type>	int	</type>
+																												<value>	95	</value>
+																											</Literal>
+																										</rightExpr>
+
+																									</Binary>
+
 																								</leftExpr>
 
 																								<rightExpr>

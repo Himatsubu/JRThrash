@@ -1,9 +1,9 @@
 import net.njlab.sample.annotation.*;
 
 public class sub02 extends Thread{
-        final float[] u      = new float[4224];
+        final float[] u      = new float[4515];
 	//final float[] q     = new float[484];
-	final float[] result = new float[4224];
+	final float[] result = new float[4515];
 
         @JRThrashUnroll(unrollNum=5, loopVariableName="k",unrollType=JRThrashUnroll.copyLoopVar)
         public void run(){
@@ -15,11 +15,11 @@ public class sub02 extends Thread{
 		float dy = 0.05f;
 		float q;
 
-		for(j=2;j<=32;j++){
-			for(k=65;k<=96;k++){
+		for(k=2;k<=32;k++){
+			for(j=65-63;j<=96-63;j++){
 			//q=100f*dx*(j-1)*dy*(k-1);
 			result[j*129+k]= u[j*129+k]+r1*(u[(j+1)*129+k]-2.0f*u[j*129+k]+u[(j-1)*129+k])
-			+r2*(u[j*129+k+1]-2.0f*u[j*129+k]+u[j*129+k-1])+dt*100f*dx*(j-1)*dy*(k-1);		
+			+r2*(u[j*129+k+1]-2.0f*u[j*129+k]+u[j*129+k-1])+dt*100f*dx*(j+63-1)*dy*(k-1);		
 			
 			}
 		}
