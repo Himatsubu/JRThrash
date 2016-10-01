@@ -1,5 +1,5 @@
 /*
-TimeStamp:	2016/9/27		15:22
+TimeStamp:	2016/9/29		13:0
 */
 
 
@@ -229,23 +229,23 @@ module sub02(
 
 							case(r_sys_run_stage) 
 								2'h0: begin
-									if((r_sys_run_step==6'h18)) begin
-										r_ip_AddFloat_portA_0 <= r_sys_tmp4_float;
-
-									end
-									else
-									if((r_sys_run_step==6'h9)) begin
-										r_ip_AddFloat_portA_0 <= r_sys_tmp3_float;
-
-									end
-									else
 									if((r_sys_run_step==6'he) || (r_sys_run_step==6'h11) || (r_sys_run_step==6'h1d) || (r_sys_run_step==6'h22)) begin
 										r_ip_AddFloat_portA_0 <= w_sys_tmp20;
 
 									end
 									else
+									if((r_sys_run_step==6'h18)) begin
+										r_ip_AddFloat_portA_0 <= r_sys_tmp4_float;
+
+									end
+									else
 									if((r_sys_run_step==6'hc)) begin
 										r_ip_AddFloat_portA_0 <= r_sys_tmp1_float;
+
+									end
+									else
+									if((r_sys_run_step==6'h9)) begin
+										r_ip_AddFloat_portA_0 <= r_sys_tmp3_float;
 
 									end
 								end
@@ -273,6 +273,11 @@ module sub02(
 
 							case(r_sys_run_stage) 
 								2'h0: begin
+									if((r_sys_run_step==6'hc)) begin
+										r_ip_AddFloat_portB_0 <= { ~w_sys_tmp26[31], w_sys_tmp26[30:0] };
+
+									end
+									else
 									if((r_sys_run_step==6'h18)) begin
 										r_ip_AddFloat_portB_0 <= w_sys_tmp26;
 
@@ -288,18 +293,13 @@ module sub02(
 
 									end
 									else
-									if((r_sys_run_step==6'h11) || (r_sys_run_step==6'h22)) begin
-										r_ip_AddFloat_portB_0 <= r_sys_tmp6_float;
-
-									end
-									else
-									if((r_sys_run_step==6'hc)) begin
-										r_ip_AddFloat_portB_0 <= { ~w_sys_tmp26[31], w_sys_tmp26[30:0] };
-
-									end
-									else
 									if((r_sys_run_step==6'he)) begin
 										r_ip_AddFloat_portB_0 <= r_sys_tmp2_float;
+
+									end
+									else
+									if((r_sys_run_step==6'h11) || (r_sys_run_step==6'h22)) begin
+										r_ip_AddFloat_portB_0 <= r_sys_tmp6_float;
 
 									end
 								end
@@ -327,18 +327,8 @@ module sub02(
 
 							case(r_sys_run_stage) 
 								2'h0: begin
-									if((r_sys_run_step==6'h16)) begin
-										r_ip_MultFloat_multiplicand_0 <= r_run_r2_5;
-
-									end
-									else
 									if((r_sys_run_step==6'h5) || (r_sys_run_step==6'ha) || (r_sys_run_step==6'hf) || (r_sys_run_step==6'h14)) begin
 										r_ip_MultFloat_multiplicand_0 <= w_sys_tmp26;
-
-									end
-									else
-									if((r_sys_run_step==6'h0)) begin
-										r_ip_MultFloat_multiplicand_0 <= r_run_dt_6;
 
 									end
 									else
@@ -351,6 +341,16 @@ module sub02(
 										r_ip_MultFloat_multiplicand_0 <= w_sys_tmp34;
 
 									end
+									else
+									if((r_sys_run_step==6'h0)) begin
+										r_ip_MultFloat_multiplicand_0 <= r_run_dt_6;
+
+									end
+									else
+									if((r_sys_run_step==6'h16)) begin
+										r_ip_MultFloat_multiplicand_0 <= r_run_r2_5;
+
+									end
 								end
 
 							endcase
@@ -376,13 +376,13 @@ module sub02(
 
 							case(r_sys_run_stage) 
 								2'h0: begin
-									if((r_sys_run_step==6'h4) || (r_sys_run_step==6'h7)) begin
-										r_ip_MultFloat_multiplier_0 <= w_sys_tmp35;
+									if((r_sys_run_step==6'ha)) begin
+										r_ip_MultFloat_multiplier_0 <= r_sys_tmp0_float;
 
 									end
 									else
-									if((r_sys_run_step==6'h0)) begin
-										r_ip_MultFloat_multiplier_0 <= w_sys_tmp63;
+									if((r_sys_run_step==6'h13) || (r_sys_run_step==6'h16)) begin
+										r_ip_MultFloat_multiplier_0 <= w_sys_tmp20;
 
 									end
 									else
@@ -391,8 +391,13 @@ module sub02(
 
 									end
 									else
-									if((r_sys_run_step==6'h13) || (r_sys_run_step==6'h16)) begin
-										r_ip_MultFloat_multiplier_0 <= w_sys_tmp20;
+									if((r_sys_run_step==6'h0)) begin
+										r_ip_MultFloat_multiplier_0 <= w_sys_tmp63;
+
+									end
+									else
+									if((r_sys_run_step==6'h4) || (r_sys_run_step==6'h7)) begin
+										r_ip_MultFloat_multiplier_0 <= w_sys_tmp35;
 
 									end
 									else
@@ -405,11 +410,6 @@ module sub02(
 										r_ip_MultFloat_multiplier_0 <= r_run_dy_8;
 
 									end
-									else
-									if((r_sys_run_step==6'ha)) begin
-										r_ip_MultFloat_multiplier_0 <= r_sys_tmp0_float;
-
-									end
 								end
 
 							endcase
@@ -435,13 +435,13 @@ module sub02(
 
 							case(r_sys_run_stage) 
 								2'h0: begin
-									if((r_sys_run_step==6'h0)) begin
-										r_ip_FixedToFloat_fixed_0 <= w_sys_tmp64;
+									if((r_sys_run_step==6'h1)) begin
+										r_ip_FixedToFloat_fixed_0 <= w_sys_tmp66;
 
 									end
 									else
-									if((r_sys_run_step==6'h1)) begin
-										r_ip_FixedToFloat_fixed_0 <= w_sys_tmp66;
+									if((r_sys_run_step==6'h0)) begin
+										r_ip_FixedToFloat_fixed_0 <= w_sys_tmp64;
 
 									end
 								end
@@ -831,13 +831,13 @@ module sub02(
 
 							case(r_sys_run_stage) 
 								2'h0: begin
-									if((6'h0<=r_sys_run_step && r_sys_run_step<=6'h26)) begin
-										r_sys_run_step <= w_sys_run_step_p1;
+									if((r_sys_run_step==6'h27)) begin
+										r_sys_run_step <= 6'h0;
 
 									end
 									else
-									if((r_sys_run_step==6'h27)) begin
-										r_sys_run_step <= 6'h0;
+									if((6'h0<=r_sys_run_step && r_sys_run_step<=6'h26)) begin
+										r_sys_run_step <= w_sys_run_step_p1;
 
 									end
 								end
@@ -903,6 +903,16 @@ module sub02(
 
 							case(r_sys_run_stage) 
 								2'h0: begin
+									if((r_sys_run_step==6'h0) || (r_sys_run_step==6'h2) || (r_sys_run_step==6'h5)) begin
+										r_fld_u_0_addr_1 <= $signed( w_sys_tmp17[12:0] );
+
+									end
+									else
+									if((r_sys_run_step==6'h3)) begin
+										r_fld_u_0_addr_1 <= $signed( w_sys_tmp39[12:0] );
+
+									end
+									else
 									if((r_sys_run_step==6'h4)) begin
 										r_fld_u_0_addr_1 <= $signed( w_sys_tmp45[12:0] );
 
@@ -915,16 +925,6 @@ module sub02(
 									else
 									if((r_sys_run_step==6'h6)) begin
 										r_fld_u_0_addr_1 <= $signed( w_sys_tmp55[12:0] );
-
-									end
-									else
-									if((r_sys_run_step==6'h3)) begin
-										r_fld_u_0_addr_1 <= $signed( w_sys_tmp39[12:0] );
-
-									end
-									else
-									if((r_sys_run_step==6'h0) || (r_sys_run_step==6'h2) || (r_sys_run_step==6'h5)) begin
-										r_fld_u_0_addr_1 <= $signed( w_sys_tmp17[12:0] );
 
 									end
 								end

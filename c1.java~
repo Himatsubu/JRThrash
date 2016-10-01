@@ -8,8 +8,8 @@ public class c1{
 	private static final float q[] = new float [16900];
 
         @JRThrashUnroll(unrollNum=10, loopVariableName="j",unrollType=JRThrashUnroll.copyLoopVar)
-	public float run(){
-//	public static void main(String[] args){
+//	public float run(){
+	public static void main(String[] args){
 		int k,j,n;
 		int mx,my;
 		float dt,dx,dy,r1,r2;
@@ -20,7 +20,7 @@ public class c1{
 		mx=129;
 		my=129;
 		dt=0.0005f;
-		nlast=1;
+		nlast=2;
 
 		dx = 1f/(mx-1);
 		dy = 1f/(my-1);
@@ -85,7 +85,7 @@ public class c1{
 		//System.out.println(uu[10*21+10]);
 
 	}
-	return uu[10*21+10];
+	//return uu[10*21+10];
 
 
 	}

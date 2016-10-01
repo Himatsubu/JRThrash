@@ -1,5 +1,5 @@
 /*
-TimeStamp:	2016/9/27		15:22
+TimeStamp:	2016/9/29		13:0
 */
 
 
@@ -284,38 +284,8 @@ module sub07(
 
 							case(r_sys_run_stage) 
 								2'h0: begin
-									if((r_sys_run_step==7'h10) || (r_sys_run_step==7'h27)) begin
-										r_ip_AddFloat_portA_0 <= r_sys_tmp3_float;
-
-									end
-									else
-									if((r_sys_run_step==7'h22) || (r_sys_run_step==7'h29) || (r_sys_run_step==7'h2f)) begin
-										r_ip_AddFloat_portA_0 <= r_sys_tmp12_float;
-
-									end
-									else
-									if((r_sys_run_step==7'h13)) begin
-										r_ip_AddFloat_portA_0 <= r_sys_tmp8_float;
-
-									end
-									else
-									if((r_sys_run_step==7'h1a) || (r_sys_run_step==7'h21) || (r_sys_run_step==7'h28)) begin
-										r_ip_AddFloat_portA_0 <= r_sys_tmp7_float;
-
-									end
-									else
-									if((r_sys_run_step==7'h19)) begin
-										r_ip_AddFloat_portA_0 <= r_sys_tmp11_float;
-
-									end
-									else
-									if((r_sys_run_step==7'h17) || (r_sys_run_step==7'h2e)) begin
-										r_ip_AddFloat_portA_0 <= r_sys_tmp9_float;
-
-									end
-									else
-									if((r_sys_run_step==7'h9) || (r_sys_run_step==7'h20)) begin
-										r_ip_AddFloat_portA_0 <= r_sys_tmp10_float;
+									if((r_sys_run_step==7'h1e) || (r_sys_run_step==7'h34)) begin
+										r_ip_AddFloat_portA_0 <= r_sys_tmp13_float;
 
 									end
 									else
@@ -329,8 +299,38 @@ module sub07(
 
 									end
 									else
-									if((r_sys_run_step==7'h1e) || (r_sys_run_step==7'h34)) begin
-										r_ip_AddFloat_portA_0 <= r_sys_tmp13_float;
+									if((r_sys_run_step==7'h9) || (r_sys_run_step==7'h20)) begin
+										r_ip_AddFloat_portA_0 <= r_sys_tmp10_float;
+
+									end
+									else
+									if((r_sys_run_step==7'h22) || (r_sys_run_step==7'h29) || (r_sys_run_step==7'h2f)) begin
+										r_ip_AddFloat_portA_0 <= r_sys_tmp12_float;
+
+									end
+									else
+									if((r_sys_run_step==7'h19)) begin
+										r_ip_AddFloat_portA_0 <= r_sys_tmp11_float;
+
+									end
+									else
+									if((r_sys_run_step==7'h17) || (r_sys_run_step==7'h2e)) begin
+										r_ip_AddFloat_portA_0 <= r_sys_tmp9_float;
+
+									end
+									else
+									if((r_sys_run_step==7'h1a) || (r_sys_run_step==7'h21) || (r_sys_run_step==7'h28)) begin
+										r_ip_AddFloat_portA_0 <= r_sys_tmp7_float;
+
+									end
+									else
+									if((r_sys_run_step==7'h10) || (r_sys_run_step==7'h27)) begin
+										r_ip_AddFloat_portA_0 <= r_sys_tmp3_float;
+
+									end
+									else
+									if((r_sys_run_step==7'h13)) begin
+										r_ip_AddFloat_portA_0 <= r_sys_tmp8_float;
 
 									end
 								end
@@ -358,23 +358,8 @@ module sub07(
 
 							case(r_sys_run_stage) 
 								2'h0: begin
-									if((r_sys_run_step==7'h34)) begin
-										r_ip_AddFloat_portB_0 <= w_sys_tmp30;
-
-									end
-									else
-									if((r_sys_run_step==7'h13)) begin
-										r_ip_AddFloat_portB_0 <= { ~w_sys_tmp30[31], w_sys_tmp30[30:0] };
-
-									end
-									else
-									if((r_sys_run_step==7'h2f) || (r_sys_run_step==7'h33)) begin
-										r_ip_AddFloat_portB_0 <= r_sys_tmp16_float;
-
-									end
-									else
-									if((r_sys_run_step==7'h17)) begin
-										r_ip_AddFloat_portB_0 <= { ~w_sys_tmp30[31], w_sys_tmp30[30:0] };
+									if((r_sys_run_step==7'he) || (r_sys_run_step==7'h18)) begin
+										r_ip_AddFloat_portB_0 <= r_sys_tmp13_float;
 
 									end
 									else
@@ -388,8 +373,13 @@ module sub07(
 
 									end
 									else
-									if((r_sys_run_step==7'hc)) begin
+									if((r_sys_run_step==7'h13)) begin
 										r_ip_AddFloat_portB_0 <= { ~w_sys_tmp30[31], w_sys_tmp30[30:0] };
+
+									end
+									else
+									if((r_sys_run_step==7'h23) || (r_sys_run_step==7'h2d)) begin
+										r_ip_AddFloat_portB_0 <= r_sys_tmp11_float;
 
 									end
 									else
@@ -408,7 +398,12 @@ module sub07(
 
 									end
 									else
-									if((r_sys_run_step==7'h9)) begin
+									if((r_sys_run_step==7'h34)) begin
+										r_ip_AddFloat_portB_0 <= w_sys_tmp30;
+
+									end
+									else
+									if((r_sys_run_step==7'h10)) begin
 										r_ip_AddFloat_portB_0 <= { ~w_sys_tmp30[31], w_sys_tmp30[30:0] };
 
 									end
@@ -418,28 +413,18 @@ module sub07(
 
 									end
 									else
-									if((r_sys_run_step==7'h1e)) begin
-										r_ip_AddFloat_portB_0 <= { ~w_sys_tmp30[31], w_sys_tmp30[30:0] };
-
-									end
-									else
-									if((r_sys_run_step==7'h10)) begin
-										r_ip_AddFloat_portB_0 <= { ~w_sys_tmp30[31], w_sys_tmp30[30:0] };
-
-									end
-									else
-									if((r_sys_run_step==7'h1a)) begin
-										r_ip_AddFloat_portB_0 <= { ~w_sys_tmp30[31], w_sys_tmp30[30:0] };
-
-									end
-									else
 									if((r_sys_run_step==7'h1c) || (r_sys_run_step==7'h26)) begin
 										r_ip_AddFloat_portB_0 <= r_sys_tmp8_float;
 
 									end
 									else
-									if((r_sys_run_step==7'h23) || (r_sys_run_step==7'h2d)) begin
-										r_ip_AddFloat_portB_0 <= r_sys_tmp11_float;
+									if((r_sys_run_step==7'h1e)) begin
+										r_ip_AddFloat_portB_0 <= { ~w_sys_tmp30[31], w_sys_tmp30[30:0] };
+
+									end
+									else
+									if((r_sys_run_step==7'h9)) begin
+										r_ip_AddFloat_portB_0 <= { ~w_sys_tmp30[31], w_sys_tmp30[30:0] };
 
 									end
 									else
@@ -453,13 +438,28 @@ module sub07(
 
 									end
 									else
+									if((r_sys_run_step==7'h17)) begin
+										r_ip_AddFloat_portB_0 <= { ~w_sys_tmp30[31], w_sys_tmp30[30:0] };
+
+									end
+									else
+									if((r_sys_run_step==7'h2f) || (r_sys_run_step==7'h33)) begin
+										r_ip_AddFloat_portB_0 <= r_sys_tmp16_float;
+
+									end
+									else
 									if((r_sys_run_step==7'h29) || (r_sys_run_step==7'h2c) || (r_sys_run_step==7'h38)) begin
 										r_ip_AddFloat_portB_0 <= r_sys_tmp17_float;
 
 									end
 									else
-									if((r_sys_run_step==7'he) || (r_sys_run_step==7'h18)) begin
-										r_ip_AddFloat_portB_0 <= r_sys_tmp13_float;
+									if((r_sys_run_step==7'h1a)) begin
+										r_ip_AddFloat_portB_0 <= { ~w_sys_tmp30[31], w_sys_tmp30[30:0] };
+
+									end
+									else
+									if((r_sys_run_step==7'hc)) begin
+										r_ip_AddFloat_portB_0 <= { ~w_sys_tmp30[31], w_sys_tmp30[30:0] };
 
 									end
 								end
@@ -487,41 +487,6 @@ module sub07(
 
 							case(r_sys_run_stage) 
 								2'h0: begin
-									if((r_sys_run_step==7'h1b) || (r_sys_run_step==7'h22) || (r_sys_run_step==7'h27)) begin
-										r_ip_MultFloat_multiplicand_0 <= r_sys_tmp16_float;
-
-									end
-									else
-									if((r_sys_run_step==7'h13) || (r_sys_run_step==7'h1a) || (r_sys_run_step==7'h21) || (r_sys_run_step==7'h28) || (r_sys_run_step==7'h2f)) begin
-										r_ip_MultFloat_multiplicand_0 <= r_run_r1_4;
-
-									end
-									else
-									if((r_sys_run_step==7'h29)) begin
-										r_ip_MultFloat_multiplicand_0 <= r_sys_tmp14_float;
-
-									end
-									else
-									if((r_sys_run_step==7'h6) || (r_sys_run_step==7'h8) || (r_sys_run_step==7'ha) || (r_sys_run_step==7'hc) || (r_sys_run_step==7'hf) || (r_sys_run_step==7'h11) || (r_sys_run_step==7'h14) || (r_sys_run_step==7'h18) || (r_sys_run_step==7'h1f) || (r_sys_run_step==7'h26)) begin
-										r_ip_MultFloat_multiplicand_0 <= r_sys_tmp18_float;
-
-									end
-									else
-									if((7'h0<=r_sys_run_step && r_sys_run_step<=7'h3) || (r_sys_run_step==7'h5)) begin
-										r_ip_MultFloat_multiplicand_0 <= r_run_dt_6;
-
-									end
-									else
-									if((r_sys_run_step==7'h9) || (r_sys_run_step==7'hd) || (r_sys_run_step==7'h10) || (r_sys_run_step==7'h16) || (r_sys_run_step==7'h1e)) begin
-										r_ip_MultFloat_multiplicand_0 <= r_sys_tmp17_float;
-
-									end
-									else
-									if((r_sys_run_step==7'h25)) begin
-										r_ip_MultFloat_multiplicand_0 <= r_sys_tmp0_float;
-
-									end
-									else
 									if((r_sys_run_step==7'h4) || (r_sys_run_step==7'h7) || (r_sys_run_step==7'hb) || (r_sys_run_step==7'he) || (r_sys_run_step==7'h12) || (r_sys_run_step==7'h15) || (r_sys_run_step==7'h19) || (r_sys_run_step==7'h1c) || (r_sys_run_step==7'h20) || (r_sys_run_step==7'h23)) begin
 										r_ip_MultFloat_multiplicand_0 <= w_sys_tmp31;
 
@@ -531,6 +496,41 @@ module sub07(
 										r_ip_MultFloat_multiplicand_0 <= r_run_r2_5;
 
 									end
+									else
+									if((r_sys_run_step==7'h29)) begin
+										r_ip_MultFloat_multiplicand_0 <= r_sys_tmp14_float;
+
+									end
+									else
+									if((r_sys_run_step==7'h13) || (r_sys_run_step==7'h1a) || (r_sys_run_step==7'h21) || (r_sys_run_step==7'h28) || (r_sys_run_step==7'h2f)) begin
+										r_ip_MultFloat_multiplicand_0 <= r_run_r1_4;
+
+									end
+									else
+									if((r_sys_run_step==7'h1b) || (r_sys_run_step==7'h22) || (r_sys_run_step==7'h27)) begin
+										r_ip_MultFloat_multiplicand_0 <= r_sys_tmp16_float;
+
+									end
+									else
+									if((r_sys_run_step==7'h9) || (r_sys_run_step==7'hd) || (r_sys_run_step==7'h10) || (r_sys_run_step==7'h16) || (r_sys_run_step==7'h1e)) begin
+										r_ip_MultFloat_multiplicand_0 <= r_sys_tmp17_float;
+
+									end
+									else
+									if((r_sys_run_step==7'h6) || (r_sys_run_step==7'h8) || (r_sys_run_step==7'ha) || (r_sys_run_step==7'hc) || (r_sys_run_step==7'hf) || (r_sys_run_step==7'h11) || (r_sys_run_step==7'h14) || (r_sys_run_step==7'h18) || (r_sys_run_step==7'h1f) || (r_sys_run_step==7'h26)) begin
+										r_ip_MultFloat_multiplicand_0 <= r_sys_tmp18_float;
+
+									end
+									else
+									if((r_sys_run_step==7'h25)) begin
+										r_ip_MultFloat_multiplicand_0 <= r_sys_tmp0_float;
+
+									end
+									else
+									if((7'h0<=r_sys_run_step && r_sys_run_step<=7'h3) || (r_sys_run_step==7'h5)) begin
+										r_ip_MultFloat_multiplicand_0 <= r_run_dt_6;
+
+									end
 								end
 
 							endcase
@@ -556,13 +556,18 @@ module sub07(
 
 							case(r_sys_run_stage) 
 								2'h0: begin
-									if((r_sys_run_step==7'h14)) begin
-										r_ip_MultFloat_multiplier_0 <= r_sys_tmp16_float;
+									if((r_sys_run_step==7'h26)) begin
+										r_ip_MultFloat_multiplier_0 <= r_sys_tmp1_float;
 
 									end
 									else
 									if((r_sys_run_step==7'h6) || (r_sys_run_step==7'h8) || (r_sys_run_step==7'h9) || (r_sys_run_step==7'ha) || (r_sys_run_step==7'hc)) begin
 										r_ip_MultFloat_multiplier_0 <= r_run_dx_7;
+
+									end
+									else
+									if((r_sys_run_step==7'h13) || (r_sys_run_step==7'h1a) || (r_sys_run_step==7'h1d) || (r_sys_run_step==7'h21) || (r_sys_run_step==7'h24) || (r_sys_run_step==7'h28) || (r_sys_run_step==7'h2b) || (r_sys_run_step==7'h2f) || (r_sys_run_step==7'h32)) begin
+										r_ip_MultFloat_multiplier_0 <= w_sys_tmp20;
 
 									end
 									else
@@ -576,23 +581,28 @@ module sub07(
 
 									end
 									else
-									if((r_sys_run_step==7'h17)) begin
-										r_ip_MultFloat_multiplier_0 <= r_sys_tmp12_float;
+									if((r_sys_run_step==7'h14)) begin
+										r_ip_MultFloat_multiplier_0 <= r_sys_tmp16_float;
 
 									end
 									else
-									if((7'h0<=r_sys_run_step && r_sys_run_step<=7'h3) || (r_sys_run_step==7'h5)) begin
-										r_ip_MultFloat_multiplier_0 <= w_sys_tmp55;
-
-									end
-									else
-									if((r_sys_run_step==7'h26)) begin
-										r_ip_MultFloat_multiplier_0 <= r_sys_tmp1_float;
+									if((r_sys_run_step==7'hd) || (r_sys_run_step==7'h25)) begin
+										r_ip_MultFloat_multiplier_0 <= r_sys_tmp6_float;
 
 									end
 									else
 									if((r_sys_run_step==7'h4) || (r_sys_run_step==7'h7) || (r_sys_run_step==7'hb) || (r_sys_run_step==7'he) || (r_sys_run_step==7'h12) || (r_sys_run_step==7'h15) || (r_sys_run_step==7'h19) || (r_sys_run_step==7'h1c) || (r_sys_run_step==7'h20) || (r_sys_run_step==7'h23)) begin
 										r_ip_MultFloat_multiplier_0 <= w_sys_tmp32;
+
+									end
+									else
+									if((r_sys_run_step==7'h17)) begin
+										r_ip_MultFloat_multiplier_0 <= r_sys_tmp12_float;
+
+									end
+									else
+									if((r_sys_run_step==7'hf) || (r_sys_run_step==7'h27)) begin
+										r_ip_MultFloat_multiplier_0 <= r_sys_tmp5_float;
 
 									end
 									else
@@ -606,18 +616,8 @@ module sub07(
 
 									end
 									else
-									if((r_sys_run_step==7'hf) || (r_sys_run_step==7'h27)) begin
-										r_ip_MultFloat_multiplier_0 <= r_sys_tmp5_float;
-
-									end
-									else
-									if((r_sys_run_step==7'h13) || (r_sys_run_step==7'h1a) || (r_sys_run_step==7'h1d) || (r_sys_run_step==7'h21) || (r_sys_run_step==7'h24) || (r_sys_run_step==7'h28) || (r_sys_run_step==7'h2b) || (r_sys_run_step==7'h2f) || (r_sys_run_step==7'h32)) begin
-										r_ip_MultFloat_multiplier_0 <= w_sys_tmp20;
-
-									end
-									else
-									if((r_sys_run_step==7'hd) || (r_sys_run_step==7'h25)) begin
-										r_ip_MultFloat_multiplier_0 <= r_sys_tmp6_float;
+									if((7'h0<=r_sys_run_step && r_sys_run_step<=7'h3) || (r_sys_run_step==7'h5)) begin
+										r_ip_MultFloat_multiplier_0 <= w_sys_tmp55;
 
 									end
 								end
@@ -645,13 +645,13 @@ module sub07(
 
 							case(r_sys_run_stage) 
 								2'h0: begin
-									if((7'h5<=r_sys_run_step && r_sys_run_step<=7'h9)) begin
-										r_ip_FixedToFloat_fixed_0 <= w_sys_tmp58;
+									if((7'h0<=r_sys_run_step && r_sys_run_step<=7'h4)) begin
+										r_ip_FixedToFloat_fixed_0 <= w_sys_tmp56;
 
 									end
 									else
-									if((7'h0<=r_sys_run_step && r_sys_run_step<=7'h4)) begin
-										r_ip_FixedToFloat_fixed_0 <= w_sys_tmp56;
+									if((7'h5<=r_sys_run_step && r_sys_run_step<=7'h9)) begin
+										r_ip_FixedToFloat_fixed_0 <= w_sys_tmp58;
 
 									end
 								end
@@ -1055,13 +1055,13 @@ module sub07(
 
 							case(r_sys_run_stage) 
 								2'h0: begin
-									if((7'h0<=r_sys_run_step && r_sys_run_step<=7'h42)) begin
-										r_sys_run_step <= w_sys_run_step_p1;
+									if((r_sys_run_step==7'h43)) begin
+										r_sys_run_step <= 7'h0;
 
 									end
 									else
-									if((r_sys_run_step==7'h43)) begin
-										r_sys_run_step <= 7'h0;
+									if((7'h0<=r_sys_run_step && r_sys_run_step<=7'h42)) begin
+										r_sys_run_step <= w_sys_run_step_p1;
 
 									end
 								end
@@ -1127,28 +1127,8 @@ module sub07(
 
 							case(r_sys_run_stage) 
 								2'h0: begin
-									if((r_sys_run_step==7'h4) || (r_sys_run_step==7'hb) || (r_sys_run_step==7'h12) || (r_sys_run_step==7'h19) || (r_sys_run_step==7'h20)) begin
-										r_fld_u_0_addr_1 <= $signed( w_sys_tmp41[12:0] );
-
-									end
-									else
 									if((r_sys_run_step==7'h6) || (r_sys_run_step==7'hd) || (r_sys_run_step==7'h14) || (r_sys_run_step==7'h1b) || (r_sys_run_step==7'h22)) begin
 										r_fld_u_0_addr_1 <= $signed( w_sys_tmp51[12:0] );
-
-									end
-									else
-									if((r_sys_run_step==7'h1) || (r_sys_run_step==7'h8) || (r_sys_run_step==7'hf) || (r_sys_run_step==7'h16) || (r_sys_run_step==7'h1d)) begin
-										r_fld_u_0_addr_1 <= $signed( w_sys_tmp26[12:0] );
-
-									end
-									else
-									if((r_sys_run_step==7'h3) || (r_sys_run_step==7'ha) || (r_sys_run_step==7'h11) || (r_sys_run_step==7'h18) || (r_sys_run_step==7'h1f)) begin
-										r_fld_u_0_addr_1 <= $signed( w_sys_tmp36[12:0] );
-
-									end
-									else
-									if((r_sys_run_step==7'h2) || (r_sys_run_step==7'h9) || (r_sys_run_step==7'h10) || (r_sys_run_step==7'h17) || (r_sys_run_step==7'h1e)) begin
-										r_fld_u_0_addr_1 <= $signed( w_sys_tmp33[12:0] );
 
 									end
 									else
@@ -1157,8 +1137,28 @@ module sub07(
 
 									end
 									else
+									if((r_sys_run_step==7'h4) || (r_sys_run_step==7'hb) || (r_sys_run_step==7'h12) || (r_sys_run_step==7'h19) || (r_sys_run_step==7'h20)) begin
+										r_fld_u_0_addr_1 <= $signed( w_sys_tmp41[12:0] );
+
+									end
+									else
+									if((r_sys_run_step==7'h3) || (r_sys_run_step==7'ha) || (r_sys_run_step==7'h11) || (r_sys_run_step==7'h18) || (r_sys_run_step==7'h1f)) begin
+										r_fld_u_0_addr_1 <= $signed( w_sys_tmp36[12:0] );
+
+									end
+									else
 									if((r_sys_run_step==7'h0) || (r_sys_run_step==7'h7) || (r_sys_run_step==7'he) || (r_sys_run_step==7'h15) || (r_sys_run_step==7'h1c)) begin
 										r_fld_u_0_addr_1 <= $signed( w_sys_tmp21[12:0] );
+
+									end
+									else
+									if((r_sys_run_step==7'h2) || (r_sys_run_step==7'h9) || (r_sys_run_step==7'h10) || (r_sys_run_step==7'h17) || (r_sys_run_step==7'h1e)) begin
+										r_fld_u_0_addr_1 <= $signed( w_sys_tmp33[12:0] );
+
+									end
+									else
+									if((r_sys_run_step==7'h1) || (r_sys_run_step==7'h8) || (r_sys_run_step==7'hf) || (r_sys_run_step==7'h16) || (r_sys_run_step==7'h1d)) begin
+										r_fld_u_0_addr_1 <= $signed( w_sys_tmp26[12:0] );
 
 									end
 								end
@@ -2330,13 +2330,13 @@ module sub07(
 
 							case(r_sys_run_stage) 
 								2'h0: begin
-									if((r_sys_run_step==7'h6) || (r_sys_run_step==7'hc) || (r_sys_run_step==7'h16) || (r_sys_run_step==7'h1f)) begin
-										r_sys_tmp15_float <= w_fld_u_0_dataout_1;
+									if((r_sys_run_step==7'h27)) begin
+										r_sys_tmp15_float <= w_ip_AddFloat_result_0;
 
 									end
 									else
-									if((r_sys_run_step==7'h27)) begin
-										r_sys_tmp15_float <= w_ip_AddFloat_result_0;
+									if((r_sys_run_step==7'h6) || (r_sys_run_step==7'hc) || (r_sys_run_step==7'h16) || (r_sys_run_step==7'h1f)) begin
+										r_sys_tmp15_float <= w_fld_u_0_dataout_1;
 
 									end
 								end
