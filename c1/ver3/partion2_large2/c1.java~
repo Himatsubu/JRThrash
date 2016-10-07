@@ -1,4 +1,4 @@
-//import net.njlab.sample.annotation.*;
+import net.njlab.sample.annotation.*;
 //分割数２
 
 public class c1{
@@ -10,9 +10,9 @@ public class c1{
 	static final subup sub00    = new subup();
 	static final subunder sub01 = new subunder();
 
-        //@JRThrashUnroll(unrollNum=20, loopVariableName="j",unrollType=JRThrashUnroll.copyLoopVar)
-	//public float run(){
-	public static void main(String[] args){
+        @JRThrashUnroll(unrollNum=8, loopVariableName="j",unrollType=JRThrashUnroll.copyLoopVar)
+	public void run(){
+	//public static void main(String[] args){
 		int k,j,n,mx,my,nlast;
 		float dx,dy,r1,r2,dt;
 
@@ -23,7 +23,7 @@ public class c1{
 		dt = 0.005f;
 		r1 = dt/(dx*dx);
 		r2 = dt/(dy*dy);
-		nlast=1;
+		nlast=2;
 			
 //	熱源項の定義と初期条件
 	for (k = 1; k <= my; k++)
@@ -55,6 +55,7 @@ public class c1{
 //	計算ループ	
 	for(n=1;n<=nlast;n++){
 //	境界条件
+/*
 		for (j = 1; j <= my; j++)
 		{
 			u[129+j] = 0.5f;
@@ -62,9 +63,9 @@ public class c1{
 			u[j*129+1] = 1.f;
 			u[j*129+my]= 0f;
 		}
-		
+*/		
 
-/*
+
 		sub00.start();
 		sub01.start();
 	
@@ -72,12 +73,13 @@ public class c1{
 			sub00.join();
 			sub01.join();
 		}catch(Exception e){}
-*/
-		sub00.run();
-		sub01.run();
+
+//		sub00.run();
+//		sub01.run();
 		
 		for(j=1;j<=129;j++){
-			swp[j]=sub00.result[u
+			sub00.u[j*129+65]=sub01.result[j*129+64];
+			sub01.u[j*129+64]=sub00.result[j*129+65];
 	
 		}
 
@@ -98,7 +100,7 @@ public class c1{
 			}
 		}
 	
-
+/*
 		for(k=2;k<=my-1;k++)
 		{
 			for(j=2;j<=mx-1;j++)
@@ -106,8 +108,8 @@ public class c1{
 				System.out.println(k+" "+j+" "+u[j*21+k]);
 			}
 		}
-
-		System.out.println(u[210+10]);
+*/
+		//System.out.println(u[210+10]);
 		//return u[2*129+2];
 	}
 }

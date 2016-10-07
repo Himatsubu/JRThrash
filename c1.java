@@ -7,9 +7,9 @@ public class c1{
 	private static final float uu[]= new float [16900];
 	private static final float q[] = new float [16900];
 
-        @JRThrashUnroll(unrollNum=10, loopVariableName="j",unrollType=JRThrashUnroll.copyLoopVar)
-//	public float run(){
-	public static void main(String[] args){
+        @JRThrashUnroll(unrollNum=11, loopVariableName="j",unrollType=JRThrashUnroll.copyLoopVar)
+	public void run(){
+//	public static void main(String[] args){
 		int k,j,n;
 		int mx,my;
 		float dt,dx,dy,r1,r2;
@@ -39,9 +39,9 @@ public class c1{
 	{
 		for (j = 1; j<= mx; j++)
 		{
-			 q[j*21+k] = 100f*dx*(j-1)*dy*(k-1);
-			 u[j*21+k] = 0f;
-			uu[j*21+k] = 0f;
+			 q[j*129+k] = 100f*dx*(j-1)*dy*(k-1);
+			 u[j*129+k] = 0f;
+			uu[j*129+k] = 0f;
 		}
 	}
 		
@@ -70,7 +70,7 @@ public class c1{
 				//q=100f*dx*(j-1)*dy*(k-1);
 				uu[j*129+k]= u[j*129+k]+r1*(u[(j+1)*129+k]-2.0f*u[j*129+k]+u[(j-1)*129+k])
 					+r2*(u[j*129+k+1]-2.0f*u[j*129+k]+u[j*129+k-1])+dt*q[j*129+k];
-				System.out.println(k+" "+j+" "+uu[j*21+k]);
+				//System.out.println(k+" "+j+" "+uu[j*21+k]);
 			}
 		}
 
