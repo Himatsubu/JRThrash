@@ -79,23 +79,12 @@ public class c1{
 				   sub01.result[64*129+k]=sub00.result[64*129+k];sub01.result[97*129+k]=sub02.result[97*129+k];
 	 			   sub01.result[32*129+k]=sub00.result[32*129+k];sub01.result[65*129+k]=sub02.result[65*129+k];}
 		for(j=2;j<=32;j++){sub00.result[j*129+65]=sub04.result[j*129+65];sub04.result[j*129+64]=sub00.result[j*129+64];}
-		//for(k=2;k<=64;k++){sub01.result[32*129+k]=sub00.result[32*129+k];sub01.result[65*129+k]=sub02.result[65*129+k];}
 		for(j=33;j<=64;j++){sub01.result[j*129+65]=sub05.result[j*129+65];sub05.result[j*129+64]=sub01.result[j*129+64];}
-		//for(k=2;k<=64;k++){sub01.result[64*129+k]=sub00.result[64*129+k];sub01.result[97*129+k]=sub02.result[97*129+k];}
 		for(j=65;j<=96;j++){sub02.result[j*129+65]=sub06.result[j*129+65];sub06.result[j*129+64]=sub02.result[j*129+64];}
-		//for(k=2;k<=64;k++){sub03.result[96*129+k]=sub02.result[96*129+k];}
-		for(j=97;j<=128;j++){sub03.result[j*129+65]=sub07.result[j*129+65];sub03.result[j*129+65]=sub07.result[j*129+65];}
-
+		for(j=97;j<=128;j++){sub03.result[j*129+65]=sub07.result[j*129+65];sub07.result[j*129+65]=sub03.result[j*129+65];}
 		for(k=65;k<=128;k++){sub04.result[33*129+k]=sub05.result[33*129+k];sub05.result[32*129+k]=sub04.result[32*129+k];
 				     sub05.result[65*129+k]=sub06.result[65*129+k];sub07.result[96*129+k]=sub06.result[96*129+k];
 				     sub06.result[64*129+k]=sub05.result[64*129+k];sub06.result[97*129+k]=sub07.result[97*129+k];}
-		//for(j=2;j<=32;j++){sub04.result[j*129+64]=sub00.result[j*129+64];}
-		//for(k=65;k<=128;k++){sub05.result[32*129+k]=sub04.result[32*129+k];sub05.result[65*129+k]=sub06.result[65*129+k];}
-		//for(j=33;j<=64;j++){sub05.result[j*129+64]=sub01.result[j*129+64];}
-		//for(k=65;k<=128;k++){sub06.result[64*129+k]=sub05.result[64*129+k];sub06.result[97*129+k]=sub07.result[97*129+k];}
-		//for(j=65;j<=96;j++){sub06.result[j*129+64]=sub02.result[j*129+64];}
-		//for(k=65;k<=128;k++){sub07.result[96*129+k]=sub06.result[96*129+k];}
-		//for(j=97;j<=128;j++){sub03.result[j*129+65]=sub07.result[j*129+65];}
 	}
 
 	for(k=2;k<=64;k++){

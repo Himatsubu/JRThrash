@@ -25,7 +25,7 @@ public class P3_2dim{
 		mx=kx+1;
 		my=ky+1;
 		dt=0.0005f;
-		nlast=1;
+		nlast=2;
 
 		dx=4f/(mx-1);
 		dy=1f/(my-1);
@@ -56,7 +56,7 @@ public class P3_2dim{
 			for(j=1;j<=65;j++){
 				sub00.U[j*129+k]=U[j*129+k];
 				sub00.V[j*129+k]=V[j*129+k];
-				sub00.T[j*129+k]=V[j*129+k];	
+				sub00.T[j*129+k]=T[j*129+k];	
 			}
 			for(j=64;j<=129;j++){
 				sub01.U[j*129+k]=U[j*129+k];
@@ -104,18 +104,18 @@ public class P3_2dim{
 				sub03.result[64*129+k]=sub02.result[64*129+k];
 			}
 			for(j=65;j<=128;j++){
-				sub01.result=[j*129+65]=sub03.result[j*129+k];
-				sub03.result=[j*129+64]=sub01.result[j*129+k];
+				sub01.result[j*129+65]=sub03.result[j*129+k];
+				sub03.result[j*129+64]=sub01.result[j*129+k];
 			}
 
 		}
 		for(k=2;k<=64;k++){
-			for(j=2;j<=64;j++)  {T[j*129+k]=sub00.result[j*129+k];
-			for(j=65;j<=128;j++){T[j*129+k]=sub01.result[j*129+k];
+			for(j=2;j<=64;j++)  {T[j*129+k]=sub00.result[j*129+k];}
+			for(j=65;j<=128;j++){T[j*129+k]=sub01.result[j*129+k];}
 		}
 		for(k=65;k<=128;k++){
-			for(j=2;j<=64;j++)  {T[j*129+k]=sub02.result[j*129+k];
-			for(j=65;j<=128;j++){T[j*129+k]=sub03.result[j*129+k];
+			for(j=2;j<=64;j++)  {T[j*129+k]=sub02.result[j*129+k];}
+			for(j=65;j<=128;j++){T[j*129+k]=sub03.result[j*129+k];}
 		}
 		//System.out.println(T[10*21+10]);
 }

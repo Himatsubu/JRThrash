@@ -1,20 +1,20 @@
-sudo java -jar ../JRThrash.jar *.java
-cp ../result/sub00.v ../../sim_cfd_P3_JRT
-cp ../result/sub01.v ../../sim_cfd_P3_JRT
-cp ../result/sub02.v ../../sim_cfd_P3_JRT
-cp ../result/sub03.v ../../sim_cfd_P3_JRT
-cp ../result/sub04.v ../../sim_cfd_P3_JRT
-cp ../result/sub05.v ../../sim_cfd_P3_JRT
-cp ../result/sub06.v ../../sim_cfd_P3_JRT
-cp ../result/sub07.v ../../sim_cfd_P3_JRT
-cp ../result/sub08.v ../../sim_cfd_P3_JRT
-cp ../result/sub09.v ../../sim_cfd_P3_JRT
-cp ../result/sub10.v ../../sim_cfd_P3_JRT
-cp ../result/sub11.v ../../sim_cfd_P3_JRT
-cp ../result/sub12.v ../../sim_cfd_P3_JRT
-cp ../result/sub13.v ../../sim_cfd_P3_JRT
-cp ../result/sub14.v ../../sim_cfd_P3_JRT
-cp ../result/sub15.v ../../sim_cfd_P3_JRT
-cp ../result/P3_2dim.v ../../sim_cfd_P3_JRT
-cd ../../sim_cfd_P3_JRT
+sudo java -jar /home/yanai/JRThrash/JRThrash.jar *.java
+cp /home/yanai/JRThrash/result/sub00.v /home/yanai/sim_cfd_P3_JRT
+cp /home/yanai/JRThrash/result/sub01.v /home/yanai/sim_cfd_P3_JRT
+cp /home/yanai/JRThrash/result/sub02.v /home/yanai/sim_cfd_P3_JRT
+cp /home/yanai/JRThrash/result/sub03.v /home/yanai/sim_cfd_P3_JRT
+cp /home/yanai/JRThrash/result/sub04.v /home/yanai/sim_cfd_P3_JRT
+cp /home/yanai/JRThrash/result/sub05.v /home/yanai/sim_cfd_P3_JRT
+cp /home/yanai/JRThrash/result/sub06.v /home/yanai/sim_cfd_P3_JRT
+cp /home/yanai/JRThrash/result/sub07.v /home/yanai/sim_cfd_P3_JRT
+cp /home/yanai/JRThrash/result/sub08.v /home/yanai/sim_cfd_P3_JRT
+cp /home/yanai/JRThrash/result/sub09.v /home/yanai/sim_cfd_P3_JRT
+cp /home/yanai/JRThrash/result/sub10.v /home/yanai/sim_cfd_P3_JRT
+cp /home/yanai/JRThrash/result/sub11.v /home/yanai/sim_cfd_P3_JRT
+cp /home/yanai/JRThrash/result/sub12.v /home/yanai/sim_cfd_P3_JRT
+cp /home/yanai/JRThrash/result/sub13.v /home/yanai/sim_cfd_P3_JRT
+cp /home/yanai/JRThrash/result/sub14.v /home/yanai/sim_cfd_P3_JRT
+cp /home/yanai/JRThrash/result/sub15.v /home/yanai/sim_cfd_P3_JRT
+cp /home/yanai/JRThrash/result/P3_2dim.v /home/yanai/sim_cfd_P3_JRT
+cd /home/yanai/sim_cfd_P3_JRT
 ./run_partion16.sh

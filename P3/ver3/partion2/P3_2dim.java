@@ -23,7 +23,7 @@ public class P3_2dim{
 		mx=kx+1;
 		my=ky+1;
 		dt=0.0005f;
-		nlast=1;
+		nlast=2;
 
 		dx=4f/(mx-1);
 		dy=1f/(my-1);
@@ -98,7 +98,7 @@ public class P3_2dim{
 		}
 		for(k=2;k<=64;k++){
 			for(j=2;j<=128;j++){
-				U[j*129+k]=sub00.resut[j*129+k];
+				U[j*129+k]=sub00.result[j*129+k];
 			}
 		}
 		for(k=65;k<=128;k++){
