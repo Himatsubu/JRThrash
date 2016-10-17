@@ -29,7 +29,7 @@ public class P3_2dim{
 		mx=kx+1;
 		my=ky+1;
 		dt=0.0005f;
-		nlast=400;
+		nlast=1;
 
 		dx=4f/(mx-1);
 		dy=1f/(my-1);

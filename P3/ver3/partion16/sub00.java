@@ -24,6 +24,19 @@ public class sub00 extends Thread{
 		r2=0.5f*dt/dy;
 		r3=dt/(dx*dx);
 		r4=dt/(dy*dy);
+		for (k = 1; k <= my; k++){
+			T[1*129+k] = 0.0f;
+			T[mx*129+k]= T[(mx-1)*129+k];
+		}
+		
+		for (j = 1; j <= mx; j++){
+			T[j*129+1] = 0.0f;
+			T[j*129+my]= 0.0f;
+		}
+		for(j=mx/4;j<=mx/2;j++){
+			T[j*129+1]=1.0f;
+		}
+
 
 		for (k = 2; k <= 32; k++){
 			for (j = 2; j <= 32; j++){

@@ -4,21 +4,6 @@
 	<name objName = "*thisIsTopModule"    className = "P3_2dim" />
 	<subModule>
 		<module>
-			<name objName = "sub09"    className = "sub09" />
-		</module>
-	</subModule>
-	<subModule>
-		<module>
-			<name objName = "sub08"    className = "sub08" />
-		</module>
-	</subModule>
-	<subModule>
-		<module>
-			<name objName = "sub12"    className = "sub12" />
-		</module>
-	</subModule>
-	<subModule>
-		<module>
 			<name objName = "sub03"    className = "sub03" />
 		</module>
 	</subModule>
@@ -29,22 +14,7 @@
 	</subModule>
 	<subModule>
 		<module>
-			<name objName = "sub11"    className = "sub11" />
-		</module>
-	</subModule>
-	<subModule>
-		<module>
-			<name objName = "sub14"    className = "sub14" />
-		</module>
-	</subModule>
-	<subModule>
-		<module>
 			<name objName = "sub01"    className = "sub01" />
-		</module>
-	</subModule>
-	<subModule>
-		<module>
-			<name objName = "sub13"    className = "sub13" />
 		</module>
 	</subModule>
 	<subModule>
@@ -64,22 +34,12 @@
 	</subModule>
 	<subModule>
 		<module>
-			<name objName = "sub15"    className = "sub15" />
-		</module>
-	</subModule>
-	<subModule>
-		<module>
 			<name objName = "sub05"    className = "sub05" />
 		</module>
 	</subModule>
 	<subModule>
 		<module>
 			<name objName = "sub04"    className = "sub04" />
-		</module>
-	</subModule>
-	<subModule>
-		<module>
-			<name objName = "sub10"    className = "sub10" />
 		</module>
 	</subModule>
 </module>

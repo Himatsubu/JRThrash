@@ -24,10 +24,22 @@ public class sub11 extends Thread{
 		r2=0.5f*dt/dy;
 		r3=dt/(dx*dx);
 		r4=dt/(dy*dy);
+		for (k = 1; k <= my; k++){
+			T[1*129+k] = 0.0f;
+			T[mx*129+k]= T[(mx-1)*129+k];
+		}
+		
+		for (j = 1; j <= mx; j++){
+			T[j*129+1] = 0.0f;
+			T[j*129+my]= 0.0f;
+		}
+		for(j=mx/4;j<=mx/2;j++){
+			T[j*129+1]=1.0f;
+		}
 
 //	次の時間での温度の計算
 		for (k = 65; k <= 96; k++){
-			for (j = 96; j <= 128; j++){
+			for (j = 97; j <= 128; j++){
 	     		      result[j*129+k]= T[j*129+k]-r1*U[j*129+k]*(T[(j+1)*129+k]-T[(j-1)*129+k])
 	     	                    	-r2*V[j*129+k]*(T[j*129+k+1]-T[j*129+k-1])
 	     		              +r3*(T[(j+1)*129+k]-2.0f*T[j*129+k]+T[(j-1)*129+k])

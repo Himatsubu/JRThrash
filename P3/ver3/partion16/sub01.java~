@@ -2,24 +2,31 @@ import net.njlab.sample.annotation.*;
 
 
 public class sub01 extends Thread{
-        final float[] T      = new float[484];
-	final float[] V      = new float[484];
-	final float[] U      = new float[484];
-	final float[] result = new float[484];
+        final float[] T      = new float[16900];
+	final float[] V      = new float[16900];
+	final float[] U      = new float[16900];
+	final float[] result = new float[16900];
 
         @JRThrashUnroll(unrollNum=5, loopVariableName="j",unrollType=JRThrashUnroll.copyLoopVar)
         public void run(){
-		int k,j;
+		int k,j,kx,ky,mx,my;
 		float dt,dx,dy,r1,r2,r3,r4,YY;
 
-		dx=0.2f;
-		dy=0.05f;
-		r1=0.00125f;
-		r2=0.005f;
-		r3=0.0125f;
-		r4=0.2f;
-		for (k = 2; k <= 6; k++){
-			for (j = 7; j <= 11; j++){
+		kx=128;
+		ky=128;
+		mx=kx+1;
+		my=ky+1;
+		dt=0.0005f;
+
+		dx=4f/(mx-1);
+		dy=1f/(my-1);
+		r1=0.5f*dt/dx;
+		r2=0.5f*dt/dy;
+		r3=dt/(dx*dx);
+		r4=dt/(dy*dy);
+
+		for (k = 2; k <= 32; k++){
+			for (j = 33; j <= 64; j++){
 	     		      result[j*129+k]= T[j*129+k]-r1*U[j*129+k]*(T[(j+1)*129+k]-T[(j-1)*129+k])
 	     	                    	-r2*V[j*129+k]*(T[j*129+k+1]-T[j*129+k-1])
 	     		              +r3*(T[(j+1)*129+k]-2.0f*T[j*129+k]+T[(j-1)*129+k])
