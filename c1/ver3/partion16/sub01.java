@@ -8,6 +8,7 @@ public class sub01 extends Thread{
         @JRThrashUnroll(unrollNum=5, loopVariableName="j",unrollType=JRThrashUnroll.copyLoopVar)
         public void run(){
 		int k,j;
+		int tmpj;
                 float r1 = 0.2f;
 		float r2 = 0.2f;
 		float dt = 0.0005f;
@@ -19,20 +20,23 @@ public class sub01 extends Thread{
 			u[129*129+k]=0.0f;
 		}
 		for(j=32;j<=65;j++){
-			u[j*129+1]=1.f;
-			u[j*129+129]=0.0f;
+			tmpj=j-31;
+			u[tmpj*129+1]=1.f;
+			u[tmpj*129+129]=0.0f;
 		}
 
 		for(k=2;k<=32;k++){
 			for(j=33;j<=64;j++){
+			tmpj=j-31;
 			//q=100f*dx*(j-1)*dy*(k-1);
-			result[j*129+k]= u[j*129+k]+r1*(u[(j+1)*129+k]-2.0f*u[j*129+k]+u[(j-1)*129+k])
-			+r2*(u[j*129+k+1]-2.0f*u[j*129+k]+u[j*129+k-1])+dt*100f*dx*(j-1)*dy*(k-1);			
+			result[tmpj*129+k]= u[tmpj*129+k]+r1*(u[(tmpj+1)*129+k]-2.0f*u[tmpj*129+k]+u[(tmpj-1)*129+k])
+			+r2*(u[tmpj*129+k+1]-2.0f*u[tmpj*129+k]+u[tmpj*129+k-1])+dt*100f*dx*(j-1)*dy*(k-1);			
 			}
 		}
 		for(k=2;k<=32;k++){
 			for(j=33;j<=64;j++){
-				u[j*129+k]=result[j*129+k];
+				tmpj=j-31;
+				u[tmpj*129+k]=result[tmpj*129+k];
 			}
 		}
 /*

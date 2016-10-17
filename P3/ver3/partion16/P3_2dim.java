@@ -1,3 +1,5 @@
+//todo 袖領域のやりとりについて修正
+
 import net.njlab.sample.annotation.*;
 
 public class P3_2dim{
@@ -37,7 +39,7 @@ public class P3_2dim{
 		mx=kx+1;
 		my=ky+1;
 		dt=0.0005f;
-		nlast=1;
+		nlast=2;
 
 		dx=4f/(mx-1);
 		dy=1f/(my-1);
