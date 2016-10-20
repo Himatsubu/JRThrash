@@ -6,7 +6,7 @@ public class P3_2dim{
 		private static final float TT[]= new float [16900];
 		private static final float U[] = new float [16900];
 		private static final float V[]= new float  [16900];
-	@JRThrashUnroll(unrollNum=7,loopVariableName="j",unrollType=JRThrashUnroll.copyLoopVar)
+	@JRThrashUnroll(unrollNum=10,loopVariableName="j",unrollType=JRThrashUnroll.copyLoopVar)
 	public void run(){
 //	public static void main(String[] args){
 		int k,j,n;
@@ -20,7 +20,7 @@ public class P3_2dim{
 		mx=kx+1;
 		my=ky+1;
 		dt=0.0005f;
-		nlast=1;
+		nlast=2;
 
 		dx=4f/(mx-1);
 		dy=1f/(my-1);

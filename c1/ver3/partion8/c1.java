@@ -27,7 +27,7 @@ public class c1{
 		dt = 0.0005f;
 		r1=dt/(dx*dx);
 		r2=dt/(dy*dy);
-		nlast=400;
+		nlast=1;
 		
 //	熱源項の定義と初期条件
 	for (k = 1; k <= my; k++)
@@ -41,16 +41,16 @@ public class c1{
 	}
 
 	for(k=1;k<=65;k++){
-		for(j=1;j<=33;j++)  {           sub00.u[j*129+k]=u[j*129+k];}
-		for(j=32;j<=65;j++) {tmpj=j-31; sub01.u[tmpj*129+k]=u[j*129+k];}
-		for(j=64;j<=97;j++) {tmpj=j-63;sub02.u[tmpj*129+k]=u[j*129+k];}
-		for(j=96;j<=129;j++){tmpj=j-95;sub03.u[tmpj*129+k]=u[j*129+k];}
+		for(j=1;j<=33;j++)  {sub00.u[j*129+k]=u[j*129+k];}
+		for(j=32;j<=65;j++) {sub01.u[(j-31)*129+k]=u[j*129+k];}
+		for(j=64;j<=97;j++) {sub02.u[(j-63)*129+k]=u[j*129+k];}
+		for(j=96;j<=129;j++){sub03.u[(j-95)*129+k]=u[j*129+k];}
 	}
 	for(k=64;k<=129;k++){
-		for(j=1;j<=33;j++)  {          sub04.u[129*j+k]=u[j*129+k];}
-		for(j=32;j<=65;j++) {tmpj=j-31;sub05.u[129*tmpj+k]=u[j*129+k];}
-		for(j=64;j<=97;j++) {tmpj=j-63;sub06.u[129*tmpj+k]=u[j*129+k];}
-		for(j=96;j<=129;j++){tmpj=j-95;sub07.u[129*tmpj+k]=u[j*129+k];}	
+		for(j=1;j<=33;j++)  {sub04.u[129*j+k]=u[j*129+k];}
+		for(j=32;j<=65;j++) {sub05.u[129*(j-31)+k]=u[j*129+k];}
+		for(j=64;j<=97;j++) {sub06.u[129*(j-63)+k]=u[j*129+k];}
+		for(j=96;j<=129;j++){sub07.u[129*(j-95)+k]=u[j*129+k];}	
 	}
 
 	

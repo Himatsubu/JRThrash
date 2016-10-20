@@ -27,7 +27,7 @@ public class c1{
 		r1=dt/(dx*dx);
 		r2=dt/(dy*dy);
 
-		nlast=400;
+		nlast=1;
 			
 //	熱源項の定義と初期条件
 	for (k = 1; k <= my; k++)
@@ -90,9 +90,10 @@ public class c1{
 			
 		}
 	
-		for(j=65;j<=128;j++){
-			sub01.result[(j-63)*129+65]=sub03.result[(j-63)*129+k];
-			sub03.result[(j-63)*129+64]=sub01.result[(j-63)*129+k];
+		//for(j=65;j<=128;j++){
+		for(tmpj=2;tmpj<=65;tmpj++){	//tmpj=j-63
+			sub01.result[tmpj*129+65]=sub03.result[tmpj*129+k];
+			sub03.result[tmpj*129+64]=sub01.result[tmpj*129+k];
 		}
 	}
 

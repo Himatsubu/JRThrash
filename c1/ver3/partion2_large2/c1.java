@@ -10,7 +10,7 @@ public class c1{
 	static final subup sub00    = new subup();
 	static final subunder sub01 = new subunder();
 
-        @JRThrashUnroll(unrollNum=8, loopVariableName="j",unrollType=JRThrashUnroll.copyLoopVar)
+        @JRThrashUnroll(unrollNum=7, loopVariableName="j",unrollType=JRThrashUnroll.copyLoopVar)
 	public void run(){
 	//public static void main(String[] args){
 		int k,j,n,mx,my,nlast;
@@ -23,7 +23,7 @@ public class c1{
 		dt = 0.005f;
 		r1 = dt/(dx*dx);
 		r2 = dt/(dy*dy);
-		nlast=400;
+		nlast=1;
 			
 //	熱源項の定義と初期条件
 	for (k = 1; k <= my; k++)

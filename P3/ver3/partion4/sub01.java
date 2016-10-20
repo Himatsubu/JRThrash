@@ -29,16 +29,16 @@ public class sub01 extends Thread{
 			T[mx*21+k]= T[(mx-1)*21+k];
 		}
 		
-		for (j = 1; j <= mx; j++){
+		for (j = 1; j <= 66; j++){
 			T[j*21+1] = 0.0f;
 			T[j*21+my]= 0.0f;
-		}
+		}/*
 		for(j=mx/4;j<=mx/2;j++){
 			T[j*21+1]=1.0f;
-		}
+		}*/
 
 		for (k = 2; k <= 64; k++){
-			for (j = 65; j <= 128; j++){
+			for (j = 2; j <= 65; j++){
 	     		      result[j*129+k]= T[j*129+k]-r1*U[j*129+k]*(T[(j+1)*129+k]-T[(j-1)*129+k])
 	     	                    	-r2*V[j*129+k]*(T[j*129+k+1]-T[j*129+k-1])
 	     		              +r3*(T[(j+1)*129+k]-2.0f*T[j*129+k]+T[(j-1)*129+k])

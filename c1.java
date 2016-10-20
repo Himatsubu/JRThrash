@@ -7,7 +7,7 @@ public class c1{
 	private static final float uu[]= new float [16900];
 	private static final float q[] = new float [16900];
 
-        @JRThrashUnroll(unrollNum=10, loopVariableName="j",unrollType=JRThrashUnroll.copyLoopVar)
+        @JRThrashUnroll(unrollNum=12, loopVariableName="j",unrollType=JRThrashUnroll.copyLoopVar)
 	public void run(){
 //	public static void main(String[] args){
 		int k,j,n;

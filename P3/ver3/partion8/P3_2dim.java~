@@ -29,7 +29,7 @@ public class P3_2dim{
 		mx=kx+1;
 		my=ky+1;
 		dt=0.0005f;
-		nlast=1;
+		nlast=2;
 
 		dx=4f/(mx-1);
 		dy=1f/(my-1);
@@ -55,19 +55,19 @@ public class P3_2dim{
 				sub00.T[j*129+k]=T[j*129+k];
 			}
 			for(j=32;j<=65;j++){
-				sub01.U[j*129+k]=U[j*129+k];
-				sub01.V[j*129+k]=V[j*129+k];
-				sub01.T[j*129+k]=T[j*129+k];
+				sub01.U[(j-31)*129+k]=U[j*129+k];
+				sub01.V[(j-31)*129+k]=V[j*129+k];
+				sub01.T[(j-31)*129+k]=T[j*129+k];
 			}
 			for(j=64;j<=97;j++){
-				sub02.U[j*129+k]=U[j*129+k];
-				sub02.V[j*129+k]=V[j*129+k];
-				sub02.T[j*129+k]=T[j*129+k];
+				sub02.U[(j-63)*129+k]=U[j*129+k];
+				sub02.V[(j-63)*129+k]=V[j*129+k];
+				sub02.T[(j-63)*129+k]=T[j*129+k];
 			}
 			for(j=96;j<=129;j++){
-				sub03.U[j*129+k]=U[j*129+k];
-				sub03.V[j*129+k]=V[j*129+k];
-				sub03.T[j*129+k]=T[j*129+k];
+				sub03.U[(j-95)*129+k]=U[j*129+k];
+				sub03.V[(j-95)*129+k]=V[j*129+k];
+				sub03.T[(j-95)*129+k]=T[j*129+k];
 			}
 		}
 		for(k=64;k<=129;k++){
@@ -77,19 +77,19 @@ public class P3_2dim{
 				sub04.T[j*129+k]=T[j*129+k];
 			}
 			for(j=32;j<=65;j++){
-				sub05.U[j*129+k]=U[j*129+k];
-				sub05.V[j*129+k]=V[j*129+k];
-				sub05.T[j*129+k]=T[j*129+k];
+				sub05.U[(j-31)*129+k]=U[j*129+k];
+				sub05.V[(j-31)*129+k]=V[j*129+k];
+				sub05.T[(j-31)*129+k]=T[j*129+k];
 			}
 			for(j=64;j<=97;j++){
-				sub06.U[j*129+k]=U[j*129+k];
-				sub06.V[j*129+k]=V[j*129+k];
-				sub06.T[j*129+k]=T[j*129+k];
+				sub06.U[(j-63)*129+k]=U[j*129+k];
+				sub06.V[(j-63)*129+k]=V[j*129+k];
+				sub06.T[(j-63)*129+k]=T[j*129+k];
 			}
 			for(j=96;j<=129;j++){
-				sub07.U[j*129+k]=U[j*129+k];
-				sub07.V[j*129+k]=V[j*129+k];
-				sub07.T[j*129+k]=T[j*129+k];
+				sub07.U[(j-95)*129+k]=U[j*129+k];
+				sub07.V[(j-95)*129+k]=V[j*129+k];
+				sub07.T[(j-95)*129+k]=T[j*129+k];
 			}
 		}
 

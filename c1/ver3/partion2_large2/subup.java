@@ -9,7 +9,7 @@ public class subup extends Thread{
 
 
 
-        @JRThrashUnroll(unrollNum=8, loopVariableName="j",unrollType=JRThrashUnroll.copyLoopVar)
+        @JRThrashUnroll(unrollNum=7, loopVariableName="j",unrollType=JRThrashUnroll.copyLoopVar)
         public void run(){
 		int k,j;
 /*

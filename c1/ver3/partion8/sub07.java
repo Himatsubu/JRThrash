@@ -22,25 +22,25 @@ public class sub07 extends Thread{
 			u[1*129+k]=0.5f;
 			u[129*129+k]=0.0f;
 		}
-		for(j=96;j<=129;j++){
-			tmpj=j-95;
-			u[tmpj*129+1]=1.f;
-			u[tmpj*129+129]=0.0f;
+		for(j=1;j<=34;j++){
+			//tmpj=j-95;
+			u[j*129+1]=1.f;
+			u[j*129+129]=0.0f;
 		}
 
 		for(k=65;k<=128;k++){
-			for(j=97;j<=128;j++){
+			for(j=2;j<=33;j++){
 			//q=100f*dx*(j-1)*dy*(k-1);
-			tmpj=j-95;
-			result[tmpj*129+k]= u[tmpj*129+k]+r1*(u[(tmpj+1)*129+k]-2.0f*u[tmpj*129+k]+u[(tmpj-1)*129+k])
-			+r2*(u[tmpj*129+k+1]-2.0f*u[tmpj*129+k]+u[tmpj*129+k-1])+dt*100f*dx*(j-1)*dy*(k-1);			
+			//tmpj=j-95;
+			result[j*129+k]= u[j*129+k]+r1*(u[(j+1)*129+k]-2.0f*u[j*129+k]+u[(j-1)*129+k])
+			+r2*(u[j*129+k+1]-2.0f*u[j*129+k]+u[j*129+k-1])+dt*100f*dx*(j+95-1)*dy*(k-1);			
 			
 			}
 		}
 		for(k=65;k<=128;k++){
-			for(j=97;j<=128;j++){
-				tmpj=j-95;
-				u[tmpj*129+k]=result[tmpj*129+k];
+			for(j=2;j<=33;j++){
+				//tmpj=j-95;
+				u[j*129+k]=result[j*129+k];
 			}
 		}
 /*

@@ -1,3 +1,5 @@
+//todo 袖領域のやりとりについて修正
+
 import net.njlab.sample.annotation.*;
 
 public class P3_2dim{

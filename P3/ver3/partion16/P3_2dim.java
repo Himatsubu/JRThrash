@@ -33,6 +33,7 @@ public class P3_2dim{
 		float dt,dx,dy,r1,r2,r3,r4,YY;
 
 		int kx,ky,nlast;
+		int tmpj;
 
 		kx=128;
 		ky=128;
@@ -187,97 +188,99 @@ public class P3_2dim{
 			}catch(Exception e){}
 
 			for(k=2;k<=32;k++){
-				sub00.result[33*129+k]=sub04.result[33*129+k];
-				sub04.result[32*129+k]=sub00.result[32*129+k];
-				sub04.result[65*129+k]=sub08.result[65*129+k];
-				sub08.result[64*129+k]=sub04.result[64*129+k];
-				sub08.result[97*129+k]=sub12.result[97*129+k];
-				sub12.result[96*129+k]=sub08.result[96*129+k];	
+				sub00.result[33*129+k]=sub01.result[(33-31)*129+k];
+				sub01.result[(32-31)*129+k]=sub00.result[32*129+k];
+				sub01.result[(65-31)*129+k]=sub02.result[(65-63)*129+k];
+				sub02.result[(64-63)*129+k]=sub01.result[(64-31)*129+k];
+				sub02.result[(97-63)*129+k]=sub03.result[(97-95)*129+k];
+				sub03.result[(96-95)*129+k]=sub02.result[(96-63)*129+k];	
 			}
 			for(k=33;k<=64;k++){
-				sub01.result[33*129+k]=sub05.result[33*129+k];
-				sub05.result[32*129+k]=sub01.result[32*129+k];
-				sub05.result[65*129+k]=sub09.result[65*129+k];
-				sub09.result[64*129+k]=sub05.result[64*129+k];
-				sub09.result[97*129+k]=sub13.result[97*129+k];
-				sub13.result[96*129+k]=sub09.result[96*129+k];	
+				sub04.result[33*129+k]=sub05.result[(33-31)*129+k];
+				sub05.result[(32-31)*129+k]=sub04.result[32*129+k];
+				sub05.result[(65-31)*129+k]=sub06.result[(65-63)*129+k];
+				sub06.result[(64-63)*129+k]=sub05.result[(64-31)*129+k];
+				sub06.result[(97-63)*129+k]=sub07.result[(97-95)*129+k];
+				sub07.result[(96-95)*129+k]=sub06.result[(96-63)*129+k];	
 			}
 			for(k=65;k<=96;k++){
-				sub02.result[33*129+k]=sub06.result[33*129+k];
-				sub06.result[32*129+k]=sub02.result[32*129+k];
-				sub06.result[65*129+k]=sub10.result[65*129+k];
-				sub10.result[64*129+k]=sub06.result[64*129+k];
-				sub10.result[97*129+k]=sub14.result[97*129+k];
-				sub14.result[96*129+k]=sub10.result[96*129+k];	
+				sub08.result[33*129+k]=sub09.result[(33-31)*129+k];
+				sub09.result[(32-31)*129+k]=sub08.result[32*129+k];
+				sub09.result[(65-31)*129+k]=sub10.result[(65-63)*129+k];
+				sub10.result[(64-63)*129+k]=sub09.result[(64-31)*129+k];
+				sub10.result[(97-63)*129+k]=sub11.result[(97-95)*129+k];
+				sub11.result[(96-95)*129+k]=sub10.result[(96-63)*129+k];	
 			}
 			for(k=97;k<=128;k++){
-				sub03.result[33*129+k]=sub07.result[33*129+k];
-				sub07.result[32*129+k]=sub03.result[32*129+k];
-				sub07.result[65*129+k]=sub11.result[65*129+k];
-				sub11.result[64*129+k]=sub07.result[64*129+k];
-				sub11.result[97*129+k]=sub15.result[97*129+k];
-				sub15.result[96*129+k]=sub11.result[96*129+k];	
+				sub12.result[33*129+k]=sub13.result[(33-31)*129+k];
+				sub13.result[(32-31)*129+k]=sub12.result[32*129+k];
+				sub13.result[(65-31)*129+k]=sub14.result[(65-63)*129+k];
+				sub14.result[(64-63)*129+k]=sub13.result[(64-31)*129+k];
+				sub14.result[(97-63)*129+k]=sub15.result[(97-95)*129+k];
+				sub15.result[(96-95)*129+k]=sub14.result[(96-93)*129+k];	
 			}
 
 			for(j=2;j<=32;j++){
-				sub00.result[j*129+33]=sub01.result[j*129+33];
-				sub01.result[j*129+32]=sub00.result[j*129+32];
-				sub01.result[j*129+65]=sub02.result[j*129+65];
-				sub02.result[j*129+64]=sub01.result[j*129+64];
-				sub02.result[j*129+97]=sub03.result[j*129+97];
-				sub03.result[j*129+96]=sub02.result[j*129+96];	
+				sub00.result[j*129+33]=sub04.result[j*129+33];
+				sub04.result[j*129+32]=sub00.result[j*129+32];
+				sub04.result[j*129+65]=sub08.result[j*129+65];
+				sub08.result[j*129+64]=sub04.result[j*129+64];
+				sub08.result[j*129+97]=sub12.result[j*129+97];
+				sub12.result[j*129+96]=sub08.result[j*129+96];	
 			}
 			for(j=33;j<=64;j++){
-				sub04.result[j*129+33]=sub05.result[j*129+33];
-				sub05.result[j*129+32]=sub04.result[j*129+32];
-				sub05.result[j*129+65]=sub06.result[j*129+65];
-				sub06.result[j*129+64]=sub05.result[j*129+64];
-				sub06.result[j*129+97]=sub07.result[j*129+97];
-				sub07.result[j*129+96]=sub06.result[j*129+96];	
+				tmpj=j-31;
+				sub01.result[tmpj*129+33]=sub05.result[tmpj*129+33];
+				sub05.result[tmpj*129+32]=sub01.result[tmpj*129+32];
+				sub05.result[tmpj*129+65]=sub09.result[tmpj*129+65];
+				sub09.result[tmpj*129+64]=sub05.result[tmpj*129+64];
+				sub09.result[tmpj*129+97]=sub13.result[tmpj*129+97];
+				sub13.result[tmpj*129+96]=sub09.result[tmpj*129+96];	
 			}
 			for(j=65;j<=96;j++){
-				sub08.result[j*129+33]=sub09.result[j*129+33];
-				sub09.result[j*129+32]=sub08.result[j*129+32];
-				sub09.result[j*129+65]=sub10.result[j*129+65];
-				sub10.result[j*129+64]=sub09.result[j*129+64];
-				sub10.result[j*129+97]=sub11.result[j*129+97];
-				sub11.result[j*129+96]=sub10.result[j*129+96];	
+				tmpj=j-63;
+				sub02.result[tmpj*129+33]=sub06.result[tmpj*129+33];
+				sub06.result[tmpj*129+32]=sub02.result[tmpj*129+32];
+				sub06.result[tmpj*129+65]=sub10.result[tmpj*129+65];
+				sub10.result[tmpj*129+64]=sub06.result[tmpj*129+64];
+				sub10.result[tmpj*129+97]=sub14.result[tmpj*129+97];
+				sub14.result[tmpj*129+96]=sub10.result[tmpj*129+96];	
 			}
 			for(j=97;j<=128;j++){
-				sub12.result[j*129+33]=sub13.result[j*129+33];
-				sub13.result[j*129+32]=sub12.result[j*129+32];
-				sub13.result[j*129+65]=sub14.result[j*129+65];
-				sub14.result[j*129+64]=sub13.result[j*129+64];
-				sub14.result[j*129+97]=sub15.result[j*129+97];
-				sub15.result[j*129+96]=sub14.result[j*129+96];	
+				tmpj=j-95;
+				sub03.result[tmpj*129+33]=sub07.result[tmpj*129+33];
+				sub07.result[tmpj*129+32]=sub03.result[tmpj*129+32];
+				sub07.result[tmpj*129+65]=sub11.result[tmpj*129+65];
+				sub11.result[tmpj*129+64]=sub07.result[tmpj*129+64];
+				sub11.result[tmpj*129+97]=sub15.result[tmpj*129+97];
+				sub15.result[tmpj*129+96]=sub11.result[tmpj*129+96];	
 			}
-
 
 		}
 
 		for(k=2;k<=32;k++){
 			for(j=2; j<=32; j++){T[j*129+k]=sub00.result[j*129+k];}
-			for(j=33;j<=64; j++){T[j*129+k]=sub01.result[j*129+k];}
-			for(j=65;j<=96; j++){T[j*129+k]=sub02.result[j*129+k];}
-			for(j=97;j<=128;j++){T[j*129+k]=sub03.result[j*129+k];}
+			for(j=33;j<=64; j++){tmpj=j-31;T[j*129+k]=sub01.result[j*129+k];}
+			for(j=65;j<=96; j++){tmpj=j-63;T[j*129+k]=sub02.result[j*129+k];}
+			for(j=97;j<=128;j++){tmpj=j-95;T[j*129+k]=sub03.result[j*129+k];}
 		}
 		for(k=33;k<=64;k++){
 			for(j=2; j<=32; j++){T[j*129+k]=sub04.result[j*129+k];}
-			for(j=33;j<=64; j++){T[j*129+k]=sub05.result[j*129+k];}
-			for(j=65;j<=96; j++){T[j*129+k]=sub06.result[j*129+k];}
-			for(j=97;j<=128;j++){T[j*129+k]=sub07.result[j*129+k];}
+			for(j=33;j<=64; j++){tmpj=j-31;T[j*129+k]=sub05.result[j*129+k];}
+			for(j=65;j<=96; j++){tmpj=j-63;T[j*129+k]=sub06.result[j*129+k];}
+			for(j=97;j<=128;j++){tmpj=j-95;T[j*129+k]=sub07.result[j*129+k];}
 		}
 		for(k=65;k<=96;k++){
 			for(j=2; j<=32; j++){T[j*129+k]=sub08.result[j*129+k];}
-			for(j=33;j<=64; j++){T[j*129+k]=sub09.result[j*129+k];}
-			for(j=65;j<=96; j++){T[j*129+k]=sub10.result[j*129+k];}
-			for(j=97;j<=128;j++){T[j*129+k]=sub11.result[j*129+k];}
+			for(j=33;j<=64; j++){tmpj=j-31;T[j*129+k]=sub09.result[j*129+k];}
+			for(j=65;j<=96; j++){tmpj=j-63;T[j*129+k]=sub10.result[j*129+k];}
+			for(j=97;j<=128;j++){tmpj=j-95;T[j*129+k]=sub11.result[j*129+k];}
 		}
 		for(k=97;k<=128;k++){
 			for(j=2; j<=32; j++){T[j*129+k]=sub12.result[j*129+k];}
-			for(j=33;j<=64; j++){T[j*129+k]=sub13.result[j*129+k];}
-			for(j=65;j<=96; j++){T[j*129+k]=sub14.result[j*129+k];}
-			for(j=97;j<=128;j++){T[j*129+k]=sub15.result[j*129+k];}
+			for(j=33;j<=64; j++){tmpj=j-31;T[j*129+k]=sub13.result[j*129+k];}
+			for(j=65;j<=96; j++){tmpj=j-63;T[j*129+k]=sub14.result[j*129+k];}
+			for(j=97;j<=128;j++){tmpj=j-95;T[j*129+k]=sub15.result[j*129+k];}
 		}
 
 		//System.out.println(T[10*129+10]);

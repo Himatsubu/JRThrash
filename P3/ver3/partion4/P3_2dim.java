@@ -59,9 +59,9 @@ public class P3_2dim{
 				sub00.T[j*129+k]=T[j*129+k];	
 			}
 			for(j=64;j<=129;j++){
-				sub01.U[j*129+k]=U[j*129+k];
-				sub01.V[j*129+k]=V[j*129+k];
-				sub01.T[j*129+k]=T[j*129+k];
+				sub01.U[(j-63)*129+k]=U[j*129+k];
+				sub01.V[(j-63)*129+k]=V[j*129+k];
+				sub01.T[(j-63)*129+k]=T[j*129+k];
 			}
 		}
 		for(k=64;k<=129;k++){
@@ -71,9 +71,9 @@ public class P3_2dim{
 				sub03.T[j*129+k]=T[j*129+k];
 			}
 			for(j=64;j<=129;j++){
-				sub03.U[j*129+k]=U[j*129+k];
-				sub03.V[j*129+k]=V[j*129+k];
-				sub03.T[j*129+k]=T[j*129+k];
+				sub03.U[(j-63)*129+k]=U[j*129+k];
+				sub03.V[(j-63)*129+k]=V[j*129+k];
+				sub03.T[(j-63)*129+k]=T[j*129+k];
 			}
 		}
 
@@ -92,30 +92,30 @@ public class P3_2dim{
 			}catch(Exception e){}
 			
 			for(k=2;k<=64;k++){
-				sub00.result[65*129+k]=sub01.result[65*129+k];
-				sub01.result[64*129+k]=sub00.result[64*129+k];
+				sub00.result[65*129+k]=sub01.result[(65-63)*129+k];
+				sub01.result[(64-63)*129+k]=sub00.result[64*129+k];
 			}
 			for(j=2;j<=64;j++){
 				sub00.result[j*129+65]=sub02.result[j*129+65];
 				sub02.result[j*129+64]=sub00.result[j*129+64];
 			}
 			for(k=65;k<=128;k++){
-				sub02.result[65*129+k]=sub03.result[65*129+k];
-				sub03.result[64*129+k]=sub02.result[64*129+k];
+				sub02.result[65*129+k]=sub03.result[(65-63)*129+k];
+				sub03.result[(64-63)*129+k]=sub02.result[64*129+k];
 			}
 			for(j=65;j<=128;j++){
-				sub01.result[j*129+65]=sub03.result[j*129+k];
-				sub03.result[j*129+64]=sub01.result[j*129+k];
+				sub01.result[(j-63)*129+65]=sub03.result[j*129+k];
+				sub03.result[(j-63)*129+64]=sub01.result[j*129+k];
 			}
 
 		}
 		for(k=2;k<=64;k++){
 			for(j=2;j<=64;j++)  {T[j*129+k]=sub00.result[j*129+k];}
-			for(j=65;j<=128;j++){T[j*129+k]=sub01.result[j*129+k];}
+			for(j=65;j<=128;j++){T[j*129+k]=sub01.result[(j-63)*129+k];}
 		}
 		for(k=65;k<=128;k++){
 			for(j=2;j<=64;j++)  {T[j*129+k]=sub02.result[j*129+k];}
-			for(j=65;j<=128;j++){T[j*129+k]=sub03.result[j*129+k];}
+			for(j=65;j<=128;j++){T[j*129+k]=sub03.result[(j-63)*129+k];}
 		}
 		//System.out.println(T[10*21+10]);
 }

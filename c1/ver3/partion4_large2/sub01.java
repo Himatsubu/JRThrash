@@ -27,18 +27,19 @@ public class sub01 extends Thread{
 			u[1*129+k]=0.5f;
 			u[129*129+k]=0.0f;
 		}
-		for(j=64;j<=129;j++){
-			tmpj=j-63;
-			u[tmpj*129+1]=1.f;
-			u[tmpj*129+129]=0.0f;
+		for(j=1;j<=66;j++){
+			//jは63分動いている
+			u[j*129+1]=1.f;
+			u[j*129+129]=0.0f;
 		}
 
 	
 		for(k=2;k<=64;k++){
-			for(j=65;j<=128;j++){
-			tmpj=j-63;
-			result[tmpj*129+k]= u[tmpj*129]+r1*(u[(tmpj+1)*129]-2.0f*u[tmpj*129]+u[(tmpj-1)*129+k])
-			+r2*(u[tmpj*129+k+1]-2.0f*u[tmpj*129+k]+u[tmpj*129+k-1])+dt*100f*dx*(j-1)*dy*(k-1);			
+			for(j=2;j<=65;j++){
+			//for(j=65;j<=128;j++){
+			//jは63分動いている;
+			result[j*129+k]= u[j*129]+r1*(u[(j+1)*129]-2.0f*u[j*129]+u[(j-1)*129+k])
+			+r2*(u[j*129+k+1]-2.0f*u[j*129+k]+u[j*129+k-1])+dt*100f*dx*(j+63-1)*dy*(k-1);			
 			}
 		}
 		for(k=2;k<=64;k++){
