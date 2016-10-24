@@ -37,17 +37,13 @@ public class c1{
 	}
 
 	//クラスに配列をこぴー
-	for(k=1;k<=65;k++)
+	for(k=1;k<=129;k++)
 	{
-		for(j=1;j<=129;j++){
+		for(j=1;j<=65;j++){
 			sub00.u[j*129+k]=u[j*129+k];
 		}
-	}
-	
-	for(k=64;k<=129;k++)
-	{
-		for(j=1;j<=129;j++){
-			sub01.u[j*129+k]=u[j*129+k];
+		for(j=64;j<=129;j++){
+			sub01.u[(j-63)*129+k]=u[j*129+k];
 		}
 	}
 
@@ -77,26 +73,20 @@ public class c1{
 //		sub00.run();
 //		sub01.run();
 		
-		for(j=1;j<=129;j++){
-			sub00.u[j*129+64]=sub01.result[j*129+64];
-			sub01.u[j*129+65]=sub00.result[j*129+65];
+		for(k=1;k<=129;j++){
+			sub00.u[64*129+k]=sub01.result[(64-63)*129+k];
+			sub01.u[(65-63)*129+k]=sub00.result[65*129+k];
 	
 		}
 
 			
 	}
-		for(k=2;k<=64;k++)
-		{
-			for(j=2;j<=128;j++)
-			{
+		for(k=2;k<=128;k++){
+			for(j=2;j<=64;j++){
 				u[j*129+k]=sub00.result[j*129+k];
 			}		
-		}
-		
-		for(k=65;k<=128;k++)
-		{
-			for(j=2;j<=128;j++){
-				u[j*129+k]=sub01.result[j*129+k];
+			for(j=65;j<=128;j++){
+				u[j*129+k]=sub01.result[(j-63)*129+k];
 			}
 		}
 	
