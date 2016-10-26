@@ -19,7 +19,7 @@ public class sub02 extends Thread{
 			u[1*129+k]=0.5f;
 			u[129*129+k]=0.0f;
 		}
-		for(j=2;j<=33;j++){
+		for(j=1;j<=18;j++){
 			//tmpj=j-63;
 			u[j*129+1]=1.f;
 			u[j*129+129]=0.0f;
@@ -27,16 +27,16 @@ public class sub02 extends Thread{
 
 
 		for(k=2;k<=32;k++){
-			for(j=2;j<=33;j++){
+			for(j=2;j<=17;j++){
 			//q=100f*dx*(j-1)*dy*(k-1);
 			//tmpj=j-63;
 			result[j*129+k]= u[j*129+k]+r1*(u[(j+1)*129+k]-2.0f*u[j*129+k]+u[(j-1)*129+k])
-			+r2*(u[j*129+k+1]-2.0f*u[j*129+k]+u[j*129+k-1])+dt*100f*dx*(j+63-1)*dy*(k-1);		
+			+r2*(u[j*129+k+1]-2.0f*u[j*129+k]+u[j*129+k-1])+dt*100f*dx*(j+31-1)*dy*(k-1);		
 			
 			}
 		}
 		for(k=2;k<=32;k++){
-			for(j=2;j<=33;j++){
+			for(j=2;j<=17;j++){
 				//tmpj=j-63;
 				u[j*129+k]=result[j*129+k];
 			}

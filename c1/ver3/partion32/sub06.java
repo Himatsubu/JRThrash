@@ -14,27 +14,28 @@ public class sub06 extends Thread{
 		float dt = 0.0005f;
 		float dx = 0.05f;
 		float dy = 0.05f;
-		for(k=32;k<=65;k++){
+
+		for(k=1;k<=33;k++){
 			u[1*129+k]=0.5f;
 			u[129*129+k]=0.0f;
 		}
-		for(j=1;j<=34;j++){
+		for(j=1;j<=33;j++){
 			//tmpj=j-63;
 			u[j*129+1]=1.f;
 			u[j*129+129]=0.0f;
 		}
 
-		for(k=33;k<=64;k++){
-			for(j=2;j<=33;j++){
+		for(k=2;k<=32;k++){
+			for(j=2;j<=17;j++){
 			//tmpj=j-63;
 			//q=100f*dx*(j-1)*dy*(k-1);
 			result[j*129+k]= u[j*129+k]+r1*(u[(j+1)*129+k]-2.0f*u[j*129+k]+u[(j-1)*129+k])
-			+r2*(u[j*129+k+1]-2.0f*u[j*129+k]+u[j*129+k-1])+dt*100f*dx*(j+63-1)*dy*(k-1);			
+			+r2*(u[j*129+k+1]-2.0f*u[j*129+k]+u[j*129+k-1])+dt*100f*dx*(j+95-1)*dy*(k-1);			
 			
 			}
 		}
-		for(k=32;k<=64;k++){
-			for(j=2;j<=33;j++){
+		for(k=2;k<=32;k++){
+			for(j=2;j<=17;j++){
 				//tmpj=j-63;
 				u[j*129+k]=result[j*129+k];
 			}
