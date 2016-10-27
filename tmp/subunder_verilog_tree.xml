@@ -18,7 +18,7 @@
 			<init>
 				<NewArray>
 					<type>	float	</type>
-					<elements>	16900	</elements>				
+					<elements>	8643	</elements>				
 				</NewArray>
 			</init>
 		</VeriableDecl>
@@ -36,7 +36,7 @@
 			<init>
 				<NewArray>
 					<type>	float	</type>
-					<elements>	16900	</elements>				
+					<elements>	8643	</elements>				
 				</NewArray>
 			</init>
 		</VeriableDecl>
@@ -549,7 +549,7 @@
 										<rightExpr>
 											<Literal>
 												<type>	int	</type>
-												<value>	65	</value>
+												<value>	1	</value>
 											</Literal>
 										</rightExpr>
 
@@ -830,7 +830,7 @@
 										<rightExpr>
 											<Literal>
 												<type>	int	</type>
-												<value>	129	</value>
+												<value>	66	</value>
 											</Literal>
 										</rightExpr>
 
@@ -1009,7 +1009,7 @@
 										<rightExpr>
 											<Literal>
 												<type>	int	</type>
-												<value>	65	</value>
+												<value>	2	</value>
 											</Literal>
 										</rightExpr>
 
@@ -1185,7 +1185,7 @@
 													<rightExpr>
 														<Literal>
 															<type>	int	</type>
-															<value>	128	</value>
+															<value>	65	</value>
 														</Literal>
 													</rightExpr>
 
@@ -1733,10 +1733,24 @@
 																							<Binary>
 																								<binaryOp>	'-'	</binaryOp>
 																								<leftExpr>
-																									<Ident>
-																										<variableID>	8	</variableID>
-																										<idName>	j	</idName>
-																									</Ident>
+																									<Binary>
+																										<binaryOp>	'+'	</binaryOp>
+																										<leftExpr>
+																											<Ident>
+																												<variableID>	8	</variableID>
+																												<idName>	j	</idName>
+																											</Ident>
+																										</leftExpr>
+
+																										<rightExpr>
+																											<Literal>
+																												<type>	int	</type>
+																												<value>	63	</value>
+																											</Literal>
+																										</rightExpr>
+
+																									</Binary>
+
 																								</leftExpr>
 
 																								<rightExpr>
@@ -1879,7 +1893,7 @@
 										<rightExpr>
 											<Literal>
 												<type>	int	</type>
-												<value>	65	</value>
+												<value>	2	</value>
 											</Literal>
 										</rightExpr>
 
@@ -2055,7 +2069,7 @@
 													<rightExpr>
 														<Literal>
 															<type>	int	</type>
-															<value>	128	</value>
+															<value>	65	</value>
 														</Literal>
 													</rightExpr>
 

@@ -18,7 +18,7 @@
 			<init>
 				<NewArray>
 					<type>	float	</type>
-					<elements>	16900	</elements>				
+					<elements>	8643	</elements>				
 				</NewArray>
 			</init>
 		</VeriableDecl>
@@ -36,7 +36,7 @@
 			<init>
 				<NewArray>
 					<type>	float	</type>
-					<elements>	16900	</elements>				
+					<elements>	8643	</elements>				
 				</NewArray>
 			</init>
 		</VeriableDecl>
@@ -549,7 +549,7 @@
 										<rightExpr>
 											<Literal>
 												<type>	int	</type>
-												<value>	65	</value>
+												<value>	1	</value>
 											</Literal>
 										</rightExpr>
 
@@ -830,7 +830,7 @@
 										<rightExpr>
 											<Literal>
 												<type>	int	</type>
-												<value>	129	</value>
+												<value>	65	</value>
 											</Literal>
 										</rightExpr>
 
@@ -1060,7 +1060,7 @@
 										<rightExpr>
 											<Literal>
 												<type>	int	</type>
-												<value>	64	</value>
+												<value>	129	</value>
 											</Literal>
 										</rightExpr>
 
@@ -1185,7 +1185,7 @@
 													<rightExpr>
 														<Literal>
 															<type>	int	</type>
-															<value>	128	</value>
+															<value>	64	</value>
 														</Literal>
 													</rightExpr>
 
@@ -1930,7 +1930,7 @@
 										<rightExpr>
 											<Literal>
 												<type>	int	</type>
-												<value>	64	</value>
+												<value>	129	</value>
 											</Literal>
 										</rightExpr>
 
@@ -2055,7 +2055,7 @@
 													<rightExpr>
 														<Literal>
 															<type>	int	</type>
-															<value>	128	</value>
+															<value>	64	</value>
 														</Literal>
 													</rightExpr>
 
