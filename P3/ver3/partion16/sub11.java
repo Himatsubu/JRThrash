@@ -47,6 +47,11 @@ public class sub11 extends Thread{
 	     		              +r4*(T[j*129+k+1]-2.0f*T[j*129+k]+T[j*129+k-1]);
 			}
 		}
+		for(k=65;k<=96;k++){
+			for(j=2;j<=33;j++){
+				T[j*129+k]=result[j*129+k];
+			}
+		}
 /*
 		uu[j][k]= u[j][k]+r1*(u[j+1][k]-2.0f*u[j][k]+u[j-1][k])
 			+r2*(u[j][k+1]-2.0f*u[j][k]+u[j][k-1])+dt*q[j][k];

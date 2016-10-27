@@ -40,7 +40,7 @@ public class sub07 extends Thread{
 */
 //	次の時間での温度の計算
 		for (k = 33; k <= 64; k++){
-			for (j = 97; j <= 128; j++){
+			for (j = 2; j <= 33; j++){
 	     		      result[j*129+k]= T[j*129+k]-r1*U[j*129+k]*(T[(j+1)*129+k]-T[(j-1)*129+k])
 	     	                    	-r2*V[j*129+k]*(T[j*129+k+1]-T[j*129+k-1])
 	     		              +r3*(T[(j+1)*129+k]-2.0f*T[j*129+k]+T[(j-1)*129+k])

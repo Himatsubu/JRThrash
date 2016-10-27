@@ -33,11 +33,11 @@ public class sub06 extends Thread{
 			T[j*129+1] = 0.0f;
 			T[j*129+my]= 0.0f;
 		}
-
+/*
 		for(j=1;j<=33;j++){
 			T[j*129+1]=1.0f;
 		}
-
+*/
 //	次の時間での温度の計算
 		for (k = 33; k <= 64; k++){
 			for (j = 2; j <= 33; j++){

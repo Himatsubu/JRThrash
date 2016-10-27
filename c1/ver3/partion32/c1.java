@@ -49,7 +49,7 @@ public class c1{
 		my=129;
 		//dx = 0.05f;
 		//dy = 0.05f;
-		nlast=2;
+		nlast=1;
 		
 //	熱源項の定義と初期条件
 	for (k = 1; k <= my; k++)
@@ -116,19 +116,33 @@ public class c1{
 		sub01.start();
 		sub02.start();
 		sub03.start();
+		sub04.start();
 		sub05.start();
 		sub06.start();
 		sub07.start();
 		sub09.start();
 		sub10.start();
 		sub11.start();
+		sub12.start();
 		sub13.start();
 		sub14.start();
 		sub15.start();
-		sub00.start();
-		sub04.start();
-		sub08.start();
-		sub12.start();	
+		sub16.start();
+		sub17.start();
+		sub18.start();
+		sub19.start();
+		sub20.start();
+		sub21.start();
+		sub22.start();
+		sub23.start();
+		sub24.start();
+		sub25.start();
+		sub26.start();
+		sub27.start();
+		sub28.start();
+		sub29.start();
+		sub30.start();
+		sub31.start();
 		try{
 			sub00.join();
 			sub01.join();
@@ -146,6 +160,23 @@ public class c1{
 			sub13.join();
 			sub14.join();
 			sub15.join();
+			sub16.join();
+			sub17.join();
+			sub18.join();
+			sub19.join();
+			sub20.join();
+			sub21.join();
+			sub22.join();
+			sub23.join();
+			sub24.join();
+			sub25.join();
+			sub26.join();
+			sub27.join();
+			sub28.join();
+			sub29.join();
+			sub30.join();
+			sub31.join();
+
 		}catch(Exception e){}
 
 	
@@ -298,7 +329,7 @@ public class c1{
 
 	}
 
-	for(k=2;k<=32;k++){
+	for(k=33;k<=64;k++){
 		for(j=2; j<=16;  j++){		 u[j*129+k]=sub08.result[j*129+k];}
 		for(j=17;j<=32;  j++){tmpj=j-15; u[j*129+k]=sub09.result[j*129+k];}
 		for(j=33;j<=48;  j++){tmpj=j-31; u[j*129+k]=sub10.result[j*129+k];}
@@ -310,7 +341,7 @@ public class c1{
 
 	}
 
-	for(k=2;k<=32;k++){
+	for(k=65;k<=96;k++){
 		for(j=2; j<=16;  j++){		 u[j*129+k]=sub16.result[j*129+k];}
 		for(j=17;j<=32;  j++){tmpj=j-15; u[j*129+k]=sub17.result[j*129+k];}
 		for(j=33;j<=48;  j++){tmpj=j-31; u[j*129+k]=sub18.result[j*129+k];}
@@ -322,7 +353,7 @@ public class c1{
 
 	}
 
-	for(k=2;k<=32;k++){
+	for(k=97;k<=128;k++){
 		for(j=2; j<=16;  j++){		 u[j*129+k]=sub24.result[j*129+k];}
 		for(j=17;j<=32;  j++){tmpj=j-15; u[j*129+k]=sub25.result[j*129+k];}
 		for(j=33;j<=48;  j++){tmpj=j-31; u[j*129+k]=sub26.result[j*129+k];}

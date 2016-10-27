@@ -2,14 +2,14 @@ import net.njlab.sample.annotation.*;
 
 
 public class subup extends Thread{
-        final float[] T      = new float[484];
-	final float[] V      = new float[484];
-	final float[] U      = new float[484];
-	final float[] result = new float[484];
+        final float[] T      = new float[16900];
+	final float[] V      = new float[16900];
+	final float[] U      = new float[16900];
+	final float[] result = new float[16900];
 
         @JRThrashUnroll(unrollNum=20, loopVariableName="j",unrollType=JRThrashUnroll.copyLoopVar)
         public void run(){
-		int k,j;
+		int k,j,kx,ky,mx,my;
 		float dt,dx,dy,r1,r2,r3,r4,YY;
 
 		kx=128;

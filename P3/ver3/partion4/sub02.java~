@@ -9,7 +9,7 @@ public class sub02 extends Thread{
 
         @JRThrashUnroll(unrollNum=9, loopVariableName="j",unrollType=JRThrashUnroll.copyLoopVar)
         public void run(){
-		int k,j;
+		int k,j,kx,ky,mx,my;
 		float dt,dx,dy,r1,r2,r3,r4,YY;
 
 		kx=128;
