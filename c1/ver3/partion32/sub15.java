@@ -16,16 +16,6 @@ public class sub15 extends Thread{
 		float dx = 0.05f;
 		float dy = 0.05f;
 		float q;
-	
-		for(k=64;k<=97;k++){
-			u[1*129+k]=0.5f;
-			u[129*129+k]=0.0f;
-		}
-		for(j=1;j<=18;j++){
-			//tmpj=j-95;
-			u[j*129+1]=1.f;
-			u[j*129+129]=0.0f;
-		}
 
 		for(k=33;k<=64;k++){
 			for(j=2;j<=17;j++){

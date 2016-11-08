@@ -24,14 +24,7 @@ public class subup extends Thread{
 		dt=0.005f;
 		r1=dt/(dx*dx);
 		r2=dt/(dy*dy);
-		for(k=1;k<=129;k++){
-			u[1*129+k]=0.5f;
-			u[129*129+k]=0.0f;
-		}
-		for(j=1;j<=65;j++){
-			u[j*129+1]=1.f;
-			u[j*129+129]=0.0f;
-		}
+
 
 
 		for(k=2;k<=129;k++){
