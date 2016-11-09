@@ -2,10 +2,9 @@ import net.njlab.sample.annotation.*;
 
 
 public class sub02 extends Thread{
-        final float[] T      = new float[16900];
-	final float[] V      = new float[16900];
-	final float[] U      = new float[16900];
-	final float[] result = new float[16900];
+        final float[] T      = new float[4386];
+	final float[] U      = new float[4386];
+	final float[] result = new float[4386];
 
         @JRThrashUnroll(unrollNum=5, loopVariableName="j",unrollType=JRThrashUnroll.copyLoopVar)
         public void run(){
@@ -24,25 +23,13 @@ public class sub02 extends Thread{
 		r2=0.5f*dt/dy;
 		r3=dt/(dx*dx);
 		r4=dt/(dy*dy);
-		for (k = 1; k <= my; k++){
-			T[1*129+k] = 0.0f;
-			T[mx*129+k]= T[(mx-1)*129+k];
-		}
-		
-		for (j = 1; j <= 34; j++){
-			T[j*129+1] = 0.0f;
-			T[j*129+my]= 0.0f;
-		}
-/*
-		for(j=mx/4;j<=mx/2;j++){
-			T[j*129+1]=1.0f;
-		}
-*/
+
+
 //	次の時間での温度の計算
 		for (k = 2; k <= 32; k++){
 			for (j = 2; j <= 33; j++){
 	     		      result[j*129+k]= T[j*129+k]-r1*U[j*129+k]*(T[(j+1)*129+k]-T[(j-1)*129+k])
-	     	                    	-r2*V[j*129+k]*(T[j*129+k+1]-T[j*129+k-1])
+	     	                    	-r2*0*(T[j*129+k+1]-T[j*129+k-1])
 	     		              +r3*(T[(j+1)*129+k]-2.0f*T[j*129+k]+T[(j-1)*129+k])
 	     		              +r4*(T[j*129+k+1]-2.0f*T[j*129+k]+T[j*129+k-1]);
 			}

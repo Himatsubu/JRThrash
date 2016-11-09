@@ -11,7 +11,7 @@ public class c1{
 	static final subunder sub01 = new subunder();
 
         @JRThrashUnroll(unrollNum=7, loopVariableName="j",unrollType=JRThrashUnroll.copyLoopVar)
-	public void run(){
+	public float run(){
 	//public static void main(String[] args){
 		int k,j,n,mx,my,nlast;
 		float dx,dy,r1,r2,dt;
@@ -83,8 +83,8 @@ public class c1{
 //		sub01.run();
 		
 		for(k=1;k<=129;k++){
-			sub00.u[64*129+k]=sub01.result[(64-63)*129+k];
-			sub01.u[(65-63)*129+k]=sub00.result[65*129+k];
+			sub00.u[65*129+k]=sub01.result[(65-63)*129+k];
+			sub01.u[(64-63)*129+k]=sub00.result[64*129+k];
 	
 		}
 
@@ -109,6 +109,6 @@ public class c1{
 		}
 */
 		//System.out.println(u[210+10]);
-		//return u[2*129+2];
+		return u[2*129+2];
 	}
 }

@@ -4,7 +4,6 @@ public class P3_2dim{
 		private static final float T[] = new float [16900];
 		private static final float TT[]= new float [16900];
 		private static final float U[] = new float [16900];
-		private static final float V[]= new float  [16900];
 
 	static final sub00 sub00 = new sub00();
 	static final sub01 sub01 = new sub01();
@@ -45,34 +44,42 @@ public class P3_2dim{
 		for (k = 1; k <= my; k++){
 			for (j = 1; j<= mx; j++){
 			YY=dy*(k-1);
-			T[j*21+k]=0.0f;
-			TT[j*21+k]=0.0f;
-			U[j*21+k]=40.0f*YY*(1.0f-YY);
-			V[j*21+k]=0.0f;
+			T[j*129+k]=0.0f;
+			TT[j*129+k]=0.0f;
+			U[j*129+k]=40.0f*YY*(1.0f-YY);
 			}
+		}
+
+		for (k = 1; k <= my; k++){
+			T[1*129+k] = 0.0f;
+			T[mx*129+k]= T[(mx-1)*129+k];
+		}
+		
+		for (j = 1; j <= mx; j++){
+			T[j*129+1] = 0.0f;
+			T[j*129+my]= 0.0f;
+		}
+		for(j=mx/4;j<=mx/2;j++){
+			T[j*129+1]=1.0f;
 		}
 
 		for(k=1;k<=65;k++){
 			for(j=1;j<=65;j++){
 				sub00.U[j*129+k]=U[j*129+k];
-				sub00.V[j*129+k]=V[j*129+k];
 				sub00.T[j*129+k]=T[j*129+k];	
 			}
 			for(j=64;j<=129;j++){
 				sub01.U[(j-63)*129+k]=U[j*129+k];
-				sub01.V[(j-63)*129+k]=V[j*129+k];
 				sub01.T[(j-63)*129+k]=T[j*129+k];
 			}
 		}
 		for(k=64;k<=129;k++){
 			for(j=1;j<=65;j++){
 				sub02.U[j*129+k]=U[j*129+k];
-				sub02.V[j*129+k]=V[j*129+k];
 				sub03.T[j*129+k]=T[j*129+k];
 			}
 			for(j=64;j<=129;j++){
 				sub03.U[(j-63)*129+k]=U[j*129+k];
-				sub03.V[(j-63)*129+k]=V[j*129+k];
 				sub03.T[(j-63)*129+k]=T[j*129+k];
 			}
 		}

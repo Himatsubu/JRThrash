@@ -6,7 +6,6 @@ public class P3_2dim{
 	private static final float T[] = new float [16900];
 	private static final float TT[]= new float [16900];
 	private static final float U[] = new float [16900];
-	private static final float V[]= new float  [16900];
 
 	static final sub00 sub00 = new sub00();
 	static final sub01 sub01 = new sub01();
@@ -26,7 +25,7 @@ public class P3_2dim{
 	static final sub15 sub15 = new sub15();
 
         @JRThrashUnroll(unrollNum=7, loopVariableName="j",unrollType=JRThrashUnroll.copyLoopVar)
-	public void run(){
+	public float run(){
 //	public static void main(String[] args){
 		int k,j,n;
 		int mx,my;
@@ -55,29 +54,38 @@ public class P3_2dim{
 				T[j*129+k]=0.0f;
 				TT[j*129+k]=0.0f;
 				U[j*129+k]=40.0f*YY*(1.0f-YY);
-				V[j*129+k]=0.0f;
 			}
+		}
+
+		for (k = 1; k <= my; k++){
+			T[1*129+k] = 0.0f;
+			T[mx*129+k]= T[(mx-1)*129+k];
+		}
+		
+		for (j = 1; j <= 129; j++){
+			T[j*129+1] = 0.0f;
+			T[j*129+my]= 0.0f;
+		}
+
+		for(j=mx/4;j<=mx/2;j++){
+			T[j*129+1]=1.0f;
 		}
 
 		for(k=1;k<=33;k++){
 			for(j=1;j<=33;j++){
 				sub00.U[j*129+k]=U[j*129+k];
-				sub00.V[j*129+k]=V[j*129+k];
 				sub00.T[j*129+k]=T[j*129+k];
 			}
 			for(j=32;j<=65;j++){
 				sub01.U[j*129+k]=U[j*129+k];
-				sub01.V[j*129+k]=V[j*129+k];
 				sub01.T[j*129+k]=T[j*129+k];
 			}
 			for(j=64;j<=97;j++){
 				sub02.U[j*129+k]=U[j*129+k];
-				sub02.V[j*129+k]=V[j*129+k];
 				sub02.T[j*129+k]=T[j*129+k];
 			}
 			for(j=96;j<=129;j++){
 				sub03.U[j*129+k]=U[j*129+k];
-				sub03.V[j*129+k]=V[j*129+k];
 				sub03.T[j*129+k]=T[j*129+k];
 			}
 		}
@@ -85,67 +93,55 @@ public class P3_2dim{
 		for(k=32;k<=65;k++){
 			for(j=1;j<=33;j++){
 				sub04.U[j*129+k]=U[j*129+k];
-				sub04.V[j*129+k]=V[j*129+k];
 				sub04.T[j*129+k]=T[j*129+k];
 			}
 			for(j=32;j<=65;j++){
 				sub05.U[j*129+k]=U[j*129+k];
-				sub05.V[j*129+k]=V[j*129+k];
 				sub05.T[j*129+k]=T[j*129+k];
 			}
 			for(j=64;j<=97;j++){
 				sub06.U[j*129+k]=U[j*129+k];
-				sub06.V[j*129+k]=V[j*129+k];
 				sub06.T[j*129+k]=T[j*129+k];
 			}
 			for(j=96;j<=129;j++){
 				sub07.U[j*129+k]=U[j*129+k];
-				sub07.V[j*129+k]=V[j*129+k];
 				sub07.T[j*129+k]=T[j*129+k];
 			}
 		}
 		for(k=64;k<=97;k++){
 			for(j=1;j<=33;j++){
 				sub08.U[j*129+k]=U[j*129+k];
-				sub08.V[j*129+k]=V[j*129+k];
 				sub08.T[j*129+k]=T[j*129+k];
 			}
 			for(j=32;j<=65;j++){
 				sub09.U[j*129+k]=U[j*129+k];
-				sub09.V[j*129+k]=V[j*129+k];
 				sub09.T[j*129+k]=T[j*129+k];
 			}
 			for(j=64;j<=97;j++){
 				sub10.U[j*129+k]=U[j*129+k];
-				sub10.V[j*129+k]=V[j*129+k];
 				sub10.T[j*129+k]=T[j*129+k];
 			}
 			for(j=96;j<=129;j++){
 				sub11.U[j*129+k]=U[j*129+k];
-				sub11.V[j*129+k]=V[j*129+k];
 				sub11.T[j*129+k]=T[j*129+k];
 			}
 		}
 		for(k=96;k<=129;k++){
 			for(j=1;j<=33;j++){
 				sub12.U[j*129+k]=U[j*129+k];
-				sub12.V[j*129+k]=V[j*129+k];
 				sub12.T[j*129+k]=T[j*129+k];
 			}
 			for(j=32;j<=65;j++){
 				sub13.U[j*129+k]=U[j*129+k];
-				sub13.V[j*129+k]=V[j*129+k];
 				sub13.T[j*129+k]=T[j*129+k];
 			}
 
 			for(j=64;j<=97;j++){
 				sub14.U[j*129+k]=U[j*129+k];
-				sub14.V[j*129+k]=V[j*129+k];
 				sub14.T[j*129+k]=T[j*129+k];
 			}
 			for(j=96;j<=129;j++){
 				sub15.U[j*129+k]=U[j*129+k];
-				sub15.V[j*129+k]=V[j*129+k];
 				sub15.T[j*129+k]=T[j*129+k];
 			}
 		}
@@ -283,7 +279,7 @@ public class P3_2dim{
 			for(j=97;j<=128;j++){tmpj=j-95;T[j*129+k]=sub15.result[j*129+k];}
 		}
 
-		//System.out.println(T[10*129+10]);
+		return T[10*129+10];
 }
 }
 

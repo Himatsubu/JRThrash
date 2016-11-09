@@ -2,10 +2,10 @@ import net.njlab.sample.annotation.*;
 
 
 public class sub11 extends Thread{
-        final float[] T      = new float[16900];
-	final float[] V      = new float[16900];
-	final float[] U      = new float[16900];
-	final float[] result = new float[16900];
+        final float[] T      = new float[2451];
+	final float[] V      = new float[2451];
+	final float[] U      = new float[2451];
+	final float[] result = new float[2451];
 
         @JRThrashUnroll(unrollNum=5, loopVariableName="j",unrollType=JRThrashUnroll.copyLoopVar)
         public void run(){
@@ -30,7 +30,7 @@ public class sub11 extends Thread{
 		}
 		
 		for (j = 1; j <= 18; j++){
-			T[j*129+1] = 0.0f;
+			T[j*129+1] = 1.0f;
 			T[j*129+my]= 0.0f;
 		}
 /*

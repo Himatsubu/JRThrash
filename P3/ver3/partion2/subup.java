@@ -2,12 +2,11 @@ import net.njlab.sample.annotation.*;
 
 
 public class subup extends Thread{
-        final float[] T      = new float[16900];
-	final float[] V      = new float[16900];
-	final float[] U      = new float[16900];
-	final float[] result = new float[16900];
+        final float[] T      = new float[8514];
+	final float[] U      = new float[8514];
+	final float[] result = new float[8514];
 
-        @JRThrashUnroll(unrollNum=20, loopVariableName="j",unrollType=JRThrashUnroll.copyLoopVar)
+        @JRThrashUnroll(unrollNum=10, loopVariableName="j",unrollType=JRThrashUnroll.copyLoopVar)
         public void run(){
 		int k,j,kx,ky,mx,my;
 		float dt,dx,dy,r1,r2,r3,r4,YY;
@@ -25,29 +24,16 @@ public class subup extends Thread{
 		r3=dt/(dx*dx);
 		r4=dt/(dy*dy);
 
-		for(k=1;k<=129;k++){
-			T[1*129+k]=0.0f;
-			T[129*129+k]=T[(129-1)*129+k];
-		}
-		for(j=1;j<=129;j++){
-			T[j*129+1]=0.0f;
-			T[j*129+129]=0.0f;
-		}
-		for(j=129/4;j<=129/2;j++){
-			T[j*129+1]=1.0f;
-		}
-
-
-		for (k = 2; k <= 64; k++){
-			for (j = 2; j <= 128; j++){
+		for (k = 2; k <= 128; k++){
+			for (j = 2; j <= 64; j++){
 	     		      result[j*129+k]= T[j*129+k]-r1*U[j*129+k]*(T[(j+1)*129+k]-T[(j-1)*129+k])
-	     	                    	-r2*V[j*129+k]*(T[j*129+k+1]-T[j*129+k-1])
+	     	                    	-r2*0*(T[j*129+k+1]-T[j*129+k-1])
 	     		              +r3*(T[(j+1)*129+k]-2.0f*T[j*129+k]+T[(j-1)*129+k])
 	     		              +r4*(T[j*129+k+1]-2.0f*T[j*129+k]+T[j*129+k-1]);
 			}
 		}
-		for(k=2;k<=64;k++){
-			for(j=2;j<=128;j++){
+		for(k=2;k<=128;k++){
+			for(j=2;j<=64;j++){
 				T[j*129+k]=result[j*129+k];
 			}
 		}

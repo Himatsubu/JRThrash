@@ -33,7 +33,7 @@ public class subup extends Thread{
 			+r2*(u[j*129+k+1]-2.0f*u[j*129+k]+u[j*129+k-1])+dt*100f*dx*(j-1)*dy*(k-1);			
 			}
 		}
-		for(k=2;j<=129;k++){
+		for(k=2;k<=129;k++){
 			for(j=2;j<=64;j++){
 				u[j*129+k]=result[j*129+k];
 			}

@@ -14,16 +14,7 @@ public class sub00 extends Thread{
 		dt=0.0005f;
 		r1=dt/(dx*dx);
 		r2=dt/(dy*dy);
-
-		for(k=1;k<=65;k++){
-			u[1*129+k]=0.5f;
-			u[129*129+k]=0.0f;
-		}
-		for(j=1;j<=33;j++){
-			u[j*129+1]=1.f;
-			u[j*129+129]=0.0f;
-		}
-
+		
 		for(k=2;k<=64;k++){
 			for(j=2;j<=32;j++){
 			//q=100f*dx*(j-1)*dy*(k-1);

@@ -24,7 +24,7 @@ public class sub07 extends Thread{
 		r2=0.5f*dt/dy;
 		r3=dt/(dx*dx);
 		r4=dt/(dy*dy);
-		for (k = 1; k <= my; k++){
+		for (k = 32; k <= 65; k++){
 			T[1*129+k] = 0.0f;
 			T[mx*129+k]= T[(mx-1)*129+k];
 		}
@@ -45,6 +45,12 @@ public class sub07 extends Thread{
 	     	                    	-r2*V[j*129+k]*(T[j*129+k+1]-T[j*129+k-1])
 	     		              +r3*(T[(j+1)*129+k]-2.0f*T[j*129+k]+T[(j-1)*129+k])
 	     		              +r4*(T[j*129+k+1]-2.0f*T[j*129+k]+T[j*129+k-1]);
+			}
+		}
+
+		for(k=33;k<=64;k++){
+			for(j=2;j<=33;j++){
+				T[j*129+k]=result[j*129+k];
 			}
 		}
 /*

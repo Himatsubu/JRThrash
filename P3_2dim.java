@@ -5,9 +5,9 @@ public class P3_2dim{
 		private static final float T[] = new float [16900];
 		private static final float TT[]= new float [16900];
 		private static final float U[] = new float [16900];
-		private static final float V[]= new float  [16900];
+		//private static final float V[]= new float  [16900];
 	@JRThrashUnroll(unrollNum=10,loopVariableName="j",unrollType=JRThrashUnroll.copyLoopVar)
-	public void run(){
+	public float run(){
 //	public static void main(String[] args){
 		int k,j,n;
 		int mx,my;
@@ -43,32 +43,29 @@ public class P3_2dim{
 			T[j*129+k]=0.0f;
 			TT[j*129+k]=0.0f;
 			U[j*129+k]=40.0f*YY*(1.0f-YY);
-			V[j*129+k]=0.0f;
+			//V[j*129+k]=0.0f;
 			}
 		}
-
+		for (k = 1; k <= my; k++){
+			T[1*129+k] = 0.0f;
+			T[mx*129+k]= T[(mx-1)*129+k];
+		}
+		for (j = 1; j <= mx; j++){
+			T[j*129+1] = 0.0f;
+			T[j*129+my]= 0.0f;
+		}
+		for(j=mx/4;j<=mx/2;j++){
+			T[j*129+1]=1.0f;
+		}
 //	計算ループ
 		for (n = 1; n <= nlast; n++){
 
-//	境界条件
-			for (k = 1; k <= my; k++){
-				T[1*129+k] = 0.0f;
-				T[mx*129+k]= T[(mx-1)*129+k];
-				}
-		
-			for (j = 1; j <= mx; j++){
-				T[j*129+1] = 0.0f;
-				T[j*129+my]= 0.0f;
-			}
-			for(j=mx/4;j<=mx/2;j++){
-				T[j*129+1]=1.0f;
-			}
 
 //	次の時間での温度の計算
 			for (k = 2; k <= my-1; k++){
 				for (j = 2; j <= mx-1; j++){
 	     			      TT[j*129+k]= T[j*129+k]-r1*U[j*129+k]*(T[(j+1)*129+k]-T[(j-1)*129+k])
-	     		                    	-r2*V[j*129+k]*(T[j*129+k+1]-T[j*129+k-1])
+	     		                    	-r2*0*(T[j*129+k+1]-T[j*129+k-1])
 	     			              +r3*(T[(j+1)*129+k]-2.0f*T[j*129+k]+T[(j-1)*129+k])
 	     			              +r4*(T[j*129+k+1]-2.0f*T[j*129+k]+T[j*129+k-1]);
 				}
@@ -79,7 +76,7 @@ public class P3_2dim{
 				}
 			}
 		}
-		//System.out.println(T[10*129+10]);
+		return T[10*129+10];
 }
 }
 

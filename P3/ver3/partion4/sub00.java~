@@ -3,7 +3,6 @@ import net.njlab.sample.annotation.*;
 
 public class sub00 extends Thread{
         final float[] T      = new float[16900];
-	final float[] V      = new float[16900];
 	final float[] U      = new float[16900];
 	final float[] result = new float[16900];
 
@@ -40,11 +39,18 @@ public class sub00 extends Thread{
 		for (k = 2; k <= 64; k++){
 			for (j = 2; j <= 64; j++){
 	     		      result[j*129+k]= T[j*129+k]-r1*U[j*129+k]*(T[(j+1)*129+k]-T[(j-1)*129+k])
-	     	                    	-r2*V[j*129+k]*(T[j*129+k+1]-T[j*129+k-1])
+	     	                    	-r2*0*(T[j*129+k+1]-T[j*129+k-1])
 	     		              +r3*(T[(j+1)*129+k]-2.0f*T[j*129+k]+T[(j-1)*129+k])
 	     		              +r4*(T[j*129+k+1]-2.0f*T[j*129+k]+T[j*129+k-1]);
 			}
 		}
+
+		for(k=2;k<=64;k++){
+			for(j=2;j<=64;j++){
+				T[j*129+k]=result[j*129+k];
+			}
+		}
+
 /*
 		uu[j][k]= u[j][k]+r1*(u[j+1][k]-2.0f*u[j][k]+u[j-1][k])
 			+r2*(u[j][k+1]-2.0f*u[j][k]+u[j][k-1])+dt*q[j][k];

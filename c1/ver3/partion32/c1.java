@@ -40,7 +40,7 @@ public class c1{
 	static final sub31 sub31    = new sub31(); //15-21,15-21
 
         @JRThrashUnroll(unrollNum=7, loopVariableName="j",unrollType=JRThrashUnroll.copyLoopVar)
-	public void run(){
+	public float run(){
 	//public static void main(String[] args){
 		int k,j,n,mx,my,nlast;
 		int tmpj;
@@ -386,7 +386,7 @@ public class c1{
 			}
 		}
 */
-			
+			return u[10*129+10];			
 		}
 		//System.out.println(u[10*21+10]);
 }

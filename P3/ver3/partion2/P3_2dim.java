@@ -4,13 +4,12 @@ public class P3_2dim{
 		private static final float T[] = new float [16900];
 		private static final float TT[]= new float [16900];
 		private static final float U[] = new float [16900];
-		private static final float V[]= new float  [16900];
 
 	static final subup sub00    = new subup();
 	static final subunder sub01 = new subunder();
 
         @JRThrashUnroll(unrollNum=7, loopVariableName="j",unrollType=JRThrashUnroll.copyLoopVar)
-	public void run(){
+	public float run(){
 //	public static void main(String[] args){
 		int k,j,n;
 		int mx,my;
@@ -46,22 +45,30 @@ public class P3_2dim{
 			T[j*129+k]=0.0f;
 			TT[j*129+k]=0.0f;
 			U[j*129+k]=40.0f*YY*(1.0f-YY);
-			V[j*129+k]=0.0f;
 			}
 		}
 
-		for(k=1;k<=65;k++){
-			for(j=1;j<=mx;j++){
+
+		for(k=1;k<=129;k++){
+			T[1*129+k]=0.0f;
+			T[129*129+k]=T[(129-1)*129+k];
+		}
+		for(j=1;j<=129;j++){
+			T[j*129+1]=0.0f;
+			T[j*129+129]=0.0f;
+		}
+		for(j=129/4;j<=129/2;j++){
+			T[j*129+1]=1.0f;
+		}
+
+
+		for(k=1;k<=129;k++){
+			for(j=1;j<=65;j++){
 				sub00.U[j*129+k]=U[j*129+k];
-				sub00.V[j*129+k]=U[j*129+k];
 				sub00.T[j*129+k]=T[j*129+k];
 			}
-		}
-		
-		for(k=64;k<=129;k++){
-			for(j=1;j<=129;j++){
+			for(j=64;j<=129;j++){
 				sub01.U[j*129+k]=U[j*129+k];
-				sub01.V[j*129+k]=U[j*129+k];
 				sub01.T[j*129+k]=T[j*129+k];
 			}
 		}
@@ -69,19 +76,6 @@ public class P3_2dim{
 //	計算ループ
 		for (n = 1; n <= nlast; n++){
 
-//	境界条件
-			for (k = 1; k <= my; k++){
-				T[1*21+k] = 0.0f;
-				T[mx*21+k]= T[(mx-1)*21+k];
-				}
-		
-			for (j = 1; j <= mx; j++){
-				T[j*21+1] = 0.0f;
-				T[j*21+my]= 0.0f;
-			}
-			for(j=mx/4;j<=mx/2;j++){
-				T[j*21+1]=1.0f;
-			}
 		
 		//クラスに配列をこぴー
 		sub00.start();
@@ -91,24 +85,25 @@ public class P3_2dim{
 			sub01.join();
 		}catch(Exception e){}
 
-			for(j=1;j<=129;j++){
-				sub00.U[j*129+64]=sub01.result[j*129+64];
-				sub01.U[j*129+64]=sub00.result[j*129+65];
-			}	
+		for(k=1;k<=129;k++){
+			sub00.U[65*129+k]=sub01.result[(65-63)*129+k];
+			sub01.U[(64-63)*129+k]=sub00.result[64*129+k];
+		}	
 		}
+
 		for(k=2;k<=64;k++){
 			for(j=2;j<=128;j++){
 				U[j*129+k]=sub00.result[j*129+k];
-			}
+		}
 		}
 		for(k=65;k<=128;k++){
 			for(j=2;j<=128;j++){
-				U[j*129+k]=sub01.result[j*129+k];
+				U[j*129+k]=sub01.result[(j-63)*129+k];
 			}
 		}
 
 
-		//System.out.println(T[10*21+10]);
+		return U[10*21+10];
 }
 }
 

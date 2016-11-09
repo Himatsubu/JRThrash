@@ -16,7 +16,7 @@ public class c1{
 	static final sub07 sub07    = new sub07(); //15-21,5-11
 
         @JRThrashUnroll(unrollNum=7, loopVariableName="j",unrollType=JRThrashUnroll.copyLoopVar)
-	public void run(){
+	public float run(){
 		int k,j,n,mx,my,nlast;
 		int tmpj;
 		float dx,dy,dt,r1,r2;
@@ -38,6 +38,15 @@ public class c1{
 			 u[j*129+k] = 0f;
 			//uu[j*129+k] = 0f;
 		}
+	}
+
+	for(k=1;k<=129;k++){
+		u[1*129+k]=0.5f;
+		u[129*129+k]=0.0f;
+	}
+	for(j=1;j<=129;j++){
+		u[j*129+1]=1.f;
+		u[j*129+129]=0.0f;
 	}
 
 	for(k=1;k<=65;k++){
@@ -113,8 +122,8 @@ public class c1{
 			}
 		}
 */
-			
-		}
+		return u[10*129+10];	
+	}
 		//return u[10*21+10];
 }
 
