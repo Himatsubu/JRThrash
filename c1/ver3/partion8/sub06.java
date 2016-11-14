@@ -6,7 +6,7 @@ public class sub06 extends Thread{
 	final float[] result = new float[4514];
 	float r1,r2,dx,dy,dt;
 
-        @JRThrashUnroll(unrollNum=6, loopVariableName="j",unrollType=JRThrashUnroll.copyLoopVar)
+        @JRThrashUnroll(unrollNum=16, loopVariableName="j",unrollType=JRThrashUnroll.copyLoopVar)
         public void run(){
 		int k,j;
 		int tmpj;

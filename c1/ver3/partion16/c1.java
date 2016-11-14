@@ -33,7 +33,7 @@ public class c1{
 		my=129;
 		//dx = 0.05f;
 		//dy = 0.05f;
-		nlast=400;
+		nlast=2;
 		
 //	熱源項の定義と初期条件
 	for (k = 1; k <= my; k++)
