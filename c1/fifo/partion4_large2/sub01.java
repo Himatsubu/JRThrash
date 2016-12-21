@@ -1,0 +1,53 @@
+import net.njlab.sample.annotation.*;
+
+
+public class sub01 extends Thread{
+        final float[] u      = new float[8643];
+	//final float[] q      = new float[8643];
+	final float[] result = new float[8643];
+	float dx,dy,dt,r1,r2;
+
+        @JRThrashUnroll(unrollNum=16, loopVariableName="j",unrollType=JRThrashUnroll.copyLoopVar)
+        public void run(){
+		int k,j,tmpj;
+/*
+                float r1 = 0.2f;
+		float r2 = 0.2f;
+		float dt = 0.0005f;
+		float dx = 0.05f;
+		float dy = 0.05f;
+*/
+		dx=1f/(129-1);
+		dy=1f/(129-1);
+		dt=0.0005f;
+		r1=dt/(dx*dx);
+		r2=dt/(dy*dy);
+	
+		for(k=2;k<=64;k++){
+			for(j=2;j<=65;j++){
+			//for(j=65;j<=128;j++){
+			//jは63分動いている;
+			result[j*129+k]= u[j*129]+r1*(u[(j+1)*129]-2.0f*u[j*129]+u[(j-1)*129+k])
+			+r2*(u[j*129+k+1]-2.0f*u[j*129+k]+u[j*129+k-1])+dt*100f*dx*(j+63-1)*dy*(k-1);			
+			}
+		}
+		for(k=2;k<=64;k++){
+			for(j=65;j<=128;j++){
+				tmpj=j-63;
+				u[tmpj*129+k]=result[tmpj*129+k];
+			}
+		}
+
+/*
+		uu[j][k]= u[j][k]+r1*(u[j+1][k]-2.0f*u[j][k]+u[j-1][k])
+			+r2*(u[j][k+1]-2.0f*u[j][k]+u[j][k-1])+dt*q[j][k];
+		sub[i].u[3]=u[j*21+k];
+		sub[i].u[1]=u[j*21+k-1];
+		sub[i].u[5]=u[j*21+k+1];
+		sub[i].u[2]=u[(j-1)*21+k];
+		sub[i].u[4]=u[(j+1)*21+k];
+*/
+		
+        }
+
+}

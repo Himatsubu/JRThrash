@@ -46,7 +46,7 @@ module DivFloat(
     
 
 	divfloat
-    fivfloat_inst_0(
+    divfloat_inst_0(
         .aclk (clk),
         .aclken (ce),
         .s_axis_a_tdata (a),

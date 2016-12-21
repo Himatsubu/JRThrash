@@ -138,7 +138,7 @@
 			<latency>          29           </latency>
 			<throughput>       1            </throughput>
 			<moduleName>       DivFloat     </moduleName>
-			<availableNum>     6            </availableNum>
+			<availableNum>     1            </availableNum>
 			<clkPname>         clk          </clkPname>
 			<dividendPname>    a            </dividendPname>
 			<divisorPname>     b            </divisorPname>
@@ -206,7 +206,7 @@
 	</registerSharing>
 
 	<scheduling>
-		<saveReadVariableWithWARhazard> false </saveReadVariableWithWARhazard>
+		<saveReadVariableWithWARhazard> true </saveReadVariableWithWARhazard>
 		<forwardingEnable> true </forwardingEnable>
 		<reduceConnectionConst> true </reduceConnectionConst>
 		<assignSameIPtoUnrolledNode> true </assignSameIPtoUnrolledNode>

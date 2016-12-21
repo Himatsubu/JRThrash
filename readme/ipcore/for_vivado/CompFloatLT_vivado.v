@@ -27,7 +27,7 @@ module CompareFloatLT(
     input [31:0] a,
     input [31:0] b,
     output result
-); 
+ );
      
     wire     [7:0]     m_axis_result_tdata;
     wire               s_axis_a_tready;
@@ -46,13 +46,13 @@ module CompareFloatLT(
     assign result=m_axis_result_tdata[0];    
     
 
-	compfloatlt1
+	compfloatlt
     compfloatlt_inst_0(
         .aclk (clk),
         .aclken (ce),
         .s_axis_a_tdata (a),
         .s_axis_b_tdata (b),
-        .m_axis_result_tdata (result),
+        .m_axis_result_tdata (m_axis_result_tdata),
         .s_axis_a_tready(s_axis_a_tready),
         .s_axis_a_tvalid(s_axis_a_tvalid),
         .s_axis_b_tready(s_axis_b_tready),

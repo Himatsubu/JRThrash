@@ -1,0 +1,1 @@
+$ sed -i -e 's/        @JRThrashUnroll(unrollNum=8, loopVariableName="j",unrollType=JRThrashUnroll.copyLoopVar)/        @JRThrashUnroll(unrollNum=9, loopVariableName="j",unrollType=JRThrashUnroll.copyLoopVar)/g' ./hoge.txt ./hoge2.txt ./hoge3.txt

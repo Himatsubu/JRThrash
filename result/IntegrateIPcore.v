@@ -1,5 +1,5 @@
 /*
-TimeStamp:	2013/12/16		12:59
+TimeStamp:	2016/12/5		16:6
 */
 
 
@@ -15,11 +15,13 @@ module IntegrateIPcore(
 	reg  signed [15:0] r_ip_SumOfProduct_a_0;
 	reg  signed [15:0] r_ip_SumOfProduct_b_0;
 	reg  signed [31:0] r_ip_SumOfProduct_c_0;
-	wire signed [32:0] w_ip_SumOfProduct_result_0;
+	wire signed [31:0] w_ip_SumOfProduct_result_0;
+	reg                r_ip_SumOfProduct_newData_0;
 	reg  signed [15:0] r_ip_SumOfProduct_a_1;
 	reg  signed [15:0] r_ip_SumOfProduct_b_1;
 	reg  signed [31:0] r_ip_SumOfProduct_c_1;
-	wire signed [32:0] w_ip_SumOfProduct_result_1;
+	wire signed [31:0] w_ip_SumOfProduct_result_1;
+	reg                r_ip_SumOfProduct_newData_1;
 	reg         [ 1:0] r_sys_processing_methodID;
 	wire               w_sys_boolTrue;
 	wire               w_sys_boolFalse;
@@ -56,11 +58,11 @@ module IntegrateIPcore(
 	assign w_sys_main_stage_p1 = (r_sys_main_stage + 2'h1);
 	assign w_sys_main_step_p1 = (r_sys_main_step + 2'h1);
 	assign w_sys_tmp1 = (w_sys_tmp2 + w_sys_tmp6);
-	assign w_sys_tmp2 = $signed( w_ip_SumOfProduct_result_0[31:0] );
+	assign w_sys_tmp2 = w_ip_SumOfProduct_result_0;
 	assign w_sys_tmp3 = 32'sh0000000a;
 	assign w_sys_tmp4 = 32'sh00000014;
 	assign w_sys_tmp5 = 32'sh0000001e;
-	assign w_sys_tmp6 = $signed( w_ip_SumOfProduct_result_1[31:0] );
+	assign w_sys_tmp6 = w_ip_SumOfProduct_result_1;
 	assign w_sys_tmp7 = 32'sh00000028;
 	assign w_sys_tmp8 = 32'sh00000032;
 	assign w_sys_tmp9 = 32'sh0000003c;
@@ -69,19 +71,21 @@ module IntegrateIPcore(
 	SumOfProduct
 		SumOfProduct_inst_0(
 			.clk (clock),
+			.operation_nd (r_ip_SumOfProduct_newData_0),
 			.a (r_ip_SumOfProduct_a_0),	// in 16bit
 			.b (r_ip_SumOfProduct_b_0),	// in 16bit
 			.c (r_ip_SumOfProduct_c_0),	// in 32bit
-			.p (w_ip_SumOfProduct_result_0)	// out 33bit
+			.p (w_ip_SumOfProduct_result_0)	// out 32bit
 		);
 
 	SumOfProduct
 		SumOfProduct_inst_1(
 			.clk (clock),
+			.operation_nd (r_ip_SumOfProduct_newData_1),
 			.a (r_ip_SumOfProduct_a_1),	// in 16bit
 			.b (r_ip_SumOfProduct_b_1),	// in 16bit
 			.c (r_ip_SumOfProduct_c_1),	// in 32bit
-			.p (w_ip_SumOfProduct_result_1)	// out 33bit
+			.p (w_ip_SumOfProduct_result_1)	// out 32bit
 		);
 
 	always@(posedge clock)begin
@@ -184,6 +188,35 @@ module IntegrateIPcore(
 							case(r_sys_main_stage) 
 								2'h0: begin
 									if((r_sys_main_step==2'h0)) begin
+										r_ip_SumOfProduct_newData_0 <= w_sys_boolFalse;
+
+									end
+								end
+
+							endcase
+						end
+
+					endcase
+				end
+
+			endcase
+		end
+	end
+
+
+	always@(posedge clock)begin
+
+		if(w_sys_ce) begin
+
+			case(r_sys_processing_methodID) 
+				2'h1: begin
+
+					case(r_sys_main_phase) 
+						3'h3: begin
+
+							case(r_sys_main_stage) 
+								2'h0: begin
+									if((r_sys_main_step==2'h0)) begin
 										r_ip_SumOfProduct_a_1 <= $signed( w_sys_tmp7[15:0] );
 
 									end
@@ -243,6 +276,35 @@ module IntegrateIPcore(
 								2'h0: begin
 									if((r_sys_main_step==2'h0)) begin
 										r_ip_SumOfProduct_c_1 <= w_sys_tmp9;
+
+									end
+								end
+
+							endcase
+						end
+
+					endcase
+				end
+
+			endcase
+		end
+	end
+
+
+	always@(posedge clock)begin
+
+		if(w_sys_ce) begin
+
+			case(r_sys_processing_methodID) 
+				2'h1: begin
+
+					case(r_sys_main_phase) 
+						3'h3: begin
+
+							case(r_sys_main_stage) 
+								2'h0: begin
+									if((r_sys_main_step==2'h0)) begin
+										r_ip_SumOfProduct_newData_1 <= w_sys_boolFalse;
 
 									end
 								end

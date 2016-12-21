@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Class>
+
+	<ClassName>	IntegrateIPcore	</ClassName>
+
+	<AllVariables>
+		<VeriableDecl>
+			<name>	a	</name>
+			<type>	short	</type>
+			<variableID>	0	</variableID>
+			<parentName>	SumOfProduct	</parentName>
+			<defType>	paramList	</defType>
+			<isArray>	false	</isArray>
+			<isPrimitive>	true	</isPrimitive>
+			<isFinal>	false	</isFinal>
+			<dimension>	0	</dimension>
+			<init>
+			</init>
+		</VeriableDecl>
+
+		<VeriableDecl>
+			<name>	b	</name>
+			<type>	short	</type>
+			<variableID>	1	</variableID>
+			<parentName>	SumOfProduct	</parentName>
+			<defType>	paramList	</defType>
+			<isArray>	false	</isArray>
+			<isPrimitive>	true	</isPrimitive>
+			<isFinal>	false	</isFinal>
+			<dimension>	0	</dimension>
+			<init>
+			</init>
+		</VeriableDecl>
+
+		<VeriableDecl>
+			<name>	c	</name>
+			<type>	int	</type>
+			<variableID>	2	</variableID>
+			<parentName>	SumOfProduct	</parentName>
+			<defType>	paramList	</defType>
+			<isArray>	false	</isArray>
+			<isPrimitive>	true	</isPrimitive>
+			<isFinal>	false	</isFinal>
+			<dimension>	0	</dimension>
+			<init>
+			</init>
+		</VeriableDecl>
+
+	</AllVariables>
+
+	<METHOD>	<Phase>  1  </Phase>
+
+		<methodName>	main	</methodName>
+		<returnType>	int	</returnType>
+		<ParamList>
+
+		</ParamList>
+
+		<MethodBody>
+			<Block>	<Phase>  1  </Phase>
+
+				<Return>	<Phase>  2  </Phase>
+
+					<StatAssemblage>	<Phase>  3  </Phase>
+						<stageNum>  1  </stageNum>
+						<totalStepNum>  2  </totalStepNum>
+						<VariableStack>
+						</VariableStack>
+
+						<statements>
+							<ExprStatement>
+								<Binary>
+									<binaryOp>	'+'	</binaryOp>
+									<leftExpr>
+										<MethodInv>
+											<defClassName>	IntegrateIPcore	</defClassName>
+											<objName>	this	</objName>
+											<methodName>	SumOfProduct	</methodName>
+
+											<argment>
+												<TypeCast>
+													<castType>	short	</castType>
+
+													<Literal>
+														<type>	int	</type>
+														<value>	10	</value>
+													</Literal>
+												</TypeCast>
+
+												<TypeCast>
+													<castType>	short	</castType>
+
+													<Literal>
+														<type>	int	</type>
+														<value>	20	</value>
+													</Literal>
+												</TypeCast>
+
+												<Literal>
+													<type>	int	</type>
+													<value>	30	</value>
+												</Literal>
+											</argment>
+										</MethodInv>
+
+									</leftExpr>
+
+									<rightExpr>
+										<MethodInv>
+											<defClassName>	IntegrateIPcore	</defClassName>
+											<objName>	this	</objName>
+											<methodName>	SumOfProduct	</methodName>
+
+											<argment>
+												<TypeCast>
+													<castType>	short	</castType>
+
+													<Literal>
+														<type>	int	</type>
+														<value>	40	</value>
+													</Literal>
+												</TypeCast>
+
+												<TypeCast>
+													<castType>	short	</castType>
+
+													<Literal>
+														<type>	int	</type>
+														<value>	50	</value>
+													</Literal>
+												</TypeCast>
+
+												<Literal>
+													<type>	int	</type>
+													<value>	60	</value>
+												</Literal>
+											</argment>
+										</MethodInv>
+
+									</rightExpr>
+
+								</Binary>
+
+							</ExprStatement>
+
+						</statements>
+
+					</StatAssemblage>
+
+				</Return>
+
+			</Block>
+
+		</MethodBody>
+
+	</METHOD>
+
+
+</Class>

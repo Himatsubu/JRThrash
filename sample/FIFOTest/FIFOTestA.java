@@ -1,0 +1,54 @@
+package net.njlab.sample;
+
+import net.njlab.sample.annotation.JRThrashConvertedIntoIPcore;
+import net.njlab.sample.annotation.JRThrashPortBitWidthSpecify;
+
+public class FIFOTestA{
+	private final int [] arrayA = new int [10];	
+
+	public int run(){
+		int i;
+		int result=0;
+		int s_we = 0;
+		int s_re = 0; 
+
+		for(i=0;i<10;i++){
+			arrayA[i] = i;
+		}
+		for(i=0;i<10;i++){
+			s_we = 1;
+			fifoA2B(arrayA[i],s_we,s_re);
+			s_we = 0;
+		}
+
+		for(i=0;i<10;i++){
+			s_re = 1;
+			arrayA[i]=fifoA2B(0,s_we,s_re);
+			s_re = 0;
+		}	
+
+	
+		for(i=0;i<10;i++){
+			result  = result+arrayA[i];
+		}
+		return result;	
+
+	}
+	
+	@JRThrashConvertedIntoIPcore(availableNum=1,latency=0,throughput=1,outputPName="p",
+					clockPName="clk",clockEnablePName="ce",resetPName="rst",
+					newDataPName="operation_nd",haveClock=true,haveReset=true,haveNewData=true)
+	private int fifoA2B(int a,int s_we,int s_re){
+		return a;
+	}
+/*
+	@JRThrashConvertedIntoIPcore(availableNum=1,latency=0,throughput=1,outputPName="p",
+					clockPName="clk",clockEnablePName="ce",resetPName="rst",
+					newDataPName="operation_nd",haveClock=true,haveReset=false,haveNewData=false)
+	
+	private int FIFORead(){
+		int a=10;
+		return a;
+	}
+*/
+}
