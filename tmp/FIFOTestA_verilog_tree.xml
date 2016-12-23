@@ -6,9 +6,26 @@
 
 	<AllVariables>
 		<VeriableDecl>
+			<name>	obj	</name>
+			<type>	fifoa2b	</type>
+			<variableID>	0	</variableID>
+			<parentName>	FIFOTestA	</parentName>
+			<defType>	field	</defType>
+			<isArray>	false	</isArray>
+			<isPrimitive>	false	</isPrimitive>
+			<isFinal>	true	</isFinal>
+			<dimension>	0	</dimension>
+			<init>
+				<NewClass>
+					<className>	fifoa2b	</className>
+				</NewClass>
+			</init>
+		</VeriableDecl>
+
+		<VeriableDecl>
 			<name>	arrayA	</name>
 			<type>	int	</type>
-			<variableID>	0	</variableID>
+			<variableID>	1	</variableID>
 			<parentName>	FIFOTestA	</parentName>
 			<defType>	field	</defType>
 			<isArray>	true	</isArray>
@@ -26,7 +43,7 @@
 		<VeriableDecl>
 			<name>	i	</name>
 			<type>	int	</type>
-			<variableID>	1	</variableID>
+			<variableID>	2	</variableID>
 			<parentName>	run	</parentName>
 			<defType>	method	</defType>
 			<isArray>	false	</isArray>
@@ -40,24 +57,6 @@
 		<VeriableDecl>
 			<name>	result	</name>
 			<type>	int	</type>
-			<variableID>	2	</variableID>
-			<parentName>	run	</parentName>
-			<defType>	method	</defType>
-			<isArray>	false	</isArray>
-			<isPrimitive>	true	</isPrimitive>
-			<isFinal>	false	</isFinal>
-			<dimension>	0	</dimension>
-			<init>
-				<Literal>
-					<type>	int	</type>
-					<value>	0	</value>
-				</Literal>
-			</init>
-		</VeriableDecl>
-
-		<VeriableDecl>
-			<name>	s_we	</name>
-			<type>	int	</type>
 			<variableID>	3	</variableID>
 			<parentName>	run	</parentName>
 			<defType>	method	</defType>
@@ -70,66 +69,6 @@
 					<type>	int	</type>
 					<value>	0	</value>
 				</Literal>
-			</init>
-		</VeriableDecl>
-
-		<VeriableDecl>
-			<name>	s_re	</name>
-			<type>	int	</type>
-			<variableID>	4	</variableID>
-			<parentName>	run	</parentName>
-			<defType>	method	</defType>
-			<isArray>	false	</isArray>
-			<isPrimitive>	true	</isPrimitive>
-			<isFinal>	false	</isFinal>
-			<dimension>	0	</dimension>
-			<init>
-				<Literal>
-					<type>	int	</type>
-					<value>	0	</value>
-				</Literal>
-			</init>
-		</VeriableDecl>
-
-		<VeriableDecl>
-			<name>	a	</name>
-			<type>	int	</type>
-			<variableID>	5	</variableID>
-			<parentName>	fifoA2B	</parentName>
-			<defType>	paramList	</defType>
-			<isArray>	false	</isArray>
-			<isPrimitive>	true	</isPrimitive>
-			<isFinal>	false	</isFinal>
-			<dimension>	0	</dimension>
-			<init>
-			</init>
-		</VeriableDecl>
-
-		<VeriableDecl>
-			<name>	s_we	</name>
-			<type>	int	</type>
-			<variableID>	6	</variableID>
-			<parentName>	fifoA2B	</parentName>
-			<defType>	paramList	</defType>
-			<isArray>	false	</isArray>
-			<isPrimitive>	true	</isPrimitive>
-			<isFinal>	false	</isFinal>
-			<dimension>	0	</dimension>
-			<init>
-			</init>
-		</VeriableDecl>
-
-		<VeriableDecl>
-			<name>	s_re	</name>
-			<type>	int	</type>
-			<variableID>	7	</variableID>
-			<parentName>	fifoA2B	</parentName>
-			<defType>	paramList	</defType>
-			<isArray>	false	</isArray>
-			<isPrimitive>	true	</isPrimitive>
-			<isFinal>	false	</isFinal>
-			<dimension>	0	</dimension>
-			<init>
 			</init>
 		</VeriableDecl>
 
@@ -150,18 +89,15 @@
 					<stageNum>  1  </stageNum>
 					<totalStepNum>  1  </totalStepNum>
 					<VariableStack>
-						<VeriableDecl>			<name>	arrayA	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-						<VeriableDecl>			<name>	i	</name>		<variableID>	1	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-						<VeriableDecl>			<name>	result	</name>		<variableID>	2	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-						<VeriableDecl>			<name>	s_we	</name>		<variableID>	3	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-						<VeriableDecl>			<name>	s_re	</name>		<variableID>	4	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+						<VeriableDecl>			<name>	obj	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+						<VeriableDecl>			<name>	arrayA	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+						<VeriableDecl>			<name>	i	</name>		<variableID>	2	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+						<VeriableDecl>			<name>	result	</name>		<variableID>	3	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 					</VariableStack>
 
 					<statements>
-						<VeriableDecl>			<name>	i	</name>		<variableID>	1	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-						<VeriableDecl>			<name>	result	</name>		<variableID>	2	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-						<VeriableDecl>			<name>	s_we	</name>		<variableID>	3	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-						<VeriableDecl>			<name>	s_re	</name>		<variableID>	4	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+						<VeriableDecl>			<name>	i	</name>		<variableID>	2	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+						<VeriableDecl>			<name>	result	</name>		<variableID>	3	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 					</statements>
 
 				</StatAssemblage>
@@ -172,11 +108,10 @@
 							<stageNum>  1  </stageNum>
 							<totalStepNum>  1  </totalStepNum>
 							<VariableStack>
-								<VeriableDecl>			<name>	arrayA	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	i	</name>		<variableID>	1	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	result	</name>		<variableID>	2	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	s_we	</name>		<variableID>	3	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	s_re	</name>		<variableID>	4	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	obj	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	arrayA	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	i	</name>		<variableID>	2	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	result	</name>		<variableID>	3	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 							</VariableStack>
 
 							<statements>
@@ -191,7 +126,7 @@
 
 										<dest>
 											<Ident>
-												<variableID>	1	</variableID>
+												<variableID>	2	</variableID>
 												<idName>	i	</idName>
 											</Ident>
 										</dest>
@@ -211,11 +146,10 @@
 							<stageNum>  1  </stageNum>
 							<totalStepNum>  1  </totalStepNum>
 							<VariableStack>
-								<VeriableDecl>			<name>	arrayA	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	i	</name>		<variableID>	1	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	result	</name>		<variableID>	2	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	s_we	</name>		<variableID>	3	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	s_re	</name>		<variableID>	4	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	obj	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	arrayA	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	i	</name>		<variableID>	2	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	result	</name>		<variableID>	3	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 							</VariableStack>
 
 							<statements>
@@ -224,7 +158,7 @@
 										<binaryOp>	'LT'	</binaryOp>
 										<leftExpr>
 											<Ident>
-												<variableID>	1	</variableID>
+												<variableID>	2	</variableID>
 												<idName>	i	</idName>
 											</Ident>
 										</leftExpr>
@@ -253,11 +187,10 @@
 								<stageNum>  1  </stageNum>
 								<totalStepNum>  1  </totalStepNum>
 								<VariableStack>
-									<VeriableDecl>			<name>	arrayA	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-									<VeriableDecl>			<name>	i	</name>		<variableID>	1	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-									<VeriableDecl>			<name>	result	</name>		<variableID>	2	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-									<VeriableDecl>			<name>	s_we	</name>		<variableID>	3	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-									<VeriableDecl>			<name>	s_re	</name>		<variableID>	4	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+									<VeriableDecl>			<name>	obj	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+									<VeriableDecl>			<name>	arrayA	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+									<VeriableDecl>			<name>	i	</name>		<variableID>	2	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+									<VeriableDecl>			<name>	result	</name>		<variableID>	3	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 								</VariableStack>
 
 								<statements>
@@ -265,19 +198,19 @@
 										<Assign>
 											<rightExpr>
 												<Ident>
-													<variableID>	1	</variableID>
+													<variableID>	2	</variableID>
 													<idName>	i	</idName>
 												</Ident>
 											</rightExpr>
 
 											<dest>
 												<ArrayAccess>
-													<variableID>	0	</variableID>
+													<variableID>	1	</variableID>
 													<idName>arrayA</idName>
 
 													<index0>
 														<Ident>
-															<variableID>	1	</variableID>
+															<variableID>	2	</variableID>
 															<idName>	i	</idName>
 														</Ident>
 													</index0>
@@ -305,11 +238,10 @@
 							<stageNum>  1  </stageNum>
 							<totalStepNum>  1  </totalStepNum>
 							<VariableStack>
-								<VeriableDecl>			<name>	arrayA	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	i	</name>		<variableID>	1	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	result	</name>		<variableID>	2	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	s_we	</name>		<variableID>	3	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	s_re	</name>		<variableID>	4	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	obj	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	arrayA	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	i	</name>		<variableID>	2	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	result	</name>		<variableID>	3	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 							</VariableStack>
 
 							<statements>
@@ -324,7 +256,7 @@
 
 										<dest>
 											<Ident>
-												<variableID>	1	</variableID>
+												<variableID>	2	</variableID>
 												<idName>	i	</idName>
 											</Ident>
 										</dest>
@@ -344,11 +276,10 @@
 							<stageNum>  1  </stageNum>
 							<totalStepNum>  1  </totalStepNum>
 							<VariableStack>
-								<VeriableDecl>			<name>	arrayA	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	i	</name>		<variableID>	1	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	result	</name>		<variableID>	2	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	s_we	</name>		<variableID>	3	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	s_re	</name>		<variableID>	4	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	obj	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	arrayA	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	i	</name>		<variableID>	2	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	result	</name>		<variableID>	3	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 							</VariableStack>
 
 							<statements>
@@ -357,7 +288,7 @@
 										<binaryOp>	'LT'	</binaryOp>
 										<leftExpr>
 											<Ident>
-												<variableID>	1	</variableID>
+												<variableID>	2	</variableID>
 												<idName>	i	</idName>
 											</Ident>
 										</leftExpr>
@@ -383,87 +314,38 @@
 						<Block>	<Phase>  13  </Phase>
 
 							<StatAssemblage>	<Phase>  14  </Phase>
-								<stageNum>  1  </stageNum>
-								<totalStepNum>  4  </totalStepNum>
+								<stageNum>  2  </stageNum>
+								<totalStepNum>  7  </totalStepNum>
 								<VariableStack>
-									<VeriableDecl>			<name>	arrayA	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-									<VeriableDecl>			<name>	i	</name>		<variableID>	1	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-									<VeriableDecl>			<name>	result	</name>		<variableID>	2	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-									<VeriableDecl>			<name>	s_we	</name>		<variableID>	3	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-									<VeriableDecl>			<name>	s_re	</name>		<variableID>	4	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+									<VeriableDecl>			<name>	obj	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+									<VeriableDecl>			<name>	arrayA	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+									<VeriableDecl>			<name>	i	</name>		<variableID>	2	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+									<VeriableDecl>			<name>	result	</name>		<variableID>	3	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 								</VariableStack>
 
 								<statements>
 									<ExprStatement>
-										<Assign>
-											<rightExpr>
-												<Literal>
-													<type>	int	</type>
-													<value>	1	</value>
-												</Literal>
-											</rightExpr>
-
-											<dest>
-												<Ident>
-													<variableID>	3	</variableID>
-													<idName>	s_we	</idName>
-												</Ident>
-											</dest>
-
-										</Assign>
-
-									</ExprStatement>
-
-									<ExprStatement>
 										<MethodInv>
-											<defClassName>	FIFOTestA	</defClassName>
-											<objName>	this	</objName>
-											<methodName>	fifoA2B	</methodName>
+											<defClassName>	fifoa2b	</defClassName>
+											<objName>	obj	</objName>
+											<methodName>	enque	</methodName>
 
 											<argment>
 												<ArrayAccess>
-													<variableID>	0	</variableID>
+													<variableID>	1	</variableID>
 													<idName>arrayA</idName>
 
 													<index0>
 														<Ident>
-															<variableID>	1	</variableID>
+															<variableID>	2	</variableID>
 															<idName>	i	</idName>
 														</Ident>
 													</index0>
 
 												</ArrayAccess>
 
-												<Ident>
-													<variableID>	3	</variableID>
-													<idName>	s_we	</idName>
-												</Ident>
-												<Ident>
-													<variableID>	4	</variableID>
-													<idName>	s_re	</idName>
-												</Ident>
 											</argment>
 										</MethodInv>
-
-									</ExprStatement>
-
-									<ExprStatement>
-										<Assign>
-											<rightExpr>
-												<Literal>
-													<type>	int	</type>
-													<value>	0	</value>
-												</Literal>
-											</rightExpr>
-
-											<dest>
-												<Ident>
-													<variableID>	3	</variableID>
-													<idName>	s_we	</idName>
-												</Ident>
-											</dest>
-
-										</Assign>
 
 									</ExprStatement>
 
@@ -482,11 +364,10 @@
 							<stageNum>  1  </stageNum>
 							<totalStepNum>  1  </totalStepNum>
 							<VariableStack>
-								<VeriableDecl>			<name>	arrayA	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	i	</name>		<variableID>	1	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	result	</name>		<variableID>	2	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	s_we	</name>		<variableID>	3	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	s_re	</name>		<variableID>	4	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	obj	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	arrayA	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	i	</name>		<variableID>	2	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	result	</name>		<variableID>	3	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 							</VariableStack>
 
 							<statements>
@@ -501,7 +382,7 @@
 
 										<dest>
 											<Ident>
-												<variableID>	1	</variableID>
+												<variableID>	2	</variableID>
 												<idName>	i	</idName>
 											</Ident>
 										</dest>
@@ -521,11 +402,10 @@
 							<stageNum>  1  </stageNum>
 							<totalStepNum>  1  </totalStepNum>
 							<VariableStack>
-								<VeriableDecl>			<name>	arrayA	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	i	</name>		<variableID>	1	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	result	</name>		<variableID>	2	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	s_we	</name>		<variableID>	3	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	s_re	</name>		<variableID>	4	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	obj	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	arrayA	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	i	</name>		<variableID>	2	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	result	</name>		<variableID>	3	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 							</VariableStack>
 
 							<statements>
@@ -534,7 +414,7 @@
 										<binaryOp>	'LT'	</binaryOp>
 										<leftExpr>
 											<Ident>
-												<variableID>	1	</variableID>
+												<variableID>	2	</variableID>
 												<idName>	i	</idName>
 											</Ident>
 										</leftExpr>
@@ -560,58 +440,25 @@
 						<Block>	<Phase>  19  </Phase>
 
 							<StatAssemblage>	<Phase>  20  </Phase>
-								<stageNum>  1  </stageNum>
-								<totalStepNum>  2  </totalStepNum>
+								<stageNum>  2  </stageNum>
+								<totalStepNum>  5  </totalStepNum>
 								<VariableStack>
-									<VeriableDecl>			<name>	arrayA	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-									<VeriableDecl>			<name>	i	</name>		<variableID>	1	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-									<VeriableDecl>			<name>	result	</name>		<variableID>	2	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-									<VeriableDecl>			<name>	s_we	</name>		<variableID>	3	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-									<VeriableDecl>			<name>	s_re	</name>		<variableID>	4	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+									<VeriableDecl>			<name>	obj	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+									<VeriableDecl>			<name>	arrayA	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+									<VeriableDecl>			<name>	i	</name>		<variableID>	2	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+									<VeriableDecl>			<name>	result	</name>		<variableID>	3	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 								</VariableStack>
 
 								<statements>
 									<ExprStatement>
 										<Assign>
 											<rightExpr>
-												<Literal>
-													<type>	int	</type>
-													<value>	1	</value>
-												</Literal>
-											</rightExpr>
-
-											<dest>
-												<Ident>
-													<variableID>	4	</variableID>
-													<idName>	s_re	</idName>
-												</Ident>
-											</dest>
-
-										</Assign>
-
-									</ExprStatement>
-
-									<ExprStatement>
-										<Assign>
-											<rightExpr>
 												<MethodInv>
-													<defClassName>	FIFOTestA	</defClassName>
-													<objName>	this	</objName>
-													<methodName>	fifoA2B	</methodName>
+													<defClassName>	fifoa2b	</defClassName>
+													<objName>	obj	</objName>
+													<methodName>	deque	</methodName>
 
 													<argment>
-														<Literal>
-															<type>	int	</type>
-															<value>	0	</value>
-														</Literal>
-														<Ident>
-															<variableID>	3	</variableID>
-															<idName>	s_we	</idName>
-														</Ident>
-														<Ident>
-															<variableID>	4	</variableID>
-															<idName>	s_re	</idName>
-														</Ident>
 													</argment>
 												</MethodInv>
 
@@ -619,38 +466,18 @@
 
 											<dest>
 												<ArrayAccess>
-													<variableID>	0	</variableID>
+													<variableID>	1	</variableID>
 													<idName>arrayA</idName>
 
 													<index0>
 														<Ident>
-															<variableID>	1	</variableID>
+															<variableID>	2	</variableID>
 															<idName>	i	</idName>
 														</Ident>
 													</index0>
 
 												</ArrayAccess>
 
-											</dest>
-
-										</Assign>
-
-									</ExprStatement>
-
-									<ExprStatement>
-										<Assign>
-											<rightExpr>
-												<Literal>
-													<type>	int	</type>
-													<value>	0	</value>
-												</Literal>
-											</rightExpr>
-
-											<dest>
-												<Ident>
-													<variableID>	4	</variableID>
-													<idName>	s_re	</idName>
-												</Ident>
 											</dest>
 
 										</Assign>
@@ -672,11 +499,10 @@
 							<stageNum>  1  </stageNum>
 							<totalStepNum>  1  </totalStepNum>
 							<VariableStack>
-								<VeriableDecl>			<name>	arrayA	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	i	</name>		<variableID>	1	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	result	</name>		<variableID>	2	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	s_we	</name>		<variableID>	3	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	s_re	</name>		<variableID>	4	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	obj	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	arrayA	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	i	</name>		<variableID>	2	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	result	</name>		<variableID>	3	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 							</VariableStack>
 
 							<statements>
@@ -691,7 +517,7 @@
 
 										<dest>
 											<Ident>
-												<variableID>	1	</variableID>
+												<variableID>	2	</variableID>
 												<idName>	i	</idName>
 											</Ident>
 										</dest>
@@ -711,11 +537,10 @@
 							<stageNum>  1  </stageNum>
 							<totalStepNum>  1  </totalStepNum>
 							<VariableStack>
-								<VeriableDecl>			<name>	arrayA	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	i	</name>		<variableID>	1	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	result	</name>		<variableID>	2	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	s_we	</name>		<variableID>	3	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	s_re	</name>		<variableID>	4	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	obj	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	arrayA	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	i	</name>		<variableID>	2	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	result	</name>		<variableID>	3	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 							</VariableStack>
 
 							<statements>
@@ -724,7 +549,7 @@
 										<binaryOp>	'LT'	</binaryOp>
 										<leftExpr>
 											<Ident>
-												<variableID>	1	</variableID>
+												<variableID>	2	</variableID>
 												<idName>	i	</idName>
 											</Ident>
 										</leftExpr>
@@ -753,11 +578,10 @@
 								<stageNum>  1  </stageNum>
 								<totalStepNum>  3  </totalStepNum>
 								<VariableStack>
-									<VeriableDecl>			<name>	arrayA	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-									<VeriableDecl>			<name>	i	</name>		<variableID>	1	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-									<VeriableDecl>			<name>	result	</name>		<variableID>	2	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-									<VeriableDecl>			<name>	s_we	</name>		<variableID>	3	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-									<VeriableDecl>			<name>	s_re	</name>		<variableID>	4	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+									<VeriableDecl>			<name>	obj	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+									<VeriableDecl>			<name>	arrayA	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+									<VeriableDecl>			<name>	i	</name>		<variableID>	2	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+									<VeriableDecl>			<name>	result	</name>		<variableID>	3	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 								</VariableStack>
 
 								<statements>
@@ -768,19 +592,19 @@
 													<binaryOp>	'+'	</binaryOp>
 													<leftExpr>
 														<Ident>
-															<variableID>	2	</variableID>
+															<variableID>	3	</variableID>
 															<idName>	result	</idName>
 														</Ident>
 													</leftExpr>
 
 													<rightExpr>
 														<ArrayAccess>
-															<variableID>	0	</variableID>
+															<variableID>	1	</variableID>
 															<idName>arrayA</idName>
 
 															<index0>
 																<Ident>
-																	<variableID>	1	</variableID>
+																	<variableID>	2	</variableID>
 																	<idName>	i	</idName>
 																</Ident>
 															</index0>
@@ -795,7 +619,7 @@
 
 											<dest>
 												<Ident>
-													<variableID>	2	</variableID>
+													<variableID>	3	</variableID>
 													<idName>	result	</idName>
 												</Ident>
 											</dest>
@@ -819,17 +643,16 @@
 						<stageNum>  1  </stageNum>
 						<totalStepNum>  1  </totalStepNum>
 						<VariableStack>
-							<VeriableDecl>			<name>	arrayA	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-							<VeriableDecl>			<name>	i	</name>		<variableID>	1	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-							<VeriableDecl>			<name>	result	</name>		<variableID>	2	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-							<VeriableDecl>			<name>	s_we	</name>		<variableID>	3	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-							<VeriableDecl>			<name>	s_re	</name>		<variableID>	4	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+							<VeriableDecl>			<name>	obj	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+							<VeriableDecl>			<name>	arrayA	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+							<VeriableDecl>			<name>	i	</name>		<variableID>	2	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+							<VeriableDecl>			<name>	result	</name>		<variableID>	3	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 						</VariableStack>
 
 						<statements>
 							<ExprStatement>
 								<Ident>
-									<variableID>	2	</variableID>
+									<variableID>	3	</variableID>
 									<idName>	result	</idName>
 								</Ident>
 							</ExprStatement>

@@ -8,7 +8,7 @@ public class fifoa2b{
 		if(in_finished==true) is_finished = true;
 	}
 	
-	public boolean check_finished(){
+	public boolean check_finished(boolean checkfinished){
 		return is_finished;
 	}
 

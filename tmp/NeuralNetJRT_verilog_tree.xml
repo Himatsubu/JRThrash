@@ -282,7 +282,7 @@
 		</VeriableDecl>
 
 		<VeriableDecl>
-			<name>	i	</name>
+			<name>	k	</name>
 			<type>	int	</type>
 			<variableID>	16	</variableID>
 			<parentName>	threadTop	</parentName>
@@ -318,7 +318,7 @@
 		</VeriableDecl>
 
 		<VeriableDecl>
-			<name>	i	</name>
+			<name>	k	</name>
 			<type>	int	</type>
 			<variableID>	18	</variableID>
 			<parentName>	threadTop	</parentName>
@@ -390,7 +390,7 @@
 		</VeriableDecl>
 
 		<VeriableDecl>
-			<name>	k	</name>
+			<name>	l	</name>
 			<type>	int	</type>
 			<variableID>	22	</variableID>
 			<parentName>	threadTop	</parentName>
@@ -408,7 +408,7 @@
 		</VeriableDecl>
 
 		<VeriableDecl>
-			<name>	j	</name>
+			<name>	k	</name>
 			<type>	int	</type>
 			<variableID>	23	</variableID>
 			<parentName>	threadTop	</parentName>
@@ -426,7 +426,7 @@
 		</VeriableDecl>
 
 		<VeriableDecl>
-			<name>	k	</name>
+			<name>	j	</name>
 			<type>	int	</type>
 			<variableID>	24	</variableID>
 			<parentName>	threadTop	</parentName>
@@ -444,7 +444,7 @@
 		</VeriableDecl>
 
 		<VeriableDecl>
-			<name>	j	</name>
+			<name>	k	</name>
 			<type>	int	</type>
 			<variableID>	25	</variableID>
 			<parentName>	threadTop	</parentName>
@@ -462,25 +462,21 @@
 		</VeriableDecl>
 
 		<VeriableDecl>
-			<name>	l	</name>
-			<type>	int	</type>
+			<name>	i	</name>
+			<type>	float	</type>
 			<variableID>	26	</variableID>
-			<parentName>	threadTop	</parentName>
-			<defType>	method	</defType>
+			<parentName>	exp	</parentName>
+			<defType>	paramList	</defType>
 			<isArray>	false	</isArray>
 			<isPrimitive>	true	</isPrimitive>
 			<isFinal>	false	</isFinal>
 			<dimension>	0	</dimension>
 			<init>
-				<Literal>
-					<type>	int	</type>
-					<value>	0	</value>
-				</Literal>
 			</init>
 		</VeriableDecl>
 
 		<VeriableDecl>
-			<name>	k	</name>
+			<name>	copy0_j	</name>
 			<type>	int	</type>
 			<variableID>	27	</variableID>
 			<parentName>	threadTop	</parentName>
@@ -498,7 +494,7 @@
 		</VeriableDecl>
 
 		<VeriableDecl>
-			<name>	j	</name>
+			<name>	copy0_j	</name>
 			<type>	int	</type>
 			<variableID>	28	</variableID>
 			<parentName>	threadTop	</parentName>
@@ -516,7 +512,7 @@
 		</VeriableDecl>
 
 		<VeriableDecl>
-			<name>	k	</name>
+			<name>	copy0_j	</name>
 			<type>	int	</type>
 			<variableID>	29	</variableID>
 			<parentName>	threadTop	</parentName>
@@ -534,21 +530,25 @@
 		</VeriableDecl>
 
 		<VeriableDecl>
-			<name>	i	</name>
-			<type>	float	</type>
+			<name>	copy0_j	</name>
+			<type>	int	</type>
 			<variableID>	30	</variableID>
-			<parentName>	exp	</parentName>
-			<defType>	paramList	</defType>
+			<parentName>	threadTop	</parentName>
+			<defType>	method	</defType>
 			<isArray>	false	</isArray>
 			<isPrimitive>	true	</isPrimitive>
 			<isFinal>	false	</isFinal>
 			<dimension>	0	</dimension>
 			<init>
+				<Literal>
+					<type>	int	</type>
+					<value>	0	</value>
+				</Literal>
 			</init>
 		</VeriableDecl>
 
 		<VeriableDecl>
-			<name>	copy0_j	</name>
+			<name>	copy1_j	</name>
 			<type>	int	</type>
 			<variableID>	31	</variableID>
 			<parentName>	threadTop	</parentName>
@@ -584,81 +584,9 @@
 		</VeriableDecl>
 
 		<VeriableDecl>
-			<name>	copy0_j	</name>
+			<name>	copy1_j	</name>
 			<type>	int	</type>
 			<variableID>	33	</variableID>
-			<parentName>	threadTop	</parentName>
-			<defType>	method	</defType>
-			<isArray>	false	</isArray>
-			<isPrimitive>	true	</isPrimitive>
-			<isFinal>	false	</isFinal>
-			<dimension>	0	</dimension>
-			<init>
-				<Literal>
-					<type>	int	</type>
-					<value>	0	</value>
-				</Literal>
-			</init>
-		</VeriableDecl>
-
-		<VeriableDecl>
-			<name>	copy0_j	</name>
-			<type>	int	</type>
-			<variableID>	34	</variableID>
-			<parentName>	threadTop	</parentName>
-			<defType>	method	</defType>
-			<isArray>	false	</isArray>
-			<isPrimitive>	true	</isPrimitive>
-			<isFinal>	false	</isFinal>
-			<dimension>	0	</dimension>
-			<init>
-				<Literal>
-					<type>	int	</type>
-					<value>	0	</value>
-				</Literal>
-			</init>
-		</VeriableDecl>
-
-		<VeriableDecl>
-			<name>	copy1_j	</name>
-			<type>	int	</type>
-			<variableID>	35	</variableID>
-			<parentName>	threadTop	</parentName>
-			<defType>	method	</defType>
-			<isArray>	false	</isArray>
-			<isPrimitive>	true	</isPrimitive>
-			<isFinal>	false	</isFinal>
-			<dimension>	0	</dimension>
-			<init>
-				<Literal>
-					<type>	int	</type>
-					<value>	0	</value>
-				</Literal>
-			</init>
-		</VeriableDecl>
-
-		<VeriableDecl>
-			<name>	copy0_j	</name>
-			<type>	int	</type>
-			<variableID>	36	</variableID>
-			<parentName>	threadTop	</parentName>
-			<defType>	method	</defType>
-			<isArray>	false	</isArray>
-			<isPrimitive>	true	</isPrimitive>
-			<isFinal>	false	</isFinal>
-			<dimension>	0	</dimension>
-			<init>
-				<Literal>
-					<type>	int	</type>
-					<value>	0	</value>
-				</Literal>
-			</init>
-		</VeriableDecl>
-
-		<VeriableDecl>
-			<name>	copy1_j	</name>
-			<type>	int	</type>
-			<variableID>	37	</variableID>
 			<parentName>	threadTop	</parentName>
 			<defType>	method	</defType>
 			<isArray>	false	</isArray>
@@ -688,7 +616,7 @@
 
 				<StatAssemblage>	<Phase>  2  </Phase>
 					<stageNum>  1  </stageNum>
-					<totalStepNum>  8  </totalStepNum>
+					<totalStepNum>  10  </totalStepNum>
 					<VariableStack>
 						<VeriableDecl>			<name>	N_INPUT	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
 						<VeriableDecl>			<name>	N_HIDDEN	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
@@ -1143,691 +1071,582 @@
 
 						</ExprStatement>
 
-					</statements>
-
-				</StatAssemblage>
-
-				<ForLoop>	<Phase>  3  </Phase>
-					<forInit>
-						<StatAssemblage>	<Phase>  4  </Phase>
-							<stageNum>  1  </stageNum>
-							<totalStepNum>  1  </totalStepNum>
-							<VariableStack>
-								<VeriableDecl>			<name>	N_INPUT	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	N_HIDDEN	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	N_OUTPUT	</name>		<variableID>	2	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	w1	</name>		<variableID>	3	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	w2	</name>		<variableID>	4	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	input	</name>		<variableID>	5	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	hidden	</name>		<variableID>	6	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	output	</name>		<variableID>	7	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	in	</name>		<variableID>	8	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	res	</name>		<variableID>	9	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	err	</name>		<variableID>	10	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	alpha	</name>		<variableID>	11	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	sum	</name>		<variableID>	12	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	delta	</name>		<variableID>	13	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	i	</name>		<variableID>	14	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-							</VariableStack>
-
-							<statements>
-								<VeriableDecl>			<name>	i	</name>		<variableID>	14	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-							</statements>
-
-						</StatAssemblage>
-
-					</forInit>
-
-					<forCond>
-						<StatAssemblage>	<Phase>  5  </Phase>
-							<stageNum>  1  </stageNum>
-							<totalStepNum>  1  </totalStepNum>
-							<VariableStack>
-								<VeriableDecl>			<name>	N_INPUT	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	N_HIDDEN	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	N_OUTPUT	</name>		<variableID>	2	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	w1	</name>		<variableID>	3	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	w2	</name>		<variableID>	4	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	input	</name>		<variableID>	5	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	hidden	</name>		<variableID>	6	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	output	</name>		<variableID>	7	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	in	</name>		<variableID>	8	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	res	</name>		<variableID>	9	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	err	</name>		<variableID>	10	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	alpha	</name>		<variableID>	11	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	sum	</name>		<variableID>	12	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	delta	</name>		<variableID>	13	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	i	</name>		<variableID>	14	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-							</VariableStack>
-
-							<statements>
-								<ExprStatement>
-									<Binary>
-										<binaryOp>	'LT'	</binaryOp>
-										<leftExpr>
-											<Ident>
-												<variableID>	14	</variableID>
-												<idName>	i	</idName>
-											</Ident>
-										</leftExpr>
-
-										<rightExpr>
-											<Ident>
-												<variableID>	0	</variableID>
-												<idName>	N_INPUT	</idName>
-											</Ident>
-										</rightExpr>
-
-									</Binary>
-
-								</ExprStatement>
-
-							</statements>
-
-						</StatAssemblage>
-
-					</forCond>
-
-					<forUpdate>
-						<StatAssemblage>	<Phase>  6  </Phase>
-							<stageNum>  1  </stageNum>
-							<totalStepNum>  1  </totalStepNum>
-							<VariableStack>
-								<VeriableDecl>			<name>	N_INPUT	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	N_HIDDEN	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	N_OUTPUT	</name>		<variableID>	2	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	w1	</name>		<variableID>	3	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	w2	</name>		<variableID>	4	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	input	</name>		<variableID>	5	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	hidden	</name>		<variableID>	6	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	output	</name>		<variableID>	7	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	in	</name>		<variableID>	8	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	res	</name>		<variableID>	9	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	err	</name>		<variableID>	10	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	alpha	</name>		<variableID>	11	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	sum	</name>		<variableID>	12	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	delta	</name>		<variableID>	13	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	i	</name>		<variableID>	14	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-							</VariableStack>
-
-							<statements>
-								<ExprStatement>
+						<ExprStatement>
+							<Assign>
+								<rightExpr>
 									<Unary>
-									<unaryOP>	_++</unaryOP>
-										<Ident>
-											<variableID>	14	</variableID>
-											<idName>	i	</idName>
-										</Ident>
+									<unaryOP>	-</unaryOP>
+										<Literal>
+											<type>	float	</type>
+											<value>	0.008576	</value>
+										</Literal>
 									</Unary>
 
-								</ExprStatement>
+								</rightExpr>
 
-							</statements>
+								<dest>
+									<ArrayAccess>
+										<variableID>	3	</variableID>
+										<idName>w1</idName>
 
-						</StatAssemblage>
+										<index0>
+											<Literal>
+												<type>	int	</type>
+												<value>	0	</value>
+											</Literal>
+										</index0>
 
-					</forUpdate>
+										<index1>
+											<Literal>
+												<type>	int	</type>
+												<value>	0	</value>
+											</Literal>
+										</index1>
 
-					<forBody>
-						<Block>	<Phase>  7  </Phase>
+									</ArrayAccess>
 
-							<ForLoop>	<Phase>  8  </Phase>
-								<forInit>
-									<StatAssemblage>	<Phase>  9  </Phase>
-										<stageNum>  2  </stageNum>
-										<totalStepNum>  2  </totalStepNum>
-										<VariableStack>
-											<VeriableDecl>			<name>	N_INPUT	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-											<VeriableDecl>			<name>	N_HIDDEN	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-											<VeriableDecl>			<name>	N_OUTPUT	</name>		<variableID>	2	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-											<VeriableDecl>			<name>	w1	</name>		<variableID>	3	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-											<VeriableDecl>			<name>	w2	</name>		<variableID>	4	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-											<VeriableDecl>			<name>	input	</name>		<variableID>	5	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-											<VeriableDecl>			<name>	hidden	</name>		<variableID>	6	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-											<VeriableDecl>			<name>	output	</name>		<variableID>	7	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-											<VeriableDecl>			<name>	in	</name>		<variableID>	8	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-											<VeriableDecl>			<name>	res	</name>		<variableID>	9	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-											<VeriableDecl>			<name>	err	</name>		<variableID>	10	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-											<VeriableDecl>			<name>	alpha	</name>		<variableID>	11	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-											<VeriableDecl>			<name>	sum	</name>		<variableID>	12	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-											<VeriableDecl>			<name>	delta	</name>		<variableID>	13	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-											<VeriableDecl>			<name>	i	</name>		<variableID>	14	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-											<VeriableDecl>			<name>	j	</name>		<variableID>	15	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-										</VariableStack>
+								</dest>
 
-										<statements>
-											<VeriableDecl>			<name>	j	</name>		<variableID>	15	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-										</statements>
+							</Assign>
 
-									</StatAssemblage>
+						</ExprStatement>
 
-								</forInit>
+						<ExprStatement>
+							<Assign>
+								<rightExpr>
+									<Literal>
+										<type>	float	</type>
+										<value>	0.05009656	</value>
+									</Literal>
+								</rightExpr>
 
-								<forCond>
-									<StatAssemblage>	<Phase>  10  </Phase>
-										<stageNum>  1  </stageNum>
-										<totalStepNum>  1  </totalStepNum>
-										<VariableStack>
-											<VeriableDecl>			<name>	N_INPUT	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-											<VeriableDecl>			<name>	N_HIDDEN	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-											<VeriableDecl>			<name>	N_OUTPUT	</name>		<variableID>	2	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-											<VeriableDecl>			<name>	w1	</name>		<variableID>	3	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-											<VeriableDecl>			<name>	w2	</name>		<variableID>	4	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-											<VeriableDecl>			<name>	input	</name>		<variableID>	5	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-											<VeriableDecl>			<name>	hidden	</name>		<variableID>	6	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-											<VeriableDecl>			<name>	output	</name>		<variableID>	7	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-											<VeriableDecl>			<name>	in	</name>		<variableID>	8	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-											<VeriableDecl>			<name>	res	</name>		<variableID>	9	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-											<VeriableDecl>			<name>	err	</name>		<variableID>	10	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-											<VeriableDecl>			<name>	alpha	</name>		<variableID>	11	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-											<VeriableDecl>			<name>	sum	</name>		<variableID>	12	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-											<VeriableDecl>			<name>	delta	</name>		<variableID>	13	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-											<VeriableDecl>			<name>	i	</name>		<variableID>	14	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-											<VeriableDecl>			<name>	j	</name>		<variableID>	15	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-										</VariableStack>
+								<dest>
+									<ArrayAccess>
+										<variableID>	3	</variableID>
+										<idName>w1</idName>
 
-										<statements>
-											<ExprStatement>
-												<Binary>
-													<binaryOp>	'LT'	</binaryOp>
-													<leftExpr>
-														<Ident>
-															<variableID>	15	</variableID>
-															<idName>	j	</idName>
-														</Ident>
-													</leftExpr>
+										<index0>
+											<Literal>
+												<type>	int	</type>
+												<value>	0	</value>
+											</Literal>
+										</index0>
 
-													<rightExpr>
-														<Ident>
-															<variableID>	1	</variableID>
-															<idName>	N_HIDDEN	</idName>
-														</Ident>
-													</rightExpr>
+										<index1>
+											<Literal>
+												<type>	int	</type>
+												<value>	1	</value>
+											</Literal>
+										</index1>
 
-												</Binary>
+									</ArrayAccess>
 
-											</ExprStatement>
+								</dest>
 
-										</statements>
+							</Assign>
 
-									</StatAssemblage>
+						</ExprStatement>
 
-								</forCond>
-
-								<forBody>
-									<Block>	<Phase>  12  </Phase>
-
-										<StatAssemblage>	<Phase>  13  </Phase>
-											<stageNum>  1  </stageNum>
-											<totalStepNum>  20  </totalStepNum>
-											<VariableStack>
-												<VeriableDecl>			<name>	N_INPUT	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-												<VeriableDecl>			<name>	N_HIDDEN	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-												<VeriableDecl>			<name>	N_OUTPUT	</name>		<variableID>	2	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-												<VeriableDecl>			<name>	w1	</name>		<variableID>	3	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-												<VeriableDecl>			<name>	w2	</name>		<variableID>	4	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-												<VeriableDecl>			<name>	input	</name>		<variableID>	5	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-												<VeriableDecl>			<name>	hidden	</name>		<variableID>	6	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-												<VeriableDecl>			<name>	output	</name>		<variableID>	7	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-												<VeriableDecl>			<name>	in	</name>		<variableID>	8	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-												<VeriableDecl>			<name>	res	</name>		<variableID>	9	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-												<VeriableDecl>			<name>	err	</name>		<variableID>	10	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-												<VeriableDecl>			<name>	alpha	</name>		<variableID>	11	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-												<VeriableDecl>			<name>	sum	</name>		<variableID>	12	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-												<VeriableDecl>			<name>	delta	</name>		<variableID>	13	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-												<VeriableDecl>			<name>	i	</name>		<variableID>	14	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-												<VeriableDecl>			<name>	j	</name>		<variableID>	15	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-											</VariableStack>
-
-											<statements>
-												<ExprStatement>
-													<Assign>
-														<rightExpr>
-															<Binary>
-																<binaryOp>	'*'	</binaryOp>
-																<leftExpr>
-																	<Binary>
-																		<binaryOp>	'-'	</binaryOp>
-																		<leftExpr>
-																			<Binary>
-																				<binaryOp>	'*'	</binaryOp>
-																				<leftExpr>
-																					<MethodInv>
-																						<defClassName>	NeuralNetJRT	</defClassName>
-																						<objName>	this	</objName>
-																						<methodName>	rand	</methodName>
-
-																						<argment>
-																						</argment>
-																					</MethodInv>
-
-																				</leftExpr>
-
-																				<rightExpr>
-																					<Literal>
-																						<type>	float	</type>
-																						<value>	2.0	</value>
-																					</Literal>
-																				</rightExpr>
-
-																			</Binary>
-
-																		</leftExpr>
-
-																		<rightExpr>
-																			<Literal>
-																				<type>	float	</type>
-																				<value>	1.0	</value>
-																			</Literal>
-																		</rightExpr>
-
-																	</Binary>
-
-																</leftExpr>
-
-																<rightExpr>
-																	<Literal>
-																		<type>	float	</type>
-																		<value>	0.1	</value>
-																	</Literal>
-																</rightExpr>
-
-															</Binary>
-
-														</rightExpr>
-
-														<dest>
-															<ArrayAccess>
-																<variableID>	3	</variableID>
-																<idName>w1</idName>
-
-																<index0>
-																	<Ident>
-																		<variableID>	14	</variableID>
-																		<idName>	i	</idName>
-																	</Ident>
-																</index0>
-
-																<index1>
-																	<Ident>
-																		<variableID>	15	</variableID>
-																		<idName>	j	</idName>
-																	</Ident>
-																</index1>
-
-															</ArrayAccess>
-
-														</dest>
-
-													</Assign>
-
-												</ExprStatement>
-
-											</statements>
-
-										</StatAssemblage>
-
-									</Block>
-
-								</forBody>
-							</ForLoop>
-
-						</Block>
-
-					</forBody>
-				</ForLoop>
-
-				<ForLoop>	<Phase>  14  </Phase>
-					<forInit>
-						<StatAssemblage>	<Phase>  15  </Phase>
-							<stageNum>  1  </stageNum>
-							<totalStepNum>  1  </totalStepNum>
-							<VariableStack>
-								<VeriableDecl>			<name>	N_INPUT	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	N_HIDDEN	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	N_OUTPUT	</name>		<variableID>	2	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	w1	</name>		<variableID>	3	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	w2	</name>		<variableID>	4	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	input	</name>		<variableID>	5	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	hidden	</name>		<variableID>	6	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	output	</name>		<variableID>	7	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	in	</name>		<variableID>	8	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	res	</name>		<variableID>	9	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	err	</name>		<variableID>	10	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	alpha	</name>		<variableID>	11	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	sum	</name>		<variableID>	12	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	delta	</name>		<variableID>	13	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	i	</name>		<variableID>	16	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-							</VariableStack>
-
-							<statements>
-								<VeriableDecl>			<name>	i	</name>		<variableID>	16	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-							</statements>
-
-						</StatAssemblage>
-
-					</forInit>
-
-					<forCond>
-						<StatAssemblage>	<Phase>  16  </Phase>
-							<stageNum>  1  </stageNum>
-							<totalStepNum>  1  </totalStepNum>
-							<VariableStack>
-								<VeriableDecl>			<name>	N_INPUT	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	N_HIDDEN	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	N_OUTPUT	</name>		<variableID>	2	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	w1	</name>		<variableID>	3	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	w2	</name>		<variableID>	4	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	input	</name>		<variableID>	5	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	hidden	</name>		<variableID>	6	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	output	</name>		<variableID>	7	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	in	</name>		<variableID>	8	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	res	</name>		<variableID>	9	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	err	</name>		<variableID>	10	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	alpha	</name>		<variableID>	11	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	sum	</name>		<variableID>	12	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	delta	</name>		<variableID>	13	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	i	</name>		<variableID>	16	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-							</VariableStack>
-
-							<statements>
-								<ExprStatement>
-									<Binary>
-										<binaryOp>	'LT'	</binaryOp>
-										<leftExpr>
-											<Ident>
-												<variableID>	16	</variableID>
-												<idName>	i	</idName>
-											</Ident>
-										</leftExpr>
-
-										<rightExpr>
-											<Ident>
-												<variableID>	1	</variableID>
-												<idName>	N_HIDDEN	</idName>
-											</Ident>
-										</rightExpr>
-
-									</Binary>
-
-								</ExprStatement>
-
-							</statements>
-
-						</StatAssemblage>
-
-					</forCond>
-
-					<forUpdate>
-						<StatAssemblage>	<Phase>  17  </Phase>
-							<stageNum>  1  </stageNum>
-							<totalStepNum>  1  </totalStepNum>
-							<VariableStack>
-								<VeriableDecl>			<name>	N_INPUT	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	N_HIDDEN	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	N_OUTPUT	</name>		<variableID>	2	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	w1	</name>		<variableID>	3	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	w2	</name>		<variableID>	4	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	input	</name>		<variableID>	5	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	hidden	</name>		<variableID>	6	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	output	</name>		<variableID>	7	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	in	</name>		<variableID>	8	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	res	</name>		<variableID>	9	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	err	</name>		<variableID>	10	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	alpha	</name>		<variableID>	11	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	sum	</name>		<variableID>	12	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	delta	</name>		<variableID>	13	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	i	</name>		<variableID>	16	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-							</VariableStack>
-
-							<statements>
-								<ExprStatement>
+						<ExprStatement>
+							<Assign>
+								<rightExpr>
 									<Unary>
-									<unaryOP>	_++</unaryOP>
-										<Ident>
-											<variableID>	16	</variableID>
-											<idName>	i	</idName>
-										</Ident>
+									<unaryOP>	-</unaryOP>
+										<Literal>
+											<type>	float	</type>
+											<value>	0.05016011	</value>
+										</Literal>
 									</Unary>
 
-								</ExprStatement>
+								</rightExpr>
 
-							</statements>
+								<dest>
+									<ArrayAccess>
+										<variableID>	3	</variableID>
+										<idName>w1</idName>
 
-						</StatAssemblage>
+										<index0>
+											<Literal>
+												<type>	int	</type>
+												<value>	0	</value>
+											</Literal>
+										</index0>
 
-					</forUpdate>
+										<index1>
+											<Literal>
+												<type>	int	</type>
+												<value>	2	</value>
+											</Literal>
+										</index1>
 
-					<forBody>
-						<Block>	<Phase>  18  </Phase>
+									</ArrayAccess>
 
-							<ForLoop>	<Phase>  19  </Phase>
-								<forInit>
-									<StatAssemblage>	<Phase>  20  </Phase>
-										<stageNum>  2  </stageNum>
-										<totalStepNum>  2  </totalStepNum>
-										<VariableStack>
-											<VeriableDecl>			<name>	N_INPUT	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-											<VeriableDecl>			<name>	N_HIDDEN	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-											<VeriableDecl>			<name>	N_OUTPUT	</name>		<variableID>	2	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-											<VeriableDecl>			<name>	w1	</name>		<variableID>	3	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-											<VeriableDecl>			<name>	w2	</name>		<variableID>	4	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-											<VeriableDecl>			<name>	input	</name>		<variableID>	5	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-											<VeriableDecl>			<name>	hidden	</name>		<variableID>	6	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-											<VeriableDecl>			<name>	output	</name>		<variableID>	7	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-											<VeriableDecl>			<name>	in	</name>		<variableID>	8	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-											<VeriableDecl>			<name>	res	</name>		<variableID>	9	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-											<VeriableDecl>			<name>	err	</name>		<variableID>	10	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-											<VeriableDecl>			<name>	alpha	</name>		<variableID>	11	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-											<VeriableDecl>			<name>	sum	</name>		<variableID>	12	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-											<VeriableDecl>			<name>	delta	</name>		<variableID>	13	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-											<VeriableDecl>			<name>	i	</name>		<variableID>	16	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-											<VeriableDecl>			<name>	j	</name>		<variableID>	17	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-										</VariableStack>
+								</dest>
 
-										<statements>
-											<VeriableDecl>			<name>	j	</name>		<variableID>	17	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-										</statements>
+							</Assign>
 
-									</StatAssemblage>
+						</ExprStatement>
 
-								</forInit>
+						<ExprStatement>
+							<Assign>
+								<rightExpr>
+									<Unary>
+									<unaryOP>	-</unaryOP>
+										<Literal>
+											<type>	float	</type>
+											<value>	0.09487194	</value>
+										</Literal>
+									</Unary>
 
-								<forCond>
-									<StatAssemblage>	<Phase>  21  </Phase>
-										<stageNum>  1  </stageNum>
-										<totalStepNum>  1  </totalStepNum>
-										<VariableStack>
-											<VeriableDecl>			<name>	N_INPUT	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-											<VeriableDecl>			<name>	N_HIDDEN	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-											<VeriableDecl>			<name>	N_OUTPUT	</name>		<variableID>	2	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-											<VeriableDecl>			<name>	w1	</name>		<variableID>	3	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-											<VeriableDecl>			<name>	w2	</name>		<variableID>	4	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-											<VeriableDecl>			<name>	input	</name>		<variableID>	5	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-											<VeriableDecl>			<name>	hidden	</name>		<variableID>	6	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-											<VeriableDecl>			<name>	output	</name>		<variableID>	7	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-											<VeriableDecl>			<name>	in	</name>		<variableID>	8	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-											<VeriableDecl>			<name>	res	</name>		<variableID>	9	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-											<VeriableDecl>			<name>	err	</name>		<variableID>	10	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-											<VeriableDecl>			<name>	alpha	</name>		<variableID>	11	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-											<VeriableDecl>			<name>	sum	</name>		<variableID>	12	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-											<VeriableDecl>			<name>	delta	</name>		<variableID>	13	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-											<VeriableDecl>			<name>	i	</name>		<variableID>	16	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-											<VeriableDecl>			<name>	j	</name>		<variableID>	17	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-										</VariableStack>
+								</rightExpr>
 
-										<statements>
-											<ExprStatement>
-												<Binary>
-													<binaryOp>	'LT'	</binaryOp>
-													<leftExpr>
-														<Ident>
-															<variableID>	17	</variableID>
-															<idName>	j	</idName>
-														</Ident>
-													</leftExpr>
+								<dest>
+									<ArrayAccess>
+										<variableID>	3	</variableID>
+										<idName>w1</idName>
 
-													<rightExpr>
-														<Ident>
-															<variableID>	2	</variableID>
-															<idName>	N_OUTPUT	</idName>
-														</Ident>
-													</rightExpr>
+										<index0>
+											<Literal>
+												<type>	int	</type>
+												<value>	0	</value>
+											</Literal>
+										</index0>
 
-												</Binary>
+										<index1>
+											<Literal>
+												<type>	int	</type>
+												<value>	3	</value>
+											</Literal>
+										</index1>
 
-											</ExprStatement>
+									</ArrayAccess>
 
-										</statements>
+								</dest>
 
-									</StatAssemblage>
+							</Assign>
 
-								</forCond>
+						</ExprStatement>
 
-								<forBody>
-									<Block>	<Phase>  23  </Phase>
+						<ExprStatement>
+							<Assign>
+								<rightExpr>
+									<Literal>
+										<type>	float	</type>
+										<value>	0.049642216	</value>
+									</Literal>
+								</rightExpr>
 
-										<StatAssemblage>	<Phase>  24  </Phase>
-											<stageNum>  1  </stageNum>
-											<totalStepNum>  20  </totalStepNum>
-											<VariableStack>
-												<VeriableDecl>			<name>	N_INPUT	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-												<VeriableDecl>			<name>	N_HIDDEN	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-												<VeriableDecl>			<name>	N_OUTPUT	</name>		<variableID>	2	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-												<VeriableDecl>			<name>	w1	</name>		<variableID>	3	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-												<VeriableDecl>			<name>	w2	</name>		<variableID>	4	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-												<VeriableDecl>			<name>	input	</name>		<variableID>	5	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-												<VeriableDecl>			<name>	hidden	</name>		<variableID>	6	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-												<VeriableDecl>			<name>	output	</name>		<variableID>	7	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-												<VeriableDecl>			<name>	in	</name>		<variableID>	8	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-												<VeriableDecl>			<name>	res	</name>		<variableID>	9	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-												<VeriableDecl>			<name>	err	</name>		<variableID>	10	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-												<VeriableDecl>			<name>	alpha	</name>		<variableID>	11	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-												<VeriableDecl>			<name>	sum	</name>		<variableID>	12	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-												<VeriableDecl>			<name>	delta	</name>		<variableID>	13	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-												<VeriableDecl>			<name>	i	</name>		<variableID>	16	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-												<VeriableDecl>			<name>	j	</name>		<variableID>	17	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-											</VariableStack>
+								<dest>
+									<ArrayAccess>
+										<variableID>	3	</variableID>
+										<idName>w1</idName>
 
-											<statements>
-												<ExprStatement>
-													<Assign>
-														<rightExpr>
-															<Binary>
-																<binaryOp>	'*'	</binaryOp>
-																<leftExpr>
-																	<Binary>
-																		<binaryOp>	'-'	</binaryOp>
-																		<leftExpr>
-																			<Binary>
-																				<binaryOp>	'*'	</binaryOp>
-																				<leftExpr>
-																					<MethodInv>
-																						<defClassName>	NeuralNetJRT	</defClassName>
-																						<objName>	this	</objName>
-																						<methodName>	rand	</methodName>
+										<index0>
+											<Literal>
+												<type>	int	</type>
+												<value>	0	</value>
+											</Literal>
+										</index0>
 
-																						<argment>
-																						</argment>
-																					</MethodInv>
+										<index1>
+											<Literal>
+												<type>	int	</type>
+												<value>	4	</value>
+											</Literal>
+										</index1>
 
-																				</leftExpr>
+									</ArrayAccess>
 
-																				<rightExpr>
-																					<Literal>
-																						<type>	float	</type>
-																						<value>	2.0	</value>
-																					</Literal>
-																				</rightExpr>
+								</dest>
 
-																			</Binary>
+							</Assign>
 
-																		</leftExpr>
+						</ExprStatement>
 
-																		<rightExpr>
-																			<Literal>
-																				<type>	float	</type>
-																				<value>	1.0	</value>
-																			</Literal>
-																		</rightExpr>
+						<ExprStatement>
+							<Assign>
+								<rightExpr>
+									<Unary>
+									<unaryOP>	-</unaryOP>
+										<Literal>
+											<type>	float	</type>
+											<value>	0.07686572	</value>
+										</Literal>
+									</Unary>
 
-																	</Binary>
+								</rightExpr>
 
-																</leftExpr>
+								<dest>
+									<ArrayAccess>
+										<variableID>	3	</variableID>
+										<idName>w1</idName>
 
-																<rightExpr>
-																	<Literal>
-																		<type>	float	</type>
-																		<value>	0.1	</value>
-																	</Literal>
-																</rightExpr>
+										<index0>
+											<Literal>
+												<type>	int	</type>
+												<value>	1	</value>
+											</Literal>
+										</index0>
 
-															</Binary>
+										<index1>
+											<Literal>
+												<type>	int	</type>
+												<value>	0	</value>
+											</Literal>
+										</index1>
 
-														</rightExpr>
+									</ArrayAccess>
 
-														<dest>
-															<ArrayAccess>
-																<variableID>	4	</variableID>
-																<idName>w2</idName>
+								</dest>
 
-																<index0>
-																	<Ident>
-																		<variableID>	16	</variableID>
-																		<idName>	i	</idName>
-																	</Ident>
-																</index0>
+							</Assign>
 
-																<index1>
-																	<Ident>
-																		<variableID>	17	</variableID>
-																		<idName>	j	</idName>
-																	</Ident>
-																</index1>
+						</ExprStatement>
 
-															</ArrayAccess>
+						<ExprStatement>
+							<Assign>
+								<rightExpr>
+									<Unary>
+									<unaryOP>	-</unaryOP>
+										<Literal>
+											<type>	float	</type>
+											<value>	0.034081575	</value>
+										</Literal>
+									</Unary>
 
-														</dest>
+								</rightExpr>
 
-													</Assign>
+								<dest>
+									<ArrayAccess>
+										<variableID>	3	</variableID>
+										<idName>w1</idName>
 
-												</ExprStatement>
+										<index0>
+											<Literal>
+												<type>	int	</type>
+												<value>	1	</value>
+											</Literal>
+										</index0>
 
-											</statements>
+										<index1>
+											<Literal>
+												<type>	int	</type>
+												<value>	1	</value>
+											</Literal>
+										</index1>
 
-										</StatAssemblage>
+									</ArrayAccess>
 
-									</Block>
+								</dest>
 
-								</forBody>
-							</ForLoop>
+							</Assign>
 
-						</Block>
+						</ExprStatement>
 
-					</forBody>
-				</ForLoop>
+						<ExprStatement>
+							<Assign>
+								<rightExpr>
+									<Literal>
+										<type>	float	</type>
+										<value>	0.053494442	</value>
+									</Literal>
+								</rightExpr>
 
-				<StatAssemblage>	<Phase>  25  </Phase>
-					<stageNum>  1  </stageNum>
-					<totalStepNum>  1  </totalStepNum>
-					<VariableStack>
-						<VeriableDecl>			<name>	N_INPUT	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-						<VeriableDecl>			<name>	N_HIDDEN	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-						<VeriableDecl>			<name>	N_OUTPUT	</name>		<variableID>	2	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-						<VeriableDecl>			<name>	w1	</name>		<variableID>	3	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-						<VeriableDecl>			<name>	w2	</name>		<variableID>	4	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-						<VeriableDecl>			<name>	input	</name>		<variableID>	5	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-						<VeriableDecl>			<name>	hidden	</name>		<variableID>	6	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-						<VeriableDecl>			<name>	output	</name>		<variableID>	7	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-						<VeriableDecl>			<name>	in	</name>		<variableID>	8	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-						<VeriableDecl>			<name>	res	</name>		<variableID>	9	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-						<VeriableDecl>			<name>	err	</name>		<variableID>	10	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-						<VeriableDecl>			<name>	alpha	</name>		<variableID>	11	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-						<VeriableDecl>			<name>	sum	</name>		<variableID>	12	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-						<VeriableDecl>			<name>	delta	</name>		<variableID>	13	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-					</VariableStack>
+								<dest>
+									<ArrayAccess>
+										<variableID>	3	</variableID>
+										<idName>w1</idName>
 
-					<statements>
+										<index0>
+											<Literal>
+												<type>	int	</type>
+												<value>	1	</value>
+											</Literal>
+										</index0>
+
+										<index1>
+											<Literal>
+												<type>	int	</type>
+												<value>	2	</value>
+											</Literal>
+										</index1>
+
+									</ArrayAccess>
+
+								</dest>
+
+							</Assign>
+
+						</ExprStatement>
+
+						<ExprStatement>
+							<Assign>
+								<rightExpr>
+									<Literal>
+										<type>	float	</type>
+										<value>	0.0938886	</value>
+									</Literal>
+								</rightExpr>
+
+								<dest>
+									<ArrayAccess>
+										<variableID>	3	</variableID>
+										<idName>w1</idName>
+
+										<index0>
+											<Literal>
+												<type>	int	</type>
+												<value>	1	</value>
+											</Literal>
+										</index0>
+
+										<index1>
+											<Literal>
+												<type>	int	</type>
+												<value>	3	</value>
+											</Literal>
+										</index1>
+
+									</ArrayAccess>
+
+								</dest>
+
+							</Assign>
+
+						</ExprStatement>
+
+						<ExprStatement>
+							<Assign>
+								<rightExpr>
+									<Unary>
+									<unaryOP>	-</unaryOP>
+										<Literal>
+											<type>	float	</type>
+											<value>	0.0036170303	</value>
+										</Literal>
+									</Unary>
+
+								</rightExpr>
+
+								<dest>
+									<ArrayAccess>
+										<variableID>	3	</variableID>
+										<idName>w1</idName>
+
+										<index0>
+											<Literal>
+												<type>	int	</type>
+												<value>	1	</value>
+											</Literal>
+										</index0>
+
+										<index1>
+											<Literal>
+												<type>	int	</type>
+												<value>	4	</value>
+											</Literal>
+										</index1>
+
+									</ArrayAccess>
+
+								</dest>
+
+							</Assign>
+
+						</ExprStatement>
+
+						<ExprStatement>
+							<Assign>
+								<rightExpr>
+									<Literal>
+										<type>	float	</type>
+										<value>	0.006120503	</value>
+									</Literal>
+								</rightExpr>
+
+								<dest>
+									<ArrayAccess>
+										<variableID>	4	</variableID>
+										<idName>w2</idName>
+
+										<index0>
+											<Literal>
+												<type>	int	</type>
+												<value>	0	</value>
+											</Literal>
+										</index0>
+
+										<index1>
+											<Literal>
+												<type>	int	</type>
+												<value>	0	</value>
+											</Literal>
+										</index1>
+
+									</ArrayAccess>
+
+								</dest>
+
+							</Assign>
+
+						</ExprStatement>
+
+						<ExprStatement>
+							<Assign>
+								<rightExpr>
+									<Unary>
+									<unaryOP>	-</unaryOP>
+										<Literal>
+											<type>	float	</type>
+											<value>	0.080489926	</value>
+										</Literal>
+									</Unary>
+
+								</rightExpr>
+
+								<dest>
+									<ArrayAccess>
+										<variableID>	4	</variableID>
+										<idName>w2</idName>
+
+										<index0>
+											<Literal>
+												<type>	int	</type>
+												<value>	1	</value>
+											</Literal>
+										</index0>
+
+										<index1>
+											<Literal>
+												<type>	int	</type>
+												<value>	0	</value>
+											</Literal>
+										</index1>
+
+									</ArrayAccess>
+
+								</dest>
+
+							</Assign>
+
+						</ExprStatement>
+
+						<ExprStatement>
+							<Assign>
+								<rightExpr>
+									<Literal>
+										<type>	float	</type>
+										<value>	0.026627028	</value>
+									</Literal>
+								</rightExpr>
+
+								<dest>
+									<ArrayAccess>
+										<variableID>	4	</variableID>
+										<idName>w2</idName>
+
+										<index0>
+											<Literal>
+												<type>	int	</type>
+												<value>	2	</value>
+											</Literal>
+										</index0>
+
+										<index1>
+											<Literal>
+												<type>	int	</type>
+												<value>	0	</value>
+											</Literal>
+										</index1>
+
+									</ArrayAccess>
+
+								</dest>
+
+							</Assign>
+
+						</ExprStatement>
+
+						<ExprStatement>
+							<Assign>
+								<rightExpr>
+									<Unary>
+									<unaryOP>	-</unaryOP>
+										<Literal>
+											<type>	float	</type>
+											<value>	0.014604497	</value>
+										</Literal>
+									</Unary>
+
+								</rightExpr>
+
+								<dest>
+									<ArrayAccess>
+										<variableID>	4	</variableID>
+										<idName>w2</idName>
+
+										<index0>
+											<Literal>
+												<type>	int	</type>
+												<value>	3	</value>
+											</Literal>
+										</index0>
+
+										<index1>
+											<Literal>
+												<type>	int	</type>
+												<value>	0	</value>
+											</Literal>
+										</index1>
+
+									</ArrayAccess>
+
+								</dest>
+
+							</Assign>
+
+						</ExprStatement>
+
+						<ExprStatement>
+							<Assign>
+								<rightExpr>
+									<Unary>
+									<unaryOP>	-</unaryOP>
+										<Literal>
+											<type>	float	</type>
+											<value>	0.055263996	</value>
+										</Literal>
+									</Unary>
+
+								</rightExpr>
+
+								<dest>
+									<ArrayAccess>
+										<variableID>	4	</variableID>
+										<idName>w2</idName>
+
+										<index0>
+											<Literal>
+												<type>	int	</type>
+												<value>	4	</value>
+											</Literal>
+										</index0>
+
+										<index1>
+											<Literal>
+												<type>	int	</type>
+												<value>	0	</value>
+											</Literal>
+										</index1>
+
+									</ArrayAccess>
+
+								</dest>
+
+							</Assign>
+
+						</ExprStatement>
+
 						<ExprStatement>
 							<Assign>
 								<rightExpr>
@@ -1852,11 +1671,11 @@
 
 				</StatAssemblage>
 
-				<WhileLoop>	<Phase>  26  </Phase>
-					<BreakPhase>	net.njlab.model.VerilogBreak@44875666	</BreakPhase>					
+				<WhileLoop>	<Phase>  3  </Phase>
+					<BreakPhase>	net.njlab.model.VerilogBreak@17b5e53e	</BreakPhase>					
 
 					<whileCond>
-						<StatAssemblage>	<Phase>  27  </Phase>
+						<StatAssemblage>	<Phase>  4  </Phase>
 							<stageNum>  1  </stageNum>
 							<totalStepNum>  1  </totalStepNum>
 							<VariableStack>
@@ -1891,11 +1710,11 @@
 					</whileCond>
 
 					<whileBody>
-						<Block>	<Phase>  28  </Phase>
+						<Block>	<Phase>  5  </Phase>
 
-							<ForLoop>	<Phase>  29  </Phase>
+							<ForLoop>	<Phase>  6  </Phase>
 								<forInit>
-									<StatAssemblage>	<Phase>  30  </Phase>
+									<StatAssemblage>	<Phase>  7  </Phase>
 										<stageNum>  1  </stageNum>
 										<totalStepNum>  1  </totalStepNum>
 										<VariableStack>
@@ -1913,11 +1732,11 @@
 											<VeriableDecl>			<name>	alpha	</name>		<variableID>	11	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 											<VeriableDecl>			<name>	sum	</name>		<variableID>	12	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 											<VeriableDecl>			<name>	delta	</name>		<variableID>	13	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-											<VeriableDecl>			<name>	i	</name>		<variableID>	18	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+											<VeriableDecl>			<name>	i	</name>		<variableID>	14	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 										</VariableStack>
 
 										<statements>
-											<VeriableDecl>			<name>	i	</name>		<variableID>	18	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+											<VeriableDecl>			<name>	i	</name>		<variableID>	14	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 										</statements>
 
 									</StatAssemblage>
@@ -1925,7 +1744,7 @@
 								</forInit>
 
 								<forCond>
-									<StatAssemblage>	<Phase>  31  </Phase>
+									<StatAssemblage>	<Phase>  8  </Phase>
 										<stageNum>  1  </stageNum>
 										<totalStepNum>  1  </totalStepNum>
 										<VariableStack>
@@ -1943,7 +1762,7 @@
 											<VeriableDecl>			<name>	alpha	</name>		<variableID>	11	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 											<VeriableDecl>			<name>	sum	</name>		<variableID>	12	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 											<VeriableDecl>			<name>	delta	</name>		<variableID>	13	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-											<VeriableDecl>			<name>	i	</name>		<variableID>	18	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+											<VeriableDecl>			<name>	i	</name>		<variableID>	14	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 										</VariableStack>
 
 										<statements>
@@ -1952,7 +1771,7 @@
 													<binaryOp>	'LT'	</binaryOp>
 													<leftExpr>
 														<Ident>
-															<variableID>	18	</variableID>
+															<variableID>	14	</variableID>
 															<idName>	i	</idName>
 														</Ident>
 													</leftExpr>
@@ -1975,11 +1794,11 @@
 								</forCond>
 
 								<forBody>
-									<Block>	<Phase>  33  </Phase>
+									<Block>	<Phase>  10  </Phase>
 
-										<ForLoop>	<Phase>  34  </Phase>
+										<ForLoop>	<Phase>  11  </Phase>
 											<forInit>
-												<StatAssemblage>	<Phase>  35  </Phase>
+												<StatAssemblage>	<Phase>  12  </Phase>
 													<stageNum>  2  </stageNum>
 													<totalStepNum>  2  </totalStepNum>
 													<VariableStack>
@@ -1997,12 +1816,12 @@
 														<VeriableDecl>			<name>	alpha	</name>		<variableID>	11	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 														<VeriableDecl>			<name>	sum	</name>		<variableID>	12	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 														<VeriableDecl>			<name>	delta	</name>		<variableID>	13	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-														<VeriableDecl>			<name>	i	</name>		<variableID>	18	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-														<VeriableDecl>			<name>	j	</name>		<variableID>	19	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+														<VeriableDecl>			<name>	i	</name>		<variableID>	14	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+														<VeriableDecl>			<name>	j	</name>		<variableID>	15	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 													</VariableStack>
 
 													<statements>
-														<VeriableDecl>			<name>	j	</name>		<variableID>	19	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+														<VeriableDecl>			<name>	j	</name>		<variableID>	15	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 													</statements>
 
 												</StatAssemblage>
@@ -2010,7 +1829,7 @@
 											</forInit>
 
 											<forCond>
-												<StatAssemblage>	<Phase>  36  </Phase>
+												<StatAssemblage>	<Phase>  13  </Phase>
 													<stageNum>  1  </stageNum>
 													<totalStepNum>  1  </totalStepNum>
 													<VariableStack>
@@ -2028,8 +1847,8 @@
 														<VeriableDecl>			<name>	alpha	</name>		<variableID>	11	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 														<VeriableDecl>			<name>	sum	</name>		<variableID>	12	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 														<VeriableDecl>			<name>	delta	</name>		<variableID>	13	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-														<VeriableDecl>			<name>	i	</name>		<variableID>	18	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-														<VeriableDecl>			<name>	j	</name>		<variableID>	19	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+														<VeriableDecl>			<name>	i	</name>		<variableID>	14	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+														<VeriableDecl>			<name>	j	</name>		<variableID>	15	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 													</VariableStack>
 
 													<statements>
@@ -2038,7 +1857,7 @@
 																<binaryOp>	'LT'	</binaryOp>
 																<leftExpr>
 																	<Ident>
-																		<variableID>	19	</variableID>
+																		<variableID>	15	</variableID>
 																		<idName>	j	</idName>
 																	</Ident>
 																</leftExpr>
@@ -2061,9 +1880,9 @@
 											</forCond>
 
 											<forBody>
-												<Block>	<Phase>  38  </Phase>
+												<Block>	<Phase>  15  </Phase>
 
-													<StatAssemblage>	<Phase>  39  </Phase>
+													<StatAssemblage>	<Phase>  16  </Phase>
 														<stageNum>  1  </stageNum>
 														<totalStepNum>  7  </totalStepNum>
 														<VariableStack>
@@ -2081,8 +1900,8 @@
 															<VeriableDecl>			<name>	alpha	</name>		<variableID>	11	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 															<VeriableDecl>			<name>	sum	</name>		<variableID>	12	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 															<VeriableDecl>			<name>	delta	</name>		<variableID>	13	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-															<VeriableDecl>			<name>	i	</name>		<variableID>	18	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-															<VeriableDecl>			<name>	j	</name>		<variableID>	19	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+															<VeriableDecl>			<name>	i	</name>		<variableID>	14	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+															<VeriableDecl>			<name>	j	</name>		<variableID>	15	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 														</VariableStack>
 
 														<statements>
@@ -2095,14 +1914,14 @@
 
 																			<index0>
 																				<Ident>
-																					<variableID>	18	</variableID>
+																					<variableID>	14	</variableID>
 																					<idName>	i	</idName>
 																				</Ident>
 																			</index0>
 
 																			<index1>
 																				<Ident>
-																					<variableID>	19	</variableID>
+																					<variableID>	15	</variableID>
 																					<idName>	j	</idName>
 																				</Ident>
 																			</index1>
@@ -2118,7 +1937,7 @@
 
 																			<index0>
 																				<Ident>
-																					<variableID>	19	</variableID>
+																					<variableID>	15	</variableID>
 																					<idName>	j	</idName>
 																				</Ident>
 																			</index0>
@@ -2140,9 +1959,9 @@
 											</forBody>
 										</ForLoop>
 
-										<ForLoop>	<Phase>  40  </Phase>
+										<ForLoop>	<Phase>  17  </Phase>
 											<forInit>
-												<StatAssemblage>	<Phase>  41  </Phase>
+												<StatAssemblage>	<Phase>  18  </Phase>
 													<stageNum>  1  </stageNum>
 													<totalStepNum>  1  </totalStepNum>
 													<VariableStack>
@@ -2160,12 +1979,12 @@
 														<VeriableDecl>			<name>	alpha	</name>		<variableID>	11	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 														<VeriableDecl>			<name>	sum	</name>		<variableID>	12	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 														<VeriableDecl>			<name>	delta	</name>		<variableID>	13	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-														<VeriableDecl>			<name>	i	</name>		<variableID>	18	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-														<VeriableDecl>			<name>	k	</name>		<variableID>	20	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+														<VeriableDecl>			<name>	i	</name>		<variableID>	14	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+														<VeriableDecl>			<name>	k	</name>		<variableID>	16	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 													</VariableStack>
 
 													<statements>
-														<VeriableDecl>			<name>	k	</name>		<variableID>	20	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+														<VeriableDecl>			<name>	k	</name>		<variableID>	16	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 													</statements>
 
 												</StatAssemblage>
@@ -2173,7 +1992,7 @@
 											</forInit>
 
 											<forCond>
-												<StatAssemblage>	<Phase>  42  </Phase>
+												<StatAssemblage>	<Phase>  19  </Phase>
 													<stageNum>  1  </stageNum>
 													<totalStepNum>  1  </totalStepNum>
 													<VariableStack>
@@ -2191,8 +2010,8 @@
 														<VeriableDecl>			<name>	alpha	</name>		<variableID>	11	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 														<VeriableDecl>			<name>	sum	</name>		<variableID>	12	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 														<VeriableDecl>			<name>	delta	</name>		<variableID>	13	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-														<VeriableDecl>			<name>	i	</name>		<variableID>	18	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-														<VeriableDecl>			<name>	k	</name>		<variableID>	20	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+														<VeriableDecl>			<name>	i	</name>		<variableID>	14	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+														<VeriableDecl>			<name>	k	</name>		<variableID>	16	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 													</VariableStack>
 
 													<statements>
@@ -2201,7 +2020,7 @@
 																<binaryOp>	'LT'	</binaryOp>
 																<leftExpr>
 																	<Ident>
-																		<variableID>	20	</variableID>
+																		<variableID>	16	</variableID>
 																		<idName>	k	</idName>
 																	</Ident>
 																</leftExpr>
@@ -2224,9 +2043,9 @@
 											</forCond>
 
 											<forBody>
-												<Block>	<Phase>  44  </Phase>
+												<Block>	<Phase>  21  </Phase>
 
-													<StatAssemblage>	<Phase>  45  </Phase>
+													<StatAssemblage>	<Phase>  22  </Phase>
 														<stageNum>  1  </stageNum>
 														<totalStepNum>  1  </totalStepNum>
 														<VariableStack>
@@ -2244,8 +2063,8 @@
 															<VeriableDecl>			<name>	alpha	</name>		<variableID>	11	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 															<VeriableDecl>			<name>	sum	</name>		<variableID>	12	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 															<VeriableDecl>			<name>	delta	</name>		<variableID>	13	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-															<VeriableDecl>			<name>	i	</name>		<variableID>	18	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-															<VeriableDecl>			<name>	k	</name>		<variableID>	20	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+															<VeriableDecl>			<name>	i	</name>		<variableID>	14	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+															<VeriableDecl>			<name>	k	</name>		<variableID>	16	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 														</VariableStack>
 
 														<statements>
@@ -2265,7 +2084,7 @@
 
 																			<index0>
 																				<Ident>
-																					<variableID>	20	</variableID>
+																					<variableID>	16	</variableID>
 																					<idName>	k	</idName>
 																				</Ident>
 																			</index0>
@@ -2282,9 +2101,9 @@
 
 													</StatAssemblage>
 
-													<ForLoop>	<Phase>  46  </Phase>
+													<ForLoop>	<Phase>  23  </Phase>
 														<forInit>
-															<StatAssemblage>	<Phase>  47  </Phase>
+															<StatAssemblage>	<Phase>  24  </Phase>
 																<stageNum>  2  </stageNum>
 																<totalStepNum>  2  </totalStepNum>
 																<VariableStack>
@@ -2302,13 +2121,13 @@
 																	<VeriableDecl>			<name>	alpha	</name>		<variableID>	11	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 																	<VeriableDecl>			<name>	sum	</name>		<variableID>	12	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 																	<VeriableDecl>			<name>	delta	</name>		<variableID>	13	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-																	<VeriableDecl>			<name>	i	</name>		<variableID>	18	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-																	<VeriableDecl>			<name>	k	</name>		<variableID>	20	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-																	<VeriableDecl>			<name>	j	</name>		<variableID>	21	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+																	<VeriableDecl>			<name>	i	</name>		<variableID>	14	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+																	<VeriableDecl>			<name>	k	</name>		<variableID>	16	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+																	<VeriableDecl>			<name>	j	</name>		<variableID>	17	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 																</VariableStack>
 
 																<statements>
-																	<VeriableDecl>			<name>	j	</name>		<variableID>	21	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+																	<VeriableDecl>			<name>	j	</name>		<variableID>	17	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 																</statements>
 
 															</StatAssemblage>
@@ -2316,7 +2135,7 @@
 														</forInit>
 
 														<forCond>
-															<StatAssemblage>	<Phase>  48  </Phase>
+															<StatAssemblage>	<Phase>  25  </Phase>
 																<stageNum>  1  </stageNum>
 																<totalStepNum>  1  </totalStepNum>
 																<VariableStack>
@@ -2334,9 +2153,9 @@
 																	<VeriableDecl>			<name>	alpha	</name>		<variableID>	11	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 																	<VeriableDecl>			<name>	sum	</name>		<variableID>	12	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 																	<VeriableDecl>			<name>	delta	</name>		<variableID>	13	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-																	<VeriableDecl>			<name>	i	</name>		<variableID>	18	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-																	<VeriableDecl>			<name>	k	</name>		<variableID>	20	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-																	<VeriableDecl>			<name>	j	</name>		<variableID>	21	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+																	<VeriableDecl>			<name>	i	</name>		<variableID>	14	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+																	<VeriableDecl>			<name>	k	</name>		<variableID>	16	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+																	<VeriableDecl>			<name>	j	</name>		<variableID>	17	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 																</VariableStack>
 
 																<statements>
@@ -2345,7 +2164,7 @@
 																			<binaryOp>	'LT'	</binaryOp>
 																			<leftExpr>
 																				<Ident>
-																					<variableID>	21	</variableID>
+																					<variableID>	17	</variableID>
 																					<idName>	j	</idName>
 																				</Ident>
 																			</leftExpr>
@@ -2368,9 +2187,9 @@
 														</forCond>
 
 														<forBody>
-															<Block>	<Phase>  50  </Phase>
+															<Block>	<Phase>  27  </Phase>
 
-																<StatAssemblage>	<Phase>  51  </Phase>
+																<StatAssemblage>	<Phase>  28  </Phase>
 																	<stageNum>  1  </stageNum>
 																	<totalStepNum>  45  </totalStepNum>
 																	<VariableStack>
@@ -2388,9 +2207,9 @@
 																		<VeriableDecl>			<name>	alpha	</name>		<variableID>	11	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 																		<VeriableDecl>			<name>	sum	</name>		<variableID>	12	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 																		<VeriableDecl>			<name>	delta	</name>		<variableID>	13	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-																		<VeriableDecl>			<name>	i	</name>		<variableID>	18	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-																		<VeriableDecl>			<name>	k	</name>		<variableID>	20	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-																		<VeriableDecl>			<name>	j	</name>		<variableID>	21	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+																		<VeriableDecl>			<name>	i	</name>		<variableID>	14	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+																		<VeriableDecl>			<name>	k	</name>		<variableID>	16	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+																		<VeriableDecl>			<name>	j	</name>		<variableID>	17	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 																	</VariableStack>
 
 																	<statements>
@@ -2407,14 +2226,14 @@
 
 																								<index0>
 																									<Ident>
-																										<variableID>	21	</variableID>
+																										<variableID>	17	</variableID>
 																										<idName>	j	</idName>
 																									</Ident>
 																								</index0>
 
 																								<index1>
 																									<Ident>
-																										<variableID>	20	</variableID>
+																										<variableID>	16	</variableID>
 																										<idName>	k	</idName>
 																									</Ident>
 																								</index1>
@@ -2430,7 +2249,7 @@
 
 																								<index0>
 																									<Ident>
-																										<variableID>	21	</variableID>
+																										<variableID>	17	</variableID>
 																										<idName>	j	</idName>
 																									</Ident>
 																								</index0>
@@ -2450,7 +2269,7 @@
 
 																						<index0>
 																							<Ident>
-																								<variableID>	20	</variableID>
+																								<variableID>	16	</variableID>
 																								<idName>	k	</idName>
 																							</Ident>
 																						</index0>
@@ -2472,7 +2291,7 @@
 														</forBody>
 													</ForLoop>
 
-													<StatAssemblage>	<Phase>  52  </Phase>
+													<StatAssemblage>	<Phase>  29  </Phase>
 														<stageNum>  1  </stageNum>
 														<totalStepNum>  39  </totalStepNum>
 														<VariableStack>
@@ -2490,8 +2309,8 @@
 															<VeriableDecl>			<name>	alpha	</name>		<variableID>	11	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 															<VeriableDecl>			<name>	sum	</name>		<variableID>	12	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 															<VeriableDecl>			<name>	delta	</name>		<variableID>	13	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-															<VeriableDecl>			<name>	i	</name>		<variableID>	18	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-															<VeriableDecl>			<name>	k	</name>		<variableID>	20	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+															<VeriableDecl>			<name>	i	</name>		<variableID>	14	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+															<VeriableDecl>			<name>	k	</name>		<variableID>	16	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 														</VariableStack>
 
 														<statements>
@@ -2532,7 +2351,7 @@
 
 																										<index0>
 																											<Ident>
-																												<variableID>	18	</variableID>
+																												<variableID>	14	</variableID>
 																												<idName>	i	</idName>
 																											</Ident>
 																										</index0>
@@ -2561,7 +2380,7 @@
 
 																			<index0>
 																				<Ident>
-																					<variableID>	20	</variableID>
+																					<variableID>	16	</variableID>
 																					<idName>	k	</idName>
 																				</Ident>
 																			</index0>
@@ -2583,9 +2402,9 @@
 											</forBody>
 										</ForLoop>
 
-										<ForLoop>	<Phase>  53  </Phase>
+										<ForLoop>	<Phase>  30  </Phase>
 											<forInit>
-												<StatAssemblage>	<Phase>  54  </Phase>
+												<StatAssemblage>	<Phase>  31  </Phase>
 													<stageNum>  1  </stageNum>
 													<totalStepNum>  1  </totalStepNum>
 													<VariableStack>
@@ -2603,12 +2422,12 @@
 														<VeriableDecl>			<name>	alpha	</name>		<variableID>	11	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 														<VeriableDecl>			<name>	sum	</name>		<variableID>	12	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 														<VeriableDecl>			<name>	delta	</name>		<variableID>	13	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-														<VeriableDecl>			<name>	i	</name>		<variableID>	18	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-														<VeriableDecl>			<name>	k	</name>		<variableID>	22	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+														<VeriableDecl>			<name>	i	</name>		<variableID>	14	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+														<VeriableDecl>			<name>	k	</name>		<variableID>	18	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 													</VariableStack>
 
 													<statements>
-														<VeriableDecl>			<name>	k	</name>		<variableID>	22	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+														<VeriableDecl>			<name>	k	</name>		<variableID>	18	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 													</statements>
 
 												</StatAssemblage>
@@ -2616,7 +2435,7 @@
 											</forInit>
 
 											<forCond>
-												<StatAssemblage>	<Phase>  55  </Phase>
+												<StatAssemblage>	<Phase>  32  </Phase>
 													<stageNum>  1  </stageNum>
 													<totalStepNum>  1  </totalStepNum>
 													<VariableStack>
@@ -2634,8 +2453,8 @@
 														<VeriableDecl>			<name>	alpha	</name>		<variableID>	11	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 														<VeriableDecl>			<name>	sum	</name>		<variableID>	12	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 														<VeriableDecl>			<name>	delta	</name>		<variableID>	13	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-														<VeriableDecl>			<name>	i	</name>		<variableID>	18	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-														<VeriableDecl>			<name>	k	</name>		<variableID>	22	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+														<VeriableDecl>			<name>	i	</name>		<variableID>	14	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+														<VeriableDecl>			<name>	k	</name>		<variableID>	18	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 													</VariableStack>
 
 													<statements>
@@ -2644,7 +2463,7 @@
 																<binaryOp>	'LT'	</binaryOp>
 																<leftExpr>
 																	<Ident>
-																		<variableID>	22	</variableID>
+																		<variableID>	18	</variableID>
 																		<idName>	k	</idName>
 																	</Ident>
 																</leftExpr>
@@ -2667,9 +2486,9 @@
 											</forCond>
 
 											<forBody>
-												<Block>	<Phase>  57  </Phase>
+												<Block>	<Phase>  34  </Phase>
 
-													<StatAssemblage>	<Phase>  58  </Phase>
+													<StatAssemblage>	<Phase>  35  </Phase>
 														<stageNum>  1  </stageNum>
 														<totalStepNum>  1  </totalStepNum>
 														<VariableStack>
@@ -2687,8 +2506,8 @@
 															<VeriableDecl>			<name>	alpha	</name>		<variableID>	11	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 															<VeriableDecl>			<name>	sum	</name>		<variableID>	12	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 															<VeriableDecl>			<name>	delta	</name>		<variableID>	13	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-															<VeriableDecl>			<name>	i	</name>		<variableID>	18	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-															<VeriableDecl>			<name>	k	</name>		<variableID>	22	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+															<VeriableDecl>			<name>	i	</name>		<variableID>	14	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+															<VeriableDecl>			<name>	k	</name>		<variableID>	18	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 														</VariableStack>
 
 														<statements>
@@ -2708,7 +2527,7 @@
 
 																			<index0>
 																				<Ident>
-																					<variableID>	22	</variableID>
+																					<variableID>	18	</variableID>
 																					<idName>	k	</idName>
 																				</Ident>
 																			</index0>
@@ -2725,9 +2544,9 @@
 
 													</StatAssemblage>
 
-													<ForLoop>	<Phase>  59  </Phase>
+													<ForLoop>	<Phase>  36  </Phase>
 														<forInit>
-															<StatAssemblage>	<Phase>  60  </Phase>
+															<StatAssemblage>	<Phase>  37  </Phase>
 																<stageNum>  2  </stageNum>
 																<totalStepNum>  2  </totalStepNum>
 																<VariableStack>
@@ -2745,13 +2564,13 @@
 																	<VeriableDecl>			<name>	alpha	</name>		<variableID>	11	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 																	<VeriableDecl>			<name>	sum	</name>		<variableID>	12	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 																	<VeriableDecl>			<name>	delta	</name>		<variableID>	13	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-																	<VeriableDecl>			<name>	i	</name>		<variableID>	18	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-																	<VeriableDecl>			<name>	k	</name>		<variableID>	22	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-																	<VeriableDecl>			<name>	j	</name>		<variableID>	23	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+																	<VeriableDecl>			<name>	i	</name>		<variableID>	14	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+																	<VeriableDecl>			<name>	k	</name>		<variableID>	18	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+																	<VeriableDecl>			<name>	j	</name>		<variableID>	19	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 																</VariableStack>
 
 																<statements>
-																	<VeriableDecl>			<name>	j	</name>		<variableID>	23	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+																	<VeriableDecl>			<name>	j	</name>		<variableID>	19	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 																</statements>
 
 															</StatAssemblage>
@@ -2759,7 +2578,7 @@
 														</forInit>
 
 														<forCond>
-															<StatAssemblage>	<Phase>  61  </Phase>
+															<StatAssemblage>	<Phase>  38  </Phase>
 																<stageNum>  1  </stageNum>
 																<totalStepNum>  1  </totalStepNum>
 																<VariableStack>
@@ -2777,9 +2596,9 @@
 																	<VeriableDecl>			<name>	alpha	</name>		<variableID>	11	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 																	<VeriableDecl>			<name>	sum	</name>		<variableID>	12	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 																	<VeriableDecl>			<name>	delta	</name>		<variableID>	13	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-																	<VeriableDecl>			<name>	i	</name>		<variableID>	18	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-																	<VeriableDecl>			<name>	k	</name>		<variableID>	22	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-																	<VeriableDecl>			<name>	j	</name>		<variableID>	23	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+																	<VeriableDecl>			<name>	i	</name>		<variableID>	14	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+																	<VeriableDecl>			<name>	k	</name>		<variableID>	18	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+																	<VeriableDecl>			<name>	j	</name>		<variableID>	19	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 																</VariableStack>
 
 																<statements>
@@ -2788,7 +2607,7 @@
 																			<binaryOp>	'LT'	</binaryOp>
 																			<leftExpr>
 																				<Ident>
-																					<variableID>	23	</variableID>
+																					<variableID>	19	</variableID>
 																					<idName>	j	</idName>
 																				</Ident>
 																			</leftExpr>
@@ -2811,9 +2630,9 @@
 														</forCond>
 
 														<forBody>
-															<Block>	<Phase>  63  </Phase>
+															<Block>	<Phase>  40  </Phase>
 
-																<StatAssemblage>	<Phase>  64  </Phase>
+																<StatAssemblage>	<Phase>  41  </Phase>
 																	<stageNum>  1  </stageNum>
 																	<totalStepNum>  45  </totalStepNum>
 																	<VariableStack>
@@ -2831,9 +2650,9 @@
 																		<VeriableDecl>			<name>	alpha	</name>		<variableID>	11	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 																		<VeriableDecl>			<name>	sum	</name>		<variableID>	12	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 																		<VeriableDecl>			<name>	delta	</name>		<variableID>	13	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-																		<VeriableDecl>			<name>	i	</name>		<variableID>	18	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-																		<VeriableDecl>			<name>	k	</name>		<variableID>	22	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-																		<VeriableDecl>			<name>	j	</name>		<variableID>	23	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+																		<VeriableDecl>			<name>	i	</name>		<variableID>	14	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+																		<VeriableDecl>			<name>	k	</name>		<variableID>	18	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+																		<VeriableDecl>			<name>	j	</name>		<variableID>	19	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 																	</VariableStack>
 
 																	<statements>
@@ -2850,14 +2669,14 @@
 
 																								<index0>
 																									<Ident>
-																										<variableID>	23	</variableID>
+																										<variableID>	19	</variableID>
 																										<idName>	j	</idName>
 																									</Ident>
 																								</index0>
 
 																								<index1>
 																									<Ident>
-																										<variableID>	22	</variableID>
+																										<variableID>	18	</variableID>
 																										<idName>	k	</idName>
 																									</Ident>
 																								</index1>
@@ -2873,7 +2692,7 @@
 
 																								<index0>
 																									<Ident>
-																										<variableID>	23	</variableID>
+																										<variableID>	19	</variableID>
 																										<idName>	j	</idName>
 																									</Ident>
 																								</index0>
@@ -2893,7 +2712,7 @@
 
 																						<index0>
 																							<Ident>
-																								<variableID>	22	</variableID>
+																								<variableID>	18	</variableID>
 																								<idName>	k	</idName>
 																							</Ident>
 																						</index0>
@@ -2915,7 +2734,7 @@
 														</forBody>
 													</ForLoop>
 
-													<StatAssemblage>	<Phase>  65  </Phase>
+													<StatAssemblage>	<Phase>  42  </Phase>
 														<stageNum>  1  </stageNum>
 														<totalStepNum>  39  </totalStepNum>
 														<VariableStack>
@@ -2933,8 +2752,8 @@
 															<VeriableDecl>			<name>	alpha	</name>		<variableID>	11	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 															<VeriableDecl>			<name>	sum	</name>		<variableID>	12	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 															<VeriableDecl>			<name>	delta	</name>		<variableID>	13	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-															<VeriableDecl>			<name>	i	</name>		<variableID>	18	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-															<VeriableDecl>			<name>	k	</name>		<variableID>	22	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+															<VeriableDecl>			<name>	i	</name>		<variableID>	14	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+															<VeriableDecl>			<name>	k	</name>		<variableID>	18	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 														</VariableStack>
 
 														<statements>
@@ -2975,7 +2794,7 @@
 
 																										<index0>
 																											<Ident>
-																												<variableID>	22	</variableID>
+																												<variableID>	18	</variableID>
 																												<idName>	k	</idName>
 																											</Ident>
 																										</index0>
@@ -3004,7 +2823,7 @@
 
 																			<index0>
 																				<Ident>
-																					<variableID>	22	</variableID>
+																					<variableID>	18	</variableID>
 																					<idName>	k	</idName>
 																				</Ident>
 																			</index0>
@@ -3026,9 +2845,9 @@
 											</forBody>
 										</ForLoop>
 
-										<ForLoop>	<Phase>  66  </Phase>
+										<ForLoop>	<Phase>  43  </Phase>
 											<forInit>
-												<StatAssemblage>	<Phase>  67  </Phase>
+												<StatAssemblage>	<Phase>  44  </Phase>
 													<stageNum>  1  </stageNum>
 													<totalStepNum>  1  </totalStepNum>
 													<VariableStack>
@@ -3046,12 +2865,12 @@
 														<VeriableDecl>			<name>	alpha	</name>		<variableID>	11	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 														<VeriableDecl>			<name>	sum	</name>		<variableID>	12	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 														<VeriableDecl>			<name>	delta	</name>		<variableID>	13	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-														<VeriableDecl>			<name>	i	</name>		<variableID>	18	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-														<VeriableDecl>			<name>	k	</name>		<variableID>	24	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+														<VeriableDecl>			<name>	i	</name>		<variableID>	14	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+														<VeriableDecl>			<name>	k	</name>		<variableID>	20	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 													</VariableStack>
 
 													<statements>
-														<VeriableDecl>			<name>	k	</name>		<variableID>	24	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+														<VeriableDecl>			<name>	k	</name>		<variableID>	20	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 													</statements>
 
 												</StatAssemblage>
@@ -3059,7 +2878,7 @@
 											</forInit>
 
 											<forCond>
-												<StatAssemblage>	<Phase>  68  </Phase>
+												<StatAssemblage>	<Phase>  45  </Phase>
 													<stageNum>  1  </stageNum>
 													<totalStepNum>  1  </totalStepNum>
 													<VariableStack>
@@ -3077,8 +2896,8 @@
 														<VeriableDecl>			<name>	alpha	</name>		<variableID>	11	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 														<VeriableDecl>			<name>	sum	</name>		<variableID>	12	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 														<VeriableDecl>			<name>	delta	</name>		<variableID>	13	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-														<VeriableDecl>			<name>	i	</name>		<variableID>	18	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-														<VeriableDecl>			<name>	k	</name>		<variableID>	24	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+														<VeriableDecl>			<name>	i	</name>		<variableID>	14	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+														<VeriableDecl>			<name>	k	</name>		<variableID>	20	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 													</VariableStack>
 
 													<statements>
@@ -3087,7 +2906,7 @@
 																<binaryOp>	'LT'	</binaryOp>
 																<leftExpr>
 																	<Ident>
-																		<variableID>	24	</variableID>
+																		<variableID>	20	</variableID>
 																		<idName>	k	</idName>
 																	</Ident>
 																</leftExpr>
@@ -3110,7 +2929,7 @@
 											</forCond>
 
 											<forUpdate>
-												<StatAssemblage>	<Phase>  69  </Phase>
+												<StatAssemblage>	<Phase>  46  </Phase>
 													<stageNum>  1  </stageNum>
 													<totalStepNum>  1  </totalStepNum>
 													<VariableStack>
@@ -3128,8 +2947,8 @@
 														<VeriableDecl>			<name>	alpha	</name>		<variableID>	11	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 														<VeriableDecl>			<name>	sum	</name>		<variableID>	12	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 														<VeriableDecl>			<name>	delta	</name>		<variableID>	13	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-														<VeriableDecl>			<name>	i	</name>		<variableID>	18	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-														<VeriableDecl>			<name>	k	</name>		<variableID>	24	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+														<VeriableDecl>			<name>	i	</name>		<variableID>	14	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+														<VeriableDecl>			<name>	k	</name>		<variableID>	20	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 													</VariableStack>
 
 													<statements>
@@ -3137,7 +2956,7 @@
 															<Unary>
 															<unaryOP>	_++</unaryOP>
 																<Ident>
-																	<variableID>	24	</variableID>
+																	<variableID>	20	</variableID>
 																	<idName>	k	</idName>
 																</Ident>
 															</Unary>
@@ -3151,11 +2970,11 @@
 											</forUpdate>
 
 											<forBody>
-												<Block>	<Phase>  70  </Phase>
+												<Block>	<Phase>  47  </Phase>
 
-													<ForLoop>	<Phase>  71  </Phase>
+													<ForLoop>	<Phase>  48  </Phase>
 														<forInit>
-															<StatAssemblage>	<Phase>  72  </Phase>
+															<StatAssemblage>	<Phase>  49  </Phase>
 																<stageNum>  2  </stageNum>
 																<totalStepNum>  2  </totalStepNum>
 																<VariableStack>
@@ -3173,13 +2992,13 @@
 																	<VeriableDecl>			<name>	alpha	</name>		<variableID>	11	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 																	<VeriableDecl>			<name>	sum	</name>		<variableID>	12	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 																	<VeriableDecl>			<name>	delta	</name>		<variableID>	13	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-																	<VeriableDecl>			<name>	i	</name>		<variableID>	18	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-																	<VeriableDecl>			<name>	k	</name>		<variableID>	24	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-																	<VeriableDecl>			<name>	j	</name>		<variableID>	25	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+																	<VeriableDecl>			<name>	i	</name>		<variableID>	14	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+																	<VeriableDecl>			<name>	k	</name>		<variableID>	20	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+																	<VeriableDecl>			<name>	j	</name>		<variableID>	21	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 																</VariableStack>
 
 																<statements>
-																	<VeriableDecl>			<name>	j	</name>		<variableID>	25	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+																	<VeriableDecl>			<name>	j	</name>		<variableID>	21	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 																</statements>
 
 															</StatAssemblage>
@@ -3187,7 +3006,7 @@
 														</forInit>
 
 														<forCond>
-															<StatAssemblage>	<Phase>  73  </Phase>
+															<StatAssemblage>	<Phase>  50  </Phase>
 																<stageNum>  1  </stageNum>
 																<totalStepNum>  1  </totalStepNum>
 																<VariableStack>
@@ -3205,9 +3024,9 @@
 																	<VeriableDecl>			<name>	alpha	</name>		<variableID>	11	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 																	<VeriableDecl>			<name>	sum	</name>		<variableID>	12	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 																	<VeriableDecl>			<name>	delta	</name>		<variableID>	13	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-																	<VeriableDecl>			<name>	i	</name>		<variableID>	18	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-																	<VeriableDecl>			<name>	k	</name>		<variableID>	24	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-																	<VeriableDecl>			<name>	j	</name>		<variableID>	25	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+																	<VeriableDecl>			<name>	i	</name>		<variableID>	14	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+																	<VeriableDecl>			<name>	k	</name>		<variableID>	20	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+																	<VeriableDecl>			<name>	j	</name>		<variableID>	21	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 																</VariableStack>
 
 																<statements>
@@ -3216,7 +3035,7 @@
 																			<binaryOp>	'LT'	</binaryOp>
 																			<leftExpr>
 																				<Ident>
-																					<variableID>	25	</variableID>
+																					<variableID>	21	</variableID>
 																					<idName>	j	</idName>
 																				</Ident>
 																			</leftExpr>
@@ -3239,9 +3058,9 @@
 														</forCond>
 
 														<forBody>
-															<Block>	<Phase>  75  </Phase>
+															<Block>	<Phase>  52  </Phase>
 
-																<StatAssemblage>	<Phase>  76  </Phase>
+																<StatAssemblage>	<Phase>  53  </Phase>
 																	<stageNum>  1  </stageNum>
 																	<totalStepNum>  65  </totalStepNum>
 																	<VariableStack>
@@ -3259,9 +3078,9 @@
 																		<VeriableDecl>			<name>	alpha	</name>		<variableID>	11	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 																		<VeriableDecl>			<name>	sum	</name>		<variableID>	12	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 																		<VeriableDecl>			<name>	delta	</name>		<variableID>	13	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-																		<VeriableDecl>			<name>	i	</name>		<variableID>	18	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-																		<VeriableDecl>			<name>	k	</name>		<variableID>	24	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-																		<VeriableDecl>			<name>	j	</name>		<variableID>	25	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+																		<VeriableDecl>			<name>	i	</name>		<variableID>	14	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+																		<VeriableDecl>			<name>	k	</name>		<variableID>	20	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+																		<VeriableDecl>			<name>	j	</name>		<variableID>	21	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 																	</VariableStack>
 
 																	<statements>
@@ -3302,14 +3121,14 @@
 
 																																	<index0>
 																																		<Ident>
-																																			<variableID>	18	</variableID>
+																																			<variableID>	14	</variableID>
 																																			<idName>	i	</idName>
 																																		</Ident>
 																																	</index0>
 
 																																	<index1>
 																																		<Ident>
-																																			<variableID>	24	</variableID>
+																																			<variableID>	20	</variableID>
 																																			<idName>	k	</idName>
 																																		</Ident>
 																																	</index1>
@@ -3325,7 +3144,7 @@
 
 																																	<index0>
 																																		<Ident>
-																																			<variableID>	24	</variableID>
+																																			<variableID>	20	</variableID>
 																																			<idName>	k	</idName>
 																																		</Ident>
 																																	</index0>
@@ -3347,7 +3166,7 @@
 
 																														<index0>
 																															<Ident>
-																																<variableID>	24	</variableID>
+																																<variableID>	20	</variableID>
 																																<idName>	k	</idName>
 																															</Ident>
 																														</index0>
@@ -3377,7 +3196,7 @@
 
 																														<index0>
 																															<Ident>
-																																<variableID>	24	</variableID>
+																																<variableID>	20	</variableID>
 																																<idName>	k	</idName>
 																															</Ident>
 																														</index0>
@@ -3401,7 +3220,7 @@
 
 																										<index0>
 																											<Ident>
-																												<variableID>	25	</variableID>
+																												<variableID>	21	</variableID>
 																												<idName>	j	</idName>
 																											</Ident>
 																										</index0>
@@ -3446,14 +3265,14 @@
 
 																						<index0>
 																							<Ident>
-																								<variableID>	25	</variableID>
+																								<variableID>	21	</variableID>
 																								<idName>	j	</idName>
 																							</Ident>
 																						</index0>
 
 																						<index1>
 																							<Ident>
-																								<variableID>	24	</variableID>
+																								<variableID>	20	</variableID>
 																								<idName>	k	</idName>
 																							</Ident>
 																						</index1>
@@ -3480,9 +3299,9 @@
 											</forBody>
 										</ForLoop>
 
-										<ForLoop>	<Phase>  77  </Phase>
+										<ForLoop>	<Phase>  54  </Phase>
 											<forInit>
-												<StatAssemblage>	<Phase>  78  </Phase>
+												<StatAssemblage>	<Phase>  55  </Phase>
 													<stageNum>  1  </stageNum>
 													<totalStepNum>  1  </totalStepNum>
 													<VariableStack>
@@ -3500,12 +3319,12 @@
 														<VeriableDecl>			<name>	alpha	</name>		<variableID>	11	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 														<VeriableDecl>			<name>	sum	</name>		<variableID>	12	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 														<VeriableDecl>			<name>	delta	</name>		<variableID>	13	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-														<VeriableDecl>			<name>	i	</name>		<variableID>	18	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-														<VeriableDecl>			<name>	l	</name>		<variableID>	26	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+														<VeriableDecl>			<name>	i	</name>		<variableID>	14	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+														<VeriableDecl>			<name>	l	</name>		<variableID>	22	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 													</VariableStack>
 
 													<statements>
-														<VeriableDecl>			<name>	l	</name>		<variableID>	26	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+														<VeriableDecl>			<name>	l	</name>		<variableID>	22	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 													</statements>
 
 												</StatAssemblage>
@@ -3513,7 +3332,7 @@
 											</forInit>
 
 											<forCond>
-												<StatAssemblage>	<Phase>  79  </Phase>
+												<StatAssemblage>	<Phase>  56  </Phase>
 													<stageNum>  1  </stageNum>
 													<totalStepNum>  1  </totalStepNum>
 													<VariableStack>
@@ -3531,8 +3350,8 @@
 														<VeriableDecl>			<name>	alpha	</name>		<variableID>	11	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 														<VeriableDecl>			<name>	sum	</name>		<variableID>	12	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 														<VeriableDecl>			<name>	delta	</name>		<variableID>	13	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-														<VeriableDecl>			<name>	i	</name>		<variableID>	18	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-														<VeriableDecl>			<name>	l	</name>		<variableID>	26	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+														<VeriableDecl>			<name>	i	</name>		<variableID>	14	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+														<VeriableDecl>			<name>	l	</name>		<variableID>	22	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 													</VariableStack>
 
 													<statements>
@@ -3541,7 +3360,7 @@
 																<binaryOp>	'LT'	</binaryOp>
 																<leftExpr>
 																	<Ident>
-																		<variableID>	26	</variableID>
+																		<variableID>	22	</variableID>
 																		<idName>	l	</idName>
 																	</Ident>
 																</leftExpr>
@@ -3564,7 +3383,7 @@
 											</forCond>
 
 											<forUpdate>
-												<StatAssemblage>	<Phase>  80  </Phase>
+												<StatAssemblage>	<Phase>  57  </Phase>
 													<stageNum>  1  </stageNum>
 													<totalStepNum>  1  </totalStepNum>
 													<VariableStack>
@@ -3582,8 +3401,8 @@
 														<VeriableDecl>			<name>	alpha	</name>		<variableID>	11	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 														<VeriableDecl>			<name>	sum	</name>		<variableID>	12	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 														<VeriableDecl>			<name>	delta	</name>		<variableID>	13	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-														<VeriableDecl>			<name>	i	</name>		<variableID>	18	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-														<VeriableDecl>			<name>	l	</name>		<variableID>	26	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+														<VeriableDecl>			<name>	i	</name>		<variableID>	14	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+														<VeriableDecl>			<name>	l	</name>		<variableID>	22	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 													</VariableStack>
 
 													<statements>
@@ -3591,7 +3410,7 @@
 															<Unary>
 															<unaryOP>	_++</unaryOP>
 																<Ident>
-																	<variableID>	26	</variableID>
+																	<variableID>	22	</variableID>
 																	<idName>	l	</idName>
 																</Ident>
 															</Unary>
@@ -3605,9 +3424,9 @@
 											</forUpdate>
 
 											<forBody>
-												<Block>	<Phase>  81  </Phase>
+												<Block>	<Phase>  58  </Phase>
 
-													<StatAssemblage>	<Phase>  82  </Phase>
+													<StatAssemblage>	<Phase>  59  </Phase>
 														<stageNum>  1  </stageNum>
 														<totalStepNum>  1  </totalStepNum>
 														<VariableStack>
@@ -3625,8 +3444,8 @@
 															<VeriableDecl>			<name>	alpha	</name>		<variableID>	11	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 															<VeriableDecl>			<name>	sum	</name>		<variableID>	12	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 															<VeriableDecl>			<name>	delta	</name>		<variableID>	13	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-															<VeriableDecl>			<name>	i	</name>		<variableID>	18	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-															<VeriableDecl>			<name>	l	</name>		<variableID>	26	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+															<VeriableDecl>			<name>	i	</name>		<variableID>	14	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+															<VeriableDecl>			<name>	l	</name>		<variableID>	22	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 														</VariableStack>
 
 														<statements>
@@ -3654,9 +3473,9 @@
 
 													</StatAssemblage>
 
-													<ForLoop>	<Phase>  83  </Phase>
+													<ForLoop>	<Phase>  60  </Phase>
 														<forInit>
-															<StatAssemblage>	<Phase>  84  </Phase>
+															<StatAssemblage>	<Phase>  61  </Phase>
 																<stageNum>  1  </stageNum>
 																<totalStepNum>  1  </totalStepNum>
 																<VariableStack>
@@ -3674,13 +3493,13 @@
 																	<VeriableDecl>			<name>	alpha	</name>		<variableID>	11	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 																	<VeriableDecl>			<name>	sum	</name>		<variableID>	12	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 																	<VeriableDecl>			<name>	delta	</name>		<variableID>	13	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-																	<VeriableDecl>			<name>	i	</name>		<variableID>	18	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-																	<VeriableDecl>			<name>	l	</name>		<variableID>	26	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-																	<VeriableDecl>			<name>	k	</name>		<variableID>	27	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+																	<VeriableDecl>			<name>	i	</name>		<variableID>	14	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+																	<VeriableDecl>			<name>	l	</name>		<variableID>	22	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+																	<VeriableDecl>			<name>	k	</name>		<variableID>	23	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 																</VariableStack>
 
 																<statements>
-																	<VeriableDecl>			<name>	k	</name>		<variableID>	27	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+																	<VeriableDecl>			<name>	k	</name>		<variableID>	23	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 																</statements>
 
 															</StatAssemblage>
@@ -3688,7 +3507,7 @@
 														</forInit>
 
 														<forCond>
-															<StatAssemblage>	<Phase>  85  </Phase>
+															<StatAssemblage>	<Phase>  62  </Phase>
 																<stageNum>  1  </stageNum>
 																<totalStepNum>  1  </totalStepNum>
 																<VariableStack>
@@ -3706,9 +3525,9 @@
 																	<VeriableDecl>			<name>	alpha	</name>		<variableID>	11	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 																	<VeriableDecl>			<name>	sum	</name>		<variableID>	12	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 																	<VeriableDecl>			<name>	delta	</name>		<variableID>	13	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-																	<VeriableDecl>			<name>	i	</name>		<variableID>	18	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-																	<VeriableDecl>			<name>	l	</name>		<variableID>	26	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-																	<VeriableDecl>			<name>	k	</name>		<variableID>	27	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+																	<VeriableDecl>			<name>	i	</name>		<variableID>	14	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+																	<VeriableDecl>			<name>	l	</name>		<variableID>	22	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+																	<VeriableDecl>			<name>	k	</name>		<variableID>	23	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 																</VariableStack>
 
 																<statements>
@@ -3717,7 +3536,7 @@
 																			<binaryOp>	'LT'	</binaryOp>
 																			<leftExpr>
 																				<Ident>
-																					<variableID>	27	</variableID>
+																					<variableID>	23	</variableID>
 																					<idName>	k	</idName>
 																				</Ident>
 																			</leftExpr>
@@ -3740,9 +3559,9 @@
 														</forCond>
 
 														<forBody>
-															<Block>	<Phase>  87  </Phase>
+															<Block>	<Phase>  64  </Phase>
 
-																<StatAssemblage>	<Phase>  88  </Phase>
+																<StatAssemblage>	<Phase>  65  </Phase>
 																	<stageNum>  1  </stageNum>
 																	<totalStepNum>  28  </totalStepNum>
 																	<VariableStack>
@@ -3760,9 +3579,9 @@
 																		<VeriableDecl>			<name>	alpha	</name>		<variableID>	11	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 																		<VeriableDecl>			<name>	sum	</name>		<variableID>	12	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 																		<VeriableDecl>			<name>	delta	</name>		<variableID>	13	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-																		<VeriableDecl>			<name>	i	</name>		<variableID>	18	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-																		<VeriableDecl>			<name>	l	</name>		<variableID>	26	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-																		<VeriableDecl>			<name>	k	</name>		<variableID>	27	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+																		<VeriableDecl>			<name>	i	</name>		<variableID>	14	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+																		<VeriableDecl>			<name>	l	</name>		<variableID>	22	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+																		<VeriableDecl>			<name>	k	</name>		<variableID>	23	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 																	</VariableStack>
 
 																	<statements>
@@ -3785,14 +3604,14 @@
 
 																												<index0>
 																													<Ident>
-																														<variableID>	26	</variableID>
+																														<variableID>	22	</variableID>
 																														<idName>	l	</idName>
 																													</Ident>
 																												</index0>
 
 																												<index1>
 																													<Ident>
-																														<variableID>	27	</variableID>
+																														<variableID>	23	</variableID>
 																														<idName>	k	</idName>
 																													</Ident>
 																												</index1>
@@ -3811,14 +3630,14 @@
 
 																														<index0>
 																															<Ident>
-																																<variableID>	18	</variableID>
+																																<variableID>	14	</variableID>
 																																<idName>	i	</idName>
 																															</Ident>
 																														</index0>
 
 																														<index1>
 																															<Ident>
-																																<variableID>	27	</variableID>
+																																<variableID>	23	</variableID>
 																																<idName>	k	</idName>
 																															</Ident>
 																														</index1>
@@ -3834,7 +3653,7 @@
 
 																														<index0>
 																															<Ident>
-																																<variableID>	27	</variableID>
+																																<variableID>	23	</variableID>
 																																<idName>	k	</idName>
 																															</Ident>
 																														</index0>
@@ -3858,7 +3677,7 @@
 
 																										<index0>
 																											<Ident>
-																												<variableID>	27	</variableID>
+																												<variableID>	23	</variableID>
 																												<idName>	k	</idName>
 																											</Ident>
 																										</index0>
@@ -3888,7 +3707,7 @@
 
 																										<index0>
 																											<Ident>
-																												<variableID>	27	</variableID>
+																												<variableID>	23	</variableID>
 																												<idName>	k	</idName>
 																											</Ident>
 																										</index0>
@@ -3925,9 +3744,9 @@
 														</forBody>
 													</ForLoop>
 
-													<ForLoop>	<Phase>  89  </Phase>
+													<ForLoop>	<Phase>  66  </Phase>
 														<forInit>
-															<StatAssemblage>	<Phase>  90  </Phase>
+															<StatAssemblage>	<Phase>  67  </Phase>
 																<stageNum>  2  </stageNum>
 																<totalStepNum>  2  </totalStepNum>
 																<VariableStack>
@@ -3945,13 +3764,13 @@
 																	<VeriableDecl>			<name>	alpha	</name>		<variableID>	11	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 																	<VeriableDecl>			<name>	sum	</name>		<variableID>	12	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 																	<VeriableDecl>			<name>	delta	</name>		<variableID>	13	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-																	<VeriableDecl>			<name>	i	</name>		<variableID>	18	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-																	<VeriableDecl>			<name>	l	</name>		<variableID>	26	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-																	<VeriableDecl>			<name>	j	</name>		<variableID>	28	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+																	<VeriableDecl>			<name>	i	</name>		<variableID>	14	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+																	<VeriableDecl>			<name>	l	</name>		<variableID>	22	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+																	<VeriableDecl>			<name>	j	</name>		<variableID>	24	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 																</VariableStack>
 
 																<statements>
-																	<VeriableDecl>			<name>	j	</name>		<variableID>	28	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+																	<VeriableDecl>			<name>	j	</name>		<variableID>	24	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 																</statements>
 
 															</StatAssemblage>
@@ -3959,7 +3778,7 @@
 														</forInit>
 
 														<forCond>
-															<StatAssemblage>	<Phase>  91  </Phase>
+															<StatAssemblage>	<Phase>  68  </Phase>
 																<stageNum>  1  </stageNum>
 																<totalStepNum>  1  </totalStepNum>
 																<VariableStack>
@@ -3977,9 +3796,9 @@
 																	<VeriableDecl>			<name>	alpha	</name>		<variableID>	11	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 																	<VeriableDecl>			<name>	sum	</name>		<variableID>	12	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 																	<VeriableDecl>			<name>	delta	</name>		<variableID>	13	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-																	<VeriableDecl>			<name>	i	</name>		<variableID>	18	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-																	<VeriableDecl>			<name>	l	</name>		<variableID>	26	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-																	<VeriableDecl>			<name>	j	</name>		<variableID>	28	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+																	<VeriableDecl>			<name>	i	</name>		<variableID>	14	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+																	<VeriableDecl>			<name>	l	</name>		<variableID>	22	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+																	<VeriableDecl>			<name>	j	</name>		<variableID>	24	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 																</VariableStack>
 
 																<statements>
@@ -3988,7 +3807,7 @@
 																			<binaryOp>	'LT'	</binaryOp>
 																			<leftExpr>
 																				<Ident>
-																					<variableID>	28	</variableID>
+																					<variableID>	24	</variableID>
 																					<idName>	j	</idName>
 																				</Ident>
 																			</leftExpr>
@@ -4011,9 +3830,9 @@
 														</forCond>
 
 														<forBody>
-															<Block>	<Phase>  93  </Phase>
+															<Block>	<Phase>  70  </Phase>
 
-																<StatAssemblage>	<Phase>  94  </Phase>
+																<StatAssemblage>	<Phase>  71  </Phase>
 																	<stageNum>  1  </stageNum>
 																	<totalStepNum>  61  </totalStepNum>
 																	<VariableStack>
@@ -4031,9 +3850,9 @@
 																		<VeriableDecl>			<name>	alpha	</name>		<variableID>	11	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 																		<VeriableDecl>			<name>	sum	</name>		<variableID>	12	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 																		<VeriableDecl>			<name>	delta	</name>		<variableID>	13	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-																		<VeriableDecl>			<name>	i	</name>		<variableID>	18	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-																		<VeriableDecl>			<name>	l	</name>		<variableID>	26	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-																		<VeriableDecl>			<name>	j	</name>		<variableID>	28	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+																		<VeriableDecl>			<name>	i	</name>		<variableID>	14	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+																		<VeriableDecl>			<name>	l	</name>		<variableID>	22	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+																		<VeriableDecl>			<name>	j	</name>		<variableID>	24	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 																	</VariableStack>
 
 																	<statements>
@@ -4065,7 +3884,7 @@
 
 																														<index0>
 																															<Ident>
-																																<variableID>	26	</variableID>
+																																<variableID>	22	</variableID>
 																																<idName>	l	</idName>
 																															</Ident>
 																														</index0>
@@ -4095,7 +3914,7 @@
 
 																														<index0>
 																															<Ident>
-																																<variableID>	26	</variableID>
+																																<variableID>	22	</variableID>
 																																<idName>	l	</idName>
 																															</Ident>
 																														</index0>
@@ -4119,7 +3938,7 @@
 
 																										<index0>
 																											<Ident>
-																												<variableID>	28	</variableID>
+																												<variableID>	24	</variableID>
 																												<idName>	j	</idName>
 																											</Ident>
 																										</index0>
@@ -4171,14 +3990,14 @@
 
 																						<index0>
 																							<Ident>
-																								<variableID>	28	</variableID>
+																								<variableID>	24	</variableID>
 																								<idName>	j	</idName>
 																							</Ident>
 																						</index0>
 
 																						<index1>
 																							<Ident>
-																								<variableID>	26	</variableID>
+																								<variableID>	22	</variableID>
 																								<idName>	l	</idName>
 																							</Ident>
 																						</index1>
@@ -4205,7 +4024,7 @@
 											</forBody>
 										</ForLoop>
 
-										<StatAssemblage>	<Phase>  95  </Phase>
+										<StatAssemblage>	<Phase>  72  </Phase>
 											<stageNum>  1  </stageNum>
 											<totalStepNum>  1  </totalStepNum>
 											<VariableStack>
@@ -4223,7 +4042,7 @@
 												<VeriableDecl>			<name>	alpha	</name>		<variableID>	11	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 												<VeriableDecl>			<name>	sum	</name>		<variableID>	12	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 												<VeriableDecl>			<name>	delta	</name>		<variableID>	13	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-												<VeriableDecl>			<name>	i	</name>		<variableID>	18	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+												<VeriableDecl>			<name>	i	</name>		<variableID>	14	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 											</VariableStack>
 
 											<statements>
@@ -4251,9 +4070,9 @@
 
 										</StatAssemblage>
 
-										<ForLoop>	<Phase>  96  </Phase>
+										<ForLoop>	<Phase>  73  </Phase>
 											<forInit>
-												<StatAssemblage>	<Phase>  97  </Phase>
+												<StatAssemblage>	<Phase>  74  </Phase>
 													<stageNum>  1  </stageNum>
 													<totalStepNum>  1  </totalStepNum>
 													<VariableStack>
@@ -4271,12 +4090,12 @@
 														<VeriableDecl>			<name>	alpha	</name>		<variableID>	11	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 														<VeriableDecl>			<name>	sum	</name>		<variableID>	12	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 														<VeriableDecl>			<name>	delta	</name>		<variableID>	13	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-														<VeriableDecl>			<name>	i	</name>		<variableID>	18	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-														<VeriableDecl>			<name>	k	</name>		<variableID>	29	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+														<VeriableDecl>			<name>	i	</name>		<variableID>	14	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+														<VeriableDecl>			<name>	k	</name>		<variableID>	25	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 													</VariableStack>
 
 													<statements>
-														<VeriableDecl>			<name>	k	</name>		<variableID>	29	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+														<VeriableDecl>			<name>	k	</name>		<variableID>	25	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 													</statements>
 
 												</StatAssemblage>
@@ -4284,7 +4103,7 @@
 											</forInit>
 
 											<forCond>
-												<StatAssemblage>	<Phase>  98  </Phase>
+												<StatAssemblage>	<Phase>  75  </Phase>
 													<stageNum>  1  </stageNum>
 													<totalStepNum>  1  </totalStepNum>
 													<VariableStack>
@@ -4302,8 +4121,8 @@
 														<VeriableDecl>			<name>	alpha	</name>		<variableID>	11	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 														<VeriableDecl>			<name>	sum	</name>		<variableID>	12	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 														<VeriableDecl>			<name>	delta	</name>		<variableID>	13	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-														<VeriableDecl>			<name>	i	</name>		<variableID>	18	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-														<VeriableDecl>			<name>	k	</name>		<variableID>	29	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+														<VeriableDecl>			<name>	i	</name>		<variableID>	14	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+														<VeriableDecl>			<name>	k	</name>		<variableID>	25	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 													</VariableStack>
 
 													<statements>
@@ -4312,7 +4131,7 @@
 																<binaryOp>	'LT'	</binaryOp>
 																<leftExpr>
 																	<Ident>
-																		<variableID>	29	</variableID>
+																		<variableID>	25	</variableID>
 																		<idName>	k	</idName>
 																	</Ident>
 																</leftExpr>
@@ -4335,9 +4154,9 @@
 											</forCond>
 
 											<forBody>
-												<Block>	<Phase>  100  </Phase>
+												<Block>	<Phase>  77  </Phase>
 
-													<StatAssemblage>	<Phase>  101  </Phase>
+													<StatAssemblage>	<Phase>  78  </Phase>
 														<stageNum>  1  </stageNum>
 														<totalStepNum>  19  </totalStepNum>
 														<VariableStack>
@@ -4355,8 +4174,8 @@
 															<VeriableDecl>			<name>	alpha	</name>		<variableID>	11	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 															<VeriableDecl>			<name>	sum	</name>		<variableID>	12	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 															<VeriableDecl>			<name>	delta	</name>		<variableID>	13	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-															<VeriableDecl>			<name>	i	</name>		<variableID>	18	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-															<VeriableDecl>			<name>	k	</name>		<variableID>	29	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+															<VeriableDecl>			<name>	i	</name>		<variableID>	14	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+															<VeriableDecl>			<name>	k	</name>		<variableID>	25	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 														</VariableStack>
 
 														<statements>
@@ -4376,14 +4195,14 @@
 
 																							<index0>
 																								<Ident>
-																									<variableID>	18	</variableID>
+																									<variableID>	14	</variableID>
 																									<idName>	i	</idName>
 																								</Ident>
 																							</index0>
 
 																							<index1>
 																								<Ident>
-																									<variableID>	29	</variableID>
+																									<variableID>	25	</variableID>
 																									<idName>	k	</idName>
 																								</Ident>
 																							</index1>
@@ -4399,7 +4218,7 @@
 
 																							<index0>
 																								<Ident>
-																									<variableID>	29	</variableID>
+																									<variableID>	25	</variableID>
 																									<idName>	k	</idName>
 																								</Ident>
 																							</index0>
@@ -4422,14 +4241,14 @@
 
 																							<index0>
 																								<Ident>
-																									<variableID>	18	</variableID>
+																									<variableID>	14	</variableID>
 																									<idName>	i	</idName>
 																								</Ident>
 																							</index0>
 
 																							<index1>
 																								<Ident>
-																									<variableID>	29	</variableID>
+																									<variableID>	25	</variableID>
 																									<idName>	k	</idName>
 																								</Ident>
 																							</index1>
@@ -4445,7 +4264,7 @@
 
 																							<index0>
 																								<Ident>
-																									<variableID>	29	</variableID>
+																									<variableID>	25	</variableID>
 																									<idName>	k	</idName>
 																								</Ident>
 																							</index0>
@@ -4482,7 +4301,7 @@
 											</forBody>
 										</ForLoop>
 
-										<StatAssemblage>	<Phase>  102  </Phase>
+										<StatAssemblage>	<Phase>  79  </Phase>
 											<stageNum>  1  </stageNum>
 											<totalStepNum>  6  </totalStepNum>
 											<VariableStack>
@@ -4500,7 +4319,7 @@
 												<VeriableDecl>			<name>	alpha	</name>		<variableID>	11	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 												<VeriableDecl>			<name>	sum	</name>		<variableID>	12	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 												<VeriableDecl>			<name>	delta	</name>		<variableID>	13	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-												<VeriableDecl>			<name>	i	</name>		<variableID>	18	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+												<VeriableDecl>			<name>	i	</name>		<variableID>	14	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 											</VariableStack>
 
 											<statements>
@@ -4534,9 +4353,9 @@
 								</forBody>
 							</ForLoop>
 
-							<If>	<Phase>  103  </Phase>
+							<If>	<Phase>  80  </Phase>
 								<ifCond>
-									<StatAssemblage>	<Phase>  104  </Phase>
+									<StatAssemblage>	<Phase>  81  </Phase>
 										<stageNum>  1  </stageNum>
 										<totalStepNum>  4  </totalStepNum>
 										<VariableStack>
@@ -4585,11 +4404,11 @@
 								</ifCond>
 
 								<thenBlock>
-									<Block>	<Phase>  105  </Phase>
+									<Block>	<Phase>  82  </Phase>
 
 										<Break>
-											<Phase>  106  </Phase>
-											<ParentLoopPhase>  26  </ParentLoopPhase>
+											<Phase>  83  </Phase>
+											<ParentLoopPhase>  3  </ParentLoopPhase>
 										</Break>
 
 									</Block>

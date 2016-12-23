@@ -1,5 +1,5 @@
 /*
-TimeStamp:	2016/12/21		17:56
+TimeStamp:	2016/12/21		18:38
 */
 
 
@@ -303,13 +303,13 @@ module BoolTest(
 
 							case(r_sys_run_stage) 
 								2'h0: begin
-									if((r_sys_run_step==2'h0)) begin
-										r_sys_run_step <= w_sys_run_step_p1;
+									if((r_sys_run_step==2'h1)) begin
+										r_sys_run_step <= 2'h0;
 
 									end
 									else
-									if((r_sys_run_step==2'h1)) begin
-										r_sys_run_step <= 2'h0;
+									if((r_sys_run_step==2'h0)) begin
+										r_sys_run_step <= w_sys_run_step_p1;
 
 									end
 								end

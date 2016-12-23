@@ -38,13 +38,22 @@ module testbench;
 	
 
 	// Instantiate the Unit Under Test (UUT)
-	FIFOTestA uut (
+	FIFOTestA uut1 (
 		.clock(clock), 
 		.reset_n(reset_n), 
 		.ce(ce), 
 		.i_run_req(i_run_req), 
 		.o_run_busy(o_run_busy)
 	);
+/*
+	FIFOTestB uut2 (
+		.clock(clock), 
+		.reset_n(reset_n), 
+		.ce(ce), 
+		.i_run_req(i_run_req), 
+		.o_run_busy(o_run_busy)
+	);
+*/	
 	
 	//make clock
 	parameter CLOCK = 10;

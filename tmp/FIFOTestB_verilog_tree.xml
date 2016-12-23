@@ -24,9 +24,26 @@
 		</VeriableDecl>
 
 		<VeriableDecl>
+			<name>	obj	</name>
+			<type>	fifoa2b	</type>
+			<variableID>	1	</variableID>
+			<parentName>	FIFOTestB	</parentName>
+			<defType>	field	</defType>
+			<isArray>	false	</isArray>
+			<isPrimitive>	false	</isPrimitive>
+			<isFinal>	true	</isFinal>
+			<dimension>	0	</dimension>
+			<init>
+				<NewClass>
+					<className>	fifoa2b	</className>
+				</NewClass>
+			</init>
+		</VeriableDecl>
+
+		<VeriableDecl>
 			<name>	i	</name>
 			<type>	int	</type>
-			<variableID>	1	</variableID>
+			<variableID>	2	</variableID>
 			<parentName>	run	</parentName>
 			<defType>	method	</defType>
 			<isArray>	false	</isArray>
@@ -38,11 +55,11 @@
 		</VeriableDecl>
 
 		<VeriableDecl>
-			<name>	a	</name>
-			<type>	int	</type>
-			<variableID>	2	</variableID>
-			<parentName>	FIFOWrite	</parentName>
-			<defType>	paramList	</defType>
+			<name>	check_finished	</name>
+			<type>	boolean	</type>
+			<variableID>	3	</variableID>
+			<parentName>	run	</parentName>
+			<defType>	method	</defType>
 			<isArray>	false	</isArray>
 			<isPrimitive>	true	</isPrimitive>
 			<isFinal>	false	</isFinal>
@@ -69,124 +86,79 @@
 					<totalStepNum>  1  </totalStepNum>
 					<VariableStack>
 						<VeriableDecl>			<name>	arrayA	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-						<VeriableDecl>			<name>	i	</name>		<variableID>	1	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+						<VeriableDecl>			<name>	obj	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+						<VeriableDecl>			<name>	i	</name>		<variableID>	2	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+						<VeriableDecl>			<name>	check_finished	</name>		<variableID>	3	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 					</VariableStack>
 
 					<statements>
-						<VeriableDecl>			<name>	i	</name>		<variableID>	1	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+						<VeriableDecl>			<name>	i	</name>		<variableID>	2	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+						<VeriableDecl>			<name>	check_finished	</name>		<variableID>	3	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 					</statements>
 
 				</StatAssemblage>
 
-				<ForLoop>	<Phase>  3  </Phase>
-					<forInit>
+				<WhileLoop>	<Phase>  3  </Phase>
+					<BreakPhase>	net.njlab.model.VerilogBreak@7b54cbdf	</BreakPhase>					
+
+					<whileCond>
 						<StatAssemblage>	<Phase>  4  </Phase>
 							<stageNum>  1  </stageNum>
 							<totalStepNum>  1  </totalStepNum>
 							<VariableStack>
 								<VeriableDecl>			<name>	arrayA	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	i	</name>		<variableID>	1	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	obj	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	i	</name>		<variableID>	2	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	check_finished	</name>		<variableID>	3	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 							</VariableStack>
 
 							<statements>
 								<ExprStatement>
-									<Assign>
-										<rightExpr>
-											<Literal>
-												<type>	int	</type>
-												<value>	0	</value>
-											</Literal>
-										</rightExpr>
-
-										<dest>
-											<Ident>
-												<variableID>	1	</variableID>
-												<idName>	i	</idName>
-											</Ident>
-										</dest>
-
-									</Assign>
-
+									<Literal>
+										<type>	boolean	</type>
+										<value>	false	</value>
+									</Literal>
 								</ExprStatement>
 
 							</statements>
 
 						</StatAssemblage>
 
-					</forInit>
+					</whileCond>
 
-					<forCond>
-						<StatAssemblage>	<Phase>  5  </Phase>
-							<stageNum>  1  </stageNum>
-							<totalStepNum>  1  </totalStepNum>
-							<VariableStack>
-								<VeriableDecl>			<name>	arrayA	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	i	</name>		<variableID>	1	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-							</VariableStack>
+					<whileBody>
+						<Block>	<Phase>  5  </Phase>
 
-							<statements>
-								<ExprStatement>
-									<Binary>
-										<binaryOp>	'LT'	</binaryOp>
-										<leftExpr>
-											<Ident>
-												<variableID>	1	</variableID>
-												<idName>	i	</idName>
-											</Ident>
-										</leftExpr>
-
-										<rightExpr>
-											<Literal>
-												<type>	int	</type>
-												<value>	10	</value>
-											</Literal>
-										</rightExpr>
-
-									</Binary>
-
-								</ExprStatement>
-
-							</statements>
-
-						</StatAssemblage>
-
-					</forCond>
-
-					<forBody>
-						<Block>	<Phase>  7  </Phase>
-
-							<StatAssemblage>	<Phase>  8  </Phase>
+							<StatAssemblage>	<Phase>  6  </Phase>
 								<stageNum>  1  </stageNum>
-								<totalStepNum>  1  </totalStepNum>
+								<totalStepNum>  4  </totalStepNum>
 								<VariableStack>
 									<VeriableDecl>			<name>	arrayA	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-									<VeriableDecl>			<name>	i	</name>		<variableID>	1	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+									<VeriableDecl>			<name>	obj	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+									<VeriableDecl>			<name>	i	</name>		<variableID>	2	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+									<VeriableDecl>			<name>	check_finished	</name>		<variableID>	3	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 								</VariableStack>
 
 								<statements>
 									<ExprStatement>
 										<Assign>
 											<rightExpr>
-												<Ident>
-													<variableID>	1	</variableID>
-													<idName>	i	</idName>
-												</Ident>
+												<MethodInv>
+													<defClassName>	fifoa2b	</defClassName>
+													<objName>	obj	</objName>
+													<methodName>	check_finished	</methodName>
+
+													<argment>
+													</argment>
+												</MethodInv>
+
 											</rightExpr>
 
 											<dest>
-												<ArrayAccess>
-													<variableID>	0	</variableID>
-													<idName>arrayA</idName>
-
-													<index0>
-														<Ident>
-															<variableID>	1	</variableID>
-															<idName>	i	</idName>
-														</Ident>
-													</index0>
-
-												</ArrayAccess>
-
+												<Ident>
+													<variableID>	3	</variableID>
+													<idName>	check_finished	</idName>
+												</Ident>
 											</dest>
 
 										</Assign>
@@ -197,139 +169,75 @@
 
 							</StatAssemblage>
 
+							<If>	<Phase>  7  </Phase>
+								<ifCond>
+									<StatAssemblage>	<Phase>  8  </Phase>
+										<stageNum>  1  </stageNum>
+										<totalStepNum>  1  </totalStepNum>
+										<VariableStack>
+											<VeriableDecl>			<name>	arrayA	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+											<VeriableDecl>			<name>	obj	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+											<VeriableDecl>			<name>	i	</name>		<variableID>	2	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+											<VeriableDecl>			<name>	check_finished	</name>		<variableID>	3	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+										</VariableStack>
+
+										<statements>
+											<ExprStatement>
+												<Binary>
+													<binaryOp>	'=='	</binaryOp>
+													<leftExpr>
+														<Ident>
+															<variableID>	3	</variableID>
+															<idName>	check_finished	</idName>
+														</Ident>
+													</leftExpr>
+
+													<rightExpr>
+														<Literal>
+															<type>	boolean	</type>
+															<value>	false	</value>
+														</Literal>
+													</rightExpr>
+
+												</Binary>
+
+											</ExprStatement>
+
+										</statements>
+
+									</StatAssemblage>
+
+								</ifCond>
+
+								<thenBlock>
+									<Break>
+										<Phase>  9  </Phase>
+										<ParentLoopPhase>  3  </ParentLoopPhase>
+									</Break>
+
+								</thenBlock>
+
+								<elseBlock>
+								</elseBlock>
+
+							</If>
+
 						</Block>
 
-					</forBody>
-				</ForLoop>
+					</whileBody>
 
-				<ForLoop>	<Phase>  9  </Phase>
+				</WhileLoop>
+
+				<ForLoop>	<Phase>  10  </Phase>
 					<forInit>
-						<StatAssemblage>	<Phase>  10  </Phase>
-							<stageNum>  1  </stageNum>
-							<totalStepNum>  1  </totalStepNum>
-							<VariableStack>
-								<VeriableDecl>			<name>	arrayA	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	i	</name>		<variableID>	1	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-							</VariableStack>
-
-							<statements>
-								<ExprStatement>
-									<Assign>
-										<rightExpr>
-											<Literal>
-												<type>	int	</type>
-												<value>	0	</value>
-											</Literal>
-										</rightExpr>
-
-										<dest>
-											<Ident>
-												<variableID>	1	</variableID>
-												<idName>	i	</idName>
-											</Ident>
-										</dest>
-
-									</Assign>
-
-								</ExprStatement>
-
-							</statements>
-
-						</StatAssemblage>
-
-					</forInit>
-
-					<forCond>
 						<StatAssemblage>	<Phase>  11  </Phase>
 							<stageNum>  1  </stageNum>
 							<totalStepNum>  1  </totalStepNum>
 							<VariableStack>
 								<VeriableDecl>			<name>	arrayA	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	i	</name>		<variableID>	1	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-							</VariableStack>
-
-							<statements>
-								<ExprStatement>
-									<Binary>
-										<binaryOp>	'LT'	</binaryOp>
-										<leftExpr>
-											<Ident>
-												<variableID>	1	</variableID>
-												<idName>	i	</idName>
-											</Ident>
-										</leftExpr>
-
-										<rightExpr>
-											<Literal>
-												<type>	int	</type>
-												<value>	10	</value>
-											</Literal>
-										</rightExpr>
-
-									</Binary>
-
-								</ExprStatement>
-
-							</statements>
-
-						</StatAssemblage>
-
-					</forCond>
-
-					<forBody>
-						<Block>	<Phase>  13  </Phase>
-
-							<StatAssemblage>	<Phase>  14  </Phase>
-								<stageNum>  1  </stageNum>
-								<totalStepNum>  4  </totalStepNum>
-								<VariableStack>
-									<VeriableDecl>			<name>	arrayA	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-									<VeriableDecl>			<name>	i	</name>		<variableID>	1	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-								</VariableStack>
-
-								<statements>
-									<ExprStatement>
-										<MethodInv>
-											<defClassName>	FIFOTestB	</defClassName>
-											<objName>	this	</objName>
-											<methodName>	FIFOWrite	</methodName>
-
-											<argment>
-												<ArrayAccess>
-													<variableID>	0	</variableID>
-													<idName>arrayA</idName>
-
-													<index0>
-														<Ident>
-															<variableID>	1	</variableID>
-															<idName>	i	</idName>
-														</Ident>
-													</index0>
-
-												</ArrayAccess>
-
-											</argment>
-										</MethodInv>
-
-									</ExprStatement>
-
-								</statements>
-
-							</StatAssemblage>
-
-						</Block>
-
-					</forBody>
-				</ForLoop>
-
-				<ForLoop>	<Phase>  15  </Phase>
-					<forInit>
-						<StatAssemblage>	<Phase>  16  </Phase>
-							<stageNum>  1  </stageNum>
-							<totalStepNum>  1  </totalStepNum>
-							<VariableStack>
-								<VeriableDecl>			<name>	arrayA	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	i	</name>		<variableID>	1	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	obj	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	i	</name>		<variableID>	2	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	check_finished	</name>		<variableID>	3	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 							</VariableStack>
 
 							<statements>
@@ -344,7 +252,7 @@
 
 										<dest>
 											<Ident>
-												<variableID>	1	</variableID>
+												<variableID>	2	</variableID>
 												<idName>	i	</idName>
 											</Ident>
 										</dest>
@@ -360,12 +268,14 @@
 					</forInit>
 
 					<forCond>
-						<StatAssemblage>	<Phase>  17  </Phase>
+						<StatAssemblage>	<Phase>  12  </Phase>
 							<stageNum>  1  </stageNum>
 							<totalStepNum>  1  </totalStepNum>
 							<VariableStack>
 								<VeriableDecl>			<name>	arrayA	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	i	</name>		<variableID>	1	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	obj	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	i	</name>		<variableID>	2	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	check_finished	</name>		<variableID>	3	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 							</VariableStack>
 
 							<statements>
@@ -374,7 +284,7 @@
 										<binaryOp>	'LT'	</binaryOp>
 										<leftExpr>
 											<Ident>
-												<variableID>	1	</variableID>
+												<variableID>	2	</variableID>
 												<idName>	i	</idName>
 											</Ident>
 										</leftExpr>
@@ -397,14 +307,16 @@
 					</forCond>
 
 					<forBody>
-						<Block>	<Phase>  19  </Phase>
+						<Block>	<Phase>  14  </Phase>
 
-							<StatAssemblage>	<Phase>  20  </Phase>
-								<stageNum>  1  </stageNum>
-								<totalStepNum>  1  </totalStepNum>
+							<StatAssemblage>	<Phase>  15  </Phase>
+								<stageNum>  2  </stageNum>
+								<totalStepNum>  5  </totalStepNum>
 								<VariableStack>
 									<VeriableDecl>			<name>	arrayA	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-									<VeriableDecl>			<name>	i	</name>		<variableID>	1	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+									<VeriableDecl>			<name>	obj	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+									<VeriableDecl>			<name>	i	</name>		<variableID>	2	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+									<VeriableDecl>			<name>	check_finished	</name>		<variableID>	3	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 								</VariableStack>
 
 								<statements>
@@ -412,9 +324,9 @@
 										<Assign>
 											<rightExpr>
 												<MethodInv>
-													<defClassName>	FIFOTestB	</defClassName>
-													<objName>	this	</objName>
-													<methodName>	FIFORead	</methodName>
+													<defClassName>	fifoa2b	</defClassName>
+													<objName>	obj	</objName>
+													<methodName>	deque	</methodName>
 
 													<argment>
 													</argment>
@@ -429,7 +341,7 @@
 
 													<index0>
 														<Ident>
-															<variableID>	1	</variableID>
+															<variableID>	2	</variableID>
 															<idName>	i	</idName>
 														</Ident>
 													</index0>

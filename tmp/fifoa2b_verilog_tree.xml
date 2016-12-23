@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Class>
+
+	<ClassName>	fifoa2b	</ClassName>
+
+	<AllVariables>
+		<VeriableDecl>
+			<name>	buffer	</name>
+			<type>	int	</type>
+			<variableID>	0	</variableID>
+			<parentName>	fifoa2b	</parentName>
+			<defType>	field	</defType>
+			<isArray>	true	</isArray>
+			<isPrimitive>	true	</isPrimitive>
+			<isFinal>	true	</isFinal>
+			<dimension>	1	</dimension>
+			<init>
+				<NewArray>
+					<type>	int	</type>
+					<elements>	10	</elements>				
+				</NewArray>
+			</init>
+		</VeriableDecl>
+
+		<VeriableDecl>
+			<name>	front	</name>
+			<type>	int	</type>
+			<variableID>	1	</variableID>
+			<parentName>	fifoa2b	</parentName>
+			<defType>	field	</defType>
+			<isArray>	false	</isArray>
+			<isPrimitive>	true	</isPrimitive>
+			<isFinal>	false	</isFinal>
+			<dimension>	0	</dimension>
+			<init>
+				<Literal>
+					<type>	int	</type>
+					<value>	0	</value>
+				</Literal>
+			</init>
+		</VeriableDecl>
+
+		<VeriableDecl>
+			<name>	rear	</name>
+			<type>	int	</type>
+			<variableID>	2	</variableID>
+			<parentName>	fifoa2b	</parentName>
+			<defType>	field	</defType>
+			<isArray>	false	</isArray>
+			<isPrimitive>	true	</isPrimitive>
+			<isFinal>	false	</isFinal>
+			<dimension>	0	</dimension>
+			<init>
+				<Literal>
+					<type>	int	</type>
+					<value>	0	</value>
+				</Literal>
+			</init>
+		</VeriableDecl>
+
+		<VeriableDecl>
+			<name>	is_finished	</name>
+			<type>	boolean	</type>
+			<variableID>	3	</variableID>
+			<parentName>	fifoa2b	</parentName>
+			<defType>	field	</defType>
+			<isArray>	false	</isArray>
+			<isPrimitive>	true	</isPrimitive>
+			<isFinal>	false	</isFinal>
+			<dimension>	0	</dimension>
+			<init>
+				<Literal>
+					<type>	boolean	</type>
+					<value>	false	</value>
+				</Literal>
+			</init>
+		</VeriableDecl>
+
+		<VeriableDecl>
+			<name>	in_finished	</name>
+			<type>	boolean	</type>
+			<variableID>	4	</variableID>
+			<parentName>	is_finished	</parentName>
+			<defType>	paramList	</defType>
+			<isArray>	false	</isArray>
+			<isPrimitive>	true	</isPrimitive>
+			<isFinal>	false	</isFinal>
+			<dimension>	0	</dimension>
+			<init>
+			</init>
+		</VeriableDecl>
+
+		<VeriableDecl>
+			<name>	n_in	</name>
+			<type>	int	</type>
+			<variableID>	5	</variableID>
+			<parentName>	enque	</parentName>
+			<defType>	paramList	</defType>
+			<isArray>	false	</isArray>
+			<isPrimitive>	true	</isPrimitive>
+			<isFinal>	false	</isFinal>
+			<dimension>	0	</dimension>
+			<init>
+			</init>
+		</VeriableDecl>
+
+		<VeriableDecl>
+			<name>	n_out	</name>
+			<type>	int	</type>
+			<variableID>	6	</variableID>
+			<parentName>	deque	</parentName>
+			<defType>	method	</defType>
+			<isArray>	false	</isArray>
+			<isPrimitive>	true	</isPrimitive>
+			<isFinal>	false	</isFinal>
+			<dimension>	0	</dimension>
+			<init>
+			</init>
+		</VeriableDecl>
+
+	</AllVariables>
+
+	<METHOD>	<Phase>  1  </Phase>
+
+		<methodName>	is_finished	</methodName>
+		<returnType>	void	</returnType>
+		<ParamList>
+
+			<VeriableDecl>			<name>	in_finished	</name>		<variableID>	4	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+		</ParamList>
+
+		<MethodBody>
+			<Block>	<Phase>  1  </Phase>
+
+				<If>	<Phase>  2  </Phase>
+					<ifCond>
+						<StatAssemblage>	<Phase>  3  </Phase>
+							<stageNum>  1  </stageNum>
+							<totalStepNum>  1  </totalStepNum>
+							<VariableStack>
+								<VeriableDecl>			<name>	buffer	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	front	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	rear	</name>		<variableID>	2	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	is_finished	</name>		<variableID>	3	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	in_finished	</name>		<variableID>	4	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+							</VariableStack>
+
+							<statements>
+								<ExprStatement>
+									<Binary>
+										<binaryOp>	'=='	</binaryOp>
+										<leftExpr>
+											<Ident>
+												<variableID>	4	</variableID>
+												<idName>	in_finished	</idName>
+											</Ident>
+										</leftExpr>
+
+										<rightExpr>
+											<Literal>
+												<type>	boolean	</type>
+												<value>	false	</value>
+											</Literal>
+										</rightExpr>
+
+									</Binary>
+
+								</ExprStatement>
+
+							</statements>
+
+						</StatAssemblage>
+
+					</ifCond>
+
+					<thenBlock>
+						<Block>	<Phase>  4  </Phase>
+
+							<StatAssemblage>	<Phase>  5  </Phase>
+								<stageNum>  1  </stageNum>
+								<totalStepNum>  1  </totalStepNum>
+								<VariableStack>
+									<VeriableDecl>			<name>	buffer	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+									<VeriableDecl>			<name>	front	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+									<VeriableDecl>			<name>	rear	</name>		<variableID>	2	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+									<VeriableDecl>			<name>	is_finished	</name>		<variableID>	3	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+									<VeriableDecl>			<name>	in_finished	</name>		<variableID>	4	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+								</VariableStack>
+
+								<statements>
+									<ExprStatement>
+										<Assign>
+											<rightExpr>
+												<Literal>
+													<type>	boolean	</type>
+													<value>	false	</value>
+												</Literal>
+											</rightExpr>
+
+											<dest>
+												<Ident>
+													<variableID>	3	</variableID>
+													<idName>	is_finished	</idName>
+												</Ident>
+											</dest>
+
+										</Assign>
+
+									</ExprStatement>
+
+								</statements>
+
+							</StatAssemblage>
+
+						</Block>
+
+					</thenBlock>
+
+					<elseBlock>
+					</elseBlock>
+
+				</If>
+
+			</Block>
+
+		</MethodBody>
+
+	</METHOD>
+
+
+	<METHOD>	<Phase>  1  </Phase>
+
+		<methodName>	check_finished	</methodName>
+		<returnType>	boolean	</returnType>
+		<ParamList>
+
+		</ParamList>
+
+		<MethodBody>
+			<Block>	<Phase>  1  </Phase>
+
+				<Return>	<Phase>  2  </Phase>
+
+					<StatAssemblage>	<Phase>  3  </Phase>
+						<stageNum>  1  </stageNum>
+						<totalStepNum>  1  </totalStepNum>
+						<VariableStack>
+							<VeriableDecl>			<name>	buffer	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+							<VeriableDecl>			<name>	front	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+							<VeriableDecl>			<name>	rear	</name>		<variableID>	2	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+							<VeriableDecl>			<name>	is_finished	</name>		<variableID>	3	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+						</VariableStack>
+
+						<statements>
+							<ExprStatement>
+								<Ident>
+									<variableID>	3	</variableID>
+									<idName>	is_finished	</idName>
+								</Ident>
+							</ExprStatement>
+
+						</statements>
+
+					</StatAssemblage>
+
+				</Return>
+
+			</Block>
+
+		</MethodBody>
+
+	</METHOD>
+
+
+	<METHOD>	<Phase>  1  </Phase>
+
+		<methodName>	enque	</methodName>
+		<returnType>	void	</returnType>
+		<ParamList>
+
+			<VeriableDecl>			<name>	n_in	</name>		<variableID>	5	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+		</ParamList>
+
+		<MethodBody>
+			<Block>	<Phase>  1  </Phase>
+
+				<StatAssemblage>	<Phase>  2  </Phase>
+					<stageNum>  1  </stageNum>
+					<totalStepNum>  1  </totalStepNum>
+					<VariableStack>
+						<VeriableDecl>			<name>	buffer	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+						<VeriableDecl>			<name>	front	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+						<VeriableDecl>			<name>	rear	</name>		<variableID>	2	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+						<VeriableDecl>			<name>	is_finished	</name>		<variableID>	3	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+						<VeriableDecl>			<name>	n_in	</name>		<variableID>	5	</variableID>		<defType>	paramList	</defType>			</VeriableDecl>
+					</VariableStack>
+
+					<statements>
+						<ExprStatement>
+							<Assign>
+								<rightExpr>
+									<Ident>
+										<variableID>	5	</variableID>
+										<idName>	n_in	</idName>
+									</Ident>
+								</rightExpr>
+
+								<dest>
+									<ArrayAccess>
+										<variableID>	0	</variableID>
+										<idName>buffer</idName>
+
+										<index0>
+											<Ident>
+												<variableID>	2	</variableID>
+												<idName>	rear	</idName>
+											</Ident>
+										</index0>
+
+									</ArrayAccess>
+
+								</dest>
+
+							</Assign>
+
+						</ExprStatement>
+
+						<ExprStatement>
+							<Unary>
+							<unaryOP>	_++</unaryOP>
+								<Ident>
+									<variableID>	2	</variableID>
+									<idName>	rear	</idName>
+								</Ident>
+							</Unary>
+
+						</ExprStatement>
+
+					</statements>
+
+				</StatAssemblage>
+
+			</Block>
+
+		</MethodBody>
+
+	</METHOD>
+
+
+	<METHOD>	<Phase>  1  </Phase>
+
+		<methodName>	deque	</methodName>
+		<returnType>	int	</returnType>
+		<ParamList>
+
+		</ParamList>
+
+		<MethodBody>
+			<Block>	<Phase>  1  </Phase>
+
+				<StatAssemblage>	<Phase>  2  </Phase>
+					<stageNum>  1  </stageNum>
+					<totalStepNum>  3  </totalStepNum>
+					<VariableStack>
+						<VeriableDecl>			<name>	buffer	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+						<VeriableDecl>			<name>	front	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+						<VeriableDecl>			<name>	rear	</name>		<variableID>	2	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+						<VeriableDecl>			<name>	is_finished	</name>		<variableID>	3	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+						<VeriableDecl>			<name>	n_out	</name>		<variableID>	6	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+					</VariableStack>
+
+					<statements>
+						<VeriableDecl>			<name>	n_out	</name>		<variableID>	6	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+						<ExprStatement>
+							<Assign>
+								<rightExpr>
+									<ArrayAccess>
+										<variableID>	0	</variableID>
+										<idName>buffer</idName>
+
+										<index0>
+											<Ident>
+												<variableID>	1	</variableID>
+												<idName>	front	</idName>
+											</Ident>
+										</index0>
+
+									</ArrayAccess>
+
+								</rightExpr>
+
+								<dest>
+									<Ident>
+										<variableID>	6	</variableID>
+										<idName>	n_out	</idName>
+									</Ident>
+								</dest>
+
+							</Assign>
+
+						</ExprStatement>
+
+						<ExprStatement>
+							<Unary>
+							<unaryOP>	_++</unaryOP>
+								<Ident>
+									<variableID>	1	</variableID>
+									<idName>	front	</idName>
+								</Ident>
+							</Unary>
+
+						</ExprStatement>
+
+					</statements>
+
+				</StatAssemblage>
+
+				<Return>	<Phase>  3  </Phase>
+
+					<StatAssemblage>	<Phase>  4  </Phase>
+						<stageNum>  1  </stageNum>
+						<totalStepNum>  1  </totalStepNum>
+						<VariableStack>
+							<VeriableDecl>			<name>	buffer	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+							<VeriableDecl>			<name>	front	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+							<VeriableDecl>			<name>	rear	</name>		<variableID>	2	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+							<VeriableDecl>			<name>	is_finished	</name>		<variableID>	3	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+							<VeriableDecl>			<name>	n_out	</name>		<variableID>	6	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+						</VariableStack>
+
+						<statements>
+							<ExprStatement>
+								<Ident>
+									<variableID>	6	</variableID>
+									<idName>	n_out	</idName>
+								</Ident>
+							</ExprStatement>
+
+						</statements>
+
+					</StatAssemblage>
+
+				</Return>
+
+			</Block>
+
+		</MethodBody>
+
+	</METHOD>
+
+
+</Class>

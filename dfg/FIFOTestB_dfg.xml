@@ -4,9 +4,9 @@
 <className>	FIFOTestB	</className>
 <METHOD>
 	<methodName>	run	</methodName>
-	<totalPhaseNum>22	</totalPhaseNum>
-	<totalStageNum>13	</totalStageNum>
-	<totalStepNum>13	</totalStepNum>
+	<totalPhaseNum>17	</totalPhaseNum>
+	<totalStageNum>9	</totalStageNum>
+	<totalStepNum>14	</totalStepNum>
 		<Phase>
 			<phaseID>	2	</phaseID>
 			<Stage>
@@ -23,107 +23,70 @@
 			<Stage>
 				<stageID>	0	</stageID>
 				<stepNum>	1	</stepNum>
-				<minCriticalPath>	1	</minCriticalPath>
-				<exprInStage>	<!--i&nbsp;=&nbsp;0<br>-->	</exprInStage>
-				<VariableAccess>
-					<nodeID>	1010576351	</nodeID>
+				<minCriticalPath>	0	</minCriticalPath>
+				<exprInStage>	<!--true<br>-->	</exprInStage>
+				<Literal>
+					<nodeID>	301058000	</nodeID>
 					<startStep>	0	</startStep>
 					<endStep>	0	</endStep>
-					<destType>	int	</destType>
+					<destType>	boolean	</destType>
 					<destTypeIsReg>	false	</destTypeIsReg>
-					<destSignalName>	r_run_i_1	</destSignalName>
-					<priority>	1	</priority>
-					<minPathToEnd>	1	</minPathToEnd>
+					<destSignalName>	w_sys_boolFalse	</destSignalName>
+					<priority>	0	</priority>
+					<minPathToEnd>	0	</minPathToEnd>
 					<fastestStepForAlap>	0	</fastestStepForAlap>
-					<componentID>	308567134	</componentID>
-					<variableName>	i	</variableName>
-					<type>	int	</type>
-					<variableID>	1	</variableID>
-					<isRead>	false	</isRead>
-					<dependence>		</dependence>
-					<assignNode>
-						<Literal>
-							<nodeID>	2062297280	</nodeID>
-							<startStep>	0	</startStep>
-							<endStep>	0	</endStep>
-							<destType>	int	</destType>
-							<destTypeIsReg>	false	</destTypeIsReg>
-							<destSignalName>	w_sys_intZero	</destSignalName>
-							<priority>	1	</priority>
-							<minPathToEnd>	1	</minPathToEnd>
-							<fastestStepForAlap>	0	</fastestStepForAlap>
-							<componentID>	2062297280	</componentID>
-							<type>	int	</type>
-							<value>	0	</value>
-							<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wire&nbsp;:&nbsp;w_sys_intZero&nbsp;=&nbsp;32'sh0&nbsp;&nbsp;&nbsp;&nbsp;--></component>
-						</Literal>
-					</assignNode>
-					<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reg&nbsp;:&nbsp;r_run_i_1&nbsp;&nbsp;&nbsp;&nbsp;--></component>
-				</VariableAccess>
+					<componentID>	301058000	</componentID>
+					<type>	boolean	</type>
+					<value>	false	</value>
+					<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wire&nbsp;:&nbsp;w_sys_boolFalse&nbsp;=&nbsp;1'b0&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+				</Literal>
 			</Stage>
 
 		</Phase>
 
 		<Phase>
-			<phaseID>	5	</phaseID>
+			<phaseID>	6	</phaseID>
 			<Stage>
 				<stageID>	0	</stageID>
-				<stepNum>	1	</stepNum>
-				<minCriticalPath>	0	</minCriticalPath>
-				<exprInStage>	<!--i&nbsp;&lt;&nbsp;10<br>-->	</exprInStage>
-				<Binary>
-					<nodeID>	644322380	</nodeID>
-					<startStep>	0	</startStep>
-					<endStep>	0	</endStep>
+				<stepNum>	4	</stepNum>
+				<minCriticalPath>	5	</minCriticalPath>
+				<exprInStage>	<!--check_finished&nbsp;=&nbsp;obj.check_finished()<br>-->	</exprInStage>
+				<VariableAccess>
+					<nodeID>	410333668	</nodeID>
+					<startStep>	3	</startStep>
+					<endStep>	3	</endStep>
 					<destType>	boolean	</destType>
 					<destTypeIsReg>	false	</destTypeIsReg>
-					<destSignalName>	w_sys_tmp1	</destSignalName>
-					<priority>	0	</priority>
-					<minPathToEnd>	0	</minPathToEnd>
-					<fastestStepForAlap>	0	</fastestStepForAlap>
-					<componentID>	644322380	</componentID>
-					<op>	LT	</op>
-					<ipcore>	notUsed	</ipcore>
-					<leftNode>
-						<VariableAccess>
-							<nodeID>	1513692486	</nodeID>
+					<destSignalName>	r_run_check_finished_3	</destSignalName>
+					<priority>	1	</priority>
+					<minPathToEnd>	1	</minPathToEnd>
+					<fastestStepForAlap>	4	</fastestStepForAlap>
+					<componentID>	907967559	</componentID>
+					<variableName>	check_finished	</variableName>
+					<type>	boolean	</type>
+					<variableID>	3	</variableID>
+					<isRead>	false	</isRead>
+					<dependence>		</dependence>
+					<assignNode>
+						<MethodInv>
+							<nodeID>	191968531	</nodeID>
 							<startStep>	0	</startStep>
-							<endStep>	0	</endStep>
-							<destType>	int	</destType>
+							<endStep>	3	</endStep>
+							<destType>	boolean	</destType>
 							<destTypeIsReg>	false	</destTypeIsReg>
-							<destSignalName>	r_run_i_1	</destSignalName>
-							<priority>	0	</priority>
-							<minPathToEnd>	0	</minPathToEnd>
+							<destSignalName>	w_obj_check_finished_return	</destSignalName>
+							<priority>	5	</priority>
+							<minPathToEnd>	5	</minPathToEnd>
 							<fastestStepForAlap>	0	</fastestStepForAlap>
-							<componentID>	308567134	</componentID>
-							<variableName>	i	</variableName>
-							<type>	int	</type>
-							<variableID>	1	</variableID>
-							<isRead>	true	</isRead>
-							<dependence>		</dependence>
-							<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reg&nbsp;:&nbsp;r_run_i_1&nbsp;&nbsp;&nbsp;&nbsp;--></component>
-						</VariableAccess>
-					</leftNode>
-
-					<rightNode>
-						<Literal>
-							<nodeID>	1538329840	</nodeID>
-							<startStep>	0	</startStep>
-							<endStep>	0	</endStep>
-							<destType>	int	</destType>
-							<destTypeIsReg>	false	</destTypeIsReg>
-							<destSignalName>	w_sys_tmp2	</destSignalName>
-							<priority>	0	</priority>
-							<minPathToEnd>	0	</minPathToEnd>
-							<fastestStepForAlap>	0	</fastestStepForAlap>
-							<componentID>	1538329840	</componentID>
-							<type>	int	</type>
-							<value>	10	</value>
-							<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wire&nbsp;:&nbsp;w_sys_tmp2&nbsp;=&nbsp;32'sh0000000a&nbsp;&nbsp;&nbsp;&nbsp;--></component>
-						</Literal>
-					</rightNode>
-					<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;verilog&nbsp;operator&nbsp;:&nbsp;&lt;&nbsp;&nbsp;&nbsp;&nbsp;--></component>
-				</Binary>
+							<componentID>	894662723	</componentID>
+							<defClass>	fifoa2b	</defClass>
+							<objName>	obj	</objName>
+							<caleeName>	check_finished	</caleeName>
+							<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;none&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+						</MethodInv>
+					</assignNode>
+					<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reg&nbsp;:&nbsp;r_run_check_finished_3&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+				</VariableAccess>
 			</Stage>
 
 		</Phase>
@@ -133,185 +96,61 @@
 			<Stage>
 				<stageID>	0	</stageID>
 				<stepNum>	1	</stepNum>
-				<minCriticalPath>	1	</minCriticalPath>
-				<exprInStage>	<!--arrayA[i]&nbsp;=&nbsp;i<br>++i<br>-->	</exprInStage>
-				<ArrayAccess>
-					<nodeID>	1153994647	</nodeID>
+				<minCriticalPath>	0	</minCriticalPath>
+				<exprInStage>	<!--check_finished&nbsp;==&nbsp;true<br>-->	</exprInStage>
+				<Binary>
+					<nodeID>	2063372814	</nodeID>
 					<startStep>	0	</startStep>
 					<endStep>	0	</endStep>
-					<destType>	int	</destType>
+					<destType>	boolean	</destType>
 					<destTypeIsReg>	false	</destTypeIsReg>
-					<destSignalName>	w_sys_tmp4	</destSignalName>
-					<priority>	1	</priority>
-					<minPathToEnd>	1	</minPathToEnd>
+					<destSignalName>	w_sys_tmp1	</destSignalName>
+					<priority>	0	</priority>
+					<minPathToEnd>	0	</minPathToEnd>
 					<fastestStepForAlap>	0	</fastestStepForAlap>
-					<componentID>	1263216072	</componentID>
-					<variableName>	arrayA	</variableName>
-					<isRead>	false	</isRead>
-					<type>	int	</type>
-					<variableID>	0	</variableID>
-					<dependence>		</dependence>
-					<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DPRAM&nbsp;:&nbsp;dpram_arrayA_0&nbsp;&nbsp;&nbsp;&nbsp;--></component>
-					<offset>
+					<componentID>	2063372814	</componentID>
+					<op>	==	</op>
+					<ipcore>	notUsed	</ipcore>
+					<leftNode>
 						<VariableAccess>
-							<nodeID>	849187862	</nodeID>
+							<nodeID>	1540953142	</nodeID>
 							<startStep>	0	</startStep>
 							<endStep>	0	</endStep>
-							<destType>	int	</destType>
+							<destType>	boolean	</destType>
 							<destTypeIsReg>	false	</destTypeIsReg>
-							<destSignalName>	r_run_i_1	</destSignalName>
-							<priority>	1	</priority>
-							<minPathToEnd>	1	</minPathToEnd>
+							<destSignalName>	r_run_check_finished_3	</destSignalName>
+							<priority>	0	</priority>
+							<minPathToEnd>	0	</minPathToEnd>
 							<fastestStepForAlap>	0	</fastestStepForAlap>
-							<componentID>	308567134	</componentID>
-							<variableName>	i	</variableName>
-							<type>	int	</type>
-							<variableID>	1	</variableID>
+							<componentID>	907967559	</componentID>
+							<variableName>	check_finished	</variableName>
+							<type>	boolean	</type>
+							<variableID>	3	</variableID>
 							<isRead>	true	</isRead>
 							<dependence>		</dependence>
-							<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reg&nbsp;:&nbsp;r_run_i_1&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+							<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reg&nbsp;:&nbsp;r_run_check_finished_3&nbsp;&nbsp;&nbsp;&nbsp;--></component>
 						</VariableAccess>
-					</offset>
-					<assignNode>
-						<VariableAccess>
-							<nodeID>	124078672	</nodeID>
-							<startStep>	0	</startStep>
-							<endStep>	0	</endStep>
-							<destType>	int	</destType>
-							<destTypeIsReg>	false	</destTypeIsReg>
-							<destSignalName>	r_run_i_1	</destSignalName>
-							<priority>	1	</priority>
-							<minPathToEnd>	1	</minPathToEnd>
-							<fastestStepForAlap>	0	</fastestStepForAlap>
-							<componentID>	308567134	</componentID>
-							<variableName>	i	</variableName>
-							<type>	int	</type>
-							<variableID>	1	</variableID>
-							<isRead>	true	</isRead>
-							<dependence>		</dependence>
-							<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reg&nbsp;:&nbsp;r_run_i_1&nbsp;&nbsp;&nbsp;&nbsp;--></component>
-						</VariableAccess>
-					</assignNode>
-				</ArrayAccess>
-				<VariableAccess>
-					<nodeID>	183619067	</nodeID>
-					<startStep>	0	</startStep>
-					<endStep>	0	</endStep>
-					<destType>	int	</destType>
-					<destTypeIsReg>	false	</destTypeIsReg>
-					<destSignalName>	r_run_i_1	</destSignalName>
-					<priority>	1	</priority>
-					<minPathToEnd>	1	</minPathToEnd>
-					<fastestStepForAlap>	0	</fastestStepForAlap>
-					<componentID>	308567134	</componentID>
-					<variableName>	i	</variableName>
-					<type>	int	</type>
-					<variableID>	1	</variableID>
-					<isRead>	false	</isRead>
-					<dependence>	849187862,124078672	</dependence>
-					<assignNode>
-						<Binary>
-							<nodeID>	151658330	</nodeID>
-							<startStep>	0	</startStep>
-							<endStep>	0	</endStep>
-							<destType>	int	</destType>
-							<destTypeIsReg>	false	</destTypeIsReg>
-							<destSignalName>	w_sys_tmp5	</destSignalName>
-							<priority>	1	</priority>
-							<minPathToEnd>	1	</minPathToEnd>
-							<fastestStepForAlap>	0	</fastestStepForAlap>
-							<componentID>	151658330	</componentID>
-							<op>	+	</op>
-							<ipcore>	notUsed	</ipcore>
-							<leftNode>
-								<VariableAccess>
-									<nodeID>	2005946968	</nodeID>
-									<startStep>	0	</startStep>
-									<endStep>	0	</endStep>
-									<destType>	int	</destType>
-									<destTypeIsReg>	false	</destTypeIsReg>
-									<destSignalName>	r_run_i_1	</destSignalName>
-									<priority>	1	</priority>
-									<minPathToEnd>	1	</minPathToEnd>
-									<fastestStepForAlap>	0	</fastestStepForAlap>
-									<componentID>	308567134	</componentID>
-									<variableName>	i	</variableName>
-									<type>	int	</type>
-									<variableID>	1	</variableID>
-									<isRead>	true	</isRead>
-									<dependence>		</dependence>
-									<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reg&nbsp;:&nbsp;r_run_i_1&nbsp;&nbsp;&nbsp;&nbsp;--></component>
-								</VariableAccess>
-							</leftNode>
+					</leftNode>
 
-							<rightNode>
-								<Literal>
-									<nodeID>	604916923	</nodeID>
-									<startStep>	0	</startStep>
-									<endStep>	0	</endStep>
-									<destType>	int	</destType>
-									<destTypeIsReg>	false	</destTypeIsReg>
-									<destSignalName>	w_sys_intOne	</destSignalName>
-									<priority>	1	</priority>
-									<minPathToEnd>	1	</minPathToEnd>
-									<fastestStepForAlap>	0	</fastestStepForAlap>
-									<componentID>	604916923	</componentID>
-									<type>	int	</type>
-									<value>	1	</value>
-									<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wire&nbsp;:&nbsp;w_sys_intOne&nbsp;=&nbsp;32'sh1&nbsp;&nbsp;&nbsp;&nbsp;--></component>
-								</Literal>
-							</rightNode>
-							<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;verilog&nbsp;operator&nbsp;:&nbsp;+&nbsp;&nbsp;&nbsp;&nbsp;--></component>
-						</Binary>
-					</assignNode>
-					<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reg&nbsp;:&nbsp;r_run_i_1&nbsp;&nbsp;&nbsp;&nbsp;--></component>
-				</VariableAccess>
-			</Stage>
-
-		</Phase>
-
-		<Phase>
-			<phaseID>	10	</phaseID>
-			<Stage>
-				<stageID>	0	</stageID>
-				<stepNum>	1	</stepNum>
-				<minCriticalPath>	1	</minCriticalPath>
-				<exprInStage>	<!--i&nbsp;=&nbsp;0<br>-->	</exprInStage>
-				<VariableAccess>
-					<nodeID>	651139963	</nodeID>
-					<startStep>	0	</startStep>
-					<endStep>	0	</endStep>
-					<destType>	int	</destType>
-					<destTypeIsReg>	false	</destTypeIsReg>
-					<destSignalName>	r_run_i_1	</destSignalName>
-					<priority>	1	</priority>
-					<minPathToEnd>	1	</minPathToEnd>
-					<fastestStepForAlap>	0	</fastestStepForAlap>
-					<componentID>	308567134	</componentID>
-					<variableName>	i	</variableName>
-					<type>	int	</type>
-					<variableID>	1	</variableID>
-					<isRead>	false	</isRead>
-					<dependence>		</dependence>
-					<assignNode>
+					<rightNode>
 						<Literal>
-							<nodeID>	132693029	</nodeID>
+							<nodeID>	146674774	</nodeID>
 							<startStep>	0	</startStep>
 							<endStep>	0	</endStep>
-							<destType>	int	</destType>
+							<destType>	boolean	</destType>
 							<destTypeIsReg>	false	</destTypeIsReg>
-							<destSignalName>	w_sys_intZero	</destSignalName>
-							<priority>	1	</priority>
-							<minPathToEnd>	1	</minPathToEnd>
+							<destSignalName>	w_sys_boolFalse	</destSignalName>
+							<priority>	0	</priority>
+							<minPathToEnd>	0	</minPathToEnd>
 							<fastestStepForAlap>	0	</fastestStepForAlap>
-							<componentID>	132693029	</componentID>
-							<type>	int	</type>
-							<value>	0	</value>
-							<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wire&nbsp;:&nbsp;w_sys_intZero&nbsp;=&nbsp;32'sh0&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+							<componentID>	146674774	</componentID>
+							<type>	boolean	</type>
+							<value>	false	</value>
+							<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wire&nbsp;:&nbsp;w_sys_boolFalse&nbsp;=&nbsp;1'b0&nbsp;&nbsp;&nbsp;&nbsp;--></component>
 						</Literal>
-					</assignNode>
-					<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reg&nbsp;:&nbsp;r_run_i_1&nbsp;&nbsp;&nbsp;&nbsp;--></component>
-				</VariableAccess>
+					</rightNode>
+					<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;verilog&nbsp;operator&nbsp;:&nbsp;==&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+				</Binary>
 			</Stage>
 
 		</Phase>
@@ -321,229 +160,27 @@
 			<Stage>
 				<stageID>	0	</stageID>
 				<stepNum>	1	</stepNum>
-				<minCriticalPath>	0	</minCriticalPath>
-				<exprInStage>	<!--i&nbsp;&lt;&nbsp;10<br>-->	</exprInStage>
-				<Binary>
-					<nodeID>	1083712817	</nodeID>
-					<startStep>	0	</startStep>
-					<endStep>	0	</endStep>
-					<destType>	boolean	</destType>
-					<destTypeIsReg>	false	</destTypeIsReg>
-					<destSignalName>	w_sys_tmp6	</destSignalName>
-					<priority>	0	</priority>
-					<minPathToEnd>	0	</minPathToEnd>
-					<fastestStepForAlap>	0	</fastestStepForAlap>
-					<componentID>	1083712817	</componentID>
-					<op>	LT	</op>
-					<ipcore>	notUsed	</ipcore>
-					<leftNode>
-						<VariableAccess>
-							<nodeID>	1152505112	</nodeID>
-							<startStep>	0	</startStep>
-							<endStep>	0	</endStep>
-							<destType>	int	</destType>
-							<destTypeIsReg>	false	</destTypeIsReg>
-							<destSignalName>	r_run_i_1	</destSignalName>
-							<priority>	0	</priority>
-							<minPathToEnd>	0	</minPathToEnd>
-							<fastestStepForAlap>	0	</fastestStepForAlap>
-							<componentID>	308567134	</componentID>
-							<variableName>	i	</variableName>
-							<type>	int	</type>
-							<variableID>	1	</variableID>
-							<isRead>	true	</isRead>
-							<dependence>		</dependence>
-							<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reg&nbsp;:&nbsp;r_run_i_1&nbsp;&nbsp;&nbsp;&nbsp;--></component>
-						</VariableAccess>
-					</leftNode>
-
-					<rightNode>
-						<Literal>
-							<nodeID>	1998405091	</nodeID>
-							<startStep>	0	</startStep>
-							<endStep>	0	</endStep>
-							<destType>	int	</destType>
-							<destTypeIsReg>	false	</destTypeIsReg>
-							<destSignalName>	w_sys_tmp7	</destSignalName>
-							<priority>	0	</priority>
-							<minPathToEnd>	0	</minPathToEnd>
-							<fastestStepForAlap>	0	</fastestStepForAlap>
-							<componentID>	1998405091	</componentID>
-							<type>	int	</type>
-							<value>	10	</value>
-							<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wire&nbsp;:&nbsp;w_sys_tmp7&nbsp;=&nbsp;32'sh0000000a&nbsp;&nbsp;&nbsp;&nbsp;--></component>
-						</Literal>
-					</rightNode>
-					<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;verilog&nbsp;operator&nbsp;:&nbsp;&lt;&nbsp;&nbsp;&nbsp;&nbsp;--></component>
-				</Binary>
-			</Stage>
-
-		</Phase>
-
-		<Phase>
-			<phaseID>	14	</phaseID>
-			<Stage>
-				<stageID>	0	</stageID>
-				<stepNum>	4	</stepNum>
-				<minCriticalPath>	3	</minCriticalPath>
-				<exprInStage>	<!--FIFOWrite(arrayA[i])<br>++i<br>-->	</exprInStage>
-				<UserDefined>
-					<nodeID>	1921408353	</nodeID>
-					<startStep>	2	</startStep>
-					<endStep>	3	</endStep>
-					<destType>	int	</destType>
-					<destTypeIsReg>	false	</destTypeIsReg>
-					<destSignalName>	w_sys_tmp9	</destSignalName>
-					<priority>	1	</priority>
-					<minPathToEnd>	1	</minPathToEnd>
-					<fastestStepForAlap>	2	</fastestStepForAlap>
-					<componentID>	550125357	</componentID>
-					<ipName>	FIFOWrite	</ipName>
-					<arg>
-						<ArrayAccess>
-							<nodeID>	1039774764	</nodeID>
-							<startStep>	0	</startStep>
-							<endStep>	2	</endStep>
-							<destType>	int	</destType>
-							<destTypeIsReg>	false	</destTypeIsReg>
-							<destSignalName>	w_sys_tmp10	</destSignalName>
-							<priority>	3	</priority>
-							<minPathToEnd>	3	</minPathToEnd>
-							<fastestStepForAlap>	0	</fastestStepForAlap>
-							<componentID>	1263216072	</componentID>
-							<variableName>	arrayA	</variableName>
-							<isRead>	true	</isRead>
-							<type>	int	</type>
-							<variableID>	0	</variableID>
-							<dependence>		</dependence>
-							<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DPRAM&nbsp;:&nbsp;dpram_arrayA_0&nbsp;&nbsp;&nbsp;&nbsp;--></component>
-							<offset>
-								<VariableAccess>
-									<nodeID>	1420022909	</nodeID>
-									<startStep>	0	</startStep>
-									<endStep>	0	</endStep>
-									<destType>	int	</destType>
-									<destTypeIsReg>	false	</destTypeIsReg>
-									<destSignalName>	r_run_i_1	</destSignalName>
-									<priority>	3	</priority>
-									<minPathToEnd>	3	</minPathToEnd>
-									<fastestStepForAlap>	0	</fastestStepForAlap>
-									<componentID>	308567134	</componentID>
-									<variableName>	i	</variableName>
-									<type>	int	</type>
-									<variableID>	1	</variableID>
-									<isRead>	true	</isRead>
-									<dependence>		</dependence>
-									<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reg&nbsp;:&nbsp;r_run_i_1&nbsp;&nbsp;&nbsp;&nbsp;--></component>
-								</VariableAccess>
-							</offset>
-						</ArrayAccess>
-					</arg>
-					<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IPcore&nbsp;:&nbsp;FIFOWrite_inst_0&nbsp;&nbsp;&nbsp;&nbsp;--></component>
-				</UserDefined>
-				<VariableAccess>
-					<nodeID>	1339262452	</nodeID>
-					<startStep>	0	</startStep>
-					<endStep>	0	</endStep>
-					<destType>	int	</destType>
-					<destTypeIsReg>	false	</destTypeIsReg>
-					<destSignalName>	r_run_i_1	</destSignalName>
-					<priority>	1	</priority>
-					<minPathToEnd>	1	</minPathToEnd>
-					<fastestStepForAlap>	2	</fastestStepForAlap>
-					<componentID>	308567134	</componentID>
-					<variableName>	i	</variableName>
-					<type>	int	</type>
-					<variableID>	1	</variableID>
-					<isRead>	false	</isRead>
-					<dependence>	1420022909	</dependence>
-					<assignNode>
-						<Binary>
-							<nodeID>	1207926557	</nodeID>
-							<startStep>	0	</startStep>
-							<endStep>	0	</endStep>
-							<destType>	int	</destType>
-							<destTypeIsReg>	false	</destTypeIsReg>
-							<destSignalName>	w_sys_tmp11	</destSignalName>
-							<priority>	1	</priority>
-							<minPathToEnd>	1	</minPathToEnd>
-							<fastestStepForAlap>	2	</fastestStepForAlap>
-							<componentID>	1207926557	</componentID>
-							<op>	+	</op>
-							<ipcore>	notUsed	</ipcore>
-							<leftNode>
-								<VariableAccess>
-									<nodeID>	1458728408	</nodeID>
-									<startStep>	0	</startStep>
-									<endStep>	0	</endStep>
-									<destType>	int	</destType>
-									<destTypeIsReg>	false	</destTypeIsReg>
-									<destSignalName>	r_run_i_1	</destSignalName>
-									<priority>	1	</priority>
-									<minPathToEnd>	1	</minPathToEnd>
-									<fastestStepForAlap>	2	</fastestStepForAlap>
-									<componentID>	308567134	</componentID>
-									<variableName>	i	</variableName>
-									<type>	int	</type>
-									<variableID>	1	</variableID>
-									<isRead>	true	</isRead>
-									<dependence>		</dependence>
-									<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reg&nbsp;:&nbsp;r_run_i_1&nbsp;&nbsp;&nbsp;&nbsp;--></component>
-								</VariableAccess>
-							</leftNode>
-
-							<rightNode>
-								<Literal>
-									<nodeID>	1175039104	</nodeID>
-									<startStep>	0	</startStep>
-									<endStep>	0	</endStep>
-									<destType>	int	</destType>
-									<destTypeIsReg>	false	</destTypeIsReg>
-									<destSignalName>	w_sys_intOne	</destSignalName>
-									<priority>	1	</priority>
-									<minPathToEnd>	1	</minPathToEnd>
-									<fastestStepForAlap>	2	</fastestStepForAlap>
-									<componentID>	1175039104	</componentID>
-									<type>	int	</type>
-									<value>	1	</value>
-									<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wire&nbsp;:&nbsp;w_sys_intOne&nbsp;=&nbsp;32'sh1&nbsp;&nbsp;&nbsp;&nbsp;--></component>
-								</Literal>
-							</rightNode>
-							<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;verilog&nbsp;operator&nbsp;:&nbsp;+&nbsp;&nbsp;&nbsp;&nbsp;--></component>
-						</Binary>
-					</assignNode>
-					<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reg&nbsp;:&nbsp;r_run_i_1&nbsp;&nbsp;&nbsp;&nbsp;--></component>
-				</VariableAccess>
-			</Stage>
-
-		</Phase>
-
-		<Phase>
-			<phaseID>	16	</phaseID>
-			<Stage>
-				<stageID>	0	</stageID>
-				<stepNum>	1	</stepNum>
 				<minCriticalPath>	1	</minCriticalPath>
 				<exprInStage>	<!--i&nbsp;=&nbsp;0<br>-->	</exprInStage>
 				<VariableAccess>
-					<nodeID>	622603116	</nodeID>
+					<nodeID>	1999183509	</nodeID>
 					<startStep>	0	</startStep>
 					<endStep>	0	</endStep>
 					<destType>	int	</destType>
 					<destTypeIsReg>	false	</destTypeIsReg>
-					<destSignalName>	r_run_i_1	</destSignalName>
+					<destSignalName>	r_run_i_2	</destSignalName>
 					<priority>	1	</priority>
 					<minPathToEnd>	1	</minPathToEnd>
 					<fastestStepForAlap>	0	</fastestStepForAlap>
-					<componentID>	308567134	</componentID>
+					<componentID>	748094801	</componentID>
 					<variableName>	i	</variableName>
 					<type>	int	</type>
-					<variableID>	1	</variableID>
+					<variableID>	2	</variableID>
 					<isRead>	false	</isRead>
 					<dependence>		</dependence>
 					<assignNode>
 						<Literal>
-							<nodeID>	1550242428	</nodeID>
+							<nodeID>	1860050869	</nodeID>
 							<startStep>	0	</startStep>
 							<endStep>	0	</endStep>
 							<destType>	int	</destType>
@@ -552,74 +189,74 @@
 							<priority>	1	</priority>
 							<minPathToEnd>	1	</minPathToEnd>
 							<fastestStepForAlap>	0	</fastestStepForAlap>
-							<componentID>	1550242428	</componentID>
+							<componentID>	1860050869	</componentID>
 							<type>	int	</type>
 							<value>	0	</value>
 							<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wire&nbsp;:&nbsp;w_sys_intZero&nbsp;=&nbsp;32'sh0&nbsp;&nbsp;&nbsp;&nbsp;--></component>
 						</Literal>
 					</assignNode>
-					<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reg&nbsp;:&nbsp;r_run_i_1&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+					<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reg&nbsp;:&nbsp;r_run_i_2&nbsp;&nbsp;&nbsp;&nbsp;--></component>
 				</VariableAccess>
 			</Stage>
 
 		</Phase>
 
 		<Phase>
-			<phaseID>	17	</phaseID>
+			<phaseID>	12	</phaseID>
 			<Stage>
 				<stageID>	0	</stageID>
 				<stepNum>	1	</stepNum>
 				<minCriticalPath>	0	</minCriticalPath>
 				<exprInStage>	<!--i&nbsp;&lt;&nbsp;10<br>-->	</exprInStage>
 				<Binary>
-					<nodeID>	1652881992	</nodeID>
+					<nodeID>	955505904	</nodeID>
 					<startStep>	0	</startStep>
 					<endStep>	0	</endStep>
 					<destType>	boolean	</destType>
 					<destTypeIsReg>	false	</destTypeIsReg>
-					<destSignalName>	w_sys_tmp12	</destSignalName>
+					<destSignalName>	w_sys_tmp2	</destSignalName>
 					<priority>	0	</priority>
 					<minPathToEnd>	0	</minPathToEnd>
 					<fastestStepForAlap>	0	</fastestStepForAlap>
-					<componentID>	1652881992	</componentID>
+					<componentID>	955505904	</componentID>
 					<op>	LT	</op>
 					<ipcore>	notUsed	</ipcore>
 					<leftNode>
 						<VariableAccess>
-							<nodeID>	139181952	</nodeID>
+							<nodeID>	305016262	</nodeID>
 							<startStep>	0	</startStep>
 							<endStep>	0	</endStep>
 							<destType>	int	</destType>
 							<destTypeIsReg>	false	</destTypeIsReg>
-							<destSignalName>	r_run_i_1	</destSignalName>
+							<destSignalName>	r_run_i_2	</destSignalName>
 							<priority>	0	</priority>
 							<minPathToEnd>	0	</minPathToEnd>
 							<fastestStepForAlap>	0	</fastestStepForAlap>
-							<componentID>	308567134	</componentID>
+							<componentID>	748094801	</componentID>
 							<variableName>	i	</variableName>
 							<type>	int	</type>
-							<variableID>	1	</variableID>
+							<variableID>	2	</variableID>
 							<isRead>	true	</isRead>
 							<dependence>		</dependence>
-							<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reg&nbsp;:&nbsp;r_run_i_1&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+							<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reg&nbsp;:&nbsp;r_run_i_2&nbsp;&nbsp;&nbsp;&nbsp;--></component>
 						</VariableAccess>
 					</leftNode>
 
 					<rightNode>
 						<Literal>
-							<nodeID>	621375681	</nodeID>
+							<nodeID>	364850045	</nodeID>
 							<startStep>	0	</startStep>
 							<endStep>	0	</endStep>
 							<destType>	int	</destType>
 							<destTypeIsReg>	false	</destTypeIsReg>
-							<destSignalName>	w_sys_tmp13	</destSignalName>
+							<destSignalName>	w_sys_tmp3	</destSignalName>
 							<priority>	0	</priority>
 							<minPathToEnd>	0	</minPathToEnd>
 							<fastestStepForAlap>	0	</fastestStepForAlap>
-							<componentID>	621375681	</componentID>
+							<componentID>	364850045	</componentID>
 							<type>	int	</type>
 							<value>	10	</value>
-							<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wire&nbsp;:&nbsp;w_sys_tmp13&nbsp;=&nbsp;32'sh0000000a&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+							<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wire&nbsp;:&nbsp;w_sys_tmp3&nbsp;=&nbsp;32'sh0000000a&nbsp;&nbsp;&nbsp;&nbsp;--></component>
 						</Literal>
 					</rightNode>
 					<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;verilog&nbsp;operator&nbsp;:&nbsp;&lt;&nbsp;&nbsp;&nbsp;&nbsp;--></component>
@@ -629,23 +266,23 @@
 		</Phase>
 
 		<Phase>
-			<phaseID>	20	</phaseID>
+			<phaseID>	15	</phaseID>
 			<Stage>
 				<stageID>	0	</stageID>
-				<stepNum>	1	</stepNum>
-				<minCriticalPath>	2	</minCriticalPath>
-				<exprInStage>	<!--arrayA[i]&nbsp;=&nbsp;FIFORead()<br>++i<br>-->	</exprInStage>
+				<stepNum>	4	</stepNum>
+				<minCriticalPath>	5	</minCriticalPath>
+				<exprInStage>	<!--arrayA[i]&nbsp;=&nbsp;obj.deque()<br>-->	</exprInStage>
 				<ArrayAccess>
-					<nodeID>	248095206	</nodeID>
-					<startStep>	0	</startStep>
-					<endStep>	0	</endStep>
+					<nodeID>	968894130	</nodeID>
+					<startStep>	3	</startStep>
+					<endStep>	3	</endStep>
 					<destType>	int	</destType>
 					<destTypeIsReg>	false	</destTypeIsReg>
-					<destSignalName>	w_sys_tmp15	</destSignalName>
+					<destSignalName>	w_sys_tmp5	</destSignalName>
 					<priority>	1	</priority>
 					<minPathToEnd>	1	</minPathToEnd>
-					<fastestStepForAlap>	1	</fastestStepForAlap>
-					<componentID>	1263216072	</componentID>
+					<fastestStepForAlap>	4	</fastestStepForAlap>
+					<componentID>	1982631356	</componentID>
 					<variableName>	arrayA	</variableName>
 					<isRead>	false	</isRead>
 					<type>	int	</type>
@@ -654,95 +291,104 @@
 					<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DPRAM&nbsp;:&nbsp;dpram_arrayA_0&nbsp;&nbsp;&nbsp;&nbsp;--></component>
 					<offset>
 						<VariableAccess>
-							<nodeID>	1470368415	</nodeID>
+							<nodeID>	1728933440	</nodeID>
 							<startStep>	0	</startStep>
 							<endStep>	0	</endStep>
 							<destType>	int	</destType>
 							<destTypeIsReg>	false	</destTypeIsReg>
-							<destSignalName>	r_run_i_1	</destSignalName>
+							<destSignalName>	r_run_i_2	</destSignalName>
 							<priority>	1	</priority>
 							<minPathToEnd>	1	</minPathToEnd>
-							<fastestStepForAlap>	1	</fastestStepForAlap>
-							<componentID>	308567134	</componentID>
+							<fastestStepForAlap>	4	</fastestStepForAlap>
+							<componentID>	748094801	</componentID>
 							<variableName>	i	</variableName>
 							<type>	int	</type>
-							<variableID>	1	</variableID>
+							<variableID>	2	</variableID>
 							<isRead>	true	</isRead>
 							<dependence>		</dependence>
-							<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reg&nbsp;:&nbsp;r_run_i_1&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+							<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reg&nbsp;:&nbsp;r_run_i_2&nbsp;&nbsp;&nbsp;&nbsp;--></component>
 						</VariableAccess>
 					</offset>
 					<assignNode>
-						<UserDefined>
-							<nodeID>	1398588932	</nodeID>
+						<MethodInv>
+							<nodeID>	583098523	</nodeID>
 							<startStep>	0	</startStep>
-							<endStep>	0	</endStep>
+							<endStep>	3	</endStep>
 							<destType>	int	</destType>
 							<destTypeIsReg>	false	</destTypeIsReg>
-							<destSignalName>	w_sys_tmp16	</destSignalName>
-							<priority>	2	</priority>
-							<minPathToEnd>	2	</minPathToEnd>
+							<destSignalName>	w_obj_deque_return	</destSignalName>
+							<priority>	5	</priority>
+							<minPathToEnd>	5	</minPathToEnd>
 							<fastestStepForAlap>	0	</fastestStepForAlap>
-							<componentID>	1387624876	</componentID>
-							<ipName>	FIFORead	</ipName>
-							<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IPcore&nbsp;:&nbsp;FIFORead_inst_0&nbsp;&nbsp;&nbsp;&nbsp;--></component>
-						</UserDefined>
+							<componentID>	1168994800	</componentID>
+							<defClass>	fifoa2b	</defClass>
+							<objName>	obj	</objName>
+							<caleeName>	deque	</caleeName>
+							<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;none&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+						</MethodInv>
 					</assignNode>
 				</ArrayAccess>
+			</Stage>
+
+			<Stage>
+				<stageID>	1	</stageID>
+				<stepNum>	1	</stepNum>
+				<minCriticalPath>	1	</minCriticalPath>
+				<exprInStage>	<!--++i<br>-->	</exprInStage>
 				<VariableAccess>
-					<nodeID>	138884512	</nodeID>
+					<nodeID>	2115200844	</nodeID>
 					<startStep>	0	</startStep>
 					<endStep>	0	</endStep>
 					<destType>	int	</destType>
 					<destTypeIsReg>	false	</destTypeIsReg>
-					<destSignalName>	r_run_i_1	</destSignalName>
+					<destSignalName>	r_run_i_2	</destSignalName>
 					<priority>	1	</priority>
 					<minPathToEnd>	1	</minPathToEnd>
-					<fastestStepForAlap>	1	</fastestStepForAlap>
-					<componentID>	308567134	</componentID>
+					<fastestStepForAlap>	0	</fastestStepForAlap>
+					<componentID>	748094801	</componentID>
 					<variableName>	i	</variableName>
 					<type>	int	</type>
-					<variableID>	1	</variableID>
+					<variableID>	2	</variableID>
 					<isRead>	false	</isRead>
-					<dependence>	1470368415	</dependence>
+					<dependence>		</dependence>
 					<assignNode>
 						<Binary>
-							<nodeID>	2064752542	</nodeID>
+							<nodeID>	736292670	</nodeID>
 							<startStep>	0	</startStep>
 							<endStep>	0	</endStep>
 							<destType>	int	</destType>
 							<destTypeIsReg>	false	</destTypeIsReg>
-							<destSignalName>	w_sys_tmp17	</destSignalName>
+							<destSignalName>	w_sys_tmp6	</destSignalName>
 							<priority>	1	</priority>
 							<minPathToEnd>	1	</minPathToEnd>
-							<fastestStepForAlap>	1	</fastestStepForAlap>
-							<componentID>	2064752542	</componentID>
+							<fastestStepForAlap>	0	</fastestStepForAlap>
+							<componentID>	736292670	</componentID>
 							<op>	+	</op>
 							<ipcore>	notUsed	</ipcore>
 							<leftNode>
 								<VariableAccess>
-									<nodeID>	1107721521	</nodeID>
+									<nodeID>	1070130676	</nodeID>
 									<startStep>	0	</startStep>
 									<endStep>	0	</endStep>
 									<destType>	int	</destType>
 									<destTypeIsReg>	false	</destTypeIsReg>
-									<destSignalName>	r_run_i_1	</destSignalName>
+									<destSignalName>	r_run_i_2	</destSignalName>
 									<priority>	1	</priority>
 									<minPathToEnd>	1	</minPathToEnd>
-									<fastestStepForAlap>	1	</fastestStepForAlap>
-									<componentID>	308567134	</componentID>
+									<fastestStepForAlap>	0	</fastestStepForAlap>
+									<componentID>	748094801	</componentID>
 									<variableName>	i	</variableName>
 									<type>	int	</type>
-									<variableID>	1	</variableID>
+									<variableID>	2	</variableID>
 									<isRead>	true	</isRead>
 									<dependence>		</dependence>
-									<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reg&nbsp;:&nbsp;r_run_i_1&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+									<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reg&nbsp;:&nbsp;r_run_i_2&nbsp;&nbsp;&nbsp;&nbsp;--></component>
 								</VariableAccess>
 							</leftNode>
 
 							<rightNode>
 								<Literal>
-									<nodeID>	939867604	</nodeID>
+									<nodeID>	510727907	</nodeID>
 									<startStep>	0	</startStep>
 									<endStep>	0	</endStep>
 									<destType>	int	</destType>
@@ -750,8 +396,8 @@
 									<destSignalName>	w_sys_intOne	</destSignalName>
 									<priority>	1	</priority>
 									<minPathToEnd>	1	</minPathToEnd>
-									<fastestStepForAlap>	1	</fastestStepForAlap>
-									<componentID>	939867604	</componentID>
+									<fastestStepForAlap>	0	</fastestStepForAlap>
+									<componentID>	510727907	</componentID>
 									<type>	int	</type>
 									<value>	1	</value>
 									<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wire&nbsp;:&nbsp;w_sys_intOne&nbsp;=&nbsp;32'sh1&nbsp;&nbsp;&nbsp;&nbsp;--></component>
@@ -760,13 +406,13 @@
 							<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;verilog&nbsp;operator&nbsp;:&nbsp;+&nbsp;&nbsp;&nbsp;&nbsp;--></component>
 						</Binary>
 					</assignNode>
-					<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reg&nbsp;:&nbsp;r_run_i_1&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+					<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reg&nbsp;:&nbsp;r_run_i_2&nbsp;&nbsp;&nbsp;&nbsp;--></component>
 				</VariableAccess>
 			</Stage>
 
 		</Phase>
 
-	<exprInMethod><!--<br>public&nbsp;void&nbsp;run()&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;int&nbsp;i;<br>&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(i&nbsp;=&nbsp;0;&nbsp;i&nbsp;&lt;&nbsp;10;&nbsp;++i)&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;arrayA[i]&nbsp;=&nbsp;i;<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(i&nbsp;=&nbsp;0;&nbsp;i&nbsp;&lt;&nbsp;10;&nbsp;++i)&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FIFOWrite(arrayA[i]);<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(i&nbsp;=&nbsp;0;&nbsp;i&nbsp;&lt;&nbsp;10;&nbsp;++i)&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;arrayA[i]&nbsp;=&nbsp;FIFORead();<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>}--></exprInMethod>
+	<exprInMethod><!--<br>public&nbsp;void&nbsp;run()&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;int&nbsp;i;<br>&nbsp;&nbsp;&nbsp;&nbsp;boolean&nbsp;check_finished;<br>&nbsp;&nbsp;&nbsp;&nbsp;while&nbsp;(true)&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;check_finished&nbsp;=&nbsp;obj.check_finished();<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(check_finished&nbsp;==&nbsp;true)&nbsp;break;<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(i&nbsp;=&nbsp;0;&nbsp;i&nbsp;&lt;&nbsp;10;&nbsp;++i)&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;arrayA[i]&nbsp;=&nbsp;obj.deque();<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>}--></exprInMethod>
 </METHOD>
 
 	</CLASS>

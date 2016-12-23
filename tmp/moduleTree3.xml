@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="shift_jis" ?>
 
 <module>
-	<name objName = "*thisIsTopModule"    className = "SubUp" />
+	<name objName = "*thisIsTopModule"    className = "ThreadTop" />
+	<subModule>
+		<module>
+			<name objName = "subB"    className = "ThreadSubB" />
+		</module>
+	</subModule>
+	<subModule>
+		<module>
+			<name objName = "subA"    className = "ThreadSubA" />
+		</module>
+	</subModule>
 </module>

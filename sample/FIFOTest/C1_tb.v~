@@ -45,6 +45,15 @@ module testbench;
 		.i_run_req(i_run_req), 
 		.o_run_busy(o_run_busy)
 	);
+
+	FIFOTestB uut (
+		.clock(clock), 
+		.reset_n(reset_n), 
+		.ce(ce), 
+		.i_run_req(i_run_req), 
+		.o_run_busy(o_run_busy)
+	);
+	
 	
 	//make clock
 	parameter CLOCK = 10;
@@ -58,13 +67,13 @@ module testbench;
 		counter <= counter + 1;
 	end
 
-/*
+
   	// シミュレーション設定
      	initial begin
 		$dumpfile("wave2.vcd");
       		$dumpvars(0, testbench);
     	end
-*/
+
 
 	initial begin
 		// Initialize Inputs

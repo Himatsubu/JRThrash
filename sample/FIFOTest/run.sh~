@@ -1,0 +1,5 @@
+java -jar /home/yanai/JRThrash/JRThrash.jar *.java
+cp ../../result/FIFOTestA.v .
+cp ../../result/FIFOTestB.v .
+iverilog  FIFOTestA.v  ram.v fifoa2b.v C1_tb.v
+vvp a.out 
