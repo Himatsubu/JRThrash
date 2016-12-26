@@ -1,5 +1,6 @@
 module fifoA2B(
 	input 	clk,
+	input 	ce,
 	input 	operation_nd,
 	input 	[31:0] a,
 	input 	[31:0]s_we,

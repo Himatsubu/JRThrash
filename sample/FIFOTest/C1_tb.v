@@ -38,7 +38,7 @@ module testbench;
 	
 
 	// Instantiate the Unit Under Test (UUT)
-	FIFOTestA uut1 (
+	fifotesta uut1 (
 		.clock(clock), 
 		.reset_n(reset_n), 
 		.ce(ce), 

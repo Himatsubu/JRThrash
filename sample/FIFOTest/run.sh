@@ -1,7 +1,7 @@
-java -jar /home/yanai/JRThrash/JRThrash.jar *.java
-cp ../../result/FIFOTestA.v .
-cp ../../result/fifoa2b.v .
+java -jar /home/yanai/JRThrash/JRThrash.jar fifotesta.java
+cp ../../result/fifotesta.v .
+#cp ../../result/fifoa2b.v .
 #cp ../../result/FIFOTestB.v .
 #iverilog  FIFOTestA.v FIFOTestB.v  ram.v fifoa2b.v C1_tb.v
-iverilog FIFOTestA.v ram.v fifoa2b.v C1_tb.v
+iverilog fifotesta.v ram.v FIFOA2B.v simple_fifo_32.v simple_fifo.v C1_tb.v
 vvp a.out 
