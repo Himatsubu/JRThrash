@@ -1,8 +1,14 @@
+package net.njlab.sample;
+
+import net.njlab.sample.annotation.JRThrashConvertedIntoIPcore;
+import net.njlab.sample.annotation.JRThrashPortBitWidthSpecify;
+
+
 public class FIFOTestA{
-	private final fifoa2b obj = new fifoa2b();
+	final public fifoa2b obj = new fifoa2b();
 	private final int [] arrayA = new int [10];	
 
-	public void run(){
+	public int run(){
 		int i;
 		int result=0;
 
@@ -11,9 +17,8 @@ public class FIFOTestA{
 		}
 		for(i=0;i<10;i++){
 			obj.enque(arrayA[i]);
-			obj.is_finished(true);
 		}
-
+		obj.is_finished(true);
 
 /*
 		for(i=0;i<10;i++){
@@ -38,4 +43,5 @@ public class FIFOTestA{
 		return a;
 	}
 */
+
 }
