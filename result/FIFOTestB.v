@@ -1,5 +1,5 @@
 /*
-TimeStamp:	2017/1/5		15:47
+TimeStamp:	2017/1/5		16:50
 */
 
 
@@ -9,11 +9,7 @@ module FIFOTestB(
 	input                 ce,	
 	input                 i_run_req,	
 	output                o_run_busy,	
-	output signed  [31:0] o_run_return,	
-	input  signed  [ 3:0] i_fld_arrayA_0_addr_0,	
-	input  signed  [31:0] i_fld_arrayA_0_datain_0,	
-	output signed  [31:0] o_fld_arrayA_0_dataout_0,	
-	input                 i_fld_arrayA_0_r_w_0	
+	output signed  [31:0] o_run_return	
 );
 
 	reg         [ 1:0] r_sys_processing_methodID;
@@ -76,10 +72,9 @@ module FIFOTestB(
 	assign o_run_return = r_sys_run_return;
 	assign w_sys_run_stage_p1 = (r_sys_run_stage + 2'h1);
 	assign w_sys_run_step_p1 = (r_sys_run_step + 3'h1);
-	assign o_fld_arrayA_0_dataout_0 = w_fld_arrayA_0_dataout_0;
-	assign w_fld_arrayA_0_addr_0 = i_fld_arrayA_0_addr_0;
-	assign w_fld_arrayA_0_datain_0 = i_fld_arrayA_0_datain_0;
-	assign w_fld_arrayA_0_r_w_0 = i_fld_arrayA_0_r_w_0;
+	assign w_fld_arrayA_0_addr_0 = 4'sh0;
+	assign w_fld_arrayA_0_datain_0 = 32'sh0;
+	assign w_fld_arrayA_0_r_w_0 = 1'h0;
 	assign w_fld_arrayA_0_ce_0 = w_sys_ce;
 	assign w_fld_arrayA_0_ce_1 = w_sys_ce;
 	assign w_sys_tmp1 = (r_run_check_finished_3 == w_sys_boolFalse);
@@ -594,11 +589,6 @@ module FIFOTestB(
 
 							case(r_sys_run_stage) 
 								2'h0: begin
-									if((r_sys_run_step==3'h2)) begin
-										r_sys_run_step <= ((w_obj_check_finished_busy) ? r_sys_run_step : w_sys_run_step_p1);
-
-									end
-									else
 									if((r_sys_run_step==3'h0) || (r_sys_run_step==3'h1)) begin
 										r_sys_run_step <= w_sys_run_step_p1;
 
@@ -606,6 +596,11 @@ module FIFOTestB(
 									else
 									if((r_sys_run_step==3'h3)) begin
 										r_sys_run_step <= 3'h0;
+
+									end
+									else
+									if((r_sys_run_step==3'h2)) begin
+										r_sys_run_step <= ((w_obj_check_finished_busy) ? r_sys_run_step : w_sys_run_step_p1);
 
 									end
 								end
@@ -712,13 +707,13 @@ module FIFOTestB(
 
 							case(r_sys_run_stage) 
 								2'h0: begin
-									if((r_sys_run_step==3'h0) || (r_sys_run_step==3'h1)) begin
-										r_sys_run_step <= w_sys_run_step_p1;
+									if((r_sys_run_step==3'h2)) begin
+										r_sys_run_step <= 3'h0;
 
 									end
 									else
-									if((r_sys_run_step==3'h2)) begin
-										r_sys_run_step <= 3'h0;
+									if((r_sys_run_step==3'h0) || (r_sys_run_step==3'h1)) begin
+										r_sys_run_step <= w_sys_run_step_p1;
 
 									end
 								end

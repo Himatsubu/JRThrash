@@ -1,5 +1,5 @@
 public class FIFOTestB{
-	final int [] arrayA = new int [10];	
+	final private int [] arrayA = new int [10];	
 	final public fifoa2b obj = new fifoa2b();
 
 	public int run(){

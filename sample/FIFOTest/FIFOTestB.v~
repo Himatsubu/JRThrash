@@ -3,12 +3,13 @@ TimeStamp:	2017/1/5		16:50
 */
 
 
-module FIFOTestA(
+module FIFOTestB(
 	input                 clock,	
 	input                 reset_n,	
 	input                 ce,	
 	input                 i_run_req,	
-	output                o_run_busy	
+	output                o_run_busy,	
+	output signed  [31:0] o_run_return	
 );
 
 	reg         [ 1:0] r_sys_processing_methodID;
@@ -17,6 +18,7 @@ module FIFOTestA(
 	wire signed [31:0] w_sys_intOne;
 	wire signed [31:0] w_sys_intZero;
 	wire               w_sys_ce;
+	reg  signed [31:0] r_sys_run_return;
 	reg         [ 1:0] r_sys_run_caller;
 	reg                r_sys_run_req;
 	reg         [ 4:0] r_sys_run_phase;
@@ -25,18 +27,19 @@ module FIFOTestA(
 	reg                r_sys_run_busy;
 	wire        [ 1:0] w_sys_run_stage_p1;
 	wire        [ 2:0] w_sys_run_step_p1;
-	wire signed [ 3:0] w_fld_arrayA_1_addr_0;
-	wire signed [31:0] w_fld_arrayA_1_datain_0;
-	wire signed [31:0] w_fld_arrayA_1_dataout_0;
-	wire               w_fld_arrayA_1_r_w_0;
-	wire               w_fld_arrayA_1_ce_0;
-	reg  signed [ 3:0] r_fld_arrayA_1_addr_1;
-	reg  signed [31:0] r_fld_arrayA_1_datain_1;
-	wire signed [31:0] w_fld_arrayA_1_dataout_1;
-	reg                r_fld_arrayA_1_r_w_1;
-	wire               w_fld_arrayA_1_ce_1;
+	wire signed [ 3:0] w_fld_arrayA_0_addr_0;
+	wire signed [31:0] w_fld_arrayA_0_datain_0;
+	wire signed [31:0] w_fld_arrayA_0_dataout_0;
+	wire               w_fld_arrayA_0_r_w_0;
+	wire               w_fld_arrayA_0_ce_0;
+	reg  signed [ 3:0] r_fld_arrayA_0_addr_1;
+	reg  signed [31:0] r_fld_arrayA_0_datain_1;
+	wire signed [31:0] w_fld_arrayA_0_dataout_1;
+	reg                r_fld_arrayA_0_r_w_1;
+	wire               w_fld_arrayA_0_ce_1;
 	reg  signed [31:0] r_run_i_2;
-	reg  signed [31:0] r_run_result_3;
+	reg                r_run_check_finished_3;
+	reg  signed [31:0] r_run_result_4;
 	reg                r_obj_is_finished_req;
 	wire               w_obj_is_finished_busy;
 	reg                r_obj_check_finished_req;
@@ -50,12 +53,15 @@ module FIFOTestA(
 	reg                r_obj_is_finished_in_finished;
 	reg  signed [31:0] r_obj_enque_n_in;
 	wire               w_sys_tmp1;
-	wire signed [31:0] w_sys_tmp2;
-	wire signed [31:0] w_sys_tmp5;
-	wire               w_sys_tmp6;
-	wire signed [31:0] w_sys_tmp7;
-	wire signed [31:0] w_sys_tmp9;
+	wire               w_sys_tmp2;
+	wire signed [31:0] w_sys_tmp3;
+	wire signed [31:0] w_sys_tmp6;
+	wire               w_sys_tmp7;
+	wire signed [31:0] w_sys_tmp8;
 	wire signed [31:0] w_sys_tmp10;
+	wire signed [31:0] w_sys_tmp11;
+	wire signed [31:0] w_sys_tmp12;
+	wire signed [31:0] w_sys_tmp13;
 
 	assign w_sys_boolTrue = 1'b1;
 	assign w_sys_boolFalse = 1'b0;
@@ -63,22 +69,26 @@ module FIFOTestA(
 	assign w_sys_intZero = 32'sh0;
 	assign w_sys_ce = w_sys_boolTrue & ce;
 	assign o_run_busy = r_sys_run_busy;
+	assign o_run_return = r_sys_run_return;
 	assign w_sys_run_stage_p1 = (r_sys_run_stage + 2'h1);
 	assign w_sys_run_step_p1 = (r_sys_run_step + 3'h1);
-	assign w_fld_arrayA_1_addr_0 = 4'sh0;
-	assign w_fld_arrayA_1_datain_0 = 32'sh0;
-	assign w_fld_arrayA_1_r_w_0 = 1'h0;
-	assign w_fld_arrayA_1_ce_0 = w_sys_ce;
-	assign w_fld_arrayA_1_ce_1 = w_sys_ce;
-	assign w_sys_tmp1 = (r_run_i_2 < w_sys_tmp2);
-	assign w_sys_tmp2 = 32'sh0000000a;
-	assign w_sys_tmp5 = (r_run_i_2 + w_sys_intOne);
-	assign w_sys_tmp6 = (r_run_i_2 < w_sys_tmp7);
-	assign w_sys_tmp7 = 32'sh0000000a;
-	assign w_sys_tmp9 = w_fld_arrayA_1_dataout_1;
-	assign w_sys_tmp10 = (r_run_i_2 + w_sys_intOne);
+	assign w_fld_arrayA_0_addr_0 = 4'sh0;
+	assign w_fld_arrayA_0_datain_0 = 32'sh0;
+	assign w_fld_arrayA_0_r_w_0 = 1'h0;
+	assign w_fld_arrayA_0_ce_0 = w_sys_ce;
+	assign w_fld_arrayA_0_ce_1 = w_sys_ce;
+	assign w_sys_tmp1 = (r_run_check_finished_3 == w_sys_boolFalse);
+	assign w_sys_tmp2 = (r_run_i_2 < w_sys_tmp3);
+	assign w_sys_tmp3 = 32'sh0000000a;
+	assign w_sys_tmp6 = (r_run_i_2 + w_sys_intOne);
+	assign w_sys_tmp7 = (r_run_i_2 < w_sys_tmp8);
+	assign w_sys_tmp8 = 32'sh0000000a;
+	assign w_sys_tmp10 = (r_run_result_4 + w_sys_tmp11);
+	assign w_sys_tmp11 = w_fld_arrayA_0_dataout_1;
+	assign w_sys_tmp12 = (r_run_i_2 + w_sys_intOne);
+	assign w_sys_tmp13 = r_run_result_4;
 
-
+/*
 	fifoa2b
 		obj_inst(
 			.o_check_finished_busy (w_obj_check_finished_busy),
@@ -97,20 +107,20 @@ module FIFOTestA(
 			.reset_n (reset_n),
 			.clock (clock)
 		);
-
+*/
 	DualPortRAM #(.DWIDTH(32), .AWIDTH(4), .WORDS(10) )
-		dpram_arrayA_1(
+		dpram_arrayA_0(
 			.clk (clock),
-			.ce_0 (w_fld_arrayA_1_ce_0),
-			.addr_0 (w_fld_arrayA_1_addr_0),
-			.datain_0 (w_fld_arrayA_1_datain_0),
-			.dataout_0 (w_fld_arrayA_1_dataout_0),
-			.r_w_0 (w_fld_arrayA_1_r_w_0),
-			.ce_1 (w_fld_arrayA_1_ce_1),
-			.addr_1 (r_fld_arrayA_1_addr_1),
-			.datain_1 (r_fld_arrayA_1_datain_1),
-			.dataout_1 (w_fld_arrayA_1_dataout_1),
-			.r_w_1 (r_fld_arrayA_1_r_w_1)
+			.ce_0 (w_fld_arrayA_0_ce_0),
+			.addr_0 (w_fld_arrayA_0_addr_0),
+			.datain_0 (w_fld_arrayA_0_datain_0),
+			.dataout_0 (w_fld_arrayA_0_dataout_0),
+			.r_w_0 (w_fld_arrayA_0_r_w_0),
+			.ce_1 (w_fld_arrayA_0_ce_1),
+			.addr_1 (r_fld_arrayA_0_addr_1),
+			.datain_1 (r_fld_arrayA_0_datain_1),
+			.dataout_1 (w_fld_arrayA_0_dataout_1),
+			.r_w_1 (r_fld_arrayA_0_r_w_1)
 		);
 
 	always@(posedge clock)begin
@@ -130,8 +140,33 @@ module FIFOTestA(
 				2'h1: begin
 
 					case(r_sys_run_phase) 
-						5'h11: begin
+						5'h19: begin
 							r_sys_processing_methodID <= r_sys_run_caller;
+						end
+
+					endcase
+				end
+
+			endcase
+		end
+	end
+
+
+	always@(posedge clock)begin
+
+		if(( !reset_n )) begin
+			r_sys_run_return <= 32'sh0;
+
+		end
+		else
+		if(w_sys_ce) begin
+
+			case(r_sys_processing_methodID) 
+				2'h1: begin
+
+					case(r_sys_run_phase) 
+						5'h16: begin
+							r_sys_run_return <= w_sys_tmp13;
 						end
 
 					endcase
@@ -195,7 +230,7 @@ module FIFOTestA(
 							case(r_sys_run_stage) 
 								2'h0: begin
 									if((r_sys_run_step==3'h0)) begin
-										r_sys_run_phase <= 5'h5;
+										r_sys_run_phase <= ((w_sys_boolFalse) ? 5'h6 : 5'hb);
 
 									end
 								end
@@ -203,12 +238,12 @@ module FIFOTestA(
 							endcase
 						end
 
-						5'h5: begin
+						5'h6: begin
 
 							case(r_sys_run_stage) 
 								2'h0: begin
-									if((r_sys_run_step==3'h0)) begin
-										r_sys_run_phase <= ((w_sys_tmp1) ? 5'h8 : 5'ha);
+									if((r_sys_run_step==3'h3)) begin
+										r_sys_run_phase <= 5'h8;
 
 									end
 								end
@@ -221,7 +256,7 @@ module FIFOTestA(
 							case(r_sys_run_stage) 
 								2'h0: begin
 									if((r_sys_run_step==3'h0)) begin
-										r_sys_run_phase <= 5'h5;
+										r_sys_run_phase <= ((w_sys_tmp1) ? 5'h9 : 5'h4);
 
 									end
 								end
@@ -229,17 +264,8 @@ module FIFOTestA(
 							endcase
 						end
 
-						5'ha: begin
-
-							case(r_sys_run_stage) 
-								2'h0: begin
-									if((r_sys_run_step==3'h0)) begin
-										r_sys_run_phase <= 5'hb;
-
-									end
-								end
-
-							endcase
+						5'h9: begin
+							r_sys_run_phase <= 5'hb;
 						end
 
 						5'hb: begin
@@ -247,7 +273,7 @@ module FIFOTestA(
 							case(r_sys_run_stage) 
 								2'h0: begin
 									if((r_sys_run_step==3'h0)) begin
-										r_sys_run_phase <= ((w_sys_tmp6) ? 5'he : 5'hf);
+										r_sys_run_phase <= 5'hc;
 
 									end
 								end
@@ -255,12 +281,12 @@ module FIFOTestA(
 							endcase
 						end
 
-						5'he: begin
+						5'hc: begin
 
 							case(r_sys_run_stage) 
-								2'h1: begin
+								2'h0: begin
 									if((r_sys_run_step==3'h0)) begin
-										r_sys_run_phase <= 5'hb;
+										r_sys_run_phase <= ((w_sys_tmp2) ? 5'hf : 5'h11);
 
 									end
 								end
@@ -271,9 +297,9 @@ module FIFOTestA(
 						5'hf: begin
 
 							case(r_sys_run_stage) 
-								2'h0: begin
-									if((r_sys_run_step==3'h3)) begin
-										r_sys_run_phase <= 5'h11;
+								2'h1: begin
+									if((r_sys_run_step==3'h0)) begin
+										r_sys_run_phase <= 5'hc;
 
 									end
 								end
@@ -282,6 +308,62 @@ module FIFOTestA(
 						end
 
 						5'h11: begin
+
+							case(r_sys_run_stage) 
+								2'h0: begin
+									if((r_sys_run_step==3'h0)) begin
+										r_sys_run_phase <= 5'h12;
+
+									end
+								end
+
+							endcase
+						end
+
+						5'h12: begin
+
+							case(r_sys_run_stage) 
+								2'h0: begin
+									if((r_sys_run_step==3'h0)) begin
+										r_sys_run_phase <= ((w_sys_tmp7) ? 5'h15 : 5'h17);
+
+									end
+								end
+
+							endcase
+						end
+
+						5'h15: begin
+
+							case(r_sys_run_stage) 
+								2'h0: begin
+									if((r_sys_run_step==3'h2)) begin
+										r_sys_run_phase <= 5'h12;
+
+									end
+								end
+
+							endcase
+						end
+
+						5'h16: begin
+							r_sys_run_phase <= 5'h19;
+						end
+
+						5'h17: begin
+
+							case(r_sys_run_stage) 
+								2'h0: begin
+									if((r_sys_run_step==3'h0)) begin
+										r_sys_run_phase <= 5'h16;
+
+									end
+								end
+
+							endcase
+						end
+
+						5'h19: begin
 							r_sys_run_phase <= 5'h0;
 						end
 
@@ -332,11 +414,11 @@ module FIFOTestA(
 							endcase
 						end
 
-						5'h5: begin
+						5'h6: begin
 
 							case(r_sys_run_stage) 
 								2'h0: begin
-									if((r_sys_run_step==3'h0)) begin
+									if((r_sys_run_step==3'h3)) begin
 										r_sys_run_stage <= 2'h0;
 
 									end
@@ -346,19 +428,6 @@ module FIFOTestA(
 						end
 
 						5'h8: begin
-
-							case(r_sys_run_stage) 
-								2'h0: begin
-									if((r_sys_run_step==3'h0)) begin
-										r_sys_run_stage <= 2'h0;
-
-									end
-								end
-
-							endcase
-						end
-
-						5'ha: begin
 
 							case(r_sys_run_stage) 
 								2'h0: begin
@@ -384,11 +453,24 @@ module FIFOTestA(
 							endcase
 						end
 
-						5'he: begin
+						5'hc: begin
 
 							case(r_sys_run_stage) 
 								2'h0: begin
-									if((r_sys_run_step==3'h5)) begin
+									if((r_sys_run_step==3'h0)) begin
+										r_sys_run_stage <= 2'h0;
+
+									end
+								end
+
+							endcase
+						end
+
+						5'hf: begin
+
+							case(r_sys_run_stage) 
+								2'h0: begin
+									if((r_sys_run_step==3'h3)) begin
 										r_sys_run_stage <= w_sys_run_stage_p1;
 
 									end
@@ -404,11 +486,50 @@ module FIFOTestA(
 							endcase
 						end
 
-						5'hf: begin
+						5'h11: begin
 
 							case(r_sys_run_stage) 
 								2'h0: begin
-									if((r_sys_run_step==3'h3)) begin
+									if((r_sys_run_step==3'h0)) begin
+										r_sys_run_stage <= 2'h0;
+
+									end
+								end
+
+							endcase
+						end
+
+						5'h12: begin
+
+							case(r_sys_run_stage) 
+								2'h0: begin
+									if((r_sys_run_step==3'h0)) begin
+										r_sys_run_stage <= 2'h0;
+
+									end
+								end
+
+							endcase
+						end
+
+						5'h15: begin
+
+							case(r_sys_run_stage) 
+								2'h0: begin
+									if((r_sys_run_step==3'h2)) begin
+										r_sys_run_stage <= 2'h0;
+
+									end
+								end
+
+							endcase
+						end
+
+						5'h17: begin
+
+							case(r_sys_run_stage) 
+								2'h0: begin
+									if((r_sys_run_step==3'h0)) begin
 										r_sys_run_stage <= 2'h0;
 
 									end
@@ -464,12 +585,22 @@ module FIFOTestA(
 							endcase
 						end
 
-						5'h5: begin
+						5'h6: begin
 
 							case(r_sys_run_stage) 
 								2'h0: begin
-									if((r_sys_run_step==3'h0)) begin
+									if((r_sys_run_step==3'h0) || (r_sys_run_step==3'h1)) begin
+										r_sys_run_step <= w_sys_run_step_p1;
+
+									end
+									else
+									if((r_sys_run_step==3'h3)) begin
 										r_sys_run_step <= 3'h0;
+
+									end
+									else
+									if((r_sys_run_step==3'h2)) begin
+										r_sys_run_step <= ((w_obj_check_finished_busy) ? r_sys_run_step : w_sys_run_step_p1);
 
 									end
 								end
@@ -478,19 +609,6 @@ module FIFOTestA(
 						end
 
 						5'h8: begin
-
-							case(r_sys_run_stage) 
-								2'h0: begin
-									if((r_sys_run_step==3'h0)) begin
-										r_sys_run_step <= 3'h0;
-
-									end
-								end
-
-							endcase
-						end
-
-						5'ha: begin
 
 							case(r_sys_run_stage) 
 								2'h0: begin
@@ -516,27 +634,10 @@ module FIFOTestA(
 							endcase
 						end
 
-						5'he: begin
+						5'hc: begin
 
 							case(r_sys_run_stage) 
 								2'h0: begin
-									if((r_sys_run_step==3'h5)) begin
-										r_sys_run_step <= 3'h0;
-
-									end
-									else
-									if((3'h0<=r_sys_run_step && r_sys_run_step<=3'h3)) begin
-										r_sys_run_step <= w_sys_run_step_p1;
-
-									end
-									else
-									if((r_sys_run_step==3'h4)) begin
-										r_sys_run_step <= ((w_obj_enque_busy) ? r_sys_run_step : w_sys_run_step_p1);
-
-									end
-								end
-
-								2'h1: begin
 									if((r_sys_run_step==3'h0)) begin
 										r_sys_run_step <= 3'h0;
 
@@ -551,7 +652,7 @@ module FIFOTestA(
 							case(r_sys_run_stage) 
 								2'h0: begin
 									if((r_sys_run_step==3'h2)) begin
-										r_sys_run_step <= ((w_obj_is_finished_busy) ? r_sys_run_step : w_sys_run_step_p1);
+										r_sys_run_step <= ((w_obj_deque_busy) ? r_sys_run_step : w_sys_run_step_p1);
 
 									end
 									else
@@ -561,6 +662,70 @@ module FIFOTestA(
 									end
 									else
 									if((r_sys_run_step==3'h3)) begin
+										r_sys_run_step <= 3'h0;
+
+									end
+								end
+
+								2'h1: begin
+									if((r_sys_run_step==3'h0)) begin
+										r_sys_run_step <= 3'h0;
+
+									end
+								end
+
+							endcase
+						end
+
+						5'h11: begin
+
+							case(r_sys_run_stage) 
+								2'h0: begin
+									if((r_sys_run_step==3'h0)) begin
+										r_sys_run_step <= 3'h0;
+
+									end
+								end
+
+							endcase
+						end
+
+						5'h12: begin
+
+							case(r_sys_run_stage) 
+								2'h0: begin
+									if((r_sys_run_step==3'h0)) begin
+										r_sys_run_step <= 3'h0;
+
+									end
+								end
+
+							endcase
+						end
+
+						5'h15: begin
+
+							case(r_sys_run_stage) 
+								2'h0: begin
+									if((r_sys_run_step==3'h2)) begin
+										r_sys_run_step <= 3'h0;
+
+									end
+									else
+									if((r_sys_run_step==3'h0) || (r_sys_run_step==3'h1)) begin
+										r_sys_run_step <= w_sys_run_step_p1;
+
+									end
+								end
+
+							endcase
+						end
+
+						5'h17: begin
+
+							case(r_sys_run_stage) 
+								2'h0: begin
+									if((r_sys_run_step==3'h0)) begin
 										r_sys_run_step <= 3'h0;
 
 									end
@@ -598,7 +763,7 @@ module FIFOTestA(
 							r_sys_run_busy <= w_sys_boolTrue;
 						end
 
-						5'h11: begin
+						5'h19: begin
 							r_sys_run_busy <= w_sys_boolFalse;
 						end
 
@@ -613,7 +778,7 @@ module FIFOTestA(
 	always@(posedge clock)begin
 
 		if(( !reset_n )) begin
-			r_fld_arrayA_1_addr_1 <= 4'sh0;
+			r_fld_arrayA_0_addr_1 <= 4'sh0;
 
 		end
 		else
@@ -623,12 +788,12 @@ module FIFOTestA(
 				2'h1: begin
 
 					case(r_sys_run_phase) 
-						5'h8: begin
+						5'hf: begin
 
 							case(r_sys_run_stage) 
 								2'h0: begin
-									if((r_sys_run_step==3'h0)) begin
-										r_fld_arrayA_1_addr_1 <= $signed( r_run_i_2[3:0] );
+									if((r_sys_run_step==3'h3)) begin
+										r_fld_arrayA_0_addr_1 <= $signed( r_run_i_2[3:0] );
 
 									end
 								end
@@ -636,12 +801,12 @@ module FIFOTestA(
 							endcase
 						end
 
-						5'he: begin
+						5'h15: begin
 
 							case(r_sys_run_stage) 
 								2'h0: begin
 									if((r_sys_run_step==3'h0)) begin
-										r_fld_arrayA_1_addr_1 <= $signed( r_run_i_2[3:0] );
+										r_fld_arrayA_0_addr_1 <= $signed( r_run_i_2[3:0] );
 
 									end
 								end
@@ -665,12 +830,12 @@ module FIFOTestA(
 				2'h1: begin
 
 					case(r_sys_run_phase) 
-						5'h8: begin
+						5'hf: begin
 
 							case(r_sys_run_stage) 
 								2'h0: begin
-									if((r_sys_run_step==3'h0)) begin
-										r_fld_arrayA_1_datain_1 <= r_run_i_2;
+									if((r_sys_run_step==3'h3)) begin
+										r_fld_arrayA_0_datain_1 <= w_obj_deque_return;
 
 									end
 								end
@@ -689,7 +854,7 @@ module FIFOTestA(
 	always@(posedge clock)begin
 
 		if(( !reset_n )) begin
-			r_fld_arrayA_1_r_w_1 <= w_sys_boolFalse;
+			r_fld_arrayA_0_r_w_1 <= w_sys_boolFalse;
 
 		end
 		else
@@ -699,12 +864,12 @@ module FIFOTestA(
 				2'h1: begin
 
 					case(r_sys_run_phase) 
-						5'h8: begin
+						5'hf: begin
 
 							case(r_sys_run_stage) 
 								2'h0: begin
-									if((r_sys_run_step==3'h0)) begin
-										r_fld_arrayA_1_r_w_1 <= w_sys_boolTrue;
+									if((r_sys_run_step==3'h3)) begin
+										r_fld_arrayA_0_r_w_1 <= w_sys_boolTrue;
 
 									end
 								end
@@ -712,12 +877,12 @@ module FIFOTestA(
 							endcase
 						end
 
-						5'he: begin
+						5'h15: begin
 
 							case(r_sys_run_stage) 
 								2'h0: begin
 									if((r_sys_run_step==3'h0)) begin
-										r_fld_arrayA_1_r_w_1 <= w_sys_boolFalse;
+										r_fld_arrayA_0_r_w_1 <= w_sys_boolFalse;
 
 									end
 								end
@@ -725,8 +890,8 @@ module FIFOTestA(
 							endcase
 						end
 
-						5'h11: begin
-							r_fld_arrayA_1_r_w_1 <= w_sys_boolFalse;
+						5'h19: begin
+							r_fld_arrayA_0_r_w_1 <= w_sys_boolFalse;
 						end
 
 					endcase
@@ -745,7 +910,7 @@ module FIFOTestA(
 				2'h1: begin
 
 					case(r_sys_run_phase) 
-						5'h4: begin
+						5'hb: begin
 
 							case(r_sys_run_stage) 
 								2'h0: begin
@@ -758,38 +923,67 @@ module FIFOTestA(
 							endcase
 						end
 
-						5'h8: begin
-
-							case(r_sys_run_stage) 
-								2'h0: begin
-									if((r_sys_run_step==3'h0)) begin
-										r_run_i_2 <= w_sys_tmp5;
-
-									end
-								end
-
-							endcase
-						end
-
-						5'ha: begin
-
-							case(r_sys_run_stage) 
-								2'h0: begin
-									if((r_sys_run_step==3'h0)) begin
-										r_run_i_2 <= w_sys_intZero;
-
-									end
-								end
-
-							endcase
-						end
-
-						5'he: begin
+						5'hf: begin
 
 							case(r_sys_run_stage) 
 								2'h1: begin
 									if((r_sys_run_step==3'h0)) begin
-										r_run_i_2 <= w_sys_tmp10;
+										r_run_i_2 <= w_sys_tmp6;
+
+									end
+								end
+
+							endcase
+						end
+
+						5'h11: begin
+
+							case(r_sys_run_stage) 
+								2'h0: begin
+									if((r_sys_run_step==3'h0)) begin
+										r_run_i_2 <= w_sys_intZero;
+
+									end
+								end
+
+							endcase
+						end
+
+						5'h15: begin
+
+							case(r_sys_run_stage) 
+								2'h0: begin
+									if((r_sys_run_step==3'h0)) begin
+										r_run_i_2 <= w_sys_tmp12;
+
+									end
+								end
+
+							endcase
+						end
+
+					endcase
+				end
+
+			endcase
+		end
+	end
+
+
+	always@(posedge clock)begin
+
+		if(w_sys_ce) begin
+
+			case(r_sys_processing_methodID) 
+				2'h1: begin
+
+					case(r_sys_run_phase) 
+						5'h6: begin
+
+							case(r_sys_run_stage) 
+								2'h0: begin
+									if((r_sys_run_step==3'h3)) begin
+										r_run_check_finished_3 <= w_obj_check_finished_return;
 
 									end
 								end
@@ -818,7 +1012,20 @@ module FIFOTestA(
 							case(r_sys_run_stage) 
 								2'h0: begin
 									if((r_sys_run_step==3'h0)) begin
-										r_run_result_3 <= w_sys_intZero;
+										r_run_result_4 <= w_sys_intZero;
+
+									end
+								end
+
+							endcase
+						end
+
+						5'h15: begin
+
+							case(r_sys_run_stage) 
+								2'h0: begin
+									if((r_sys_run_step==3'h2)) begin
+										r_run_result_4 <= w_sys_tmp10;
 
 									end
 								end
@@ -840,6 +1047,15 @@ module FIFOTestA(
 			r_obj_is_finished_req <= w_sys_boolFalse;
 
 		end
+	end
+
+
+	always@(posedge clock)begin
+
+		if(( !reset_n )) begin
+			r_obj_check_finished_req <= w_sys_boolFalse;
+
+		end
 		else
 		if(w_sys_ce) begin
 
@@ -847,17 +1063,17 @@ module FIFOTestA(
 				2'h1: begin
 
 					case(r_sys_run_phase) 
-						5'hf: begin
+						5'h6: begin
 
 							case(r_sys_run_stage) 
 								2'h0: begin
-									if((r_sys_run_step==3'h0)) begin
-										r_obj_is_finished_req <= w_sys_boolTrue;
+									if((r_sys_run_step==3'h1)) begin
+										r_obj_check_finished_req <= w_sys_boolFalse;
 
 									end
 									else
-									if((r_sys_run_step==3'h1)) begin
-										r_obj_is_finished_req <= w_sys_boolFalse;
+									if((r_sys_run_step==3'h0)) begin
+										r_obj_check_finished_req <= w_sys_boolTrue;
 
 									end
 								end
@@ -869,15 +1085,6 @@ module FIFOTestA(
 				end
 
 			endcase
-		end
-	end
-
-
-	always@(posedge clock)begin
-
-		if(( !reset_n )) begin
-			r_obj_check_finished_req <= w_sys_boolFalse;
-
 		end
 	end
 
@@ -888,36 +1095,6 @@ module FIFOTestA(
 			r_obj_enque_req <= w_sys_boolFalse;
 
 		end
-		else
-		if(w_sys_ce) begin
-
-			case(r_sys_processing_methodID) 
-				2'h1: begin
-
-					case(r_sys_run_phase) 
-						5'he: begin
-
-							case(r_sys_run_stage) 
-								2'h0: begin
-									if((r_sys_run_step==3'h2)) begin
-										r_obj_enque_req <= w_sys_boolTrue;
-
-									end
-									else
-									if((r_sys_run_step==3'h3)) begin
-										r_obj_enque_req <= w_sys_boolFalse;
-
-									end
-								end
-
-							endcase
-						end
-
-					endcase
-				end
-
-			endcase
-		end
 	end
 
 
@@ -927,11 +1104,7 @@ module FIFOTestA(
 			r_obj_deque_req <= w_sys_boolFalse;
 
 		end
-	end
-
-
-	always@(posedge clock)begin
-
+		else
 		if(w_sys_ce) begin
 
 			case(r_sys_processing_methodID) 
@@ -942,37 +1115,13 @@ module FIFOTestA(
 
 							case(r_sys_run_stage) 
 								2'h0: begin
-									if((r_sys_run_step==3'h0)) begin
-										r_obj_is_finished_in_finished <= w_sys_boolFalse;
+									if((r_sys_run_step==3'h1)) begin
+										r_obj_deque_req <= w_sys_boolFalse;
 
 									end
-								end
-
-							endcase
-						end
-
-					endcase
-				end
-
-			endcase
-		end
-	end
-
-
-	always@(posedge clock)begin
-
-		if(w_sys_ce) begin
-
-			case(r_sys_processing_methodID) 
-				2'h1: begin
-
-					case(r_sys_run_phase) 
-						5'he: begin
-
-							case(r_sys_run_stage) 
-								2'h0: begin
-									if((r_sys_run_step==3'h2)) begin
-										r_obj_enque_n_in <= w_sys_tmp9;
+									else
+									if((r_sys_run_step==3'h0)) begin
+										r_obj_deque_req <= w_sys_boolTrue;
 
 									end
 								end

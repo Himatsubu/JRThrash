@@ -1,5 +1,5 @@
 /*
-TimeStamp:	2017/1/5		15:47
+TimeStamp:	2017/1/5		16:50
 */
 
 
@@ -9,43 +9,16 @@ module FIFOTestB(
 	input                 ce,	
 	input                 i_run_req,	
 	output                o_run_busy,	
-	output signed  [31:0] o_run_return,	
-	input  signed  [ 3:0] i_fld_arrayA_0_addr_0,	
-	input  signed  [31:0] i_fld_arrayA_0_datain_0,	
-	output signed  [31:0] o_fld_arrayA_0_dataout_0,	
-	input                 i_fld_arrayA_0_r_w_0,
+	output signed  [31:0] o_run_return
 
-	//ここからは追加
 	input                 w_obj_check_finished_busy,
 	output                r_obj_check_finished_req,
 	input                 w_obj_checl_finished_return,
 	input                 w_obj_deque_busy,
 	output                r_obj_deque_req,
 	input                 w_obj_deque_return,
-
-
 );
 
-/*
-	fifoa2b
-		obj_inst(
-			.o_check_finished_busy (w_obj_check_finished_busy),
-			.i_check_finished_req (r_obj_check_finished_req),
-			.o_check_finished_return (w_obj_check_finished_return),
-			.o_deque_busy (w_obj_deque_busy),
-			.i_deque_req (r_obj_deque_req),
-			.o_deque_return (w_obj_deque_return),
-			.o_enque_busy (w_obj_enque_busy),
-			.i_enque_n_in_5 (r_obj_enque_n_in),
-			.i_enque_req (r_obj_enque_req),
-			.o_is_finished_busy (w_obj_is_finished_busy),
-			.i_is_finished_in_finished_4 (r_obj_is_finished_in_finished),
-			.i_is_finished_req (r_obj_is_finished_req),
-			.ce (ce),
-			.reset_n (reset_n),
-			.clock (clock)
-		);
-*/
 	reg         [ 1:0] r_sys_processing_methodID;
 	wire               w_sys_boolTrue;
 	wire               w_sys_boolFalse;
@@ -106,10 +79,9 @@ module FIFOTestB(
 	assign o_run_return = r_sys_run_return;
 	assign w_sys_run_stage_p1 = (r_sys_run_stage + 2'h1);
 	assign w_sys_run_step_p1 = (r_sys_run_step + 3'h1);
-	assign o_fld_arrayA_0_dataout_0 = w_fld_arrayA_0_dataout_0;
-	assign w_fld_arrayA_0_addr_0 = i_fld_arrayA_0_addr_0;
-	assign w_fld_arrayA_0_datain_0 = i_fld_arrayA_0_datain_0;
-	assign w_fld_arrayA_0_r_w_0 = i_fld_arrayA_0_r_w_0;
+	assign w_fld_arrayA_0_addr_0 = 4'sh0;
+	assign w_fld_arrayA_0_datain_0 = 32'sh0;
+	assign w_fld_arrayA_0_r_w_0 = 1'h0;
 	assign w_fld_arrayA_0_ce_0 = w_sys_ce;
 	assign w_fld_arrayA_0_ce_1 = w_sys_ce;
 	assign w_sys_tmp1 = (r_run_check_finished_3 == w_sys_boolFalse);
@@ -624,11 +596,6 @@ module FIFOTestB(
 
 							case(r_sys_run_stage) 
 								2'h0: begin
-									if((r_sys_run_step==3'h2)) begin
-										r_sys_run_step <= ((w_obj_check_finished_busy) ? r_sys_run_step : w_sys_run_step_p1);
-
-									end
-									else
 									if((r_sys_run_step==3'h0) || (r_sys_run_step==3'h1)) begin
 										r_sys_run_step <= w_sys_run_step_p1;
 
@@ -636,6 +603,11 @@ module FIFOTestB(
 									else
 									if((r_sys_run_step==3'h3)) begin
 										r_sys_run_step <= 3'h0;
+
+									end
+									else
+									if((r_sys_run_step==3'h2)) begin
+										r_sys_run_step <= ((w_obj_check_finished_busy) ? r_sys_run_step : w_sys_run_step_p1);
 
 									end
 								end
@@ -742,13 +714,13 @@ module FIFOTestB(
 
 							case(r_sys_run_stage) 
 								2'h0: begin
-									if((r_sys_run_step==3'h0) || (r_sys_run_step==3'h1)) begin
-										r_sys_run_step <= w_sys_run_step_p1;
+									if((r_sys_run_step==3'h2)) begin
+										r_sys_run_step <= 3'h0;
 
 									end
 									else
-									if((r_sys_run_step==3'h2)) begin
-										r_sys_run_step <= 3'h0;
+									if((r_sys_run_step==3'h0) || (r_sys_run_step==3'h1)) begin
+										r_sys_run_step <= w_sys_run_step_p1;
 
 									end
 								end
