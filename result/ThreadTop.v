@@ -1,5 +1,5 @@
 /*
-TimeStamp:	2016/12/21		19:6
+TimeStamp:	2017/1/5		15:47
 */
 
 
@@ -306,13 +306,13 @@ module ThreadTop(
 
 							case(r_sys_threadTopMain_stage) 
 								3'h3: begin
-									if((r_sys_threadTopMain_step==3'h0)) begin
-										r_sys_threadTopSub_arbiter3 <= w_sys_boolTrue;
+									if((r_sys_threadTopMain_step==3'h1)) begin
+										r_sys_threadTopSub_arbiter3 <= w_sys_boolFalse;
 
 									end
 									else
-									if((r_sys_threadTopMain_step==3'h1)) begin
-										r_sys_threadTopSub_arbiter3 <= w_sys_boolFalse;
+									if((r_sys_threadTopMain_step==3'h0)) begin
+										r_sys_threadTopSub_arbiter3 <= w_sys_boolTrue;
 
 									end
 								end
@@ -664,37 +664,37 @@ module ThreadTop(
 
 							case(r_sys_threadTopMain_stage) 
 								3'h0: begin
-									if((r_sys_threadTopMain_step==3'h1)) begin
-										r_sys_threadTopMain_step <= 3'h0;
+									if((r_sys_threadTopMain_step==3'h0)) begin
+										r_sys_threadTopMain_step <= w_sys_threadTopMain_step_p1;
 
 									end
 									else
-									if((r_sys_threadTopMain_step==3'h0)) begin
-										r_sys_threadTopMain_step <= w_sys_threadTopMain_step_p1;
+									if((r_sys_threadTopMain_step==3'h1)) begin
+										r_sys_threadTopMain_step <= 3'h0;
 
 									end
 								end
 
 								3'h1: begin
-									if((r_sys_threadTopMain_step==3'h0)) begin
-										r_sys_threadTopMain_step <= w_sys_threadTopMain_step_p1;
+									if((r_sys_threadTopMain_step==3'h1)) begin
+										r_sys_threadTopMain_step <= 3'h0;
 
 									end
 									else
-									if((r_sys_threadTopMain_step==3'h1)) begin
-										r_sys_threadTopMain_step <= 3'h0;
+									if((r_sys_threadTopMain_step==3'h0)) begin
+										r_sys_threadTopMain_step <= w_sys_threadTopMain_step_p1;
 
 									end
 								end
 
 								3'h2: begin
-									if((r_sys_threadTopMain_step==3'h1)) begin
-										r_sys_threadTopMain_step <= 3'h0;
+									if((r_sys_threadTopMain_step==3'h0)) begin
+										r_sys_threadTopMain_step <= w_sys_threadTopMain_step_p1;
 
 									end
 									else
-									if((r_sys_threadTopMain_step==3'h0)) begin
-										r_sys_threadTopMain_step <= w_sys_threadTopMain_step_p1;
+									if((r_sys_threadTopMain_step==3'h1)) begin
+										r_sys_threadTopMain_step <= 3'h0;
 
 									end
 								end
@@ -753,13 +753,13 @@ module ThreadTop(
 
 									end
 									else
-									if((r_sys_threadTopMain_step==3'h2)) begin
-										r_sys_threadTopMain_step <= ((w_subA_getRet_busy) ? r_sys_threadTopMain_step : w_sys_threadTopMain_step_p1);
+									if((r_sys_threadTopMain_step==3'h0) || (r_sys_threadTopMain_step==3'h1)) begin
+										r_sys_threadTopMain_step <= w_sys_threadTopMain_step_p1;
 
 									end
 									else
-									if((r_sys_threadTopMain_step==3'h0) || (r_sys_threadTopMain_step==3'h1)) begin
-										r_sys_threadTopMain_step <= w_sys_threadTopMain_step_p1;
+									if((r_sys_threadTopMain_step==3'h2)) begin
+										r_sys_threadTopMain_step <= ((w_subA_getRet_busy) ? r_sys_threadTopMain_step : w_sys_threadTopMain_step_p1);
 
 									end
 								end
@@ -777,13 +777,13 @@ module ThreadTop(
 
 									end
 									else
-									if((r_sys_threadTopMain_step==3'h2)) begin
-										r_sys_threadTopMain_step <= ((w_subB_getRet_busy) ? r_sys_threadTopMain_step : w_sys_threadTopMain_step_p1);
+									if((r_sys_threadTopMain_step==3'h0) || (r_sys_threadTopMain_step==3'h1)) begin
+										r_sys_threadTopMain_step <= w_sys_threadTopMain_step_p1;
 
 									end
 									else
-									if((r_sys_threadTopMain_step==3'h0) || (r_sys_threadTopMain_step==3'h1)) begin
-										r_sys_threadTopMain_step <= w_sys_threadTopMain_step_p1;
+									if((r_sys_threadTopMain_step==3'h2)) begin
+										r_sys_threadTopMain_step <= ((w_subB_getRet_busy) ? r_sys_threadTopMain_step : w_sys_threadTopMain_step_p1);
 
 									end
 								end
@@ -1204,13 +1204,13 @@ module ThreadTop(
 
 							case(r_sys_threadTopSub_stage) 
 								2'h0: begin
-									if((r_sys_threadTopSub_step==3'h0) || (r_sys_threadTopSub_step==3'h1) || (r_sys_threadTopSub_step==3'h2)) begin
-										r_sys_threadTopSub_step <= w_sys_threadTopSub_step_p1;
+									if((r_sys_threadTopSub_step==3'h3)) begin
+										r_sys_threadTopSub_step <= 3'h0;
 
 									end
 									else
-									if((r_sys_threadTopSub_step==3'h3)) begin
-										r_sys_threadTopSub_step <= 3'h0;
+									if((r_sys_threadTopSub_step==3'h0) || (r_sys_threadTopSub_step==3'h1) || (r_sys_threadTopSub_step==3'h2)) begin
+										r_sys_threadTopSub_step <= w_sys_threadTopSub_step_p1;
 
 									end
 								end
@@ -1255,13 +1255,13 @@ module ThreadTop(
 
 							case(r_sys_threadTopSub_stage) 
 								2'h0: begin
-									if((3'h0<=r_sys_threadTopSub_step && r_sys_threadTopSub_step<=3'h4)) begin
-										r_sys_threadTopSub_step <= w_sys_threadTopSub_step_p1;
+									if((r_sys_threadTopSub_step==3'h5)) begin
+										r_sys_threadTopSub_step <= 3'h0;
 
 									end
 									else
-									if((r_sys_threadTopSub_step==3'h5)) begin
-										r_sys_threadTopSub_step <= 3'h0;
+									if((3'h0<=r_sys_threadTopSub_step && r_sys_threadTopSub_step<=3'h4)) begin
+										r_sys_threadTopSub_step <= w_sys_threadTopSub_step_p1;
 
 									end
 								end
@@ -1651,13 +1651,13 @@ module ThreadTop(
 
 							case(r_sys_setValueToChildArray_stage) 
 								2'h0: begin
-									if((r_sys_setValueToChildArray_step==4'h9)) begin
-										r_sys_setValueToChildArray_step <= 4'h0;
+									if((4'h0<=r_sys_setValueToChildArray_step && r_sys_setValueToChildArray_step<=4'h8)) begin
+										r_sys_setValueToChildArray_step <= w_sys_setValueToChildArray_step_p1;
 
 									end
 									else
-									if((4'h0<=r_sys_setValueToChildArray_step && r_sys_setValueToChildArray_step<=4'h8)) begin
-										r_sys_setValueToChildArray_step <= w_sys_setValueToChildArray_step_p1;
+									if((r_sys_setValueToChildArray_step==4'h9)) begin
+										r_sys_setValueToChildArray_step <= 4'h0;
 
 									end
 								end
@@ -1874,13 +1874,13 @@ module ThreadTop(
 
 							case(r_sys_threadTopSub_stage) 
 								2'h0: begin
-									if((r_sys_threadTopSub_step==3'h0)) begin
-										r_threadTopSub_topArray_5_addr <= r_threadTopSub_i_6;
+									if((r_sys_threadTopSub_step==3'h1) || (r_sys_threadTopSub_step==3'h2) || (r_sys_threadTopSub_step==3'h3)) begin
+										r_threadTopSub_topArray_5_addr <= r_sys_tmp1_int;
 
 									end
 									else
-									if((r_sys_threadTopSub_step==3'h1) || (r_sys_threadTopSub_step==3'h2) || (r_sys_threadTopSub_step==3'h3)) begin
-										r_threadTopSub_topArray_5_addr <= r_sys_tmp1_int;
+									if((r_sys_threadTopSub_step==3'h0)) begin
+										r_threadTopSub_topArray_5_addr <= r_threadTopSub_i_6;
 
 									end
 								end
@@ -1926,13 +1926,13 @@ module ThreadTop(
 
 							case(r_sys_threadTopSub_stage) 
 								2'h0: begin
-									if((r_sys_threadTopSub_step==3'h1) || (r_sys_threadTopSub_step==3'h2) || (r_sys_threadTopSub_step==3'h3)) begin
-										r_threadTopSub_topArray_5_datain <= r_sys_tmp0_int;
+									if((r_sys_threadTopSub_step==3'h0)) begin
+										r_threadTopSub_topArray_5_datain <= r_threadTopSub_copy0_i_9;
 
 									end
 									else
-									if((r_sys_threadTopSub_step==3'h0)) begin
-										r_threadTopSub_topArray_5_datain <= r_threadTopSub_copy0_i_9;
+									if((r_sys_threadTopSub_step==3'h1) || (r_sys_threadTopSub_step==3'h2) || (r_sys_threadTopSub_step==3'h3)) begin
+										r_threadTopSub_topArray_5_datain <= r_sys_tmp0_int;
 
 									end
 								end
@@ -2356,13 +2356,13 @@ module ThreadTop(
 
 							case(r_sys_threadTopMain_stage) 
 								3'h2: begin
-									if((r_sys_threadTopMain_step==3'h0)) begin
-										r_subB_run_req <= w_sys_boolTrue;
+									if((r_sys_threadTopMain_step==3'h1)) begin
+										r_subB_run_req <= w_sys_boolFalse;
 
 									end
 									else
-									if((r_sys_threadTopMain_step==3'h1)) begin
-										r_subB_run_req <= w_sys_boolFalse;
+									if((r_sys_threadTopMain_step==3'h0)) begin
+										r_subB_run_req <= w_sys_boolTrue;
 
 									end
 								end
@@ -2395,13 +2395,13 @@ module ThreadTop(
 
 							case(r_sys_threadTopMain_stage) 
 								3'h2: begin
-									if((r_sys_threadTopMain_step==3'h0)) begin
-										r_subB_getRet_req <= w_sys_boolTrue;
+									if((r_sys_threadTopMain_step==3'h1)) begin
+										r_subB_getRet_req <= w_sys_boolFalse;
 
 									end
 									else
-									if((r_sys_threadTopMain_step==3'h1)) begin
-										r_subB_getRet_req <= w_sys_boolFalse;
+									if((r_sys_threadTopMain_step==3'h0)) begin
+										r_subB_getRet_req <= w_sys_boolTrue;
 
 									end
 								end
@@ -2434,6 +2434,11 @@ module ThreadTop(
 
 							case(r_sys_setValueToChildArray_stage) 
 								2'h0: begin
+									if((r_sys_setValueToChildArray_step==4'h9)) begin
+										r_subB_arrayB_addr <= $signed( r_sys_tmp1_int[4:0] );
+
+									end
+									else
 									if((r_sys_setValueToChildArray_step==4'h7)) begin
 										r_subB_arrayB_addr <= $signed( r_sys_tmp4_int[4:0] );
 
@@ -2446,11 +2451,6 @@ module ThreadTop(
 									else
 									if((r_sys_setValueToChildArray_step==4'h5)) begin
 										r_subB_arrayB_addr <= $signed( r_sys_tmp6_int[4:0] );
-
-									end
-									else
-									if((r_sys_setValueToChildArray_step==4'h9)) begin
-										r_subB_arrayB_addr <= $signed( r_sys_tmp1_int[4:0] );
 
 									end
 								end
@@ -2624,13 +2624,13 @@ module ThreadTop(
 
 							case(r_sys_threadTopMain_stage) 
 								3'h1: begin
-									if((r_sys_threadTopMain_step==3'h0)) begin
-										r_subA_run_req <= w_sys_boolTrue;
+									if((r_sys_threadTopMain_step==3'h1)) begin
+										r_subA_run_req <= w_sys_boolFalse;
 
 									end
 									else
-									if((r_sys_threadTopMain_step==3'h1)) begin
-										r_subA_run_req <= w_sys_boolFalse;
+									if((r_sys_threadTopMain_step==3'h0)) begin
+										r_subA_run_req <= w_sys_boolTrue;
 
 									end
 								end
@@ -2663,13 +2663,13 @@ module ThreadTop(
 
 							case(r_sys_threadTopMain_stage) 
 								3'h0: begin
-									if((r_sys_threadTopMain_step==3'h0)) begin
-										r_subA_getRet_req <= w_sys_boolTrue;
+									if((r_sys_threadTopMain_step==3'h1)) begin
+										r_subA_getRet_req <= w_sys_boolFalse;
 
 									end
 									else
-									if((r_sys_threadTopMain_step==3'h1)) begin
-										r_subA_getRet_req <= w_sys_boolFalse;
+									if((r_sys_threadTopMain_step==3'h0)) begin
+										r_subA_getRet_req <= w_sys_boolTrue;
 
 									end
 								end
@@ -2702,13 +2702,23 @@ module ThreadTop(
 
 							case(r_sys_setValueToChildArray_stage) 
 								2'h0: begin
-									if((r_sys_setValueToChildArray_step==4'h4)) begin
-										r_subA_arrayA_addr <= $signed( r_sys_tmp3_int[4:0] );
+									if((r_sys_setValueToChildArray_step==4'h2) || (r_sys_setValueToChildArray_step==4'h6)) begin
+										r_subA_arrayA_addr <= $signed( r_sys_tmp9_int[4:0] );
 
 									end
 									else
 									if((r_sys_setValueToChildArray_step==4'h1) || (r_sys_setValueToChildArray_step==4'h5)) begin
 										r_subA_arrayA_addr <= $signed( r_sys_tmp8_int[4:0] );
+
+									end
+									else
+									if((r_sys_setValueToChildArray_step==4'h0)) begin
+										r_subA_arrayA_addr <= $signed( w_sys_tmp41[4:0] );
+
+									end
+									else
+									if((r_sys_setValueToChildArray_step==4'h4)) begin
+										r_subA_arrayA_addr <= $signed( r_sys_tmp3_int[4:0] );
 
 									end
 									else
@@ -2719,16 +2729,6 @@ module ThreadTop(
 									else
 									if((r_sys_setValueToChildArray_step==4'h3)) begin
 										r_subA_arrayA_addr <= $signed( r_sys_tmp7_int[4:0] );
-
-									end
-									else
-									if((r_sys_setValueToChildArray_step==4'h0)) begin
-										r_subA_arrayA_addr <= $signed( w_sys_tmp41[4:0] );
-
-									end
-									else
-									if((r_sys_setValueToChildArray_step==4'h2) || (r_sys_setValueToChildArray_step==4'h6)) begin
-										r_subA_arrayA_addr <= $signed( r_sys_tmp9_int[4:0] );
 
 									end
 								end
@@ -2756,8 +2756,8 @@ module ThreadTop(
 
 							case(r_sys_setValueToChildArray_stage) 
 								2'h0: begin
-									if((r_sys_setValueToChildArray_step==4'h4)) begin
-										r_subA_arrayA_datain <= r_sys_tmp2_int;
+									if((r_sys_setValueToChildArray_step==4'h2) || (r_sys_setValueToChildArray_step==4'h6)) begin
+										r_subA_arrayA_datain <= r_sys_tmp10_int;
 
 									end
 									else
@@ -2766,8 +2766,8 @@ module ThreadTop(
 
 									end
 									else
-									if((r_sys_setValueToChildArray_step==4'h2) || (r_sys_setValueToChildArray_step==4'h6)) begin
-										r_subA_arrayA_datain <= r_sys_tmp10_int;
+									if((r_sys_setValueToChildArray_step==4'h4)) begin
+										r_subA_arrayA_datain <= r_sys_tmp2_int;
 
 									end
 								end
@@ -2874,13 +2874,13 @@ module ThreadTop(
 
 							case(r_sys_setValueToChildArray_stage) 
 								2'h0: begin
-									if((r_sys_setValueToChildArray_step==4'h0) || (r_sys_setValueToChildArray_step==4'h2) || (r_sys_setValueToChildArray_step==4'h4) || (r_sys_setValueToChildArray_step==4'h6)) begin
-										r_subA_arrayA_r_w <= w_sys_boolTrue;
+									if((r_sys_setValueToChildArray_step==4'h1) || (r_sys_setValueToChildArray_step==4'h3) || (r_sys_setValueToChildArray_step==4'h5) || (r_sys_setValueToChildArray_step==4'h7)) begin
+										r_subA_arrayA_r_w <= w_sys_boolFalse;
 
 									end
 									else
-									if((r_sys_setValueToChildArray_step==4'h1) || (r_sys_setValueToChildArray_step==4'h3) || (r_sys_setValueToChildArray_step==4'h5) || (r_sys_setValueToChildArray_step==4'h7)) begin
-										r_subA_arrayA_r_w <= w_sys_boolFalse;
+									if((r_sys_setValueToChildArray_step==4'h0) || (r_sys_setValueToChildArray_step==4'h2) || (r_sys_setValueToChildArray_step==4'h4) || (r_sys_setValueToChildArray_step==4'h6)) begin
+										r_subA_arrayA_r_w <= w_sys_boolTrue;
 
 									end
 								end
@@ -3195,13 +3195,13 @@ module ThreadTop(
 
 							case(r_sys_setValueToChildArray_stage) 
 								2'h0: begin
-									if((r_sys_setValueToChildArray_step==4'h1)) begin
-										r_sys_tmp8_int <= w_sys_tmp127;
+									if((r_sys_setValueToChildArray_step==4'h0)) begin
+										r_sys_tmp8_int <= w_sys_tmp123;
 
 									end
 									else
-									if((r_sys_setValueToChildArray_step==4'h0)) begin
-										r_sys_tmp8_int <= w_sys_tmp123;
+									if((r_sys_setValueToChildArray_step==4'h1)) begin
+										r_sys_tmp8_int <= w_sys_tmp127;
 
 									end
 								end

@@ -77,7 +77,7 @@
 	<METHOD>	<Phase>  1  </Phase>
 
 		<methodName>	run	</methodName>
-		<returnType>	int	</returnType>
+		<returnType>	void	</returnType>
 		<ParamList>
 
 		</ParamList>
@@ -358,310 +358,36 @@
 					</forBody>
 				</ForLoop>
 
-				<ForLoop>	<Phase>  15  </Phase>
-					<forInit>
-						<StatAssemblage>	<Phase>  16  </Phase>
-							<stageNum>  1  </stageNum>
-							<totalStepNum>  1  </totalStepNum>
-							<VariableStack>
-								<VeriableDecl>			<name>	obj	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	arrayA	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	i	</name>		<variableID>	2	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	result	</name>		<variableID>	3	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-							</VariableStack>
-
-							<statements>
-								<ExprStatement>
-									<Assign>
-										<rightExpr>
-											<Literal>
-												<type>	int	</type>
-												<value>	0	</value>
-											</Literal>
-										</rightExpr>
-
-										<dest>
-											<Ident>
-												<variableID>	2	</variableID>
-												<idName>	i	</idName>
-											</Ident>
-										</dest>
-
-									</Assign>
-
-								</ExprStatement>
-
-							</statements>
-
-						</StatAssemblage>
-
-					</forInit>
-
-					<forCond>
-						<StatAssemblage>	<Phase>  17  </Phase>
-							<stageNum>  1  </stageNum>
-							<totalStepNum>  1  </totalStepNum>
-							<VariableStack>
-								<VeriableDecl>			<name>	obj	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	arrayA	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	i	</name>		<variableID>	2	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	result	</name>		<variableID>	3	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-							</VariableStack>
-
-							<statements>
-								<ExprStatement>
-									<Binary>
-										<binaryOp>	'LT'	</binaryOp>
-										<leftExpr>
-											<Ident>
-												<variableID>	2	</variableID>
-												<idName>	i	</idName>
-											</Ident>
-										</leftExpr>
-
-										<rightExpr>
-											<Literal>
-												<type>	int	</type>
-												<value>	10	</value>
-											</Literal>
-										</rightExpr>
-
-									</Binary>
-
-								</ExprStatement>
-
-							</statements>
-
-						</StatAssemblage>
-
-					</forCond>
-
-					<forBody>
-						<Block>	<Phase>  19  </Phase>
-
-							<StatAssemblage>	<Phase>  20  </Phase>
-								<stageNum>  2  </stageNum>
-								<totalStepNum>  5  </totalStepNum>
-								<VariableStack>
-									<VeriableDecl>			<name>	obj	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-									<VeriableDecl>			<name>	arrayA	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-									<VeriableDecl>			<name>	i	</name>		<variableID>	2	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-									<VeriableDecl>			<name>	result	</name>		<variableID>	3	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-								</VariableStack>
-
-								<statements>
-									<ExprStatement>
-										<Assign>
-											<rightExpr>
-												<MethodInv>
-													<defClassName>	fifoa2b	</defClassName>
-													<objName>	obj	</objName>
-													<methodName>	deque	</methodName>
-
-													<argment>
-													</argment>
-												</MethodInv>
-
-											</rightExpr>
-
-											<dest>
-												<ArrayAccess>
-													<variableID>	1	</variableID>
-													<idName>arrayA</idName>
-
-													<index0>
-														<Ident>
-															<variableID>	2	</variableID>
-															<idName>	i	</idName>
-														</Ident>
-													</index0>
-
-												</ArrayAccess>
-
-											</dest>
-
-										</Assign>
-
-									</ExprStatement>
-
-								</statements>
-
-							</StatAssemblage>
-
-						</Block>
-
-					</forBody>
-				</ForLoop>
-
-				<ForLoop>	<Phase>  21  </Phase>
-					<forInit>
-						<StatAssemblage>	<Phase>  22  </Phase>
-							<stageNum>  1  </stageNum>
-							<totalStepNum>  1  </totalStepNum>
-							<VariableStack>
-								<VeriableDecl>			<name>	obj	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	arrayA	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	i	</name>		<variableID>	2	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	result	</name>		<variableID>	3	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-							</VariableStack>
-
-							<statements>
-								<ExprStatement>
-									<Assign>
-										<rightExpr>
-											<Literal>
-												<type>	int	</type>
-												<value>	0	</value>
-											</Literal>
-										</rightExpr>
-
-										<dest>
-											<Ident>
-												<variableID>	2	</variableID>
-												<idName>	i	</idName>
-											</Ident>
-										</dest>
-
-									</Assign>
-
-								</ExprStatement>
-
-							</statements>
-
-						</StatAssemblage>
-
-					</forInit>
-
-					<forCond>
-						<StatAssemblage>	<Phase>  23  </Phase>
-							<stageNum>  1  </stageNum>
-							<totalStepNum>  1  </totalStepNum>
-							<VariableStack>
-								<VeriableDecl>			<name>	obj	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	arrayA	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	i	</name>		<variableID>	2	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	result	</name>		<variableID>	3	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-							</VariableStack>
-
-							<statements>
-								<ExprStatement>
-									<Binary>
-										<binaryOp>	'LT'	</binaryOp>
-										<leftExpr>
-											<Ident>
-												<variableID>	2	</variableID>
-												<idName>	i	</idName>
-											</Ident>
-										</leftExpr>
-
-										<rightExpr>
-											<Literal>
-												<type>	int	</type>
-												<value>	10	</value>
-											</Literal>
-										</rightExpr>
-
-									</Binary>
-
-								</ExprStatement>
-
-							</statements>
-
-						</StatAssemblage>
-
-					</forCond>
-
-					<forBody>
-						<Block>	<Phase>  25  </Phase>
-
-							<StatAssemblage>	<Phase>  26  </Phase>
-								<stageNum>  1  </stageNum>
-								<totalStepNum>  3  </totalStepNum>
-								<VariableStack>
-									<VeriableDecl>			<name>	obj	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-									<VeriableDecl>			<name>	arrayA	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-									<VeriableDecl>			<name>	i	</name>		<variableID>	2	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-									<VeriableDecl>			<name>	result	</name>		<variableID>	3	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-								</VariableStack>
-
-								<statements>
-									<ExprStatement>
-										<Assign>
-											<rightExpr>
-												<Binary>
-													<binaryOp>	'+'	</binaryOp>
-													<leftExpr>
-														<Ident>
-															<variableID>	3	</variableID>
-															<idName>	result	</idName>
-														</Ident>
-													</leftExpr>
-
-													<rightExpr>
-														<ArrayAccess>
-															<variableID>	1	</variableID>
-															<idName>arrayA</idName>
-
-															<index0>
-																<Ident>
-																	<variableID>	2	</variableID>
-																	<idName>	i	</idName>
-																</Ident>
-															</index0>
-
-														</ArrayAccess>
-
-													</rightExpr>
-
-												</Binary>
-
-											</rightExpr>
-
-											<dest>
-												<Ident>
-													<variableID>	3	</variableID>
-													<idName>	result	</idName>
-												</Ident>
-											</dest>
-
-										</Assign>
-
-									</ExprStatement>
-
-								</statements>
-
-							</StatAssemblage>
-
-						</Block>
-
-					</forBody>
-				</ForLoop>
-
-				<Return>	<Phase>  27  </Phase>
-
-					<StatAssemblage>	<Phase>  28  </Phase>
-						<stageNum>  1  </stageNum>
-						<totalStepNum>  1  </totalStepNum>
-						<VariableStack>
-							<VeriableDecl>			<name>	obj	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-							<VeriableDecl>			<name>	arrayA	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-							<VeriableDecl>			<name>	i	</name>		<variableID>	2	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-							<VeriableDecl>			<name>	result	</name>		<variableID>	3	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-						</VariableStack>
-
-						<statements>
-							<ExprStatement>
-								<Ident>
-									<variableID>	3	</variableID>
-									<idName>	result	</idName>
-								</Ident>
-							</ExprStatement>
-
-						</statements>
-
-					</StatAssemblage>
-
-				</Return>
+				<StatAssemblage>	<Phase>  15  </Phase>
+					<stageNum>  1  </stageNum>
+					<totalStepNum>  4  </totalStepNum>
+					<VariableStack>
+						<VeriableDecl>			<name>	obj	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+						<VeriableDecl>			<name>	arrayA	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+						<VeriableDecl>			<name>	i	</name>		<variableID>	2	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+						<VeriableDecl>			<name>	result	</name>		<variableID>	3	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+					</VariableStack>
+
+					<statements>
+						<ExprStatement>
+							<MethodInv>
+								<defClassName>	fifoa2b	</defClassName>
+								<objName>	obj	</objName>
+								<methodName>	is_finished	</methodName>
+
+								<argment>
+									<Literal>
+										<type>	boolean	</type>
+										<value>	false	</value>
+									</Literal>
+								</argment>
+							</MethodInv>
+
+						</ExprStatement>
+
+					</statements>
+
+				</StatAssemblage>
 
 			</Block>
 

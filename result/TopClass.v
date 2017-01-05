@@ -1,5 +1,5 @@
 /*
-TimeStamp:	2013/12/16		12:59
+TimeStamp:	2017/1/5		15:28
 */
 
 
@@ -9,7 +9,7 @@ module TopClass(
 	input                 ce,	
 	input                 i_mainRoutine_req,	
 	output                o_mainRoutine_busy,	
-	output signed  [63:0] o_mainRoutine_return,	
+	output signed  [31:0] o_mainRoutine_return,	
 	output signed  [31:0] o_mainRoutine_arrayY_4_addr,	
 	output signed  [31:0] o_mainRoutine_arrayY_4_datain,	
 	input  signed  [31:0] i_mainRoutine_arrayY_4_dataout,	
@@ -23,29 +23,15 @@ module TopClass(
 	reg                r_sys_subAprocess_arbiter1;
 	reg                r_sys_subBprocess_arbiter2;
 	reg                r_sys_subRoutine_arbiter3;
-	reg  signed [31:0] r_ip_Multint_multiplicand_0;
-	reg  signed [31:0] r_ip_Multint_multiplier_0;
-	wire signed [63:0] w_ip_Multint_product_0;
-	reg  signed [31:0] r_ip_Multint_multiplicand_1;
-	reg  signed [31:0] r_ip_Multint_multiplier_1;
-	wire signed [63:0] w_ip_Multint_product_1;
-	reg  signed [31:0] r_ip_DivInt_dividend_0;
-	reg  signed [31:0] r_ip_DivInt_divisor_0;
-	wire signed [31:0] w_ip_DivInt_quotient_0;
-	wire signed [31:0] w_ip_DivInt_fractional_0;
-	reg  signed [31:0] r_ip_DivInt_dividend_1;
-	reg  signed [31:0] r_ip_DivInt_divisor_1;
-	wire signed [31:0] w_ip_DivInt_quotient_1;
-	wire signed [31:0] w_ip_DivInt_fractional_1;
 	reg  signed [31:0] r_ip_FixedToFloat_fixed_0;
-	wire        [63:0] w_ip_FixedToFloat_floating_0;
+	wire        [31:0] w_ip_FixedToFloat_floating_0;
 	reg         [ 2:0] r_sys_processing_methodID;
 	wire               w_sys_boolTrue;
 	wire               w_sys_boolFalse;
 	wire signed [31:0] w_sys_intOne;
 	wire signed [31:0] w_sys_intZero;
 	wire               w_sys_ce;
-	reg         [63:0] r_sys_mainRoutine_return;
+	reg         [31:0] r_sys_mainRoutine_return;
 	reg         [ 2:0] r_sys_mainRoutine_caller;
 	reg                r_sys_mainRoutine_req;
 	reg         [ 2:0] r_sys_mainRoutine_phase;
@@ -68,10 +54,10 @@ module TopClass(
 	reg                r_sys_subRoutine_req;
 	reg         [ 4:0] r_sys_subRoutine_phase;
 	reg         [ 1:0] r_sys_subRoutine_stage;
-	reg         [ 5:0] r_sys_subRoutine_step;
+	reg         [ 2:0] r_sys_subRoutine_step;
 	reg                r_sys_subRoutine_busy;
 	wire        [ 1:0] w_sys_subRoutine_stage_p1;
-	wire        [ 5:0] w_sys_subRoutine_step_p1;
+	wire        [ 2:0] w_sys_subRoutine_step_p1;
 	wire signed [ 4:0] w_fld_arrayX_3_addr_0;
 	wire signed [31:0] w_fld_arrayX_3_datain_0;
 	wire signed [31:0] w_fld_arrayX_3_dataout_0;
@@ -209,7 +195,10 @@ module TopClass(
 	wire               w_subClassB_subBprocess_bx_ce;
 	reg  signed [31:0] r_subClassB_subBprocess_dataNum;
 	reg  signed [31:0] r_sys_tmp0_int;
-	wire        [63:0] w_sys_tmp1;
+	reg  signed [31:0] r_sys_tmp1_int;
+	reg  signed [31:0] r_sys_tmp2_int;
+	reg  signed [31:0] r_sys_tmp3_int;
+	wire        [31:0] w_sys_tmp1;
 	wire signed [31:0] w_sys_tmp2;
 	wire signed [31:0] w_sys_tmp3;
 	wire               w_sys_tmp4;
@@ -250,6 +239,8 @@ module TopClass(
 	wire signed [31:0] w_sys_tmp89;
 	wire signed [31:0] w_sys_tmp90;
 	wire signed [31:0] w_sys_tmp109;
+	wire signed [31:0] w_sys_tmp110;
+	wire signed [31:0] w_sys_tmp111;
 
 	assign w_sys_boolTrue = 1'b1;
 	assign w_sys_boolFalse = 1'b0;
@@ -263,17 +254,17 @@ module TopClass(
 	assign w_sys_setValueToChildArray_stage_p1 = (r_sys_setValueToChildArray_stage + 2'h1);
 	assign w_sys_setValueToChildArray_step_p1 = (r_sys_setValueToChildArray_step + 3'h1);
 	assign w_sys_subRoutine_stage_p1 = (r_sys_subRoutine_stage + 2'h1);
-	assign w_sys_subRoutine_step_p1 = (r_sys_subRoutine_step + 6'h1);
-	assign w_fld_arrayX_3_addr_0 = ( r_sys_subBprocess_arbiter2 ? $signed( w_subClassB_subBprocess_bx_addr[4:0] ) : ( r_sys_setValueToChildArray_arbiter0 ? $signed( w_setValueToChildArray_bx_10_addr[4:0] ) : ( r_sys_subAprocess_arbiter1 ? $signed( w_subClassA_subAprocess_ax_addr[4:0] ) : 5'sh0 )  )  ) ;
-	assign w_fld_arrayX_3_datain_0 = ( r_sys_subBprocess_arbiter2 ? w_subClassB_subBprocess_bx_datain : ( r_sys_setValueToChildArray_arbiter0 ? w_setValueToChildArray_bx_10_datain : ( r_sys_subAprocess_arbiter1 ? w_subClassA_subAprocess_ax_datain : 32'sh0 )  )  ) ;
-	assign w_fld_arrayX_3_r_w_0 = ( r_sys_subBprocess_arbiter2 ? w_subClassB_subBprocess_bx_r_w : ( r_sys_setValueToChildArray_arbiter0 ? w_setValueToChildArray_bx_10_r_w : ( r_sys_subAprocess_arbiter1 ? w_subClassA_subAprocess_ax_r_w : 1'h0 )  )  ) ;
-	assign w_fld_arrayX_3_ce_0 = ( r_sys_subBprocess_arbiter2 ? w_subClassB_subBprocess_bx_ce : ( r_sys_subAprocess_arbiter1 ? w_subClassA_subAprocess_ax_ce : w_sys_ce )  ) ;
+	assign w_sys_subRoutine_step_p1 = (r_sys_subRoutine_step + 3'h1);
+	assign w_fld_arrayX_3_addr_0 = ( r_sys_subAprocess_arbiter1 ? $signed( w_subClassA_subAprocess_ax_addr[4:0] ) : ( r_sys_subBprocess_arbiter2 ? $signed( w_subClassB_subBprocess_bx_addr[4:0] ) : ( r_sys_setValueToChildArray_arbiter0 ? $signed( w_setValueToChildArray_bx_10_addr[4:0] ) : 5'sh0 )  )  ) ;
+	assign w_fld_arrayX_3_datain_0 = ( r_sys_subAprocess_arbiter1 ? w_subClassA_subAprocess_ax_datain : ( r_sys_subBprocess_arbiter2 ? w_subClassB_subBprocess_bx_datain : ( r_sys_setValueToChildArray_arbiter0 ? w_setValueToChildArray_bx_10_datain : 32'sh0 )  )  ) ;
+	assign w_fld_arrayX_3_r_w_0 = ( r_sys_subAprocess_arbiter1 ? w_subClassA_subAprocess_ax_r_w : ( r_sys_subBprocess_arbiter2 ? w_subClassB_subBprocess_bx_r_w : ( r_sys_setValueToChildArray_arbiter0 ? w_setValueToChildArray_bx_10_r_w : 1'h0 )  )  ) ;
+	assign w_fld_arrayX_3_ce_0 = ( r_sys_subAprocess_arbiter1 ? w_subClassA_subAprocess_ax_ce : ( r_sys_subBprocess_arbiter2 ? w_subClassB_subBprocess_bx_ce : w_sys_ce )  ) ;
 	assign w_fld_arrayX_3_ce_1 = w_sys_ce;
 	assign w_mainRoutine_arrayY_4_dataout = i_mainRoutine_arrayY_4_dataout;
-	assign w_mainRoutine_arrayY_4_addr = ( r_sys_subBprocess_arbiter2 ? w_subClassB_subBprocess_ax_addr : ( r_sys_setValueToChildArray_arbiter0 ? w_setValueToChildArray_ax_9_addr : ( r_sys_subAprocess_arbiter1 ? w_subClassA_subAprocess_bx_addr : r_mainRoutine_arrayY_4_addr )  )  ) ;
-	assign w_mainRoutine_arrayY_4_datain = ( r_sys_subBprocess_arbiter2 ? w_subClassB_subBprocess_ax_datain : ( r_sys_setValueToChildArray_arbiter0 ? w_setValueToChildArray_ax_9_datain : ( r_sys_subAprocess_arbiter1 ? w_subClassA_subAprocess_bx_datain : r_mainRoutine_arrayY_4_datain )  )  ) ;
-	assign w_mainRoutine_arrayY_4_r_w = ( r_sys_subBprocess_arbiter2 ? w_subClassB_subBprocess_ax_r_w : ( r_sys_setValueToChildArray_arbiter0 ? w_setValueToChildArray_ax_9_r_w : ( r_sys_subAprocess_arbiter1 ? w_subClassA_subAprocess_bx_r_w : r_mainRoutine_arrayY_4_r_w )  )  ) ;
-	assign w_mainRoutine_arrayY_4_ce = ( r_sys_subBprocess_arbiter2 ? w_subClassB_subBprocess_ax_ce : ( r_sys_subAprocess_arbiter1 ? w_subClassA_subAprocess_bx_ce : w_sys_ce )  ) ;
+	assign w_mainRoutine_arrayY_4_addr = ( r_sys_subAprocess_arbiter1 ? w_subClassA_subAprocess_bx_addr : ( r_sys_subBprocess_arbiter2 ? w_subClassB_subBprocess_ax_addr : ( r_sys_setValueToChildArray_arbiter0 ? w_setValueToChildArray_ax_9_addr : r_mainRoutine_arrayY_4_addr )  )  ) ;
+	assign w_mainRoutine_arrayY_4_datain = ( r_sys_subAprocess_arbiter1 ? w_subClassA_subAprocess_bx_datain : ( r_sys_subBprocess_arbiter2 ? w_subClassB_subBprocess_ax_datain : ( r_sys_setValueToChildArray_arbiter0 ? w_setValueToChildArray_ax_9_datain : r_mainRoutine_arrayY_4_datain )  )  ) ;
+	assign w_mainRoutine_arrayY_4_r_w = ( r_sys_subAprocess_arbiter1 ? w_subClassA_subAprocess_bx_r_w : ( r_sys_subBprocess_arbiter2 ? w_subClassB_subBprocess_ax_r_w : ( r_sys_setValueToChildArray_arbiter0 ? w_setValueToChildArray_ax_9_r_w : r_mainRoutine_arrayY_4_r_w )  )  ) ;
+	assign w_mainRoutine_arrayY_4_ce = ( r_sys_subAprocess_arbiter1 ? w_subClassA_subAprocess_bx_ce : ( r_sys_subBprocess_arbiter2 ? w_subClassB_subBprocess_ax_ce : w_sys_ce )  ) ;
 	assign w_mainRoutine_arrayY_4_cacheHit = i_mainRoutine_arrayY_4_cacheHit;
 	assign o_mainRoutine_arrayY_4_addr = w_mainRoutine_arrayY_4_addr;
 	assign o_mainRoutine_arrayY_4_datain = w_mainRoutine_arrayY_4_datain;
@@ -332,10 +323,10 @@ module TopClass(
 	assign w_sys_tmp13 = (r_setValueToChildArray_i_12 + w_sys_intOne);
 	assign w_sys_tmp14 = r_sys_subRoutine_return;
 	assign w_sys_tmp15 = (r_subRoutine_i_16 < r_subRoutine_dataNum_15);
-	assign w_sys_tmp18 = $signed( w_ip_Multint_product_0[31:0] );
+	assign w_sys_tmp18 = (w_sys_tmp19 * w_sys_tmp20);
 	assign w_sys_tmp19 = (r_subRoutine_copy4_i_22 - r_subRoutine_dataNum_15);
 	assign w_sys_tmp20 = (r_subRoutine_copy3_i_21 - r_subRoutine_dataNum_15);
-	assign w_sys_tmp22 = w_ip_DivInt_quotient_0;
+	assign w_sys_tmp22 = (w_sys_tmp23 / w_sys_tmp25);
 	assign w_sys_tmp23 = (w_sys_tmp24 + r_subRoutine_dataNum_15);
 	assign w_sys_tmp24 = (r_subRoutine_copy1_i_19 + r_subRoutine_dataNum_15);
 	assign w_sys_tmp25 = (r_subRoutine_copy0_i_18 - r_subRoutine_dataNum_15);
@@ -362,6 +353,8 @@ module TopClass(
 	assign w_sys_tmp89 = (r_subRoutine_copy0_i_23 + w_sys_intOne);
 	assign w_sys_tmp90 = (r_subRoutine_i_16 + w_sys_intOne);
 	assign w_sys_tmp109 = r_subRoutine_ret_17;
+	assign w_sys_tmp110 = (w_sys_tmp33 * w_sys_tmp35);
+	assign w_sys_tmp111 = (w_sys_tmp38 / w_sys_tmp41);
 
 
 	SubClassA
@@ -457,44 +450,6 @@ module TopClass(
 			.r_w_1 (r_fld_arrayX_3_r_w_1)
 		);
 
-	Multint
-		Multint_inst_0(
-			.clk (clock),
-			.ce (w_sys_ce),
-			.a (r_ip_Multint_multiplicand_0),
-			.b (r_ip_Multint_multiplier_0),
-			.p (w_ip_Multint_product_0)
-		);
-
-	Multint
-		Multint_inst_1(
-			.clk (clock),
-			.ce (w_sys_ce),
-			.a (r_ip_Multint_multiplicand_1),
-			.b (r_ip_Multint_multiplier_1),
-			.p (w_ip_Multint_product_1)
-		);
-
-	DivInt
-		DivInt_inst_0(
-			.clk (clock),
-			.ce (w_sys_ce),
-			.dividend (r_ip_DivInt_dividend_0),
-			.divisor (r_ip_DivInt_divisor_0),
-			.fractional (w_ip_DivInt_fractional_0),
-			.quotient (w_ip_DivInt_quotient_0)
-		);
-
-	DivInt
-		DivInt_inst_1(
-			.clk (clock),
-			.ce (w_sys_ce),
-			.dividend (r_ip_DivInt_dividend_1),
-			.divisor (r_ip_DivInt_divisor_1),
-			.fractional (w_ip_DivInt_fractional_1),
-			.quotient (w_ip_DivInt_quotient_1)
-		);
-
 	FixedToFloat
 		FixedToFloat_inst_0(
 			.clk (clock),
@@ -559,13 +514,13 @@ module TopClass(
 
 							case(r_sys_mainRoutine_stage) 
 								3'h2: begin
-									if((r_sys_mainRoutine_step==4'h2)) begin
-										r_sys_subAprocess_arbiter1 <= ((w_subClassA_subAprocess_busy) ? w_sys_boolTrue : w_sys_boolFalse);
+									if((r_sys_mainRoutine_step==4'h0)) begin
+										r_sys_subAprocess_arbiter1 <= w_sys_boolTrue;
 
 									end
 									else
-									if((r_sys_mainRoutine_step==4'h0)) begin
-										r_sys_subAprocess_arbiter1 <= w_sys_boolTrue;
+									if((r_sys_mainRoutine_step==4'h2)) begin
+										r_sys_subAprocess_arbiter1 <= ((w_subClassA_subAprocess_busy) ? w_sys_boolTrue : w_sys_boolFalse);
 
 									end
 								end
@@ -598,13 +553,13 @@ module TopClass(
 
 							case(r_sys_mainRoutine_stage) 
 								3'h3: begin
-									if((r_sys_mainRoutine_step==4'h2)) begin
-										r_sys_subBprocess_arbiter2 <= ((w_subClassB_subBprocess_busy) ? w_sys_boolTrue : w_sys_boolFalse);
+									if((r_sys_mainRoutine_step==4'h0)) begin
+										r_sys_subBprocess_arbiter2 <= w_sys_boolTrue;
 
 									end
 									else
-									if((r_sys_mainRoutine_step==4'h0)) begin
-										r_sys_subBprocess_arbiter2 <= w_sys_boolTrue;
+									if((r_sys_mainRoutine_step==4'h2)) begin
+										r_sys_subBprocess_arbiter2 <= ((w_subClassB_subBprocess_busy) ? w_sys_boolTrue : w_sys_boolFalse);
 
 									end
 								end
@@ -644,258 +599,6 @@ module TopClass(
 									else
 									if((r_sys_setValueToChildArray_step==3'h0)) begin
 										r_sys_subRoutine_arbiter3 <= w_sys_boolTrue;
-
-									end
-								end
-
-							endcase
-						end
-
-					endcase
-				end
-
-			endcase
-		end
-	end
-
-
-	always@(posedge clock)begin
-
-		if(w_sys_ce) begin
-
-			case(r_sys_processing_methodID) 
-				3'h3: begin
-
-					case(r_sys_subRoutine_phase) 
-						5'h8: begin
-
-							case(r_sys_subRoutine_stage) 
-								2'h0: begin
-									if((r_sys_subRoutine_step==6'h1) || (r_sys_subRoutine_step==6'h2)) begin
-										r_ip_Multint_multiplicand_0 <= w_sys_tmp33;
-
-									end
-									else
-									if((r_sys_subRoutine_step==6'h0)) begin
-										r_ip_Multint_multiplicand_0 <= w_sys_tmp19;
-
-									end
-								end
-
-							endcase
-						end
-
-					endcase
-				end
-
-			endcase
-		end
-	end
-
-
-	always@(posedge clock)begin
-
-		if(w_sys_ce) begin
-
-			case(r_sys_processing_methodID) 
-				3'h3: begin
-
-					case(r_sys_subRoutine_phase) 
-						5'h8: begin
-
-							case(r_sys_subRoutine_stage) 
-								2'h0: begin
-									if((r_sys_subRoutine_step==6'h1) || (r_sys_subRoutine_step==6'h2)) begin
-										r_ip_Multint_multiplier_0 <= w_sys_tmp35;
-
-									end
-									else
-									if((r_sys_subRoutine_step==6'h0)) begin
-										r_ip_Multint_multiplier_0 <= w_sys_tmp20;
-
-									end
-								end
-
-							endcase
-						end
-
-					endcase
-				end
-
-			endcase
-		end
-	end
-
-
-	always@(posedge clock)begin
-
-		if(w_sys_ce) begin
-
-			case(r_sys_processing_methodID) 
-				3'h3: begin
-
-					case(r_sys_subRoutine_phase) 
-						5'h8: begin
-
-							case(r_sys_subRoutine_stage) 
-								2'h0: begin
-									if((r_sys_subRoutine_step==6'h0)) begin
-										r_ip_Multint_multiplicand_1 <= w_sys_tmp33;
-
-									end
-								end
-
-							endcase
-						end
-
-					endcase
-				end
-
-			endcase
-		end
-	end
-
-
-	always@(posedge clock)begin
-
-		if(w_sys_ce) begin
-
-			case(r_sys_processing_methodID) 
-				3'h3: begin
-
-					case(r_sys_subRoutine_phase) 
-						5'h8: begin
-
-							case(r_sys_subRoutine_stage) 
-								2'h0: begin
-									if((r_sys_subRoutine_step==6'h0)) begin
-										r_ip_Multint_multiplier_1 <= w_sys_tmp35;
-
-									end
-								end
-
-							endcase
-						end
-
-					endcase
-				end
-
-			endcase
-		end
-	end
-
-
-	always@(posedge clock)begin
-
-		if(w_sys_ce) begin
-
-			case(r_sys_processing_methodID) 
-				3'h3: begin
-
-					case(r_sys_subRoutine_phase) 
-						5'h8: begin
-
-							case(r_sys_subRoutine_stage) 
-								2'h0: begin
-									if((r_sys_subRoutine_step==6'h0)) begin
-										r_ip_DivInt_dividend_0 <= w_sys_tmp23;
-
-									end
-									else
-									if((r_sys_subRoutine_step==6'h1) || (r_sys_subRoutine_step==6'h2)) begin
-										r_ip_DivInt_dividend_0 <= w_sys_tmp38;
-
-									end
-								end
-
-							endcase
-						end
-
-					endcase
-				end
-
-			endcase
-		end
-	end
-
-
-	always@(posedge clock)begin
-
-		if(w_sys_ce) begin
-
-			case(r_sys_processing_methodID) 
-				3'h3: begin
-
-					case(r_sys_subRoutine_phase) 
-						5'h8: begin
-
-							case(r_sys_subRoutine_stage) 
-								2'h0: begin
-									if((r_sys_subRoutine_step==6'h0)) begin
-										r_ip_DivInt_divisor_0 <= w_sys_tmp25;
-
-									end
-									else
-									if((r_sys_subRoutine_step==6'h1) || (r_sys_subRoutine_step==6'h2)) begin
-										r_ip_DivInt_divisor_0 <= w_sys_tmp41;
-
-									end
-								end
-
-							endcase
-						end
-
-					endcase
-				end
-
-			endcase
-		end
-	end
-
-
-	always@(posedge clock)begin
-
-		if(w_sys_ce) begin
-
-			case(r_sys_processing_methodID) 
-				3'h3: begin
-
-					case(r_sys_subRoutine_phase) 
-						5'h8: begin
-
-							case(r_sys_subRoutine_stage) 
-								2'h0: begin
-									if((r_sys_subRoutine_step==6'h0)) begin
-										r_ip_DivInt_dividend_1 <= w_sys_tmp38;
-
-									end
-								end
-
-							endcase
-						end
-
-					endcase
-				end
-
-			endcase
-		end
-	end
-
-
-	always@(posedge clock)begin
-
-		if(w_sys_ce) begin
-
-			case(r_sys_processing_methodID) 
-				3'h3: begin
-
-					case(r_sys_subRoutine_phase) 
-						5'h8: begin
-
-							case(r_sys_subRoutine_stage) 
-								2'h0: begin
-									if((r_sys_subRoutine_step==6'h0)) begin
-										r_ip_DivInt_divisor_1 <= w_sys_tmp41;
 
 									end
 								end
@@ -1018,7 +721,7 @@ module TopClass(
 	always@(posedge clock)begin
 
 		if(( !reset_n )) begin
-			r_sys_mainRoutine_return <= 64'h0;
+			r_sys_mainRoutine_return <= 32'h0;
 
 		end
 		else
@@ -1209,13 +912,13 @@ module TopClass(
 								end
 
 								3'h1: begin
-									if((r_sys_mainRoutine_step==4'h1)) begin
-										r_sys_mainRoutine_step <= 4'h0;
+									if((r_sys_mainRoutine_step==4'h0)) begin
+										r_sys_mainRoutine_step <= w_sys_mainRoutine_step_p1;
 
 									end
 									else
-									if((r_sys_mainRoutine_step==4'h0)) begin
-										r_sys_mainRoutine_step <= w_sys_mainRoutine_step_p1;
+									if((r_sys_mainRoutine_step==4'h1)) begin
+										r_sys_mainRoutine_step <= 4'h0;
 
 									end
 								end
@@ -1226,13 +929,13 @@ module TopClass(
 
 									end
 									else
-									if((r_sys_mainRoutine_step==4'h0) || (r_sys_mainRoutine_step==4'h1)) begin
-										r_sys_mainRoutine_step <= w_sys_mainRoutine_step_p1;
+									if((r_sys_mainRoutine_step==4'h3)) begin
+										r_sys_mainRoutine_step <= 4'h0;
 
 									end
 									else
-									if((r_sys_mainRoutine_step==4'h3)) begin
-										r_sys_mainRoutine_step <= 4'h0;
+									if((r_sys_mainRoutine_step==4'h0) || (r_sys_mainRoutine_step==4'h1)) begin
+										r_sys_mainRoutine_step <= w_sys_mainRoutine_step_p1;
 
 									end
 								end
@@ -1261,13 +964,13 @@ module TopClass(
 
 							case(r_sys_mainRoutine_stage) 
 								3'h0: begin
-									if((4'h0<=r_sys_mainRoutine_step && r_sys_mainRoutine_step<=4'h6)) begin
-										r_sys_mainRoutine_step <= w_sys_mainRoutine_step_p1;
+									if((r_sys_mainRoutine_step==4'h7)) begin
+										r_sys_mainRoutine_step <= 4'h0;
 
 									end
 									else
-									if((r_sys_mainRoutine_step==4'h7)) begin
-										r_sys_mainRoutine_step <= 4'h0;
+									if((4'h0<=r_sys_mainRoutine_step && r_sys_mainRoutine_step<=4'h6)) begin
+										r_sys_mainRoutine_step <= w_sys_mainRoutine_step_p1;
 
 									end
 								end
@@ -1603,13 +1306,13 @@ module TopClass(
 
 							case(r_sys_setValueToChildArray_stage) 
 								2'h0: begin
-									if((r_sys_setValueToChildArray_step==3'h0)) begin
-										r_sys_setValueToChildArray_step <= w_sys_setValueToChildArray_step_p1;
+									if((r_sys_setValueToChildArray_step==3'h1)) begin
+										r_sys_setValueToChildArray_step <= 3'h0;
 
 									end
 									else
-									if((r_sys_setValueToChildArray_step==3'h1)) begin
-										r_sys_setValueToChildArray_step <= 3'h0;
+									if((r_sys_setValueToChildArray_step==3'h0)) begin
+										r_sys_setValueToChildArray_step <= w_sys_setValueToChildArray_step_p1;
 
 									end
 								end
@@ -1743,7 +1446,7 @@ module TopClass(
 
 							case(r_sys_subRoutine_stage) 
 								2'h0: begin
-									if((r_sys_subRoutine_step==6'h0)) begin
+									if((r_sys_subRoutine_step==3'h0)) begin
 										r_sys_subRoutine_phase <= 5'h4;
 
 									end
@@ -1756,7 +1459,7 @@ module TopClass(
 
 							case(r_sys_subRoutine_stage) 
 								2'h1: begin
-									if((r_sys_subRoutine_step==6'h0)) begin
+									if((r_sys_subRoutine_step==3'h0)) begin
 										r_sys_subRoutine_phase <= 5'h5;
 
 									end
@@ -1769,7 +1472,7 @@ module TopClass(
 
 							case(r_sys_subRoutine_stage) 
 								2'h0: begin
-									if((r_sys_subRoutine_step==6'h0)) begin
+									if((r_sys_subRoutine_step==3'h0)) begin
 										r_sys_subRoutine_phase <= ((w_sys_tmp15) ? 5'h8 : 5'h9);
 
 									end
@@ -1782,7 +1485,7 @@ module TopClass(
 
 							case(r_sys_subRoutine_stage) 
 								2'h0: begin
-									if((r_sys_subRoutine_step==6'h28)) begin
+									if((r_sys_subRoutine_step==3'h3)) begin
 										r_sys_subRoutine_phase <= 5'h5;
 
 									end
@@ -1795,7 +1498,7 @@ module TopClass(
 
 							case(r_sys_subRoutine_stage) 
 								2'h0: begin
-									if((r_sys_subRoutine_step==6'h0)) begin
+									if((r_sys_subRoutine_step==3'h0)) begin
 										r_sys_subRoutine_phase <= 5'hb;
 
 									end
@@ -1808,7 +1511,7 @@ module TopClass(
 
 							case(r_sys_subRoutine_stage) 
 								2'h1: begin
-									if((r_sys_subRoutine_step==6'h0)) begin
+									if((r_sys_subRoutine_step==3'h0)) begin
 										r_sys_subRoutine_phase <= 5'hc;
 
 									end
@@ -1821,7 +1524,7 @@ module TopClass(
 
 							case(r_sys_subRoutine_stage) 
 								2'h0: begin
-									if((r_sys_subRoutine_step==6'h0)) begin
+									if((r_sys_subRoutine_step==3'h0)) begin
 										r_sys_subRoutine_phase <= ((w_sys_tmp83) ? 5'hf : 5'h11);
 
 									end
@@ -1834,7 +1537,7 @@ module TopClass(
 
 							case(r_sys_subRoutine_stage) 
 								2'h0: begin
-									if((r_sys_subRoutine_step==6'h5)) begin
+									if((r_sys_subRoutine_step==3'h5)) begin
 										r_sys_subRoutine_phase <= 5'hc;
 
 									end
@@ -1851,7 +1554,7 @@ module TopClass(
 
 							case(r_sys_subRoutine_stage) 
 								2'h0: begin
-									if((r_sys_subRoutine_step==6'h0)) begin
+									if((r_sys_subRoutine_step==3'h0)) begin
 										r_sys_subRoutine_phase <= 5'h10;
 
 									end
@@ -1889,7 +1592,7 @@ module TopClass(
 
 							case(r_sys_subRoutine_stage) 
 								2'h0: begin
-									if((r_sys_subRoutine_step==6'h0)) begin
+									if((r_sys_subRoutine_step==3'h0)) begin
 										r_sys_subRoutine_stage <= 2'h0;
 
 									end
@@ -1902,14 +1605,14 @@ module TopClass(
 
 							case(r_sys_subRoutine_stage) 
 								2'h0: begin
-									if((r_sys_subRoutine_step==6'h0)) begin
+									if((r_sys_subRoutine_step==3'h0)) begin
 										r_sys_subRoutine_stage <= w_sys_subRoutine_stage_p1;
 
 									end
 								end
 
 								2'h1: begin
-									if((r_sys_subRoutine_step==6'h0)) begin
+									if((r_sys_subRoutine_step==3'h0)) begin
 										r_sys_subRoutine_stage <= 2'h0;
 
 									end
@@ -1922,7 +1625,7 @@ module TopClass(
 
 							case(r_sys_subRoutine_stage) 
 								2'h0: begin
-									if((r_sys_subRoutine_step==6'h0)) begin
+									if((r_sys_subRoutine_step==3'h0)) begin
 										r_sys_subRoutine_stage <= 2'h0;
 
 									end
@@ -1935,7 +1638,7 @@ module TopClass(
 
 							case(r_sys_subRoutine_stage) 
 								2'h0: begin
-									if((r_sys_subRoutine_step==6'h28)) begin
+									if((r_sys_subRoutine_step==3'h3)) begin
 										r_sys_subRoutine_stage <= 2'h0;
 
 									end
@@ -1948,7 +1651,7 @@ module TopClass(
 
 							case(r_sys_subRoutine_stage) 
 								2'h0: begin
-									if((r_sys_subRoutine_step==6'h0)) begin
+									if((r_sys_subRoutine_step==3'h0)) begin
 										r_sys_subRoutine_stage <= 2'h0;
 
 									end
@@ -1961,14 +1664,14 @@ module TopClass(
 
 							case(r_sys_subRoutine_stage) 
 								2'h0: begin
-									if((r_sys_subRoutine_step==6'h0)) begin
+									if((r_sys_subRoutine_step==3'h0)) begin
 										r_sys_subRoutine_stage <= w_sys_subRoutine_stage_p1;
 
 									end
 								end
 
 								2'h1: begin
-									if((r_sys_subRoutine_step==6'h0)) begin
+									if((r_sys_subRoutine_step==3'h0)) begin
 										r_sys_subRoutine_stage <= 2'h0;
 
 									end
@@ -1981,7 +1684,7 @@ module TopClass(
 
 							case(r_sys_subRoutine_stage) 
 								2'h0: begin
-									if((r_sys_subRoutine_step==6'h0)) begin
+									if((r_sys_subRoutine_step==3'h0)) begin
 										r_sys_subRoutine_stage <= 2'h0;
 
 									end
@@ -1994,7 +1697,7 @@ module TopClass(
 
 							case(r_sys_subRoutine_stage) 
 								2'h0: begin
-									if((r_sys_subRoutine_step==6'h5)) begin
+									if((r_sys_subRoutine_step==3'h5)) begin
 										r_sys_subRoutine_stage <= 2'h0;
 
 									end
@@ -2007,7 +1710,7 @@ module TopClass(
 
 							case(r_sys_subRoutine_stage) 
 								2'h0: begin
-									if((r_sys_subRoutine_step==6'h0)) begin
+									if((r_sys_subRoutine_step==3'h0)) begin
 										r_sys_subRoutine_stage <= 2'h0;
 
 									end
@@ -2027,7 +1730,7 @@ module TopClass(
 	always@(posedge clock)begin
 
 		if(( !reset_n )) begin
-			r_sys_subRoutine_step <= 6'h0;
+			r_sys_subRoutine_step <= 3'h0;
 
 		end
 		else
@@ -2041,8 +1744,8 @@ module TopClass(
 
 							case(r_sys_subRoutine_stage) 
 								2'h0: begin
-									if((r_sys_subRoutine_step==6'h0)) begin
-										r_sys_subRoutine_step <= 6'h0;
+									if((r_sys_subRoutine_step==3'h0)) begin
+										r_sys_subRoutine_step <= 3'h0;
 
 									end
 								end
@@ -2054,15 +1757,15 @@ module TopClass(
 
 							case(r_sys_subRoutine_stage) 
 								2'h0: begin
-									if((r_sys_subRoutine_step==6'h0)) begin
-										r_sys_subRoutine_step <= 6'h0;
+									if((r_sys_subRoutine_step==3'h0)) begin
+										r_sys_subRoutine_step <= 3'h0;
 
 									end
 								end
 
 								2'h1: begin
-									if((r_sys_subRoutine_step==6'h0)) begin
-										r_sys_subRoutine_step <= 6'h0;
+									if((r_sys_subRoutine_step==3'h0)) begin
+										r_sys_subRoutine_step <= 3'h0;
 
 									end
 								end
@@ -2074,8 +1777,8 @@ module TopClass(
 
 							case(r_sys_subRoutine_stage) 
 								2'h0: begin
-									if((r_sys_subRoutine_step==6'h0)) begin
-										r_sys_subRoutine_step <= 6'h0;
+									if((r_sys_subRoutine_step==3'h0)) begin
+										r_sys_subRoutine_step <= 3'h0;
 
 									end
 								end
@@ -2087,13 +1790,13 @@ module TopClass(
 
 							case(r_sys_subRoutine_stage) 
 								2'h0: begin
-									if((6'h0<=r_sys_subRoutine_step && r_sys_subRoutine_step<=6'h27)) begin
-										r_sys_subRoutine_step <= w_sys_subRoutine_step_p1;
+									if((r_sys_subRoutine_step==3'h3)) begin
+										r_sys_subRoutine_step <= 3'h0;
 
 									end
 									else
-									if((r_sys_subRoutine_step==6'h28)) begin
-										r_sys_subRoutine_step <= 6'h0;
+									if((r_sys_subRoutine_step==3'h0) || (r_sys_subRoutine_step==3'h1) || (r_sys_subRoutine_step==3'h2)) begin
+										r_sys_subRoutine_step <= w_sys_subRoutine_step_p1;
 
 									end
 								end
@@ -2105,8 +1808,8 @@ module TopClass(
 
 							case(r_sys_subRoutine_stage) 
 								2'h0: begin
-									if((r_sys_subRoutine_step==6'h0)) begin
-										r_sys_subRoutine_step <= 6'h0;
+									if((r_sys_subRoutine_step==3'h0)) begin
+										r_sys_subRoutine_step <= 3'h0;
 
 									end
 								end
@@ -2118,15 +1821,15 @@ module TopClass(
 
 							case(r_sys_subRoutine_stage) 
 								2'h0: begin
-									if((r_sys_subRoutine_step==6'h0)) begin
-										r_sys_subRoutine_step <= 6'h0;
+									if((r_sys_subRoutine_step==3'h0)) begin
+										r_sys_subRoutine_step <= 3'h0;
 
 									end
 								end
 
 								2'h1: begin
-									if((r_sys_subRoutine_step==6'h0)) begin
-										r_sys_subRoutine_step <= 6'h0;
+									if((r_sys_subRoutine_step==3'h0)) begin
+										r_sys_subRoutine_step <= 3'h0;
 
 									end
 								end
@@ -2138,8 +1841,8 @@ module TopClass(
 
 							case(r_sys_subRoutine_stage) 
 								2'h0: begin
-									if((r_sys_subRoutine_step==6'h0)) begin
-										r_sys_subRoutine_step <= 6'h0;
+									if((r_sys_subRoutine_step==3'h0)) begin
+										r_sys_subRoutine_step <= 3'h0;
 
 									end
 								end
@@ -2151,12 +1854,12 @@ module TopClass(
 
 							case(r_sys_subRoutine_stage) 
 								2'h0: begin
-									if((r_sys_subRoutine_step==6'h5)) begin
-										r_sys_subRoutine_step <= 6'h0;
+									if((r_sys_subRoutine_step==3'h5)) begin
+										r_sys_subRoutine_step <= 3'h0;
 
 									end
 									else
-									if((6'h0<=r_sys_subRoutine_step && r_sys_subRoutine_step<=6'h4)) begin
+									if((3'h0<=r_sys_subRoutine_step && r_sys_subRoutine_step<=3'h4)) begin
 										r_sys_subRoutine_step <= w_sys_subRoutine_step_p1;
 
 									end
@@ -2169,8 +1872,8 @@ module TopClass(
 
 							case(r_sys_subRoutine_stage) 
 								2'h0: begin
-									if((r_sys_subRoutine_step==6'h0)) begin
-										r_sys_subRoutine_step <= 6'h0;
+									if((r_sys_subRoutine_step==3'h0)) begin
+										r_sys_subRoutine_step <= 3'h0;
 
 									end
 								end
@@ -2607,7 +2310,7 @@ module TopClass(
 
 							case(r_sys_setValueToChildArray_stage) 
 								2'h0: begin
-									if((r_sys_setValueToChildArray_step==3'h3)) begin
+									if((r_sys_setValueToChildArray_step==3'h0)) begin
 										r_setValueToChildArray_i_12 <= w_sys_tmp13;
 
 									end
@@ -2641,8 +2344,13 @@ module TopClass(
 
 							case(r_sys_subRoutine_stage) 
 								2'h0: begin
-									if((6'h5<=r_sys_subRoutine_step && r_sys_subRoutine_step<=6'h8)) begin
+									if((r_sys_subRoutine_step==3'h0)) begin
 										r_subRoutine_ax_13_addr <= r_subRoutine_i_16;
+
+									end
+									else
+									if((r_sys_subRoutine_step==3'h1) || (r_sys_subRoutine_step==3'h2) || (r_sys_subRoutine_step==3'h3)) begin
+										r_subRoutine_ax_13_addr <= r_sys_tmp1_int;
 
 									end
 								end
@@ -2654,7 +2362,12 @@ module TopClass(
 
 							case(r_sys_subRoutine_stage) 
 								2'h0: begin
-									if((6'h0<=r_sys_subRoutine_step && r_sys_subRoutine_step<=6'h3)) begin
+									if((r_sys_subRoutine_step==3'h1) || (r_sys_subRoutine_step==3'h2) || (r_sys_subRoutine_step==3'h3)) begin
+										r_subRoutine_ax_13_addr <= r_sys_tmp3_int;
+
+									end
+									else
+									if((r_sys_subRoutine_step==3'h0)) begin
 										r_subRoutine_ax_13_addr <= r_subRoutine_i_16;
 
 									end
@@ -2683,12 +2396,12 @@ module TopClass(
 
 							case(r_sys_subRoutine_stage) 
 								2'h0: begin
-									if((r_sys_subRoutine_step==6'h5)) begin
+									if((r_sys_subRoutine_step==3'h0)) begin
 										r_subRoutine_ax_13_datain <= w_sys_tmp18;
 
 									end
 									else
-									if((r_sys_subRoutine_step==6'h6) || (r_sys_subRoutine_step==6'h7) || (r_sys_subRoutine_step==6'h8)) begin
+									if((r_sys_subRoutine_step==3'h1) || (r_sys_subRoutine_step==3'h2) || (r_sys_subRoutine_step==3'h3)) begin
 										r_subRoutine_ax_13_datain <= r_sys_tmp0_int;
 
 									end
@@ -2742,7 +2455,7 @@ module TopClass(
 
 							case(r_sys_subRoutine_stage) 
 								2'h0: begin
-									if((6'h5<=r_sys_subRoutine_step && r_sys_subRoutine_step<=6'h8)) begin
+									if((3'h0<=r_sys_subRoutine_step && r_sys_subRoutine_step<=3'h3)) begin
 										r_subRoutine_ax_13_r_w <= w_sys_boolTrue;
 
 									end
@@ -2755,7 +2468,7 @@ module TopClass(
 
 							case(r_sys_subRoutine_stage) 
 								2'h0: begin
-									if((6'h0<=r_sys_subRoutine_step && r_sys_subRoutine_step<=6'h3)) begin
+									if((3'h0<=r_sys_subRoutine_step && r_sys_subRoutine_step<=3'h3)) begin
 										r_subRoutine_ax_13_r_w <= w_sys_boolFalse;
 
 									end
@@ -2793,7 +2506,12 @@ module TopClass(
 
 							case(r_sys_subRoutine_stage) 
 								2'h0: begin
-									if((6'h25<=r_sys_subRoutine_step && r_sys_subRoutine_step<=6'h28)) begin
+									if((r_sys_subRoutine_step==3'h1) || (r_sys_subRoutine_step==3'h2) || (r_sys_subRoutine_step==3'h3)) begin
+										r_subRoutine_bx_14_addr <= r_sys_tmp2_int;
+
+									end
+									else
+									if((r_sys_subRoutine_step==3'h0)) begin
 										r_subRoutine_bx_14_addr <= r_subRoutine_copy2_i_20;
 
 									end
@@ -2806,7 +2524,12 @@ module TopClass(
 
 							case(r_sys_subRoutine_stage) 
 								2'h0: begin
-									if((6'h0<=r_sys_subRoutine_step && r_sys_subRoutine_step<=6'h3)) begin
+									if((r_sys_subRoutine_step==3'h1) || (r_sys_subRoutine_step==3'h2) || (r_sys_subRoutine_step==3'h3)) begin
+										r_subRoutine_bx_14_addr <= r_sys_tmp2_int;
+
+									end
+									else
+									if((r_sys_subRoutine_step==3'h0)) begin
 										r_subRoutine_bx_14_addr <= r_subRoutine_copy0_i_23;
 
 									end
@@ -2835,12 +2558,12 @@ module TopClass(
 
 							case(r_sys_subRoutine_stage) 
 								2'h0: begin
-									if((r_sys_subRoutine_step==6'h26) || (r_sys_subRoutine_step==6'h27) || (r_sys_subRoutine_step==6'h28)) begin
-										r_subRoutine_bx_14_datain <= r_sys_tmp0_int;
+									if((r_sys_subRoutine_step==3'h1) || (r_sys_subRoutine_step==3'h2) || (r_sys_subRoutine_step==3'h3)) begin
+										r_subRoutine_bx_14_datain <= r_sys_tmp3_int;
 
 									end
 									else
-									if((r_sys_subRoutine_step==6'h25)) begin
+									if((r_sys_subRoutine_step==3'h0)) begin
 										r_subRoutine_bx_14_datain <= w_sys_tmp22;
 
 									end
@@ -2894,7 +2617,7 @@ module TopClass(
 
 							case(r_sys_subRoutine_stage) 
 								2'h0: begin
-									if((6'h25<=r_sys_subRoutine_step && r_sys_subRoutine_step<=6'h28)) begin
+									if((3'h0<=r_sys_subRoutine_step && r_sys_subRoutine_step<=3'h3)) begin
 										r_subRoutine_bx_14_r_w <= w_sys_boolTrue;
 
 									end
@@ -2907,7 +2630,7 @@ module TopClass(
 
 							case(r_sys_subRoutine_stage) 
 								2'h0: begin
-									if((6'h0<=r_sys_subRoutine_step && r_sys_subRoutine_step<=6'h3)) begin
+									if((3'h0<=r_sys_subRoutine_step && r_sys_subRoutine_step<=3'h3)) begin
 										r_subRoutine_bx_14_r_w <= w_sys_boolFalse;
 
 									end
@@ -2969,7 +2692,7 @@ module TopClass(
 
 							case(r_sys_subRoutine_stage) 
 								2'h0: begin
-									if((r_sys_subRoutine_step==6'h0)) begin
+									if((r_sys_subRoutine_step==3'h0)) begin
 										r_subRoutine_i_16 <= w_sys_intZero;
 
 									end
@@ -2982,7 +2705,7 @@ module TopClass(
 
 							case(r_sys_subRoutine_stage) 
 								2'h0: begin
-									if((r_sys_subRoutine_step==6'h0)) begin
+									if((r_sys_subRoutine_step==3'h0)) begin
 										r_subRoutine_i_16 <= w_sys_intZero;
 
 									end
@@ -2995,7 +2718,7 @@ module TopClass(
 
 							case(r_sys_subRoutine_stage) 
 								2'h0: begin
-									if((6'h5<=r_sys_subRoutine_step && r_sys_subRoutine_step<=6'h8)) begin
+									if((3'h0<=r_sys_subRoutine_step && r_sys_subRoutine_step<=3'h3)) begin
 										r_subRoutine_i_16 <= w_sys_tmp31;
 
 									end
@@ -3008,7 +2731,7 @@ module TopClass(
 
 							case(r_sys_subRoutine_stage) 
 								2'h0: begin
-									if((r_sys_subRoutine_step==6'h0)) begin
+									if((r_sys_subRoutine_step==3'h0)) begin
 										r_subRoutine_i_16 <= w_sys_intZero;
 
 									end
@@ -3021,7 +2744,7 @@ module TopClass(
 
 							case(r_sys_subRoutine_stage) 
 								2'h0: begin
-									if((6'h0<=r_sys_subRoutine_step && r_sys_subRoutine_step<=6'h3)) begin
+									if((3'h0<=r_sys_subRoutine_step && r_sys_subRoutine_step<=3'h3)) begin
 										r_subRoutine_i_16 <= w_sys_tmp90;
 
 									end
@@ -3050,7 +2773,7 @@ module TopClass(
 
 							case(r_sys_subRoutine_stage) 
 								2'h0: begin
-									if((r_sys_subRoutine_step==6'h0)) begin
+									if((r_sys_subRoutine_step==3'h0)) begin
 										r_subRoutine_ret_17 <= w_sys_intZero;
 
 									end
@@ -3063,7 +2786,7 @@ module TopClass(
 
 							case(r_sys_subRoutine_stage) 
 								2'h0: begin
-									if((6'h2<=r_sys_subRoutine_step && r_sys_subRoutine_step<=6'h5)) begin
+									if((3'h2<=r_sys_subRoutine_step && r_sys_subRoutine_step<=3'h5)) begin
 										r_subRoutine_ret_17 <= w_sys_tmp85;
 
 									end
@@ -3092,7 +2815,7 @@ module TopClass(
 
 							case(r_sys_subRoutine_stage) 
 								2'h1: begin
-									if((r_sys_subRoutine_step==6'h0)) begin
+									if((r_sys_subRoutine_step==3'h0)) begin
 										r_subRoutine_copy0_i_18 <= r_subRoutine_i_16;
 
 									end
@@ -3105,7 +2828,7 @@ module TopClass(
 
 							case(r_sys_subRoutine_stage) 
 								2'h0: begin
-									if((6'h0<=r_sys_subRoutine_step && r_sys_subRoutine_step<=6'h3)) begin
+									if((3'h0<=r_sys_subRoutine_step && r_sys_subRoutine_step<=3'h3)) begin
 										r_subRoutine_copy0_i_18 <= w_sys_tmp26;
 
 									end
@@ -3134,7 +2857,7 @@ module TopClass(
 
 							case(r_sys_subRoutine_stage) 
 								2'h1: begin
-									if((r_sys_subRoutine_step==6'h0)) begin
+									if((r_sys_subRoutine_step==3'h0)) begin
 										r_subRoutine_copy1_i_19 <= r_subRoutine_i_16;
 
 									end
@@ -3147,7 +2870,7 @@ module TopClass(
 
 							case(r_sys_subRoutine_stage) 
 								2'h0: begin
-									if((6'h0<=r_sys_subRoutine_step && r_sys_subRoutine_step<=6'h3)) begin
+									if((3'h0<=r_sys_subRoutine_step && r_sys_subRoutine_step<=3'h3)) begin
 										r_subRoutine_copy1_i_19 <= w_sys_tmp27;
 
 									end
@@ -3176,7 +2899,7 @@ module TopClass(
 
 							case(r_sys_subRoutine_stage) 
 								2'h1: begin
-									if((r_sys_subRoutine_step==6'h0)) begin
+									if((r_sys_subRoutine_step==3'h0)) begin
 										r_subRoutine_copy2_i_20 <= r_subRoutine_i_16;
 
 									end
@@ -3189,7 +2912,7 @@ module TopClass(
 
 							case(r_sys_subRoutine_stage) 
 								2'h0: begin
-									if((6'h25<=r_sys_subRoutine_step && r_sys_subRoutine_step<=6'h28)) begin
+									if((3'h0<=r_sys_subRoutine_step && r_sys_subRoutine_step<=3'h3)) begin
 										r_subRoutine_copy2_i_20 <= w_sys_tmp28;
 
 									end
@@ -3218,7 +2941,7 @@ module TopClass(
 
 							case(r_sys_subRoutine_stage) 
 								2'h1: begin
-									if((r_sys_subRoutine_step==6'h0)) begin
+									if((r_sys_subRoutine_step==3'h0)) begin
 										r_subRoutine_copy3_i_21 <= r_subRoutine_i_16;
 
 									end
@@ -3231,7 +2954,7 @@ module TopClass(
 
 							case(r_sys_subRoutine_stage) 
 								2'h0: begin
-									if((6'h0<=r_sys_subRoutine_step && r_sys_subRoutine_step<=6'h3)) begin
+									if((3'h0<=r_sys_subRoutine_step && r_sys_subRoutine_step<=3'h3)) begin
 										r_subRoutine_copy3_i_21 <= w_sys_tmp29;
 
 									end
@@ -3260,7 +2983,7 @@ module TopClass(
 
 							case(r_sys_subRoutine_stage) 
 								2'h1: begin
-									if((r_sys_subRoutine_step==6'h0)) begin
+									if((r_sys_subRoutine_step==3'h0)) begin
 										r_subRoutine_copy4_i_22 <= r_subRoutine_i_16;
 
 									end
@@ -3273,7 +2996,7 @@ module TopClass(
 
 							case(r_sys_subRoutine_stage) 
 								2'h0: begin
-									if((6'h0<=r_sys_subRoutine_step && r_sys_subRoutine_step<=6'h3)) begin
+									if((3'h0<=r_sys_subRoutine_step && r_sys_subRoutine_step<=3'h3)) begin
 										r_subRoutine_copy4_i_22 <= w_sys_tmp30;
 
 									end
@@ -3302,7 +3025,7 @@ module TopClass(
 
 							case(r_sys_subRoutine_stage) 
 								2'h1: begin
-									if((r_sys_subRoutine_step==6'h0)) begin
+									if((r_sys_subRoutine_step==3'h0)) begin
 										r_subRoutine_copy0_i_23 <= r_subRoutine_i_16;
 
 									end
@@ -3315,7 +3038,7 @@ module TopClass(
 
 							case(r_sys_subRoutine_stage) 
 								2'h0: begin
-									if((6'h0<=r_sys_subRoutine_step && r_sys_subRoutine_step<=6'h3)) begin
+									if((3'h0<=r_sys_subRoutine_step && r_sys_subRoutine_step<=3'h3)) begin
 										r_subRoutine_copy0_i_23 <= w_sys_tmp89;
 
 									end
@@ -3558,8 +3281,13 @@ module TopClass(
 
 							case(r_sys_setValueToChildArray_stage) 
 								2'h0: begin
-									if((r_sys_setValueToChildArray_step==3'h0) || (r_sys_setValueToChildArray_step==3'h1)) begin
+									if((r_sys_setValueToChildArray_step==3'h0)) begin
 										r_subClassA_arrayA_addr <= $signed( r_setValueToChildArray_i_12[4:0] );
+
+									end
+									else
+									if((r_sys_setValueToChildArray_step==3'h1)) begin
+										r_subClassA_arrayA_addr <= $signed( r_sys_tmp0_int[4:0] );
 
 									end
 								end
@@ -3793,7 +3521,7 @@ module TopClass(
 							case(r_sys_setValueToChildArray_stage) 
 								2'h0: begin
 									if((r_sys_setValueToChildArray_step==3'h3)) begin
-										r_subClassB_arrayB_addr <= $signed( r_setValueToChildArray_i_12[4:0] );
+										r_subClassB_arrayB_addr <= $signed( r_sys_tmp1_int[4:0] );
 
 									end
 								end
@@ -3970,6 +3698,25 @@ module TopClass(
 		if(w_sys_ce) begin
 
 			case(r_sys_processing_methodID) 
+				3'h2: begin
+
+					case(r_sys_setValueToChildArray_phase) 
+						4'h7: begin
+
+							case(r_sys_setValueToChildArray_stage) 
+								2'h0: begin
+									if((r_sys_setValueToChildArray_step==3'h0)) begin
+										r_sys_tmp0_int <= r_setValueToChildArray_i_12;
+
+									end
+								end
+
+							endcase
+						end
+
+					endcase
+				end
+
 				3'h3: begin
 
 					case(r_sys_subRoutine_phase) 
@@ -3977,23 +3724,140 @@ module TopClass(
 
 							case(r_sys_subRoutine_stage) 
 								2'h0: begin
-									if((r_sys_subRoutine_step==6'h26) || (r_sys_subRoutine_step==6'h27)) begin
-										r_sys_tmp0_int <= w_ip_DivInt_quotient_0;
+									if((r_sys_subRoutine_step==3'h0) || (r_sys_subRoutine_step==3'h1) || (r_sys_subRoutine_step==3'h2)) begin
+										r_sys_tmp0_int <= w_sys_tmp110;
 
 									end
-									else
-									if((r_sys_subRoutine_step==6'h6) || (r_sys_subRoutine_step==6'h7)) begin
-										r_sys_tmp0_int <= $signed( w_ip_Multint_product_0[31:0] );
+								end
+
+							endcase
+						end
+
+					endcase
+				end
+
+			endcase
+		end
+	end
+
+
+	always@(posedge clock)begin
+
+		if(w_sys_ce) begin
+
+			case(r_sys_processing_methodID) 
+				3'h2: begin
+
+					case(r_sys_setValueToChildArray_phase) 
+						4'h7: begin
+
+							case(r_sys_setValueToChildArray_stage) 
+								2'h0: begin
+									if((r_sys_setValueToChildArray_step==3'h0)) begin
+										r_sys_tmp1_int <= r_setValueToChildArray_i_12;
 
 									end
-									else
-									if((r_sys_subRoutine_step==6'h5)) begin
-										r_sys_tmp0_int <= $signed( w_ip_Multint_product_1[31:0] );
+								end
+
+							endcase
+						end
+
+					endcase
+				end
+
+				3'h3: begin
+
+					case(r_sys_subRoutine_phase) 
+						5'h8: begin
+
+							case(r_sys_subRoutine_stage) 
+								2'h0: begin
+									if((r_sys_subRoutine_step==3'h0) || (r_sys_subRoutine_step==3'h1) || (r_sys_subRoutine_step==3'h2)) begin
+										r_sys_tmp1_int <= w_sys_tmp31;
 
 									end
-									else
-									if((r_sys_subRoutine_step==6'h25)) begin
-										r_sys_tmp0_int <= w_ip_DivInt_quotient_1;
+								end
+
+							endcase
+						end
+
+					endcase
+				end
+
+			endcase
+		end
+	end
+
+
+	always@(posedge clock)begin
+
+		if(w_sys_ce) begin
+
+			case(r_sys_processing_methodID) 
+				3'h3: begin
+
+					case(r_sys_subRoutine_phase) 
+						5'h8: begin
+
+							case(r_sys_subRoutine_stage) 
+								2'h0: begin
+									if((r_sys_subRoutine_step==3'h0) || (r_sys_subRoutine_step==3'h1) || (r_sys_subRoutine_step==3'h2)) begin
+										r_sys_tmp2_int <= w_sys_tmp28;
+
+									end
+								end
+
+							endcase
+						end
+
+						5'hf: begin
+
+							case(r_sys_subRoutine_stage) 
+								2'h0: begin
+									if((r_sys_subRoutine_step==3'h0) || (r_sys_subRoutine_step==3'h1) || (r_sys_subRoutine_step==3'h2)) begin
+										r_sys_tmp2_int <= w_sys_tmp89;
+
+									end
+								end
+
+							endcase
+						end
+
+					endcase
+				end
+
+			endcase
+		end
+	end
+
+
+	always@(posedge clock)begin
+
+		if(w_sys_ce) begin
+
+			case(r_sys_processing_methodID) 
+				3'h3: begin
+
+					case(r_sys_subRoutine_phase) 
+						5'h8: begin
+
+							case(r_sys_subRoutine_stage) 
+								2'h0: begin
+									if((r_sys_subRoutine_step==3'h0) || (r_sys_subRoutine_step==3'h1) || (r_sys_subRoutine_step==3'h2)) begin
+										r_sys_tmp3_int <= w_sys_tmp111;
+
+									end
+								end
+
+							endcase
+						end
+
+						5'hf: begin
+
+							case(r_sys_subRoutine_stage) 
+								2'h0: begin
+									if((r_sys_subRoutine_step==3'h0) || (r_sys_subRoutine_step==3'h1) || (r_sys_subRoutine_step==3'h2)) begin
+										r_sys_tmp3_int <= w_sys_tmp90;
 
 									end
 								end

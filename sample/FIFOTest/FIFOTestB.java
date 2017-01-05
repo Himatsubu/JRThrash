@@ -1,9 +1,3 @@
-package net.njlab.sample;
-
-import net.njlab.sample.annotation.JRThrashConvertedIntoIPcore;
-import net.njlab.sample.annotation.JRThrashPortBitWidthSpecify;
-
-
 public class FIFOTestB{
 	final int [] arrayA = new int [10];	
 	final public fifoa2b obj = new fifoa2b();
@@ -11,7 +5,7 @@ public class FIFOTestB{
 	public int run(){
 		int i;
 		boolean check_finished;
-		int result;
+		int result=0;
 /*
 		for(i=0;i<10;i++){
 			arrayA[i] = i;

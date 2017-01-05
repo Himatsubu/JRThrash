@@ -1,5 +1,5 @@
 /*
-TimeStamp:	2016/12/21		19:6
+TimeStamp:	2017/1/5		15:47
 */
 
 
@@ -479,13 +479,13 @@ module ThreadSubB(
 
 							case(r_sys_run_stage) 
 								2'h0: begin
-									if((3'h0<=r_sys_run_step && r_sys_run_step<=3'h4)) begin
-										r_sys_run_step <= w_sys_run_step_p1;
+									if((r_sys_run_step==3'h5)) begin
+										r_sys_run_step <= 3'h0;
 
 									end
 									else
-									if((r_sys_run_step==3'h5)) begin
-										r_sys_run_step <= 3'h0;
+									if((3'h0<=r_sys_run_step && r_sys_run_step<=3'h4)) begin
+										r_sys_run_step <= w_sys_run_step_p1;
 
 									end
 								end
@@ -762,13 +762,13 @@ module ThreadSubB(
 
 							case(r_sys_setArray_stage) 
 								2'h0: begin
-									if((4'h0<=r_sys_setArray_step && r_sys_setArray_step<=4'ha)) begin
-										r_sys_setArray_step <= w_sys_setArray_step_p1;
+									if((r_sys_setArray_step==4'hb)) begin
+										r_sys_setArray_step <= 4'h0;
 
 									end
 									else
-									if((r_sys_setArray_step==4'hb)) begin
-										r_sys_setArray_step <= 4'h0;
+									if((4'h0<=r_sys_setArray_step && r_sys_setArray_step<=4'ha)) begin
+										r_sys_setArray_step <= w_sys_setArray_step_p1;
 
 									end
 								end
@@ -1044,23 +1044,13 @@ module ThreadSubB(
 
 							case(r_sys_setArray_stage) 
 								2'h0: begin
-									if((r_sys_setArray_step==4'h3)) begin
-										r_fld_arrayB_0_addr_1 <= $signed( r_sys_tmp4_int[4:0] );
+									if((r_sys_setArray_step==4'h5)) begin
+										r_fld_arrayB_0_addr_1 <= $signed( r_sys_tmp5_int[4:0] );
 
 									end
 									else
 									if((r_sys_setArray_step==4'h9)) begin
 										r_fld_arrayB_0_addr_1 <= $signed( r_sys_tmp0_int[4:0] );
-
-									end
-									else
-									if((r_sys_setArray_step==4'h2) || (r_sys_setArray_step==4'hb)) begin
-										r_fld_arrayB_0_addr_1 <= $signed( r_sys_tmp8_int[4:0] );
-
-									end
-									else
-									if((r_sys_setArray_step==4'h6)) begin
-										r_fld_arrayB_0_addr_1 <= $signed( r_sys_tmp2_int[4:0] );
 
 									end
 									else
@@ -1074,8 +1064,18 @@ module ThreadSubB(
 
 									end
 									else
-									if((r_sys_setArray_step==4'h5)) begin
-										r_fld_arrayB_0_addr_1 <= $signed( r_sys_tmp5_int[4:0] );
+									if((r_sys_setArray_step==4'h6)) begin
+										r_fld_arrayB_0_addr_1 <= $signed( r_sys_tmp2_int[4:0] );
+
+									end
+									else
+									if((r_sys_setArray_step==4'h2) || (r_sys_setArray_step==4'hb)) begin
+										r_fld_arrayB_0_addr_1 <= $signed( r_sys_tmp8_int[4:0] );
+
+									end
+									else
+									if((r_sys_setArray_step==4'h3)) begin
+										r_fld_arrayB_0_addr_1 <= $signed( r_sys_tmp4_int[4:0] );
 
 									end
 								end
@@ -1108,13 +1108,13 @@ module ThreadSubB(
 
 									end
 									else
-									if((r_sys_setArray_step==4'h5)) begin
-										r_fld_arrayB_0_datain_1 <= w_sys_tmp31;
+									if((r_sys_setArray_step==4'h8)) begin
+										r_fld_arrayB_0_datain_1 <= w_sys_tmp45;
 
 									end
 									else
-									if((r_sys_setArray_step==4'h8)) begin
-										r_fld_arrayB_0_datain_1 <= w_sys_tmp45;
+									if((r_sys_setArray_step==4'h5)) begin
+										r_fld_arrayB_0_datain_1 <= w_sys_tmp31;
 
 									end
 								end
@@ -1170,13 +1170,13 @@ module ThreadSubB(
 
 							case(r_sys_setArray_stage) 
 								2'h0: begin
-									if((r_sys_setArray_step==4'h2) || (r_sys_setArray_step==4'h5) || (r_sys_setArray_step==4'h8) || (r_sys_setArray_step==4'hb)) begin
-										r_fld_arrayB_0_r_w_1 <= w_sys_boolTrue;
+									if((r_sys_setArray_step==4'h0) || (r_sys_setArray_step==4'h3) || (r_sys_setArray_step==4'h6) || (r_sys_setArray_step==4'h9)) begin
+										r_fld_arrayB_0_r_w_1 <= w_sys_boolFalse;
 
 									end
 									else
-									if((r_sys_setArray_step==4'h0) || (r_sys_setArray_step==4'h3) || (r_sys_setArray_step==4'h6) || (r_sys_setArray_step==4'h9)) begin
-										r_fld_arrayB_0_r_w_1 <= w_sys_boolFalse;
+									if((r_sys_setArray_step==4'h2) || (r_sys_setArray_step==4'h5) || (r_sys_setArray_step==4'h8) || (r_sys_setArray_step==4'hb)) begin
+										r_fld_arrayB_0_r_w_1 <= w_sys_boolTrue;
 
 									end
 								end
@@ -1726,13 +1726,13 @@ module ThreadSubB(
 
 							case(r_sys_setArray_stage) 
 								2'h0: begin
-									if((r_sys_setArray_step==4'h2)) begin
-										r_sys_tmp7_int <= w_sys_tmp74;
+									if((r_sys_setArray_step==4'h0)) begin
+										r_sys_tmp7_int <= w_sys_tmp73;
 
 									end
 									else
-									if((r_sys_setArray_step==4'h0)) begin
-										r_sys_tmp7_int <= w_sys_tmp73;
+									if((r_sys_setArray_step==4'h2)) begin
+										r_sys_tmp7_int <= w_sys_tmp74;
 
 									end
 								end

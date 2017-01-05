@@ -1,5 +1,5 @@
 /*
-TimeStamp:	2016/12/23		13:55
+TimeStamp:	2017/1/5		15:47
 */
 
 
@@ -923,13 +923,13 @@ module fifotesta(
 
 							case(r_sys_run_stage) 
 								2'h0: begin
-									if((4'h0<=r_sys_run_step && r_sys_run_step<=4'h7)) begin
-										r_sys_run_step <= w_sys_run_step_p1;
+									if((r_sys_run_step==4'h8)) begin
+										r_sys_run_step <= 4'h0;
 
 									end
 									else
-									if((r_sys_run_step==4'h8)) begin
-										r_sys_run_step <= 4'h0;
+									if((4'h0<=r_sys_run_step && r_sys_run_step<=4'h7)) begin
+										r_sys_run_step <= w_sys_run_step_p1;
 
 									end
 								end

@@ -9,9 +9,42 @@ module FIFOTestA(
 	input                 ce,	
 	input                 i_run_req,	
 	output                o_run_busy,	
-	output signed  [31:0] o_run_return	
+	output signed  [31:0] o_run_return,
+	//ここから追加	
+	//input                 w_obj_check_finished_busy,
+	//output                r_obj_check_finished_req,
+	//input                 w_obj_checl_finished_return,
+	//input                 w_obj_deque_busy,
+	//output                r_obj_deque_req,
+	//input                 w_obj_deque_return,
+	input                 w_obj_enque_busy,
+	output                r_obj_enque_n_in,
+	output                r_obj_enque_req,
+	input                 w_obj_is_finished_busy,
+	output                r_obj_is_finished_req,
+	output                r_obj_is_finished_in_finished        
 );
 
+/*
+	fifoa2b
+		obj_inst(
+			.o_check_finished_busy (w_obj_check_finished_busy),
+			.i_check_finished_req (r_obj_check_finished_req),
+			.o_check_finished_return (w_obj_check_finished_return),
+			.o_deque_busy (w_obj_deque_busy),
+			.i_deque_req (r_obj_deque_req),
+			.o_deque_return (w_obj_deque_return),
+			.o_enque_busy (w_obj_enque_busy),
+			.i_enque_n_in_5 (r_obj_enque_n_in),
+			.i_enque_req (r_obj_enque_req),
+			.o_is_finished_busy (w_obj_is_finished_busy),
+			.i_is_finished_in_finished_4 (r_obj_is_finished_in_finished),
+			.i_is_finished_req (r_obj_is_finished_req),
+			.ce (ce),
+			.reset_n (reset_n),
+			.clock (clock)
+		);
+*/
 	reg         [ 1:0] r_sys_processing_methodID;
 	wire               w_sys_boolTrue;
 	wire               w_sys_boolFalse;
@@ -99,7 +132,7 @@ module FIFOTestA(
 	assign w_sys_tmp21 = (r_run_i_2 + w_sys_intOne);
 	assign w_sys_tmp22 = r_run_result_3;
 
-
+/*
 	fifoa2b
 		obj_inst(
 			.o_check_finished_busy (w_obj_check_finished_busy),
@@ -118,6 +151,7 @@ module FIFOTestA(
 			.reset_n (reset_n),
 			.clock (clock)
 		);
+*/
 
 	DualPortRAM #(.DWIDTH(32), .AWIDTH(4), .WORDS(10) )
 		dpram_arrayA_1(

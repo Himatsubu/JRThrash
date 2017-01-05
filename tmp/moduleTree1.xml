@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="shift_jis" ?>
 
 <module>
-	<name objName = "*thisIsTopModule"    className = "fifotesta" />
+	<name objName = "*thisIsTopModule"    className = "FIFOTestA" />
+	<subModule>
+		<module>
+			<name objName = "obj"    className = "fifoa2b" />
+		</module>
+	</subModule>
 </module>
