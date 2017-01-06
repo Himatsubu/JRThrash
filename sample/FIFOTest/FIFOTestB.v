@@ -9,14 +9,14 @@ module FIFOTestB(
 	input                 ce,	
 	input                 i_run_req,	
 	output                o_run_busy,	
-	output signed  [31:0] o_run_return
+	output signed  [31:0] o_run_return,
 
 	input                 w_obj_check_finished_busy,
 	output                r_obj_check_finished_req,
 	input                 w_obj_checl_finished_return,
 	input                 w_obj_deque_busy,
 	output                r_obj_deque_req,
-	input                 w_obj_deque_return,
+	input          [31:0] w_obj_deque_return
 );
 
 	reg         [ 1:0] r_sys_processing_methodID;

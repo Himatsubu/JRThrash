@@ -18,7 +18,7 @@ module FIFOTestA(
 	//output                r_obj_deque_req,
 	//input                 w_obj_deque_return,
 	input                 w_obj_enque_busy,
-	output                r_obj_enque_n_in,
+	output signed  [31:0] r_obj_enque_n_in,
 	output                r_obj_enque_req,
 	input                 w_obj_is_finished_busy,
 	output                r_obj_is_finished_req,
