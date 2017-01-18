@@ -1,0 +1,5 @@
+	//ここから追加
+	output [31:0]         r_ip_fifoA2B_a_0,	// in 32bit
+    	output [31:0]         r_ip_fifoA2B_s_we_0,    // in 32bit
+    	output [31:0]         r_ip_fifoA2B_s_re_0,    // in 32bit
+    	input  [31:0]         w_ip_fifoA2B_result_0    // out 32bit	
