@@ -14,7 +14,7 @@ module fifoA2B(
 	wire [31:0] count;
 	
 
-	simple_fifo_32#(.WIDTH(32),.DEPTH(8))U(
+	simple_fifo_32#(.WIDTH(32),.DEPTH(129))U(
 		.clk(clk),
 		.reset(reset),
 		.we(s_we[0]),

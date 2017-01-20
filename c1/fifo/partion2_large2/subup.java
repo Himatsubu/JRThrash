@@ -1,6 +1,5 @@
 import net.njlab.sample.annotation.*;
 
-
 public class subup extends Thread{
         final float[] u      = new float[8643];
 	//final float[] q      = new float[16900];
@@ -12,6 +11,12 @@ public class subup extends Thread{
         @JRThrashUnroll(unrollNum=32, loopVariableName="j",unrollType=JRThrashUnroll.copyLoopVar)
         public void run(){
 		int k,j;
+
+		int s_under2up_re = 0;
+		int s_under2up_we = 0;
+		int s_up2under_re = 0;
+		int s_up2under_we = 0;
+
 /*
                 float r1 = 0.2f;
 		float r2 = 0.2f;
@@ -39,7 +44,34 @@ public class subup extends Thread{
 			}
 		}
 
-		
-        }
+	
+		//袖領域の書き込み
+		for(k=1;k<129;k++){
+			s_under2up_we = 1;
+			fifo_under2up(u[64*129+k],s_under2up_we,s_under2up_re);
+			s_under2up_re = 0;
+		}
+		//袖領域の読み込み
+		for(k=1;k<129;k++){
+			s_up2under_re = 1;
+			u[65*129+k]=fifo_up2under(0,s_up2under_we,s_under2up_we);
+			s_up2under_re = 0;	
+	        }
+	}
 
+	@JRThrashConvertedIntoIPcore(availableNum=1,latency=5,throughput=5,outputPName="p",
+					clockPName="clk",clockEnablePName="ce",resetPName="rst",
+					newDataPName="operation_nd",haveClock=true,haveReset=true,haveNewData=true)
+	private float fifo_under2up(float in,int s_we,int s_re){
+		return in;
+	}
+
+	@JRThrashConvertedIntoIPcore(availableNum=1,latency=7,throughput=7,outputPName="p",
+					clockPName="clk",clockEnablePName="ce",resetPName="rst",
+					newDataPName="operation_nd",haveClock=true,haveReset=true,haveNewData=true)
+	private float fifo_up2under(float in,int s_we,int s_re){
+		return in;
+	}
+	
+        
 }

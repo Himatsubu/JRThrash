@@ -1,6 +1,6 @@
 `default_nettype none
 
-module simple_fifo #(parameter WIDTH = 32, parameter DEPTH = 8)
+module simple_fifo #(parameter WIDTH = 32, parameter DEPTH = 129)
    (
     input wire 		   clk,
     input wire 		   reset,

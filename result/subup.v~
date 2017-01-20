@@ -25,7 +25,7 @@ module subup(
 	output         [31:0] r_ip_fifo_under2up_s_re_0,
 	input          [31:0] w_ip_fifo_under2up_result_0,
 	//up2under
-	output         [31:0] r_ip_fifo_up2under_in_0,
+	output         [31:0] r_ip_fifo_under2up_in_0,
 	output         [31:0] r_ip_fifo_up2under_s_we_0,
 	output         [31:0] r_ip_fifo_up2under_s_re_0,
 	input          [31:0] w_ip_fifo_up2under_result_0	

@@ -19,7 +19,7 @@ module c1(
 	output  signed [31:0] w_sub00_result_addr,
 	output         [31:0] w_sub00_result_datain,
 	input          [31:0] w_sub00_result_dataout,
-	output                w_sub00_result_r_w,
+	output         [31:0] w_sub00_result_r_w,
  	
 	
 	//subunder
@@ -30,7 +30,7 @@ module c1(
 	output  signed [31:0] w_sub01_result_addr,
 	output         [31:0] w_sub01_result_datain,
 	input          [31:0] w_sub01_result_dataout,
-	output                w_sub01_result_r_w
+	output         [31:0] w_sub01_result_r_w
 );
 
 	reg         [ 1:0] r_sys_processing_methodID;

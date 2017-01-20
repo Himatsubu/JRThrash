@@ -82,13 +82,14 @@ public class c1{
 
 //		sub00.run();
 //		sub01.run();
-		
+
+/*		袖領域のやり取り
 		for(k=1;k<=129;k++){
 			sub00.u[65*129+k]=sub01.result[(65-63)*129+k];
 			sub01.u[(64-63)*129+k]=sub00.result[64*129+k];
 	
 		}
-
+*/
 			
 	}
 		for(k=2;k<=128;k++){
