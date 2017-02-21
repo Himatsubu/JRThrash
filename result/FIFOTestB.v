@@ -1,5 +1,5 @@
 /*
-TimeStamp:	2017/1/5		16:50
+TimeStamp:	2017/1/23		14:52
 */
 
 
@@ -589,6 +589,11 @@ module FIFOTestB(
 
 							case(r_sys_run_stage) 
 								2'h0: begin
+									if((r_sys_run_step==3'h2)) begin
+										r_sys_run_step <= ((w_obj_check_finished_busy) ? r_sys_run_step : w_sys_run_step_p1);
+
+									end
+									else
 									if((r_sys_run_step==3'h0) || (r_sys_run_step==3'h1)) begin
 										r_sys_run_step <= w_sys_run_step_p1;
 
@@ -596,11 +601,6 @@ module FIFOTestB(
 									else
 									if((r_sys_run_step==3'h3)) begin
 										r_sys_run_step <= 3'h0;
-
-									end
-									else
-									if((r_sys_run_step==3'h2)) begin
-										r_sys_run_step <= ((w_obj_check_finished_busy) ? r_sys_run_step : w_sys_run_step_p1);
 
 									end
 								end
@@ -707,13 +707,13 @@ module FIFOTestB(
 
 							case(r_sys_run_stage) 
 								2'h0: begin
-									if((r_sys_run_step==3'h2)) begin
-										r_sys_run_step <= 3'h0;
+									if((r_sys_run_step==3'h0) || (r_sys_run_step==3'h1)) begin
+										r_sys_run_step <= w_sys_run_step_p1;
 
 									end
 									else
-									if((r_sys_run_step==3'h0) || (r_sys_run_step==3'h1)) begin
-										r_sys_run_step <= w_sys_run_step_p1;
+									if((r_sys_run_step==3'h2)) begin
+										r_sys_run_step <= 3'h0;
 
 									end
 								end

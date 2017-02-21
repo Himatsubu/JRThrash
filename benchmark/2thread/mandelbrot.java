@@ -1,0 +1,39 @@
+import net.njlab.sample.annotation.*;
+
+public class mandelbrot {
+
+	static final sub sub00 = new sub();
+	static final sub sub01 = new sub();
+
+	//public  static void main(String[] args){
+	public void run(){
+		float a,b;
+
+		float C0r = -0.743f;
+		float C0i =  0.1145f;
+		float VS  =  0.003f;
+		int STEP   = 800;
+
+
+
+		for(a = C0r-VS; a<C0r+VS; a+=2.0f*VS/STEP){
+			//for(b = 0.1115; b<0.1175; b+=2*0.003/800);
+			for(b = C0i-VS; b<C0i+VS; b+=2.0f*VS/STEP*2.0f){
+
+				sub00.a[0] = a;
+				sub00.b[0] = b;
+				sub01.a[0] = a;
+				sub01.b[0] = b+2.0f*VS/STEP;
+
+				sub00.start();
+				sub01.start();
+				try{
+					sub00.join();
+					sub01.join();
+				}catch(Exception e){}
+				//System.out.print(a+" "+b+" "+mandelbrot(a,b)+"\n");
+			}
+			//System.out.println();
+		} 	
+	}
+}

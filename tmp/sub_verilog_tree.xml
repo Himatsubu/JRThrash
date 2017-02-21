@@ -6,7 +6,7 @@
 
 	<AllVariables>
 		<VeriableDecl>
-			<name>	u	</name>
+			<name>	a	</name>
 			<type>	float	</type>
 			<variableID>	0	</variableID>
 			<parentName>	sub	</parentName>
@@ -18,13 +18,13 @@
 			<init>
 				<NewArray>
 					<type>	float	</type>
-					<elements>	64	</elements>				
+					<elements>	1	</elements>				
 				</NewArray>
 			</init>
 		</VeriableDecl>
 
 		<VeriableDecl>
-			<name>	arrayq	</name>
+			<name>	b	</name>
 			<type>	float	</type>
 			<variableID>	1	</variableID>
 			<parentName>	sub	</parentName>
@@ -36,33 +36,15 @@
 			<init>
 				<NewArray>
 					<type>	float	</type>
-					<elements>	64	</elements>				
+					<elements>	1	</elements>				
 				</NewArray>
 			</init>
 		</VeriableDecl>
 
 		<VeriableDecl>
-			<name>	arrayX	</name>
+			<name>	result	</name>
 			<type>	float	</type>
 			<variableID>	2	</variableID>
-			<parentName>	sub	</parentName>
-			<defType>	field	</defType>
-			<isArray>	true	</isArray>
-			<isPrimitive>	true	</isPrimitive>
-			<isFinal>	true	</isFinal>
-			<dimension>	1	</dimension>
-			<init>
-				<NewArray>
-					<type>	float	</type>
-					<elements>	64	</elements>				
-				</NewArray>
-			</init>
-		</VeriableDecl>
-
-		<VeriableDecl>
-			<name>	N	</name>
-			<type>	int	</type>
-			<variableID>	3	</variableID>
 			<parentName>	sub	</parentName>
 			<defType>	field	</defType>
 			<isArray>	false	</isArray>
@@ -70,15 +52,29 @@
 			<isFinal>	false	</isFinal>
 			<dimension>	0	</dimension>
 			<init>
+			</init>
+		</VeriableDecl>
+
+		<VeriableDecl>
+			<name>	x	</name>
+			<type>	float	</type>
+			<variableID>	3	</variableID>
+			<parentName>	run	</parentName>
+			<defType>	method	</defType>
+			<isArray>	false	</isArray>
+			<isPrimitive>	true	</isPrimitive>
+			<isFinal>	false	</isFinal>
+			<dimension>	0	</dimension>
+			<init>
 				<Literal>
-					<type>	int	</type>
-					<value>	20	</value>
+					<type>	float	</type>
+					<value>	0.0	</value>
 				</Literal>
 			</init>
 		</VeriableDecl>
 
 		<VeriableDecl>
-			<name>	r1	</name>
+			<name>	y	</name>
 			<type>	float	</type>
 			<variableID>	4	</variableID>
 			<parentName>	run	</parentName>
@@ -90,13 +86,13 @@
 			<init>
 				<Literal>
 					<type>	float	</type>
-					<value>	0.2	</value>
+					<value>	0.0	</value>
 				</Literal>
 			</init>
 		</VeriableDecl>
 
 		<VeriableDecl>
-			<name>	r2	</name>
+			<name>	x1	</name>
 			<type>	float	</type>
 			<variableID>	5	</variableID>
 			<parentName>	run	</parentName>
@@ -106,15 +102,11 @@
 			<isFinal>	false	</isFinal>
 			<dimension>	0	</dimension>
 			<init>
-				<Literal>
-					<type>	float	</type>
-					<value>	0.2	</value>
-				</Literal>
 			</init>
 		</VeriableDecl>
 
 		<VeriableDecl>
-			<name>	dt	</name>
+			<name>	y1	</name>
 			<type>	float	</type>
 			<variableID>	6	</variableID>
 			<parentName>	run	</parentName>
@@ -124,15 +116,11 @@
 			<isFinal>	false	</isFinal>
 			<dimension>	0	</dimension>
 			<init>
-				<Literal>
-					<type>	float	</type>
-					<value>	5.0E-4	</value>
-				</Literal>
 			</init>
 		</VeriableDecl>
 
 		<VeriableDecl>
-			<name>	k	</name>
+			<name>	n	</name>
 			<type>	int	</type>
 			<variableID>	7	</variableID>
 			<parentName>	run	</parentName>
@@ -142,154 +130,6 @@
 			<isFinal>	false	</isFinal>
 			<dimension>	0	</dimension>
 			<init>
-				<Literal>
-					<type>	int	</type>
-					<value>	2	</value>
-				</Literal>
-			</init>
-		</VeriableDecl>
-
-		<VeriableDecl>
-			<name>	copy0_k	</name>
-			<type>	int	</type>
-			<variableID>	8	</variableID>
-			<parentName>	run	</parentName>
-			<defType>	method	</defType>
-			<isArray>	false	</isArray>
-			<isPrimitive>	true	</isPrimitive>
-			<isFinal>	false	</isFinal>
-			<dimension>	0	</dimension>
-			<init>
-				<Literal>
-					<type>	int	</type>
-					<value>	2	</value>
-				</Literal>
-			</init>
-		</VeriableDecl>
-
-		<VeriableDecl>
-			<name>	copy1_k	</name>
-			<type>	int	</type>
-			<variableID>	9	</variableID>
-			<parentName>	run	</parentName>
-			<defType>	method	</defType>
-			<isArray>	false	</isArray>
-			<isPrimitive>	true	</isPrimitive>
-			<isFinal>	false	</isFinal>
-			<dimension>	0	</dimension>
-			<init>
-				<Literal>
-					<type>	int	</type>
-					<value>	2	</value>
-				</Literal>
-			</init>
-		</VeriableDecl>
-
-		<VeriableDecl>
-			<name>	copy2_k	</name>
-			<type>	int	</type>
-			<variableID>	10	</variableID>
-			<parentName>	run	</parentName>
-			<defType>	method	</defType>
-			<isArray>	false	</isArray>
-			<isPrimitive>	true	</isPrimitive>
-			<isFinal>	false	</isFinal>
-			<dimension>	0	</dimension>
-			<init>
-				<Literal>
-					<type>	int	</type>
-					<value>	2	</value>
-				</Literal>
-			</init>
-		</VeriableDecl>
-
-		<VeriableDecl>
-			<name>	copy3_k	</name>
-			<type>	int	</type>
-			<variableID>	11	</variableID>
-			<parentName>	run	</parentName>
-			<defType>	method	</defType>
-			<isArray>	false	</isArray>
-			<isPrimitive>	true	</isPrimitive>
-			<isFinal>	false	</isFinal>
-			<dimension>	0	</dimension>
-			<init>
-				<Literal>
-					<type>	int	</type>
-					<value>	2	</value>
-				</Literal>
-			</init>
-		</VeriableDecl>
-
-		<VeriableDecl>
-			<name>	copy4_k	</name>
-			<type>	int	</type>
-			<variableID>	12	</variableID>
-			<parentName>	run	</parentName>
-			<defType>	method	</defType>
-			<isArray>	false	</isArray>
-			<isPrimitive>	true	</isPrimitive>
-			<isFinal>	false	</isFinal>
-			<dimension>	0	</dimension>
-			<init>
-				<Literal>
-					<type>	int	</type>
-					<value>	2	</value>
-				</Literal>
-			</init>
-		</VeriableDecl>
-
-		<VeriableDecl>
-			<name>	copy5_k	</name>
-			<type>	int	</type>
-			<variableID>	13	</variableID>
-			<parentName>	run	</parentName>
-			<defType>	method	</defType>
-			<isArray>	false	</isArray>
-			<isPrimitive>	true	</isPrimitive>
-			<isFinal>	false	</isFinal>
-			<dimension>	0	</dimension>
-			<init>
-				<Literal>
-					<type>	int	</type>
-					<value>	2	</value>
-				</Literal>
-			</init>
-		</VeriableDecl>
-
-		<VeriableDecl>
-			<name>	copy6_k	</name>
-			<type>	int	</type>
-			<variableID>	14	</variableID>
-			<parentName>	run	</parentName>
-			<defType>	method	</defType>
-			<isArray>	false	</isArray>
-			<isPrimitive>	true	</isPrimitive>
-			<isFinal>	false	</isFinal>
-			<dimension>	0	</dimension>
-			<init>
-				<Literal>
-					<type>	int	</type>
-					<value>	2	</value>
-				</Literal>
-			</init>
-		</VeriableDecl>
-
-		<VeriableDecl>
-			<name>	copy7_k	</name>
-			<type>	int	</type>
-			<variableID>	15	</variableID>
-			<parentName>	run	</parentName>
-			<defType>	method	</defType>
-			<isArray>	false	</isArray>
-			<isPrimitive>	true	</isPrimitive>
-			<isFinal>	false	</isFinal>
-			<dimension>	0	</dimension>
-			<init>
-				<Literal>
-					<type>	int	</type>
-					<value>	2	</value>
-				</Literal>
 			</init>
 		</VeriableDecl>
 
@@ -310,19 +150,22 @@
 					<stageNum>  1  </stageNum>
 					<totalStepNum>  1  </totalStepNum>
 					<VariableStack>
-						<VeriableDecl>			<name>	u	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-						<VeriableDecl>			<name>	arrayq	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-						<VeriableDecl>			<name>	arrayX	</name>		<variableID>	2	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-						<VeriableDecl>			<name>	N	</name>		<variableID>	3	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-						<VeriableDecl>			<name>	r1	</name>		<variableID>	4	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-						<VeriableDecl>			<name>	r2	</name>		<variableID>	5	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-						<VeriableDecl>			<name>	dt	</name>		<variableID>	6	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+						<VeriableDecl>			<name>	a	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+						<VeriableDecl>			<name>	b	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+						<VeriableDecl>			<name>	result	</name>		<variableID>	2	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+						<VeriableDecl>			<name>	x	</name>		<variableID>	3	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+						<VeriableDecl>			<name>	y	</name>		<variableID>	4	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+						<VeriableDecl>			<name>	x1	</name>		<variableID>	5	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+						<VeriableDecl>			<name>	y1	</name>		<variableID>	6	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+						<VeriableDecl>			<name>	n	</name>		<variableID>	7	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 					</VariableStack>
 
 					<statements>
-						<VeriableDecl>			<name>	r1	</name>		<variableID>	4	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-						<VeriableDecl>			<name>	r2	</name>		<variableID>	5	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-						<VeriableDecl>			<name>	dt	</name>		<variableID>	6	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+						<VeriableDecl>			<name>	x	</name>		<variableID>	3	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+						<VeriableDecl>			<name>	y	</name>		<variableID>	4	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+						<VeriableDecl>			<name>	x1	</name>		<variableID>	5	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+						<VeriableDecl>			<name>	y1	</name>		<variableID>	6	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+						<VeriableDecl>			<name>	n	</name>		<variableID>	7	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 					</statements>
 
 				</StatAssemblage>
@@ -330,21 +173,40 @@
 				<ForLoop>	<Phase>  3  </Phase>
 					<forInit>
 						<StatAssemblage>	<Phase>  4  </Phase>
-							<stageNum>  2  </stageNum>
-							<totalStepNum>  2  </totalStepNum>
+							<stageNum>  1  </stageNum>
+							<totalStepNum>  1  </totalStepNum>
 							<VariableStack>
-								<VeriableDecl>			<name>	u	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	arrayq	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	arrayX	</name>		<variableID>	2	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	N	</name>		<variableID>	3	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	r1	</name>		<variableID>	4	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	r2	</name>		<variableID>	5	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	dt	</name>		<variableID>	6	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	k	</name>		<variableID>	7	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	a	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	b	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	result	</name>		<variableID>	2	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	x	</name>		<variableID>	3	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	y	</name>		<variableID>	4	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	x1	</name>		<variableID>	5	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	y1	</name>		<variableID>	6	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	n	</name>		<variableID>	7	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 							</VariableStack>
 
 							<statements>
-								<VeriableDecl>			<name>	k	</name>		<variableID>	7	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+								<ExprStatement>
+									<Assign>
+										<rightExpr>
+											<Literal>
+												<type>	int	</type>
+												<value>	0	</value>
+											</Literal>
+										</rightExpr>
+
+										<dest>
+											<Ident>
+												<variableID>	7	</variableID>
+												<idName>	n	</idName>
+											</Ident>
+										</dest>
+
+									</Assign>
+
+								</ExprStatement>
+
 							</statements>
 
 						</StatAssemblage>
@@ -356,32 +218,32 @@
 							<stageNum>  1  </stageNum>
 							<totalStepNum>  1  </totalStepNum>
 							<VariableStack>
-								<VeriableDecl>			<name>	u	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	arrayq	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	arrayX	</name>		<variableID>	2	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	N	</name>		<variableID>	3	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	r1	</name>		<variableID>	4	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	r2	</name>		<variableID>	5	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	dt	</name>		<variableID>	6	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-								<VeriableDecl>			<name>	k	</name>		<variableID>	7	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	a	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	b	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	result	</name>		<variableID>	2	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	x	</name>		<variableID>	3	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	y	</name>		<variableID>	4	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	x1	</name>		<variableID>	5	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	y1	</name>		<variableID>	6	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+								<VeriableDecl>			<name>	n	</name>		<variableID>	7	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 							</VariableStack>
 
 							<statements>
 								<ExprStatement>
 									<Binary>
-										<binaryOp>	'LE'	</binaryOp>
+										<binaryOp>	'LT'	</binaryOp>
 										<leftExpr>
 											<Ident>
 												<variableID>	7	</variableID>
-												<idName>	k	</idName>
+												<idName>	n	</idName>
 											</Ident>
 										</leftExpr>
 
 										<rightExpr>
-											<Ident>
-												<variableID>	3	</variableID>
-												<idName>	N	</idName>
-											</Ident>
+											<Literal>
+												<type>	int	</type>
+												<value>	100	</value>
+											</Literal>
 										</rightExpr>
 
 									</Binary>
@@ -399,16 +261,16 @@
 
 							<StatAssemblage>	<Phase>  8  </Phase>
 								<stageNum>  1  </stageNum>
-								<totalStepNum>  166  </totalStepNum>
+								<totalStepNum>  18  </totalStepNum>
 								<VariableStack>
-									<VeriableDecl>			<name>	u	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-									<VeriableDecl>			<name>	arrayq	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-									<VeriableDecl>			<name>	arrayX	</name>		<variableID>	2	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-									<VeriableDecl>			<name>	N	</name>		<variableID>	3	</variableID>		<defType>	field	</defType>			</VeriableDecl>
-									<VeriableDecl>			<name>	r1	</name>		<variableID>	4	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-									<VeriableDecl>			<name>	r2	</name>		<variableID>	5	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-									<VeriableDecl>			<name>	dt	</name>		<variableID>	6	</variableID>		<defType>	method	</defType>			</VeriableDecl>
-									<VeriableDecl>			<name>	k	</name>		<variableID>	7	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+									<VeriableDecl>			<name>	a	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+									<VeriableDecl>			<name>	b	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+									<VeriableDecl>			<name>	result	</name>		<variableID>	2	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+									<VeriableDecl>			<name>	x	</name>		<variableID>	3	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+									<VeriableDecl>			<name>	y	</name>		<variableID>	4	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+									<VeriableDecl>			<name>	x1	</name>		<variableID>	5	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+									<VeriableDecl>			<name>	y1	</name>		<variableID>	6	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+									<VeriableDecl>			<name>	n	</name>		<variableID>	7	</variableID>		<defType>	method	</defType>			</VeriableDecl>
 								</VariableStack>
 
 								<statements>
@@ -419,198 +281,22 @@
 													<binaryOp>	'+'	</binaryOp>
 													<leftExpr>
 														<Binary>
-															<binaryOp>	'+'	</binaryOp>
+															<binaryOp>	'-'	</binaryOp>
 															<leftExpr>
 																<Binary>
-																	<binaryOp>	'+'	</binaryOp>
+																	<binaryOp>	'*'	</binaryOp>
 																	<leftExpr>
-																		<ArrayAccess>
-																			<variableID>	0	</variableID>
-																			<idName>u</idName>
-
-																			<index0>
-																				<Binary>
-																					<binaryOp>	'+'	</binaryOp>
-																					<leftExpr>
-																						<Literal>
-																							<type>	int	</type>
-																							<value>	21	</value>
-																						</Literal>
-																					</leftExpr>
-
-																					<rightExpr>
-																						<Ident>
-																							<variableID>	7	</variableID>
-																							<idName>	k	</idName>
-																						</Ident>
-																					</rightExpr>
-
-																				</Binary>
-
-																			</index0>
-
-																		</ArrayAccess>
-
+																		<Ident>
+																			<variableID>	3	</variableID>
+																			<idName>	x	</idName>
+																		</Ident>
 																	</leftExpr>
 
 																	<rightExpr>
-																		<Binary>
-																			<binaryOp>	'*'	</binaryOp>
-																			<leftExpr>
-																				<Ident>
-																					<variableID>	4	</variableID>
-																					<idName>	r1	</idName>
-																				</Ident>
-																			</leftExpr>
-
-																			<rightExpr>
-																				<Binary>
-																					<binaryOp>	'+'	</binaryOp>
-																					<leftExpr>
-																						<Binary>
-																							<binaryOp>	'-'	</binaryOp>
-																							<leftExpr>
-																								<ArrayAccess>
-																									<variableID>	0	</variableID>
-																									<idName>u</idName>
-
-																									<index0>
-																										<Binary>
-																											<binaryOp>	'+'	</binaryOp>
-																											<leftExpr>
-																												<Binary>
-																													<binaryOp>	'+'	</binaryOp>
-																													<leftExpr>
-																														<Literal>
-																															<type>	int	</type>
-																															<value>	21	</value>
-																														</Literal>
-																													</leftExpr>
-
-																													<rightExpr>
-																														<Ident>
-																															<variableID>	7	</variableID>
-																															<idName>	k	</idName>
-																														</Ident>
-																													</rightExpr>
-
-																												</Binary>
-
-																											</leftExpr>
-
-																											<rightExpr>
-																												<Literal>
-																													<type>	int	</type>
-																													<value>	1	</value>
-																												</Literal>
-																											</rightExpr>
-
-																										</Binary>
-
-																									</index0>
-
-																								</ArrayAccess>
-
-																							</leftExpr>
-
-																							<rightExpr>
-																								<Binary>
-																									<binaryOp>	'*'	</binaryOp>
-																									<leftExpr>
-																										<Literal>
-																											<type>	float	</type>
-																											<value>	2.0	</value>
-																										</Literal>
-																									</leftExpr>
-
-																									<rightExpr>
-																										<ArrayAccess>
-																											<variableID>	0	</variableID>
-																											<idName>u</idName>
-
-																											<index0>
-																												<Binary>
-																													<binaryOp>	'+'	</binaryOp>
-																													<leftExpr>
-																														<Literal>
-																															<type>	int	</type>
-																															<value>	21	</value>
-																														</Literal>
-																													</leftExpr>
-
-																													<rightExpr>
-																														<Ident>
-																															<variableID>	7	</variableID>
-																															<idName>	k	</idName>
-																														</Ident>
-																													</rightExpr>
-
-																												</Binary>
-
-																											</index0>
-
-																										</ArrayAccess>
-
-																									</rightExpr>
-
-																								</Binary>
-
-																							</rightExpr>
-
-																						</Binary>
-
-																					</leftExpr>
-
-																					<rightExpr>
-																						<ArrayAccess>
-																							<variableID>	0	</variableID>
-																							<idName>u</idName>
-
-																							<index0>
-																								<Binary>
-																									<binaryOp>	'-'	</binaryOp>
-																									<leftExpr>
-																										<Binary>
-																											<binaryOp>	'+'	</binaryOp>
-																											<leftExpr>
-																												<Literal>
-																													<type>	int	</type>
-																													<value>	21	</value>
-																												</Literal>
-																											</leftExpr>
-
-																											<rightExpr>
-																												<Ident>
-																													<variableID>	7	</variableID>
-																													<idName>	k	</idName>
-																												</Ident>
-																											</rightExpr>
-
-																										</Binary>
-
-																									</leftExpr>
-
-																									<rightExpr>
-																										<Literal>
-																											<type>	int	</type>
-																											<value>	1	</value>
-																										</Literal>
-																									</rightExpr>
-
-																								</Binary>
-
-																							</index0>
-
-																						</ArrayAccess>
-
-																					</rightExpr>
-
-																				</Binary>
-
-																			</rightExpr>
-
-																		</Binary>
-
+																		<Ident>
+																			<variableID>	3	</variableID>
+																			<idName>	x	</idName>
+																		</Ident>
 																	</rightExpr>
 
 																</Binary>
@@ -622,113 +308,16 @@
 																	<binaryOp>	'*'	</binaryOp>
 																	<leftExpr>
 																		<Ident>
-																			<variableID>	5	</variableID>
-																			<idName>	r2	</idName>
+																			<variableID>	4	</variableID>
+																			<idName>	y	</idName>
 																		</Ident>
 																	</leftExpr>
 
 																	<rightExpr>
-																		<Binary>
-																			<binaryOp>	'+'	</binaryOp>
-																			<leftExpr>
-																				<Binary>
-																					<binaryOp>	'-'	</binaryOp>
-																					<leftExpr>
-																						<ArrayAccess>
-																							<variableID>	0	</variableID>
-																							<idName>u</idName>
-
-																							<index0>
-																								<Ident>
-																									<variableID>	7	</variableID>
-																									<idName>	k	</idName>
-																								</Ident>
-																							</index0>
-
-																						</ArrayAccess>
-
-																					</leftExpr>
-
-																					<rightExpr>
-																						<Binary>
-																							<binaryOp>	'*'	</binaryOp>
-																							<leftExpr>
-																								<Literal>
-																									<type>	float	</type>
-																									<value>	2.0	</value>
-																								</Literal>
-																							</leftExpr>
-
-																							<rightExpr>
-																								<ArrayAccess>
-																									<variableID>	0	</variableID>
-																									<idName>u</idName>
-
-																									<index0>
-																										<Binary>
-																											<binaryOp>	'+'	</binaryOp>
-																											<leftExpr>
-																												<Literal>
-																													<type>	int	</type>
-																													<value>	21	</value>
-																												</Literal>
-																											</leftExpr>
-
-																											<rightExpr>
-																												<Ident>
-																													<variableID>	7	</variableID>
-																													<idName>	k	</idName>
-																												</Ident>
-																											</rightExpr>
-
-																										</Binary>
-
-																									</index0>
-
-																								</ArrayAccess>
-
-																							</rightExpr>
-
-																						</Binary>
-
-																					</rightExpr>
-
-																				</Binary>
-
-																			</leftExpr>
-
-																			<rightExpr>
-																				<ArrayAccess>
-																					<variableID>	0	</variableID>
-																					<idName>u</idName>
-
-																					<index0>
-																						<Binary>
-																							<binaryOp>	'+'	</binaryOp>
-																							<leftExpr>
-																								<Literal>
-																									<type>	int	</type>
-																									<value>	42	</value>
-																								</Literal>
-																							</leftExpr>
-
-																							<rightExpr>
-																								<Ident>
-																									<variableID>	7	</variableID>
-																									<idName>	k	</idName>
-																								</Ident>
-																							</rightExpr>
-
-																						</Binary>
-
-																					</index0>
-
-																				</ArrayAccess>
-
-																			</rightExpr>
-
-																		</Binary>
-
+																		<Ident>
+																			<variableID>	4	</variableID>
+																			<idName>	y	</idName>
+																		</Ident>
 																	</rightExpr>
 
 																</Binary>
@@ -740,46 +329,18 @@
 													</leftExpr>
 
 													<rightExpr>
-														<Binary>
-															<binaryOp>	'*'	</binaryOp>
-															<leftExpr>
-																<Ident>
-																	<variableID>	6	</variableID>
-																	<idName>	dt	</idName>
-																</Ident>
-															</leftExpr>
+														<ArrayAccess>
+															<variableID>	0	</variableID>
+															<idName>a</idName>
 
-															<rightExpr>
-																<ArrayAccess>
-																	<variableID>	1	</variableID>
-																	<idName>arrayq</idName>
+															<index0>
+																<Literal>
+																	<type>	int	</type>
+																	<value>	0	</value>
+																</Literal>
+															</index0>
 
-																	<index0>
-																		<Binary>
-																			<binaryOp>	'+'	</binaryOp>
-																			<leftExpr>
-																				<Literal>
-																					<type>	int	</type>
-																					<value>	21	</value>
-																				</Literal>
-																			</leftExpr>
-
-																			<rightExpr>
-																				<Ident>
-																					<variableID>	7	</variableID>
-																					<idName>	k	</idName>
-																				</Ident>
-																			</rightExpr>
-
-																		</Binary>
-
-																	</index0>
-
-																</ArrayAccess>
-
-															</rightExpr>
-
-														</Binary>
+														</ArrayAccess>
 
 													</rightExpr>
 
@@ -788,19 +349,277 @@
 											</rightExpr>
 
 											<dest>
-												<ArrayAccess>
-													<variableID>	2	</variableID>
-													<idName>arrayX</idName>
+												<Ident>
+													<variableID>	5	</variableID>
+													<idName>	x1	</idName>
+												</Ident>
+											</dest>
 
-													<index0>
-														<Ident>
-															<variableID>	7	</variableID>
-															<idName>	k	</idName>
-														</Ident>
-													</index0>
+										</Assign>
 
-												</ArrayAccess>
+									</ExprStatement>
 
+									<ExprStatement>
+										<Assign>
+											<rightExpr>
+												<Binary>
+													<binaryOp>	'+'	</binaryOp>
+													<leftExpr>
+														<Binary>
+															<binaryOp>	'*'	</binaryOp>
+															<leftExpr>
+																<Binary>
+																	<binaryOp>	'*'	</binaryOp>
+																	<leftExpr>
+																		<Literal>
+																			<type>	float	</type>
+																			<value>	2.0	</value>
+																		</Literal>
+																	</leftExpr>
+
+																	<rightExpr>
+																		<Ident>
+																			<variableID>	3	</variableID>
+																			<idName>	x	</idName>
+																		</Ident>
+																	</rightExpr>
+
+																</Binary>
+
+															</leftExpr>
+
+															<rightExpr>
+																<Ident>
+																	<variableID>	4	</variableID>
+																	<idName>	y	</idName>
+																</Ident>
+															</rightExpr>
+
+														</Binary>
+
+													</leftExpr>
+
+													<rightExpr>
+														<ArrayAccess>
+															<variableID>	1	</variableID>
+															<idName>b</idName>
+
+															<index0>
+																<Literal>
+																	<type>	int	</type>
+																	<value>	0	</value>
+																</Literal>
+															</index0>
+
+														</ArrayAccess>
+
+													</rightExpr>
+
+												</Binary>
+
+											</rightExpr>
+
+											<dest>
+												<Ident>
+													<variableID>	6	</variableID>
+													<idName>	y1	</idName>
+												</Ident>
+											</dest>
+
+										</Assign>
+
+									</ExprStatement>
+
+								</statements>
+
+							</StatAssemblage>
+
+							<If>	<Phase>  9  </Phase>
+								<ifCond>
+									<StatAssemblage>	<Phase>  10  </Phase>
+										<stageNum>  1  </stageNum>
+										<totalStepNum>  15  </totalStepNum>
+										<VariableStack>
+											<VeriableDecl>			<name>	a	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+											<VeriableDecl>			<name>	b	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+											<VeriableDecl>			<name>	result	</name>		<variableID>	2	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+											<VeriableDecl>			<name>	x	</name>		<variableID>	3	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+											<VeriableDecl>			<name>	y	</name>		<variableID>	4	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+											<VeriableDecl>			<name>	x1	</name>		<variableID>	5	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+											<VeriableDecl>			<name>	y1	</name>		<variableID>	6	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+											<VeriableDecl>			<name>	n	</name>		<variableID>	7	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+										</VariableStack>
+
+										<statements>
+											<ExprStatement>
+												<Binary>
+													<binaryOp>	'GT'	</binaryOp>
+													<leftExpr>
+														<Binary>
+															<binaryOp>	'+'	</binaryOp>
+															<leftExpr>
+																<Binary>
+																	<binaryOp>	'*'	</binaryOp>
+																	<leftExpr>
+																		<Ident>
+																			<variableID>	5	</variableID>
+																			<idName>	x1	</idName>
+																		</Ident>
+																	</leftExpr>
+
+																	<rightExpr>
+																		<Ident>
+																			<variableID>	5	</variableID>
+																			<idName>	x1	</idName>
+																		</Ident>
+																	</rightExpr>
+
+																</Binary>
+
+															</leftExpr>
+
+															<rightExpr>
+																<Binary>
+																	<binaryOp>	'*'	</binaryOp>
+																	<leftExpr>
+																		<Ident>
+																			<variableID>	6	</variableID>
+																			<idName>	y1	</idName>
+																		</Ident>
+																	</leftExpr>
+
+																	<rightExpr>
+																		<Ident>
+																			<variableID>	6	</variableID>
+																			<idName>	y1	</idName>
+																		</Ident>
+																	</rightExpr>
+
+																</Binary>
+
+															</rightExpr>
+
+														</Binary>
+
+													</leftExpr>
+
+													<rightExpr>
+														<Literal>
+															<type>	float	</type>
+															<value>	4.0	</value>
+														</Literal>
+													</rightExpr>
+
+												</Binary>
+
+											</ExprStatement>
+
+										</statements>
+
+									</StatAssemblage>
+
+								</ifCond>
+
+								<thenBlock>
+									<Block>	<Phase>  11  </Phase>
+
+										<StatAssemblage>	<Phase>  12  </Phase>
+											<stageNum>  1  </stageNum>
+											<totalStepNum>  8  </totalStepNum>
+											<VariableStack>
+												<VeriableDecl>			<name>	a	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+												<VeriableDecl>			<name>	b	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+												<VeriableDecl>			<name>	result	</name>		<variableID>	2	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+												<VeriableDecl>			<name>	x	</name>		<variableID>	3	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+												<VeriableDecl>			<name>	y	</name>		<variableID>	4	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+												<VeriableDecl>			<name>	x1	</name>		<variableID>	5	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+												<VeriableDecl>			<name>	y1	</name>		<variableID>	6	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+												<VeriableDecl>			<name>	n	</name>		<variableID>	7	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+											</VariableStack>
+
+											<statements>
+												<ExprStatement>
+													<Assign>
+														<rightExpr>
+															<Ident>
+																<variableID>	7	</variableID>
+																<idName>	n	</idName>
+															</Ident>
+														</rightExpr>
+
+														<dest>
+															<Ident>
+																<variableID>	2	</variableID>
+																<idName>	result	</idName>
+															</Ident>
+														</dest>
+
+													</Assign>
+
+												</ExprStatement>
+
+											</statements>
+
+										</StatAssemblage>
+
+									</Block>
+
+								</thenBlock>
+
+								<elseBlock>
+								</elseBlock>
+
+							</If>
+
+							<StatAssemblage>	<Phase>  13  </Phase>
+								<stageNum>  1  </stageNum>
+								<totalStepNum>  1  </totalStepNum>
+								<VariableStack>
+									<VeriableDecl>			<name>	a	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+									<VeriableDecl>			<name>	b	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+									<VeriableDecl>			<name>	result	</name>		<variableID>	2	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+									<VeriableDecl>			<name>	x	</name>		<variableID>	3	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+									<VeriableDecl>			<name>	y	</name>		<variableID>	4	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+									<VeriableDecl>			<name>	x1	</name>		<variableID>	5	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+									<VeriableDecl>			<name>	y1	</name>		<variableID>	6	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+									<VeriableDecl>			<name>	n	</name>		<variableID>	7	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+								</VariableStack>
+
+								<statements>
+									<ExprStatement>
+										<Assign>
+											<rightExpr>
+												<Ident>
+													<variableID>	5	</variableID>
+													<idName>	x1	</idName>
+												</Ident>
+											</rightExpr>
+
+											<dest>
+												<Ident>
+													<variableID>	3	</variableID>
+													<idName>	x	</idName>
+												</Ident>
+											</dest>
+
+										</Assign>
+
+									</ExprStatement>
+
+									<ExprStatement>
+										<Assign>
+											<rightExpr>
+												<Ident>
+													<variableID>	6	</variableID>
+													<idName>	y1	</idName>
+												</Ident>
+											</rightExpr>
+
+											<dest>
+												<Ident>
+													<variableID>	4	</variableID>
+													<idName>	y	</idName>
+												</Ident>
 											</dest>
 
 										</Assign>
@@ -815,6 +634,45 @@
 
 					</forBody>
 				</ForLoop>
+
+				<StatAssemblage>	<Phase>  14  </Phase>
+					<stageNum>  1  </stageNum>
+					<totalStepNum>  1  </totalStepNum>
+					<VariableStack>
+						<VeriableDecl>			<name>	a	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+						<VeriableDecl>			<name>	b	</name>		<variableID>	1	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+						<VeriableDecl>			<name>	result	</name>		<variableID>	2	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+						<VeriableDecl>			<name>	x	</name>		<variableID>	3	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+						<VeriableDecl>			<name>	y	</name>		<variableID>	4	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+						<VeriableDecl>			<name>	x1	</name>		<variableID>	5	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+						<VeriableDecl>			<name>	y1	</name>		<variableID>	6	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+						<VeriableDecl>			<name>	n	</name>		<variableID>	7	</variableID>		<defType>	method	</defType>			</VeriableDecl>
+					</VariableStack>
+
+					<statements>
+						<ExprStatement>
+							<Assign>
+								<rightExpr>
+									<Literal>
+										<type>	int	</type>
+										<value>	0	</value>
+									</Literal>
+								</rightExpr>
+
+								<dest>
+									<Ident>
+										<variableID>	2	</variableID>
+										<idName>	result	</idName>
+									</Ident>
+								</dest>
+
+							</Assign>
+
+						</ExprStatement>
+
+					</statements>
+
+				</StatAssemblage>
 
 			</Block>
 

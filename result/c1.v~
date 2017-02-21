@@ -1,5 +1,5 @@
 /*
-TimeStamp:	2017/1/18		15:13
+TimeStamp:	2017/1/20		17:6
 */
 
 
@@ -8,29 +8,7 @@ module c1(
 	input                 reset_n,	
 	input                 ce,	
 	input                 i_run_req,	
-	output                o_run_busy,	
-
-	//subup
-		
-	output  signed [31:0] w_sub00_u_addr,
-	output         [31:0] w_sub00_u_datain,
-	input          [31:0] w_sub00_u_dataout,
-	output         	      w_sub00_u_r_w,
-	output  signed [31:0] w_sub00_result_addr,
-	output         [31:0] w_sub00_result_datain,
-	input          [31:0] w_sub00_result_dataout,
-	output         [31:0] w_sub00_result_r_w,
- 	
-	
-	//subunder
-	output  signed [31:0] w_sub01_u_addr,
-	output         [31:0] w_sub01_u_datain,
-	input          [31:0] w_sub01_u_dataout,
-	output                w_sub01_u_r_w,
-	output  signed [31:0] w_sub01_result_addr,
-	output         [31:0] w_sub01_result_datain,
-	input          [31:0] w_sub01_result_dataout,
-	output         [31:0] w_sub01_result_r_w
+	output                o_run_busy	
 );
 
 	reg         [ 1:0] r_sys_processing_methodID;
@@ -117,136 +95,137 @@ module c1(
 	wire        [31:0] w_sys_tmp3;
 	wire        [31:0] w_sys_tmp5;
 	wire        [31:0] w_sys_tmp6;
-	wire               w_sys_tmp8;
+	wire signed [31:0] w_sys_tmp8;
 	wire               w_sys_tmp9;
-	wire signed [31:0] w_sys_tmp10;
-	wire               w_sys_tmp11;
+	wire               w_sys_tmp10;
+	wire signed [31:0] w_sys_tmp11;
 	wire               w_sys_tmp12;
-	wire signed [31:0] w_sys_tmp15;
+	wire               w_sys_tmp13;
 	wire signed [31:0] w_sys_tmp16;
 	wire signed [31:0] w_sys_tmp17;
-	wire        [31:0] w_sys_tmp18;
-	wire signed [31:0] w_sys_tmp19;
-	wire signed [31:0] w_sys_tmp21;
+	wire signed [31:0] w_sys_tmp18;
+	wire        [31:0] w_sys_tmp19;
+	wire signed [31:0] w_sys_tmp20;
 	wire signed [31:0] w_sys_tmp22;
-	wire               w_sys_tmp56;
+	wire signed [31:0] w_sys_tmp23;
 	wire               w_sys_tmp57;
-	wire signed [31:0] w_sys_tmp58;
-	wire signed [31:0] w_sys_tmp61;
+	wire               w_sys_tmp58;
+	wire signed [31:0] w_sys_tmp59;
 	wire signed [31:0] w_sys_tmp62;
-	wire        [31:0] w_sys_tmp63;
-	wire signed [31:0] w_sys_tmp65;
-	wire        [31:0] w_sys_tmp66;
-	wire signed [31:0] w_sys_tmp67;
-	wire               w_sys_tmp68;
+	wire signed [31:0] w_sys_tmp63;
+	wire        [31:0] w_sys_tmp64;
+	wire signed [31:0] w_sys_tmp66;
+	wire        [31:0] w_sys_tmp67;
+	wire signed [31:0] w_sys_tmp68;
 	wire               w_sys_tmp69;
-	wire signed [31:0] w_sys_tmp70;
-	wire signed [31:0] w_sys_tmp73;
+	wire               w_sys_tmp70;
+	wire signed [31:0] w_sys_tmp71;
 	wire signed [31:0] w_sys_tmp74;
 	wire signed [31:0] w_sys_tmp75;
-	wire        [31:0] w_sys_tmp76;
-	wire signed [31:0] w_sys_tmp78;
-	wire        [31:0] w_sys_tmp81;
-	wire signed [31:0] w_sys_tmp82;
+	wire signed [31:0] w_sys_tmp76;
+	wire        [31:0] w_sys_tmp77;
+	wire signed [31:0] w_sys_tmp79;
+	wire        [31:0] w_sys_tmp82;
 	wire signed [31:0] w_sys_tmp83;
-	wire signed [31:0] w_sys_tmp85;
+	wire signed [31:0] w_sys_tmp84;
 	wire signed [31:0] w_sys_tmp86;
-	wire signed [31:0] w_sys_tmp90;
+	wire signed [31:0] w_sys_tmp87;
 	wire signed [31:0] w_sys_tmp91;
-	wire               w_sys_tmp162;
+	wire signed [31:0] w_sys_tmp92;
 	wire               w_sys_tmp163;
-	wire signed [31:0] w_sys_tmp164;
+	wire               w_sys_tmp164;
 	wire signed [31:0] w_sys_tmp165;
-	wire               w_sys_tmp166;
+	wire signed [31:0] w_sys_tmp166;
 	wire               w_sys_tmp167;
-	wire signed [31:0] w_sys_tmp168;
-	wire signed [31:0] w_sys_tmp171;
+	wire               w_sys_tmp168;
+	wire signed [31:0] w_sys_tmp169;
 	wire signed [31:0] w_sys_tmp172;
-	wire        [31:0] w_sys_tmp173;
-	wire signed [31:0] w_sys_tmp174;
+	wire signed [31:0] w_sys_tmp173;
+	wire        [31:0] w_sys_tmp174;
 	wire signed [31:0] w_sys_tmp175;
-	wire signed [31:0] w_sys_tmp177;
+	wire signed [31:0] w_sys_tmp176;
 	wire signed [31:0] w_sys_tmp178;
-	wire signed [31:0] w_sys_tmp180;
+	wire signed [31:0] w_sys_tmp179;
 	wire signed [31:0] w_sys_tmp181;
-	wire signed [31:0] w_sys_tmp184;
+	wire signed [31:0] w_sys_tmp182;
 	wire signed [31:0] w_sys_tmp185;
-	wire signed [31:0] w_sys_tmp239;
-	wire               w_sys_tmp240;
+	wire signed [31:0] w_sys_tmp186;
+	wire signed [31:0] w_sys_tmp240;
 	wire               w_sys_tmp241;
-	wire signed [31:0] w_sys_tmp242;
-	wire signed [31:0] w_sys_tmp245;
+	wire               w_sys_tmp242;
+	wire signed [31:0] w_sys_tmp243;
 	wire signed [31:0] w_sys_tmp246;
 	wire signed [31:0] w_sys_tmp247;
 	wire signed [31:0] w_sys_tmp248;
-	wire        [31:0] w_sys_tmp249;
-	wire signed [31:0] w_sys_tmp250;
+	wire signed [31:0] w_sys_tmp249;
+	wire        [31:0] w_sys_tmp250;
 	wire signed [31:0] w_sys_tmp251;
-	wire signed [31:0] w_sys_tmp253;
+	wire signed [31:0] w_sys_tmp252;
 	wire signed [31:0] w_sys_tmp254;
-	wire signed [31:0] w_sys_tmp256;
+	wire signed [31:0] w_sys_tmp255;
 	wire signed [31:0] w_sys_tmp257;
 	wire signed [31:0] w_sys_tmp258;
-	wire signed [31:0] w_sys_tmp262;
+	wire signed [31:0] w_sys_tmp259;
 	wire signed [31:0] w_sys_tmp263;
-	wire               w_sys_tmp327;
+	wire signed [31:0] w_sys_tmp264;
 	wire               w_sys_tmp328;
-	wire signed [31:0] w_sys_tmp329;
+	wire               w_sys_tmp329;
 	wire signed [31:0] w_sys_tmp330;
-	wire               w_sys_tmp331;
+	wire signed [31:0] w_sys_tmp331;
 	wire               w_sys_tmp332;
-	wire signed [31:0] w_sys_tmp333;
+	wire               w_sys_tmp333;
 	wire signed [31:0] w_sys_tmp334;
 	wire signed [31:0] w_sys_tmp335;
-	wire               w_sys_tmp336;
+	wire signed [31:0] w_sys_tmp336;
 	wire               w_sys_tmp337;
-	wire signed [31:0] w_sys_tmp338;
-	wire signed [31:0] w_sys_tmp341;
+	wire               w_sys_tmp338;
+	wire signed [31:0] w_sys_tmp339;
 	wire signed [31:0] w_sys_tmp342;
-	wire        [31:0] w_sys_tmp343;
-	wire signed [31:0] w_sys_tmp344;
+	wire signed [31:0] w_sys_tmp343;
+	wire        [31:0] w_sys_tmp344;
 	wire signed [31:0] w_sys_tmp345;
-	wire signed [31:0] w_sys_tmp347;
+	wire signed [31:0] w_sys_tmp346;
 	wire signed [31:0] w_sys_tmp348;
-	wire signed [31:0] w_sys_tmp350;
+	wire signed [31:0] w_sys_tmp349;
 	wire signed [31:0] w_sys_tmp351;
-	wire signed [31:0] w_sys_tmp354;
+	wire signed [31:0] w_sys_tmp352;
 	wire signed [31:0] w_sys_tmp355;
-	wire signed [31:0] w_sys_tmp409;
-	wire               w_sys_tmp410;
+	wire signed [31:0] w_sys_tmp356;
+	wire signed [31:0] w_sys_tmp410;
 	wire               w_sys_tmp411;
-	wire signed [31:0] w_sys_tmp412;
-	wire signed [31:0] w_sys_tmp415;
+	wire               w_sys_tmp412;
+	wire signed [31:0] w_sys_tmp413;
 	wire signed [31:0] w_sys_tmp416;
-	wire        [31:0] w_sys_tmp417;
-	wire signed [31:0] w_sys_tmp418;
+	wire signed [31:0] w_sys_tmp417;
+	wire        [31:0] w_sys_tmp418;
 	wire signed [31:0] w_sys_tmp419;
 	wire signed [31:0] w_sys_tmp420;
 	wire signed [31:0] w_sys_tmp421;
-	wire signed [31:0] w_sys_tmp423;
+	wire signed [31:0] w_sys_tmp422;
 	wire signed [31:0] w_sys_tmp424;
-	wire signed [31:0] w_sys_tmp426;
+	wire signed [31:0] w_sys_tmp425;
 	wire signed [31:0] w_sys_tmp427;
-	wire signed [31:0] w_sys_tmp430;
+	wire signed [31:0] w_sys_tmp428;
 	wire signed [31:0] w_sys_tmp431;
 	wire signed [31:0] w_sys_tmp432;
-	wire signed [31:0] w_sys_tmp497;
-	wire signed [31:0] w_sys_tmp503;
+	wire signed [31:0] w_sys_tmp433;
+	wire signed [31:0] w_sys_tmp498;
 	wire signed [31:0] w_sys_tmp504;
 	wire signed [31:0] w_sys_tmp505;
 	wire signed [31:0] w_sys_tmp506;
-	wire signed [31:0] w_sys_tmp517;
+	wire signed [31:0] w_sys_tmp507;
 	wire signed [31:0] w_sys_tmp518;
 	wire signed [31:0] w_sys_tmp519;
-	wire signed [31:0] w_sys_tmp530;
+	wire signed [31:0] w_sys_tmp520;
 	wire signed [31:0] w_sys_tmp531;
 	wire signed [31:0] w_sys_tmp532;
-	wire signed [31:0] w_sys_tmp543;
+	wire signed [31:0] w_sys_tmp533;
 	wire signed [31:0] w_sys_tmp544;
 	wire signed [31:0] w_sys_tmp545;
-	wire signed [31:0] w_sys_tmp556;
+	wire signed [31:0] w_sys_tmp546;
 	wire signed [31:0] w_sys_tmp557;
 	wire signed [31:0] w_sys_tmp558;
+	wire signed [31:0] w_sys_tmp559;
 
 	assign w_sys_boolTrue = 1'b1;
 	assign w_sys_boolFalse = 1'b0;
@@ -277,138 +256,139 @@ module c1(
 	assign w_sys_tmp3 = 32'h3c000000;
 	assign w_sys_tmp5 = 32'h3ba3d70a;
 	assign w_sys_tmp6 = 32'h42a3d70a;
-	assign w_sys_tmp8 = ( !w_sys_tmp9 );
-	assign w_sys_tmp9 = (r_run_my_7 < r_run_k_3);
-	assign w_sys_tmp10 = (r_run_k_3 + w_sys_intOne);
-	assign w_sys_tmp11 = ( !w_sys_tmp12 );
-	assign w_sys_tmp12 = (r_run_mx_6 < r_run_j_4);
-	assign w_sys_tmp15 = (w_sys_tmp16 + r_run_k_3);
-	assign w_sys_tmp16 = (r_run_j_4 * w_sys_tmp17);
-	assign w_sys_tmp17 = 32'sh00000081;
-	assign w_sys_tmp18 = 32'h0;
-	assign w_sys_tmp19 = (r_run_j_4 + w_sys_intOne);
-	assign w_sys_tmp21 = (w_sys_tmp22 * w_sys_tmp17);
-	assign w_sys_tmp22 = w_sys_tmp19;
-	assign w_sys_tmp56 = ( !w_sys_tmp57 );
-	assign w_sys_tmp57 = (w_sys_tmp58 < r_run_k_3);
-	assign w_sys_tmp58 = 32'sh00000081;
-	assign w_sys_tmp61 = (w_sys_tmp62 + r_run_k_3);
-	assign w_sys_tmp62 = 32'sh00000081;
-	assign w_sys_tmp63 = 32'h3f000000;
-	assign w_sys_tmp65 = 32'sh00004101;
-	assign w_sys_tmp66 = 32'h0;
-	assign w_sys_tmp67 = (r_run_k_3 + w_sys_intOne);
-	assign w_sys_tmp68 = ( !w_sys_tmp69 );
-	assign w_sys_tmp69 = (w_sys_tmp70 < r_run_j_4);
-	assign w_sys_tmp70 = 32'sh00000081;
-	assign w_sys_tmp73 = (w_sys_tmp74 + w_sys_intOne);
-	assign w_sys_tmp74 = (r_run_j_4 * w_sys_tmp75);
-	assign w_sys_tmp75 = 32'sh00000081;
-	assign w_sys_tmp76 = 32'h3f800000;
-	assign w_sys_tmp78 = (r_run_copy0_j_14 * w_sys_tmp75);
-	assign w_sys_tmp81 = 32'h0;
-	assign w_sys_tmp82 = (r_run_copy0_j_14 + w_sys_intOne);
-	assign w_sys_tmp83 = (r_run_j_4 + w_sys_intOne);
-	assign w_sys_tmp85 = (w_sys_tmp86 * w_sys_tmp75);
-	assign w_sys_tmp86 = w_sys_tmp83;
-	assign w_sys_tmp90 = (w_sys_tmp91 * w_sys_tmp75);
-	assign w_sys_tmp91 = w_sys_tmp82;
-	assign w_sys_tmp162 = ( !w_sys_tmp163 );
-	assign w_sys_tmp163 = (w_sys_tmp164 < r_run_k_3);
-	assign w_sys_tmp164 = 32'sh00000081;
-	assign w_sys_tmp165 = (r_run_k_3 + w_sys_intOne);
-	assign w_sys_tmp166 = ( !w_sys_tmp167 );
-	assign w_sys_tmp167 = (w_sys_tmp168 < r_run_j_4);
-	assign w_sys_tmp168 = 32'sh00000041;
-	assign w_sys_tmp171 = (r_run_j_4 * w_sys_tmp172);
-	assign w_sys_tmp172 = 32'sh00000081;
-	assign w_sys_tmp173 = w_fld_u_0_dataout_1;
-	assign w_sys_tmp174 = (w_sys_tmp175 + r_run_k_3);
-	assign w_sys_tmp175 = (r_run_copy0_j_15 * w_sys_tmp172);
-	assign w_sys_tmp177 = (r_run_copy0_j_15 + w_sys_intOne);
-	assign w_sys_tmp178 = (r_run_j_4 + w_sys_intOne);
-	assign w_sys_tmp180 = (w_sys_tmp181 * w_sys_tmp172);
-	assign w_sys_tmp181 = w_sys_tmp178;
-	assign w_sys_tmp184 = (w_sys_tmp185 * w_sys_tmp172);
-	assign w_sys_tmp185 = w_sys_tmp177;
-	assign w_sys_tmp239 = 32'sh00000040;
-	assign w_sys_tmp240 = ( !w_sys_tmp241 );
-	assign w_sys_tmp241 = (w_sys_tmp242 < r_run_j_4);
-	assign w_sys_tmp242 = 32'sh00000081;
-	assign w_sys_tmp245 = (w_sys_tmp246 * w_sys_tmp248);
-	assign w_sys_tmp246 = (r_run_j_4 - w_sys_tmp247);
-	assign w_sys_tmp247 = 32'sh0000003f;
-	assign w_sys_tmp248 = 32'sh00000081;
-	assign w_sys_tmp249 = w_fld_u_0_dataout_1;
-	assign w_sys_tmp250 = (w_sys_tmp251 + r_run_k_3);
-	assign w_sys_tmp251 = (r_run_copy0_j_16 * w_sys_tmp248);
-	assign w_sys_tmp253 = (r_run_copy0_j_16 + w_sys_intOne);
-	assign w_sys_tmp254 = (r_run_j_4 + w_sys_intOne);
-	assign w_sys_tmp256 = (w_sys_tmp257 * w_sys_tmp248);
-	assign w_sys_tmp257 = (w_sys_tmp258 - w_sys_tmp247);
-	assign w_sys_tmp258 = w_sys_tmp254;
-	assign w_sys_tmp262 = (w_sys_tmp263 * w_sys_tmp248);
-	assign w_sys_tmp263 = w_sys_tmp253;
-	assign w_sys_tmp327 = ( !w_sys_tmp328 );
-	assign w_sys_tmp328 = (r_run_nlast_8 < r_run_n_5);
-	assign w_sys_tmp329 = (r_run_n_5 + w_sys_intOne);
-	assign w_sys_tmp330 = 32'sh00000002;
-	assign w_sys_tmp331 = ( !w_sys_tmp332 );
-	assign w_sys_tmp332 = (w_sys_tmp333 < r_run_k_3);
-	assign w_sys_tmp333 = 32'sh00000080;
-	assign w_sys_tmp334 = (r_run_k_3 + w_sys_intOne);
-	assign w_sys_tmp335 = 32'sh00000002;
-	assign w_sys_tmp336 = ( !w_sys_tmp337 );
-	assign w_sys_tmp337 = (w_sys_tmp338 < r_run_j_4);
-	assign w_sys_tmp338 = 32'sh00000040;
-	assign w_sys_tmp341 = (r_run_j_4 * w_sys_tmp342);
-	assign w_sys_tmp342 = 32'sh00000081;
-	assign w_sys_tmp343 = w_sub00_result_dataout;
-	assign w_sys_tmp344 = (w_sys_tmp345 + r_run_k_3);
-	assign w_sys_tmp345 = (r_run_copy0_j_17 * w_sys_tmp342);
-	assign w_sys_tmp347 = (r_run_copy0_j_17 + w_sys_intOne);
-	assign w_sys_tmp348 = (r_run_j_4 + w_sys_intOne);
-	assign w_sys_tmp350 = (w_sys_tmp351 * w_sys_tmp342);
-	assign w_sys_tmp351 = w_sys_tmp348;
-	assign w_sys_tmp354 = (w_sys_tmp355 * w_sys_tmp342);
-	assign w_sys_tmp355 = w_sys_tmp347;
-	assign w_sys_tmp409 = 32'sh00000041;
-	assign w_sys_tmp410 = ( !w_sys_tmp411 );
-	assign w_sys_tmp411 = (w_sys_tmp412 < r_run_j_4);
-	assign w_sys_tmp412 = 32'sh00000080;
-	assign w_sys_tmp415 = (r_run_j_4 * w_sys_tmp416);
-	assign w_sys_tmp416 = 32'sh00000081;
-	assign w_sys_tmp417 = w_sub01_result_dataout;
-	assign w_sys_tmp418 = (w_sys_tmp419 + r_run_k_3);
-	assign w_sys_tmp419 = (w_sys_tmp420 * w_sys_tmp416);
-	assign w_sys_tmp420 = (r_run_copy0_j_18 - w_sys_tmp421);
-	assign w_sys_tmp421 = 32'sh0000003f;
-	assign w_sys_tmp423 = (r_run_copy0_j_18 + w_sys_intOne);
-	assign w_sys_tmp424 = (r_run_j_4 + w_sys_intOne);
-	assign w_sys_tmp426 = (w_sys_tmp427 * w_sys_tmp416);
-	assign w_sys_tmp427 = w_sys_tmp424;
-	assign w_sys_tmp430 = (w_sys_tmp431 * w_sys_tmp416);
-	assign w_sys_tmp431 = (w_sys_tmp432 - w_sys_tmp421);
-	assign w_sys_tmp432 = w_sys_tmp423;
-	assign w_sys_tmp497 = (w_sys_tmp21 + r_run_k_3);
-	assign w_sys_tmp503 = (w_sys_tmp65 + r_run_k_3);
-	assign w_sys_tmp504 = (w_sys_tmp78 + w_sys_tmp75);
-	assign w_sys_tmp505 = (w_sys_tmp85 + w_sys_intOne);
-	assign w_sys_tmp506 = (w_sys_tmp90 + w_sys_tmp75);
-	assign w_sys_tmp517 = (w_sys_tmp171 + r_run_k_3);
-	assign w_sys_tmp518 = (w_sys_tmp180 + r_run_k_3);
-	assign w_sys_tmp519 = (w_sys_tmp184 + r_run_k_3);
-	assign w_sys_tmp530 = (w_sys_tmp245 + r_run_k_3);
-	assign w_sys_tmp531 = (w_sys_tmp256 + r_run_k_3);
-	assign w_sys_tmp532 = (w_sys_tmp262 + r_run_k_3);
-	assign w_sys_tmp543 = (w_sys_tmp341 + r_run_k_3);
-	assign w_sys_tmp544 = (w_sys_tmp350 + r_run_k_3);
-	assign w_sys_tmp545 = (w_sys_tmp354 + r_run_k_3);
-	assign w_sys_tmp556 = (w_sys_tmp415 + r_run_k_3);
-	assign w_sys_tmp557 = (w_sys_tmp426 + r_run_k_3);
-	assign w_sys_tmp558 = (w_sys_tmp430 + r_run_k_3);
+	assign w_sys_tmp8 = 32'sh00000002;
+	assign w_sys_tmp9 = ( !w_sys_tmp10 );
+	assign w_sys_tmp10 = (r_run_my_7 < r_run_k_3);
+	assign w_sys_tmp11 = (r_run_k_3 + w_sys_intOne);
+	assign w_sys_tmp12 = ( !w_sys_tmp13 );
+	assign w_sys_tmp13 = (r_run_mx_6 < r_run_j_4);
+	assign w_sys_tmp16 = (w_sys_tmp17 + r_run_k_3);
+	assign w_sys_tmp17 = (r_run_j_4 * w_sys_tmp18);
+	assign w_sys_tmp18 = 32'sh00000081;
+	assign w_sys_tmp19 = 32'h0;
+	assign w_sys_tmp20 = (r_run_j_4 + w_sys_intOne);
+	assign w_sys_tmp22 = (w_sys_tmp23 * w_sys_tmp18);
+	assign w_sys_tmp23 = w_sys_tmp20;
+	assign w_sys_tmp57 = ( !w_sys_tmp58 );
+	assign w_sys_tmp58 = (w_sys_tmp59 < r_run_k_3);
+	assign w_sys_tmp59 = 32'sh00000081;
+	assign w_sys_tmp62 = (w_sys_tmp63 + r_run_k_3);
+	assign w_sys_tmp63 = 32'sh00000081;
+	assign w_sys_tmp64 = 32'h3f000000;
+	assign w_sys_tmp66 = 32'sh00004101;
+	assign w_sys_tmp67 = 32'h0;
+	assign w_sys_tmp68 = (r_run_k_3 + w_sys_intOne);
+	assign w_sys_tmp69 = ( !w_sys_tmp70 );
+	assign w_sys_tmp70 = (w_sys_tmp71 < r_run_j_4);
+	assign w_sys_tmp71 = 32'sh00000081;
+	assign w_sys_tmp74 = (w_sys_tmp75 + w_sys_intOne);
+	assign w_sys_tmp75 = (r_run_j_4 * w_sys_tmp76);
+	assign w_sys_tmp76 = 32'sh00000081;
+	assign w_sys_tmp77 = 32'h3f800000;
+	assign w_sys_tmp79 = (r_run_copy0_j_14 * w_sys_tmp76);
+	assign w_sys_tmp82 = 32'h0;
+	assign w_sys_tmp83 = (r_run_copy0_j_14 + w_sys_intOne);
+	assign w_sys_tmp84 = (r_run_j_4 + w_sys_intOne);
+	assign w_sys_tmp86 = (w_sys_tmp87 * w_sys_tmp76);
+	assign w_sys_tmp87 = w_sys_tmp84;
+	assign w_sys_tmp91 = (w_sys_tmp92 * w_sys_tmp76);
+	assign w_sys_tmp92 = w_sys_tmp83;
+	assign w_sys_tmp163 = ( !w_sys_tmp164 );
+	assign w_sys_tmp164 = (w_sys_tmp165 < r_run_k_3);
+	assign w_sys_tmp165 = 32'sh00000081;
+	assign w_sys_tmp166 = (r_run_k_3 + w_sys_intOne);
+	assign w_sys_tmp167 = ( !w_sys_tmp168 );
+	assign w_sys_tmp168 = (w_sys_tmp169 < r_run_j_4);
+	assign w_sys_tmp169 = 32'sh00000041;
+	assign w_sys_tmp172 = (r_run_j_4 * w_sys_tmp173);
+	assign w_sys_tmp173 = 32'sh00000081;
+	assign w_sys_tmp174 = w_fld_u_0_dataout_1;
+	assign w_sys_tmp175 = (w_sys_tmp176 + r_run_k_3);
+	assign w_sys_tmp176 = (r_run_copy0_j_15 * w_sys_tmp173);
+	assign w_sys_tmp178 = (r_run_copy0_j_15 + w_sys_intOne);
+	assign w_sys_tmp179 = (r_run_j_4 + w_sys_intOne);
+	assign w_sys_tmp181 = (w_sys_tmp182 * w_sys_tmp173);
+	assign w_sys_tmp182 = w_sys_tmp179;
+	assign w_sys_tmp185 = (w_sys_tmp186 * w_sys_tmp173);
+	assign w_sys_tmp186 = w_sys_tmp178;
+	assign w_sys_tmp240 = 32'sh00000040;
+	assign w_sys_tmp241 = ( !w_sys_tmp242 );
+	assign w_sys_tmp242 = (w_sys_tmp243 < r_run_j_4);
+	assign w_sys_tmp243 = 32'sh00000081;
+	assign w_sys_tmp246 = (w_sys_tmp247 * w_sys_tmp249);
+	assign w_sys_tmp247 = (r_run_j_4 - w_sys_tmp248);
+	assign w_sys_tmp248 = 32'sh0000003f;
+	assign w_sys_tmp249 = 32'sh00000081;
+	assign w_sys_tmp250 = w_fld_u_0_dataout_1;
+	assign w_sys_tmp251 = (w_sys_tmp252 + r_run_k_3);
+	assign w_sys_tmp252 = (r_run_copy0_j_16 * w_sys_tmp249);
+	assign w_sys_tmp254 = (r_run_copy0_j_16 + w_sys_intOne);
+	assign w_sys_tmp255 = (r_run_j_4 + w_sys_intOne);
+	assign w_sys_tmp257 = (w_sys_tmp258 * w_sys_tmp249);
+	assign w_sys_tmp258 = (w_sys_tmp259 - w_sys_tmp248);
+	assign w_sys_tmp259 = w_sys_tmp255;
+	assign w_sys_tmp263 = (w_sys_tmp264 * w_sys_tmp249);
+	assign w_sys_tmp264 = w_sys_tmp254;
+	assign w_sys_tmp328 = ( !w_sys_tmp329 );
+	assign w_sys_tmp329 = (r_run_nlast_8 < r_run_n_5);
+	assign w_sys_tmp330 = (r_run_n_5 + w_sys_intOne);
+	assign w_sys_tmp331 = 32'sh00000002;
+	assign w_sys_tmp332 = ( !w_sys_tmp333 );
+	assign w_sys_tmp333 = (w_sys_tmp334 < r_run_k_3);
+	assign w_sys_tmp334 = 32'sh00000080;
+	assign w_sys_tmp335 = (r_run_k_3 + w_sys_intOne);
+	assign w_sys_tmp336 = 32'sh00000002;
+	assign w_sys_tmp337 = ( !w_sys_tmp338 );
+	assign w_sys_tmp338 = (w_sys_tmp339 < r_run_j_4);
+	assign w_sys_tmp339 = 32'sh00000040;
+	assign w_sys_tmp342 = (r_run_j_4 * w_sys_tmp343);
+	assign w_sys_tmp343 = 32'sh00000081;
+	assign w_sys_tmp344 = w_sub00_result_dataout;
+	assign w_sys_tmp345 = (w_sys_tmp346 + r_run_k_3);
+	assign w_sys_tmp346 = (r_run_copy0_j_17 * w_sys_tmp343);
+	assign w_sys_tmp348 = (r_run_copy0_j_17 + w_sys_intOne);
+	assign w_sys_tmp349 = (r_run_j_4 + w_sys_intOne);
+	assign w_sys_tmp351 = (w_sys_tmp352 * w_sys_tmp343);
+	assign w_sys_tmp352 = w_sys_tmp349;
+	assign w_sys_tmp355 = (w_sys_tmp356 * w_sys_tmp343);
+	assign w_sys_tmp356 = w_sys_tmp348;
+	assign w_sys_tmp410 = 32'sh00000041;
+	assign w_sys_tmp411 = ( !w_sys_tmp412 );
+	assign w_sys_tmp412 = (w_sys_tmp413 < r_run_j_4);
+	assign w_sys_tmp413 = 32'sh00000080;
+	assign w_sys_tmp416 = (r_run_j_4 * w_sys_tmp417);
+	assign w_sys_tmp417 = 32'sh00000081;
+	assign w_sys_tmp418 = w_sub01_result_dataout;
+	assign w_sys_tmp419 = (w_sys_tmp420 + r_run_k_3);
+	assign w_sys_tmp420 = (w_sys_tmp421 * w_sys_tmp417);
+	assign w_sys_tmp421 = (r_run_copy0_j_18 - w_sys_tmp422);
+	assign w_sys_tmp422 = 32'sh0000003f;
+	assign w_sys_tmp424 = (r_run_copy0_j_18 + w_sys_intOne);
+	assign w_sys_tmp425 = (r_run_j_4 + w_sys_intOne);
+	assign w_sys_tmp427 = (w_sys_tmp428 * w_sys_tmp417);
+	assign w_sys_tmp428 = w_sys_tmp425;
+	assign w_sys_tmp431 = (w_sys_tmp432 * w_sys_tmp417);
+	assign w_sys_tmp432 = (w_sys_tmp433 - w_sys_tmp422);
+	assign w_sys_tmp433 = w_sys_tmp424;
+	assign w_sys_tmp498 = (w_sys_tmp22 + r_run_k_3);
+	assign w_sys_tmp504 = (w_sys_tmp66 + r_run_k_3);
+	assign w_sys_tmp505 = (w_sys_tmp79 + w_sys_tmp76);
+	assign w_sys_tmp506 = (w_sys_tmp86 + w_sys_intOne);
+	assign w_sys_tmp507 = (w_sys_tmp91 + w_sys_tmp76);
+	assign w_sys_tmp518 = (w_sys_tmp172 + r_run_k_3);
+	assign w_sys_tmp519 = (w_sys_tmp181 + r_run_k_3);
+	assign w_sys_tmp520 = (w_sys_tmp185 + r_run_k_3);
+	assign w_sys_tmp531 = (w_sys_tmp246 + r_run_k_3);
+	assign w_sys_tmp532 = (w_sys_tmp257 + r_run_k_3);
+	assign w_sys_tmp533 = (w_sys_tmp263 + r_run_k_3);
+	assign w_sys_tmp544 = (w_sys_tmp342 + r_run_k_3);
+	assign w_sys_tmp545 = (w_sys_tmp351 + r_run_k_3);
+	assign w_sys_tmp546 = (w_sys_tmp355 + r_run_k_3);
+	assign w_sys_tmp557 = (w_sys_tmp416 + r_run_k_3);
+	assign w_sys_tmp558 = (w_sys_tmp427 + r_run_k_3);
+	assign w_sys_tmp559 = (w_sys_tmp431 + r_run_k_3);
 
-/*
+
 	subunder
 		sub01_inst(
 			.i_fld_result_1_addr_0 (w_sub01_result_addr),
@@ -442,7 +422,6 @@ module c1(
 			.reset_n (reset_n),
 			.clock (clock)
 		);
-*/
 
 	DualPortRAM #(.DWIDTH(32), .AWIDTH(15), .WORDS(16900) )
 		dpram_u_0(
@@ -554,7 +533,7 @@ module c1(
 							case(r_sys_run_stage) 
 								2'h0: begin
 									if((r_sys_run_step==4'h0)) begin
-										r_sys_run_phase <= ((w_sys_tmp8) ? 7'h9 : 7'hf);
+										r_sys_run_phase <= ((w_sys_tmp9) ? 7'h9 : 7'hf);
 
 									end
 								end
@@ -593,7 +572,7 @@ module c1(
 							case(r_sys_run_stage) 
 								2'h0: begin
 									if((r_sys_run_step==4'h0)) begin
-										r_sys_run_phase <= ((w_sys_tmp11) ? 7'hd : 7'h6);
+										r_sys_run_phase <= ((w_sys_tmp12) ? 7'hd : 7'h6);
 
 									end
 								end
@@ -632,7 +611,7 @@ module c1(
 							case(r_sys_run_stage) 
 								2'h0: begin
 									if((r_sys_run_step==4'h0)) begin
-										r_sys_run_phase <= ((w_sys_tmp56) ? 7'h13 : 7'h15);
+										r_sys_run_phase <= ((w_sys_tmp57) ? 7'h13 : 7'h15);
 
 									end
 								end
@@ -671,7 +650,7 @@ module c1(
 							case(r_sys_run_stage) 
 								2'h0: begin
 									if((r_sys_run_step==4'h0)) begin
-										r_sys_run_phase <= ((w_sys_tmp68) ? 7'h19 : 7'h1b);
+										r_sys_run_phase <= ((w_sys_tmp69) ? 7'h19 : 7'h1b);
 
 									end
 								end
@@ -710,7 +689,7 @@ module c1(
 							case(r_sys_run_stage) 
 								2'h0: begin
 									if((r_sys_run_step==4'h0)) begin
-										r_sys_run_phase <= ((w_sys_tmp162) ? 7'h20 : 7'h2c);
+										r_sys_run_phase <= ((w_sys_tmp163) ? 7'h20 : 7'h2c);
 
 									end
 								end
@@ -749,7 +728,7 @@ module c1(
 							case(r_sys_run_stage) 
 								2'h0: begin
 									if((r_sys_run_step==4'h0)) begin
-										r_sys_run_phase <= ((w_sys_tmp166) ? 7'h24 : 7'h26);
+										r_sys_run_phase <= ((w_sys_tmp167) ? 7'h24 : 7'h26);
 
 									end
 								end
@@ -788,7 +767,7 @@ module c1(
 							case(r_sys_run_stage) 
 								2'h0: begin
 									if((r_sys_run_step==4'h0)) begin
-										r_sys_run_phase <= ((w_sys_tmp240) ? 7'h2a : 7'h1d);
+										r_sys_run_phase <= ((w_sys_tmp241) ? 7'h2a : 7'h1d);
 
 									end
 								end
@@ -827,7 +806,7 @@ module c1(
 							case(r_sys_run_stage) 
 								2'h0: begin
 									if((r_sys_run_step==4'h0)) begin
-										r_sys_run_phase <= ((w_sys_tmp327) ? 7'h30 : 7'h34);
+										r_sys_run_phase <= ((w_sys_tmp328) ? 7'h30 : 7'h34);
 
 									end
 								end
@@ -892,7 +871,7 @@ module c1(
 							case(r_sys_run_stage) 
 								2'h0: begin
 									if((r_sys_run_step==4'h0)) begin
-										r_sys_run_phase <= ((w_sys_tmp331) ? 7'h39 : 7'h45);
+										r_sys_run_phase <= ((w_sys_tmp332) ? 7'h39 : 7'h45);
 
 									end
 								end
@@ -931,7 +910,7 @@ module c1(
 							case(r_sys_run_stage) 
 								2'h0: begin
 									if((r_sys_run_step==4'h0)) begin
-										r_sys_run_phase <= ((w_sys_tmp336) ? 7'h3d : 7'h3f);
+										r_sys_run_phase <= ((w_sys_tmp337) ? 7'h3d : 7'h3f);
 
 									end
 								end
@@ -970,7 +949,7 @@ module c1(
 							case(r_sys_run_stage) 
 								2'h0: begin
 									if((r_sys_run_step==4'h0)) begin
-										r_sys_run_phase <= ((w_sys_tmp410) ? 7'h43 : 7'h36);
+										r_sys_run_phase <= ((w_sys_tmp411) ? 7'h43 : 7'h36);
 
 									end
 								end
@@ -1973,13 +1952,13 @@ module c1(
 
 							case(r_sys_run_stage) 
 								2'h0: begin
-									if((r_sys_run_step==4'h1)) begin
-										r_sys_run_step <= 4'h0;
+									if((r_sys_run_step==4'h0)) begin
+										r_sys_run_step <= ((w_sub00_run_busy) ? r_sys_run_step : w_sys_run_step_p1);
 
 									end
 									else
-									if((r_sys_run_step==4'h0)) begin
-										r_sys_run_step <= ((w_sub00_run_busy) ? r_sys_run_step : w_sys_run_step_p1);
+									if((r_sys_run_step==4'h1)) begin
+										r_sys_run_step <= 4'h0;
 
 									end
 								end
@@ -2075,13 +2054,13 @@ module c1(
 
 							case(r_sys_run_stage) 
 								2'h0: begin
-									if((4'h0<=r_sys_run_step && r_sys_run_step<=4'h7)) begin
-										r_sys_run_step <= w_sys_run_step_p1;
+									if((r_sys_run_step==4'h8)) begin
+										r_sys_run_step <= 4'h0;
 
 									end
 									else
-									if((r_sys_run_step==4'h8)) begin
-										r_sys_run_step <= 4'h0;
+									if((4'h0<=r_sys_run_step && r_sys_run_step<=4'h7)) begin
+										r_sys_run_step <= w_sys_run_step_p1;
 
 									end
 								end
@@ -2204,7 +2183,7 @@ module c1(
 									end
 									else
 									if((r_sys_run_step==4'h0)) begin
-										r_fld_u_0_addr_1 <= $signed( w_sys_tmp15[14:0] );
+										r_fld_u_0_addr_1 <= $signed( w_sys_tmp16[14:0] );
 
 									end
 								end
@@ -2222,7 +2201,7 @@ module c1(
 									end
 									else
 									if((r_sys_run_step==4'h0)) begin
-										r_fld_u_0_addr_1 <= $signed( w_sys_tmp61[14:0] );
+										r_fld_u_0_addr_1 <= $signed( w_sys_tmp62[14:0] );
 
 									end
 								end
@@ -2234,28 +2213,13 @@ module c1(
 
 							case(r_sys_run_stage) 
 								2'h0: begin
-									if((r_sys_run_step==4'h0)) begin
-										r_fld_u_0_addr_1 <= $signed( w_sys_tmp73[14:0] );
-
-									end
-									else
-									if((r_sys_run_step==4'h4) || (r_sys_run_step==4'ha)) begin
-										r_fld_u_0_addr_1 <= $signed( r_sys_tmp4_int[14:0] );
-
-									end
-									else
-									if((r_sys_run_step==4'h7)) begin
-										r_fld_u_0_addr_1 <= $signed( r_sys_tmp3_int[14:0] );
-
-									end
-									else
-									if((r_sys_run_step==4'h3) || (r_sys_run_step==4'h9)) begin
-										r_fld_u_0_addr_1 <= $signed( r_sys_tmp6_int[14:0] );
-
-									end
-									else
 									if((r_sys_run_step==4'hc)) begin
 										r_fld_u_0_addr_1 <= $signed( r_sys_tmp0_int[14:0] );
+
+									end
+									else
+									if((r_sys_run_step==4'h2) || (r_sys_run_step==4'h6)) begin
+										r_fld_u_0_addr_1 <= $signed( r_sys_tmp5_int[14:0] );
 
 									end
 									else
@@ -2264,18 +2228,33 @@ module c1(
 
 									end
 									else
-									if((r_sys_run_step==4'h1) || (r_sys_run_step==4'h5) || (r_sys_run_step==4'hd)) begin
-										r_fld_u_0_addr_1 <= $signed( r_sys_tmp7_int[14:0] );
-
-									end
-									else
 									if((r_sys_run_step==4'hb)) begin
 										r_fld_u_0_addr_1 <= $signed( r_sys_tmp1_int[14:0] );
 
 									end
 									else
-									if((r_sys_run_step==4'h2) || (r_sys_run_step==4'h6)) begin
-										r_fld_u_0_addr_1 <= $signed( r_sys_tmp5_int[14:0] );
+									if((r_sys_run_step==4'h7)) begin
+										r_fld_u_0_addr_1 <= $signed( r_sys_tmp3_int[14:0] );
+
+									end
+									else
+									if((r_sys_run_step==4'h0)) begin
+										r_fld_u_0_addr_1 <= $signed( w_sys_tmp74[14:0] );
+
+									end
+									else
+									if((r_sys_run_step==4'h3) || (r_sys_run_step==4'h9)) begin
+										r_fld_u_0_addr_1 <= $signed( r_sys_tmp6_int[14:0] );
+
+									end
+									else
+									if((r_sys_run_step==4'h1) || (r_sys_run_step==4'h5) || (r_sys_run_step==4'hd)) begin
+										r_fld_u_0_addr_1 <= $signed( r_sys_tmp7_int[14:0] );
+
+									end
+									else
+									if((r_sys_run_step==4'h4) || (r_sys_run_step==4'ha)) begin
+										r_fld_u_0_addr_1 <= $signed( r_sys_tmp4_int[14:0] );
 
 									end
 								end
@@ -2288,7 +2267,7 @@ module c1(
 							case(r_sys_run_stage) 
 								2'h0: begin
 									if((r_sys_run_step==4'h0)) begin
-										r_fld_u_0_addr_1 <= $signed( w_sys_tmp174[14:0] );
+										r_fld_u_0_addr_1 <= $signed( w_sys_tmp175[14:0] );
 
 									end
 									else
@@ -2305,13 +2284,13 @@ module c1(
 
 							case(r_sys_run_stage) 
 								2'h0: begin
-									if((r_sys_run_step==4'h0)) begin
-										r_fld_u_0_addr_1 <= $signed( w_sys_tmp250[14:0] );
+									if((4'h1<=r_sys_run_step && r_sys_run_step<=4'h6)) begin
+										r_fld_u_0_addr_1 <= $signed( r_sys_tmp2_int[14:0] );
 
 									end
 									else
-									if((4'h1<=r_sys_run_step && r_sys_run_step<=4'h6)) begin
-										r_fld_u_0_addr_1 <= $signed( r_sys_tmp2_int[14:0] );
+									if((r_sys_run_step==4'h0)) begin
+										r_fld_u_0_addr_1 <= $signed( w_sys_tmp251[14:0] );
 
 									end
 								end
@@ -2323,6 +2302,11 @@ module c1(
 
 							case(r_sys_run_stage) 
 								2'h0: begin
+									if((r_sys_run_step==4'h2) || (r_sys_run_step==4'h5) || (r_sys_run_step==4'h8)) begin
+										r_fld_u_0_addr_1 <= $signed( r_sys_tmp5_int[14:0] );
+
+									end
+									else
 									if((r_sys_run_step==4'h3) || (r_sys_run_step==4'h6)) begin
 										r_fld_u_0_addr_1 <= $signed( r_sys_tmp3_int[14:0] );
 
@@ -2330,11 +2314,6 @@ module c1(
 									else
 									if((r_sys_run_step==4'h4) || (r_sys_run_step==4'h7)) begin
 										r_fld_u_0_addr_1 <= $signed( r_sys_tmp7_int[14:0] );
-
-									end
-									else
-									if((r_sys_run_step==4'h2) || (r_sys_run_step==4'h5) || (r_sys_run_step==4'h8)) begin
-										r_fld_u_0_addr_1 <= $signed( r_sys_tmp5_int[14:0] );
 
 									end
 								end
@@ -2346,6 +2325,11 @@ module c1(
 
 							case(r_sys_run_stage) 
 								2'h0: begin
+									if((r_sys_run_step==4'h3) || (r_sys_run_step==4'h6)) begin
+										r_fld_u_0_addr_1 <= $signed( r_sys_tmp1_int[14:0] );
+
+									end
+									else
 									if((r_sys_run_step==4'h2) || (r_sys_run_step==4'h5) || (r_sys_run_step==4'h8)) begin
 										r_fld_u_0_addr_1 <= $signed( r_sys_tmp3_int[14:0] );
 
@@ -2353,11 +2337,6 @@ module c1(
 									else
 									if((r_sys_run_step==4'h4) || (r_sys_run_step==4'h7)) begin
 										r_fld_u_0_addr_1 <= $signed( r_sys_tmp7_int[14:0] );
-
-									end
-									else
-									if((r_sys_run_step==4'h3) || (r_sys_run_step==4'h6)) begin
-										r_fld_u_0_addr_1 <= $signed( r_sys_tmp1_int[14:0] );
 
 									end
 								end
@@ -2386,7 +2365,7 @@ module c1(
 							case(r_sys_run_stage) 
 								2'h0: begin
 									if((4'h0<=r_sys_run_step && r_sys_run_step<=4'h6)) begin
-										r_fld_u_0_datain_1 <= w_sys_tmp18;
+										r_fld_u_0_datain_1 <= w_sys_tmp19;
 
 									end
 								end
@@ -2399,12 +2378,12 @@ module c1(
 							case(r_sys_run_stage) 
 								2'h0: begin
 									if((r_sys_run_step==4'h0)) begin
-										r_fld_u_0_datain_1 <= w_sys_tmp63;
+										r_fld_u_0_datain_1 <= w_sys_tmp64;
 
 									end
 									else
 									if((r_sys_run_step==4'h1)) begin
-										r_fld_u_0_datain_1 <= w_sys_tmp66;
+										r_fld_u_0_datain_1 <= w_sys_tmp67;
 
 									end
 								end
@@ -2416,13 +2395,13 @@ module c1(
 
 							case(r_sys_run_stage) 
 								2'h0: begin
-									if((r_sys_run_step==4'h1) || (r_sys_run_step==4'h3) || (r_sys_run_step==4'h5) || (r_sys_run_step==4'h7) || (r_sys_run_step==4'h9) || (r_sys_run_step==4'hb) || (r_sys_run_step==4'hd)) begin
-										r_fld_u_0_datain_1 <= w_sys_tmp81;
+									if((r_sys_run_step==4'h0) || (r_sys_run_step==4'h2) || (r_sys_run_step==4'h4) || (r_sys_run_step==4'h6) || (r_sys_run_step==4'h8) || (r_sys_run_step==4'ha) || (r_sys_run_step==4'hc)) begin
+										r_fld_u_0_datain_1 <= w_sys_tmp77;
 
 									end
 									else
-									if((r_sys_run_step==4'h0) || (r_sys_run_step==4'h2) || (r_sys_run_step==4'h4) || (r_sys_run_step==4'h6) || (r_sys_run_step==4'h8) || (r_sys_run_step==4'ha) || (r_sys_run_step==4'hc)) begin
-										r_fld_u_0_datain_1 <= w_sys_tmp76;
+									if((r_sys_run_step==4'h1) || (r_sys_run_step==4'h3) || (r_sys_run_step==4'h5) || (r_sys_run_step==4'h7) || (r_sys_run_step==4'h9) || (r_sys_run_step==4'hb) || (r_sys_run_step==4'hd)) begin
+										r_fld_u_0_datain_1 <= w_sys_tmp82;
 
 									end
 								end
@@ -2435,7 +2414,7 @@ module c1(
 							case(r_sys_run_stage) 
 								2'h0: begin
 									if((4'h2<=r_sys_run_step && r_sys_run_step<=4'h8)) begin
-										r_fld_u_0_datain_1 <= w_sys_tmp343;
+										r_fld_u_0_datain_1 <= w_sys_tmp344;
 
 									end
 								end
@@ -2448,7 +2427,7 @@ module c1(
 							case(r_sys_run_stage) 
 								2'h0: begin
 									if((4'h2<=r_sys_run_step && r_sys_run_step<=4'h8)) begin
-										r_fld_u_0_datain_1 <= w_sys_tmp417;
+										r_fld_u_0_datain_1 <= w_sys_tmp418;
 
 									end
 								end
@@ -2606,7 +2585,7 @@ module c1(
 							case(r_sys_run_stage) 
 								2'h0: begin
 									if((r_sys_run_step==4'h0)) begin
-										r_run_k_3 <= w_sys_tmp10;
+										r_run_k_3 <= w_sys_tmp11;
 
 									end
 								end
@@ -2632,7 +2611,7 @@ module c1(
 							case(r_sys_run_stage) 
 								2'h0: begin
 									if((r_sys_run_step==4'h0)) begin
-										r_run_k_3 <= w_sys_tmp67;
+										r_run_k_3 <= w_sys_tmp68;
 
 									end
 								end
@@ -2658,7 +2637,7 @@ module c1(
 							case(r_sys_run_stage) 
 								2'h0: begin
 									if((r_sys_run_step==4'h0)) begin
-										r_run_k_3 <= w_sys_tmp165;
+										r_run_k_3 <= w_sys_tmp166;
 
 									end
 								end
@@ -2671,7 +2650,7 @@ module c1(
 							case(r_sys_run_stage) 
 								2'h0: begin
 									if((r_sys_run_step==4'h0)) begin
-										r_run_k_3 <= w_sys_tmp330;
+										r_run_k_3 <= w_sys_tmp331;
 
 									end
 								end
@@ -2684,7 +2663,7 @@ module c1(
 							case(r_sys_run_stage) 
 								2'h0: begin
 									if((r_sys_run_step==4'h0)) begin
-										r_run_k_3 <= w_sys_tmp334;
+										r_run_k_3 <= w_sys_tmp335;
 
 									end
 								end
@@ -2726,7 +2705,7 @@ module c1(
 							case(r_sys_run_stage) 
 								2'h0: begin
 									if((4'h0<=r_sys_run_step && r_sys_run_step<=4'h6)) begin
-										r_run_j_4 <= w_sys_tmp19;
+										r_run_j_4 <= w_sys_tmp20;
 
 									end
 								end
@@ -2752,7 +2731,7 @@ module c1(
 							case(r_sys_run_stage) 
 								2'h0: begin
 									if((4'h0<=r_sys_run_step && r_sys_run_step<=4'h6)) begin
-										r_run_j_4 <= w_sys_tmp83;
+										r_run_j_4 <= w_sys_tmp84;
 
 									end
 								end
@@ -2778,7 +2757,7 @@ module c1(
 							case(r_sys_run_stage) 
 								2'h0: begin
 									if((4'h0<=r_sys_run_step && r_sys_run_step<=4'h6)) begin
-										r_run_j_4 <= w_sys_tmp178;
+										r_run_j_4 <= w_sys_tmp179;
 
 									end
 								end
@@ -2791,7 +2770,7 @@ module c1(
 							case(r_sys_run_stage) 
 								2'h0: begin
 									if((r_sys_run_step==4'h0)) begin
-										r_run_j_4 <= w_sys_tmp239;
+										r_run_j_4 <= w_sys_tmp240;
 
 									end
 								end
@@ -2804,7 +2783,7 @@ module c1(
 							case(r_sys_run_stage) 
 								2'h0: begin
 									if((4'h0<=r_sys_run_step && r_sys_run_step<=4'h6)) begin
-										r_run_j_4 <= w_sys_tmp254;
+										r_run_j_4 <= w_sys_tmp255;
 
 									end
 								end
@@ -2817,7 +2796,7 @@ module c1(
 							case(r_sys_run_stage) 
 								2'h0: begin
 									if((r_sys_run_step==4'h0)) begin
-										r_run_j_4 <= w_sys_tmp335;
+										r_run_j_4 <= w_sys_tmp336;
 
 									end
 								end
@@ -2830,7 +2809,7 @@ module c1(
 							case(r_sys_run_stage) 
 								2'h0: begin
 									if((4'h0<=r_sys_run_step && r_sys_run_step<=4'h6)) begin
-										r_run_j_4 <= w_sys_tmp348;
+										r_run_j_4 <= w_sys_tmp349;
 
 									end
 								end
@@ -2843,7 +2822,7 @@ module c1(
 							case(r_sys_run_stage) 
 								2'h0: begin
 									if((r_sys_run_step==4'h0)) begin
-										r_run_j_4 <= w_sys_tmp409;
+										r_run_j_4 <= w_sys_tmp410;
 
 									end
 								end
@@ -2856,7 +2835,7 @@ module c1(
 							case(r_sys_run_stage) 
 								2'h0: begin
 									if((4'h0<=r_sys_run_step && r_sys_run_step<=4'h6)) begin
-										r_run_j_4 <= w_sys_tmp424;
+										r_run_j_4 <= w_sys_tmp425;
 
 									end
 								end
@@ -2898,7 +2877,7 @@ module c1(
 							case(r_sys_run_stage) 
 								2'h0: begin
 									if((r_sys_run_step==4'h0)) begin
-										r_run_n_5 <= w_sys_tmp329;
+										r_run_n_5 <= w_sys_tmp330;
 
 									end
 								end
@@ -2985,7 +2964,7 @@ module c1(
 							case(r_sys_run_stage) 
 								2'h0: begin
 									if((r_sys_run_step==4'h0)) begin
-										r_run_nlast_8 <= w_sys_intOne;
+										r_run_nlast_8 <= w_sys_tmp8;
 
 									end
 								end
@@ -3172,7 +3151,7 @@ module c1(
 							case(r_sys_run_stage) 
 								2'h0: begin
 									if((4'h0<=r_sys_run_step && r_sys_run_step<=4'h6)) begin
-										r_run_copy0_j_14 <= w_sys_tmp82;
+										r_run_copy0_j_14 <= w_sys_tmp83;
 
 									end
 								end
@@ -3214,7 +3193,7 @@ module c1(
 							case(r_sys_run_stage) 
 								2'h0: begin
 									if((4'h0<=r_sys_run_step && r_sys_run_step<=4'h6)) begin
-										r_run_copy0_j_15 <= w_sys_tmp177;
+										r_run_copy0_j_15 <= w_sys_tmp178;
 
 									end
 								end
@@ -3256,7 +3235,7 @@ module c1(
 							case(r_sys_run_stage) 
 								2'h0: begin
 									if((4'h0<=r_sys_run_step && r_sys_run_step<=4'h6)) begin
-										r_run_copy0_j_16 <= w_sys_tmp253;
+										r_run_copy0_j_16 <= w_sys_tmp254;
 
 									end
 								end
@@ -3298,7 +3277,7 @@ module c1(
 							case(r_sys_run_stage) 
 								2'h0: begin
 									if((4'h0<=r_sys_run_step && r_sys_run_step<=4'h6)) begin
-										r_run_copy0_j_17 <= w_sys_tmp347;
+										r_run_copy0_j_17 <= w_sys_tmp348;
 
 									end
 								end
@@ -3340,7 +3319,7 @@ module c1(
 							case(r_sys_run_stage) 
 								2'h0: begin
 									if((4'h0<=r_sys_run_step && r_sys_run_step<=4'h6)) begin
-										r_run_copy0_j_18 <= w_sys_tmp423;
+										r_run_copy0_j_18 <= w_sys_tmp424;
 
 									end
 								end
@@ -3373,13 +3352,13 @@ module c1(
 
 							case(r_sys_run_stage) 
 								2'h1: begin
-									if((r_sys_run_step==4'h0)) begin
-										r_sub01_run_req <= w_sys_boolTrue;
+									if((r_sys_run_step==4'h1)) begin
+										r_sub01_run_req <= w_sys_boolFalse;
 
 									end
 									else
-									if((r_sys_run_step==4'h1)) begin
-										r_sub01_run_req <= w_sys_boolFalse;
+									if((r_sys_run_step==4'h0)) begin
+										r_sub01_run_req <= w_sys_boolTrue;
 
 									end
 								end
@@ -3412,8 +3391,8 @@ module c1(
 
 							case(r_sys_run_stage) 
 								2'h0: begin
-									if((r_sys_run_step==4'h3) || (r_sys_run_step==4'h6)) begin
-										r_sub01_u_addr <= $signed( r_sys_tmp6_int[13:0] );
+									if((r_sys_run_step==4'h4) || (r_sys_run_step==4'h7)) begin
+										r_sub01_u_addr <= $signed( r_sys_tmp5_int[13:0] );
 
 									end
 									else
@@ -3422,8 +3401,8 @@ module c1(
 
 									end
 									else
-									if((r_sys_run_step==4'h4) || (r_sys_run_step==4'h7)) begin
-										r_sub01_u_addr <= $signed( r_sys_tmp5_int[13:0] );
+									if((r_sys_run_step==4'h3) || (r_sys_run_step==4'h6)) begin
+										r_sub01_u_addr <= $signed( r_sys_tmp6_int[13:0] );
 
 									end
 								end
@@ -3452,7 +3431,7 @@ module c1(
 							case(r_sys_run_stage) 
 								2'h0: begin
 									if((4'h2<=r_sys_run_step && r_sys_run_step<=4'h8)) begin
-										r_sub01_u_datain <= w_sys_tmp249;
+										r_sub01_u_datain <= w_sys_tmp250;
 
 									end
 								end
@@ -3543,13 +3522,13 @@ module c1(
 
 							case(r_sys_run_stage) 
 								2'h0: begin
-									if((r_sys_run_step==4'h0)) begin
-										r_sub01_result_addr <= $signed( w_sys_tmp418[13:0] );
+									if((4'h1<=r_sys_run_step && r_sys_run_step<=4'h6)) begin
+										r_sub01_result_addr <= $signed( r_sys_tmp5_int[13:0] );
 
 									end
 									else
-									if((4'h1<=r_sys_run_step && r_sys_run_step<=4'h6)) begin
-										r_sub01_result_addr <= $signed( r_sys_tmp5_int[13:0] );
+									if((r_sys_run_step==4'h0)) begin
+										r_sub01_result_addr <= $signed( w_sys_tmp419[13:0] );
 
 									end
 								end
@@ -3640,13 +3619,13 @@ module c1(
 
 							case(r_sys_run_stage) 
 								2'h0: begin
-									if((r_sys_run_step==4'h0)) begin
-										r_sub00_run_req <= w_sys_boolTrue;
+									if((r_sys_run_step==4'h1)) begin
+										r_sub00_run_req <= w_sys_boolFalse;
 
 									end
 									else
-									if((r_sys_run_step==4'h1)) begin
-										r_sub00_run_req <= w_sys_boolFalse;
+									if((r_sys_run_step==4'h0)) begin
+										r_sub00_run_req <= w_sys_boolTrue;
 
 									end
 								end
@@ -3679,11 +3658,6 @@ module c1(
 
 							case(r_sys_run_stage) 
 								2'h0: begin
-									if((r_sys_run_step==4'h2) || (r_sys_run_step==4'h5) || (r_sys_run_step==4'h8)) begin
-										r_sub00_u_addr <= $signed( r_sys_tmp3_int[13:0] );
-
-									end
-									else
 									if((r_sys_run_step==4'h3) || (r_sys_run_step==4'h6)) begin
 										r_sub00_u_addr <= $signed( r_sys_tmp2_int[13:0] );
 
@@ -3691,6 +3665,11 @@ module c1(
 									else
 									if((r_sys_run_step==4'h4) || (r_sys_run_step==4'h7)) begin
 										r_sub00_u_addr <= $signed( r_sys_tmp1_int[13:0] );
+
+									end
+									else
+									if((r_sys_run_step==4'h2) || (r_sys_run_step==4'h5) || (r_sys_run_step==4'h8)) begin
+										r_sub00_u_addr <= $signed( r_sys_tmp3_int[13:0] );
 
 									end
 								end
@@ -3719,7 +3698,7 @@ module c1(
 							case(r_sys_run_stage) 
 								2'h0: begin
 									if((4'h2<=r_sys_run_step && r_sys_run_step<=4'h8)) begin
-										r_sub00_u_datain <= w_sys_tmp173;
+										r_sub00_u_datain <= w_sys_tmp174;
 
 									end
 								end
@@ -3811,7 +3790,7 @@ module c1(
 							case(r_sys_run_stage) 
 								2'h0: begin
 									if((r_sys_run_step==4'h0)) begin
-										r_sub00_result_addr <= $signed( w_sys_tmp344[13:0] );
+										r_sub00_result_addr <= $signed( w_sys_tmp345[13:0] );
 
 									end
 									else
@@ -3903,7 +3882,7 @@ module c1(
 							case(r_sys_run_stage) 
 								2'h0: begin
 									if((4'h0<=r_sys_run_step && r_sys_run_step<=4'h5)) begin
-										r_sys_tmp0_int <= w_sys_tmp497;
+										r_sys_tmp0_int <= w_sys_tmp498;
 
 									end
 								end
@@ -3916,7 +3895,7 @@ module c1(
 							case(r_sys_run_stage) 
 								2'h0: begin
 									if((r_sys_run_step==4'h0)) begin
-										r_sys_tmp0_int <= w_sys_tmp503;
+										r_sys_tmp0_int <= w_sys_tmp504;
 
 									end
 								end
@@ -3929,7 +3908,7 @@ module c1(
 							case(r_sys_run_stage) 
 								2'h0: begin
 									if((r_sys_run_step==4'h5)) begin
-										r_sys_tmp0_int <= w_sys_tmp505;
+										r_sys_tmp0_int <= w_sys_tmp506;
 
 									end
 								end
@@ -3958,7 +3937,7 @@ module c1(
 							case(r_sys_run_stage) 
 								2'h0: begin
 									if((r_sys_run_step==4'h4)) begin
-										r_sys_tmp1_int <= w_sys_tmp506;
+										r_sys_tmp1_int <= w_sys_tmp507;
 
 									end
 								end
@@ -3971,7 +3950,7 @@ module c1(
 							case(r_sys_run_stage) 
 								2'h0: begin
 									if((r_sys_run_step==4'h1) || (r_sys_run_step==4'h4)) begin
-										r_sys_tmp1_int <= w_sys_tmp518;
+										r_sys_tmp1_int <= w_sys_tmp519;
 
 									end
 								end
@@ -3983,12 +3962,12 @@ module c1(
 
 							case(r_sys_run_stage) 
 								2'h0: begin
-									if((r_sys_run_step==4'h0)) begin
-										r_sys_tmp1_int <= w_sys_tmp530;
+									if((r_sys_run_step==4'h2) || (r_sys_run_step==4'h5)) begin
+										r_sys_tmp1_int <= w_sys_tmp532;
 
 									end
 									else
-									if((r_sys_run_step==4'h2) || (r_sys_run_step==4'h5)) begin
+									if((r_sys_run_step==4'h0)) begin
 										r_sys_tmp1_int <= w_sys_tmp531;
 
 									end
@@ -4002,7 +3981,7 @@ module c1(
 							case(r_sys_run_stage) 
 								2'h0: begin
 									if((r_sys_run_step==4'h0) || (r_sys_run_step==4'h3)) begin
-										r_sys_tmp1_int <= w_sys_tmp557;
+										r_sys_tmp1_int <= w_sys_tmp558;
 
 									end
 								end
@@ -4031,7 +4010,7 @@ module c1(
 							case(r_sys_run_stage) 
 								2'h0: begin
 									if((r_sys_run_step==4'h3)) begin
-										r_sys_tmp2_int <= w_sys_tmp505;
+										r_sys_tmp2_int <= w_sys_tmp506;
 
 									end
 								end
@@ -4044,7 +4023,7 @@ module c1(
 							case(r_sys_run_stage) 
 								2'h0: begin
 									if((r_sys_run_step==4'h0) || (r_sys_run_step==4'h3)) begin
-										r_sys_tmp2_int <= w_sys_tmp518;
+										r_sys_tmp2_int <= w_sys_tmp519;
 
 									end
 								end
@@ -4057,7 +4036,7 @@ module c1(
 							case(r_sys_run_stage) 
 								2'h0: begin
 									if((4'h0<=r_sys_run_step && r_sys_run_step<=4'h5)) begin
-										r_sys_tmp2_int <= w_sys_tmp532;
+										r_sys_tmp2_int <= w_sys_tmp533;
 
 									end
 								end
@@ -4086,7 +4065,7 @@ module c1(
 							case(r_sys_run_stage) 
 								2'h0: begin
 									if((r_sys_run_step==4'h2)) begin
-										r_sys_tmp3_int <= w_sys_tmp506;
+										r_sys_tmp3_int <= w_sys_tmp507;
 
 									end
 								end
@@ -4098,13 +4077,13 @@ module c1(
 
 							case(r_sys_run_stage) 
 								2'h0: begin
-									if((r_sys_run_step==4'h2) || (r_sys_run_step==4'h5)) begin
+									if((r_sys_run_step==4'h0)) begin
 										r_sys_tmp3_int <= w_sys_tmp518;
 
 									end
 									else
-									if((r_sys_run_step==4'h0)) begin
-										r_sys_tmp3_int <= w_sys_tmp517;
+									if((r_sys_run_step==4'h2) || (r_sys_run_step==4'h5)) begin
+										r_sys_tmp3_int <= w_sys_tmp519;
 
 									end
 								end
@@ -4117,7 +4096,7 @@ module c1(
 							case(r_sys_run_stage) 
 								2'h0: begin
 									if((r_sys_run_step==4'h0) || (r_sys_run_step==4'h3)) begin
-										r_sys_tmp3_int <= w_sys_tmp544;
+										r_sys_tmp3_int <= w_sys_tmp545;
 
 									end
 								end
@@ -4130,12 +4109,12 @@ module c1(
 							case(r_sys_run_stage) 
 								2'h0: begin
 									if((r_sys_run_step==4'h0)) begin
-										r_sys_tmp3_int <= w_sys_tmp556;
+										r_sys_tmp3_int <= w_sys_tmp557;
 
 									end
 									else
 									if((r_sys_run_step==4'h2) || (r_sys_run_step==4'h5)) begin
-										r_sys_tmp3_int <= w_sys_tmp557;
+										r_sys_tmp3_int <= w_sys_tmp558;
 
 									end
 								end
@@ -4164,7 +4143,7 @@ module c1(
 							case(r_sys_run_stage) 
 								2'h0: begin
 									if((r_sys_run_step==4'h1) || (r_sys_run_step==4'h4)) begin
-										r_sys_tmp4_int <= w_sys_tmp505;
+										r_sys_tmp4_int <= w_sys_tmp506;
 
 									end
 								end
@@ -4177,7 +4156,7 @@ module c1(
 							case(r_sys_run_stage) 
 								2'h0: begin
 									if((4'h0<=r_sys_run_step && r_sys_run_step<=4'h5)) begin
-										r_sys_tmp4_int <= w_sys_tmp519;
+										r_sys_tmp4_int <= w_sys_tmp520;
 
 									end
 								end
@@ -4206,7 +4185,7 @@ module c1(
 							case(r_sys_run_stage) 
 								2'h0: begin
 									if((r_sys_run_step==4'h0) || (r_sys_run_step==4'h2)) begin
-										r_sys_tmp5_int <= w_sys_tmp505;
+										r_sys_tmp5_int <= w_sys_tmp506;
 
 									end
 								end
@@ -4219,7 +4198,7 @@ module c1(
 							case(r_sys_run_stage) 
 								2'h0: begin
 									if((r_sys_run_step==4'h1) || (r_sys_run_step==4'h4)) begin
-										r_sys_tmp5_int <= w_sys_tmp531;
+										r_sys_tmp5_int <= w_sys_tmp532;
 
 									end
 								end
@@ -4232,12 +4211,12 @@ module c1(
 							case(r_sys_run_stage) 
 								2'h0: begin
 									if((r_sys_run_step==4'h0)) begin
-										r_sys_tmp5_int <= w_sys_tmp543;
+										r_sys_tmp5_int <= w_sys_tmp544;
 
 									end
 									else
 									if((r_sys_run_step==4'h2) || (r_sys_run_step==4'h5)) begin
-										r_sys_tmp5_int <= w_sys_tmp544;
+										r_sys_tmp5_int <= w_sys_tmp545;
 
 									end
 								end
@@ -4250,7 +4229,7 @@ module c1(
 							case(r_sys_run_stage) 
 								2'h0: begin
 									if((4'h0<=r_sys_run_step && r_sys_run_step<=4'h5)) begin
-										r_sys_tmp5_int <= w_sys_tmp558;
+										r_sys_tmp5_int <= w_sys_tmp559;
 
 									end
 								end
@@ -4279,7 +4258,7 @@ module c1(
 							case(r_sys_run_stage) 
 								2'h0: begin
 									if((r_sys_run_step==4'h0) || (r_sys_run_step==4'h3)) begin
-										r_sys_tmp6_int <= w_sys_tmp506;
+										r_sys_tmp6_int <= w_sys_tmp507;
 
 									end
 								end
@@ -4292,7 +4271,7 @@ module c1(
 							case(r_sys_run_stage) 
 								2'h0: begin
 									if((r_sys_run_step==4'h0) || (r_sys_run_step==4'h3)) begin
-										r_sys_tmp6_int <= w_sys_tmp531;
+										r_sys_tmp6_int <= w_sys_tmp532;
 
 									end
 								end
@@ -4305,7 +4284,7 @@ module c1(
 							case(r_sys_run_stage) 
 								2'h0: begin
 									if((4'h0<=r_sys_run_step && r_sys_run_step<=4'h5)) begin
-										r_sys_tmp6_int <= w_sys_tmp545;
+										r_sys_tmp6_int <= w_sys_tmp546;
 
 									end
 								end
@@ -4333,13 +4312,13 @@ module c1(
 
 							case(r_sys_run_stage) 
 								2'h0: begin
-									if((r_sys_run_step==4'h1) || (r_sys_run_step==4'h5)) begin
-										r_sys_tmp7_int <= w_sys_tmp506;
+									if((r_sys_run_step==4'h0)) begin
+										r_sys_tmp7_int <= w_sys_tmp505;
 
 									end
 									else
-									if((r_sys_run_step==4'h0)) begin
-										r_sys_tmp7_int <= w_sys_tmp504;
+									if((r_sys_run_step==4'h1) || (r_sys_run_step==4'h5)) begin
+										r_sys_tmp7_int <= w_sys_tmp507;
 
 									end
 								end
@@ -4352,7 +4331,7 @@ module c1(
 							case(r_sys_run_stage) 
 								2'h0: begin
 									if((r_sys_run_step==4'h1) || (r_sys_run_step==4'h4)) begin
-										r_sys_tmp7_int <= w_sys_tmp544;
+										r_sys_tmp7_int <= w_sys_tmp545;
 
 									end
 								end
@@ -4365,7 +4344,7 @@ module c1(
 							case(r_sys_run_stage) 
 								2'h0: begin
 									if((r_sys_run_step==4'h1) || (r_sys_run_step==4'h4)) begin
-										r_sys_tmp7_int <= w_sys_tmp557;
+										r_sys_tmp7_int <= w_sys_tmp558;
 
 									end
 								end

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<CLASS>
+<className>	bramtest	</className>
+<METHOD>
+	<methodName>	run	</methodName>
+	<totalPhaseNum>4	</totalPhaseNum>
+	<totalStageNum>1	</totalStageNum>
+	<totalStepNum>2	</totalStepNum>
+		<Phase>
+			<phaseID>	2	</phaseID>
+			<Stage>
+				<stageID>	0	</stageID>
+				<stepNum>	2	</stepNum>
+				<minCriticalPath>	2	</minCriticalPath>
+				<exprInStage>	<!--a[0]&nbsp;=&nbsp;1<br>a[1]&nbsp;=&nbsp;2<br>-->	</exprInStage>
+				<ArrayAccess>
+					<nodeID>	1250177899	</nodeID>
+					<startStep>	0	</startStep>
+					<endStep>	0	</endStep>
+					<destType>	int	</destType>
+					<destTypeIsReg>	false	</destTypeIsReg>
+					<destSignalName>	w_sys_tmp1	</destSignalName>
+					<priority>	2	</priority>
+					<minPathToEnd>	2	</minPathToEnd>
+					<fastestStepForAlap>	0	</fastestStepForAlap>
+					<componentID>	759946245	</componentID>
+					<variableName>	a	</variableName>
+					<isRead>	false	</isRead>
+					<type>	int	</type>
+					<variableID>	0	</variableID>
+					<dependence>		</dependence>
+					<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DPRAM&nbsp;:&nbsp;dpram_a_0&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+					<offset>
+						<Literal>
+							<nodeID>	1331291006	</nodeID>
+							<startStep>	0	</startStep>
+							<endStep>	0	</endStep>
+							<destType>	int	</destType>
+							<destTypeIsReg>	false	</destTypeIsReg>
+							<destSignalName>	w_sys_intZero	</destSignalName>
+							<priority>	2	</priority>
+							<minPathToEnd>	2	</minPathToEnd>
+							<fastestStepForAlap>	0	</fastestStepForAlap>
+							<componentID>	1331291006	</componentID>
+							<type>	int	</type>
+							<value>	0	</value>
+							<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wire&nbsp;:&nbsp;w_sys_intZero&nbsp;=&nbsp;32'sh0&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+						</Literal>
+					</offset>
+					<assignNode>
+						<Literal>
+							<nodeID>	375819749	</nodeID>
+							<startStep>	0	</startStep>
+							<endStep>	0	</endStep>
+							<destType>	int	</destType>
+							<destTypeIsReg>	false	</destTypeIsReg>
+							<destSignalName>	w_sys_intOne	</destSignalName>
+							<priority>	2	</priority>
+							<minPathToEnd>	2	</minPathToEnd>
+							<fastestStepForAlap>	0	</fastestStepForAlap>
+							<componentID>	375819749	</componentID>
+							<type>	int	</type>
+							<value>	1	</value>
+							<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wire&nbsp;:&nbsp;w_sys_intOne&nbsp;=&nbsp;32'sh1&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+						</Literal>
+					</assignNode>
+				</ArrayAccess>
+				<ArrayAccess>
+					<nodeID>	653115616	</nodeID>
+					<startStep>	1	</startStep>
+					<endStep>	1	</endStep>
+					<destType>	int	</destType>
+					<destTypeIsReg>	false	</destTypeIsReg>
+					<destSignalName>	w_sys_tmp2	</destSignalName>
+					<priority>	1	</priority>
+					<minPathToEnd>	1	</minPathToEnd>
+					<fastestStepForAlap>	1	</fastestStepForAlap>
+					<componentID>	759946245	</componentID>
+					<variableName>	a	</variableName>
+					<isRead>	false	</isRead>
+					<type>	int	</type>
+					<variableID>	0	</variableID>
+					<dependence>	1250177899	</dependence>
+					<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DPRAM&nbsp;:&nbsp;dpram_a_0&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+					<offset>
+						<Literal>
+							<nodeID>	1125238295	</nodeID>
+							<startStep>	0	</startStep>
+							<endStep>	0	</endStep>
+							<destType>	int	</destType>
+							<destTypeIsReg>	false	</destTypeIsReg>
+							<destSignalName>	w_sys_intOne	</destSignalName>
+							<priority>	1	</priority>
+							<minPathToEnd>	1	</minPathToEnd>
+							<fastestStepForAlap>	1	</fastestStepForAlap>
+							<componentID>	1125238295	</componentID>
+							<type>	int	</type>
+							<value>	1	</value>
+							<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wire&nbsp;:&nbsp;w_sys_intOne&nbsp;=&nbsp;32'sh1&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+						</Literal>
+					</offset>
+					<assignNode>
+						<Literal>
+							<nodeID>	1139028583	</nodeID>
+							<startStep>	0	</startStep>
+							<endStep>	0	</endStep>
+							<destType>	int	</destType>
+							<destTypeIsReg>	false	</destTypeIsReg>
+							<destSignalName>	w_sys_tmp3	</destSignalName>
+							<priority>	1	</priority>
+							<minPathToEnd>	1	</minPathToEnd>
+							<fastestStepForAlap>	1	</fastestStepForAlap>
+							<componentID>	1139028583	</componentID>
+							<type>	int	</type>
+							<value>	2	</value>
+							<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wire&nbsp;:&nbsp;w_sys_tmp3&nbsp;=&nbsp;32'sh00000002&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+						</Literal>
+					</assignNode>
+				</ArrayAccess>
+			</Stage>
+
+		</Phase>
+
+	<exprInMethod><!--<br>public&nbsp;void&nbsp;run()&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;a[0]&nbsp;=&nbsp;1;<br>&nbsp;&nbsp;&nbsp;&nbsp;a[1]&nbsp;=&nbsp;2;<br>}--></exprInMethod>
+</METHOD>
+
+	</CLASS>

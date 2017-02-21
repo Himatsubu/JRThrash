@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Class>
+
+	<ClassName>	bramtest	</ClassName>
+
+	<AllVariables>
+		<VeriableDecl>
+			<name>	a	</name>
+			<type>	int	</type>
+			<variableID>	0	</variableID>
+			<parentName>	bramtest	</parentName>
+			<defType>	field	</defType>
+			<isArray>	true	</isArray>
+			<isPrimitive>	true	</isPrimitive>
+			<isFinal>	true	</isFinal>
+			<dimension>	1	</dimension>
+			<init>
+				<NewArray>
+					<type>	int	</type>
+					<elements>	2	</elements>				
+				</NewArray>
+			</init>
+		</VeriableDecl>
+
+	</AllVariables>
+
+	<METHOD>	<Phase>  1  </Phase>
+
+		<methodName>	run	</methodName>
+		<returnType>	void	</returnType>
+		<ParamList>
+
+		</ParamList>
+
+		<MethodBody>
+			<Block>	<Phase>  1  </Phase>
+
+				<StatAssemblage>	<Phase>  2  </Phase>
+					<stageNum>  1  </stageNum>
+					<totalStepNum>  2  </totalStepNum>
+					<VariableStack>
+						<VeriableDecl>			<name>	a	</name>		<variableID>	0	</variableID>		<defType>	field	</defType>			</VeriableDecl>
+					</VariableStack>
+
+					<statements>
+						<ExprStatement>
+							<Assign>
+								<rightExpr>
+									<Literal>
+										<type>	int	</type>
+										<value>	1	</value>
+									</Literal>
+								</rightExpr>
+
+								<dest>
+									<ArrayAccess>
+										<variableID>	0	</variableID>
+										<idName>a</idName>
+
+										<index0>
+											<Literal>
+												<type>	int	</type>
+												<value>	0	</value>
+											</Literal>
+										</index0>
+
+									</ArrayAccess>
+
+								</dest>
+
+							</Assign>
+
+						</ExprStatement>
+
+						<ExprStatement>
+							<Assign>
+								<rightExpr>
+									<Literal>
+										<type>	int	</type>
+										<value>	2	</value>
+									</Literal>
+								</rightExpr>
+
+								<dest>
+									<ArrayAccess>
+										<variableID>	0	</variableID>
+										<idName>a</idName>
+
+										<index0>
+											<Literal>
+												<type>	int	</type>
+												<value>	1	</value>
+											</Literal>
+										</index0>
+
+									</ArrayAccess>
+
+								</dest>
+
+							</Assign>
+
+						</ExprStatement>
+
+					</statements>
+
+				</StatAssemblage>
+
+			</Block>
+
+		</MethodBody>
+
+	</METHOD>
+
+
+</Class>

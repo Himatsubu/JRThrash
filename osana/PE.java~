@@ -1,0 +1,13 @@
+import net.njlab.sample.annotation.*;
+
+public class PE{
+        int average(int dataNum,int[] matX){
+                int i;
+                int average = 0;
+		@JRThrashUnroll(unrollNum=10,loopVariableName="i",unrollType=JRThrashUnroll.copyLoopVar)
+                for(i=0;i<dataNum;i++){
+                        average = matX[i] + average;
+                }
+                return average;
+        }
+}

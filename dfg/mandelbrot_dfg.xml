@@ -1,0 +1,1924 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<CLASS>
+<className>	mandelbrot	</className>
+<METHOD>
+	<methodName>	mandelbrot	</methodName>
+	<totalPhaseNum>17	</totalPhaseNum>
+	<totalStageNum>9	</totalStageNum>
+	<totalStepNum>46	</totalStepNum>
+		<Phase>
+			<phaseID>	2	</phaseID>
+			<Stage>
+				<stageID>	0	</stageID>
+				<stepNum>	1	</stepNum>
+				<minCriticalPath>	1	</minCriticalPath>
+				<exprInStage>	<!--float&nbsp;x&nbsp;=&nbsp;0.0F<br>float&nbsp;y&nbsp;=&nbsp;0.0F<br>-->	</exprInStage>
+				<VariableAccess>
+					<nodeID>	1949484870	</nodeID>
+					<startStep>	0	</startStep>
+					<endStep>	0	</endStep>
+					<destType>	float	</destType>
+					<destTypeIsReg>	false	</destTypeIsReg>
+					<destSignalName>	r_mandelbrot_x_2	</destSignalName>
+					<priority>	1	</priority>
+					<minPathToEnd>	1	</minPathToEnd>
+					<fastestStepForAlap>	0	</fastestStepForAlap>
+					<componentID>	834207811	</componentID>
+					<variableName>	x	</variableName>
+					<type>	float	</type>
+					<variableID>	2	</variableID>
+					<isRead>	false	</isRead>
+					<dependence>		</dependence>
+					<assignNode>
+						<Literal>
+							<nodeID>	1757431861	</nodeID>
+							<startStep>	0	</startStep>
+							<endStep>	0	</endStep>
+							<destType>	float	</destType>
+							<destTypeIsReg>	false	</destTypeIsReg>
+							<destSignalName>	w_sys_tmp1	</destSignalName>
+							<priority>	1	</priority>
+							<minPathToEnd>	1	</minPathToEnd>
+							<fastestStepForAlap>	0	</fastestStepForAlap>
+							<componentID>	1757431861	</componentID>
+							<type>	float	</type>
+							<value>	0.0	</value>
+							<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wire&nbsp;:&nbsp;w_sys_tmp1&nbsp;=&nbsp;32'h0&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+						</Literal>
+					</assignNode>
+					<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reg&nbsp;:&nbsp;r_mandelbrot_x_2&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+				</VariableAccess>
+				<VariableAccess>
+					<nodeID>	667206989	</nodeID>
+					<startStep>	0	</startStep>
+					<endStep>	0	</endStep>
+					<destType>	float	</destType>
+					<destTypeIsReg>	false	</destTypeIsReg>
+					<destSignalName>	r_mandelbrot_y_3	</destSignalName>
+					<priority>	1	</priority>
+					<minPathToEnd>	1	</minPathToEnd>
+					<fastestStepForAlap>	0	</fastestStepForAlap>
+					<componentID>	1735743136	</componentID>
+					<variableName>	y	</variableName>
+					<type>	float	</type>
+					<variableID>	3	</variableID>
+					<isRead>	false	</isRead>
+					<dependence>		</dependence>
+					<assignNode>
+						<Literal>
+							<nodeID>	1217025904	</nodeID>
+							<startStep>	0	</startStep>
+							<endStep>	0	</endStep>
+							<destType>	float	</destType>
+							<destTypeIsReg>	false	</destTypeIsReg>
+							<destSignalName>	w_sys_tmp1	</destSignalName>
+							<priority>	1	</priority>
+							<minPathToEnd>	1	</minPathToEnd>
+							<fastestStepForAlap>	0	</fastestStepForAlap>
+							<componentID>	1217025904	</componentID>
+							<type>	float	</type>
+							<value>	0.0	</value>
+							<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wire&nbsp;:&nbsp;w_sys_tmp1&nbsp;=&nbsp;32'h0&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+						</Literal>
+					</assignNode>
+					<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reg&nbsp;:&nbsp;r_mandelbrot_y_3&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+				</VariableAccess>
+			</Stage>
+
+		</Phase>
+
+		<Phase>
+			<phaseID>	4	</phaseID>
+			<Stage>
+				<stageID>	0	</stageID>
+				<stepNum>	1	</stepNum>
+				<minCriticalPath>	1	</minCriticalPath>
+				<exprInStage>	<!--n&nbsp;=&nbsp;0<br>-->	</exprInStage>
+				<VariableAccess>
+					<nodeID>	1920114500	</nodeID>
+					<startStep>	0	</startStep>
+					<endStep>	0	</endStep>
+					<destType>	int	</destType>
+					<destTypeIsReg>	false	</destTypeIsReg>
+					<destSignalName>	r_mandelbrot_n_6	</destSignalName>
+					<priority>	1	</priority>
+					<minPathToEnd>	1	</minPathToEnd>
+					<fastestStepForAlap>	0	</fastestStepForAlap>
+					<componentID>	1127638031	</componentID>
+					<variableName>	n	</variableName>
+					<type>	int	</type>
+					<variableID>	6	</variableID>
+					<isRead>	false	</isRead>
+					<dependence>		</dependence>
+					<assignNode>
+						<Literal>
+							<nodeID>	669202242	</nodeID>
+							<startStep>	0	</startStep>
+							<endStep>	0	</endStep>
+							<destType>	int	</destType>
+							<destTypeIsReg>	false	</destTypeIsReg>
+							<destSignalName>	w_sys_intZero	</destSignalName>
+							<priority>	1	</priority>
+							<minPathToEnd>	1	</minPathToEnd>
+							<fastestStepForAlap>	0	</fastestStepForAlap>
+							<componentID>	669202242	</componentID>
+							<type>	int	</type>
+							<value>	0	</value>
+							<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wire&nbsp;:&nbsp;w_sys_intZero&nbsp;=&nbsp;32'sh0&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+						</Literal>
+					</assignNode>
+					<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reg&nbsp;:&nbsp;r_mandelbrot_n_6&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+				</VariableAccess>
+			</Stage>
+
+		</Phase>
+
+		<Phase>
+			<phaseID>	5	</phaseID>
+			<Stage>
+				<stageID>	0	</stageID>
+				<stepNum>	1	</stepNum>
+				<minCriticalPath>	0	</minCriticalPath>
+				<exprInStage>	<!--n&nbsp;&lt;&nbsp;100<br>-->	</exprInStage>
+				<Binary>
+					<nodeID>	910221955	</nodeID>
+					<startStep>	0	</startStep>
+					<endStep>	0	</endStep>
+					<destType>	boolean	</destType>
+					<destTypeIsReg>	false	</destTypeIsReg>
+					<destSignalName>	w_sys_tmp3	</destSignalName>
+					<priority>	0	</priority>
+					<minPathToEnd>	0	</minPathToEnd>
+					<fastestStepForAlap>	0	</fastestStepForAlap>
+					<componentID>	910221955	</componentID>
+					<op>	LT	</op>
+					<ipcore>	notUsed	</ipcore>
+					<leftNode>
+						<VariableAccess>
+							<nodeID>	1574380104	</nodeID>
+							<startStep>	0	</startStep>
+							<endStep>	0	</endStep>
+							<destType>	int	</destType>
+							<destTypeIsReg>	false	</destTypeIsReg>
+							<destSignalName>	r_mandelbrot_n_6	</destSignalName>
+							<priority>	0	</priority>
+							<minPathToEnd>	0	</minPathToEnd>
+							<fastestStepForAlap>	0	</fastestStepForAlap>
+							<componentID>	1127638031	</componentID>
+							<variableName>	n	</variableName>
+							<type>	int	</type>
+							<variableID>	6	</variableID>
+							<isRead>	true	</isRead>
+							<dependence>		</dependence>
+							<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reg&nbsp;:&nbsp;r_mandelbrot_n_6&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+						</VariableAccess>
+					</leftNode>
+
+					<rightNode>
+						<Literal>
+							<nodeID>	1460393241	</nodeID>
+							<startStep>	0	</startStep>
+							<endStep>	0	</endStep>
+							<destType>	int	</destType>
+							<destTypeIsReg>	false	</destTypeIsReg>
+							<destSignalName>	w_sys_tmp4	</destSignalName>
+							<priority>	0	</priority>
+							<minPathToEnd>	0	</minPathToEnd>
+							<fastestStepForAlap>	0	</fastestStepForAlap>
+							<componentID>	1460393241	</componentID>
+							<type>	int	</type>
+							<value>	100	</value>
+							<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wire&nbsp;:&nbsp;w_sys_tmp4&nbsp;=&nbsp;32'sh00000064&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+						</Literal>
+					</rightNode>
+					<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;verilog&nbsp;operator&nbsp;:&nbsp;&lt;&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+				</Binary>
+			</Stage>
+
+		</Phase>
+
+		<Phase>
+			<phaseID>	8	</phaseID>
+			<Stage>
+				<stageID>	0	</stageID>
+				<stepNum>	18	</stepNum>
+				<minCriticalPath>	16	</minCriticalPath>
+				<exprInStage>	<!--x1&nbsp;=&nbsp;x&nbsp;*&nbsp;x&nbsp;-&nbsp;y&nbsp;*&nbsp;y&nbsp;+&nbsp;a<br>y1&nbsp;=&nbsp;2.0F&nbsp;*&nbsp;x&nbsp;*&nbsp;y&nbsp;+&nbsp;b<br>-->	</exprInStage>
+				<VariableAccess>
+					<nodeID>	1238599924	</nodeID>
+					<startStep>	16	</startStep>
+					<endStep>	16	</endStep>
+					<destType>	float	</destType>
+					<destTypeIsReg>	false	</destTypeIsReg>
+					<destSignalName>	r_mandelbrot_x1_4	</destSignalName>
+					<priority>	1	</priority>
+					<minPathToEnd>	1	</minPathToEnd>
+					<fastestStepForAlap>	15	</fastestStepForAlap>
+					<componentID>	1589932297	</componentID>
+					<variableName>	x1	</variableName>
+					<type>	float	</type>
+					<variableID>	4	</variableID>
+					<isRead>	false	</isRead>
+					<dependence>		</dependence>
+					<assignNode>
+						<Binary>
+							<nodeID>	423385352	</nodeID>
+							<startStep>	11	</startStep>
+							<endStep>	16	</endStep>
+							<destType>	float	</destType>
+							<destTypeIsReg>	false	</destTypeIsReg>
+							<destSignalName>	w_sys_tmp6	</destSignalName>
+							<priority>	6	</priority>
+							<minPathToEnd>	6	</minPathToEnd>
+							<fastestStepForAlap>	10	</fastestStepForAlap>
+							<componentID>	853096058	</componentID>
+							<op>	+	</op>
+							<ipcore>	AddFloat_inst_0	</ipcore>
+							<leftNode>
+								<Binary>
+									<nodeID>	969534200	</nodeID>
+									<startStep>	6	</startStep>
+									<endStep>	11	</endStep>
+									<destType>	float	</destType>
+									<destTypeIsReg>	false	</destTypeIsReg>
+									<destSignalName>	w_sys_tmp6	</destSignalName>
+									<priority>	11	</priority>
+									<minPathToEnd>	11	</minPathToEnd>
+									<fastestStepForAlap>	5	</fastestStepForAlap>
+									<componentID>	853096058	</componentID>
+									<op>	-	</op>
+									<ipcore>	AddFloat_inst_0	</ipcore>
+									<leftNode>
+										<Binary>
+											<nodeID>	253474716	</nodeID>
+											<startStep>	0	</startStep>
+											<endStep>	5	</endStep>
+											<destType>	float	</destType>
+											<destTypeIsReg>	true	</destTypeIsReg>
+											<destSignalName>	r_sys_tmp0_float	</destSignalName>
+											<priority>	16	</priority>
+											<minPathToEnd>	16	</minPathToEnd>
+											<fastestStepForAlap>	0	</fastestStepForAlap>
+											<componentID>	807284497	</componentID>
+											<op>	*	</op>
+											<ipcore>	MultFloat_inst_0	</ipcore>
+											<leftNode>
+												<VariableAccess>
+													<nodeID>	1384619434	</nodeID>
+													<startStep>	0	</startStep>
+													<endStep>	0	</endStep>
+													<destType>	float	</destType>
+													<destTypeIsReg>	false	</destTypeIsReg>
+													<destSignalName>	r_mandelbrot_x_2	</destSignalName>
+													<priority>	16	</priority>
+													<minPathToEnd>	16	</minPathToEnd>
+													<fastestStepForAlap>	0	</fastestStepForAlap>
+													<componentID>	834207811	</componentID>
+													<variableName>	x	</variableName>
+													<type>	float	</type>
+													<variableID>	2	</variableID>
+													<isRead>	true	</isRead>
+													<dependence>		</dependence>
+													<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reg&nbsp;:&nbsp;r_mandelbrot_x_2&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+												</VariableAccess>
+											</leftNode>
+
+											<rightNode>
+												<VariableAccess>
+													<nodeID>	1166028346	</nodeID>
+													<startStep>	0	</startStep>
+													<endStep>	0	</endStep>
+													<destType>	float	</destType>
+													<destTypeIsReg>	false	</destTypeIsReg>
+													<destSignalName>	r_mandelbrot_x_2	</destSignalName>
+													<priority>	16	</priority>
+													<minPathToEnd>	16	</minPathToEnd>
+													<fastestStepForAlap>	0	</fastestStepForAlap>
+													<componentID>	834207811	</componentID>
+													<variableName>	x	</variableName>
+													<type>	float	</type>
+													<variableID>	2	</variableID>
+													<isRead>	true	</isRead>
+													<dependence>		</dependence>
+													<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reg&nbsp;:&nbsp;r_mandelbrot_x_2&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+												</VariableAccess>
+											</rightNode>
+											<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IPcore&nbsp;:&nbsp;MultFloat_inst_0&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+										</Binary>
+									</leftNode>
+
+									<rightNode>
+										<Binary>
+											<nodeID>	1689479811	</nodeID>
+											<startStep>	1	</startStep>
+											<endStep>	6	</endStep>
+											<destType>	float	</destType>
+											<destTypeIsReg>	false	</destTypeIsReg>
+											<destSignalName>	w_sys_tmp8	</destSignalName>
+											<priority>	16	</priority>
+											<minPathToEnd>	16	</minPathToEnd>
+											<fastestStepForAlap>	0	</fastestStepForAlap>
+											<componentID>	807284497	</componentID>
+											<op>	*	</op>
+											<ipcore>	MultFloat_inst_0	</ipcore>
+											<leftNode>
+												<VariableAccess>
+													<nodeID>	1650132347	</nodeID>
+													<startStep>	0	</startStep>
+													<endStep>	0	</endStep>
+													<destType>	float	</destType>
+													<destTypeIsReg>	false	</destTypeIsReg>
+													<destSignalName>	r_mandelbrot_y_3	</destSignalName>
+													<priority>	16	</priority>
+													<minPathToEnd>	16	</minPathToEnd>
+													<fastestStepForAlap>	0	</fastestStepForAlap>
+													<componentID>	1735743136	</componentID>
+													<variableName>	y	</variableName>
+													<type>	float	</type>
+													<variableID>	3	</variableID>
+													<isRead>	true	</isRead>
+													<dependence>		</dependence>
+													<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reg&nbsp;:&nbsp;r_mandelbrot_y_3&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+												</VariableAccess>
+											</leftNode>
+
+											<rightNode>
+												<VariableAccess>
+													<nodeID>	1170538671	</nodeID>
+													<startStep>	0	</startStep>
+													<endStep>	0	</endStep>
+													<destType>	float	</destType>
+													<destTypeIsReg>	false	</destTypeIsReg>
+													<destSignalName>	r_mandelbrot_y_3	</destSignalName>
+													<priority>	16	</priority>
+													<minPathToEnd>	16	</minPathToEnd>
+													<fastestStepForAlap>	0	</fastestStepForAlap>
+													<componentID>	1735743136	</componentID>
+													<variableName>	y	</variableName>
+													<type>	float	</type>
+													<variableID>	3	</variableID>
+													<isRead>	true	</isRead>
+													<dependence>		</dependence>
+													<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reg&nbsp;:&nbsp;r_mandelbrot_y_3&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+												</VariableAccess>
+											</rightNode>
+											<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IPcore&nbsp;:&nbsp;MultFloat_inst_0&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+										</Binary>
+									</rightNode>
+									<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IPcore&nbsp;:&nbsp;AddFloat_inst_0&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+								</Binary>
+							</leftNode>
+
+							<rightNode>
+								<VariableAccess>
+									<nodeID>	145753330	</nodeID>
+									<startStep>	0	</startStep>
+									<endStep>	0	</endStep>
+									<destType>	float	</destType>
+									<destTypeIsReg>	false	</destTypeIsReg>
+									<destSignalName>	r_mandelbrot_a_0	</destSignalName>
+									<priority>	6	</priority>
+									<minPathToEnd>	6	</minPathToEnd>
+									<fastestStepForAlap>	10	</fastestStepForAlap>
+									<componentID>	1544859730	</componentID>
+									<variableName>	a	</variableName>
+									<type>	float	</type>
+									<variableID>	0	</variableID>
+									<isRead>	true	</isRead>
+									<dependence>		</dependence>
+									<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reg&nbsp;:&nbsp;r_mandelbrot_a_0&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+								</VariableAccess>
+							</rightNode>
+							<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IPcore&nbsp;:&nbsp;AddFloat_inst_0&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+						</Binary>
+					</assignNode>
+					<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reg&nbsp;:&nbsp;r_mandelbrot_x1_4&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+				</VariableAccess>
+				<VariableAccess>
+					<nodeID>	1380189880	</nodeID>
+					<startStep>	17	</startStep>
+					<endStep>	17	</endStep>
+					<destType>	float	</destType>
+					<destTypeIsReg>	false	</destTypeIsReg>
+					<destSignalName>	r_mandelbrot_y1_5	</destSignalName>
+					<priority>	1	</priority>
+					<minPathToEnd>	1	</minPathToEnd>
+					<fastestStepForAlap>	15	</fastestStepForAlap>
+					<componentID>	1880441913	</componentID>
+					<variableName>	y1	</variableName>
+					<type>	float	</type>
+					<variableID>	5	</variableID>
+					<isRead>	false	</isRead>
+					<dependence>		</dependence>
+					<assignNode>
+						<Binary>
+							<nodeID>	1224288553	</nodeID>
+							<startStep>	12	</startStep>
+							<endStep>	17	</endStep>
+							<destType>	float	</destType>
+							<destTypeIsReg>	false	</destTypeIsReg>
+							<destSignalName>	w_sys_tmp6	</destSignalName>
+							<priority>	6	</priority>
+							<minPathToEnd>	6	</minPathToEnd>
+							<fastestStepForAlap>	10	</fastestStepForAlap>
+							<componentID>	853096058	</componentID>
+							<op>	+	</op>
+							<ipcore>	AddFloat_inst_0	</ipcore>
+							<leftNode>
+								<Binary>
+									<nodeID>	2002869611	</nodeID>
+									<startStep>	7	</startStep>
+									<endStep>	12	</endStep>
+									<destType>	float	</destType>
+									<destTypeIsReg>	false	</destTypeIsReg>
+									<destSignalName>	w_sys_tmp8	</destSignalName>
+									<priority>	11	</priority>
+									<minPathToEnd>	11	</minPathToEnd>
+									<fastestStepForAlap>	5	</fastestStepForAlap>
+									<componentID>	807284497	</componentID>
+									<op>	*	</op>
+									<ipcore>	MultFloat_inst_0	</ipcore>
+									<leftNode>
+										<Binary>
+											<nodeID>	1058402843	</nodeID>
+											<startStep>	2	</startStep>
+											<endStep>	7	</endStep>
+											<destType>	float	</destType>
+											<destTypeIsReg>	false	</destTypeIsReg>
+											<destSignalName>	w_sys_tmp8	</destSignalName>
+											<priority>	16	</priority>
+											<minPathToEnd>	16	</minPathToEnd>
+											<fastestStepForAlap>	0	</fastestStepForAlap>
+											<componentID>	807284497	</componentID>
+											<op>	*	</op>
+											<ipcore>	MultFloat_inst_0	</ipcore>
+											<leftNode>
+												<Literal>
+													<nodeID>	70398892	</nodeID>
+													<startStep>	0	</startStep>
+													<endStep>	0	</endStep>
+													<destType>	float	</destType>
+													<destTypeIsReg>	false	</destTypeIsReg>
+													<destSignalName>	w_sys_tmp12	</destSignalName>
+													<priority>	16	</priority>
+													<minPathToEnd>	16	</minPathToEnd>
+													<fastestStepForAlap>	0	</fastestStepForAlap>
+													<componentID>	70398892	</componentID>
+													<type>	float	</type>
+													<value>	2.0	</value>
+													<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wire&nbsp;:&nbsp;w_sys_tmp12&nbsp;=&nbsp;32'h40000000&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+												</Literal>
+											</leftNode>
+
+											<rightNode>
+												<VariableAccess>
+													<nodeID>	2078171994	</nodeID>
+													<startStep>	0	</startStep>
+													<endStep>	0	</endStep>
+													<destType>	float	</destType>
+													<destTypeIsReg>	false	</destTypeIsReg>
+													<destSignalName>	r_mandelbrot_x_2	</destSignalName>
+													<priority>	16	</priority>
+													<minPathToEnd>	16	</minPathToEnd>
+													<fastestStepForAlap>	0	</fastestStepForAlap>
+													<componentID>	834207811	</componentID>
+													<variableName>	x	</variableName>
+													<type>	float	</type>
+													<variableID>	2	</variableID>
+													<isRead>	true	</isRead>
+													<dependence>		</dependence>
+													<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reg&nbsp;:&nbsp;r_mandelbrot_x_2&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+												</VariableAccess>
+											</rightNode>
+											<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IPcore&nbsp;:&nbsp;MultFloat_inst_0&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+										</Binary>
+									</leftNode>
+
+									<rightNode>
+										<VariableAccess>
+											<nodeID>	1162668350	</nodeID>
+											<startStep>	0	</startStep>
+											<endStep>	0	</endStep>
+											<destType>	float	</destType>
+											<destTypeIsReg>	false	</destTypeIsReg>
+											<destSignalName>	r_mandelbrot_y_3	</destSignalName>
+											<priority>	11	</priority>
+											<minPathToEnd>	11	</minPathToEnd>
+											<fastestStepForAlap>	5	</fastestStepForAlap>
+											<componentID>	1735743136	</componentID>
+											<variableName>	y	</variableName>
+											<type>	float	</type>
+											<variableID>	3	</variableID>
+											<isRead>	true	</isRead>
+											<dependence>		</dependence>
+											<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reg&nbsp;:&nbsp;r_mandelbrot_y_3&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+										</VariableAccess>
+									</rightNode>
+									<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IPcore&nbsp;:&nbsp;MultFloat_inst_0&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+								</Binary>
+							</leftNode>
+
+							<rightNode>
+								<VariableAccess>
+									<nodeID>	1013254397	</nodeID>
+									<startStep>	0	</startStep>
+									<endStep>	0	</endStep>
+									<destType>	float	</destType>
+									<destTypeIsReg>	false	</destTypeIsReg>
+									<destSignalName>	r_mandelbrot_b_1	</destSignalName>
+									<priority>	6	</priority>
+									<minPathToEnd>	6	</minPathToEnd>
+									<fastestStepForAlap>	10	</fastestStepForAlap>
+									<componentID>	221329669	</componentID>
+									<variableName>	b	</variableName>
+									<type>	float	</type>
+									<variableID>	1	</variableID>
+									<isRead>	true	</isRead>
+									<dependence>		</dependence>
+									<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reg&nbsp;:&nbsp;r_mandelbrot_b_1&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+								</VariableAccess>
+							</rightNode>
+							<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IPcore&nbsp;:&nbsp;AddFloat_inst_0&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+						</Binary>
+					</assignNode>
+					<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reg&nbsp;:&nbsp;r_mandelbrot_y1_5&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+				</VariableAccess>
+			</Stage>
+
+		</Phase>
+
+		<Phase>
+			<phaseID>	10	</phaseID>
+			<Stage>
+				<stageID>	0	</stageID>
+				<stepNum>	15	</stepNum>
+				<minCriticalPath>	13	</minCriticalPath>
+				<exprInStage>	<!--x1&nbsp;*&nbsp;x1&nbsp;+&nbsp;y1&nbsp;*&nbsp;y1&nbsp;&gt;&nbsp;4.0<br>-->	</exprInStage>
+				<Binary>
+					<nodeID>	742640292	</nodeID>
+					<startStep>	11	</startStep>
+					<endStep>	14	</endStep>
+					<destType>	boolean	</destType>
+					<destTypeIsReg>	false	</destTypeIsReg>
+					<destSignalName>	w_sys_tmp13	</destSignalName>
+					<priority>	3	</priority>
+					<minPathToEnd>	3	</minPathToEnd>
+					<fastestStepForAlap>	10	</fastestStepForAlap>
+					<componentID>	446070279	</componentID>
+					<op>	LT	</op>
+					<ipcore>	CompareFloatLT_inst_0	</ipcore>
+					<leftNode>
+						<Literal>
+							<nodeID>	237767476	</nodeID>
+							<startStep>	0	</startStep>
+							<endStep>	0	</endStep>
+							<destType>	float	</destType>
+							<destTypeIsReg>	false	</destTypeIsReg>
+							<destSignalName>	w_sys_tmp14	</destSignalName>
+							<priority>	3	</priority>
+							<minPathToEnd>	3	</minPathToEnd>
+							<fastestStepForAlap>	10	</fastestStepForAlap>
+							<componentID>	237767476	</componentID>
+							<type>	float	</type>
+							<value>	4.0	</value>
+							<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wire&nbsp;:&nbsp;w_sys_tmp14&nbsp;=&nbsp;32'h40800000&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+						</Literal>
+					</leftNode>
+
+					<rightNode>
+						<Binary>
+							<nodeID>	1179518307	</nodeID>
+							<startStep>	6	</startStep>
+							<endStep>	11	</endStep>
+							<destType>	float	</destType>
+							<destTypeIsReg>	false	</destTypeIsReg>
+							<destSignalName>	w_sys_tmp15	</destSignalName>
+							<priority>	8	</priority>
+							<minPathToEnd>	8	</minPathToEnd>
+							<fastestStepForAlap>	5	</fastestStepForAlap>
+							<componentID>	853096058	</componentID>
+							<op>	+	</op>
+							<ipcore>	AddFloat_inst_0	</ipcore>
+							<leftNode>
+								<Binary>
+									<nodeID>	1576888364	</nodeID>
+									<startStep>	0	</startStep>
+									<endStep>	5	</endStep>
+									<destType>	float	</destType>
+									<destTypeIsReg>	true	</destTypeIsReg>
+									<destSignalName>	r_sys_tmp0_float	</destSignalName>
+									<priority>	13	</priority>
+									<minPathToEnd>	13	</minPathToEnd>
+									<fastestStepForAlap>	0	</fastestStepForAlap>
+									<componentID>	807284497	</componentID>
+									<op>	*	</op>
+									<ipcore>	MultFloat_inst_0	</ipcore>
+									<leftNode>
+										<VariableAccess>
+											<nodeID>	1838385712	</nodeID>
+											<startStep>	0	</startStep>
+											<endStep>	0	</endStep>
+											<destType>	float	</destType>
+											<destTypeIsReg>	false	</destTypeIsReg>
+											<destSignalName>	r_mandelbrot_x1_4	</destSignalName>
+											<priority>	13	</priority>
+											<minPathToEnd>	13	</minPathToEnd>
+											<fastestStepForAlap>	0	</fastestStepForAlap>
+											<componentID>	1589932297	</componentID>
+											<variableName>	x1	</variableName>
+											<type>	float	</type>
+											<variableID>	4	</variableID>
+											<isRead>	true	</isRead>
+											<dependence>		</dependence>
+											<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reg&nbsp;:&nbsp;r_mandelbrot_x1_4&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+										</VariableAccess>
+									</leftNode>
+
+									<rightNode>
+										<VariableAccess>
+											<nodeID>	1901432195	</nodeID>
+											<startStep>	0	</startStep>
+											<endStep>	0	</endStep>
+											<destType>	float	</destType>
+											<destTypeIsReg>	false	</destTypeIsReg>
+											<destSignalName>	r_mandelbrot_x1_4	</destSignalName>
+											<priority>	13	</priority>
+											<minPathToEnd>	13	</minPathToEnd>
+											<fastestStepForAlap>	0	</fastestStepForAlap>
+											<componentID>	1589932297	</componentID>
+											<variableName>	x1	</variableName>
+											<type>	float	</type>
+											<variableID>	4	</variableID>
+											<isRead>	true	</isRead>
+											<dependence>		</dependence>
+											<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reg&nbsp;:&nbsp;r_mandelbrot_x1_4&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+										</VariableAccess>
+									</rightNode>
+									<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IPcore&nbsp;:&nbsp;MultFloat_inst_0&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+								</Binary>
+							</leftNode>
+
+							<rightNode>
+								<Binary>
+									<nodeID>	667046121	</nodeID>
+									<startStep>	1	</startStep>
+									<endStep>	6	</endStep>
+									<destType>	float	</destType>
+									<destTypeIsReg>	false	</destTypeIsReg>
+									<destSignalName>	w_sys_tmp16	</destSignalName>
+									<priority>	13	</priority>
+									<minPathToEnd>	13	</minPathToEnd>
+									<fastestStepForAlap>	0	</fastestStepForAlap>
+									<componentID>	807284497	</componentID>
+									<op>	*	</op>
+									<ipcore>	MultFloat_inst_0	</ipcore>
+									<leftNode>
+										<VariableAccess>
+											<nodeID>	666750358	</nodeID>
+											<startStep>	0	</startStep>
+											<endStep>	0	</endStep>
+											<destType>	float	</destType>
+											<destTypeIsReg>	false	</destTypeIsReg>
+											<destSignalName>	r_mandelbrot_y1_5	</destSignalName>
+											<priority>	13	</priority>
+											<minPathToEnd>	13	</minPathToEnd>
+											<fastestStepForAlap>	0	</fastestStepForAlap>
+											<componentID>	1880441913	</componentID>
+											<variableName>	y1	</variableName>
+											<type>	float	</type>
+											<variableID>	5	</variableID>
+											<isRead>	true	</isRead>
+											<dependence>		</dependence>
+											<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reg&nbsp;:&nbsp;r_mandelbrot_y1_5&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+										</VariableAccess>
+									</leftNode>
+
+									<rightNode>
+										<VariableAccess>
+											<nodeID>	503596860	</nodeID>
+											<startStep>	0	</startStep>
+											<endStep>	0	</endStep>
+											<destType>	float	</destType>
+											<destTypeIsReg>	false	</destTypeIsReg>
+											<destSignalName>	r_mandelbrot_y1_5	</destSignalName>
+											<priority>	13	</priority>
+											<minPathToEnd>	13	</minPathToEnd>
+											<fastestStepForAlap>	0	</fastestStepForAlap>
+											<componentID>	1880441913	</componentID>
+											<variableName>	y1	</variableName>
+											<type>	float	</type>
+											<variableID>	5	</variableID>
+											<isRead>	true	</isRead>
+											<dependence>		</dependence>
+											<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reg&nbsp;:&nbsp;r_mandelbrot_y1_5&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+										</VariableAccess>
+									</rightNode>
+									<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IPcore&nbsp;:&nbsp;MultFloat_inst_0&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+								</Binary>
+							</rightNode>
+							<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IPcore&nbsp;:&nbsp;AddFloat_inst_0&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+						</Binary>
+					</rightNode>
+					<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IPcore&nbsp;:&nbsp;CompareFloatLT_inst_0&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+				</Binary>
+			</Stage>
+
+		</Phase>
+
+		<Phase>
+			<phaseID>	12	</phaseID>
+			<Stage>
+				<stageID>	0	</stageID>
+				<stepNum>	8	</stepNum>
+				<minCriticalPath>	7	</minCriticalPath>
+				<exprInStage>	<!--n<br>-->	</exprInStage>
+				<Cast>
+					<nodeID>	380431280	</nodeID>
+					<startStep>	0	</startStep>
+					<endStep>	7	</endStep>
+					<destType>	float	</destType>
+					<destTypeIsReg>	false	</destTypeIsReg>
+					<destSignalName>	w_sys_tmp17	</destSignalName>
+					<priority>	7	</priority>
+					<minPathToEnd>	7	</minPathToEnd>
+					<fastestStepForAlap>	0	</fastestStepForAlap>
+					<componentID>	719373193	</componentID>
+					<castType>	float	</castType>
+					<ipcore>	FixedToFloat_inst_0	</ipcore>
+					<srcNode>
+						<VariableAccess>
+							<nodeID>	172322141	</nodeID>
+							<startStep>	0	</startStep>
+							<endStep>	0	</endStep>
+							<destType>	int	</destType>
+							<destTypeIsReg>	false	</destTypeIsReg>
+							<destSignalName>	r_mandelbrot_n_6	</destSignalName>
+							<priority>	7	</priority>
+							<minPathToEnd>	7	</minPathToEnd>
+							<fastestStepForAlap>	0	</fastestStepForAlap>
+							<componentID>	1127638031	</componentID>
+							<variableName>	n	</variableName>
+							<type>	int	</type>
+							<variableID>	6	</variableID>
+							<isRead>	true	</isRead>
+							<dependence>		</dependence>
+							<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reg&nbsp;:&nbsp;r_mandelbrot_n_6&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+						</VariableAccess>
+					</srcNode>
+					<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IPcore&nbsp;:&nbsp;FixedToFloat_inst_0&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+				</Cast>
+			</Stage>
+
+		</Phase>
+
+		<Phase>
+			<phaseID>	13	</phaseID>
+			<Stage>
+				<stageID>	0	</stageID>
+				<stepNum>	1	</stepNum>
+				<minCriticalPath>	1	</minCriticalPath>
+				<exprInStage>	<!--x&nbsp;=&nbsp;x1<br>y&nbsp;=&nbsp;y1<br>++n<br>-->	</exprInStage>
+				<VariableAccess>
+					<nodeID>	1410267631	</nodeID>
+					<startStep>	0	</startStep>
+					<endStep>	0	</endStep>
+					<destType>	float	</destType>
+					<destTypeIsReg>	false	</destTypeIsReg>
+					<destSignalName>	r_mandelbrot_x_2	</destSignalName>
+					<priority>	1	</priority>
+					<minPathToEnd>	1	</minPathToEnd>
+					<fastestStepForAlap>	0	</fastestStepForAlap>
+					<componentID>	834207811	</componentID>
+					<variableName>	x	</variableName>
+					<type>	float	</type>
+					<variableID>	2	</variableID>
+					<isRead>	false	</isRead>
+					<dependence>		</dependence>
+					<assignNode>
+						<VariableAccess>
+							<nodeID>	591062278	</nodeID>
+							<startStep>	0	</startStep>
+							<endStep>	0	</endStep>
+							<destType>	float	</destType>
+							<destTypeIsReg>	false	</destTypeIsReg>
+							<destSignalName>	r_mandelbrot_x1_4	</destSignalName>
+							<priority>	1	</priority>
+							<minPathToEnd>	1	</minPathToEnd>
+							<fastestStepForAlap>	0	</fastestStepForAlap>
+							<componentID>	1589932297	</componentID>
+							<variableName>	x1	</variableName>
+							<type>	float	</type>
+							<variableID>	4	</variableID>
+							<isRead>	true	</isRead>
+							<dependence>		</dependence>
+							<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reg&nbsp;:&nbsp;r_mandelbrot_x1_4&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+						</VariableAccess>
+					</assignNode>
+					<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reg&nbsp;:&nbsp;r_mandelbrot_x_2&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+				</VariableAccess>
+				<VariableAccess>
+					<nodeID>	1871838971	</nodeID>
+					<startStep>	0	</startStep>
+					<endStep>	0	</endStep>
+					<destType>	float	</destType>
+					<destTypeIsReg>	false	</destTypeIsReg>
+					<destSignalName>	r_mandelbrot_y_3	</destSignalName>
+					<priority>	1	</priority>
+					<minPathToEnd>	1	</minPathToEnd>
+					<fastestStepForAlap>	0	</fastestStepForAlap>
+					<componentID>	1735743136	</componentID>
+					<variableName>	y	</variableName>
+					<type>	float	</type>
+					<variableID>	3	</variableID>
+					<isRead>	false	</isRead>
+					<dependence>		</dependence>
+					<assignNode>
+						<VariableAccess>
+							<nodeID>	1509640694	</nodeID>
+							<startStep>	0	</startStep>
+							<endStep>	0	</endStep>
+							<destType>	float	</destType>
+							<destTypeIsReg>	false	</destTypeIsReg>
+							<destSignalName>	r_mandelbrot_y1_5	</destSignalName>
+							<priority>	1	</priority>
+							<minPathToEnd>	1	</minPathToEnd>
+							<fastestStepForAlap>	0	</fastestStepForAlap>
+							<componentID>	1880441913	</componentID>
+							<variableName>	y1	</variableName>
+							<type>	float	</type>
+							<variableID>	5	</variableID>
+							<isRead>	true	</isRead>
+							<dependence>		</dependence>
+							<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reg&nbsp;:&nbsp;r_mandelbrot_y1_5&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+						</VariableAccess>
+					</assignNode>
+					<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reg&nbsp;:&nbsp;r_mandelbrot_y_3&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+				</VariableAccess>
+				<VariableAccess>
+					<nodeID>	11854753	</nodeID>
+					<startStep>	0	</startStep>
+					<endStep>	0	</endStep>
+					<destType>	int	</destType>
+					<destTypeIsReg>	false	</destTypeIsReg>
+					<destSignalName>	r_mandelbrot_n_6	</destSignalName>
+					<priority>	1	</priority>
+					<minPathToEnd>	1	</minPathToEnd>
+					<fastestStepForAlap>	0	</fastestStepForAlap>
+					<componentID>	1127638031	</componentID>
+					<variableName>	n	</variableName>
+					<type>	int	</type>
+					<variableID>	6	</variableID>
+					<isRead>	false	</isRead>
+					<dependence>		</dependence>
+					<assignNode>
+						<Binary>
+							<nodeID>	1674338147	</nodeID>
+							<startStep>	0	</startStep>
+							<endStep>	0	</endStep>
+							<destType>	int	</destType>
+							<destTypeIsReg>	false	</destTypeIsReg>
+							<destSignalName>	w_sys_tmp18	</destSignalName>
+							<priority>	1	</priority>
+							<minPathToEnd>	1	</minPathToEnd>
+							<fastestStepForAlap>	0	</fastestStepForAlap>
+							<componentID>	1674338147	</componentID>
+							<op>	+	</op>
+							<ipcore>	notUsed	</ipcore>
+							<leftNode>
+								<VariableAccess>
+									<nodeID>	2123009988	</nodeID>
+									<startStep>	0	</startStep>
+									<endStep>	0	</endStep>
+									<destType>	int	</destType>
+									<destTypeIsReg>	false	</destTypeIsReg>
+									<destSignalName>	r_mandelbrot_n_6	</destSignalName>
+									<priority>	1	</priority>
+									<minPathToEnd>	1	</minPathToEnd>
+									<fastestStepForAlap>	0	</fastestStepForAlap>
+									<componentID>	1127638031	</componentID>
+									<variableName>	n	</variableName>
+									<type>	int	</type>
+									<variableID>	6	</variableID>
+									<isRead>	true	</isRead>
+									<dependence>		</dependence>
+									<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reg&nbsp;:&nbsp;r_mandelbrot_n_6&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+								</VariableAccess>
+							</leftNode>
+
+							<rightNode>
+								<Literal>
+									<nodeID>	988073411	</nodeID>
+									<startStep>	0	</startStep>
+									<endStep>	0	</endStep>
+									<destType>	int	</destType>
+									<destTypeIsReg>	false	</destTypeIsReg>
+									<destSignalName>	w_sys_intOne	</destSignalName>
+									<priority>	1	</priority>
+									<minPathToEnd>	1	</minPathToEnd>
+									<fastestStepForAlap>	0	</fastestStepForAlap>
+									<componentID>	988073411	</componentID>
+									<type>	int	</type>
+									<value>	1	</value>
+									<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wire&nbsp;:&nbsp;w_sys_intOne&nbsp;=&nbsp;32'sh1&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+								</Literal>
+							</rightNode>
+							<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;verilog&nbsp;operator&nbsp;:&nbsp;+&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+						</Binary>
+					</assignNode>
+					<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reg&nbsp;:&nbsp;r_mandelbrot_n_6&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+				</VariableAccess>
+			</Stage>
+
+		</Phase>
+
+		<Phase>
+			<phaseID>	15	</phaseID>
+			<Stage>
+				<stageID>	0	</stageID>
+				<stepNum>	1	</stepNum>
+				<minCriticalPath>	0	</minCriticalPath>
+				<exprInStage>	<!--0<br>-->	</exprInStage>
+				<Literal>
+					<nodeID>	58776426	</nodeID>
+					<startStep>	0	</startStep>
+					<endStep>	0	</endStep>
+					<destType>	float	</destType>
+					<destTypeIsReg>	false	</destTypeIsReg>
+					<destSignalName>	w_sys_tmp19	</destSignalName>
+					<priority>	0	</priority>
+					<minPathToEnd>	0	</minPathToEnd>
+					<fastestStepForAlap>	0	</fastestStepForAlap>
+					<componentID>	58776426	</componentID>
+					<type>	float	</type>
+					<value>	0.0	</value>
+					<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wire&nbsp;:&nbsp;w_sys_tmp19&nbsp;=&nbsp;32'h0&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+				</Literal>
+			</Stage>
+
+		</Phase>
+
+	<exprInMethod><!--<br>private&nbsp;float&nbsp;mandelbrot(float&nbsp;a,&nbsp;float&nbsp;b)&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;float&nbsp;x&nbsp;=&nbsp;0.0F;<br>&nbsp;&nbsp;&nbsp;&nbsp;float&nbsp;y&nbsp;=&nbsp;0.0F;<br>&nbsp;&nbsp;&nbsp;&nbsp;float&nbsp;x1;<br>&nbsp;&nbsp;&nbsp;&nbsp;float&nbsp;y1;<br>&nbsp;&nbsp;&nbsp;&nbsp;int&nbsp;n;<br>&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(n&nbsp;=&nbsp;0;&nbsp;n&nbsp;&lt;&nbsp;100;&nbsp;++n)&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x1&nbsp;=&nbsp;x&nbsp;*&nbsp;x&nbsp;-&nbsp;y&nbsp;*&nbsp;y&nbsp;+&nbsp;a;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;y1&nbsp;=&nbsp;2.0F&nbsp;*&nbsp;x&nbsp;*&nbsp;y&nbsp;+&nbsp;b;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(x1&nbsp;*&nbsp;x1&nbsp;+&nbsp;y1&nbsp;*&nbsp;y1&nbsp;&gt;&nbsp;4.0)&nbsp;return&nbsp;n;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x&nbsp;=&nbsp;x1;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;y&nbsp;=&nbsp;y1;<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;0;<br>}--></exprInMethod>
+</METHOD>
+
+<METHOD>
+	<methodName>	run	</methodName>
+	<totalPhaseNum>15	</totalPhaseNum>
+	<totalStageNum>9	</totalStageNum>
+	<totalStepNum>119	</totalStepNum>
+		<Phase>
+			<phaseID>	2	</phaseID>
+			<Stage>
+				<stageID>	0	</stageID>
+				<stepNum>	1	</stepNum>
+				<minCriticalPath>	1	</minCriticalPath>
+				<exprInStage>	<!--float&nbsp;C0r&nbsp;=&nbsp;-0.743F<br>float&nbsp;C0i&nbsp;=&nbsp;0.1145F<br>float&nbsp;VS&nbsp;=&nbsp;0.003F<br>int&nbsp;STEP&nbsp;=&nbsp;800<br>-->	</exprInStage>
+				<VariableAccess>
+					<nodeID>	12914162	</nodeID>
+					<startStep>	0	</startStep>
+					<endStep>	0	</endStep>
+					<destType>	float	</destType>
+					<destTypeIsReg>	false	</destTypeIsReg>
+					<destSignalName>	r_run_C0r_9	</destSignalName>
+					<priority>	1	</priority>
+					<minPathToEnd>	1	</minPathToEnd>
+					<fastestStepForAlap>	0	</fastestStepForAlap>
+					<componentID>	152472387	</componentID>
+					<variableName>	C0r	</variableName>
+					<type>	float	</type>
+					<variableID>	9	</variableID>
+					<isRead>	false	</isRead>
+					<dependence>		</dependence>
+					<assignNode>
+						<Literal>
+							<nodeID>	655417438	</nodeID>
+							<startStep>	0	</startStep>
+							<endStep>	0	</endStep>
+							<destType>	float	</destType>
+							<destTypeIsReg>	false	</destTypeIsReg>
+							<destSignalName>	w_sys_tmp20	</destSignalName>
+							<priority>	1	</priority>
+							<minPathToEnd>	1	</minPathToEnd>
+							<fastestStepForAlap>	0	</fastestStepForAlap>
+							<componentID>	655417438	</componentID>
+							<type>	float	</type>
+							<value>	-0.743	</value>
+							<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wire&nbsp;:&nbsp;w_sys_tmp20&nbsp;=&nbsp;32'hbf3e353f&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+						</Literal>
+					</assignNode>
+					<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reg&nbsp;:&nbsp;r_run_C0r_9&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+				</VariableAccess>
+				<VariableAccess>
+					<nodeID>	1157255003	</nodeID>
+					<startStep>	0	</startStep>
+					<endStep>	0	</endStep>
+					<destType>	float	</destType>
+					<destTypeIsReg>	false	</destTypeIsReg>
+					<destSignalName>	r_run_C0i_10	</destSignalName>
+					<priority>	1	</priority>
+					<minPathToEnd>	1	</minPathToEnd>
+					<fastestStepForAlap>	0	</fastestStepForAlap>
+					<componentID>	225444542	</componentID>
+					<variableName>	C0i	</variableName>
+					<type>	float	</type>
+					<variableID>	10	</variableID>
+					<isRead>	false	</isRead>
+					<dependence>		</dependence>
+					<assignNode>
+						<Literal>
+							<nodeID>	885264086	</nodeID>
+							<startStep>	0	</startStep>
+							<endStep>	0	</endStep>
+							<destType>	float	</destType>
+							<destTypeIsReg>	false	</destTypeIsReg>
+							<destSignalName>	w_sys_tmp21	</destSignalName>
+							<priority>	1	</priority>
+							<minPathToEnd>	1	</minPathToEnd>
+							<fastestStepForAlap>	0	</fastestStepForAlap>
+							<componentID>	885264086	</componentID>
+							<type>	float	</type>
+							<value>	0.1145	</value>
+							<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wire&nbsp;:&nbsp;w_sys_tmp21&nbsp;=&nbsp;32'h3dea7efa&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+						</Literal>
+					</assignNode>
+					<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reg&nbsp;:&nbsp;r_run_C0i_10&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+				</VariableAccess>
+				<VariableAccess>
+					<nodeID>	866786986	</nodeID>
+					<startStep>	0	</startStep>
+					<endStep>	0	</endStep>
+					<destType>	float	</destType>
+					<destTypeIsReg>	false	</destTypeIsReg>
+					<destSignalName>	r_run_VS_11	</destSignalName>
+					<priority>	1	</priority>
+					<minPathToEnd>	1	</minPathToEnd>
+					<fastestStepForAlap>	0	</fastestStepForAlap>
+					<componentID>	1707296101	</componentID>
+					<variableName>	VS	</variableName>
+					<type>	float	</type>
+					<variableID>	11	</variableID>
+					<isRead>	false	</isRead>
+					<dependence>		</dependence>
+					<assignNode>
+						<Literal>
+							<nodeID>	1996561940	</nodeID>
+							<startStep>	0	</startStep>
+							<endStep>	0	</endStep>
+							<destType>	float	</destType>
+							<destTypeIsReg>	false	</destTypeIsReg>
+							<destSignalName>	w_sys_tmp22	</destSignalName>
+							<priority>	1	</priority>
+							<minPathToEnd>	1	</minPathToEnd>
+							<fastestStepForAlap>	0	</fastestStepForAlap>
+							<componentID>	1996561940	</componentID>
+							<type>	float	</type>
+							<value>	0.003	</value>
+							<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wire&nbsp;:&nbsp;w_sys_tmp22&nbsp;=&nbsp;32'h3b449ba6&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+						</Literal>
+					</assignNode>
+					<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reg&nbsp;:&nbsp;r_run_VS_11&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+				</VariableAccess>
+				<VariableAccess>
+					<nodeID>	1784541205	</nodeID>
+					<startStep>	0	</startStep>
+					<endStep>	0	</endStep>
+					<destType>	int	</destType>
+					<destTypeIsReg>	false	</destTypeIsReg>
+					<destSignalName>	r_run_STEP_12	</destSignalName>
+					<priority>	1	</priority>
+					<minPathToEnd>	1	</minPathToEnd>
+					<fastestStepForAlap>	0	</fastestStepForAlap>
+					<componentID>	1027418433	</componentID>
+					<variableName>	STEP	</variableName>
+					<type>	int	</type>
+					<variableID>	12	</variableID>
+					<isRead>	false	</isRead>
+					<dependence>		</dependence>
+					<assignNode>
+						<Literal>
+							<nodeID>	2053081551	</nodeID>
+							<startStep>	0	</startStep>
+							<endStep>	0	</endStep>
+							<destType>	int	</destType>
+							<destTypeIsReg>	false	</destTypeIsReg>
+							<destSignalName>	w_sys_tmp23	</destSignalName>
+							<priority>	1	</priority>
+							<minPathToEnd>	1	</minPathToEnd>
+							<fastestStepForAlap>	0	</fastestStepForAlap>
+							<componentID>	2053081551	</componentID>
+							<type>	int	</type>
+							<value>	800	</value>
+							<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wire&nbsp;:&nbsp;w_sys_tmp23&nbsp;=&nbsp;32'sh00000320&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+						</Literal>
+					</assignNode>
+					<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reg&nbsp;:&nbsp;r_run_STEP_12&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+				</VariableAccess>
+			</Stage>
+
+		</Phase>
+
+		<Phase>
+			<phaseID>	4	</phaseID>
+			<Stage>
+				<stageID>	0	</stageID>
+				<stepNum>	6	</stepNum>
+				<minCriticalPath>	6	</minCriticalPath>
+				<exprInStage>	<!--a&nbsp;=&nbsp;C0r&nbsp;-&nbsp;VS<br>-->	</exprInStage>
+				<VariableAccess>
+					<nodeID>	374387661	</nodeID>
+					<startStep>	5	</startStep>
+					<endStep>	5	</endStep>
+					<destType>	float	</destType>
+					<destTypeIsReg>	false	</destTypeIsReg>
+					<destSignalName>	r_run_a_7	</destSignalName>
+					<priority>	1	</priority>
+					<minPathToEnd>	1	</minPathToEnd>
+					<fastestStepForAlap>	5	</fastestStepForAlap>
+					<componentID>	206332717	</componentID>
+					<variableName>	a	</variableName>
+					<type>	float	</type>
+					<variableID>	7	</variableID>
+					<isRead>	false	</isRead>
+					<dependence>		</dependence>
+					<assignNode>
+						<Binary>
+							<nodeID>	849705841	</nodeID>
+							<startStep>	0	</startStep>
+							<endStep>	5	</endStep>
+							<destType>	float	</destType>
+							<destTypeIsReg>	false	</destTypeIsReg>
+							<destSignalName>	w_sys_tmp24	</destSignalName>
+							<priority>	6	</priority>
+							<minPathToEnd>	6	</minPathToEnd>
+							<fastestStepForAlap>	0	</fastestStepForAlap>
+							<componentID>	853096058	</componentID>
+							<op>	-	</op>
+							<ipcore>	AddFloat_inst_0	</ipcore>
+							<leftNode>
+								<VariableAccess>
+									<nodeID>	1795368361	</nodeID>
+									<startStep>	0	</startStep>
+									<endStep>	0	</endStep>
+									<destType>	float	</destType>
+									<destTypeIsReg>	false	</destTypeIsReg>
+									<destSignalName>	r_run_C0r_9	</destSignalName>
+									<priority>	6	</priority>
+									<minPathToEnd>	6	</minPathToEnd>
+									<fastestStepForAlap>	0	</fastestStepForAlap>
+									<componentID>	152472387	</componentID>
+									<variableName>	C0r	</variableName>
+									<type>	float	</type>
+									<variableID>	9	</variableID>
+									<isRead>	true	</isRead>
+									<dependence>		</dependence>
+									<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reg&nbsp;:&nbsp;r_run_C0r_9&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+								</VariableAccess>
+							</leftNode>
+
+							<rightNode>
+								<VariableAccess>
+									<nodeID>	463319330	</nodeID>
+									<startStep>	0	</startStep>
+									<endStep>	0	</endStep>
+									<destType>	float	</destType>
+									<destTypeIsReg>	false	</destTypeIsReg>
+									<destSignalName>	r_run_VS_11	</destSignalName>
+									<priority>	6	</priority>
+									<minPathToEnd>	6	</minPathToEnd>
+									<fastestStepForAlap>	0	</fastestStepForAlap>
+									<componentID>	1707296101	</componentID>
+									<variableName>	VS	</variableName>
+									<type>	float	</type>
+									<variableID>	11	</variableID>
+									<isRead>	true	</isRead>
+									<dependence>		</dependence>
+									<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reg&nbsp;:&nbsp;r_run_VS_11&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+								</VariableAccess>
+							</rightNode>
+							<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IPcore&nbsp;:&nbsp;AddFloat_inst_0&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+						</Binary>
+					</assignNode>
+					<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reg&nbsp;:&nbsp;r_run_a_7&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+				</VariableAccess>
+			</Stage>
+
+		</Phase>
+
+		<Phase>
+			<phaseID>	5	</phaseID>
+			<Stage>
+				<stageID>	0	</stageID>
+				<stepNum>	9	</stepNum>
+				<minCriticalPath>	8	</minCriticalPath>
+				<exprInStage>	<!--a&nbsp;&lt;&nbsp;C0r&nbsp;+&nbsp;VS<br>-->	</exprInStage>
+				<Binary>
+					<nodeID>	1927299787	</nodeID>
+					<startStep>	5	</startStep>
+					<endStep>	8	</endStep>
+					<destType>	boolean	</destType>
+					<destTypeIsReg>	false	</destTypeIsReg>
+					<destSignalName>	w_sys_tmp25	</destSignalName>
+					<priority>	3	</priority>
+					<minPathToEnd>	3	</minPathToEnd>
+					<fastestStepForAlap>	5	</fastestStepForAlap>
+					<componentID>	446070279	</componentID>
+					<op>	LT	</op>
+					<ipcore>	CompareFloatLT_inst_0	</ipcore>
+					<leftNode>
+						<VariableAccess>
+							<nodeID>	232275288	</nodeID>
+							<startStep>	0	</startStep>
+							<endStep>	0	</endStep>
+							<destType>	float	</destType>
+							<destTypeIsReg>	false	</destTypeIsReg>
+							<destSignalName>	r_run_a_7	</destSignalName>
+							<priority>	3	</priority>
+							<minPathToEnd>	3	</minPathToEnd>
+							<fastestStepForAlap>	5	</fastestStepForAlap>
+							<componentID>	206332717	</componentID>
+							<variableName>	a	</variableName>
+							<type>	float	</type>
+							<variableID>	7	</variableID>
+							<isRead>	true	</isRead>
+							<dependence>		</dependence>
+							<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reg&nbsp;:&nbsp;r_run_a_7&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+						</VariableAccess>
+					</leftNode>
+
+					<rightNode>
+						<Binary>
+							<nodeID>	239817137	</nodeID>
+							<startStep>	0	</startStep>
+							<endStep>	5	</endStep>
+							<destType>	float	</destType>
+							<destTypeIsReg>	false	</destTypeIsReg>
+							<destSignalName>	w_sys_tmp26	</destSignalName>
+							<priority>	8	</priority>
+							<minPathToEnd>	8	</minPathToEnd>
+							<fastestStepForAlap>	0	</fastestStepForAlap>
+							<componentID>	853096058	</componentID>
+							<op>	+	</op>
+							<ipcore>	AddFloat_inst_0	</ipcore>
+							<leftNode>
+								<VariableAccess>
+									<nodeID>	1872978817	</nodeID>
+									<startStep>	0	</startStep>
+									<endStep>	0	</endStep>
+									<destType>	float	</destType>
+									<destTypeIsReg>	false	</destTypeIsReg>
+									<destSignalName>	r_run_C0r_9	</destSignalName>
+									<priority>	8	</priority>
+									<minPathToEnd>	8	</minPathToEnd>
+									<fastestStepForAlap>	0	</fastestStepForAlap>
+									<componentID>	152472387	</componentID>
+									<variableName>	C0r	</variableName>
+									<type>	float	</type>
+									<variableID>	9	</variableID>
+									<isRead>	true	</isRead>
+									<dependence>		</dependence>
+									<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reg&nbsp;:&nbsp;r_run_C0r_9&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+								</VariableAccess>
+							</leftNode>
+
+							<rightNode>
+								<VariableAccess>
+									<nodeID>	1339679593	</nodeID>
+									<startStep>	0	</startStep>
+									<endStep>	0	</endStep>
+									<destType>	float	</destType>
+									<destTypeIsReg>	false	</destTypeIsReg>
+									<destSignalName>	r_run_VS_11	</destSignalName>
+									<priority>	8	</priority>
+									<minPathToEnd>	8	</minPathToEnd>
+									<fastestStepForAlap>	0	</fastestStepForAlap>
+									<componentID>	1707296101	</componentID>
+									<variableName>	VS	</variableName>
+									<type>	float	</type>
+									<variableID>	11	</variableID>
+									<isRead>	true	</isRead>
+									<dependence>		</dependence>
+									<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reg&nbsp;:&nbsp;r_run_VS_11&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+								</VariableAccess>
+							</rightNode>
+							<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IPcore&nbsp;:&nbsp;AddFloat_inst_0&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+						</Binary>
+					</rightNode>
+					<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IPcore&nbsp;:&nbsp;CompareFloatLT_inst_0&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+				</Binary>
+			</Stage>
+
+		</Phase>
+
+		<Phase>
+			<phaseID>	6	</phaseID>
+			<Stage>
+				<stageID>	0	</stageID>
+				<stepNum>	43	</stepNum>
+				<minCriticalPath>	43	</minCriticalPath>
+				<exprInStage>	<!--a&nbsp;+=&nbsp;2.0F&nbsp;*&nbsp;VS&nbsp;/&nbsp;STEP<br>-->	</exprInStage>
+				<VariableAccess>
+					<nodeID>	1776364403	</nodeID>
+					<startStep>	42	</startStep>
+					<endStep>	42	</endStep>
+					<destType>	float	</destType>
+					<destTypeIsReg>	false	</destTypeIsReg>
+					<destSignalName>	r_run_a_7	</destSignalName>
+					<priority>	1	</priority>
+					<minPathToEnd>	1	</minPathToEnd>
+					<fastestStepForAlap>	42	</fastestStepForAlap>
+					<componentID>	206332717	</componentID>
+					<variableName>	a	</variableName>
+					<type>	float	</type>
+					<variableID>	7	</variableID>
+					<isRead>	false	</isRead>
+					<dependence>		</dependence>
+					<assignNode>
+						<Binary>
+							<nodeID>	1210291099	</nodeID>
+							<startStep>	37	</startStep>
+							<endStep>	42	</endStep>
+							<destType>	float	</destType>
+							<destTypeIsReg>	false	</destTypeIsReg>
+							<destSignalName>	w_sys_tmp27	</destSignalName>
+							<priority>	6	</priority>
+							<minPathToEnd>	6	</minPathToEnd>
+							<fastestStepForAlap>	37	</fastestStepForAlap>
+							<componentID>	853096058	</componentID>
+							<op>	+	</op>
+							<ipcore>	AddFloat_inst_0	</ipcore>
+							<leftNode>
+								<VariableAccess>
+									<nodeID>	1038860627	</nodeID>
+									<startStep>	0	</startStep>
+									<endStep>	0	</endStep>
+									<destType>	float	</destType>
+									<destTypeIsReg>	false	</destTypeIsReg>
+									<destSignalName>	r_run_a_7	</destSignalName>
+									<priority>	6	</priority>
+									<minPathToEnd>	6	</minPathToEnd>
+									<fastestStepForAlap>	37	</fastestStepForAlap>
+									<componentID>	206332717	</componentID>
+									<variableName>	a	</variableName>
+									<type>	float	</type>
+									<variableID>	7	</variableID>
+									<isRead>	true	</isRead>
+									<dependence>		</dependence>
+									<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reg&nbsp;:&nbsp;r_run_a_7&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+								</VariableAccess>
+							</leftNode>
+
+							<rightNode>
+								<Binary>
+									<nodeID>	1122175979	</nodeID>
+									<startStep>	7	</startStep>
+									<endStep>	37	</endStep>
+									<destType>	float	</destType>
+									<destTypeIsReg>	false	</destTypeIsReg>
+									<destSignalName>	w_sys_tmp28	</destSignalName>
+									<priority>	36	</priority>
+									<minPathToEnd>	36	</minPathToEnd>
+									<fastestStepForAlap>	7	</fastestStepForAlap>
+									<componentID>	1088507879	</componentID>
+									<op>	/	</op>
+									<ipcore>	DivFloat_inst_0	</ipcore>
+									<leftNode>
+										<Binary>
+											<nodeID>	151989066	</nodeID>
+											<startStep>	0	</startStep>
+											<endStep>	5	</endStep>
+											<destType>	float	</destType>
+											<destTypeIsReg>	true	</destTypeIsReg>
+											<destSignalName>	r_sys_tmp0_float	</destSignalName>
+											<priority>	41	</priority>
+											<minPathToEnd>	41	</minPathToEnd>
+											<fastestStepForAlap>	2	</fastestStepForAlap>
+											<componentID>	807284497	</componentID>
+											<op>	*	</op>
+											<ipcore>	MultFloat_inst_0	</ipcore>
+											<leftNode>
+												<Literal>
+													<nodeID>	138733560	</nodeID>
+													<startStep>	0	</startStep>
+													<endStep>	0	</endStep>
+													<destType>	float	</destType>
+													<destTypeIsReg>	false	</destTypeIsReg>
+													<destSignalName>	w_sys_tmp29	</destSignalName>
+													<priority>	41	</priority>
+													<minPathToEnd>	41	</minPathToEnd>
+													<fastestStepForAlap>	2	</fastestStepForAlap>
+													<componentID>	138733560	</componentID>
+													<type>	float	</type>
+													<value>	2.0	</value>
+													<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wire&nbsp;:&nbsp;w_sys_tmp29&nbsp;=&nbsp;32'h40000000&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+												</Literal>
+											</leftNode>
+
+											<rightNode>
+												<VariableAccess>
+													<nodeID>	1675185925	</nodeID>
+													<startStep>	0	</startStep>
+													<endStep>	0	</endStep>
+													<destType>	float	</destType>
+													<destTypeIsReg>	false	</destTypeIsReg>
+													<destSignalName>	r_run_VS_11	</destSignalName>
+													<priority>	41	</priority>
+													<minPathToEnd>	41	</minPathToEnd>
+													<fastestStepForAlap>	2	</fastestStepForAlap>
+													<componentID>	1707296101	</componentID>
+													<variableName>	VS	</variableName>
+													<type>	float	</type>
+													<variableID>	11	</variableID>
+													<isRead>	true	</isRead>
+													<dependence>		</dependence>
+													<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reg&nbsp;:&nbsp;r_run_VS_11&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+												</VariableAccess>
+											</rightNode>
+											<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IPcore&nbsp;:&nbsp;MultFloat_inst_0&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+										</Binary>
+									</leftNode>
+
+									<rightNode>
+										<Cast>
+											<nodeID>	1631672408	</nodeID>
+											<startStep>	0	</startStep>
+											<endStep>	7	</endStep>
+											<destType>	float	</destType>
+											<destTypeIsReg>	false	</destTypeIsReg>
+											<destSignalName>	w_sys_tmp30	</destSignalName>
+											<priority>	43	</priority>
+											<minPathToEnd>	43	</minPathToEnd>
+											<fastestStepForAlap>	0	</fastestStepForAlap>
+											<componentID>	719373193	</componentID>
+											<castType>	float	</castType>
+											<ipcore>	FixedToFloat_inst_0	</ipcore>
+											<srcNode>
+												<VariableAccess>
+													<nodeID>	1339229305	</nodeID>
+													<startStep>	0	</startStep>
+													<endStep>	0	</endStep>
+													<destType>	int	</destType>
+													<destTypeIsReg>	false	</destTypeIsReg>
+													<destSignalName>	r_run_STEP_12	</destSignalName>
+													<priority>	43	</priority>
+													<minPathToEnd>	43	</minPathToEnd>
+													<fastestStepForAlap>	0	</fastestStepForAlap>
+													<componentID>	1027418433	</componentID>
+													<variableName>	STEP	</variableName>
+													<type>	int	</type>
+													<variableID>	12	</variableID>
+													<isRead>	true	</isRead>
+													<dependence>		</dependence>
+													<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reg&nbsp;:&nbsp;r_run_STEP_12&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+												</VariableAccess>
+											</srcNode>
+											<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IPcore&nbsp;:&nbsp;FixedToFloat_inst_0&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+										</Cast>
+									</rightNode>
+									<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IPcore&nbsp;:&nbsp;DivFloat_inst_0&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+								</Binary>
+							</rightNode>
+							<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IPcore&nbsp;:&nbsp;AddFloat_inst_0&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+						</Binary>
+					</assignNode>
+					<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reg&nbsp;:&nbsp;r_run_a_7&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+				</VariableAccess>
+			</Stage>
+
+		</Phase>
+
+		<Phase>
+			<phaseID>	9	</phaseID>
+			<Stage>
+				<stageID>	0	</stageID>
+				<stepNum>	6	</stepNum>
+				<minCriticalPath>	6	</minCriticalPath>
+				<exprInStage>	<!--b&nbsp;=&nbsp;C0i&nbsp;-&nbsp;VS<br>-->	</exprInStage>
+				<VariableAccess>
+					<nodeID>	650824928	</nodeID>
+					<startStep>	5	</startStep>
+					<endStep>	5	</endStep>
+					<destType>	float	</destType>
+					<destTypeIsReg>	false	</destTypeIsReg>
+					<destSignalName>	r_run_b_8	</destSignalName>
+					<priority>	1	</priority>
+					<minPathToEnd>	1	</minPathToEnd>
+					<fastestStepForAlap>	5	</fastestStepForAlap>
+					<componentID>	1280350725	</componentID>
+					<variableName>	b	</variableName>
+					<type>	float	</type>
+					<variableID>	8	</variableID>
+					<isRead>	false	</isRead>
+					<dependence>		</dependence>
+					<assignNode>
+						<Binary>
+							<nodeID>	397396509	</nodeID>
+							<startStep>	0	</startStep>
+							<endStep>	5	</endStep>
+							<destType>	float	</destType>
+							<destTypeIsReg>	false	</destTypeIsReg>
+							<destSignalName>	w_sys_tmp31	</destSignalName>
+							<priority>	6	</priority>
+							<minPathToEnd>	6	</minPathToEnd>
+							<fastestStepForAlap>	0	</fastestStepForAlap>
+							<componentID>	853096058	</componentID>
+							<op>	-	</op>
+							<ipcore>	AddFloat_inst_0	</ipcore>
+							<leftNode>
+								<VariableAccess>
+									<nodeID>	1068492135	</nodeID>
+									<startStep>	0	</startStep>
+									<endStep>	0	</endStep>
+									<destType>	float	</destType>
+									<destTypeIsReg>	false	</destTypeIsReg>
+									<destSignalName>	r_run_C0i_10	</destSignalName>
+									<priority>	6	</priority>
+									<minPathToEnd>	6	</minPathToEnd>
+									<fastestStepForAlap>	0	</fastestStepForAlap>
+									<componentID>	225444542	</componentID>
+									<variableName>	C0i	</variableName>
+									<type>	float	</type>
+									<variableID>	10	</variableID>
+									<isRead>	true	</isRead>
+									<dependence>		</dependence>
+									<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reg&nbsp;:&nbsp;r_run_C0i_10&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+								</VariableAccess>
+							</leftNode>
+
+							<rightNode>
+								<VariableAccess>
+									<nodeID>	889056731	</nodeID>
+									<startStep>	0	</startStep>
+									<endStep>	0	</endStep>
+									<destType>	float	</destType>
+									<destTypeIsReg>	false	</destTypeIsReg>
+									<destSignalName>	r_run_VS_11	</destSignalName>
+									<priority>	6	</priority>
+									<minPathToEnd>	6	</minPathToEnd>
+									<fastestStepForAlap>	0	</fastestStepForAlap>
+									<componentID>	1707296101	</componentID>
+									<variableName>	VS	</variableName>
+									<type>	float	</type>
+									<variableID>	11	</variableID>
+									<isRead>	true	</isRead>
+									<dependence>		</dependence>
+									<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reg&nbsp;:&nbsp;r_run_VS_11&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+								</VariableAccess>
+							</rightNode>
+							<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IPcore&nbsp;:&nbsp;AddFloat_inst_0&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+						</Binary>
+					</assignNode>
+					<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reg&nbsp;:&nbsp;r_run_b_8&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+				</VariableAccess>
+			</Stage>
+
+		</Phase>
+
+		<Phase>
+			<phaseID>	10	</phaseID>
+			<Stage>
+				<stageID>	0	</stageID>
+				<stepNum>	9	</stepNum>
+				<minCriticalPath>	8	</minCriticalPath>
+				<exprInStage>	<!--b&nbsp;&lt;&nbsp;C0i&nbsp;+&nbsp;VS<br>-->	</exprInStage>
+				<Binary>
+					<nodeID>	1738765662	</nodeID>
+					<startStep>	5	</startStep>
+					<endStep>	8	</endStep>
+					<destType>	boolean	</destType>
+					<destTypeIsReg>	false	</destTypeIsReg>
+					<destSignalName>	w_sys_tmp32	</destSignalName>
+					<priority>	3	</priority>
+					<minPathToEnd>	3	</minPathToEnd>
+					<fastestStepForAlap>	5	</fastestStepForAlap>
+					<componentID>	446070279	</componentID>
+					<op>	LT	</op>
+					<ipcore>	CompareFloatLT_inst_0	</ipcore>
+					<leftNode>
+						<VariableAccess>
+							<nodeID>	185262091	</nodeID>
+							<startStep>	0	</startStep>
+							<endStep>	0	</endStep>
+							<destType>	float	</destType>
+							<destTypeIsReg>	false	</destTypeIsReg>
+							<destSignalName>	r_run_b_8	</destSignalName>
+							<priority>	3	</priority>
+							<minPathToEnd>	3	</minPathToEnd>
+							<fastestStepForAlap>	5	</fastestStepForAlap>
+							<componentID>	1280350725	</componentID>
+							<variableName>	b	</variableName>
+							<type>	float	</type>
+							<variableID>	8	</variableID>
+							<isRead>	true	</isRead>
+							<dependence>		</dependence>
+							<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reg&nbsp;:&nbsp;r_run_b_8&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+						</VariableAccess>
+					</leftNode>
+
+					<rightNode>
+						<Binary>
+							<nodeID>	368984593	</nodeID>
+							<startStep>	0	</startStep>
+							<endStep>	5	</endStep>
+							<destType>	float	</destType>
+							<destTypeIsReg>	false	</destTypeIsReg>
+							<destSignalName>	w_sys_tmp33	</destSignalName>
+							<priority>	8	</priority>
+							<minPathToEnd>	8	</minPathToEnd>
+							<fastestStepForAlap>	0	</fastestStepForAlap>
+							<componentID>	853096058	</componentID>
+							<op>	+	</op>
+							<ipcore>	AddFloat_inst_0	</ipcore>
+							<leftNode>
+								<VariableAccess>
+									<nodeID>	1996158934	</nodeID>
+									<startStep>	0	</startStep>
+									<endStep>	0	</endStep>
+									<destType>	float	</destType>
+									<destTypeIsReg>	false	</destTypeIsReg>
+									<destSignalName>	r_run_C0i_10	</destSignalName>
+									<priority>	8	</priority>
+									<minPathToEnd>	8	</minPathToEnd>
+									<fastestStepForAlap>	0	</fastestStepForAlap>
+									<componentID>	225444542	</componentID>
+									<variableName>	C0i	</variableName>
+									<type>	float	</type>
+									<variableID>	10	</variableID>
+									<isRead>	true	</isRead>
+									<dependence>		</dependence>
+									<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reg&nbsp;:&nbsp;r_run_C0i_10&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+								</VariableAccess>
+							</leftNode>
+
+							<rightNode>
+								<VariableAccess>
+									<nodeID>	1453670304	</nodeID>
+									<startStep>	0	</startStep>
+									<endStep>	0	</endStep>
+									<destType>	float	</destType>
+									<destTypeIsReg>	false	</destTypeIsReg>
+									<destSignalName>	r_run_VS_11	</destSignalName>
+									<priority>	8	</priority>
+									<minPathToEnd>	8	</minPathToEnd>
+									<fastestStepForAlap>	0	</fastestStepForAlap>
+									<componentID>	1707296101	</componentID>
+									<variableName>	VS	</variableName>
+									<type>	float	</type>
+									<variableID>	11	</variableID>
+									<isRead>	true	</isRead>
+									<dependence>		</dependence>
+									<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reg&nbsp;:&nbsp;r_run_VS_11&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+								</VariableAccess>
+							</rightNode>
+							<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IPcore&nbsp;:&nbsp;AddFloat_inst_0&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+						</Binary>
+					</rightNode>
+					<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IPcore&nbsp;:&nbsp;CompareFloatLT_inst_0&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+				</Binary>
+			</Stage>
+
+		</Phase>
+
+		<Phase>
+			<phaseID>	13	</phaseID>
+			<Stage>
+				<stageID>	0	</stageID>
+				<stepNum>	2	</stepNum>
+				<minCriticalPath>	2	</minCriticalPath>
+				<exprInStage>	<!--mandelbrot(a,&nbsp;b)<br>-->	</exprInStage>
+				<MethodInv>
+					<nodeID>	2062831056	</nodeID>
+					<startStep>	0	</startStep>
+					<endStep>	1	</endStep>
+					<destType>	float	</destType>
+					<destTypeIsReg>	false	</destTypeIsReg>
+					<destSignalName>	r_sys_mandelbrot_return	</destSignalName>
+					<priority>	2	</priority>
+					<minPathToEnd>	2	</minPathToEnd>
+					<fastestStepForAlap>	0	</fastestStepForAlap>
+					<componentID>	1025561024	</componentID>
+					<defClass>	mandelbrot	</defClass>
+					<objName>	this	</objName>
+					<caleeName>	mandelbrot	</caleeName>
+					<arg>
+						<VariableAccess>
+							<nodeID>	900379546	</nodeID>
+							<startStep>	0	</startStep>
+							<endStep>	0	</endStep>
+							<destType>	float	</destType>
+							<destTypeIsReg>	false	</destTypeIsReg>
+							<destSignalName>	r_run_a_7	</destSignalName>
+							<priority>	2	</priority>
+							<minPathToEnd>	2	</minPathToEnd>
+							<fastestStepForAlap>	0	</fastestStepForAlap>
+							<componentID>	206332717	</componentID>
+							<variableName>	a	</variableName>
+							<type>	float	</type>
+							<variableID>	7	</variableID>
+							<isRead>	true	</isRead>
+							<dependence>		</dependence>
+							<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reg&nbsp;:&nbsp;r_run_a_7&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+						</VariableAccess>
+					</arg>
+					<arg>
+						<VariableAccess>
+							<nodeID>	1509252860	</nodeID>
+							<startStep>	0	</startStep>
+							<endStep>	0	</endStep>
+							<destType>	float	</destType>
+							<destTypeIsReg>	false	</destTypeIsReg>
+							<destSignalName>	r_run_b_8	</destSignalName>
+							<priority>	2	</priority>
+							<minPathToEnd>	2	</minPathToEnd>
+							<fastestStepForAlap>	0	</fastestStepForAlap>
+							<componentID>	1280350725	</componentID>
+							<variableName>	b	</variableName>
+							<type>	float	</type>
+							<variableID>	8	</variableID>
+							<isRead>	true	</isRead>
+							<dependence>		</dependence>
+							<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reg&nbsp;:&nbsp;r_run_b_8&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+						</VariableAccess>
+					</arg>
+					<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;none&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+				</MethodInv>
+			</Stage>
+
+			<Stage>
+				<stageID>	1	</stageID>
+				<stepNum>	43	</stepNum>
+				<minCriticalPath>	43	</minCriticalPath>
+				<exprInStage>	<!--b&nbsp;+=&nbsp;2.0F&nbsp;*&nbsp;VS&nbsp;/&nbsp;STEP<br>-->	</exprInStage>
+				<VariableAccess>
+					<nodeID>	2083463303	</nodeID>
+					<startStep>	42	</startStep>
+					<endStep>	42	</endStep>
+					<destType>	float	</destType>
+					<destTypeIsReg>	false	</destTypeIsReg>
+					<destSignalName>	r_run_b_8	</destSignalName>
+					<priority>	1	</priority>
+					<minPathToEnd>	1	</minPathToEnd>
+					<fastestStepForAlap>	42	</fastestStepForAlap>
+					<componentID>	1280350725	</componentID>
+					<variableName>	b	</variableName>
+					<type>	float	</type>
+					<variableID>	8	</variableID>
+					<isRead>	false	</isRead>
+					<dependence>		</dependence>
+					<assignNode>
+						<Binary>
+							<nodeID>	558911896	</nodeID>
+							<startStep>	37	</startStep>
+							<endStep>	42	</endStep>
+							<destType>	float	</destType>
+							<destTypeIsReg>	false	</destTypeIsReg>
+							<destSignalName>	w_sys_tmp38	</destSignalName>
+							<priority>	6	</priority>
+							<minPathToEnd>	6	</minPathToEnd>
+							<fastestStepForAlap>	37	</fastestStepForAlap>
+							<componentID>	853096058	</componentID>
+							<op>	+	</op>
+							<ipcore>	AddFloat_inst_0	</ipcore>
+							<leftNode>
+								<VariableAccess>
+									<nodeID>	2046869186	</nodeID>
+									<startStep>	0	</startStep>
+									<endStep>	0	</endStep>
+									<destType>	float	</destType>
+									<destTypeIsReg>	false	</destTypeIsReg>
+									<destSignalName>	r_run_b_8	</destSignalName>
+									<priority>	6	</priority>
+									<minPathToEnd>	6	</minPathToEnd>
+									<fastestStepForAlap>	37	</fastestStepForAlap>
+									<componentID>	1280350725	</componentID>
+									<variableName>	b	</variableName>
+									<type>	float	</type>
+									<variableID>	8	</variableID>
+									<isRead>	true	</isRead>
+									<dependence>		</dependence>
+									<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reg&nbsp;:&nbsp;r_run_b_8&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+								</VariableAccess>
+							</leftNode>
+
+							<rightNode>
+								<Binary>
+									<nodeID>	552268890	</nodeID>
+									<startStep>	7	</startStep>
+									<endStep>	37	</endStep>
+									<destType>	float	</destType>
+									<destTypeIsReg>	false	</destTypeIsReg>
+									<destSignalName>	w_sys_tmp39	</destSignalName>
+									<priority>	36	</priority>
+									<minPathToEnd>	36	</minPathToEnd>
+									<fastestStepForAlap>	7	</fastestStepForAlap>
+									<componentID>	1088507879	</componentID>
+									<op>	/	</op>
+									<ipcore>	DivFloat_inst_0	</ipcore>
+									<leftNode>
+										<Binary>
+											<nodeID>	598650155	</nodeID>
+											<startStep>	0	</startStep>
+											<endStep>	5	</endStep>
+											<destType>	float	</destType>
+											<destTypeIsReg>	true	</destTypeIsReg>
+											<destSignalName>	r_sys_tmp0_float	</destSignalName>
+											<priority>	41	</priority>
+											<minPathToEnd>	41	</minPathToEnd>
+											<fastestStepForAlap>	2	</fastestStepForAlap>
+											<componentID>	807284497	</componentID>
+											<op>	*	</op>
+											<ipcore>	MultFloat_inst_0	</ipcore>
+											<leftNode>
+												<Literal>
+													<nodeID>	1189867809	</nodeID>
+													<startStep>	0	</startStep>
+													<endStep>	0	</endStep>
+													<destType>	float	</destType>
+													<destTypeIsReg>	false	</destTypeIsReg>
+													<destSignalName>	w_sys_tmp40	</destSignalName>
+													<priority>	41	</priority>
+													<minPathToEnd>	41	</minPathToEnd>
+													<fastestStepForAlap>	2	</fastestStepForAlap>
+													<componentID>	1189867809	</componentID>
+													<type>	float	</type>
+													<value>	2.0	</value>
+													<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wire&nbsp;:&nbsp;w_sys_tmp40&nbsp;=&nbsp;32'h40000000&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+												</Literal>
+											</leftNode>
+
+											<rightNode>
+												<VariableAccess>
+													<nodeID>	740544999	</nodeID>
+													<startStep>	0	</startStep>
+													<endStep>	0	</endStep>
+													<destType>	float	</destType>
+													<destTypeIsReg>	false	</destTypeIsReg>
+													<destSignalName>	r_run_VS_11	</destSignalName>
+													<priority>	41	</priority>
+													<minPathToEnd>	41	</minPathToEnd>
+													<fastestStepForAlap>	2	</fastestStepForAlap>
+													<componentID>	1707296101	</componentID>
+													<variableName>	VS	</variableName>
+													<type>	float	</type>
+													<variableID>	11	</variableID>
+													<isRead>	true	</isRead>
+													<dependence>		</dependence>
+													<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reg&nbsp;:&nbsp;r_run_VS_11&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+												</VariableAccess>
+											</rightNode>
+											<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IPcore&nbsp;:&nbsp;MultFloat_inst_0&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+										</Binary>
+									</leftNode>
+
+									<rightNode>
+										<Cast>
+											<nodeID>	477012858	</nodeID>
+											<startStep>	0	</startStep>
+											<endStep>	7	</endStep>
+											<destType>	float	</destType>
+											<destTypeIsReg>	false	</destTypeIsReg>
+											<destSignalName>	w_sys_tmp41	</destSignalName>
+											<priority>	43	</priority>
+											<minPathToEnd>	43	</minPathToEnd>
+											<fastestStepForAlap>	0	</fastestStepForAlap>
+											<componentID>	719373193	</componentID>
+											<castType>	float	</castType>
+											<ipcore>	FixedToFloat_inst_0	</ipcore>
+											<srcNode>
+												<VariableAccess>
+													<nodeID>	1672063828	</nodeID>
+													<startStep>	0	</startStep>
+													<endStep>	0	</endStep>
+													<destType>	int	</destType>
+													<destTypeIsReg>	false	</destTypeIsReg>
+													<destSignalName>	r_run_STEP_12	</destSignalName>
+													<priority>	43	</priority>
+													<minPathToEnd>	43	</minPathToEnd>
+													<fastestStepForAlap>	0	</fastestStepForAlap>
+													<componentID>	1027418433	</componentID>
+													<variableName>	STEP	</variableName>
+													<type>	int	</type>
+													<variableID>	12	</variableID>
+													<isRead>	true	</isRead>
+													<dependence>		</dependence>
+													<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reg&nbsp;:&nbsp;r_run_STEP_12&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+												</VariableAccess>
+											</srcNode>
+											<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IPcore&nbsp;:&nbsp;FixedToFloat_inst_0&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+										</Cast>
+									</rightNode>
+									<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IPcore&nbsp;:&nbsp;DivFloat_inst_0&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+								</Binary>
+							</rightNode>
+							<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IPcore&nbsp;:&nbsp;AddFloat_inst_0&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+						</Binary>
+					</assignNode>
+					<component><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reg&nbsp;:&nbsp;r_run_b_8&nbsp;&nbsp;&nbsp;&nbsp;--></component>
+				</VariableAccess>
+			</Stage>
+
+		</Phase>
+
+	<exprInMethod><!--<br>public&nbsp;void&nbsp;run()&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;float&nbsp;a;<br>&nbsp;&nbsp;&nbsp;&nbsp;float&nbsp;b;<br>&nbsp;&nbsp;&nbsp;&nbsp;float&nbsp;C0r&nbsp;=&nbsp;-0.743F;<br>&nbsp;&nbsp;&nbsp;&nbsp;float&nbsp;C0i&nbsp;=&nbsp;0.1145F;<br>&nbsp;&nbsp;&nbsp;&nbsp;float&nbsp;VS&nbsp;=&nbsp;0.003F;<br>&nbsp;&nbsp;&nbsp;&nbsp;int&nbsp;STEP&nbsp;=&nbsp;800;<br>&nbsp;&nbsp;&nbsp;&nbsp;float&nbsp;result;<br>&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(a&nbsp;=&nbsp;C0r&nbsp;-&nbsp;VS;&nbsp;a&nbsp;&lt;&nbsp;C0r&nbsp;+&nbsp;VS;&nbsp;a&nbsp;+=&nbsp;2.0F&nbsp;*&nbsp;VS&nbsp;/&nbsp;STEP)&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(b&nbsp;=&nbsp;C0i&nbsp;-&nbsp;VS;&nbsp;b&nbsp;&lt;&nbsp;C0i&nbsp;+&nbsp;VS;&nbsp;b&nbsp;+=&nbsp;2.0F&nbsp;*&nbsp;VS&nbsp;/&nbsp;STEP)&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mandelbrot(a,&nbsp;b);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>}--></exprInMethod>
+</METHOD>
+
+	</CLASS>

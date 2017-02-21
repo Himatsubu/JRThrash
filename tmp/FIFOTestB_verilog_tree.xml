@@ -119,7 +119,7 @@
 				</StatAssemblage>
 
 				<WhileLoop>	<Phase>  3  </Phase>
-					<BreakPhase>	net.njlab.model.VerilogBreak@44fa4f5b	</BreakPhase>					
+					<BreakPhase>	net.njlab.model.VerilogBreak@7a5f89cf	</BreakPhase>					
 
 					<whileCond>
 						<StatAssemblage>	<Phase>  4  </Phase>
